@@ -1,0 +1,14 @@
+flask
+openai
+python-dotenv
+tiktoken
+numpy
+langchain-community
+langchain-openai
+langchain-core
+langchain
+bs4
+chromadb
+pypdf
+cryptography
+
