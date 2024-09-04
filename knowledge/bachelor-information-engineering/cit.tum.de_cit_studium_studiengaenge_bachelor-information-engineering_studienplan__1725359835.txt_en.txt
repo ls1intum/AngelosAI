@@ -1,0 +1,39 @@
+https://www.cit.tum.de/en/cit/studies/degree-programs/bachelor-information-engineering/degree-charts/
+Degree charts - Bachelor Information Engineering - TUM - TUM School of Computation, Information and Technology
+
+Curriculum for the Bachelor in Information Engineering
+Curriculum for the Bachelor in Information Engineering
+Based on the degree chart, you can see how the six semesters of the bachelor’s program are distributed. For swift and successful progress through the program, we recommend that you schedule the modules at the specified time and in the order indicated. For information on the course offerings, please click directly on the modules in the table.
+Links relevant for questions related to Curriculum for the Bachelor in Information Engineering: https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-information-engineering/studienplan/
+Curriculum for the Bachelor in Information Engineering
+----------------------------------------
+
+
+Links relevant for questions related to : https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-information-engineering/studienplan/
+
+----------------------------------------
+
+Degree chart
+Curriculum for the Bachelor in Information Engineering > Degree chart
+Table (Curriculum for the Bachelor in Information Engineering > Degree chart):
+Semester; ECTS; Informatics; Mathematics; Management; Extradisciplinary fundamentals
+1; 30; Introduction to Informatics (INHN0001) *)6 Credits; Fundamentals of Programming (INHN0002) *)6 Credits; Introduction to Computer Organization and Technology (INHN0003) *)8 Credits; Discrete Structures (INHN0004) *)8 Credits; ; Support Elective2 ECTS
+2; 29; Introduction to Software Engineering (INHN0006)6 Credits; Operating Systems and System Software (INHN0007)6 Credits; Fundamentals of Algorithms and Data Structures (INHN0008)6 Credits; Computational Mathematics I: Linear Algebra (INHN0009)8 Credits; ; Support Elective3 ECTS
+3; 31; Fundamentals of Databases (INHN0011)6 Credits Seminar (INHN0015)5 Credits; Computer Networking and IT Security (INHN0012)6 Credits; Information Theory and Theory of Computation (INHN0013)6 Credits; Computational Mathematics II: Calculus (INHN0014)8 Credits; ; 
+4; 31; Enterprise Architecture Management and Reference Models (INHN0017)6 Credits; Introduction to Signal Processing (INHN0016)6 CreditsBusiness Process Management (INHN0019)5 Credits; Business Process Management (INHN0019)5 Credits; Embedded Systems, Cyber-Physical Systems, and Robotics (INHN0018)8 Credits; Discrete Probability Theory (INHN0020)6 Credits; ; 
+Business Process Management (INHN0019)5 Credits
+5; 30; Bachelor Practical Course (INHN0021)10 Credits; Electives in Informatics6 Credits; ; ; Electives in Management12 Credits; Support Electives2 Credits
+6; 29; Bachelor's Thesis (INHN0024)12 Credits; Bachelor's Colloquium (INHN0025)3 Credits; Electives in Informatics6 Credits; ; Electives in Management6 Credits; Support Electives2 Credits
+Please note: This is an ideal version of a curriculum, your acutal / individual course of studies might turn out to be different.
+
+Table (Curriculum for the Bachelor in Information Engineering > Degree chart):
+Business Process Management (INHN0019)5 Credits
+Links relevant for questions related to Degree chart: https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=2917377&pOrgNr=14189, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=2917382&pOrgNr=14189, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=2917398&pOrgNr=14189, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=2917471&pOrgNr=14189, https://www.cit.tum.de/en/cit/studies/degree-programs/bachelor-information-engineering/elective-modules/#c2556, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=3038558&pOrgNr=14189, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=3038527&pOrgNr=14189, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=3038693&pOrgNr=14189, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=3038227&pOrgNr=14189, https://www.cit.tum.de/en/cit/studies/degree-programs/bachelor-information-engineering/elective-modules/#c2556, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=3038689&pOrgNr=14189, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=3038487&pOrgNr=14189, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=3038805&pOrgNr=14189, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=3038216&pOrgNr=14189, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=3038212&pOrgNr=14189, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=3038797&pOrgNr=14189, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=3038572&pOrgNr=14189, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=3038809&pOrgNr=14189, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=3038801&pOrgNr=14189, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=3038190&pOrgNr=14189, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=3038813&pOrgNr=14189, https://www.cit.tum.de/en/cit/studies/degree-programs/bachelor-information-engineering/elective-modules/#c2557, https://www.cit.tum.de/en/cit/studies/degree-programs/bachelor-information-engineering/elective-modules/#c2559, https://www.cit.tum.de/en/cit/studies/degree-programs/bachelor-information-engineering/elective-modules/#c2556, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=3044822&pOrgNr=14189, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=3044763&pOrgNr=14189, https://www.cit.tum.de/en/cit/studies/degree-programs/bachelor-information-engineering/elective-modules/#c2557, https://www.cit.tum.de/en/cit/studies/degree-programs/bachelor-information-engineering/elective-modules/#c2559, https://www.cit.tum.de/en/cit/studies/degree-programs/bachelor-information-engineering/elective-modules/#c2556, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-information-engineering/studienplan/
+Degree chart
+----------------------------------------
+
+*) At the end of the first semester, at least two of the four introductory modules of the first semester indicated by * must be successfully completed. A repeat exam is held at the end of the winter semester/start of the summer semester. There is no resit option in the summer semester because these courses are only offered in the winter semester.
+Links relevant for questions related to : https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-information-engineering/studienplan/
+
+----------------------------------------
+

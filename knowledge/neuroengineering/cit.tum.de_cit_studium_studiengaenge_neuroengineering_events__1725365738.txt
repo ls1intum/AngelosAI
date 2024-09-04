@@ -1,0 +1,640 @@
+https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+Events - Master Neuroengineering - TUM - TUM School of Computation, Information and Technology
+
+Diese Seite ist nur auf Englisch verfügbar, da die Unterrichtssprache Englisch ist und wir für diesen Studiengang keinen Deutschnachweis fordern.
+Links relevant for questions related to : https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+
+----------------------------------------
+
+MSNE Events and Guest Talks
+MSNE Events and Guest Talks
+The MSNE program is organizing events and invited presentations open to students, staff, and members of the public. Members of the Elite Network of Bavaria are especially invited to this events. Attendance is free.
+Links relevant for questions related to MSNE Events and Guest Talks: https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+MSNE Events and Guest Talks
+----------------------------------------
+
+Upcoming Events - Save the Date!
+Upcoming Events - Save the Date!
+Links relevant for questions related to Upcoming Events - Save the Date!: https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+Upcoming Events - Save the Date!
+----------------------------------------
+
+MSNE Project Week (October 9-11,2024)
+MSNE Project Week (October 9-11,2024)
+We are currently planning the "MSNE Project Week" event in 2024.
+This week is planned to be a combination of talks, workshops, lab tours and social events to encourage the onboarding of our new batch of MSNE students.
+Contact for further questions is msne(at)ei.tum.de
+Links relevant for questions related to MSNE Project Week (October 9-11,2024): https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/#, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+MSNE Project Week (October 9-11,2024)
+----------------------------------------
+
+Archived Guest Talks
+Archived Guest Talks
+Links relevant for questions related to Archived Guest Talks: https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+Archived Guest Talks
+----------------------------------------
+
+Dr. Martin Bleichner: Relating Soundscapes and Neural Data in Everyday Life: Challenges and Innovations in Capturing and Using Neural Activity Beyond the Lab (July 16th 2024, 17:30 h, room N1135)
+Dr. Martin Bleichner: Relating Soundscapes and Neural Data in Everyday Life: Challenges and Innovations in Capturing and Using Neural Activity Beyond the Lab (July 16th 2024, 17:30 h, room N1135)
+MSNE Guest Talk, hosted by MSNE Student Adrian Dendorfer
+Guest talk by: Dr. Martin Bleichner from University of Oldenburg
+We are excited to welcome Dr. Martin Bleichner as our next speaker in the MSNE guest talk series. Dr. Bleichner, a distinguished researcher in cognitive neuroscience, worked as postdoctoral researcher in the "Excellence Cluster Hearing4All," where he played a key role in developing the cEEGrid, an ear-centered mobile EEG system.  In 2019, he was awarded the prestigious Emmy Noether Fellowship and now leads the "Neurophysiology of Everyday Life" research group at the University of Oldenburg, Germany. His current work focuses on perception-based noise dosimetry and using mobile (ear) EEG to study neural activity in real-world settings, emphasizing long-term temporal dynamics and auditory perception. His talk, "Relating Soundscapes and Neural Data in Everyday Life: Challenges and Innovations in Capturing and Using Neural Activity Beyond the Lab," will explore innovative methods for studying neural activity in real-world settings.
+Date & Time: July 16th, 5:30 - 7:00 PM
+Location: TUM Munich Campus, Room N1135
+Register here: Registration Form (Please register by Sunday evening for snack planning)
+Abstract and Bio (PDF)
+Links relevant for questions related to Dr. Martin Bleichner: Relating Soundscapes and Neural Data in Everyday Life: Challenges and Innovations in Capturing and Using Neural Activity Beyond the Lab (July 16th 2024, 17:30 h, room N1135): https://nav.tum.de/room/0101.01.135, https://forms.gle/Gvj6s3vrNtUTVdit5, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Neuroengineering/Events_MSNE/Bleichner-Titel_Absract_Bio.pdf, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+Dr. Martin Bleichner: Relating Soundscapes and Neural Data in Everyday Life: Challenges and Innovations in Capturing and Using Neural Activity Beyond the Lab (July 16th 2024, 17:30 h, room N1135)
+----------------------------------------
+
+Mentalab (April 30th 2024, 17:30 h, room N1135)
+Mentalab (April 30th 2024, 17:30 h, room N1135)
+Invitation to Guest Talk: Mentalab GmbH (Alex Platt and Sebastian Herberger)
+https://mentalab.com/
+Date and Place: Tuesday, April 30th, 17:30 h at Munich campus in room N1135 (https://nav.tum.de/room/0101.01.135)
+Mentalab GmbH develops state-of-the-art EEG technology. Their key product, Mentalab Explore, is an EEG amplifier that has been sold and used for research world-wide. Since its inception in 2017, Mentalab Explore has been used at institutes including Harvard, Stanford, and IIT, as well as closer to home at TUM and Charite. The amplifier, and its associated software, has experienced several iterations. The latest amplifier, Explore Pro is scheduled for release later this year. With each iteration comes a host of technological, scientific and business insights that the speakers look to present. These include: difficulties in developing low-latency, high-bandwidth EEG, signal noise reduction, component and integration testing, GUI and backend software development, research questions and sales experiences. The speakers will also address how neuroengineers fit into the wider biosignal economy.
+Links relevant for questions related to Mentalab (April 30th 2024, 17:30 h, room N1135): https://mentalab.com/, https://nav.tum.de/room/0101.01.135, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+Mentalab (April 30th 2024, 17:30 h, room N1135)
+----------------------------------------
+
+Dr. Xinyan Tracy Cui (Ph.D.): Materials Strategies towards the Chronic and Multimodal Neural Interfaces (March 25th 2024, 10 A.M., N1135 and zoom)
+Dr. Xinyan Tracy Cui (Ph.D.): Materials Strategies towards the Chronic and Multimodal Neural Interfaces (March 25th 2024, 10 A.M., N1135 and zoom)
+March 25th 2024 from 10-11 A.M.
+The talk will be hosted in N1135 in the downtown campus. Snacks/coffee will be provided, so if you plan to attend in person, please register  here  by March 21st. A hybrid option is also available (zoom link)
+Title: Materials strategies towards the chronic and multimodal neural interfaces
+Abstract: Microelectrode array (MEA) devices, placed in the nervous system to record and modulate neuroactivity have demonstrated success in neuroscience research and neural prosthesis applications. Functionalizing the microelectrode sites on MEAs to enable neurochemical sensing and drug delivery adds additional dimensions of information exchange and presents tremendous potential for understanding neural circuits and treating neurological diseases. In this talk, I will introduce the methods by which we enable chemical sensing and delivery from MEAs. By incorporating nanocarbon into the conducting polymer electrode coating, we achieved direct detection of electroactive species such as dopamine and serotonin. By immobilizing enzymes or aptamers on nanostructured electrodes, we achieved multisite detection of glutamate, GABA, and cocaine. By incorporating nanocarriers into conducting polymer coating, we enabled on-demand drug delivery. We demonstrated in vivo multisite and multiple analyte detection or neurotransmitter delivery along with neural recording from our multimodal neural probes. To overcome the challenges in the chronic neural interface, we use quantitative histology, explant analysis, and 2-photon imaging to uncover the mechanism of sensing/recording performance degradation and reveal biofouling, inflammatory host response, as well as material degradations. We use several bioengineering strategies to minimize these failure modes.  First, materials and devices that mimic the mechanical properties of the neural tissue have been shown to significantly improve device-tissue integration. Secondly, biomimetic coatings and drug delivery have been applied to reduce biofouling, sensor degradation, and inflammatory responses. These approaches may be combined to achieve long-term and high-fidelity multimodal neural interfacing.
+Biography:
+Dr. Tracy Cui is the William Kepler Whiteford Professor of Bioengineering at the University of Pittsburgh.  She earned her Ph.D. in Macromolecular Science and Engineering from the University of Michigan. She works in the field of neural engineering with special focuses on neural electrode-tissue interface, neural tissue engineering, drug delivery, and biosensors.  She has an H index of 62 with over 13,000 citations and 7 patents. Dr. Cui has won numerous awards, including the 2016 Fellow of the American Institute of Medical and Biological Engineering, the 2015 Carnegie Science Emerging Female Scientist Award, the 2008 NSF Career Award, and the 2005 Wallace Coulter Translational Research Career Award.
+Links relevant for questions related to Dr. Xinyan Tracy Cui (Ph.D.): Materials Strategies towards the Chronic and Multimodal Neural Interfaces (March 25th 2024, 10 A.M., N1135 and zoom): https://www.ph.tum.de/about/visit/roomfinder/?room=0101.01.135&language=de, https://terminplaner6.dfn.de/en/e/ab44775bf3358743c8de2af3928df0e8-639837, https://tum-conf.zoom-x.de/j/65615633990?pwd=YktlaVVCQXNWWm5YQlUzc2RScFhsZz09, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+Dr. Xinyan Tracy Cui (Ph.D.): Materials Strategies towards the Chronic and Multimodal Neural Interfaces (March 25th 2024, 10 A.M., N1135 and zoom)
+----------------------------------------
+
+Georgetown University - Center for Neuroengineering:  Talk by Prof. Richard Andersen (Mar 8th 2024, 10 PM CET, Online)
+Georgetown University - Center for Neuroengineering:  Talk by Prof. Richard Andersen (Mar 8th 2024, 10 PM CET, Online)
+Students of TUM MSNE are cordially invitied to join the speaker series at Georgetown University:
+Prof. Richard Andersen (California Institute of Technology) on Brain Machine Interfaces.
+Mar 8th 2024, 10 PM CET, Online
+Title and Abstract:
+Unlocking movement: helping paralyzed people with brain-machine interfaces
+https://cne.georgetown.edu/unlocking-movement-helping-paralyzed-people-with-brain-machine-interfaces/
+Registration:
+Last Update Mar 1st 2024
+Links relevant for questions related to Georgetown University - Center for Neuroengineering:  Talk by Prof. Richard Andersen (Mar 8th 2024, 10 PM CET, Online): https://cne.georgetown.edu/unlocking-movement-helping-paralyzed-people-with-brain-machine-interfaces/, https://www.eventbrite.com/e/cne-distinguished-lecture-series-with-prof-richard-andersen-phd-tickets-840286779377?aff=oddtdtcreator, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+Georgetown University - Center for Neuroengineering:  Talk by Prof. Richard Andersen (Mar 8th 2024, 10 PM CET, Online)
+----------------------------------------
+
+Georgetown University - Center for Neuroengineering:  Talk by Prof. Sara Goering (Feb 21st 2024, 10 PM CET, Online)
+Georgetown University - Center for Neuroengineering:  Talk by Prof. Sara Goering (Feb 21st 2024, 10 PM CET, Online)
+Students of TUM MSNE are cordially invitied to join the speaker series at Georgetown University.
+Prof. Sara Goering
+Flyer
+registration for MSNE students: https://www.eventbrite.com/e/cne-speaker-series-with-sara-goering-tickets-795551264247
+Seminar title : Ethics integration in neuroscience and neurotechnology research: lessons learned
+Feb 21st 2024 - 4 PM EDT (-> 10 PM CET), 2 hours.
+Login Data on request (msne@ei.tum.de)
+The BRAIN Initiative encourages attention to ethical issues in neuroscientific and neurotechnology research through its funding mechanisms. But what does successful integration of ethics work look like in the context of such research? This talk addresses some of the methodologies of integration, the valuable content that can arise from such integration efforts, and considerations for how to measure the success of ethics integration.
+Sara Goering is Professor and Chair of the Department of Philosophy at the University of Washington, Seattle, where she also works in the Program on Ethics and the Disability Studies Program. For over ten years, she co-led the ethics research group at UW’s Center for Neurotechnology.
+Links relevant for questions related to Georgetown University - Center for Neuroengineering:  Talk by Prof. Sara Goering (Feb 21st 2024, 10 PM CET, Online): https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Neuroengineering/Events_MSNE/Georgetown-Flyer.png, https://www.eventbrite.com/e/cne-speaker-series-with-sara-goering-tickets-795551264247, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+Georgetown University - Center for Neuroengineering:  Talk by Prof. Sara Goering (Feb 21st 2024, 10 PM CET, Online)
+----------------------------------------
+
+Greta Preatoni (PhD): 16th Jan 2024 - 6:30 p.m.
+Greta Preatoni (PhD): 16th Jan 2024 - 6:30 p.m.
+MSNE Guest Talk, hosted by MSNE Student Karahan Yilmazer
+We are thrilled to welcome Dr. Greta Preatoni as the next speaker in our MSNE guest talk series. Dr. Preatoni, an alumna of the Neuroengineering Lab at ETH Zurich under Prof. Dr. Stanisa Raspopovic, has not only excelled in academia but also in the entrepreneurial world. She is currently a postdoctoral researcher in the Neuroengineering Lab, where her focus remains on cutting-edge neuroengineering.
+In addition to her academic pursuits, Dr. Preatoni has taken an impressive leap into entrepreneurship as the CEO and co-founder of MYNERVA. Her company is at the forefront of developing innovative, non-invasive solutions for diabetic neuropathy patients, aiming to alleviate nerve pain and reduce the risk of falls. This remarkable work has earned her a well-deserved spot in the Forbes 30 Under 30 list.
+In her upcoming talk, Dr. Preatoni will share valuable insights from her research journey and entrepreneurial ventures. Mark your calendars and join us for an inspiring session that bridges the gap between academic research and industry application. Don't miss the opportunity to engage with Dr. Preatoni and have your most burning questions answered.
+Flyer (PDF)
+Zoom link:
+Karahan Yilmazer is inviting you to a scheduled Zoom meeting.  Join Zoom Meeting https://tum-conf.zoom-x.de/j/61307505767?pwd=c28vZ25VSEsvc1ZZaFpHeWxJbE52QT09  Meeting ID: 613 0750 5767 Passcode: 646788
+Links relevant for questions related to Greta Preatoni (PhD): 16th Jan 2024 - 6:30 p.m.: https://www.mynervamedical.com/, https://www.forbes.com/profile/greta-preatoni/, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Neuroengineering/Events_MSNE/MSNE_Guest_Talk_-_Greta_Preatoni__Munich_.pdf, https://www.google.com/url?q=https://tum-conf.zoom-x.de/j/61307505767?pwd%3Dc28vZ25VSEsvc1ZZaFpHeWxJbE52QT09&sa=D&source=calendar&usd=2&usg=AOvVaw3Zr0UV_iYPvnn4EGH_dSi7, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+Greta Preatoni (PhD): 16th Jan 2024 - 6:30 p.m.
+----------------------------------------
+
+Prof. Agnieszka Wykowska, Title Human Cognition in Human-Robot Interaction (Nov 7th 2023 - 6:30 PM)
+Prof. Agnieszka Wykowska, Title Human Cognition in Human-Robot Interaction (Nov 7th 2023 - 6:30 PM)
+Speaker:
+https://www.ias.tum.de/ias/wykowska-agnieszka/
+https://www.iit.it/people-details/-/people/agnieszka-wykowska
+Host:
+Prof. Dr. Gordon Cheng
+Date and Venue:
+November 7th, 6.30 pm
+Room N1135  (TUM, Theresienstrasse 90, Gebäude N1, 80333 München) https://www.ph.tum.de/about/visit/roomfinder/?room=0101.01.135&language=de
+Title: Human Cognition in Human-Robot Interaction
+Abstract: As modern technology advances, we are designing increasingly sophisticated tools to support and assist humans. However, it is crucial to not only focus on the technology, but also address the mechanisms of human cognition during the use of the technology. It is those mechanisms that will eventually determine whether the technology is efficacious and well accepted by users.
+In my lab, we study the mechanisms of human cognition in interaction between humans and humanoid robots. With cognitive neuroscience methods, we seek to understand how attention operates during collaborative tasks with the robots, how the human users attune to the robot during joint action, whether they experience sense of agency when teleoperating the robot and sense of joint of agency when they are engaged in a shared task with the robot. In this talk, I will present results from my lab related to the above topics that have been obtained with the use of cognitive neuroscience methods (EEG and eye tracking) in human-humanoid interaction protocols. I will then discuss how these research questions (and respective findings) can be translated from human-humanoid interaction to Neuroengineering.
+Last update: Nov 6 2023
+Links relevant for questions related to Prof. Agnieszka Wykowska, Title Human Cognition in Human-Robot Interaction (Nov 7th 2023 - 6:30 PM): https://www.ias.tum.de/ias/wykowska-agnieszka/, https://www.iit.it/people-details/-/people/agnieszka-wykowska, https://www.ph.tum.de/about/visit/roomfinder/?room=0101.01.135&language=de, https://www.ph.tum.de/about/visit/roomfinder/?room=0101.01.135&language=de, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+Prof. Agnieszka Wykowska, Title Human Cognition in Human-Robot Interaction (Nov 7th 2023 - 6:30 PM)
+----------------------------------------
+
+Prof. Peter Feys: Cerebellar upper limb tremor and gait ataxia: a behavioural, neural and rehabilitation perspective (Nov 16th 2023 - 6:00 PM)
+Prof. Peter Feys: Cerebellar upper limb tremor and gait ataxia: a behavioural, neural and rehabilitation perspective (Nov 16th 2023 - 6:00 PM)
+MSNE Guest talk / Seminar
+Speaker: Prof Peter Feys (Faculty of Rehabilitation Sciences, REVAL Rehabilitation research center, UHasselt),  Neurorehabilitation
+Date and Time: Nov 16th 2023 - 6:00 PM Venue: Room N1135 - Theresienstrasse 90 - TUM Main Campus
+Host: Natalia Paredes Acuna @ Institute for Cognitive Systems (Prof. Gordon Cheng)
+Cerebellar upper limb tremor and gait ataxia: a behavioural, neural and rehabilitation perspective
+- Proprioceptive and visuomotor control in persons with intention tremor in persons with MS
+- Coupling steps to music and metronomes in persons with cerebellar impairments: behaviour, neural entrainment and gait
+Download Extended Seminar Description (PDF)
+Bio: Prof Peter Feys is a full professor in neurological rehabilitation and dean of Faculty of Rehabilitation Sciences at University of Hasselt. His inter-disciplinary research is focused on the assessment and rehabilitation for gait and upper limb function in predominantly persons with neurological conditions. It comprises investigations of motor fatigability, music-based entrainment and sonification, upper limb training, cognitive-motor interference, technology-supported training, and community self-directed training. Neuroimaging is performed to understand the impact of interventions on neural function and structure. The research is mostly performed in persons with Multiple sclerosis and secondary stroke and CP. Peter Feys has published over 145 peer- reviewed articles in esteemed international clinical neurological, imaging, and rehabilitation journals. Another particular interest is contributing to the establishment of large databases that contain MS rehabilitation data besides medical and lifestyle information, specifically the MSDATACONNECT initiative
+Last update: Nov 8th 2023
+Links relevant for questions related to Prof. Peter Feys: Cerebellar upper limb tremor and gait ataxia: a behavioural, neural and rehabilitation perspective (Nov 16th 2023 - 6:00 PM): https://www.ph.tum.de/about/visit/roomfinder/?room=0101.01.135&language=de, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Neuroengineering/Events_MSNE/MSNE-Seminar-Nov16-PeterFeys.pdf, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+Prof. Peter Feys: Cerebellar upper limb tremor and gait ataxia: a behavioural, neural and rehabilitation perspective (Nov 16th 2023 - 6:00 PM)
+----------------------------------------
+
+Tamara Gerbert: Founding a company in Neurotech - Brightmind.AI's journey from idea to MVP undergoing clinical studies  (Nov 21st 2023 - 6:30 PM - room N1135)
+Tamara Gerbert: Founding a company in Neurotech - Brightmind.AI's journey from idea to MVP undergoing clinical studies  (Nov 21st 2023 - 6:30 PM - room N1135)
+Nov 21st 2023 - 6:30 PM - room N1135 - no registration required
+MSNE Guest talk
+Title: Founding a company in Neurotech – Brightmind.AI’s journey from idea to MVP undergoing clinical studies
+Bio Tamara Gerbert, Co-founder & Managing Director of Brightmind.AI, has conducted research in Neuroscience at 5 world-leading research institutions leveraging closed-loop non-invasive brain stimulation, real-time EEG preprocessing, MRI data analysis and improving cognition. She has applied AI to successfully predict several neurological conditions using computer vision & deep reinforcement learning. Tamara holds an MRes in Neuroengineering from Imperial College London and a BSc from King’s College London.
+Abstract Brightmind.AI, founded in 2022, has brought its venture from 0 to clinical readiness in record time. From idea to investment, building a team, developing a prototype and setting up the first clinical trial - Tamara Gerbert will walk you through her personal journey as a Founder with recommendations to everyone with entrepreneurial spirit. Furthermore, Tamara will introduce Brightmind.AI's vision and roadmap of bringing clinically proven, self-learning, personalized non-invasive brain stimulation to everyday life.
+brightmind.ai
+Last update: Nov 20th 2023
+Links relevant for questions related to Tamara Gerbert: Founding a company in Neurotech - Brightmind.AI's journey from idea to MVP undergoing clinical studies  (Nov 21st 2023 - 6:30 PM - room N1135): https://www.ph.tum.de/about/visit/roomfinder/?room=0101.01.135&language=de, https://brightmind.ai/, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+Tamara Gerbert: Founding a company in Neurotech - Brightmind.AI's journey from idea to MVP undergoing clinical studies  (Nov 21st 2023 - 6:30 PM - room N1135)
+----------------------------------------
+
+MSNE Project Week (October 10-12, 2023)
+MSNE Project Week (October 10-12, 2023)
+We are currently planning the third "MSNE Project Week" event.
+This week is planned to be a combination of talks, workshops, discussions, lab tours and social events to encourage the onboarding of our new batch of MSNE students, in combination with workshops and a hackathon for sophomore students. One goal is to bring together bright minds to give talks that are idea-focused and on a wide range of subjects to foster learning, inspiration, and wonder. In addition, we aim to provoke conversations that matter in the field of Neuroengineering. On top of that, visiting and seeing the labs where actual research is happening will considerably contribute to our mission. This will also profoundly connect MSNE students with the topics of Neuroengineering.
+Contact for further questions is msne@ei.tum.de
+Links relevant for questions related to MSNE Project Week (October 10-12, 2023): https://www.ei.tum.de/msne@ei.tum.de, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+MSNE Project Week (October 10-12, 2023)
+----------------------------------------
+
+Workshop on Neuromorphic Computing (Oct 10 & 11 2023)
+Workshop on Neuromorphic Computing (Oct 10 & 11 2023)
+
+A joined TUM IAS and ENB Master Neuroengineering Event
+Workshop on Neuromorphic Computing (Oct 10 & 11 2023) > A joined TUM IAS and ENB Master Neuroengineering Event
+Registration required -> Registration Website
+The two-day workshop on Neuromorphic Computing provides an immersive platform for researchers, experts, and enthusiasts to explore cutting-edge advancements in neuromorphic neural systems, and sensors. Day 1 includes talks on Neuromorphic Systems, and Neuromorphic Hardware and Algorithms, followed by a stimulating panel discussion. Day 2 features a keynote on Neural Interfaces, with talks on Sensory Modeling and Rehabilitation. Interactive poster sessions and lab tours offer hands-on experiences and collaborative opportunities, making the workshop a knowledge-rich environment to spark inspiration and foster advancements in neuromorphic computing.
+MSNE Project Week (Oct 10-12) and Workshop on Neuromorphic Computing (Oct 10-11) are synchronizing their schedules, allowing target audience the full experience.
+Contact for further questions is Ms. Natalia Paredes ( natalia.paredes@tum.de )
+Venues:
+- Day 1: TUM Campus Munich – Therisianum Lecture Hall
+- Day 2: Garching – IMETUM Lecture Hall
+Links relevant for questions related to Workshop on Neuromorphic Computing (Oct 10 & 11 2023): https://wiki.tum.de/pages/viewpage.action?pageId=211749090, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+Workshop on Neuromorphic Computing (Oct 10 & 11 2023)
+----------------------------------------
+
+Neurotechnology Seminar - by neuroTUM Student Club (June 27th 2023 - 17:00 CEST)
+Neurotechnology Seminar - by neuroTUM Student Club (June 27th 2023 - 17:00 CEST)
+Program Flyer (PDF Download)
+Date and Venue: June 27th 2023, 5 PM at TranslaTUM (<-- !!!  Venue and Start Time changed !!!)
+Registration required: https://forms.gle/tmfjxAhaNNT55pft9
+Last update: May 30th 2023
+Links relevant for questions related to Neurotechnology Seminar - by neuroTUM Student Club (June 27th 2023 - 17:00 CEST): https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Neuroengineering/FlyerNeurotum.pdf, https://forms.gle/tmfjxAhaNNT55pft9, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+Neurotechnology Seminar - by neuroTUM Student Club (June 27th 2023 - 17:00 CEST)
+----------------------------------------
+
+Prof. Jordan Green: Polymeric Nanocarriers for Personalized Genetic Medicine (June 26th 2023, 09:30 AM CEST)
+Prof. Jordan Green: Polymeric Nanocarriers for Personalized Genetic Medicine (June 26th 2023, 09:30 AM CEST)
+MSNE Guest talk by Prof. Jordan Green
+A MSNE talk hosted by Prof. Kristen Kozielski Date and Venue: June 26th 2023, 9.30 AM N1135
+Registration required: https://wiki.tum.de/display/eifak/MSNE+Guest+Talk+-+Prof.+Jordan+Green
+Speaker: Jordan J. Green, Ph.D. Johns Hopkins University School of Medicine
+Title: Polymeric Nanocarriers for Personalized Genetic Medicine
+Abstract: Biodegradable polymeric nanoparticles can be engineered for intracellular delivery and cellular engineering, leading to new paradigms for personalized genetic medicine. Libraries of biodegradable polymeric nanoparticles were constructed and screened for the safe and effective intracellular delivery of DNA, miRNA, siRNA, and proteins. Differential polymer structure was found to significantly increase transfection efficacy and enable long-term in vivo gene expression. Tuning biomaterial structure also enables cell-type specificity of nanoparticles in a range of cell types.  Applications will be shown for non-viral ocular gene therapy, cancer stem cell reprogramming, gene editing, and immunotherapy.  These safe and effective biodegradable nanoparticles are promising as enabling technology to treat diverse human diseases.
+Bio: Dr. Jordan J. Green is a Professor of Biomedical Engineering, Ophthalmology, Neurosurgery, Oncology, Materials Science & Engineering, and Chemical & Biomolecular Engineering at the Johns Hopkins University School of Medicine. He is the Vice Chair for Research and Translation in Biomedical Engineering and is the former Director of the Biomedical Engineering Undergraduate Program at JHU. Dr. Green is also the founding Associate Director of the Translational Tissue Engineering Center and the founding Associate Director of Translational Immunoengineering Center at JHU. Dr. Green received his B.S. in Chemical Engineering and in Biomedical Engineering from Carnegie Mellon University in 2003 and completed his Ph.D. in Biological Engineering from MIT. Subsequently, Dr. Green was a postdoctoral associate at MIT from 2007-2008. Dr. Green was the founding CEO of the biotech company AsclepiX Therapeutics and currently serves as a member of the Board of Directors. He also co-founded and/or serves on the board of five other biotechnology companies. He is a Fellow of the National Academy of Inventors, the Biomedical Engineering Society, the American Institute for Medical and Biological Engineering, and the Controlled Release Society. He is also an Associate Editor at Science Advances and a standing member of the NIH Drug and Biologic Therapeutic Delivery (DBTD) study section. His work has resulted in the publication of over 150 scientific papers, 86 issued or pending patents, and 130 invited talks, and he has received numerous awards including the AIChE Colburn Award, the BMES Rita Schaffer Award, the Presidential Early Career Award for Scientists and Engineers, Popular Science’s Brilliant Ten, and was a National Academy of Medicine Emerging Leader Scholar in Health & Medicine. Dr. Green and his lab are innovating gene therapies, immunotherapies, and cell therapies to advance medicine.
+Last update: June13th 2023
+Links relevant for questions related to Prof. Jordan Green: Polymeric Nanocarriers for Personalized Genetic Medicine (June 26th 2023, 09:30 AM CEST): https://www.hopkinsmedicine.org/profiles/details/jordan-green, https://portal.mytum.de/campus/roomfinder/roomfinder_viewmap?mapid=68&roomid=N1135@0101, https://wiki.tum.de/display/eifak/MSNE+Guest+Talk+-+Prof.+Jordan+Green, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+Prof. Jordan Green: Polymeric Nanocarriers for Personalized Genetic Medicine (June 26th 2023, 09:30 AM CEST)
+----------------------------------------
+
+Prof. Reza Shadmehr: Neural computations in the cerebellar cortex during control of a movement (June 6th 2023, 18:00 CEST)
+Prof. Reza Shadmehr: Neural computations in the cerebellar cortex during control of a movement (June 6th 2023, 18:00 CEST)
+MSNE Guest talk by Prof. Reza Shadmehr
+A MSNE talk hosted by MSNE Student Mohsen Rastegari.  Prof. Shadmehr kindly agreed to interact with MSNE students on the upcoming MSNE Student Retreat. Eextending the audience beyond this student retreat, we are announcing a talk at TUM, open for the scientific public:
+Registration required: https://wiki.tum.de/display/eifak/MSNE+Guest+Talk+-+Prof.+Reza+Shadmehr  Date and Venue: June 6th 2023, 18:00 CEST in room N1135
+Title: Neural computations in the cerebellar cortex during control of a movement
+Abstract: Damage to the cerebellum typically causes dysmetria, affecting endpoint accuracy. What is the cerebellum computing that is so important for stopping a movement? In the marmoset, we have been studying saccadic eye movements, using silicon probes to quantify both the information that the cerebellar cortex receives via mossy fibers and climbing fibers, and the output it produces via Purkinje cells (P-cells). Our results suggest that the input encodes two different kinds of information: the goal of the movement in sensory coordinates, and the ongoing commands in motor coordinates. The output, as computed by populations of P-cells, produces a burst that rises analogous to predicting the real-time displacement of the eyes, and then suddenly and synchronously is inhibited when the eyes need to decelerate and stop. Thus, we speculate that the cerebellar cortex is computing in real-time the sensory consequences of the motor commands until it reaches a bound, as set by the desired goal of the movement, at which point the P-cells synchronously disinhibit the nucleus, thus stopping the movement.
+Bio: Reza Shadmehr was born in Tehran, Iran, and was fortunate to be allowed by his parents to immigrate to the United States when he was 14 years old. He was raised in Spokane, Washington by foster parents and attended Gonzaga University, earning a BS in Electrical Engineering. He was subsequently mentored in robotics at the University of Southern California by Michael Arbib, where he was an IBM Graduate Fellow, then was awarded a McDonnell-Pew Postdoctoral Fellowship to attend MIT, where he was mentored in computational neuroscience by Emilio Bizzi. After MIT, he joined the Johns Hopkins Biomedical Engineering Department, where he has remained his entire career. He has authored three books and is an elected Fellow of the AIMBE. His greatest accomplishment, however, has been mentoring students who have gone on to become good citizens and creative scientists.
+Last update: May 8th 2023
+Links relevant for questions related to Prof. Reza Shadmehr: Neural computations in the cerebellar cortex during control of a movement (June 6th 2023, 18:00 CEST): https://www.hopkinsmedicine.org/profiles/details/reza-shadmehr, https://wiki.tum.de/display/eifak/MSNE+Guest+Talk+-+Prof.+Reza+Shadmehr, https://portal.mytum.de/campus/roomfinder/roomfinder_viewmap?mapid=68&roomid=N1135@0101, https://neurotree.org/neurotree/tree.php?pid=309, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+Prof. Reza Shadmehr: Neural computations in the cerebellar cortex during control of a movement (June 6th 2023, 18:00 CEST)
+----------------------------------------
+
+Prof. Jun Tani: Exploring Robotic Minds (Workshop  23.5 & 24.5.2023)
+Prof. Jun Tani: Exploring Robotic Minds (Workshop  23.5 & 24.5.2023)
+Workshop Flyer (Download)
+Last update: May 16th 2023
+Links relevant for questions related to Prof. Jun Tani: Exploring Robotic Minds (Workshop  23.5 & 24.5.2023): https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Neuroengineering/flyer_jun_tani.pdf, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+Prof. Jun Tani: Exploring Robotic Minds (Workshop  23.5 & 24.5.2023)
+----------------------------------------
+
+Prof. Surjo Soekadar: Brain-Computer Interfaces for Neurorehabilitation and Beyond (April 18th 2023, 17:30 CEST)
+Prof. Surjo Soekadar: Brain-Computer Interfaces for Neurorehabilitation and Beyond (April 18th 2023, 17:30 CEST)
+MSNE Guest talk by Prof. Surjo Soekadar Date and Venue: April 18th 2023, 5.30 PM N1135
+Registration required -->  https://wiki.tum.de/display/eifak/MSNE+Guest+Talk+-+Prof.+Surjo+Soekadar
+Title: Brain-Computer Interfaces for Neurorehabilitation and Beyond
+Prof. Surjo Soekadar is Einstein professor of clinical neurotechnology at the Charité - Universitätsmedizin Berlin since 2018. After studying medicine in Mainz, Heidelberg and Baltimore and graduating with a doctorate in clinical neuropsychology, he worked as a physician at the university of Tübingen. In Tübingen, he was the head of the Applied Neurotechnology Lab from 2011 until 2018. His work is funded by the European Research Council and Prof. Soekadar has received several awards including the International BCI Research Award and the BIOMAG and NARSAD Young Investigator Awards.
+Prof. Soekadar’s research covers a large spectrum of neuroengineering. It ranges from assistive brain computer interfaces (BCIs) that enable quadriplegic patients to use their paralyzed extremities to the application of closed-loop brain stimulation in psychiatry. In their goal to treat neurological and psychiatric disorders, the clinical neurotechnology lab also explores the future of BCIs, like optically pumped magnetometers and quantum sensing. Prof. Soekadar’s talk will be an interesting mixture of the aforementioned topics including the ethical concerns surrounding the clinical approaches.
+A talk hosted by MSNE Student Sven Günther
+Last update: April. 5th 2023
+Links relevant for questions related to Prof. Surjo Soekadar: Brain-Computer Interfaces for Neurorehabilitation and Beyond (April 18th 2023, 17:30 CEST): https://psychiatrie-psychotherapie.charite.de/metas/person/person/address_detail/prof_dr_med_surjo_r_soekadar/, https://portal.mytum.de/campus/roomfinder/roomfinder_viewmap?mapid=68&roomid=N1135@0101, https://wiki.tum.de/display/eifak/MSNE+Guest+Talk+-+Prof.+Surjo+Soekadar, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+Prof. Surjo Soekadar: Brain-Computer Interfaces for Neurorehabilitation and Beyond (April 18th 2023, 17:30 CEST)
+----------------------------------------
+
+Dr. Esma Ismailova: "Organic bioelectronic devices in neural interfacing" (Feb 27th 2023, 16:00 CEST)
+Dr. Esma Ismailova: "Organic bioelectronic devices in neural interfacing" (Feb 27th 2023, 16:00 CEST)
+MSNE Guest talk by Dr. Esma Ismailova
+Title: Organic bioelectronic devices in neural interfacing  Date and Venue: February 27th 2023, 4.00 PM, hybrid event (online & in-person)  Venue: Room D00.003 at LMU - Fakultät für Biologie, Biozentrum - Großhaderner Str. 2 - 82152 Planegg-Martinsried and Online: Zoom credentials will be provided in the registration confirmation email.
+Registration required
+The talk is hosted by Prof. Anton Sirota.
+Abstract: In the past decade, there has been considerable interest in the development of Brain Computer Interface devices for basic research as well as for the diagnosis and treatment of numerous diseases. Since a key readout of brain function and dysfunction is an electrical activity, recording these signals is instrumental for many of these devices. Conducting polymers (CPs) have demonstrated the unique ability to conduct ions in addition to electronic charge carriers. Their integration allows for a more intimate coupling at the interface between the traditional microelectronics and biological tissue, which relies primarily on ion-based signaling. The “soft” nature of CPs results in better mechanical compatibility with biological environments than inorganic electronic materials, and allows for their simple processing onto a variety of flexible substrates often used in biomedical implants. These properties are essential for developing new tools for neuroscience, as current technology relies on highly invasive, penetrating probes that induce neural tissue damage and degrade signal quality. During this talk, I will review our latest advances in applying highly conformal CP-based devices to record electrophysiological signals from the brain. I will introduce the different examples of my recent work, covering the development of novel devices for neural interfacing in deep and surface EEG, and the fundamental understanding of conducting materials processing and signal recording rational.
+Bio: Dr. Esma Ismailova is an Associate Professor in the Department of Bioelectronics (BEL) at the Centre Microélectronique de Provence of the Ecole Nationale Supérieure des Mines de Saint-Étienne, France. She received a Master’s Degree in Polymer Science and a PhD in Chemistry and Chemical Physics through an Industrial Fellowship with STMicroelectronics from the University of Strasbourg. Her PhD work consisted of new generation photoresists development for high-resolution photolithography in semiconductor manufacturing. She held a postdoctoral fellowship in the Laboratory for Organic Electronics at Cornell University, NY USA studying the interfaces between biological systems and electronics. She joined BEL department as a staff member working on the elaboration of microfabrication processes for soft neural implants based on organic electronic materials. During her career, Dr. Ismailova has initiated national and international projects to develop organic electronic interfaces with the human body to allow for multimodal health data collection essential in advancing next generation of personalized diagnostics and therapies. She is actively involved in projects including materials development for neural interfacing, wearable health monitoring, neuromorphic computing in data processing, as well as AI-guided device design.
+Last update: Feb 14th 2023
+Links relevant for questions related to Dr. Esma Ismailova: "Organic bioelectronic devices in neural interfacing" (Feb 27th 2023, 16:00 CEST): https://www.mines-stetienne.fr/en/research/centres-and-departments/department-of-bioelectronics-bel/, https://www.lmu.de/raumfinder/#/building/bw2970/map?room=297300003_, https://wiki.tum.de/pages/viewpage.action?pageId=211749090, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/#, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+Dr. Esma Ismailova: "Organic bioelectronic devices in neural interfacing" (Feb 27th 2023, 16:00 CEST)
+----------------------------------------
+
+Dr. Simon Nimpf: "Investigating the neural basis of magnetoreception in the pigeon" (Jan 24th 2023, 18:30 CEST)
+Dr. Simon Nimpf: "Investigating the neural basis of magnetoreception in the pigeon" (Jan 24th 2023, 18:30 CEST)
+MSNE Guest talk by Dr. Simon Nimpf  Date and Venue: January 24th 2023, 6.30 PM N1135
+The talk is hosted by MSNE team (msne(at)ei.tum.de)  Registration required
+Title: Investigating the neural basis of magnetoreception in the pigeon
+Abstract:
+The remarkable ability of animals to navigate over long distances is at least in part mediated by sensing the Earth’s magnetic field. Behavioral experiments on a large number of taxonomically diverse species support the existence of magnetoreceptive systems, however, the underlying sensorineural structures remain elusive. In the Keays lab we investigate where and how a magnetic stimulus is transduced into a neuronal impulse and how this information is integrated in the central nervous system of pigeons. Employing neuronal activity mapping, whole brain clearing and light sheet microscopy we show that exposing pigeons to rotating magnetic fields leads to increased activity in the brainstem vestibular nuclei, the dorsal thalamus and regions of the mesopallium and hippocampus of pigeons. These experiments provide evidence for a magnetosensory neuronal pathway originating in the pigeon vestibular system. Physical calculations, modeling and molecular ablation studies further support the hypothesis that magnetic fields might be detected by voltage sensitive ion channels in the vestibular system through a process called electromagnetic induction.
+Dr. Simon Nimpf
+Since Oct. 2021                      Post-doctoral researcher in the labs of Prof. David Keays and Prof. Laura Busse at the Ludwig-Maximilian-University Munich; Project: Visual circuits in pigeons 2015 - 2020                              PhD in the laboratory of David Keays at the Institute of Molecular Pathology (IMP), Vienna; Project: Neuronal basis of magnetoreception in pigeons 2012 - 2015                              Master’s in Molecular Biology with a focus on Molecular Medicine at the University of Vienna 2009 - 2012                              Bachelor’s in Microbiology and Genetics at the University of Vienna
+Last update: Dec.21th 2022
+Links relevant for questions related to Dr. Simon Nimpf: "Investigating the neural basis of magnetoreception in the pigeon" (Jan 24th 2023, 18:30 CEST): https://neuro.bio.lmu.de/members/sensory-neuroscience/nimpf_d/index.html, https://portal.mytum.de/campus/roomfinder/roomfinder_viewmap?mapid=68&roomid=N1135@0101, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/#, https://wiki.tum.de/display/eifak/MSNE+Guest+Talk+-+Dr.+Simon+Nimpf, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+Dr. Simon Nimpf: "Investigating the neural basis of magnetoreception in the pigeon" (Jan 24th 2023, 18:30 CEST)
+----------------------------------------
+
+MSNE Guest Talks (2016 - 2022)
+MSNE Guest Talks (2016 - 2022)
+Within 2016-2022, MSNE invited more than 30 Researchers for guest talks, workshops, and other form of interaction with MSNE Students and researchers. --> Talks, Abstracts and Bio of Guests 2016 - 2022 (PDF)
+Links relevant for questions related to MSNE Guest Talks (2016 - 2022): https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Neuroengineering/Events_MSNE/Archived-Events.pdf, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+MSNE Guest Talks (2016 - 2022)
+----------------------------------------
+
+Archived Events, Symposia, Excursions
+Archived Events, Symposia, Excursions
+Links relevant for questions related to Archived Events, Symposia, Excursions: https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+Archived Events, Symposia, Excursions
+----------------------------------------
+
+Neuroengineering Summer School between TUM and Georgetown University: June 18th-June 21st 2024
+Neuroengineering Summer School between TUM and Georgetown University: June 18th-June 21st 2024
+The TUM-Georgetown Neuroengineering Summer School 2024 takes place in Munich from June 18th - June 21st. You can find detailed information about the summer school, the program and the registration link on the summer school website: https://sites.google.com/view/neuroengineering-summer-school/start
+Links relevant for questions related to Neuroengineering Summer School between TUM and Georgetown University: June 18th-June 21st 2024: https://sites.google.com/view/neuroengineering-summer-school/start, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+Neuroengineering Summer School between TUM and Georgetown University: June 18th-June 21st 2024
+----------------------------------------
+
+MSNE Retreat (May 17th  - May 20th 2024)
+MSNE Retreat (May 17th  - May 20th 2024)
+Event for MSNE Students in 2nd and 4th semester in Toblach, South Tirol.
+Links relevant for questions related to MSNE Retreat (May 17th  - May 20th 2024): https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+MSNE Retreat (May 17th  - May 20th 2024)
+----------------------------------------
+
+"Neurofutures" - Documentary (Global Premiere: April 18th, 20:00 CEST)
+"Neurofutures" - Documentary (Global Premiere: April 18th, 20:00 CEST)
+First public screening of documentary movie "Neurofutures". Download the Program Flyer
+Date and Venue:
+April 18th 2023, 8.00 PM N1179
+Last update: Mar. 9th 2023
+Links relevant for questions related to "Neurofutures" - Documentary (Global Premiere: April 18th, 20:00 CEST): https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Neuroengineering/Events_MSNE/Flyer-MSNE-Documentary.pdf, https://www.ph.tum.de/about/visit/roomfinder/?room=0101.02.179, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+"Neurofutures" - Documentary (Global Premiere: April 18th, 20:00 CEST)
+----------------------------------------
+
+MSNE Student Retreat (June 2023)
+MSNE Student Retreat (June 2023)
+June 8th-11th 2023 - Austria (Region Grossvenediger) - open for all MSNE students.  Program and registration information to be provided soon (--> email)
+Last update: May 4th 2023
+Links relevant for questions related to MSNE Student Retreat (June 2023): https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+MSNE Student Retreat (June 2023)
+----------------------------------------
+
+Elite Network of Bavaria FORUM on Neuroscience and Neuroengineering (March 23rd 2023) -  TUM Audimax (6 PM)
+Elite Network of Bavaria FORUM on Neuroscience and Neuroengineering (March 23rd 2023) -  TUM Audimax (6 PM)
+Download the Program Flyer
+Links relevant for questions related to Elite Network of Bavaria FORUM on Neuroscience and Neuroengineering (March 23rd 2023) -  TUM Audimax (6 PM): https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Neuroengineering/Events_MSNE/ENB-Forum-Neuroscience-Neuroengineering.pdf, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+Elite Network of Bavaria FORUM on Neuroscience and Neuroengineering (March 23rd 2023) -  TUM Audimax (6 PM)
+----------------------------------------
+
+Excursion to Brainlab AG (October 24th 2022 - 2PM)
+Excursion to Brainlab AG (October 24th 2022 - 2PM)
+MSNE Students already received invitations.
+Links relevant for questions related to Excursion to Brainlab AG (October 24th 2022 - 2PM): https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+Excursion to Brainlab AG (October 24th 2022 - 2PM)
+----------------------------------------
+
+2nd MSNE Project Week (October 12-14, 2022)
+2nd MSNE Project Week (October 12-14, 2022)
+The second "MSNE Project Week" is an in-person scientific event being curated by a group of MSNE students, for MSNE students and faculty members. This week is planned to be a combination of talks, workshops, discussions, lab tours and social events to encourage the onboarding of our new batch of MSNE students. One goal is to bring together bright minds to give talks that are idea-focused and on a wide range of subjects to foster learning, inspiration, and wonder. In addition, we aim to provoke conversations that matter in the field of Neuroengineering. On top of that, visiting and seeing the labs where actual research is happening will considerably contribute to our mission. This will also profoundly connect MSNE students with the topics of Neuroengineering.
+Venue for most events is room N1135 at TUM Main Campus.  Tentative Agenda (as of October 11th 2022, stay tuned for further updates)
+- Wednesday, October 12th 2022 	09:00: Intro and Welcome (Organisers team) 	09:10: Welcome (MSNE Program Director Prof. Kristen Kozielski) 	09:30 - 10:50 The MSNE Study Handbook - Part 1** (by MSNE Program Manager Florian Rattei) 	10:50 - 11:00 Short Break 	11:00 - 12:30 fMRI and system level brain activity (by PD Dr. Afra Wohlschläger) 	~12:30-13:30: Joined Lunch Break at TUM Canteen (no student card required for new students 	13:30               Scavenger Hunt and Get Together 	~end by 17:30
+- Thursday, October 13th 2022 	09:00- 10:30:  Student-Workshop on Basic Electronics (by MSNE Student Mohsen Rastegari, supported by NEL Team Prof. Wolfrum) 	10:30 - 10:45: Short Break 	10:45 - 12:15: Student-Workshop on Basic Python (by MSNE Student Ritika Gupta, supported by Team Prof. Portugues Peters 	12:15 - 13:30: Lunch break (students arrange in groups, not organised by MSNE team) 	13:30 - 15:30: Student-Workshop on Signal Processing Part 1* (by MSNE Student Runfeng Lyv, supported by BAI Team Prof. Hemmert) 	15:30 - 15:45 Short Break 	15:45 - 17:00 MSNE Students Q & A 	End ~ 17:00
+- Friday, October 14th 2022 	09:00 - 10:30: Lab Tour 1 	10:30 - 12:00: Lab Tour 2 	12:00 - 13:00: Lunch break (students arrange in groups, not organised by MSNE team) 	13:30 - 15:00: Computational models of brain development and learning (Prof. Julijana Gjorgieva) 	15:15 - 16:30: Talk "Learnable latent embeddings for joint behavioral and neural analysis" (Steffen Schneider***, MSNE Alumn) 	16:30 - 18:00: MSNE Alumni <-> MSNE Students Chat (coffee and snacks will be served)
+More details:
+Later... also part of MSNE Project Week:
+*   21.10.2022 - 14:00 - TBA : Student-Workshop on Signal Processing Part 2* (by MSNE Student Runfeng Lyv, supported by BAI Team Prof. Hemmert)     24.10.2022 - 14:00 - Late Afternoon: Excursion for MSNE 3rd (and 5th) Semester Students to Brainlab AG (Feldkirchen bei München, Public Transport) ** 19.10.2022 -  11:30-12:30 - N1135: The MSNE Study Handbook - Part 2*  (by MSNE Program Manager Florian Rattei)
+***  Steffen Schneider is an MSNE alumn and was part of the 1st batch to graduate from our master’s program. He is currently in the 3rd year of his PhD project "Adaptation & Robustness in Brains and Machines" in the ELLIS PhD & PostDoc program, which includes work on robust deployment of vision models and self-supervised learning for scientific data analysis. He is jointly advised by Matthias Bethge at the University of Tübingen and Mackenzie Mathis at EPFL. His work is supported by a Google PhD Fellowship in Computational Neuroscience. He has previously worked on multi-modal learning in vision transformers at Meta NYC, on self-learning and object centric representations at Amazon in Tübingen and on self-supervised representation learning for speech recognition at Facebook AI Research. Apart from his research, he is a strong supporter of exposing children to modern computer science topics early on during their school education, and is co-founder of the non-profit "KI macht Schule" which integrates AI and ML education into the highschool curriculum. Further information on this website.
+Closed event for MSNE -Students and MSNE Faculty only. No registration required.
+Save the date: Monday 17.10.2022: Welcome by TUM President
+Contact:
+Contact for further questions is msne@ei.tum.de
+Links relevant for questions related to 2nd MSNE Project Week (October 12-14, 2022): https://portal.mytum.de/campus/roomfinder/roomfinder_viewmap?mapid=12&roomid=N1135@0101, https://domainadaptation.org/batchnorm/, https://github.com/brendel-group/cl-ica, https://cebra.ai/, https://ki-macht-schule.de/, https://stes.io/, https://www.tum.de/aktuelles/veranstaltungen/welcometum, https://www.ei.tum.de/msne@ei.tum.de, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+2nd MSNE Project Week (October 12-14, 2022)
+----------------------------------------
+
+4th MSNE Retreat in Allgäu (2022)
+4th MSNE Retreat in Allgäu (2022)
+In 2022, after a pause due to the pandemic, students organized a 4-day scientific retreat, returning to Ofterschwang (Allgäu, Germany).
+More than 50 students joined, spanning several cohorts, supported by MSNE-Alumni Nogay Küpelioglu and Matthijs Pals, inviting scientic guests
+- Prof. Solaiman Shokur (EPFL, Lausanne)
+- Dr. Nataliya Kosmyna (MIT)
+- Dr. Henry Shelvin (Cambridge University)
+Links relevant for questions related to 4th MSNE Retreat in Allgäu (2022): https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+4th MSNE Retreat in Allgäu (2022)
+----------------------------------------
+
+6th Neuroengineering Symposium (May 16th, 2022)
+6th Neuroengineering Symposium (May 16th, 2022)
+The International Neuroengineering Symposium (2022) is an in-person scientific event on May 16th 2022 (9:30 - 13:30 CEST) organized by TUM, inviting all researchers and students interested in neuroengineering to meet and discuss recent developments with MSNE associated faculty and students of the Elite Network of Bavaria (ENB) Master Program in Neuroengineering (TUM).  Looking back to an event series that started in 2015, great attendance of researchers, many fruitful discussions, and a vivid research community are motivating us to continue with this event series. We will soon announce a detailed program agenda and a list of invited speakers. Second part of the symposium will be a poster exhibition by MSNE students.
+Save the date for the 6th MSNE Symposium: Monday, May 16th, 2022, 09:30-13:30 (CEST) Venue: Immatrikulationshalle der TUM (Room 0136, Arcisstrasse 21)
+Registration Website
+Program (PDF, including abstract & biographies)
+- 09:00 Arrival of Guests
+- 09:30 Welcome (Prof. Gordon Cheng & Prof. Kristen Kozielski  )
+Keynote Talks
+- 09:45 Flexible Adhesive Electronics for Electrophysiological Monitoring 	(Prof. Christopher J. Bettinger,  Carnegie Mellon University) 	Talk will be chaired by MSNE-Student Stefan Dvoretskii
+- 10:40 Neuromorphic Prosthesis - Inspired by Neuroscience, applied to Robotics/Prosthesis 	(Prof. Nitish V. Thakor, Johns Hopkins University) 	Talk will be chaired by MSNE-Student Maria Luna Ghanime
+- 11:35 Magnetoelectric nanomaterials for wireless neuronal modulation 	(Prof. Kristen Kozielski,  TUM) 	Talk will be chaired by MSNE-Stundet Xingying Chen
+MSNE Student Poster Exhibition          12:20 Introduction and Poster Exhibition, with snacks and drinks
+- Exploring Feature Extraction of Event-Based Data on Neuromorphic Hardware (Svea Meyer)
+- Real-time sharp wave detection and stimulation plugin  (Ahmed Almijbari)
+- Investigation of Cellular Mechanisms of Cognitive Flexibility in Mouse Prefrontal Cortex (Arij Briki)
+- Top-down modulation in canonical cortical circuits with inhibitory short-term plasticity (Felix Waitzmann)
+- E/I balance in Plastic Dendritic Recurrent Neural Networks (Bertram Fuchs)
+- Classifying zebrafish behaviour using Recursive Neural Networks (Nathan van Beelen)
+- A Pilot Study on Learning of Movement Mappings Using Inertial Sensors for Cursor Control (Onur Icin)
+- Source reconstruction methods for brain connectivity (Stefan Dvoretskii)
+- Implementing a template matching algorithm with SNNs on neuromorphic chip (Ayça Kepçe)
+- Automated pipeline for pre-processing EEG data (Erika Garza Ibarra)
+- Soft pneumatic hip exoskeleton for assisting human motion (Runfeng Lyv)
+- Basic Formations And Computations via Neuronal Assemblies (Mohamad Issa)
+- Parameterization of Worker Wellbeing in a Logistics Planning Context (Julia Balowski)
+- Effects of Semantic Context in Speech Understanding Through "Top-Down" or "Bottom-Up" Processes (Juan Daniel Galeano Otalvaro)
+- Machine learning for a cochlear implant stimulation strategy (Esteban Bullón Tarras)
+- ~ End of Neuroengineering Symposium approx. 13:30 ~ -
+Contact for further questions is msne@ei.tum.de   Students of TUM Elite Master Program in Biomedical  Neuroescience may also approach their program coordinators (-> master.mec.med@tum.de ) for further information regarding this symposium and interaction opportunities with MSNE students.
+Past neuroengineering events in this series:
+- Neuroengineering Symposium (March 11th, 2021)
+- Neuroengineering Symposium (April 21st, 2020)
+- Neuroengineering Matinee (Jan 16th, 2019)
+- Neuroengineering Networking Workshop 2018 (Apr 19th, 2018)
+- NeuroEngineering Networking Workshop 2015 (Jan 15th, 2015)
+Last Update: May 15th 2022
+Links relevant for questions related to 6th Neuroengineering Symposium (May 16th, 2022): https://portal.mytum.de/campus/roomfinder/roomfinder_viewmap?mapid=12&roomid=0136@0501, https://wiki.tum.de/pages/viewpage.action?pageId=473170930, https://www.ei.tum.de/fileadmin/tueifei/www/pdf/20220516-Neuroengineering-Symposium-Program_wb_2.pdf, https://www.professoren.tum.de/cheng-gordon, https://www.professoren.tum.de/kozielski-kristen, https://www.cmu.edu/bme/People/Faculty/profile/cbettinger.html, https://www.hopkinsmedicine.org/profiles/details/nitish-thakor, https://www.professoren.tum.de/kozielski-kristen, https://www.ei.tum.de/msne@ei.tum.de, https://www.ei.tum.de/master.mec.med@tum.de, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+6th Neuroengineering Symposium (May 16th, 2022)
+----------------------------------------
+
+MSNE Project Week (18-22 October, 2021)
+MSNE Project Week (18-22 October, 2021)
+
+MSNE Project Week (18-22 October, 2021)
+MSNE Project Week (18-22 October, 2021)
+The very first "MSNE Project Week" is a digital scientific event being curated by a group of seven MSNE students, for MSNE students and faculty members. This week is planned to be a combination of talks, workshops, discussions, lab tours and social events to encourage the onboarding of our new batch of MSNE students. One goal is to bring together bright minds to give talks that are idea-focused and on a wide range of subjects to foster learning, inspiration, and wonder. In addition, we aim to provoke conversations that matter in the field of Neuroengineering. On top of that, visiting and seeing the labs where actual research is happening will considerably contribute to our mission. This will also profoundly connect MSNE students with the topics of Neuroengineering.
+MSNE students, MSNE faculty and CoC Neuroengineering already received an invitation and registration link by email.
+Venue for most events is room N1135 at TUM Main Campus. Some events during the project week will additionally be streamed online (*). Some events during the project week will be online-only (**)  Tentative Agenda (as of October 11th 2021, still some event details "TBA")
+- Monday, October 18th 	09:00: Intro and Welcome (Organisers team) * 	09:10: Prof. Kristen Kozielski - Magnetoelectric nanomaterials for wireless neuronal modulation * 	10:15: Isabelle Hoxha: Anticipating under all circumstances: a story of neuroscience and mathematics * 	11:30: Joined Lunch Break at TUM Canteen 	13:00: Isabelle Hoxha: Combined analysis of brain and behavioral recordings (Hands-on Tutorial) 	End by ~ 17:00 	[17:00: Welcome@TUM by TUM President]
+- Tuesday, October 19th 	09:00: Marc Strotmann - Social and ethical concerns in Neuro-engineering * 	10:15: MSNE Study Handbook - Part II (Florian Rattei) ** (<- update: online only) 	11:30: Break / Free Time 	13:00: Dr. Yulia Sandamirskaya (Intel): Neuromorphic computing technology: from theory to applications  	14:00: Francisco Zurita: Electronics Tutorial 	End by ~ 17:00
+- Wednesday, October 20th 	~9:00: Lab Visit The Jacob Laboratory (at TUM Clinics, Prof. Simon Jacob) and PainLab Tour (Prof. Markus Ploner] 	11:30: Break / Free Time 	13:00: Scavenger Hunt (TUM Main Campus & Downtown Munich) 	End by ~ 17:00
+- Thursday, October 21st 	09:00: Presentation by Brainlab AG ** - Digital inhouse visit 	11:30: Break / Free Time 	13:00: Lab Visit Neuroelectronics (TUM Campus Garching, Prof. Bernhard Wolfrum) & 	           Lab Visit Bio-Inspired Information Processing (TUM Campus Garching, Prof. Werner Hemmert) 	End by ~ 15:00
+- Friday, October 22nd 	09:00: Steffen Schneider - Adaptation & Robustness of Computer Vision Models * 	10:00: MSNE Panel Discussion (Topic TBA) 	11:30: Break / Free Time 	13:00: Dr. Kathrin Kugler (The MathWorks): [Case Studies and Experiment] Accelerating discovery, innovation, development, and learning in Neuroengineering with MATLAB® and Simulink® 	14:30: Steffen Schneider: Introduction to Machine Learning Engineering for Researchers (Hands-On Tutorial) 	End by ~ 17:30
+Contact:
+Contact for further questions is msne@ei.tum.de
+Links relevant for questions related to MSNE Project Week (18-22 October, 2021): https://portal.mytum.de/campus/roomfinder/roomfinder_viewmap?mapid=12&roomid=N1135@0101, https://www.tum.de/die-tum/aktuelles/veranstaltungen/welcome-at-tum, https://www.tum.de/die-tum/aktuelles/veranstaltungen/welcome-at-tum], https://www.ei.tum.de/msne@ei.tum.de, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+MSNE Project Week (18-22 October, 2021)
+----------------------------------------
+
+5th Neuroengineering Symposium (Mar. 11th, 2021)
+5th Neuroengineering Symposium (Mar. 11th, 2021)
+
+Neuroengineering Symposium (March 11, 2021)
+Neuroengineering Symposium (March 11, 2021)
+The Neuroengineering Symposium 2021 is a digital scientific event on March 11th 2021 (9:30 - 12:00 CET) organized by TUM, inviting all researchers and students interested in neuroengineering to meet online and discuss recent developments with MSNE associated faculty and students of the ENB Elite Master Program in Neuroengineering (TUM).
+Looking back to an event series that started in 2015, great attendance of researchers, many fruitful discussions, and a vivid research community are motivating us to continue with this event series in challenging times, using digital streaming technologies. MSNE students will be pitching their latest research work in short pre-recorded video presentations.  On event day, students are happy to answer all your questions and discussions may start in a virtual poster exhibition, meeting live with students in zoom breakout rooms. We would like to encourage all our guests to contribute to this symposium and to watch the student presentations prior to the live event, identifying the set of topics guests are most interested in! During the live event, we will have 16 parallel breakout rooms (see agenda below), allowing our participants to attend at several breakout rooms.
+Link to Student Videos and Posters (Moodle Course, please use the guest login, password will be provided after your registration). Instructions and zoom login credentials will be provided to all registered symposium guests.
+Registration: Update March 11th 8:50 AM - We sent out login credentials. In case you did not receive login information (or: last minute registration): Please send an email to msne@ei.tum.de
+Registration is open until March 10th, 2021 - 23:59 (CET).  Tentative Agenda (pdf):
+- 09:30 Welcome by Prof. Gordon Cheng (Institute for Cognitive Systems, TU Munich)
+- 09:45 Invited Talk: Prof. Simon Jacob (Department of Neurosurgery, Klinikum rechts der Isar, TU Munich) 	"The Stuff of Thought: Investigating the Mechanisms of Cognition by Linking Neurotechnology and Neuromedicine" (Abstract)
+"The Stuff of Thought: Investigating the Mechanisms of Cognition by Linking Neurotechnology and Neuromedicine" (Abstract)
+- 10:30 Invited Talk: Prof. Jun Tani  (Okinawa Institute of Science and Technology, Japan) 	"Cognitive Neurorobotics Study Using Predictive Coding and Active Inference" (Abstract)
+10:30 Invited Talk: Prof. Jun Tani  (Okinawa Institute of Science and Technology, Japan) 	"Cognitive Neurorobotics Study Using Predictive Coding and Active Inference" (Abstract)
+- 11:15 - 12:00 Virtual Poster Exhibition (MSNE Students) 	Students posters and pre-recorded video teasers are available online (-> Link to videos and posters will be provided soon) 	Computational Neuroscience & Engineering 	Jin Lee    - Self-supervised learning on neural data 	Matthijs Pals -    Neuromorphic computing as a substrate for efficient path tracking and path planning 	Ashish Rao - Noise Quenching in the Stabilized Supralinear Network 	Florian Schoenleitner - Extending Tympanometry Based Hearing Diagnostics with Methods of Machine Learning 	Aishwarya Patel - Neural Circuits for Distinct locomotor behaviours in Drosophila larvae 	Pablo Ochoa De Eribe Delgado - Model describing a possible mechanism of auditory-motor sequence learning (study on human behavioural collected data 	Xingying Chen - Reinforcement learning model of sensorimotor adaptation 	 	Neuroimaging Methods and Data Analysis Techniques     	Pablo Sarricolea - Nanomaterial engineering for the synthesis of positive contrast agents in Magnetic Resonance Imaging 	Federico Puppo - Protocol for data acquisition and CNN training for LFM setup 	Margaret Lane - CNNs for Segmentation in Functional Ultrasound Imaging 	Eric Ceballos - Neural markers for the detection of intentional stance 	Orcun Centitas - Single-Image Multi-Scale Style Transfer with Generative Adversarial Networks 	Vladimir Budovkin - Implementing a pipeline for efficient access to experimental data 	 	Human-centered Engineering, Rehabilitation and Medical Research     	Rafael Javier Pérez Belizón - Simulated triphasic stimulation of Auditory Nerve Fibres 	Paula Fulton - Performance Comparison of Three EMG-controlled Supernumerary Robotic Finger Design Prototypes 	Lisa Held - A study that investigates alpha synchronizations during attention shifts in working memory 	Megan Girczyc - Redesigning 3D printed microdrive arrays for use in the rodent prefrontal-cortex
+11:15 - 12:00 Virtual Poster Exhibition (MSNE Students) 	Students posters and pre-recorded video teasers are available online (-> Link to videos and posters will be provided soon)
+Computational Neuroscience & Engineering 	Jin Lee    - Self-supervised learning on neural data 	Matthijs Pals -    Neuromorphic computing as a substrate for efficient path tracking and path planning 	Ashish Rao - Noise Quenching in the Stabilized Supralinear Network 	Florian Schoenleitner - Extending Tympanometry Based Hearing Diagnostics with Methods of Machine Learning 	Aishwarya Patel - Neural Circuits for Distinct locomotor behaviours in Drosophila larvae 	Pablo Ochoa De Eribe Delgado - Model describing a possible mechanism of auditory-motor sequence learning (study on human behavioural collected data 	Xingying Chen - Reinforcement learning model of sensorimotor adaptation 	 	Neuroimaging Methods and Data Analysis Techniques     	Pablo Sarricolea - Nanomaterial engineering for the synthesis of positive contrast agents in Magnetic Resonance Imaging 	Federico Puppo - Protocol for data acquisition and CNN training for LFM setup 	Margaret Lane - CNNs for Segmentation in Functional Ultrasound Imaging 	Eric Ceballos - Neural markers for the detection of intentional stance 	Orcun Centitas - Single-Image Multi-Scale Style Transfer with Generative Adversarial Networks 	Vladimir Budovkin - Implementing a pipeline for efficient access to experimental data 	 	Human-centered Engineering, Rehabilitation and Medical Research     	Rafael Javier Pérez Belizón - Simulated triphasic stimulation of Auditory Nerve Fibres 	Paula Fulton - Performance Comparison of Three EMG-controlled Supernumerary Robotic Finger Design Prototypes 	Lisa Held - A study that investigates alpha synchronizations during attention shifts in working memory 	Megan Girczyc - Redesigning 3D printed microdrive arrays for use in the rodent prefrontal-cortex
+Contact:
+Contact for further questions is msne@ei.tum.de  Students of TUM Elite Master Program in Biomedial  Neuroescience may also approach their program coordinators (-> master.mec.med@tum.de ) for further information regarding this symposium and interaction opportunities with MSNE students.
+Past neuroengineering events:
+- Neuroengineering Symposium (April 21st, 2020)
+- Neuroengineering Matinee (Jan 16th, 2019)
+- Neuroengineering Networking Workshop 2018 (Apr 19th, 2018)
+- NeuroEngineering Networking Workshop 2015 (Jan 15th, 2015)
+To top
+
+Fakultät für Elektrotechnik und Informationstechnik
+Neuroengineering Symposium (March 11, 2021) > Fakultät für Elektrotechnik und Informationstechnik
+Theresienstr. 90 80333 München
+Tel. +49.89.289.22260 Fax +49.89.289.22559  info(at)ei.tum.de
+
+Google Custom Search
+Neuroengineering Symposium (March 11, 2021) > Google Custom Search
+Wir verwenden Google für unsere Suche. Mit Klick auf „Suche aktivieren“ aktivieren Sie das Suchfeld und akzeptieren die Nutzungsbedingungen.
+Hinweise zum Einsatz der Google Suche
+Links relevant for questions related to 5th Neuroengineering Symposium (Mar. 11th, 2021): https://www.moodle.tum.de/course/view.php?id=59161, https://www.ei.tum.de/fileadmin/tueifei/www/msne/downloads/Events/Symposium2021/MSNE_Symposium_WS2021.pdf, https://www.ei.tum.de/ics/people/cheng/, https://www.professoren.tum.de/en/jacob-simon, https://www.ei.tum.de/fileadmin/tueifei/www/msne/downloads/Events/Symposium2021/Abstracts.pdf, https://groups.oist.jp/cnru/jun-tani, https://www.ei.tum.de/fileadmin/tueifei/www/msne/downloads/Events/Symposium2021/Abstracts.pdf, https://www.ei.tum.de/msne@ei.tum.de, https://www.ei.tum.de/master.mec.med@tum.de, https://www.ei.tum.de/ei/studium/msne/events/symposium2021/#content, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/#, https://www.ei.tum.de/ei/datenschutz/#GoogleCustomSearch, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+5th Neuroengineering Symposium (Mar. 11th, 2021)
+----------------------------------------
+
+The Time after MSNE Graduation ... A Panel Discussion (Jan 19th 2021, 18:00)
+The Time after MSNE Graduation ... A Panel Discussion (Jan 19th 2021, 18:00)
+Winter 2016/17 - Pioneering in a brand-new study program, exploring opportunities and co-shaping the program by feedback and student initiatives, studying in a program which is evolving semester-wise: MSNE Alumni/Alumna Steffen Schneider,  Christoph Kocher, and Ann Kotkat are going to look back ~4.5 years, discussing their impressions on ENB MSNE Program, their time at TUM, their time in Elite Network of Bavaria, putting a focus on their year(s) after graduation. The discussion is intended to provide a student perspective on career opportunities, on time and efforts spent in the program or afterwards that turned out fruitful or a waste of time. The event is open for all MSNE students, all MSNE alumni/alumnae, and MSNE associated Faculty/Team. We would like to keep this audience fixed to this group of people.
+Preparing for the event, we asked three open questions to Christoph, Steffen, and Ann:
+- Being in a time capsule, given all the knowledge you have now, re-starting to MSNE: What would you do in a different way? - What have been your thoughts while deciding between PhD / Doctoral Studies at University and (research-.oriented) Industry Employment? - Kindly provide a preview on your calendar entry of Friday, Jan 19th 2024, given that all the plans you made for the next years will turn out successful!
+We will meet for this Panel discussion Tuesday, Jan 19th 2021, 18:00 in Zoom. MSNE students, MSNE alumni/ae and MSNE Associated Faculty/Team will receive an personal invitation soon.
+Expected end of the evening event is 20:00 (...but we will not close zoom rooms sharp by time).
+
+Google Custom Search
+Google Custom Search
+Wir verwenden Google für unsere Suche. Mit Klick auf „Suche aktivieren“ aktivieren Sie das Suchfeld und akzeptieren die Nutzungsbedingungen.
+Hinweise zum Einsatz der Google Suche
+Links relevant for questions related to The Time after MSNE Graduation ... A Panel Discussion (Jan 19th 2021, 18:00): https://www.ei.tum.de/ei/datenschutz/#GoogleCustomSearch, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+The Time after MSNE Graduation ... A Panel Discussion (Jan 19th 2021, 18:00)
+----------------------------------------
+
+4th Neuroengineering Symposium (Apr. 22nd, 2020)
+4th Neuroengineering Symposium (Apr. 22nd, 2020)
+The Neuroengineering Symposium is a digital scientific event on April 22nd 2020 (9:30 - 13:00 CEST) organized by TUM, inviting all researchers and students interested in neuroengineering to meet online and discuss recent developments with MSNE associated faculty and students of the ENB Elite Master Program in Neuroengineering (TUM).
+Looking back to a series that started in 2015, great attendance of researchers, many fruitful discussions, and a vivid research community are motivating us to organize an event in challenging times, using webstreaming technologies, sharing posters and slides in advance. MSNE Students will be pitching their latest research work in 3 min. presentations, followed by quick Q/A rounds (2 min.). Instructions and login credentials will be provided to all registered symposium guests.
+Registration has closed. Past event.
+Contact: Contact for further questions is msne@ei.tum.de   Students of TUM Elite Master Program in Biomedial  Neuroscience may also approach their program coordinators (-> master.mec.med@tum.de ) for further information regarding this symposium and interaction opportunities with MSNE students.
+Tentative Agenda:
+- 09:30 Welcome (Prof. Gordon Cheng, ICS)
+- 09:35 Introduction to Presentation Sessions
+- 09:40 Session 1: Computational Neuroscience
+- 10:20 Session 2: Neural Signal Processing and Brain-Computer Interfaces
+- Session Break
+- 10:50 Session 3: Human-centered Engineering, Rehabilitation and Medical Research
+- 11:15 Session 4: Neuro-inspired Robotics and Computer Vision
+- Session Break
+- 12:00 Breakout rooms for students and guests to discuss the posters (optional)
+Session topics and presenters
+Session 1: Computational Neuroscience (~9:40 – 10:20) Session Chair: Jan Bölts (TUM Computational Neuroengineering) • Melanie Tschiersch: “An attractor network theory of serial dependencies in subliminal working memory” • Isabelle Hoxha: “Influence of context on the reaching movement feedback controller” • Nikita Agarwal: “Comparison of the Inference Compilation method against traditional Bayesian Inference algorithms” • Aleksandra Teska: “Brian2modelfitting: A toolbox for fitting neural models to electrophysiological data in Brian 2 • Anna Vasilevskaya: “Motion processing in a 3D-convolutional neural network trained for action recognition” • Adria Galan Gadea: “Neuronal Dynamics underlying stable population-level working memory representations in prefrontal còrtex”
+Session 2: Neural Signal Processing and Brain-Computer Interfaces  (~10:20 – 10:45) Session Chair: Stefan Ehrlich (TUM Chair of Cognitive Systems) • Nicholas Tacca: “Event-related potential magnitude corresponds to prediction error from optimal policy agent observation in a gridworld experiment” • Sai Lam Loo: “Brain Source Localization of Error Related Potentials in Electroencephalogram” • Aleksandar Levic: “Investigating single neuron activity from humans during naturalistic, continuous stimulation” • Mert Keser: “Creating Synthetic EEG Data for Rapid Calibration of Motor Imagery Classification”
+Session 3: Human-centered Engineering, Rehabilitation and Medical Research (~10:50 – 11:15) Session Chair: Stefan Ehrlich (TUM Chair of Cognitive Systems) • Lisa Sogerer: “ATXN1L mediated Capicua (CIC) stability in glioblastoma multiforme” • Fulvia Del Duca: “Investigation of Hip Joint Impedance Dynamics for Physical HumanRobot Interactions” • Iustina Andronic: “Investigating audio compression as countermeasure against adversarial noise targeting attention-based end-to-end speech recognition systems” • Mariia Popova: “Development of morphologically realistic models of ultrasound neurostimulation”
+Session 4: Neuro-inspired Robotics and Computer Vision (~11:15 – 11:50) Session Chair: Pablo Lanillos (Donders Institute for Brain, Cognition and Behavior, formerly: TUM Chair of Cognitive Systems) • Elio Nakhle: “Variational Inference with Function Learning for Robotic Self Perception implementation on NAO Robot” • Laura Lopez Galdo: “Soft hand exoskeleton actuated with Shape Memory Alloy fibers” • Nogay Küpelioglu: “License plate detection using dynamic vision sensors and neuromorphic algorithms” • Raja Judeh: “Part Semantic Segmentation of Point Clouds of Complete and Partial Objects Using Deep Learning” • Elvin Hajizada: “Spiking Compliant Robot Control”
+Download MSNE Symposium Agenda (PDF)
+Past neuroengineering events:
+- Neuroengineering Matinee (Jan 16th, 2019)
+- Neuroengineering Networking Workshop 2018 (Apr 19th, 2018)
+- NeuroEngineering Networking Workshop 2015 (Jan 15th, 2015)
+To top
+
+Google Custom Search
+Google Custom Search
+Wir verwenden Google für unsere Suche. Mit Klick auf „Suche aktivieren“ aktivieren Sie das Suchfeld und akzeptieren die Nutzungsbedingungen.
+Hinweise zum Einsatz der Google Suche
+Links relevant for questions related to 4th Neuroengineering Symposium (Apr. 22nd, 2020): https://www.ei.tum.de/msne@ei.tum.de, https://www.ei.tum.de/master.mec.med@tum.de, https://www.ei.tum.de/fileadmin/tueifei/www/msne/downloads/Events/Symposium2020/20200422-MSNE-Symposium.pdf, https://www.ei.tum.de/ei/studium/msne/events/msne-symposium/#content, https://www.ei.tum.de/ei/datenschutz/#GoogleCustomSearch, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+4th Neuroengineering Symposium (Apr. 22nd, 2020)
+----------------------------------------
+
+In-House Visit at Texas Instruments (Jan 16th 2020)
+In-House Visit at Texas Instruments (Jan 16th 2020)
+MSNE Students interested in joining the event may register using the link provided in Newsletter. Please save the date! Tentative schedule: morning + early afternoon, agenda will be provided soon
+Initiative by Prof. Bernhard Wolfrum & team.
+Contact for administrative questions: msne(at)ei.tum.de
+Links relevant for questions related to In-House Visit at Texas Instruments (Jan 16th 2020): https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/#, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+In-House Visit at Texas Instruments (Jan 16th 2020)
+----------------------------------------
+
+3rd MSNE Retreat in Brixlegg, Austria (May 30th - June 2nd 2019)
+3rd MSNE Retreat in Brixlegg, Austria (May 30th - June 2nd 2019)
+The 3rd MSNE Retreat will take place in the wonderful region of Tyrol (Austria), more precisely in Brixlegg. A four-day event (May 30th - June 2nd 2019), eintirely organized by MSNE students, for MSNE students and invited guests.
+This year's invited talks / guest researchers are (in alphabetical order):
+• Prof. Albert Compte / Insitut d'Investigations Biomèdiques August Pi y Sunyer
+• Dr. Nora Heinzelmann, LMU, (Munich/Germany)
+• Prof. Emily King, Bremen University, (Germany)
+• Prof. Tobias Reichenbach from Imperial College London (UK)
+The event is designed and organized by MSNE-Students. A few tickets are available for students from other related study programs. Interested students are encouraged to contact (msne(at)ei.tum.de) latest by May 15th 2019.
+Links relevant for questions related to 3rd MSNE Retreat in Brixlegg, Austria (May 30th - June 2nd 2019): https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/#, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+3rd MSNE Retreat in Brixlegg, Austria (May 30th - June 2nd 2019)
+----------------------------------------
+
+Workshop on Intelligent Prosthetics and Brain-Computer Interfaces & Hackathon (27.-29.5.2019)
+Workshop on Intelligent Prosthetics and Brain-Computer Interfaces & Hackathon (27.-29.5.2019)
+The CYBATHLON is a unique championship in which people with physical disabilities compete against each other to complete everyday tasks using state-of-the-art technical assistance systems".
+In 2020' challenge at ETH Zurich, two TUM-teams will start in the Disciplines Brain Computer Interface (BCI) Race and Powered Arm Prosthesis Race. Both teams are supported/co-organized by  a lot of MSNE-students.
+
+CyberTUM - Two Student Teams at Cybathlon 2020 Challenge
+CyberTUM - Two Student Teams at Cybathlon 2020 Challenge
+The CYBATHLON is a unique championship in which people with physical disabilities compete against each other to complete everyday tasks using state-of-the-art technical assistance systems".
+In 2020' challenge at ETH Zurich, two TUM-teams will start in the Disciplines Brain Computer Interface (BCI) Race and Powered Arm Prosthesis Race. Both teams are supported/co-organized by  a lot of MSNE-students.
+
+Workshop on Intelligent Prosthetics and Brain-Computer Interfaces & Hackathon (27.-29.5.2019)
+Workshop on Intelligent Prosthetics and Brain-Computer Interfaces & Hackathon (27.-29.5.2019)
+Agenda | Speakers & Biography | Hackathon Flyer  (download, pdf-format)
+Workshop and Hackathon Registration
+List of Speakers: (Further Speakers, Workshops, Poster Session and a program including time and vanue will be provided soon)
+Nicolas Berberich (RIKEN AIP & TUM): “Human-centered approaches for neuroengineering”
+Prof. Gordon Cheng (TUM): "Processes in Restoring Sense of Touch to Spinal Cord Injured Patients"
+Prof. Stanisa Raspopovic (ETH Zurich): “Sensory feedback in prostheses”
+Dr. Ricardo Chavarriaga (EPFL): "Symbiotic Brain- Machine interaction: Beyond control and monitoring"
+Prof. Claudio Castellini (DLR): "Interactive (machine) learning: a key component of the HMI of the future”
+Zied Tayeb (TUM): "Closed-loop hybrid brain-computer interfaces for neuroprostheses control”
+Michael Auer (Ottobock Unit Upper Limb Prosthetics): "Advances in Upper Limb Prosthetics – Function and Design”
+Dr. Emmanuel Carlos Dean Leon & Florian Bergner (TUM):"Robot Skin: Present, Future and possible applications"
+Prof. Patrick van der Smagt (Director of AI Research, Volkswagen Group): Title TBA
+Prof. Natalie Mrachacz-Kersting (Aalborg University, Denmark): Title TBA
+Johannes Kühn (TUM): Title TBA
+N.N. (g.tec medical engineering): "Brain-Computer Interfaces (BCI)”
+Acknowledgements:
+The workshop  is co-organized by MSNE, MSRM-Students and supported by MSNE study program (TUM and Elitenetzwerk Bayern ).
+Links relevant for questions related to Workshop on Intelligent Prosthetics and Brain-Computer Interfaces & Hackathon (27.-29.5.2019): https://sites.google.com/view/cybertum, http://www.cybathlon.ethz.ch/, http://www.cybathlon.ethz.ch/races-and-disciplines/bci-race.html, http://www.cybathlon.ethz.ch/races-and-disciplines/powered-arm-prosthesis-race.html, http://www.cybathlon.ethz.ch/, https://www.ei.tum.de/fileadmin/tueifei/www/msne/downloads/Events/Cybertum/20190527-Agenda.pdf, https://www.ei.tum.de/fileadmin/tueifei/www/msne/downloads/Events/Cybertum/20190527-Speakers-and-Bio.pdf, https://www.ei.tum.de/fileadmin/tueifei/www/msne/downloads/Events/Cybertum/20190527-Flyer-hackathon.pdf, https://wiki.tum.de/pages/viewpage.action?pageId=243237221, http://www.elitenetzwerk.bayern.de/, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+Workshop on Intelligent Prosthetics and Brain-Computer Interfaces & Hackathon (27.-29.5.2019)
+----------------------------------------
+
+3rd Neuroengineering Symposium: Neuroengineering Matinee (Jan. 16th 2019)
+3rd Neuroengineering Symposium: Neuroengineering Matinee (Jan. 16th 2019)
+The Neuroengineering Matinee is a scientific morning event on Jan. 16th 2019 (9:30-13:00) at Vorhoelzer Forum, inviting all  researchers and students interested in neuroengineering to meet and discuss recent developments with MSNE associated faculty and students of the ENB Elite Master Program in Neuroengineering (TUM).  We are happy to announce guest talks by Patrick van der Smagt (Volkswagen AI), and Srinivas Turaga (HHMI's Janelia Research Campus). Sophomore MSNE students will present their research projects and publications (Neuroengineering Summit, part of MSNE Research Excellence Certificate).  Master students and researchers of other partner neuro-x study/graduate programs in Munich are cordially invited to join the Neuroengineering Matinee, to interact with neuroengineering students and faculty and to learn on opportunities across study programs.   Registration: closed (past event)
+Report:   Report on Neuroengineering Matinee (->TUM ECE Department)
+Agenda:
+09:30 - 09:45 Introduction / Welcome (Prof. Jakob Macke, MSNE Program Director) 09:45 - 10:30 Guest Talk:  Prof. Patrick van der Smagt - Latent optimal control 10:30 - 11:15 Guest Talk:  Srinivas Turaga, PhD - Connecting the structure and function of neural circuits 11:20 - 12:00 Neuroengineering Summit:
+- Christoph Kocher – “Measuring effective connectivity with convolutional neural networks”
+- Pranshul Saini – “The effect of intensive meditation training on cognitive functioning during Stroop task”(download)
+- Yagmur Yener - "Fully Automated Reconstruction of Glia and their Relationship with Neurons"
+- Elisa Pavarino – “Connectome of the newborn nerve” (download)
+- Jonas Braun – “Uncovering muscle population dynamics of locomotion using LFADS”
+12:00 - 13:00 Poster Exhibition & Snacks
+Previous Neuroengineering Events Neuroengineering Networking Workshop 2018 (Apr 19th, 2018) (MSNE Student Blog, external link!) NeuroEngineering Networking Workshop 2015 (Jan 15th, 2015)
+
+Google Custom Search
+Google Custom Search
+Wir verwenden Google für unsere Suche. Mit Klick auf „Suche aktivieren“ aktivieren Sie das Suchfeld und akzeptieren die Nutzungsbedingungen.
+Hinweise zum Einsatz der Google Suche
+Links relevant for questions related to 3rd Neuroengineering Symposium: Neuroengineering Matinee (Jan. 16th 2019): https://portal.mytum.de/displayRoomMap?5170B@0501, https://argmax.ai/a/patrick-van-der-smagt/, https://www.hhmi.org/scientists/srinivas-c-turaga, https://www.ei.tum.de/struktur-und-profil/nachrichten/singleviewnews/?tx_ttnews%5Btt_news%5D=322&cHash=e25cf289857ebb82c695d4c6b2b69cd1, https://argmax.ai/a/patrick-van-der-smagt/, https://www.ei.tum.de/fileadmin/tueifei/www/msne/downloads/Events/20181127-Smagt.pdf, https://www.ei.tum.de/ei/studium/msne/events/, https://www.ei.tum.de/fileadmin/tueifei/www/msne/downloads/Events/20190116-SrinivasTuraga.pdf, https://www.ei.tum.de/fileadmin/tueifei/www/msne/downloads/Events/Matinee2019/pranshul_saini.pdf, https://www.ei.tum.de/fileadmin/tueifei/www/msne/downloads/Events/Matinee2019/elisa_pavarino.pdf, https://www.ei.tum.de/ei/datenschutz/#GoogleCustomSearch, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+3rd Neuroengineering Symposium: Neuroengineering Matinee (Jan. 16th 2019)
+----------------------------------------
+
+2nd MSNE Retreat in Ofterschwang (Allgäu) (May 2018)
+2nd MSNE Retreat in Ofterschwang (Allgäu) (May 2018)
+Scientific guests have been Prof. Jakob Macke (recently appointed at TUM), Prof. Benjamin Grewe (ETH Zurich) and Prof. Thomas Euler (University of Tübingen). This second retreat was jointly organized by both student batches with 33 people contributing.
+Links relevant for questions related to 2nd MSNE Retreat in Ofterschwang (Allgäu) (May 2018): https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+2nd MSNE Retreat in Ofterschwang (Allgäu) (May 2018)
+----------------------------------------
+
+2nd Neuroengineering Symposium: CoC Neuro-Engineering Networking Workshop (April 19 2018)
+2nd Neuroengineering Symposium: CoC Neuro-Engineering Networking Workshop (April 19 2018)
+
+Agenda
+Agenda
+14:00 Introductory remarks by Prof. Gordon Cheng Chair for Cognitive Systems (TUM)
+14:10-14:30 Prof. Ilona Grunwald Kadow Neuronal Circuits and Metabolism, School of Life Sciences Weihenstephan (TUM) "Asking the fly to reveal neural network principles underlying behavior"
+14:30-14:50 Prof. Markus Ploner Heisenberg Professor of Human Pain Research, Department of Neurology, School of Medicine (TUM) "Neuroengineering approaches to the understanding, diagnosis and therapy of pain"
+14:50-15:10 Prof. Bernhard Wolfrum Neuroelectronics, Department of Electrical and Computer Engineering (TUM) "On-chip stimulation of cardiac networks"
+15:10-15:30 Prof. Stefan Glasauer Center for Sensorimotor Research, Department of Neurology (LMU) "Probabilistic modeling to understand human perception in health and disease"
+15:30-15:50 Short presentations of MSNE students: (4x5min)
+- Mohammad Bashiri – "The Effect of Non-invasive Deep Brain Stimulation Using Temporal Interference: A Computational Study"
+- Abdallah Alashqar – "Slow Oscillation Detection in Rat's Entorhinal Cortex"
+- Steffen Schneider – "Domain Adaptation in Brains and Machines"
+- Nicolas Berberich – "An Apprenticeship Learning Approach based on Aristotelian Virtue Ethics for building Moral Machines"
+16:00 Networking: poster presentations and live demos, have a look around and enjoy snacks
+This year’s CoC Neuroengineering networking meeting was accompanied by the MSNE Summit of the Elite Master Program in Neuroengineering launched in October 2016. In short talks and poster presentations, the MSNE students presented their research projects. By joining the events, we aimed to foster exchange and networking among CoC associates and the MSNE cohort.
+
+Google Custom Search
+Google Custom Search
+Wir verwenden Google für unsere Suche. Mit Klick auf „Suche aktivieren“ aktivieren Sie das Suchfeld und akzeptieren die Nutzungsbedingungen.
+Hinweise zum Einsatz der Google Suche
+Links relevant for questions related to 2nd Neuroengineering Symposium: CoC Neuro-Engineering Networking Workshop (April 19 2018): https://www.ei.tum.de/ei/datenschutz/#GoogleCustomSearch, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+2nd Neuroengineering Symposium: CoC Neuro-Engineering Networking Workshop (April 19 2018)
+----------------------------------------
+
+1st MSNE Retreat in Fischen (Allgäu) (May 2017)
+1st MSNE Retreat in Fischen (Allgäu) (May 2017)
+The students managed the full planning as a group, including proposal phase, budget issues, guest invitation as well as formal requirements coming from TUM administration. Attending guests have been Dr. Dmitry Fedosov (FZ Jülich), Prof. Heiko Neumann (Ulm University), and Prof. Matthias Bethge (Universität Tübingen).
+Links relevant for questions related to 1st MSNE Retreat in Fischen (Allgäu) (May 2017): https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+1st MSNE Retreat in Fischen (Allgäu) (May 2017)
+----------------------------------------
+
+1st Neuroengineering Symposium: Neuroengineering Networking Workshop  (Jan 15th, 2015)
+1st Neuroengineering Symposium: Neuroengineering Networking Workshop  (Jan 15th, 2015)
+Online Ressources no longer available!
+
+Google Custom Search
+Google Custom Search
+Wir verwenden Google für unsere Suche. Mit Klick auf „Suche aktivieren“ aktivieren Sie das Suchfeld und akzeptieren die Nutzungsbedingungen.
+Hinweise zum Einsatz der Google Suche
+Links relevant for questions related to 1st Neuroengineering Symposium: Neuroengineering Networking Workshop  (Jan 15th, 2015): https://www.ei.tum.de/ei/datenschutz/#GoogleCustomSearch, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/events/
+1st Neuroengineering Symposium: Neuroengineering Networking Workshop  (Jan 15th, 2015)
+----------------------------------------
+

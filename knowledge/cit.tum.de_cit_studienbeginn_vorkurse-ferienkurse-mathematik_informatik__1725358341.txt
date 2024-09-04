@@ -1,0 +1,110 @@
+https://www.cit.tum.de/cit/studienbeginn/vorkurse-ferienkurse-mathematik/informatik/
+Vorkurs Mathematik für Informatik - TUM - TUM School of Computation, Information and Technology
+
+Vorkurs Mathematik für Informatik
+Vorkurs Mathematik für Informatik
+Links relevant for questions related to Vorkurs Mathematik für Informatik: https://www.cit.tum.de/cit/studienbeginn/vorkurse-ferienkurse-mathematik/informatik/
+Vorkurs Mathematik für Informatik
+----------------------------------------
+
+Was ist der Vorkurs Mathematik?
+Vorkurs Mathematik für Informatik > Was ist der Vorkurs Mathematik?
+Wir bieten einen Vorkurs für alle Studienanfänger:innen der Informatik an. Er erfüllt drei Zwecke:
+- Sie werden auf die Arbeitsweise im Informatik-Studium eingestellt: Wie in vielen Lehrveranstaltungen im Studium besteht der Vorkurs aus Vorlesungen, in denen Ihnen Inhalte vermittelt werden und Übungen, in denen Sie selbstständig die Inhalte der vorangegangenen Vorlesung(en) anhand von Übungsaufgaben vertiefen bzw. in der Praxis erproben können. Letztere finden in Gruppen von etwa 30 Studierenden statt und werden von einem/einer Tutor:in betreut.
+- Sie können den Stand Ihrer mathematischen Kenntnisse überprüfen bzw. auffrischen und werden auf die Mathematik-Vorlesungen der ersten Semester vorbereitet: Einige mathematische Kenntnisse (z.B. Logarithmus-Rechenregeln, Lösen von Gleichungen) werden im Studium als gegeben vorausgesetzt. Im Vorkurs bekommen Sie die Chance, diese zu wiederholen sowie eventuelle Kenntnislücken zu erkennen und zu schließen. Zudem werden Sie sehen, wie Mathematik-Vorlesungen an der Uni aussehen und können somit ein erstes Gespür dafür entwickeln, inwiefern sich Uni-Mathematik von Schulmathematik unterscheidet. Insbesondere Themen aus der diskreten Mathematik – etwa aus der Kombinatorik – spielen dabei eine wichtige Rolle.
+- Sie bekommen eine Rechnereinführung: Einige Kenntnisse im Umgang mit Computern (z.B. der Umgang mit der Kommandozeile) sind im Informatik-Studium nützlich, aber nicht unbedingt Teil des Lehrstoffs einer bestimmten Veranstaltung. Der Informatik-Teil am Ende des Vorkurses versucht dem entgegenzuwirken und gibt Ihnen eine Einführung in die Kommandozeile und andere Tools, die Sie während Ihres Informatik-Studiums gebrauchen können.
+Zudem lernen Sie in den Übungsgruppen auch Ihre Kommiliton:innen kennen. Die Teilnahme am Vorkurs ist freiwillig und nicht notwendig. Sie kann aber dabei helfen, im Studium erfolgreich zu sein.
+Links relevant for questions related to Was ist der Vorkurs Mathematik?: https://www.cit.tum.de/cit/studienbeginn/vorkurse-ferienkurse-mathematik/informatik/
+Was ist der Vorkurs Mathematik?
+----------------------------------------
+
+Organisatorisches
+Vorkurs Mathematik für Informatik > Organisatorisches
+
+Wann?
+Vorkurs Mathematik für Informatik > Organisatorisches > Wann?
+Der Kurs dauert drei Wochen und findet von Donnerstag, 12. September bis Donnerstag, 2. Oktober 2024 auf Deutsch und Englisch statt. Hier finden Sie den Zeitplan (Stand: 2. September 2024). Nach den Mathe-Vorlesungen sind jeweils noch circa 15 Minuten Zeit für Fragen im Chat reserviert.
+
+Wo?
+Vorkurs Mathematik für Informatik > Organisatorisches > Wo?
+Die Vorlesungen finden online statt – Ausnahmen sind die vier letzten Vorlesungen im Oktober. Den Link zum Stream finden Sie auf der Moodle-Seite des Kurses. Die letzten vier Vorlesungen am 1. und 2. Oktober 2024 finden im Hörsaal 1 (Raum 00.02.001) im MI-Gebäude des TUM Campus in Garching statt. Sie werden aber auch über denselben Link wie die vorherigen Vorlesungen online übertragen.
+Die Übungen finden online und in Seminarräumen im MI-Gebäude des TUM Campus in Garching statt. Sie haben die Möglichkeit, zwischen dem Besuch einer Online- und einer Präsenz-Übung zu wählen. Die Daten Ihres Übungsraumes – sollten Sie an den Übungen in Präsenz teilnehmen wollen – werden nach Ende der Anmeldefrist via Moodle mitgeteilt. Die Links zu den Online-Übungen finden Sie ebenso auf Moodle.
+Kurzum: Wenn Sie wollen, können Sie den gesamten Vorkurs online verfolgen. Sollten Sie die Möglichkeit haben in Präsenz teilzunehmen, empfehlen wir aber, diese zu nutzen.
+
+Hardware
+Vorkurs Mathematik für Informatik > Organisatorisches > Hardware
+Für den Informatik-Teil des Vorkurses benötigen Sie einen Rechner. Vergessen Sie also nicht, diesen zumindest am 1. und 2. Oktober 2024 mitzubringen.
+
+Anmeldung
+Vorkurs Mathematik für Informatik > Organisatorisches > Anmeldung
+Sie können sich ab sofort mit diesem Formular für den Kurs anmelden.Danach erhalten Sie Zugang zur Moodle Seite, wo Sie die Vorlesungsunterlagen und den Zeitplan einsehen können.Bei Problemen melden Sie sich bitte über mathe-vorkurs24(at)cit.tum.deFür Studierende des Studiengangs Information Engineering (und nur für diese): Bitte melden Sie sich über ie-bachelor-heilbronn(at)in.tum.de an.
+Links relevant for questions related to Organisatorisches: https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Vorkurse_und_Ferienkurse/Vorkurs_Mathematik_fuer_Informatiker/Zeitplan_PreMath_Info.pdf, https://portal.mytum.de/campus/roomfinder/roomfinder_viewmap?mapid=80&roomid=00.02.001@5602, https://survey.ase.in.tum.de/index.php/767697?lang=en, https://www.moodle.tum.de/course/view.php?id=100498, https://www.cit.tum.de/cit/studienbeginn/vorkurse-ferienkurse-mathematik/informatik/#, https://www.cit.tum.de/cit/studienbeginn/vorkurse-ferienkurse-mathematik/informatik/#, https://www.cit.tum.de/cit/studienbeginn/vorkurse-ferienkurse-mathematik/informatik/
+Organisatorisches
+----------------------------------------
+
+Kursprogramm
+Vorkurs Mathematik für Informatik > Kursprogramm
+Zu Beginn des Kurses erhalten Sie eine Einführung in die Remote-Nutzung der Schoolrechner. Da die meisten Schoolrechner unter UNIX-Betriebssystemen laufen, erhalten Sie auch einen kurzen UNIX-Crashkurs. Des Weiteren bekommen Sie einen Überblick über verschiedene Internetseiten, die Sie während Ihres Informatik-Studiums häufig nutzen werden, um sich für Vorlesungen anzumelden oder kostenlose Software herunterzuladen.  Die Mathematik-Komponente des Vorkurses gliedert sich wiederum in zwei Teile: Einen Vorlesungsteil, den Prof. Michael Luttenberger leitet, und einen Übungsteil. Die Übungsgruppen betreuen studentische Tutor:innen, die die Themen aus den Vorlesungen anhand von Aufgaben und Beispielen näher erläutern. Dabei arbeiten Sie darauf hin, dass Sie die Aufgaben eigenständig lösen können.
+
+Kursinhalte
+Vorkurs Mathematik für Informatik > Kursprogramm > Kursinhalte
+Rechnereinführung
+- Uni kennenlernen (Ablauf einer Vorlesung, Übung etc.)
+- Benutzung der Computer am Institut
+- Benutzung eines eigenen Laptops am Institut & Fernzugriff auf die Rechnerhalle
+- Für das Studium wichtige Plattformen im Internet
+- Drucken in der Rechnerhalle
+- Kurze Einführung in LaTeX
+Mathematik
+Einführung in die Grundlagen der
+- (informellen) Aussagen- und Prädikatenlogik
+- Mengentheorie, natürlichen Zahlen, Induktion
+- binären Relationen, gerichteten Graphen, Funktionen
+- ganzen/rationalen/reellen Zahlen, Körper
+- Grenzwerte von Folgen und Reihen
+- elementaren Funktionen auf den reellen Zahlen
+- Stetigkeit, Ableitung und Integral
+- Kombinatorik, Urnenmodel, diskreten Wahrscheinlichkeitsräume (*)
+- analytischen Geometrie, linearen Algebra (*)
+(* bei ausreichend Zeit)
+Links relevant for questions related to Kursprogramm: https://www.cit.tum.de/cit/studienbeginn/vorkurse-ferienkurse-mathematik/informatik/
+Kursprogramm
+----------------------------------------
+
+Nützliche Links
+Vorkurs Mathematik für Informatik > Nützliche Links
+
+Universität
+Vorkurs Mathematik für Informatik > Nützliche Links > Universität
+- MyTUM: Portal für TUM-Studierende. News zur TUM, Informationen zu Studiengängen, Webinterface für MyTUM-Mails
+- TUMonline: Anmeldung zu diversen Prüfungen und Lehrveranstaltungen
+- Studentische Vertretung: Der Studierendenausschuss ist das ausführende Organ des Fachschaftenrates.
+- Bibliothek: Universitätsbibliothek mit Onlinekatalog, Öffnungszeiten etc.
+
+Informatik am Forschungscampus Garching
+Vorkurs Mathematik für Informatik > Nützliche Links > Informatik am Forschungscampus Garching
+Studiengangswebseiten:
+- Bioinformatik (Bachelor)
+- Informatik (Bachelor)
+- Informatik: Games Engineering (Bachelor)
+- Wirtschaftsinformatik (Bachelor)
+Einführungsveranstaltungen und Beratung:
+- Studienfachberatung Informatik: Diverse Informationen zum Studium der Informatik an der TUM
+- Überblick zum Vorprogramm (Bachelor)
+- Studieneinführungstage: Mehrtägige Veranstaltung der Fachschaft MPIC für alle, die ein Studium an der TUM in den Fachbereichen Mathematik, Physik, Informatik und Chemie beginnen, mit Campusführung und diversen gemeinschaftlichen Events
+- Fachschaft MPIC
+Rechenbetrieb/Internet
+- Webseite der IT Operations (ITO)
+
+Informatik am Campus Heilbronn
+Vorkurs Mathematik für Informatik > Nützliche Links > Informatik am Campus Heilbronn
+- Information Engineering (Bachelor)
+- News & Events: Informationen zu Veranstaltungen, insbesondere auch zu Vorprogramm und Orientierungsveranstaltungen zum Studienstart
+
+Sonstiges
+Vorkurs Mathematik für Informatik > Nützliche Links > Sonstiges
+- StudiSoft: Kostenloser Download von Software aus dem MSDN, TUM-E-Mail zum Login erforderlich
+Links relevant for questions related to Nützliche Links: http://portal.mytum.de/, https://campus.tum.de/, https://www.sv.tum.de/, http://www.ub.tum.de/, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-bioinformatik/, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik-games-engineering/, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-wirtschaftsinformatik/, https://www.cit.tum.de/cit/studium/studierende/beratung/informatik/studienfachberatung/, https://www.cit.tum.de/cit/studienbeginn/vorprogramm-informatik-bachelor/, https://mpic.fs.tum.de/studium/studienbeginn/set/, https://mpic.fs.tum.de/, https://www.cit.tum.de/ito/startseite/, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-information-engineering/, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-information-engineering/news-events/, https://www.studisoft.de/, https://www.cit.tum.de/cit/studienbeginn/vorkurse-ferienkurse-mathematik/informatik/
+Nützliche Links
+----------------------------------------
+

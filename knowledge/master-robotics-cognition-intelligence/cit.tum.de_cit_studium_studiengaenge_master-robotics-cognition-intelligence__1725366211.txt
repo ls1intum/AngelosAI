@@ -1,0 +1,348 @@
+https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/
+Master Robotics, Cognition, Intelligence - TUM - TUM School of Computation, Information and Technology
+
+Robotics, Cognition, Intelligence
+Robotics, Cognition, Intelligence
+
+Master of Science (M.Sc.)
+Robotics, Cognition, Intelligence > Master of Science (M.Sc.)
+Links relevant for questions related to Robotics, Cognition, Intelligence: https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/
+Robotics, Cognition, Intelligence
+----------------------------------------
+
+Vor dem Studium | Im Studium | Kontakt
+Links relevant for questions related to : https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/#c2284, https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/#c2270, https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/#c3444, https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/
+
+----------------------------------------
+
+Die Robotik ist im Wandel: Früher automatisierten Industrieroboter vor allem den Produktionsprozess, heute haben Roboter viele Lebensbereiche erobert. Sie haben die Fabrikhallen verlassen und begegnen dem Menschen im Alltag. Früher mussten Spezialisten sie bedienen – heute können es alle: so saugen sie zu Hause Staub oder mähen den Rasen.
+Mensch und Roboter arbeiten immer enger und ohne Trennwände zusammen. Morgen werden sie Teil des Alltags und Teil des menschlichen Körpers sein, denn schon heute helfen tragbare Roboter als Exoskelette Menschen mit Gehbehinderung beim Laufen. Da die Grenzen zwischen Mensch und Maschine verwischen, stehen Robotik-Entwickler:innen vor neuen Herausforderungen. Roboter müssen auf unvorhergesehene Situationen autonom reagieren können und anpassungsfähig sein. Nicht alle Interaktionen und Handlungsmöglichkeiten lassen sich vorab absehen und somit programmieren. Deshalb müssen moderne Roboter mittels künstlicher Intelligenz selbst lernen können.
+Der Master-Studiengang "Robotics, Cognition, Intelligence" ist ein gemeinsamer Studiengang der TUM School of Computation, Information and Technology und der TUM School of Engineering and Design. Er schafft die Basis, um an dieser faszinierenden Entwicklung mitzuwirken.
+Links relevant for questions related to : https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/
+
+----------------------------------------
+
+Eckdaten
+Robotics, Cognition, Intelligence > Eckdaten
+Art des Studiums: Vollzeit
+Regelstudienzeit: 4 Semester
+Credits: 120 ECTS
+Hauptstandort: Garching
+Beginn des Studiums: Sommer- oder Wintersemester
+Unterrichtssprache: Deutsch und Englisch
+Kosten: Semesterbeitrag, Studiengebühren für internationale Studierende aus Nicht EU-Staaten
+Professional Profile: Informatics
+Links relevant for questions related to Eckdaten: https://www.tum.de/studium/im-studium/das-studium-organisieren/wichtige-begriffe-im-ueberblick-glossar#c2288, https://www.tum.de/studium/studienfinanzierung, https://www.tum.de/studium/studienfinanzierung/studiengebuehren-fuer-studierende-aus-nicht-eu-laendern, https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/
+Eckdaten
+----------------------------------------
+
+Wie ist das Studium aufgebaut?
+Robotics, Cognition, Intelligence > Wie ist das Studium aufgebaut?
+Das Masterprogramm Robotics, Cognition, Intelligence erstreckt sich über vier Semester.
+Es ist ein sehr flexibles Programm, das eine hohe Flexibilität bei der Zusammenstellung der eigenen Schwerpunkte bietet. Neben den theoretischen und methodischen Grundlagen können Sie durch Wahlmodule aus den Bereichen Informatik, Maschinenbau und Elektrotechnik eigene Schwerpunkte setzen.
+Den Abschluss bildet die Master’s Thesis, in der Sie das erlangte Wissen und Ihre Fähigkeiten in einem praxisnahen Projekt anwenden.
+Links relevant for questions related to Wie ist das Studium aufgebaut?: https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/
+Wie ist das Studium aufgebaut?
+----------------------------------------
+
+Welche Fähigkeiten und Kompetenzen erwerbe ich?
+Robotics, Cognition, Intelligence > Welche Fähigkeiten und Kompetenzen erwerbe ich?
+Im Masterstudium Robotics, Cognition, Intelligence eignen Sie sich ein breites Instrumentarium an methodischen und theoretischen Grundlagen der Robotik, Kognition und von intelligenten autonomen Systemen an. Sie machen sich neben der Informatik mit den für Sie relevanten Aspekten aus der Elektrotechnik und dem Maschinenwesen vertraut.
+Zusätzlich zur klassischen Robotersteuerung gewinnen Sie über Kenntnisse in den Bereichen Wahrnehmung, Bildverarbeitung und künstliche Intelligenz. Sie lernen Verfahren zur Signalverarbeitung, Sensordatenauswertung bzw. -fusion und Programmierung kennen. Sie erarbeiten sich Konzepte der Verhaltenssteuerung, des maschinellen Lernens und der Mensch-Roboter-Interaktion. Durch die Kooperation mit Partnern aus der Industrie sammeln Sie erste Erfahrungen mit praxisnahen Projekten.
+Durch das breite Spektrum an Wahlmodulen bauen Sie sich ein individuelles Kompetenzprofil auf.
+Links relevant for questions related to Welche Fähigkeiten und Kompetenzen erwerbe ich?: https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/
+Welche Fähigkeiten und Kompetenzen erwerbe ich?
+----------------------------------------
+
+Welche Karriere-Chancen habe ich im Anschluss?
+Robotics, Cognition, Intelligence > Welche Karriere-Chancen habe ich im Anschluss?
+Als Absolvent:in des Masterstudiengangs Robotics, Cognition, Intelligence haben Sie in vielen Bereichen der Industrie gute berufliche Chancen, etwa in der Luft- und Raumfahrt, Mikroelektronik, Robotik, Unterhaltungselektronik oder im Automotive-Bereich. Sie arbeiten als Projektleitung, in der Konzeption oder der Entwicklung. Auch in Forschung und Lehre oder Consulting haben Sie exzellente Karrier-Chancen.
+Als Informatik-orientiere:r Wissenschaftler:in arbeiten Sie dann in interdisziplinären Teams mit Naturwissenschaftler:innen und Ingenieur:innen auf Gebieten der kognitiven Robotik wie:
+- Konstruktion von Servicerobotern mit Interaktionskomponenten Sprache, Gestik, Dialogführung
+- Entwurf und Implementierung von Sensor-Aktor-Netzwerken
+- Entwicklung von sensorgeführten Industrierobotern für direkte Mensch-Roboter-Interaktion
+- Design von intelligenten Assistenzsystemen für die Medizin
+Links relevant for questions related to Welche Karriere-Chancen habe ich im Anschluss?: https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/
+Welche Karriere-Chancen habe ich im Anschluss?
+----------------------------------------
+
+Bewerbung und Zulassung
+Robotics, Cognition, Intelligence > Bewerbung und Zulassung
+Der Masterstudiengang Robotics, Cognition, Intelligence ist einmalig in Deutschland. Er verknüpft verschiedene Ingenieursdisziplinen wie Maschinenbau und Elektrotechnik mit der Informatik.
+Zur Auswahl der Studierenden zum Master Robotics, Cognition, Intelligence führen wir ein Eignungsverfahren durch. Das ist ein zweistufiger Prozess, in dem wir Ihre Eignung für die besonderen qualitativen Anforderungen des Masterstudiengangs prüfen.
+Links relevant for questions related to Bewerbung und Zulassung: https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/
+Bewerbung und Zulassung
+----------------------------------------
+
+Bewerbungsfrist
+Robotics, Cognition, Intelligence > Bewerbungsfrist
+Wintersemester: 01. Februar – 31. Mai
+Sommersemester: 01. September – 30. November
+Links relevant for questions related to Bewerbungsfrist: https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/
+Bewerbungsfrist
+----------------------------------------
+
+Wie bewerbe ich mich?
+Robotics, Cognition, Intelligence > Wie bewerbe ich mich?
+Die Bewerbung für einen Studienplatz für diesen Masterstudiengang erfolgt über unser Portal TUMonline. Nachdem Sie dort Ihren Account angelegt haben, geben Sie persönliche Daten und Informationen zu Ihrer Ausbildung an und laden Sie die erforderlichen Dokumente hoch. Die Bewerbung erfolgt elektronisch.
+Studieninteressierte mit eine Bachelor von außerhalb der Europäischen Union müssen in der Regel vorab eine Vorprüfungsdokumentation bei uni-assist anfordern.
+Nur wenn Sie eine Zulassung erhalten, müssen Sie für eine Immatrikulation zusätzlich einige Dokumente als beglaubigte Kopien in Papierform einreichen.
+Bewerbung für einen Masterstudiengang – Schritt für Schritt
+Links relevant for questions related to Wie bewerbe ich mich?: https://campus.tum.de/tumonline/ee/ui/ca2/app/desktop/#/login, http://www.tum.de/studium/bewerbung/uni-assist/, https://www.tum.de/studium/bewerbung/master/bewerbung-master, https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/
+Wie bewerbe ich mich?
+----------------------------------------
+
+Welche Dokumente muss ich einreichen?
+Robotics, Cognition, Intelligence > Welche Dokumente muss ich einreichen?
+Für Ihre Bewerbung müssen Sie folgende Dokumente in TUMonline hochladen:
+- Begründungsschreiben - eine von Ihnen selbst verfasste schriftliche Begründung für die Wahl des Studiengangs und für die Wahl der Technischen Universität München als Hochschule (max. 2 Seiten)
+- ein tabellarischer Lebenslauf
+- ein Aufsatz zu einem vorgegebenen Thema (ca. 1000 Wörter, Themen s. unten)
+- ein offizielles Transkript über die bisherigen Studienleistungen; ggf. offizielle Übersetzung, falls nicht in deutscher oder englischer Sprache vorliegend
+- das dem Hochschulabschluss zugrunde liegende Curriculum (Modulbeschreibungen, z.B. in Form eines Modulhandbuchs oder Syllabus); dieses Dokument ist für den Abgleich der fachlichen Qualifikation sehr wichtig!
+- Formblatt zur Curricularanalyse (s. unten)
+- Deutsch- und Englischnachweis (s. akzeptierte Sprachnachweise)
+- ggf. GRE oder GATE Test (s. unten)
+- ggf. Vorprüfungsdokumentation von uni-assist
+- ggf. Zertfikat der Akademischen Prüfstelle (APS) Bewerbende mit einem Bachelor aus China, Vietnam und Indien
+- ggf. studiengangsspezifische Ausbildungs- und Arbeitszeugnisse, fachspezifische Zusatzqualifikation (z. B. Teilnahme an einem Forschungswettbewerb)
+- ggf. Nachweis der Hochschulsemester (z.B. Exmatrikulationsbescheinigung oder Studienbuch) und Unbedenklichkeitsbescheinigung
+- ein Passfoto
+- Nachweis über Ihren Hochschulabschluss (kann zur Immatrikulation nachgereicht werden)
+- Kopie Ihres Ausweises/Passes
+- Nachweis der studentischen Krankenversicherung (wird erst für die Immatrikulation benötigt)
+Details zu allen geforderten Dokumenten finden Sie im Dokumentenglossar der Technischen Universität München. Je nach Ihrer Vorbildung und Herkunft benötigen wir eventuell noch weitere Bewerbungsunterlagen. Welche Unterlagen das sind, erfahren Sie bei der Onlinebewerbung über TUMonline.
+Links relevant for questions related to Welche Dokumente muss ich einreichen?: https://www.tum.de/studium/bewerbung/zulassungsvoraussetzungen/sprachnachweise/, https://www.tum.de/studium/bewerbung/uni-assist/, https://www.tum.de/studium/bewerbung/infoportal-bewerbung/aps, https://www.tum.de/studium/bewerbung/infoportal-bewerbung/dokumentenglossar, https://www.tum.de/studium/bewerbung/infoportal-bewerbung/sonderregeln-fuer-einzelne-laender, https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/
+Welche Dokumente muss ich einreichen?
+----------------------------------------
+
+Was muss ich beachten, wenn ich aus dem Ausland komme (Studiengebühren, VPD, GRE, APS)?
+Robotics, Cognition, Intelligence > Was muss ich beachten, wenn ich aus dem Ausland komme (Studiengebühren, VPD, GRE, APS)?
+
+Studiengebühren für internationale Studierende aus Drittstaaten
+Robotics, Cognition, Intelligence > Was muss ich beachten, wenn ich aus dem Ausland komme (Studiengebühren, VPD, GRE, APS)? > Studiengebühren für internationale Studierende aus Drittstaaten
+An der Technischen Universität München (TUM) werden ab Wintersemester 2024/25 Gebühren für internationale Studierende aus Drittstaaten erhoben, die sich neu in einen Studiengang einschreiben.
+
+Vorprüfungsdokumentation von uni-assist (VPD)
+Robotics, Cognition, Intelligence > Was muss ich beachten, wenn ich aus dem Ausland komme (Studiengebühren, VPD, GRE, APS)? > Vorprüfungsdokumentation von uni-assist (VPD)
+Bewerbende, die ihren Bachelorabschluss in einem Land außerhalb der EU/EWR erworben haben, müssen zusätzlich zur Bewerbung an der TUM eine Vorprüfungsdokumentation (VPD) von uni-assist beantragen. Das heißt, dass Sie eine Onlinebewerbung bei der TUM anlegen und gleichzeitig einen Antrag auf Vorprüfungsdokumentation bei uni-assist stellen.
+Welche Unterlagen müssen bei uni-assist eingereicht werden?
+- Antrag auf Vorprüfungsdokumentation (siehe uni-assist)
+- eine Kopie Ihrer Studienabschlussurkunde (sofern bereits vorhanden)
+- eine Kopie der Fächer- und Notenübersicht (Transcript)
+- eine Übersetzung, wenn die Originaldokumente nicht in deutscher oder englischer Sprache ausgestellt wurden
+- ggf. Zertifikat der Akademischen Prüfstelle (APS)
+Sie müssen also keine vollständige Bewerbung bei uni-assist für einen spezifischen Masterstudiengang abgeben, sondern eine allgemeine Vorprüfungsdokumentation mit den o.g. Unterlagen beantragen.
+Der Antrag auf Vorprüfungsdokumentation bei uni-assist alleine zählt nicht als Bewerbung für einen Studiengang an der TUM.
+
+GRE und GATE
+Robotics, Cognition, Intelligence > Was muss ich beachten, wenn ich aus dem Ausland komme (Studiengebühren, VPD, GRE, APS)? > GRE und GATE
+Bewerber*innen, die ihren Hochschulabschluss in Bangladesch, China, Indien, Iran oder Pakistan gemacht haben, müssen einen GRE (General) mit den geforderten Mindestpunktzahlen einreichen. Werden die Mindestpunktzahlen nicht erreicht, kann die Bewerbung nicht berücksichtigt werden.Die nötigen Mindestpunktzahlen sind:Verbal Reasoning: keine MindestpunktzahlQuantitative Reasoning: 164Analytical Writing: 4,0Institution Code: 7806, Department code: 5199 ("all other departments").
+Alternativ kann ein Testergebnis (Score Sheet) des indischen GATE Tests eingereicht werden.
+
+Zertifikat der Akademischen Prüfstelle (APS)
+Robotics, Cognition, Intelligence > Was muss ich beachten, wenn ich aus dem Ausland komme (Studiengebühren, VPD, GRE, APS)? > Zertifikat der Akademischen Prüfstelle (APS)
+Bewerbende, die Ihren Hochschulabschluss in China, Indien oder Vietnam gemacht haben, müssen ein Zertifikat der Akademischen Prüfstelle (APS) einreichen.
+Links relevant for questions related to Was muss ich beachten, wenn ich aus dem Ausland komme (Studiengebühren, VPD, GRE, APS)?: https://www.tum.de/studium/studienfinanzierung/studiengebuehren-fuer-studierende-aus-nicht-eu-laendern, https://www.tum.de/studium/bewerbung/uni-assist/, https://my.uni-assist.de/, https://www.tum.de/studium/bewerbung/infoportal-bewerbung/aps, https://www.tum.de/studium/bewerbung/infoportal-bewerbung/aps, https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/
+Was muss ich beachten, wenn ich aus dem Ausland komme (Studiengebühren, VPD, GRE, APS)?
+----------------------------------------
+
+Qualifikationsvoraussetzungen und Zulassungsverfahren
+Robotics, Cognition, Intelligence > Qualifikationsvoraussetzungen und Zulassungsverfahren
+Qualifikationsvoraussetzungen Qualifikationsvoraussetzung für den M.Sc. Robotics, Intelligence and Cognition ist ein Bachelor in den Fachrichtungen Informatik, Mathematik, Physik, Elektrotechnik und Informationstechnik, Maschinenwesen, Ingenieurwissenschaften oder vergleichbaren Studiengängen. Wenn Sie sich bewerben, prüft die Auswahlkommission die Gleichwertigkeit Ihres Bachelors mit einem der oben genannten Bachelorstudiengänge der TUM.
+Zudem müssen ausreichende Deutsch- und Englischkenntnisse nachgewiesen werden. Hier finden Sie die akzeptierten Sprachnachweise.
+Stufe 1 des Eignungsverfahrens In der ersten Stufe werden die folgenden Kriterien bewertet:
+- Fachliche Qualifikation: Ihr Vorstudium wird auf Gleichwertigkeit mit einem der oben genannten Bachelorstudiengänge der TUM geprüft und bewertet. Die vorausgesetzten Fächer / Module der jeweiligen Bachelorstudiengänge entnehmen Sie bitte der Fachprüfungs- und Studienordnung unten (Anlage 2 Eignungsverfahren).
+- Note: Die Note Ihrer besten Leistungen im Umfang von 120 ECTS geht in das Eignungsverfahren ein. Sie müssen diese Leistungen selber in der Excel-Datei "Curricularanlyse" unten eintragen und dieses Dokument als PDF in Ihrer TUMonline-Bewerbung hochladen.
+- Wissenschaftlicher Aufsatz / Essay: s. unten
+- Begründungschreiben für die Wahl des Studiengangs: s. unten
+Je nach Punktzahl können Sie in der ersten Stufe direkt zugelassen oder abgelehnt werden, oder Sie kommen in die zweite Stufe. Genaue Informationen finden Sie in der Fachprüfungs- und Studienordnung unten (Anlage 2 Eignungsverfahren).
+Stufe 2 des Eignungsverfahrens
+Im Rahmen der zweiten Stufe führen Sie ein Auswahlgespräch mit der Auswahlkommission. Das Auswahlgespräch dauert 20-30 Minuten und Sie werden spätestens eine Woche vor dem Gesprächstermin per Email dazu eingeladen.
+Nach dem Gespräch teilen wir Ihnen schnellstmöglich mit, ob Sie eine Zulassung oder eine Ablehnung für diesen Studiengang erhalten.
+Links relevant for questions related to Qualifikationsvoraussetzungen und Zulassungsverfahren: https://www.tum.de/studium/bewerbung/infoportal-bewerbung/zulassungsvoraussetzungen/sprachnachweise, https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/
+Qualifikationsvoraussetzungen und Zulassungsverfahren
+----------------------------------------
+
+Curricularanalyse
+Robotics, Cognition, Intelligence > Curricularanalyse
+Bitte laden Sie das Formblatt "Curricularanalyse" zur Berechnung der Note herunter, füllen Sie es aus, unterschreiben Sie es und laden es in Ihrer TUMonline-Bewerbung hoch!
+Formblatt - Curricularanalyse - Robotics
+Links relevant for questions related to Curricularanalyse: https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Robotics_Cognition_Intelligence/Curricularanalyse_Robotics.xls, https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/
+Curricularanalyse
+----------------------------------------
+
+Themen für den wissenschaftlichen Aufsatz / Essay
+Robotics, Cognition, Intelligence > Themen für den wissenschaftlichen Aufsatz / Essay
+Der wissenschaftliche Aufsatz / Essay soll eines der genannten Themen behandeln und einen Umfang von ca. 1000 Wörtern haben. Er kann in deutscher oder englischer Sprache verfasst sein. Der Aufsatz muss selbständig und ohne Hilfe anderer angefertigt werden und sich auf relevante und wissenschaftliche Literatur stützen. Der Begriff "Essay" kann irreführend sein - wir verlangen eine wissenschaftliche Arbeit mit korrekter Zitierung. Die verwendeten Quellen müssen am Ende aufgeführt werden. Der Aufsatz muss Ihre eigene Arbeit sein und Sie müssen ihn ohne jegliche Hilfe schreiben. Wir behalten uns das Recht vor, den Aufsatz auf die Urheberschaft des Bewerbenden und die Verwendung nicht autorisierter Hilfsmittel zu überprüfen.
+Für das Eignungsverfahren wurden folgende Themen festgelegt, aus dene Sie eines auswählen:
+Topic 1:
+- Bio-inspired robots - a distraction from proper engineering?
+Topic 2:
+- Is unregulated AI (Artificial Intelligence) research a good idea?
+Topic 3:
+- Autonomous Cars: What problems need to be solved to get from assisted driving to fully autonomous driving?
+Links relevant for questions related to Themen für den wissenschaftlichen Aufsatz / Essay: https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/
+Themen für den wissenschaftlichen Aufsatz / Essay
+----------------------------------------
+
+Begründungsschreiben für die Wahl des Studiengangs
+Robotics, Cognition, Intelligence > Begründungsschreiben für die Wahl des Studiengangs
+Die Begründung für die Wahl des Studiengangs, die Sie zusammen mit der Online-Bewerbung einreichen, sollte nicht länger als zwei DIN-A4-Seiten. Sie kann auf Englisch oder Deutsch verfasst sein.
+Legen Sie in Ihrem Begründungsschreiben Ihre besondere Qualifikation und Ihr außergewöhnliches Engagement für diesen speziellen Masterstudiengang dar. Dazu kann der Nachweis von Qualifikationen gehören, die über die im Grundstudium erworbenen Kenntnisse und Qualifikationen hinausgehen, etwa studiengangsbezogene Berufsausbildung, Praktika, Auslandsaufenthalte, wissenschaftliche Arbeiten etc. Sie sollten den Zusammenhang zwischen Ihren spezifischen Qualifikationen und den Inhalten des Studiengangs deutlich machen.
+Die Begründung muss von Ihnen selbst, ohne fremde Hilfe, verfasst werden. Wir behalten uns das Recht vor, den Aufsatz auf die Urheberschaft des Bewerbers und die Verwendung nicht zugelassener Hilfsmittel zu überprüfen.
+Links relevant for questions related to Begründungsschreiben für die Wahl des Studiengangs: https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/
+Begründungsschreiben für die Wahl des Studiengangs
+----------------------------------------
+
+FAQ Bewerbung
+Robotics, Cognition, Intelligence > FAQ Bewerbung
+
+Auflagen / Brückenkurse
+Robotics, Cognition, Intelligence > Auflagen / Brückenkurse
+1. Kann es sein, dass ich mit der Zulassung bestimmte Module als Auflage (sog. Brückenkurse) bekomme?
+Wenn wenige einzelne fachliche Voraussetzungen aus dem Erststudium nicht gegeben sind, können Bewerber*innen mit der Auflage zugelassen werden, Grundlagenprüfungen aus dem entsprechenden Bachelorstudiengang nachzuholen (sog. Brückenkurse). Brückenkurse müssen bis spätestens Ende des zweiten Semesters im Masterstudium bestanden sein und dürfen bei Nicht-Bestehen max. einmal wiederholt werden. Verlängerungen sind für Brückenkurse ausgeschlossen. Diese Kurse können Sie parallel zum Masterstudium ablegen. Sie sollten den Brückenkursen aber in jedem Fall Priorität einräumen, da Sie bei Nicht-Bestehen der Brückenkurse die Zulassung zum Master verlieren. Die Noten der Brückenkurse werden für die Abschlussnote des Studiengangs nicht berücksichtigt.
+2. Ich bin mir nicht sicher, ob ich Brückenkurse bekommen habe. Wo finde ich diese?
+Die Brückenkurse sowie die Regelungen zum Prüfungsantritt sind in Ihrem Zulassungsbescheid aufgelistet.
+
+Curricularanalyse
+Robotics, Cognition, Intelligence > Curricularanalyse
+1. Für einige Kurse meines Studiengangs habe ich keine Note, bzw. die Note "bestanden" bekommen. Darf ich diese angeben?
+Sie können die Kurse beim Abgleich Ihrer Kurse mit den entsprechenden Kursen der TUM angeben (nur M.Sc. Information Systems und M.Sc. Informatik: Games Engineering). Für die Berechnung der Note (M.Sc. Information Systems; M.Sc. Informatik: Games Engineering; M.Sc. Robotics, Cognition, Intelligence) dürfen Sie sie nur angeben, wenn Sie mit den benoteten Kursen nicht 2/3 der Credits Ihres Bachelorstudiengangs abdecken können.
+2. An meiner Universität nutzen wir kein Creditsystem. Was kann ich tun?
+In diesem Fall gehen wir von einer Gleichgewichtung der Kurse / Module aus. Sie können für jeden Kurs einen Credit vergeben. Die Zahl der insgesamt vergebenen Credits entspricht dann der Zahl aller Kurse, die zu Ihrem Studienprogramm gehören.
+3. An meiner Universität werden Noten im Buchstabenformat vergeben. Was kann ich tun?
+Sie können für jeden Notenstufe eine Note vergeben. Wenn Ihre Notenskala A+, A, B, C, D und E = nicht bestanden ist, heißt dies A+=1, A=2, B=3, C=4, D=5 und E= Fail. Die bestmögliche Note ist 1, die schlechteste Note zum Bestehen ist 5. Wenn Ihre Notenskala A+, A, B+, B etc. ist, heißt dies A+=1, A=2, B+=3, B=4 etc.
+4. Ich habe mehr als einen Studiengang studiert. Kann ich Kurse und Noten von beiden angeben?
+Wenn Sie sich für M.Sc. Robotics, Cognition and Intelligence bewerben, können Sie für die Notenberechnung nur Kurse und Noten von einem einzigen Bachelor-Studiengang angeben. Dies muss der Bachelor sein, der für den Master qualifiziert und den Sie in TUMonline als Masterzugangsberechtigung angegeben haben. Wenn Sie sich für M.Sc. Information Systems oder M.Sc. Informatik: Games Engineering bewerben, können Sie in Teil 2 (Abgleich Ihrer Kurse mit den Kursen an der TUM) Kurse mehrerer Studiengänge angeben, in Teil 3 (Berechnung der Note) aber nur Kurse und Noten eines Studienganges (der Masterzugangsberechtigung). Sie müssen alle eingetragenen Noten und Credits belegen, indem Sie ein entsprechendes Transcript of Records aller Studiengänge hochladen.
+
+Verschieben des Studienstarts
+Robotics, Cognition, Intelligence > Verschieben des Studienstarts
+1. Ich bin zugelassen worden, muss aber den Studienstart verschieben. Geht das?
+Sie können den Studienplatz in der Regel zurückstellen. Nach erneuter fristgerechter Bewerbung (!) über TUMonline können Sie ohne Eignungsverfahren wieder zugelassen werden. Die erneute Bewerbung läuft folgendermaßen:
+Sie geben eine neue Bewerbung in TUMonline ein und laden einen aktualisierten Lebenslauf hoch. Auch die restlichen Unterlagen müssen noch einmal hochgeladen werden, hier können Sie aber die gleichen Unterlagen verwenden, die Sie auch schon bei der ersten Bewerbung hochgeladen haben. Das heißt, dass Sie keinen neuen Aufsatz und kein neues Begründungsschreiben verfassen müssen, sondern hier die entsprechenden Dokumente der ersten Bewerbung wieder hochladen können.
+Bitte achten Sie darauf, dass Sie für alle geforderten Unterlagen auch tatsächlich ein Dokument hochladen, sonst bleibt Ihre Bewerbung auf dem Status "unvollständig" und wird nicht bearbeitet. Haben Sie Ihre Bewerbungsunterlagen innerhalb der offiziellen Frist vollständig und korrekt hochgeladen, erhalten Sie automatisch eine neue Zulassung.
+2. Ich habe meinen Studienstart verschoben und eine Zulassung für das Folgesemester erhalten. Welche Dokumente muss ich für die Immatrikulation einreichen?
+Die Dokumente, die Sie für die Immatrikulation einreichen müssen, sind in Ihrem TUMonline account aufgelistet. Sie finden Informationen dazu auch hier: https://www.tum.de/studium/bewerbung/infoportal-einschreibung/immatrikulation
+Bitte beachten Sie, dass einige notwendige Unterlagen per Post eingereicht werden müssen. Achten Sie zudem darauf, dass manche Dokumente für die Immatrikulation in beglaubigter Kopie eingereicht werden müssen: https://www.tum.de/studium/bewerbung/beglaubigung-von-dokumenten/
+Links relevant for questions related to FAQ Bewerbung: https://www.tum.de/studium/bewerbung/infoportal-einschreibung/immatrikulation, https://www.tum.de/studium/bewerbung/beglaubigung-von-dokumenten/, https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/
+FAQ Bewerbung
+----------------------------------------
+
+Zeitplan Bewerbung
+Robotics, Cognition, Intelligence > Zeitplan Bewerbung
+- Online-Bewerbung und Einreichung der erforderlichen Unterlagen: 	Wintersemester: 1. Februar - 31. Mai 	Empfehlung für Bewerber*innen, die ein Visum brauchen: 31. März 	Sommersemester: 1. September - 30. November  	Empfehlung für Bewerber*innen, die ein Visum benötigen: 31. Oktober
+- Kein Nachreichen fehlender Bewerbungsdokumente nach Ende der offiziellen Bewerbungsfrist möglich!
+- Information über das Ergebnis und ggf. Einladung zum Gespräch:  	Wintersemester: April bis September 	Sommersemester: Dezember bis März
+- Gesprächstermine: 	Wintersemester: Juni bis September; die Einladung erfolgt mind. 1 Woche vorher 	Sommersemester: November bis März; die Einladung erfolgt mind. 1 Woche vorher
+- Studienbeginn: 	Wintersemester: Oktober 	Sommersemester: April 	Genaue Daten finden Sie hier: https://www.tum.de/studium/bewerbung/infoportal-bewerbung/termine-und-fristen
+Links relevant for questions related to Zeitplan Bewerbung: https://www.tum.de/studium/bewerbung/infoportal-bewerbung/termine-und-fristen, https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/
+Zeitplan Bewerbung
+----------------------------------------
+
+Im Studium
+Robotics, Cognition, Intelligence > Im Studium
+Das Qualifikationsprofil des Masterstudiengangs Robotics, Cognition, Intelligence setzt sich zusammen aus den einzelnen Modulen. Im Studium müssen Sie insgesamt 120 Credits einbringen. Diese setzen sich zusammen aus:
+- Pflichtmodulen (43 ECTS)
+- Wahlmodulen der Kompetenzbereiche Computation, Mechanics, Systems and Control (41 ECTS)
+- Überfachlichen Grundlagen (6 ECTS)
+- Abschlussarbeit
+Erklärungen finden Sie im Folgenden. Details und Module finden Sie unter Studienpläne. Das aktuelle Veranstaltungsangebot finden Sie im hier. Für den Studienstart vor dem Sommersemester 2024 gibt es den Studienplan auf TUMonline auch noch zu finden.
+Links relevant for questions related to Im Studium: https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/studienplaene/, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=DE/wbstpcs.showSpoTree?pStStudiumNr=&pStpStpNr=5271&pStartSemester=W&pSjNr=1617&pFilterType=1&pPageNr=&pStpKnotenNr=#, https://campus.tum.de/tumonline/pl/ui/$ctx/wbstpcs.showSpoTree?pStStudiumNr=&pSJNr=1615&pStpStpNr=5120&pStartSemester=#, https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/
+Im Studium
+----------------------------------------
+
+Pflichtbereich
+Robotics, Cognition, Intelligence > Pflichtbereich
+Der Pflichtbereich besteht aus Modulen aus den folgenden drei Kompetenzbereichen mit insgesamt 43 ECTS:
+- Robotics (6 ECTS)
+- Cognition (8 ECTS)
+- Intelligent Autonomous Systems (14 ECTS)
+Dazu kommen ein Masterseminar (5 ECTS) und das Masterpraktikum  (10 ECTS).
+Links relevant for questions related to Pflichtbereich: https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/studienplaene/#c3328, https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/
+Pflichtbereich
+----------------------------------------
+
+Wahlbereich
+Robotics, Cognition, Intelligence > Wahlbereich
+Im Wahlbereich müssen Sie 47 ECTS erbringen – 41 ECTS durch fachliche Wahlmodule und 6 ECTS aus den überfachlichen Grundlagen. Die fachlichen Wahlbereiche setzen sich drei Kompetenzbereichen mit je 5 ECTS zusammen:
+- Computation
+- Mechanics
+- Systems and Control
+Links relevant for questions related to Wahlbereich: https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/studienplaene/#c3329, https://www.cit.tum.de/cit/studium/studierende/ueberfachliche-grundlagen/, https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/
+Wahlbereich
+----------------------------------------
+
+Überfachliche Grundlagen
+Robotics, Cognition, Intelligence > Überfachliche Grundlagen
+Im Masterstudium "Robotics, Cognition, Intelligence" müssen 6 ECTS im Bereich "Überfachliche Grundlagen" absolviert werden.
+
+Anerkannte Kurse aus dem Master Informatik
+Robotics, Cognition, Intelligence > Anerkannte Kurse aus dem Master Informatik
+Die Anerkennung der überfachlichen Kurse orientiert sich an den Regularien des Master Informatik. Allerdings ist hierbei zu beachten, dass (im Unterschied zum Master Informatik) Deutschkurse nur ab dem Niveau C1.2 anerkannt werden. Außerdem können Fachsprachkurse in Deutsch in Rücksprache mit dem Studiengangskoordinator anerkannt werden.
+Links relevant for questions related to Überfachliche Grundlagen: https://www.cit.tum.de/cit/studium/studiengaenge/master-informatik/#c531, https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/
+Überfachliche Grundlagen
+----------------------------------------
+
+Prüfungen und Ordnungen
+Robotics, Cognition, Intelligence > Prüfungen und Ordnungen
+Detaillierte Informationen finden Sie unter Prüfungen. Für alle Studierenden gilt die Allgemeine Prüfungs- und Studienordnung (APSO) der TUM und die jeweilige Fachprüfungs- und Studienordnung (FPSO):
+FPSO gültig ab Studienstart im SS 2024:
+- rechtliche gültige aktuelle Fassung
+FPSO gültig ab Studienstart im WS 2022
+- rechtliche gültige aktuelle Änderungssatzung der Fachprüfungs- und Studienordnung
+- lesbare Gesamtfassung bezogen auf die Änderungssatzung
+FPSO gültig ab Studienstart im SS 2019 bis SS 2022
+- Version der Fachprüfungs- und Studienordnung
+FPSO vor SS 2019
+Fachprüfungs- und Studienordnung für den Masterstudiengang Robotics, Cognition, Intelligence (Robotik und kognitive Systeme) an der Technischen Universität München
+
+Änderungssatzungen
+Robotics, Cognition, Intelligence > Prüfungen und Ordnungen > Änderungssatzungen
+Satzung zur Änderung der Fachprüfungs- und Studienordnung für den Masterstudiengang Robotics, Cognition, Intelligence (Robotik und kognitive Systeme) an der Technischen Universität München vom 4. August 2010
+Zweite Satzung zur Änderung der Fachprüfungs- und Studienordnung für den Masterstudiengang Robotics, Cognition, Intelligence (Robotik und kognitive Systeme) an der Technischen Universität München
+Dritte Satzung zur Änderung der Fachprüfungs- und Studienordnung für den Masterstudiengang Robotics, Cognition, Intelligence (Robotik und kognitive Systeme) an der Technischen Universität München
+Vierte Satzung zur Änderung der Fachprüfungs- und Studienordnung für den Masterstudiengang Robotics, Cognition, Intelligence (Robotik und kognitive Systeme) an der Technischen Universität München
+Sammeländerungssatzung zur Änderung der Bewerbungsfristen für die Studiengänge der Fakultät für Informatik an der Technischen Universität München
+Sammeländerungssatzung zur Änderung des englischen Sprachnachweises an der Technischen Universität München
+In der aktuellen Studienordnung wird kein Berufspraktikum mehr benötigt.
+
+Lesbare Fassung der FPSO
+Robotics, Cognition, Intelligence > Prüfungen und Ordnungen > Lesbare Fassung der FPSO
+Fachprüfungs- und Studienordnung für den Masterstudiengang Robotics, Cognition, Intelligence (Robotik und kognitive Systeme) an der Technischen Universität München, April 2018
+Bitte beachten:
+Rechtsverbindlich sind allein die in der Hochschule offiziell niedergelegten Fassungen der Fachprüfungs- und Studienordnungen und der entsprechenden Änderungssatzungen dazu.
+Links relevant for questions related to Prüfungen und Ordnungen: https://www.cit.tum.de/cit/studium/studierende/pruefungsangelegenheiten-module/, https://www.tum.de/studium/im-studium/das-studium-organisieren/satzungen-ordnungen#statute;t:Allgemeine%20Pr%C3%BCfungs-%20und%20Studienordnung;sort:106;page:1, https://www.tum.de/studium/im-studium/das-studium-organisieren/satzungen-ordnungen#statute;c:Robotics%2C%20Cognition%2C%20Intelligence%20(Robotik%20und%20kognitive%20Systeme), https://www.tum.de/studium/im-studium/das-studium-organisieren/satzungen-ordnungen?tx_in2tumstatutedatabase_pi1%5Baction%5D=download&tx_in2tumstatutedatabase_pi1%5Bcontroller%5D=Statute&tx_in2tumstatutedatabase_pi1%5BfileId%5D=P007877090&cHash=27258e6c146846d08aadc5868f783666, https://portal.mytum.de/archiv/kompendium_rechtsangelegenheiten/fachpruefungsordnungen/2009-15-FPSO-MA-Robotics-FINAL-16-3-09_2.pdf/download, https://portal.mytum.de/archiv/kompendium_rechtsangelegenheiten/fachpruefungsordnungen/2010-76-AeS-FPSO-MA-Robotics-FINAL-4-8-10.pdf/download, https://portal.mytum.de/archiv/kompendium_rechtsangelegenheiten/fachpruefungsordnungen/2012-96-Zweite-AeS-FPSO-MA-Robotics-Cognition-Intelligence-FINAL-13-11-12.pdf/download, https://portal.mytum.de/archiv/kompendium_rechtsangelegenheiten/fachpruefungsordnungen/2013-61-Dritte-AeS-MA-Robotics-FINAL-21-05-13.pdf/download, https://portal.mytum.de/archiv/kompendium_rechtsangelegenheiten/fachpruefungsordnungen/2014-64-Vierte-AeS-MA-Robotics-FINAL-06-11-2014.pdf/download, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/2.Master_Studiengaenge/7.Robotics_Cognition_Intelligence/Sammelaenderungssatzung_vom_03.12.2015.pdf, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/2.Master_Studiengaenge/7.Robotics_Cognition_Intelligence/2018-02-SammelAeS-Sprachnachweis-FINAL-7-2-18-1.pdf, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/2.Master_Studiengaenge/7.Robotics_Cognition_Intelligence/MSc_RCI_lesbare_Fassung_DE_18.04.2018.pdf, https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/
+Prüfungen und Ordnungen
+----------------------------------------
+
+Abschlussarbeit
+Robotics, Cognition, Intelligence > Abschlussarbeit
+Für den Abschluss eines Masterstudiums müssen Studierende eine wissenschaftliche Arbeit schreiben: die Masterarbeit. Dafür haben Sie sechs Monate Zeit.
+Vorgehensweise bis zum 15. Januar 2024 (Anmeldedatum), spätere Anmeldungen siehe unten.
+Dazu wird im Einvernehmen mit Aufgabensteller(in) und Betreuer(in) ein Anmeldeformular (siehe Downloads unten) ausgefüllt und unterschrieben. Dieses muss spätestens eine Woche vor dem Bearbeitungsbeginn bei Dr. Alexander Lenz abgegeben werden. Dies erfolgt am einfachsten per Email möglich. Bitte dazu einen Scan oder elektronisch unterschriebenes Anmeldeformular per email an alex.lenz@tum.de schicken.Bitte beachten Sie dazu auch die Vorgaben zum Englischen Titel der Arbeit. Wichtig, beim deutschen Titel gelten diese Regeln nicht, sondern es it "normale" Rechtschreibung ohne besondere Großschreibung anzuwenden.
+Alles Wissenswerte von der Planung über die Formatierung bis zur Abgabe finden Sie unter Abschlussarbeit.
+WICHTIG: Die Abgabe der Masterarbeit im RCI Studiengang (ein Exemplar) erfolgt NICHT am Infopoint, sondern muss  per Post and den Studiengangskoordinator (Dr. Alexander Lenz) geschickt werden. Alternativ kann diese auch perönlich bei unserem Sekretariat in Raum 03.07.052 im FMI Gebäude abgegeben werden. Bitte achten Sie darauf, dass das Sekretariat in der Regel nur zwischen 09:00h und 13:00h besetzt ist.
+Bei Postversand bitte folgende Adresse nutzen:    Technische Universität München    Dr. Alexander Lenz, Lehrstuhl I6    Boltzmannstr. 3    D-85748 Garching Als Tag der Abgabe zählt der Tag des Poststempels.
+Neue Regelung ab dem 15. Januar 2024
+Ab 15. Januar 2024 werden alle Abschlussarbeiten in der School of Computation, Information and Technology über das CIT-Portal verwaltet (Anmeldung, elektronische Abgabe, Notenvergabe).
+Wenn Sie ein Thema und einen betreuenden Lehrstuhl für Ihre Abschlussarbeit gefunden haben, werden Sie vom betreuenden Lehrstuhl angemeldet. Wenden Sie sich also an den Lehrstuhl falls Sie das noch nicht getan haben. Sie erhalten eine E-Mail mit der Aufforderung, die Anmeldung der Abschlussarbeit zu bestätigen. Erst nachdem Sie die Anmeldung bestätigt haben, können die Zulassungsvoraussetzungen vom Academic Programs Office geprüft werden und Sie erhalten eine E-Mail über die verbindliche Anmeldung zur Abschlussarbeit.
+Auch bei der elektronischen Abgabe sind Formatvorgaben einzuhalten. Bitte beachten Sie dazu auch die Vorgaben zum englischen Titel der Arbeit. Wichtig, beim deutschen Titel gelten diese Regeln nicht, sondern es it "normale" Rechtschreibung ohne besondere Großschreibung anzuwenden.
+Alles Wissenswerte von der Planung über die Formatierung bis zur Abgabe finden Sie unter Abschlussarbeit.
+Funktionen für Studierende im CIT-Portal
+- Im CIT-Portal können Sie sich mit Ihrer TUM-Kennung anmelden unter https://portal.cit.tum.de/de/Theses/ und erhalten eine Übersicht über Ihre Abschlussarbeit.
+- Bei Bedarf können Sie im CIT-Portal einen Antrag auf Verlängerung stellen.
+- Weitere Funktionen werden in den nächsten Monaten folgen.
+Weitere allgemeine Informationen zur Anmeldung finden Sie hier: https://www.cit.tum.de/cit/studium/studierende/abschlussarbeit-abschluss/
+Sollte Ihre geplante Masterarbeit an einem Lehrstuhl stattfinden, der nicht der School of CIT oder School of E&D zugeordnet ist, muss dieser Lehrstuhl eventuell noch in das Anmeldeportal integriert werden. Bei Fragen dazu wenden Sie sich bitte zuerst an den Lehrstuhl, wenn die Anmeldung im Portal dort nicht durchgeführt werden kann, setzen Sie sich bitte mir Dr. Alexander Lenz (alex.lenz@tum.de) in Verbindung.  Wir werden dann zeitnah den Lehrstuhl an das Portal anbinden.
+Links relevant for questions related to Abschlussarbeit: https://www.tum.de/fileadmin/w00bfo/www/Studium/Dokumente/Pruefungsangelegenheiten/Verwendung_des_Englischen_in_Thesistiteln.pdf, https://www.cit.tum.de/cit/studium/studierende/abschlussarbeit-abschluss/informatik/, https://portal.mytum.de/campus/roomfinder/roomfinder_viewmap?mapid=142&roomid=03.07.052@5607, https://portal.cit.tum.de/de/Theses, https://www.tum.de/fileadmin/w00bfo/www/Studium/Dokumente/Pruefungsangelegenheiten/Verwendung_des_Englischen_in_Thesistiteln.pdf, https://www.cit.tum.de/cit/studium/studierende/abschlussarbeit-abschluss/informatik/, https://portal.cit.tum.de/de/Theses/, https://www.cit.tum.de/cit/studium/studierende/abschlussarbeit-abschluss/, https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/
+Abschlussarbeit
+----------------------------------------
+
+Abschluss
+Robotics, Cognition, Intelligence > Abschluss
+Nachdem Sie die erforderlichen Leistungen erbracht und Ihre Abschlussarbeit abgegeben haben, schließen Sie mit dem Master of Science (M. Sc.) ab. Damit können Sie ins Berufsleben starten. Tipps und Hinweise zum Abschluss und Ihren nächsten Schritten erhalten Sie unter Studienabschluss.
+Links relevant for questions related to Abschluss: https://www.tum.de/studium/studienabschluss, https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/
+Abschluss
+----------------------------------------
+

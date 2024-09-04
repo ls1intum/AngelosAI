@@ -1,0 +1,94 @@
+https://www.cit.tum.de/en/cit/studies/degree-programs/bachelor-information-engineering/elective-modules/
+Elective Modules - Bachelor Information Engineering - TUM - TUM School of Computation, Information and Technology
+
+Elective Modules, Seminars & Bachelor Practical Courses
+Elective Modules, Seminars & Bachelor Practical Courses
+Links relevant for questions related to Elective Modules, Seminars & Bachelor Practical Courses: https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-information-engineering/wahlmodule/
+Elective Modules, Seminars & Bachelor Practical Courses
+----------------------------------------
+
+
+Links relevant for questions related to : https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-information-engineering/wahlmodule/
+
+----------------------------------------
+
+Module Catalog Elective Modules Informatics
+Elective Modules, Seminars & Bachelor Practical Courses > Module Catalog Elective Modules Informatics
+Modules totaling 12 credits must be taken from this catalog.
+Table (Elective Modules, Seminars & Bachelor Practical Courses > Module Catalog Elective Modules Informatics):
+Module number; Title; Semester; Semester hours; Credits
+MGTHN0058; Introduction to Reinforcement Learning (will be offered until the end of winter term 2024/25); Winter; 4; 6
+CITHN10001; Introduction to Hardware Design Languages and Tools; Winter / Summer; 5; 6
+WIHN0042; Operations & Supply Chain Management Reinforcement Learning (will be offered until the end of winter term 2024/25); Summer; 4; 6
+CITHN2012; Introduction to C++; Summer; 4; 5
+CITHN2005; Foundations and Application of Generative AI; Winter / Summer; 5; 5
+CITHN2002; Network Coding; Summer; 5; 6
+CITHN20001; Advanced Software Testing and Analysis; Winter / Summer; 4; 6
+Links relevant for questions related to Module Catalog Elective Modules Informatics: https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=2884557&pOrgNr=50878, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/wbLv.wbShowLVDetail?pStpSpNr=950736948, https://campus.tum.de/tumonline/ee/ui/ca2/app/desktop/#/slc.tm.cp/student/courses/950731117?$ctx=lang=de&$scrollTo=toc_overview, https://campus.tum.de/tumonline/pl/ui/$ctx/wbLv.wbShowLVDetail?pStpSpNr=950769132&pSpracheNr=2&pMUISuche=FALSE, https://campus.tum.de/tumonline/pl/ui/$ctx;lang=DE/wbLv.wbShowLVDetail?pStpSpNr=950769117&pSpracheNr=2&pMUISuche=FALSE, https://campus.tum.de/tumonline/pl/ui/$ctx;lang=de/wbLv.wbShowLVDetail?pStpSpNr=950769227&pSpracheNr=2&pMUISuche=FALSE, https://campus.tum.de/tumonline/pl/ui/$ctx;lang=de/wbLv.wbShowLVDetail?pStpSpNr=950769244&pSpracheNr=2, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-information-engineering/wahlmodule/
+Module Catalog Elective Modules Informatics
+----------------------------------------
+
+Module Catalog Elective Modules Management
+Elective Modules, Seminars & Bachelor Practical Courses > Module Catalog Elective Modules Management
+Modules totaling 18 credits must be taken from this catalog.
+Table (Elective Modules, Seminars & Bachelor Practical Courses > Module Catalog Elective Modules Management):
+Module number; Title; Semester; Semester hours; Credits
+WIHN0275_E; Management Science*; Winter; 2+2; 6
+WIHN1059_E; Financial Accounting*; Winter; 2+2; 6
+WIHN0021_E; Economics I - Microeconomics*; Winter; 2+2; 6
+WIHN1060; Production and Logistics*; Summer; 4; 6
+WIHN0820; Marketing and Innovation Management*; Summer; 5; 6
+MGTHN0131; Accounting; Winter; 2+2; 6
+MGTHN0133; Entrepreneurship and Family Enterprise; Winter; 2+2; 6
+MGTHN0135; Marketing**; Winter; 2+2; 6
+WIHN0219_E; Investment and Financial Management; Summer; 2+2; 6
+MGTHN0136; Operations and Supply Chain Management; Summer; 2+2; 6
+
+*In the winter semester 2024/2025, only the repeat exam of this module is offered. The lecture is not offered.
+**This module will not be offered before the winter semester 2025/2026.
+Links relevant for questions related to Module Catalog Elective Modules Management: https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1577564, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1577393, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1577414, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1577375, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1577389, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-information-engineering/wahlmodule/
+Module Catalog Elective Modules Management
+----------------------------------------
+
+Module Catalog Support Electives
+Elective Modules, Seminars & Bachelor Practical Courses > Module Catalog Support Electives
+Information on the concept of these modules can be found at Extradisciplinary fundamentals. Modules totaling 9 credits must be taken from this catalog.
+Table (Elective Modules, Seminars & Bachelor Practical Courses > Module Catalog Support Electives):
+Module number; Title; Semester; Semester hours; Credits
+INHN0030; Ethics for Nerds; Winter / Summer; 2; 3
+CITHN50001; Intercultural Jumpstart Seminar; Winter / Summer; 2; 3
+CITHN50003; Deutschkurs B1.1; Irregularly (held in winter semester 2024/25); 2; 3
+CITHN50006; Deutschkurs B1.2; Irregularly (offered in summer semester 2024); 2; 3
+CITHN50004; Design Thinking; Winter / Summer; 2; 3
+CITHN50005; Basic Sustainability; Winter / Summer; 2; 3
+INHN0010; Business Plan - Basic Course (Business Idea and Market); Winter / Summer; 2; 3
+CITHN50002; Buddy Programm; Winter; 2; 3 (for Buddies)
+CITHN50008; Corporate Campus Challenge https://campusfounders.de/de/talent/corporate-campus-challenge/; Winter; ; 0
+CITHN50007; Ethical and moral aspects of intercultural corporate management; Summer; 2; 3
+CITHN5009; Disentangling Sustainability in IT; Irregularly (offered in summer semester 2024); 2; 3
+Links relevant for questions related to Module Catalog Support Electives: https://www.cit.tum.de/en/cit/studies/students/support-electives/, https://campus.tum.de/tumonline/ee/ui/ca2/app/desktop/#/slc.cm.reg/student/modules/detail/light/3181871/study-year/1615?$ctx=design=ca2;header=max;lang=en&$scrollTo=toc_modhb_beschreibung, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=3297529&pOrgNr=14189, https://campus.tum.de/tumonline/ee/ui/ca2/app/desktop/#/slc.cm.reg/student/modules/detail/light/3297540/study-year/1615?$ctx=design=ca2;header=max;lang=en&$scrollTo=toc_modhb_beschreibung, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=3447405&pOrgNr=14189, https://campus.tum.de/tumonline/ee/ui/ca2/app/desktop/#/slc.cm.reg/student/modules/detail/light/3297543/study-year/1615?$ctx=design=ca2;header=max;lang=en&$scrollTo=toc_modhb_beschreibung, https://campus.tum.de/tumonline/ee/ui/ca2/app/desktop/#/slc.cm.reg/student/modules/detail/light/3297546/study-year/1615?$ctx=design=ca2;header=max;lang=en&$scrollTo=toc_modhb_beschreibung, https://campus.tum.de/tumonline/ee/ui/ca2/app/desktop/#/slc.cm.reg/student/modules/detail/light/3044608/study-year/1615?$ctx=design=ca2;header=max;lang=en&$scrollTo=toc_modhb_beschreibung, https://campus.tum.de/tumonline/ee/ui/ca2/app/desktop/#/slc.cm.reg/student/modules/detail/light/3297537/study-year/1615?$ctx=design=ca2;header=max;lang=en&$scrollTo=toc_modhb_beschreibung, https://campusfounders.de/de/talent/corporate-campus-challenge/, https://campus.tum.de/tumonline/pl/ui/$ctx/wbLv.wbShowLVDetail?pStpSpNr=950734832, https://campus.tum.de/tumonline/pl/ui/$ctx/wbLv.wbShowLVDetail?pStpSpNr=950769196&pSpracheNr=2&pMUISuche=FALSE, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-information-engineering/wahlmodule/
+Module Catalog Support Electives
+----------------------------------------
+
+Module Catalog Seminars & Bachelor Practical Courses
+Elective Modules, Seminars & Bachelor Practical Courses > Module Catalog Seminars & Bachelor Practical Courses
+Table (Elective Modules, Seminars & Bachelor Practical Courses > Module Catalog Seminars & Bachelor Practical Courses):
+Module number; Title; Semester; Semester hours; Credits
+INHN0015; Hot Topics in BPM; Winter / Summer; 2; 5
+INHN0015; Knowledge Graphs; Winter / Summer; 2; 5
+INHN0015; Automated Mobile App Testing; Irregularly (held in summer semester 2024); 2; 5
+INHN0015; High-Performance Computing; Irregularly (held in summer semester 2024); 2; 5
+INHN0015; Computer Networking & Internet; Winter / Summer; 2; 5
+INHN0015; Software Engineering for Artificial Intelligence; Irregularly (held in summer semester 2024); 2; 5
+INHN0015; Large Language Models; Irregularly (held in summer semester 2024); 2; 5
+INHN0021; BPC: Building a BPM Research App; Winter; 6; 10
+INHN0021; BPC: ilab; Winter / Summer; 6; 10
+INHN0021; BPC: Duckietown; Winter; 6; 10
+INHN0021; BPC: Data Engineering; Summer; 6; 10
+INHN0021; BPC: Building Digital Workflows Enterprise Platform ServiceNow; Summer; 6; 10
+INHN0021; BPC: Exploring AI in Software Engineering: A Hands-On Laboratory Approach; Summer; 6; 10
+INHN0021; BPC: Otimization, maintenance and further integration into the TUM ecosystem of the TUM MGT chatbot; Summer; 6; 10
+Links relevant for questions related to Module Catalog Seminars & Bachelor Practical Courses: https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/wbLv.wbShowLVDetail?pStpSpNr=950728769, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/wbLv.wbShowLVDetail?pStpSpNr=950735118, https://campus.tum.de/tumonline/pl/ui/$ctx;lang=DE/wbLv.wbShowLVDetail?pStpSpNr=950769116&pSpracheNr=2&pMUISuche=FALSE, https://campus.tum.de/tumonline/pl/ui/$ctx;lang=de/wbLv.wbShowLVDetail?pStpSpNr=950769137&pSpracheNr=2&pMUISuche=FALSE, https://campus.tum.de/tumonline/pl/ui/$ctx;lang=DE/wbLv.wbShowLVDetail?pStpSpNr=950734717&pSpracheNr=2&pMUISuche=FALSE, https://campus.tum.de/tumonline/pl/ui/$ctx;lang=de/wbLv.wbShowLVDetail?pStpSpNr=950769254&pSpracheNr=2&pMUISuche=FALSE, https://campus.tum.de/tumonline/pl/ui/$ctx;lang=DE/wbLv.wbShowLVDetail?pStpSpNr=950769680&pSpracheNr=2&pMUISuche=FALSE, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/wbLv.wbShowLVDetail?pStpSpNr=950728784, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/wbLv.wbShowLVDetail?pStpSpNr=950735749, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/wbLv.wbShowLVDetail?pStpSpNr=950735745, https://campus.tum.de/tumonline/pl/ui/$ctx;lang=DE/wbLv.wbShowLVDetail?pStpSpNr=950769113&pSpracheNr=2&pMUISuche=FALSE, https://campus.tum.de/tumonline/pl/ui/$ctx;lang=de/wbLv.wbShowLVDetail?pStpSpNr=950734809&pSpracheNr=2&pMUISuche=FALSE, https://campus.tum.de/tumonline/pl/ui/$ctx;lang=de/wbLv.wbShowLVDetail?pStpSpNr=950769252&pSpracheNr=2&pMUISuche=FALSE, https://campus.tum.de/tumonline/pl/ui/$ctx;lang=de/wbLv.wbShowLVDetail?pStpSpNr=950769448&pSpracheNr=2&pMUISuche=FALSE, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-information-engineering/wahlmodule/
+Module Catalog Seminars & Bachelor Practical Courses
+----------------------------------------
+

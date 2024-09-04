@@ -1,0 +1,440 @@
+https://www.cit.tum.de/cit/studium/studiengaenge/master-computational-science-engineering/modules/
+Modules - Master Computational Science and Engineering - TUM - TUM School of Computation, Information and Technology
+
+Diese Seite ist nur auf Englisch verfügbar, da die Unterrichtssprache Englisch ist und wir für diesen Studiengang keinen Deutschnachweis fordern.
+Links relevant for questions related to : https://www.cit.tum.de/cit/studium/studiengaenge/master-computational-science-engineering/modules/
+
+----------------------------------------
+
+Modules in Computational Science and Engineering
+Modules in Computational Science and Engineering
+Links relevant for questions related to Modules in Computational Science and Engineering: https://www.cit.tum.de/cit/studium/studiengaenge/master-computational-science-engineering/modules/
+Modules in Computational Science and Engineering
+----------------------------------------
+
+Required Modules
+Required Modules
+This table shows the situation for students who have started from winter term 2021/22.
+Table (Required Modules):
+Courses; ECTS; Module
+Section A: Computer Science
+Advanced Programming; 5; IN1503
+Parallel Programming; 5; IN2147
+Section C: Scientific Computing
+Scientific Computing I; 5; IN2005
+Scientific Computing Lab; 6; IN2182
+Scientific Computing II; 5; IN2141
+Advanced Practical Course Computational Science and Engineering (see below); 10; IN2397
+CSE Seminar Scientific Computing (see below); 5; IN2183
+
+
+Section A: Computer Science
+Required Modules > Section A: Computer Science
+
+Section C: Scientific Computing
+Required Modules > Section C: Scientific Computing
+Links relevant for questions related to Required Modules: https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=454189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=457062, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=456354, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458284, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=476730, https://www.cit.tum.de/cit/studium/studiengaenge/master-computational-science-engineering/modules/#c3836, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=2990448&pOrgNr=14189, https://www.cit.tum.de/cit/studium/studiengaenge/master-computational-science-engineering/modules/#c3837, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458286, https://www.cit.tum.de/cit/studium/studiengaenge/master-computational-science-engineering/modules/
+Required Modules
+----------------------------------------
+
+Required Modules for students who have started before winter term 2020/21
+Required Modules for students who have started before winter term 2020/21
+Table (Required Modules for students who have started before winter term 2020/21):
+Courses; ECTS; Module
+Section A: Computer Science
+Advanced Programming; 5; IN1503
+Parallel Programming; 5; IN2147
+Section B: Numerical Analysis
+Numerical Programming I; 8; MA3305
+Numerical Programming II; 8; MA3306
+Parallel Numerics; 5; IN2012
+Section C: Scientific Computing
+Scientific Computing I; 5; IN2005
+Scientific Computing Lab; 6; IN2182
+Scientific Computing II; 5; IN2141
+CSE Seminar Scientific Computing (see below); 5; IN2183
+
+
+Section A: Computer Science
+Section A: Computer Science
+
+Section B: Numerical Analysis
+Section B: Numerical Analysis
+
+Section C: Scientific Computing
+Section C: Scientific Computing
+Links relevant for questions related to Required Modules for students who have started before winter term 2020/21: https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=454189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=457062, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=555948, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=479091, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=456366, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=456354, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458284, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=476730, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458286, https://www.cit.tum.de/cit/studium/studiengaenge/master-computational-science-engineering/modules/
+Required Modules for students who have started before winter term 2020/21
+----------------------------------------
+
+Section C: Advanced Practical Course CSE
+Section C: Advanced Practical Course CSE
+Please note that this module is only available for students who have started since the winter term 2021/22.
+The advanced practical course (lab) is a mandatory module, where CSE students choose a lab course with a topic fitting for CSE. Students are then usually working in groups on a larger project. Such a lab course has 10 ECTS and teaches a large portion of practical and soft skills.
+Below you will find a list of lab courses that may be used for the module "Advanced Practical Course CSE" (IN2397). Please note that the lab courses listed on this site may not be offered regularly and may be canceled or replaced. As is the case with all courses, you may not know if an internship will be offered until only a few weeks before the start of the semester. The following table is subject to change and only includes labs that have been accepted by the Examination Board for module IN2397.
+Please keep in mind that you can only take lab courses offered for master’s students. Lab courses offered for bachelor’s students only cannot be taken as advanced practical courses for CSE.
+Registration for practical courses typically follows the matching process. Read more about this under "Course registration".
+Note that, since the advanced practical course (lab) is a mandatory module, it is not possible to take a second course to improve your grade.
+PS: If the entry below is not pointing at the current/upcoming semester, you can click "equivalent course" under "Further info" to look for updated versions of the practical course.
+Table (Section C: Advanced Practical Course CSE):
+Lab course; Course ID; term; 
+Efficient Programming of Multicore Processors and Supercomputers; IN4048; summer; 
+Experimental Evaluation of modern Computing Systems and Accelerators (WS24/25 TBD); IN4294; winter/summer; 
+Machine Learning in Crowd Modeling & Simulation (NEW, from WS24/25); IN4267; winter/summer; 
+Modern Wave Propagation - Discontinuous Galerkin & Julia; IN4280; summer; 
+Scientific Computing - Computational Fluid Dynamics; IN2186/IN4085; summer; 
+Scientific Computing - High Performance Computing; IN4230; winter;
+Links relevant for questions related to Section C: Advanced Practical Course CSE: https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=2990448&pOrgNr=14189, https://www.cit.tum.de/cit/studium/studiengaenge/master-computational-science-engineering/#c4640, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=en/wbLv.wbShowLVDetail?pStpSpNr=950729885&pSpracheNr=2, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=DE/wbLv.wbShowLVDetail?pStpSpNr=950733552&pSpracheNr=1, https://campus.tum.de/tumonline/pl/ui/$ctx/wbLv.wbShowLVDetail?pStpSpNr=950763418&pSpracheNr=1, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=en/wbLv.wbShowLVDetail?pStpSpNr=950732572&pSpracheNr=2, https://campus.tum.de/tumonline/wbLv.wbShowLVDetail?pStpSpNr=950729941&pSpracheNr=2, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=en/wbLv.wbShowLVDetail?pStpSpNr=950764318&pSpracheNr=2, https://www.cit.tum.de/cit/studium/studiengaenge/master-computational-science-engineering/modules/
+Section C: Advanced Practical Course CSE
+----------------------------------------
+
+Section C: CSE Seminar Scientific Computing
+Section C: CSE Seminar Scientific Computing
+The seminar is a special type of module that differs from the usual lectures or lab courses. It involves the study of a selected topic under the individual guidance of a TUM researcher. Students are then usually asked to write a scientific report and give a presentation to the other participants in the seminar. The grade is often determined by both the report and the presentation.
+Below is a list of seminars that can be used for the module "CSE Seminar Scientific Computing" (IN2183). Courses explicitly advertised with IN2183 or IN2183XX are always valid for the seminar module. The following table is subject to change and only includes seminars that have been accepted by the Examination Board for module IN2183. Please note that the seminars listed on this site may not always be offered regularly, and may be canceled or replaced. As is the case with all courses, you (as well as we) will only find out a few weeks before the start of the matching process (or of the semester), whether a seminar will be offered or not.
+To find out whether a particular seminar is offered in a particular semester, please check the website of the respective chair (for example, for the chair of scientific computing I05, see https://www.cs.cit.tum.de/sccs/lehre/), as these may be updated more frequently in case of sudden changes.
+Please keep in mind that you can only take seminars offered to master’s students. Seminars offered for bachelor’s students only (e.g. "Proseminar") cannot be taken as CSE seminars. Make sure to check the corresponding entry since some seminars might occasionally be offered for Bachelor students in a specific semester depending on the demands for that particular semester!
+Registration for seminar courses (with INxxxx course IDs) typically follow the matching process. Read more about this under "Course registration". For the other seminars, please inquire with the respective lecturer. Registration might be possible even outside the time window for matching!
+Please also read the general information on seminars.
+Note that, since the seminar is a mandatory module, it is not possible to take a second course to improve your grade.
+PS: If the entry below is not pointing at the current/upcoming semester, you can click "equivalent course" under "Further info" to look for updated versions of the seminar.
+Table (Section C: CSE Seminar Scientific Computing):
+Seminar; Course ID; term
+Advanced Topics in Quantum Computing; IN2183; winter/summer
+Case Studies: Scientific Computing *; MA4306; winter/summer
+Computational Aspects of Machine Learning; IN2183; winter
+Computational Methods for Operator-Based Analysis (NEW!) *; ED140016; winter/summer
+Computational Photonics and Nanoelectronics *; EI7775; winter/summer
+Deep Learning for Medical Applications; IN4860; winter/summer
+Deep Learning for the Natural Sciences (NEW!); IN45051; winter/summer
+Deep Learning in Computer Graphics (not in WS24/25); IN4858; winter/summer
+Deep Learning in Physics; IN4939; winter/summer
+Fundamentals of Wave Simulation - Solving Hyperbolic Systems of PDEs; IN2183; winter
+High Dimensional Methods in Scientific Computing; IN2183; summer
+Methods for Molecular Dynamics (NEW!); IN2183; winter
+Modern Trends in High Performance Computing; IN2183; summer
+Next-Gen Programming Interfaces and Compilers; IN4590; winter
+Next Generation AI Hardware; IN4471; summer
+Parallelisation of Physics Calculations on GPUs with CUDA *; PH1351; summer
+(Performance) Portable Programming of HPC Applications; IN4472; summer
+Quantum Information Processing Devices (NEW!) *; CIT432005; summer
+Quantum Networks (NEW!) *; CIT4320003; winter/summer
+Recent Trends in 3D Computer Vision and Deep Learning; IN4826; summer
+
+* Marked courses do not use the Matching platform. Consult with the course organizers what the respective registration process is!
+Links relevant for questions related to Section C: CSE Seminar Scientific Computing: https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1378124&pOrgNr=14189, https://www.cs.cit.tum.de/sccs/lehre/, https://www.cit.tum.de/cit/studium/studiengaenge/master-computational-science-engineering/#c4640, https://www.cit.tum.de/cit/studium/studierende/pruefungsangelegenheiten-module/informatik/praktika-seminare/, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=en/wbLv.wbShowLVDetail?pStpSpNr=950765288&pSpracheNr=, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1587404&pOrgNr=14178, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/wbLv.wbShowLVDetail?pStpSpNr=950766941&pSpracheNr=2, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=3832245&pOrgNr=24208, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1137115&pOrgNr=14188, https://campus.tum.de/tumonline/wbLv.wbShowLVDetail?pStpSpNr=950766410&pSpracheNr=2, https://campus.tum.de/tumonline/wbLv.wbShowLVDetail?pStpSpNr=950759642&pSpracheNr=2, https://campus.tum.de/tumonline/wbLv.wbShowLVDetail?pStpSpNr=950758344&pSpracheNr=2, https://campus.tum.de/tumonline/wbLv.wbShowLVDetail?pStpSpNr=950766790&pSpracheNr=2, https://campus.tum.de/tumonline/wbLv.wbShowLVDetail?pStpSpNr=950767204&pSpracheNr=, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=en/wbLv.wbShowLVDetail?pStpSpNr=950731360&pSpracheNr=2, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=EN/wbLv.wbShowLVDetail?pStpSpNr=950774397&pSpracheNr=2&pMUISuche=FALSE, https://campus.tum.de/tumonline/wbLv.wbShowLVDetail?pStpSpNr=950731401&pSpracheNr=, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/wbLv.wbShowLVDetail?pStpSpNr=950763728&pSpracheNr=2, https://campus.tum.de/tumonline/wbLv.wbShowLVDetail?pStpSpNr=950732402&pSpracheNr=1, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=645124&pOrgNr=14179, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/wbLv.wbShowLVDetail?pStpSpNr=950754429&pSpracheNr=, https://campus.tum.de/tumonline/pl/ui/$ctx/wbLv.wbShowLVDetail?pStpSpNr=950769267&pSpracheNr=1, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=DE/WBMODHB.wbShowMHBReadOnly?pKnotenNr=3576392&pOrgNr=53599, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/wbLv.wbShowLVDetail?pStpSpNr=950731580&pSpracheNr=2, https://www.cit.tum.de/cit/studium/studiengaenge/master-computational-science-engineering/modules/
+Section C: CSE Seminar Scientific Computing
+----------------------------------------
+
+Elective Modules Overview
+Elective Modules Overview
+To complete the CSE program, you must attend 49 ECTS of elective courses. The area of elective modules is split into 4 parts:
+- Computer Science (section A)
+- Applied Mathematics (section B)
+- Application areas of CSE (D catalogs)
+- Further electives (E catalogs)
+At least 10 ECTS have to be earned from the section of computer science. From applied mathematics, you have to acquire at least 16 ECTS, and from the Application areas, at least 8 ECTS from a single catalog (e.g., all 8 credits from D1 Computational Structural Mechanics) have to be achieved. The remaining (up to 15) ECTS can be filled with elective modules from any catalog.
+In summary:
+- You must earn at least 49 ECTS in total from the electives following the rules below.
+- You must earn at least 10 ECTS from the section A electives.
+- You must earn at least 16 ECTS from the section B electives.
+- You must earn at least 8 ECTS from one D catalog.
+- Remaining ECTS can be earned from any section or catalog.
+Please refer to the examples at the bottom of this website, if you are still unsure about these rules.
+Links relevant for questions related to Elective Modules Overview: https://www.cit.tum.de/cit/studium/studiengaenge/master-computational-science-engineering/modules/
+Elective Modules Overview
+----------------------------------------
+
+Elective Modules Details for students who have started before winter term 2020/21
+Elective Modules Details for students who have started before winter term 2020/21
+To complete the CSE program, you must attend elective courses. The area of elective modules is split into 2 parts:
+- Computer Science
+- Application areas of CSE and Methods and Techniques in CSE (D and E catalogs)
+From the Computer Science part 15 ECTS have to be earned whereas from the Application area and Techniques part 23 ECTS have to be achieved.
+In the application area you must attend courses in different areas. The application areas are defined by catalogs of elective courses (D and E catalogs). Please follow these rules:
+- You must earn at least 23 ECTS credits in total.
+- The 23 ECTS have to be collected from two or more different catalogs.
+- You have to complete at least 6 ECTS credits in two catalogs.
+- At least one of the two catalogs with 6 ECTS must be a D catalog.
+Please refer to the examples at the bottom of this website, if you are unsure about these rules.
+Links relevant for questions related to Elective Modules Details for students who have started before winter term 2020/21: https://www.cit.tum.de/cit/studium/studiengaenge/master-computational-science-engineering/modules/
+Elective Modules Details for students who have started before winter term 2020/21
+----------------------------------------
+
+Section A: Elective Modules in Computer Science
+Section A: Elective Modules in Computer Science
+In addition to the mandatory courses in Section A: Computer Science, some other computer science related courses must be completed. Depending on their personal focus, each student can choose the modules that interest them. All modules listed below are offered only in the winter semester. The year in the last column of the table below is just a recommendation, the modules can be taken at any time during the CSE studies.
+From the modules in the following table, 10 ECTS have to be earned.
+Table (Section A: Elective Modules in Computer Science):
+Courses; ECTS; Module; Term; Year
+Computer Architecture and Networks 			     OR 			Advanced Computer Architecture; 5 			OR 			6; IN2189  			     OR 			IN2076; winter; 1
+Fundamental Algorithms; 5; IN2157; winter; 1/2
+Patterns in Software Engineering; 5; IN2081; winter; 2
+Visual Data Analytics; 5; IN2026; winter; 1/2
+Links relevant for questions related to Section A: Elective Modules in Computer Science: https://www.cit.tum.de/cit/studium/studiengaenge/master-computational-science-engineering/#c2298, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458548, https://campus.tum.de/tumonline/pl/ui/$ctx;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=456672&pOrgNr=14189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1386201&pOrgNr=14189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=473855, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=en/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1528428&pOrgNr=14189, https://www.cit.tum.de/cit/studium/studiengaenge/master-computational-science-engineering/modules/
+Section A: Elective Modules in Computer Science
+----------------------------------------
+
+Elective Modules in Computer Science for students who have started before the winter term 2020/21
+Elective Modules in Computer Science for students who have started before the winter term 2020/21
+From the modules in the following table, 15 ECTS have to be earned.
+Table (Elective Modules in Computer Science for students who have started before the winter term 2020/21):
+Courses; ECTS; Module; Term; Year
+Computer Architecture and Networks; 5; IN2189; winter; 1
+Fundamental Algorithms; 5; IN2157; winter; 1/2
+Patterns in Software Engineering; 5; IN2081; winter; 2
+Visual Data Analytics; 5; IN2026; winter; 1/2
+Programming of Supercomputers; 5; IN2190; winter; 2
+Links relevant for questions related to Elective Modules in Computer Science for students who have started before the winter term 2020/21: https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458548, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1386201&pOrgNr=14189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=473855, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=en/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1528428&pOrgNr=14189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458550, https://www.cit.tum.de/cit/studium/studiengaenge/master-computational-science-engineering/modules/
+Elective Modules in Computer Science for students who have started before the winter term 2020/21
+----------------------------------------
+
+Section B: Elective Modules in Applied Mathematics
+Section B: Elective Modules in Applied Mathematics
+Please note that this choice is only available for students who started from the winter term 2021/22 onwards. Students who started before this (i.e. until winter semester 2020/21), have to take all three lectures of applied mathematics (Numerical Programming 1&2 and Parallel Numerics).
+All courses in applied mathematics are electives. Three courses are offered and two out of these courses must be taken, but all three courses can also be taken. Depending on their personal background and focus, each student can choose the modules that interest them. All modules take place once a year. The year in the last column of the table below is only a recommendation; modules may be taken at any point in the CSE program.
+From the modules in the following table, 16 ECTS have to be earned.
+Table (Section B: Elective Modules in Applied Mathematics):
+Courses; ECTS; Module; Term; Year
+Numerical Programming 1; 8; MA3305; winter; 1
+Numerical Programming 2; 8; MA3306; summer; 1
+Numerical Algorithms for High Performance Computing; 8; IN2398; winter; 2
+Links relevant for questions related to Section B: Elective Modules in Applied Mathematics: https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=en/WBMODHB.wbShowMHBReadOnly?pKnotenNr=555948&pOrgNr=14178, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=en/WBMODHB.wbShowMHBReadOnly?pKnotenNr=479091&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=2911533&pOrgNr=14189, https://www.cit.tum.de/cit/studium/studiengaenge/master-computational-science-engineering/modules/
+Section B: Elective Modules in Applied Mathematics
+----------------------------------------
+
+D and E Catalogs
+D and E Catalogs
+The available catalogs are listed in the drop-down menus below. D-catalogs typically correspond to specific applications of CSE. E-catalogs are typically focused on methods and techniques in CSE. At the bottom of this page you can find an example of a selection of electives.
+New courses can be added to the catalogs upon request to the Examination Board (via coordinators(at)cse.tum.de). It is not possible to use seminars as elective courses. New elective courses must be worth at least 5 credits.
+The following tables list all courses that have been approved by the Examination Board for the corresponding catalogs. Please note that some of the courses listed on this site may not be offered regularly, or they may be cancelled or replaced. Moreover, courses in the catalogs may be offered with slightly different hours/week or titles. We try to keep this list as up-to-date as possible.
+Note that the "term" column indicates whether the particular course is usually offered in the summer and/or winter term.
+Please also read our information on course registration.
+Links relevant for questions related to D and E Catalogs: https://www.cit.tum.de/cit/studium/studiengaenge/master-computational-science-engineering/modules/#, https://www.cit.tum.de/cit/studium/studiengaenge/master-computational-science-engineering/#c4640, https://www.cit.tum.de/cit/studium/studiengaenge/master-computational-science-engineering/modules/
+D and E Catalogs
+----------------------------------------
+
+D-Catalogs (Applications of CSE)
+D-Catalogs (Applications of CSE)
+The following catalogs (D1 to D6) are currently offered as D-catalogs. At least one (at most two) D-catalogs have to be chosen.
+Table (D-Catalogs (Applications of CSE)):
+Course; ECTS; Module; Term; 
+D1 Computational Structural Mechanics
+Advanced Finite Element Methods; 3; BV010010; summer; 
+Boundary Element Method; 3; BV020007; winter; 
+Computational Material Modeling 1; 6; BV330009; winter; 
+Computational Mechanics for Car Body Design; 3; BGU33011; winter; 
+Discontinuous Galerkin Methods for Numerical Simulation; 3; MW2453; summer; 
+Explicit Finite Element Methods and Transient Analysis; 3; BV330008; winter; 
+Finite Elements; 5; MW0612; winter; 
+Finite Element Method (FEM) in Aerospace Structures; 4; MW1268; winter/summer; 
+Finite Element Methods 1; 6; BV320016; winter; 
+Finite Elements Practical Course; 4; MW0286; summer; 
+Isogeometric Elements; 6; BV440005; summer; 
+Isogeometric Structural Analysis and Design; 3; BV320007; summer; 
+Multibody Simulation; 3; MW0866; summer; 
+Multidisciplinary Design Optimization; 5; MW0085; summer; 
+Multiscale Modeling; 5; MW2359; summer; 
+Nonlinear Finite Element Methods; 6; BV320009; summer; 
+Optimization; 6; BV320017; winter; 
+Structural Dynamics; 6; BV430008; summer; 
+Structural Dynamics Computer Lab; 4; MW2296; winter; 
+The Finite Element Method for Fluid-Structure Interaction with Open-Source Software; 5; BGU32024; summer (July); 
+Theory of Plates and Shells; 6; BGU32021T2; winter+summer; 
+D2 Computational Fluid Mechanics
+An Introduction to Microfluidic Simulations; 3; MW0642; summer; 
+Biofluid Mechanics; 5; MW0376; summer; 
+Computational Acoustics (NEW!); 5; MW2323; summer; 
+Computational Aerodynamics(NEW!); 5; LRG0110; winter; 
+Computational Fluid Dynamics (CFD); 6; BGU41028; summer; 
+Computational Thermo-Fluid Dynamics; 4; MW2134; winter/summer; 
+Finite Elements in Fluid Mechanics; 3; MW2452; summer; 
+Numerical Methods for Conservation Laws; 3; MW2337; winter; 
+Particle-Simulation methods for Fluid Dynamics; 3; MW0696; winter; 
+The Finite Element Method for Fluid-Structure Interaction with Open-Source Software; 5; BGU32024; summer (July); 
+Turbulent Flow Simulation on HPC-Systems; 5; IN2311; winter; 
+D3 Modelling and Computation in the Biosciences
+Applications of Mathematical Biology; 9; MA3602; summer; 
+Case Studies Life Science Mathematics; 7; MA5616; summer; 
+Computational Neuroscience: A Lecture Series from Models to Applications; 3; EI7646; summer; 
+Mathematical Models in Biology; 9; MA3601; winter; 
+D4 Computational Physics
+Computational and Analytical Methods in Electromagnetics; 6; EI73181; winter; 
+Computational Methods in Many-Body Physics; 10; PH2264; summer; 
+Computational Plasma Physics; 5; MA4304; summer; 
+Computational Physics 2; 5; PH2090; summer; 
+Geometric Methods for Physics of Magnetized Plasmas; 5; MA5333; winter; 
+Image Processing in Physics; 5; PH2181; winter/summer; 
+Molecular Dynamics Simulations; 5; PH2019; summer; 
+D5 Computational Electronics
+Analysis, Modeling and Simulation of Communication Networks; 6; EI7450; summer; 
+Atomistic Simulation of Nanomaterials and Electronic Devices (NEW!); 5; CIT431011; winter/summer; 
+Computational Materials Design (NEW!); 5; EI71055; winter; 
+Computational Methods for Nanoelectronics: Semiclassical Models(NEW!); 5; EI71094; winter; 
+Computational Methods in Nanoelectronics; 5; EI7319; winter; 
+Computational and Analytical Methods in Electromagnetics; 6; EI73181; winter; 
+Computational Photonics Lab; 5; EI7469; winter; 
+Laboratory on "Simulation and Characterization of Microdevices"; 6; EI7202; winter/summer; 
+Practical Course Design and Simulation of Nanodevices; 5; EI7274; winter/summer; 
+Simulation of Quantum Devices; 5; EI70760; summer; 
+D6 Computational ChemistryDue to the very limited offer of courses within the D6 catalog, please contact the coordinators so that an individual plan can be agreed upon.
+Advanced Electronic Structure; 5; CH3333; winter; 
+Methods of Molecular Simulation; 5; CH3334; summer; 
+
+
+D1 Computational Structural Mechanics
+D1 Computational Structural Mechanics
+
+D2 Computational Fluid Mechanics
+D2 Computational Fluid Mechanics
+
+D3 Modelling and Computation in the Biosciences
+D3 Modelling and Computation in the Biosciences
+
+D4 Computational Physics
+D4 Computational Physics
+
+D5 Computational Electronics
+D5 Computational Electronics
+
+D6 Computational Chemistry
+D6 Computational Chemistry
+Links relevant for questions related to D-Catalogs (Applications of CSE): https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=484827&pOrgNr=14934, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?&pKnotenNr=487299, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=707987&pOrgNr=14938, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=962474&pOrgNr=14938, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1815649&pOrgNr=15277, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=707497&pOrgNr=14938, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?&pKnotenNr=261127, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?&pKnotenNr=516995, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?&pKnotenNr=707982, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?&pKnotenNr=261927, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?&pKnotenNr=665639, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?&pKnotenNr=657537, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=261663&pOrgNr=15271, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?&pKnotenNr=261281, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1362101&pOrgNr=45370, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?&pKnotenNr=675989, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=708007&pOrgNr=14184, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?&pKnotenNr=707993, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1162774&pOrgNr=15271, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1143498&pOrgNr=14934, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?&pKnotenNr=848074, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?&pKnotenNr=261461, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=261047&pOrgNr=15307, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1197940&pOrgNr=47617, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=2663400&pOrgNr=15307, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1871193&pOrgNr=14937, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=903902&pOrgNr=24208, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1815650&pOrgNr=15277, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1254194&pOrgNr=15307, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?&pKnotenNr=261717, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1143498&pOrgNr=14934, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1060610&pOrgNr=14189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1556613&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1196131&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1120549&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?&pKnotenNr=458312, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1697620&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1439960&pOrgNr=14179, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1060686, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?&pKnotenNr=557083, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1251705&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?&pKnotenNr=906383, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?&pKnotenNr=549680, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1084720&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=3835111&pOrgNr=53599, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1710649&pOrgNr=53600, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=2839801&pOrgNr=53600, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=919527, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1697620&pOrgNr=14188, https://campus.tum.de/tumonline/wbModHb.wbShowMHBReadOnly?pKnotenNr=1137114, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?&pKnotenNr=262023, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1451550&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1743690&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1552620&pOrgNr=14180, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=DE/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1552587&pOrgNr=53030, https://www.cit.tum.de/cit/studium/studiengaenge/master-computational-science-engineering/modules/
+D-Catalogs (Applications of CSE)
+----------------------------------------
+
+E-Catalogs (Methods and Techniques in CSE)
+E-Catalogs (Methods and Techniques in CSE)
+The following courses are offered within the E section. The division into "catalogs" is only relevant for students who started before the winter semester 2021/22. Otherwise, the categories simply collect similar courses.
+Table (E-Catalogs (Methods and Techniques in CSE)):
+Course; ECTS; Module; Term; ; 
+Algorithms in Scientific Computing
+Algorithms for Scientific Computing; 8; IN2001; summer; ; 
+Algorithmic Game Theory; 5; IN2239; summer; ; 
+Numerical Methods (formerly Finite Elements)(Many courses which were previously here have been shifted to D1!)
+Introduction to Functional Analysis; 5; MA9304; winter; ; 
+Numerical Methods for Partial Differential Equations; 9; MA3303; winter; ; 
+Parallel and Distributed Computing, High Performance Computing
+Advanced Parallel Computing and Solvers for Large Problems in Engineering; 5; MW1746; summer; ; 
+Advanced Seminar Course Code Generation Techniques and Innovative Programming Models; 5; IN4590; winter; ; 
+Cloud Computing; 4; IN2073; winter; ; 
+Distributed Systems; 5; IN2259; summer; ; 
+Parallel Programming Systems; 3; IN2365; winter; ; 
+Vision and Visualization
+Augmented Reality; 6; IN2018; summer; ; 
+Basic Mathematical Methods for Imaging and Visualization; 5; IN2124; winter; ; 
+Computer Aided Medical Procedures; 6; IN2021; winter; ; 
+Computer Aided Medical Procedures 2; 5; IN2022; summer; ; 
+Computer Vision I: Variational Methods; 8; IN2246; winter; ; 
+Geometry Processing; 6; IN2297; summer; ; 
+Image Synthesis; 5; IN2015; winter; ; 
+Probabilistic Methods in Computational Science and Engineering
+Algorithms of Uncertainty Quantification; 5; IN2345; summer; ; 
+Applied Regression; 5; MA4401; winter; ; 
+Generalized Linear Models; 9; MA3403; winter; ; 
+Probability Theory and Uncertainty Quantification; 5; MW2360; winter; ; 
+Data Driven Simulation and Computing
+Advanced Deep Learning for Physics; 6; IN2298; summer; ; 
+Information Retrieval in High Dimensional Data; 6; EI7223; winter; ; 
+Introduction to Deep Learning; 6; IN2346; summer; ; 
+Machine Learning; 8; IN2064; winter; ; 
+Machine Learning for Graphs and Sequential Data; 5; IN2323; summer; ; 
+TUM Data Innovation Lab; 10; MA8113; winter/summer; ; 
+Quantum Computing; 
+Advanced Concepts of Quantum Computing; 5; IN2400; summer; ; 
+Introduction to Quantum Computing; 5; IN2381; winter; ; 
+QST Theory: Quantum Information; 10; PH1010; winter; ; 
+Quantum Computers and Quantum Secure Communications; 5; EI71073; summer; ; 
+Quantum Entrepreneurship Laboratory; 6; PH8128; winter/summer; ; 
+Tensor Networks; 5; IN2388; summer; ; 
+
+
+Algorithms in Scientific Computing
+Algorithms in Scientific Computing
+
+Numerical Methods (formerly Finite Elements)
+Numerical Methods (formerly Finite Elements)
+
+Parallel and Distributed Computing, High Performance Computing
+Parallel and Distributed Computing, High Performance Computing
+
+Vision and Visualization
+Vision and Visualization
+
+Probabilistic Methods in Computational Science and Engineering
+Probabilistic Methods in Computational Science and Engineering
+
+Data Driven Simulation and Computing
+Data Driven Simulation and Computing
+
+Quantum Computing
+Quantum Computing
+Links relevant for questions related to E-Catalogs (Methods and Techniques in CSE): https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?&pKnotenNr=456346, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=629351&pOrgNr=14189, https://www.cit.tum.de/cit/studium/studiengaenge/master-computational-science-engineering/modules/#c2844, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?&pKnotenNr=557756, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=819298, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?&pKnotenNr=680301, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=759708, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?&pKnotenNr=456656, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=756837, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1507004&pOrgNr=14189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?&pKnotenNr=456372, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?&pKnotenNr=480825, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?&pKnotenNr=473851, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?&pKnotenNr=456378, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=672363&pOrgNr=14189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1528921&pOrgNr=14189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?&pKnotenNr=456368, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1333663, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?&pKnotenNr=702795, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?&pKnotenNr=478025, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1362105&pOrgNr=45370, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=930142&pOrgNr=14189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=555271, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1334293&pOrgNr=14189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=456537, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1799629&pOrgNr=14189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1332986&pOrgNr=14178, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=2981021&pOrgNr=14189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1816255&pOrgNr=14189, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1716413&pOrgNr=53018, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1808722&pOrgNr=53599, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=2694375&pOrgNr=14179, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=2809143&pOrgNr=14189, https://www.cit.tum.de/cit/studium/studiengaenge/master-computational-science-engineering/modules/
+E-Catalogs (Methods and Techniques in CSE)
+----------------------------------------
+
+Irregular Offers and Courses Requiring Special Consideration
+Irregular Offers and Courses Requiring Special Consideration
+A “master” list of courses in the CSE curriculum can be found in this document (last update: 25.07.2024 – This document is updated at least once every semester).
+In addition to the courses listed above, you'll find some other courses which are suitable for CSE, but might require additional consideration, are mentioned here. For courses in these lists, it is not necessary to contact the coordinators in advance if you plan to take them. Most commonly, courses in this list:
+- might not be offered regularly (please be aware that we also don't know when a course on this list might be offered again. Instead, please reach out to the course organizer listed on the module description),
+- might be taught in German,
+- or might require a higher degree of prerequisites or be more challenging than a typical course.
+Links relevant for questions related to Irregular Offers and Courses Requiring Special Consideration: https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Computational_Science_and_Engineering/curriculum.pdf, https://www.cit.tum.de/cit/studium/studiengaenge/master-computational-science-engineering/modules/
+Irregular Offers and Courses Requiring Special Consideration
+----------------------------------------
+
+Example for electives calculations
+Example for electives calculations
+This page shows the situation for students who started from the winter term 2021/22 onwards.
+Please note: As a TUM student you can attend as many TUM courses as you want. However, only the credits (and grades) from the electives complying with CSE regulations will count for your CSE curriculum.
+Assume you attend the following courses and pass the respective exams:
+Table (Example for electives calculations):
+Section/Catalog; Course; Credits
+A; Computer Architecture and Networks; 5
+B; Numerical Programming 1; 8
+B; Numerical Programming 2; 8
+B; Numerical Algorithms for High Performance Computing; 8
+D4; Computational Physics 2; 5
+D4; Computational Plasma Physics; 5
+D5; Computational Methods in Nanoelectronics; 5
+E4; Image Synthesis; 5
+E5; Advanced Mathematical Biology; 9
+E6; Data Mining Lab Course; 10
+
+This selection of elective courses has 68 ECTS (>= 49) but it is not complete, as there are still credits from Section A missing (there is only one course in the example). Once another Section A course is completed (e.g., Visual Data Analytics), the Section B requirement can be fulfilled with any two of the three courses (e.g., Numerical Programming 1 & 2). As for Section D, only the selection from D4 (Computational Physics 2 + Computational Plasma Physics) is valid, as there are not enough ECTS in D5. Any selection of the rest of the courses can be used to fill in: the remaining B course, the D5 course, or any of the E courses. For example, Numerical Algorithms for High Performance Computing and Advanced Mathematical Biology could be included, such that the the D5, E4, and E6 courses appear in your transcript only as free subjects and the grades will not be reflected on your GPA.
+Please note that you have to obtain at least 8 ECTS in a single D catalog in your transcript. Once you meet this criterion, you can choose subjects from other catalogs for the remaining (up to 15) ECTS. Some examples, assuming the 26 ECTS from Sections A and B are completed (23 ECTS are missing):
+- the combination D4 (5+5 >= 8), E4 (5), and E6 (10) is valid.
+- the combination B (8), D4 (5+5 >= 8), and E4 (5) is valid.
+- the combination B (8), D4 (5+5 >= 8), and D5 (5) is valid. (Obs: E courses can be completely avoided!)
+- the combination D4 (5), D5 (5), E4 (5) and E5 (9 >= 8) is not valid. You have to obtain 8 ECTS in a single D catalog.
+- the combination E4 (5), E5(9 >= 8) and E6 (10) is not valid. You have to obtain 8 ECTS in a single D catalog.
+- the combination D4 (5+5 >= 8), E4 (5), E5 (9) and E10 (10) is not valid. You cannot add further courses as soon as you have reached the 23 ECTS limit (at least one course needs to be removed).
+Links relevant for questions related to Example for electives calculations: https://www.cit.tum.de/cit/studium/studiengaenge/master-computational-science-engineering/modules/
+Example for electives calculations
+----------------------------------------
+
+Example for D- and E-Catalog calculation for students who have started before winter term 2020/21
+Example for D- and E-Catalog calculation for students who have started before winter term 2020/21
+Please note: As a TUM student you can attend as many TUM courses as you want. However, only the credits (and grades) from the electives complying with CSE regulations will count for your CSE curriculum.
+Suppose you attend the following courses and pass the respective exams:
+Table (Example for D- and E-Catalog calculation for students who have started before winter term 2020/21):
+Catalog; Course; Credits
+D4; Computational Physics 2; 5
+D4; Computational Plasma Physics; 5
+D5; Computational Methods in Nanoelectronics; 5
+E4; Image Synthesis; 5
+E5; Advanced Mathematical Biology; 9
+E6; Data Mining Lab Course; 10
+
+The courses from catalogs D4 (5+5 >= 6) and E5 (9 >= 6) will appear in your CSE transcript as official choices, since for each catalog you earned more than 6 credits and one of the catalogs is a D catalog. To reach the required 23 ECTS, you can, for example, use Computational Methods in Electrodynamics. The remaining courses from E4 and E6 will appear in your transcript only as free subjects, and the grades will not be reflected on your average.
+Please note that you have to gain at least 6 ECTS in two catalogs (at least one D catalog) in your transcript. As soon as you meet this criterion, you can also choose subjects from other catalogs. Some examples:
+- the combination D4 (5+5 >= 6), E4 (5) and E5 (9 >= 6) is valid.
+- the combination D4 (5+5 >= 6), E4 (5) and E6 (10 >= 6) is valid.
+- the combination D4 (5), D5 (5), E4 (5) and E5 (9 >= 6) is not valid. You have to obtain 6 ECTS in two catalogs (at least one D catalog).
+- the combination E4 (5), E5(9 >= 6) and E6 (10 >= 6) is not valid. One of the catalogs with 6 ECTS has to be a D catalog.
+- the combination D4 (5+5 >= 6), E4 (5) , E5 (9 >= 6) and E10 (10) is not valid. You cannot add further courses as soon as you have reached the 23 ECTS limit (at least one course needs to be removed).
+Links relevant for questions related to Example for D- and E-Catalog calculation for students who have started before winter term 2020/21: https://www.cit.tum.de/cit/studium/studiengaenge/master-computational-science-engineering/modules/
+Example for D- and E-Catalog calculation for students who have started before winter term 2020/21
+----------------------------------------
+

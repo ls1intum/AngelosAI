@@ -1,0 +1,111 @@
+https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/studienplaene/
+Studienpläne Master Robotics, Cognition, Intelligence - TUM - TUM School of Computation, Information and Technology
+
+Studienpläne Master Robotics, Cognition, Intelligence
+Studienpläne Master Robotics, Cognition, Intelligence
+Links relevant for questions related to Studienpläne Master Robotics, Cognition, Intelligence: https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/studienplaene/
+Studienpläne Master Robotics, Cognition, Intelligence
+----------------------------------------
+
+Pflichtbereich
+Studienpläne Master Robotics, Cognition, Intelligence > Pflichtbereich
+Der Pflichtbereich besteht aus den folgenden Modulen aus drei Kompetenzbereichzen mit insgesamt 43 ECTS:
+
+Wahlpflichtbereich Robotics
+Studienpläne Master Robotics, Cognition, Intelligence > Pflichtbereich > Wahlpflichtbereich Robotics
+IN2067 Robotics (6 ECTS, Vorlesung im Wintersemester) oder alternative ED160028 Roboterdynamik für RCI (MW0867 Roboterdynamik für Studienstart vor dem Sommer Semester 2024) (6 ECTS, Vorlesung im Sommersemester). Bitte bedenken Sie, dass nur die Prüfung für eins der Fächer abgelegt werden darf (entweder oder, XOR).
+
+Kompetenzbereich Cognition
+Studienpläne Master Robotics, Cognition, Intelligence > Pflichtbereich > Kompetenzbereich Cognition
+IN2228 Computer Vision II: Multiple View Geometry (8 ECTS, Vorlesung im Sommersemester)
+
+Kompetenzbereich Intelligent Autonomous Systems
+Studienpläne Master Robotics, Cognition, Intelligence > Pflichtbereich > Kompetenzbereich Intelligent Autonomous Systems
+IN2406 Fundamentals of Artificial Intelligence (Robotics (6 ECTS, Vorlesung im Wintersemester)
+IN2064 Machine Learning  (8 ECTS, Vorlesung im Wintersemester)
+dazu kommt noch ein Masterseminar (IN2107, 5 ECTS, großes Angebot versch. Seminare im Winter- und Sommersemester)
+und das Masterpraktikum (IN2106, 10 ECTS, großes Angebot versch. Praktika im Winter- und Sommersemester)
+Links relevant for questions related to Pflichtbereich: https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/studienplaene/
+Pflichtbereich
+----------------------------------------
+
+Wahlbereich
+Studienpläne Master Robotics, Cognition, Intelligence > Wahlbereich
+Im Wahlbereich müssen 47 ECTS erbracht werden. Dabei sind 41 ECTS durch fachliche Wahlmodule zu erbringen und 6 ECTS aus den überfachlichen Grundlagen.
+Die fachlichen Wahlbereiche setzen sich drei Kompetenzbereichen (Computation, Mechanis, Systems and Control) zusammen und in jedem dieser Kompetenzbereich sind mindestens 5 ECTS zu erbringen (in der Summe aber 41 ECTS).  Die Auswahl ist sehr groß und Details sind dem Link oben zu entnehmen.
+Bei den überfachlichen Grundlagen ist ebenfalls ein großes Angebot vorhanden. Diese entnehmen Sie bitte auch dem Studienplan oben. Das Angebot wird ständig erweitert. Informationen zum Konzept der überfachlichen Grundlagen finden unter Überfachliche Grundlagen. Die überfachlichen Kurse orientiert sich an den Regularien des Masters Informatik. Allerdings ist hierbei zu beachten, dass (im Unterschied zum Master Informatik) Deutschkurse nur ab dem Niveau C1.2 anerkannt werden.
+Es gibt keinen verpflichtenden Studienplan. Es wird aber empfohlen, die Pflichtmodule in den ersten zwei Semestern abzulegen. Pro Semester sollen 30 ECTS erreicht werden. Ein Vorschlag für den Start im Wintersemester wird im Folgenden gezeigt (n ist die Anzahl der Credits im Wahlbereich).
+Links relevant for questions related to Wahlbereich: https://www.cit.tum.de/cit/studium/studierende/ueberfachliche-grundlagen/, https://www.cit.tum.de/cit/studium/studierende/ueberfachliche-grundlagen/#c451, https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/studienplaene/
+Wahlbereich
+----------------------------------------
+
+Studienbeginn ab Sommersemester 2024
+Studienpläne Master Robotics, Cognition, Intelligence > Studienbeginn ab Sommersemester 2024
+Für Studierenden, die ab dem Sommersemester 2024 ihr RCI Studium beginnen, gilt der der folgende Studienplan (Studienplanversion 20241).
+Die dazugehörige Fachprüfungs- und Studienordnung finden Sie hier.
+Studienplanvorschlag bei Beginn im Sommersemester:
+Table (Studienpläne Master Robotics, Cognition, Intelligence > Studienbeginn ab Sommersemester 2024):
+Semester; Pflichtmodule; Wahlmodule; Summe ECTS
+1. Sem (SS); Computer Vision II: Multiple View Geometry, IN2228,  8 ECTSRoboterdynamik für RCI, ED160028, 6 ECTS als Alternative zu Robotics IN2067; Module aus den Wahlbereichen und Überfachliche Grundlagen; 8+(6)+n
+2. Sem (WS); Robotics, IN2067, 6 ECTS als Alternative zu Roboterdynamik für RCI, ED160028Fundamentals of AI, IN2406, 6 ECTSMaschinelles Lernen, IN2064, 8 ECTSMasterpraktikum, IN2106, 10 ECTS; Module aus den Wahlbereichen und Überfachliche Grundlagen.; (6)+24+n
+3. Sem (SS); Masterseminar, IN2107, 5 ECTS; Module aus den Wahlbereichen und Überfachliche GrundlagenEventuell Auslandsaufenthalt (Anerkennung von Modulen möglich); 5+n
+4. Sem (WS); Master's Thesis; -; 30
+
+Wer anstatt Roboterdynamik für RCI (ED160028)  lieber Robotics (IN2067)  belegen möchte (wird im WS angeboten), legt im 1. Semester entsprechend weniger ECTS ab und dafür im 2. Semester sechs ECTS mehr. Auch das Praktikum und das Seminar könnten vom 2. Semester ins 3. Semester verschoben werden.
+Studienplanvorschlag bei Beginn im Wintersemester:
+Table (Studienpläne Master Robotics, Cognition, Intelligence > Studienbeginn ab Sommersemester 2024):
+Semester; Pflichtmodule; Wahlmodule; Summe ECTS
+1. Sem (WS); Robotics, IN2067, 6 ECTS als Alternative zu Roboterdynamik für RCI, ED160028Fundamentals of AI, IN2406, 6 ECTSMaschinelles Lernen, IN2064, 8 ECTS; Module aus den Wahlbereichen und Überfachliche Grundlagen; (6)+14 + n
+2. Sem (SS); Computer Vision II: Multiple View Geometry, IN2228,  8 ECTSRoboterdynamik für RCI, ED160028, 6 ECTS als Alternative zu Robotics IN2067Masterpraktikum, IN2106, 10 ECTSMasterseminar, IN2107, 5 ECTS; Module aus den Wahlbereichen und Überfachliche Grundlagen.; (6)+23 + n
+3. Sem (WS); -; Module aus den Wahlbereichen und Überfachliche GrundlagenEventuell Auslandsaufenthalt (Anerkennung von Modulen möglich); 30
+4. Sem (SS); Master's Thesis; -; 30
+
+Wer anstatt Robotics (IN2067) lieber Roboterdynamik für RCI (ED160028) belegen möchte (wird im SS angeboten), legt im 1. Semester entsprechend weniger ECTS ab und dafür im 2. Semester sechs ECTS mehr. Auch das Praktikum und das Seminar könnten vom 2. Semester ins 3. Semester verschoben werden.
+Links relevant for questions related to Studienbeginn ab Sommersemester 2024: https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=DE/wbstpcs.showSpoTree?pStStudiumNr=&pStpStpNr=5271&pStartSemester=W&pSjNr=1617&pFilterType=1&pPageNr=&pStpKnotenNr=#, https://www.tum.de/studium/im-studium/das-studium-organisieren/satzungen-ordnungen?tx_in2tumstatutedatabase_pi1%5Baction%5D=download&tx_in2tumstatutedatabase_pi1%5Bcontroller%5D=Statute&tx_in2tumstatutedatabase_pi1%5BfileId%5D=P007877090&cHash=27258e6c146846d08aadc5868f783666, https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/studienplaene/
+Studienbeginn ab Sommersemester 2024
+----------------------------------------
+
+Studienbeginn ab Wintersemester 2022/23
+Studienpläne Master Robotics, Cognition, Intelligence > Studienbeginn ab Wintersemester 2022/23
+Für Studierenden, die ab dem Wintersemester 2022/23 ihr RCI Studium beginnen, gilt der Studienplan des Studienjahres 2022/23 .
+Table (Studienpläne Master Robotics, Cognition, Intelligence > Studienbeginn ab Wintersemester 2022/23):
+Semester; Pflichtmodule; Wahlmodule; Summe ECTS
+1. Sem (WS); Robotics, IN2067, 6 ECTS 			Fundamentals of AI, IN2406, 6 ECTS 			Maschinelles Lernen, IN2064, 8 ECTS; Module aus den Wahlbereichen und Überfachliche Grundlagen; 20 + n
+2. Sem (SS); Computer Vision II: Multiple View Geometry, IN2228,  8 ECTS 			Masterpraktikum, IN2106, 10 ECTS 			Masterseminar, IN2107, 5 ECTS; Module aus den Wahlbereichen und Überfachliche Grundlagen.; 23 + n
+3. Sem (WS); -; Module aus den Wahlbereichen und Überfachliche Grundlagen 			Eventuell Auslandsaufenthalt (Anerkennung von Modulen möglich); 30
+4. Sem (SS); Master's Thesis; -; 30
+
+Wer anstatt Robotics (IN2067) lieber Roboterdynamik (MW0867) belegen möchte (wird im SS angeboten), legt im 1. Semester entsprechend weniger ECTS ab und dafür im 2. Semester sechs ECTS mehr. Auch das Praktikum und das Seminar könnten vom 2. Semester ins 3. Semester verschoben werden.
+Links relevant for questions related to Studienbeginn ab Wintersemester 2022/23: https://campus.tum.de/tumonline/pl/ui/$ctx/wbstpcs.showSpoTree?pStStudiumNr=&pSJNr=1615&pStpStpNr=5120&pStartSemester=#, https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/studienplaene/
+Studienbeginn ab Wintersemester 2022/23
+----------------------------------------
+
+Studienbeginn vom Wintersemester 2019/20 bis Wintersemester 2021/22
+Studienpläne Master Robotics, Cognition, Intelligence > Studienbeginn vom Wintersemester 2019/20 bis Wintersemester 2021/22
+Für Studierenden, die vor dem Sommersemester 2019 ihr Robotics, Cognition, Intelligence Studium aufnahmen, gilt der Studienplan des Studienjahres 2018/19.
+Möglicher Stundenplan (nicht verpflichtend, n ist die Anzahl der Credits aus dem Wahlbereich):
+Table (Studienpläne Master Robotics, Cognition, Intelligence > Studienbeginn vom Wintersemester 2019/20 bis Wintersemester 2021/22):
+Sem; Summe 			ECTS; Pflichtmodule; Wahlmodule
+1. Sem (WS); 24+n; Robotics (IN2067), 6 ECTS 				Grundlagen der KI (IN2062), 5 ECTS 				Mensch-Maschine-Kommunikation 1 (EI0632), 5 ECTS 				Maschinelles Lernen (IN2064), 8 ECTS; Module aus den Wahlbereichen / Überfachliche Grundlagen
+SS; 28+n; Robot Motion Planning (IN2138), 5 ECTS 				Kognitive Systeme (IN2222), 5 ECTS 				Master-Praktikum (IN2106), 10 ECTS 				Computer Vision II: Multiple View Geometry (IN2228) 8 ECTS; Module aus den Wahlbereichen / Überfachliche Grundlagen
+WS; 5+n; Master Seminar (IN2107), 5 ECTS; Module aus den Wahlbereichen / Überfachliche Grundlagen
+SS; 30; Master’s Thesis, 30 ECTS
+Links relevant for questions related to Studienbeginn vom Wintersemester 2019/20 bis Wintersemester 2021/22: https://campus.tum.de/tumonline/wbstpcs.showSpoTree?pStStudiumNr=&pSJNr=1607&pStpStpNr=4304, https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/studienplaene/
+Studienbeginn vom Wintersemester 2019/20 bis Wintersemester 2021/22
+----------------------------------------
+
+Studienstart im Sommersemester 2019 bis Sommersemester 2022
+Studienpläne Master Robotics, Cognition, Intelligence > Studienstart im Sommersemester 2019 bis Sommersemester 2022
+Möglicher Stundenplan (nicht verpflichtend, n ist die Anzahl der Credits aus dem Wahlbereich):
+Table (Studienpläne Master Robotics, Cognition, Intelligence > Studienstart im Sommersemester 2019 bis Sommersemester 2022):
+Sem; Summe 			ECTS; Pflichtmodule; Wahlmodule
+1. Sem (SS); 18+n; Robot Motion Planning (IN2138), 5 ECTS 				Kognitive Systeme (IN2222), 5 ECTS 				Computer Vision II: Multiple View Geometry (IN2228) 8 ECTS; Module aus den Wahlbereichen / Überfachliche Grundlagen
+WS; 29+n; Robotics (IN2067), 6 ECTS 				Grundlagen der KI (IN2062), 5 ECTS 				Mensch-Maschine-Kommunikation 1 (EI0632), 5 ECTS 				Maschinelles Lernen (IN2064), 8 ECTS  				Master Seminar (IN2107), 5 ECTS; Module aus den Wahlbereichen / Überfachliche Grundlagen
+SS; 10+n; Master-Praktikum (IN2106), 10 ECTS; Module aus den Wahlbereichen / Überfachliche Grundlagen
+WS; 30; Master’s Thesis, 30 ECTS
+
+Das Angebot der Wahlveranstaltungen wird immer wieder aktualisiert. Schauen Sie hier den Studienplan für den Studienstart vor dem Sommersemester 2019 und Studienstart ab Sommersemester 2019 bis Sommersemester 2022.
+Links relevant for questions related to Studienstart im Sommersemester 2019 bis Sommersemester 2022: https://campus.tum.de/tumonline/wbstpcs.showSpoTree?pStStudiumNr=&pSJNr=1607&pStpStpNr=4304, https://campus.tum.de/tumonline/wbstpcs.showSpoTree?pStStudiumNr=&pStpStpNr=4827&pStartSemester=&pSjNr=1607, https://www.cit.tum.de/cit/studium/studiengaenge/master-robotics-cognition-intelligence/studienplaene/
+Studienstart im Sommersemester 2019 bis Sommersemester 2022
+----------------------------------------
+

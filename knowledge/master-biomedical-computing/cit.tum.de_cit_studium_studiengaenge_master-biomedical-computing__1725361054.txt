@@ -1,0 +1,224 @@
+https://www.cit.tum.de/cit/studium/studiengaenge/master-biomedical-computing/
+Master Biomedical Computing - TUM - TUM School of Computation, Information and Technology
+
+Diese Seite ist nur auf Englisch verfügbar, da die Unterrichtssprache Englisch ist und wir für diesen Studiengang keinen Deutschnachweis fordern.
+Links relevant for questions related to : https://www.cit.tum.de/cit/studium/studiengaenge/master-biomedical-computing/
+
+----------------------------------------
+
+Biomedical Computing
+Biomedical Computing
+
+Master of Science (M.Sc.)
+Biomedical Computing > Master of Science (M.Sc.)
+Links relevant for questions related to Biomedical Computing: https://www.cit.tum.de/cit/studium/studiengaenge/master-biomedical-computing/
+Biomedical Computing
+----------------------------------------
+
+Before your Studies | During your Studies | Contact
+Links relevant for questions related to : https://www.cit.tum.de/cit/studium/studiengaenge/master-biomedical-computing/#c2378, https://www.cit.tum.de/cit/studium/studiengaenge/master-biomedical-computing/#c2364, https://www.cit.tum.de/cit/studium/studiengaenge/master-biomedical-computing/#c2513, https://www.cit.tum.de/cit/studium/studiengaenge/master-biomedical-computing/
+
+----------------------------------------
+
+Key Data
+Key Data
+Type of Study: Full-time
+Standard Duration of Studies: 4 Semesters
+Credits: 120 ECTS
+Main Locations: Garching
+Start of Degree Program: expiring, Application no longer possible
+Language of Instruction: English
+Costs: semester fee, no tuitions fees
+Professional Profile: Informatics
+Links relevant for questions related to Key Data: https://www.tum.de/studium/im-studium/das-studium-organisieren/wichtige-begriffe-im-ueberblick-glossar#c2288, https://www.tum.de/en/studies/fees, https://www.cit.tum.de/cit/studium/studiengaenge/master-biomedical-computing/
+Key Data
+----------------------------------------
+
+How is the program structured?
+How is the program structured?
+The Master program in Biomedical Computing is taught over four semesters.
+Semesters 1 to 3 are dedicated to studying mandatory fundamental medical science and technology courses. Remaining credits are filled with complementary courses that depend on the students' previous education. Computer science majors can choose from an advanced course in mathematics, whereas mathematics and physics majors can select from a set of computer science courses.
+In semesters 2 and 3, students attend additional mandatory courses related to medicine and visual computing and acquire practical experience by participating in practical courses and the clinical project. Students usually finish their coursework at the end of the third semester.
+Semester 4 is reserved for the Master's thesis. The program offers you the possibility of working on your thesis at one of the partner universities of TUM if you are interested in a particular topic. Completing your master thesis at an external company or research institute is also possible. In those cases, at least one professor of TUM has to act as an examiner of the thesis.
+Links relevant for questions related to How is the program structured?: https://www.cit.tum.de/cit/studium/studiengaenge/master-biomedical-computing/
+How is the program structured?
+----------------------------------------
+
+Application
+Application
+The degree program Master's of Biomedical Computing is being discontinued. Applications to this study program are no longer possible.
+Links relevant for questions related to Application: https://www.cit.tum.de/cit/studium/studiengaenge/master-biomedical-computing/
+Application
+----------------------------------------
+
+During your Studies
+During your Studies
+The successful completion of the Master's Program Biomedical Computing requires 120 credits:
+- Compulsory Informatics Modules
+- Compulsory Medical Modules
+- Elective Modules
+- Support Elective Modules
+- Master's Thesis
+Links relevant for questions related to During your Studies: https://www.cit.tum.de/cit/studium/studiengaenge/master-biomedical-computing/
+During your Studies
+----------------------------------------
+
+Curriculum
+Curriculum
+A detailed overview of the modules can be found below, in the Curriculum and in TUMonline:
+without login: Curriculum as of WiSe 2022/23
+with login: Enrolled students can find their own study plan (Curriculum Support) at the top of the Studies and Teaching menu under Study Status / Study Plan.
+Links relevant for questions related to Curriculum: https://www.cit.tum.de/cit/studium/studiengaenge/master-biomedical-computing/curriculum/, https://campus.tum.de/tumonline/wbstpcs.showSpoTree?pStpStpNr=5128, https://www.cit.tum.de/cit/studium/studiengaenge/master-biomedical-computing/
+Curriculum
+----------------------------------------
+
+Elective Modules
+Elective Modules
+Please note: the module "Selected Topics in X" (IN3xxx) can be counted only once to each subject area.
+
+Elective Modules - Imaging
+Elective Modules > Elective Modules - Imaging
+A minimum of 5 ECTS has to be collected from this list.
+Table (Elective Modules > Elective Modules - Imaging):
+Module Number; Module Title; ECTS; Remarks
+PH2001; Biomedical Physics1; 5; 
+PH2002; Biomedical Physics2; 5; 
+IN2286; Image Guided Surgery; 6; 
+ME700; Imagine Neurooncology; 2; 
+ME25666; Introduction to Bioengineering; 6; 
+ME562; Introduction to Biological Imaging; 6; 
+PH2271; Physics of Magnetic Resonance Imaging 2; 5; 
+IN4183, IN2106, IN8021; Advanced Practical Course BioInnovation - From Unmet Clinical Needs to Solution Concepts; 10; 
+
+
+Elective Modules - Mathematical Methods and Scientific Computing
+Elective Modules > Elective Modules - Mathematical Methods and Scientific Computing
+A minimum of 5 ECTS has to be collected from this list.
+Table (Elective Modules > Elective Modules - Mathematical Methods and Scientific Computing):
+Module Number; Module Title; ECTS; Remarks
+IN2001; Algorithms for Scientific Computing; 6; 
+IN2002; Algorithms for Scientific Computing2; 3; 
+IN99545; Accepted Elective Modile in Mathematical Methods and Scientific computing; ; 
+IN99546; Accepted Elective Modile in Mathematical Methods and Scientific computing; ; 
+IN3400; Selected Topics in Algorithms and Scientific Computing; ; 
+IN2124; Basic Mathematical Methods for Imaging and Visualization; 4; 
+IN2330; Convex Optimization for Computer Vision; 6; 
+IN2357; Machine Learning for Computer Vision; 4; 
+MA3305; Numerical Programming 1; 8; 
+IN2012; Parallel Numerics; 4; 
+IN2005; Scientific Computing 1; 4; 
+IN2141; Scientific Computing 2; 4; 
+IN2064; Machine Learning; 8; 
+IN2384; Numerical Algorithms in Computer Vision and Machine Learning; 5; 
+
+
+Elective Modules - Computer Graphics, Augmented Reality, and Visualization
+Elective Modules > Elective Modules - Computer Graphics, Augmented Reality, and Visualization
+A minimum of 6 ECTS has to be collected from this list.
+Table (Elective Modules > Elective Modules - Computer Graphics, Augmented Reality, and Visualization):
+Module Number; Module Title; ECTS; Remarks
+IN99561; Anerkennung aus dem Bereich Computergraphik, Erweiterte Realität und Visualisierung; ; 
+IN99560; Anerkennung aus dem Bereich Computergraphik, Erweiterte Realität und Visualisierung; ; 
+IN2138; Bewegungsplanung in der Robotik; 4; To be moved to imaging module
+IN2015; Bildsynthese; 4; 
+IN2016; Bildverstehen II: Robot Vision; 3; To be moved to imaging module
+IN2111; Dreidimensionale Nutzerschnittstellen; 5; 
+IN2018; Erweiterte Realität; 5; 
+IN2124; Grundlegende Mathematische Methoden für Imaging und Visualisierung; 4; 
+IN2222; Kognitive Systeme; 4; 
+IN2298; Advanced Deep Learning for Physics; 4; 
+IN2293; Medical Augmented Reality; 4; 
+IN4209; Praktikum Perception and Learning for Robotics and Augmented Reality; 10; 
+IN2067; Robotik; 5; To be moved to imaging module
+IN2026; Visual Data Analytics; 4; 
+IN2354; 3D Scanning & Motion Capture; 6; 
+
+
+Elective Modules - Programming and Software Engineering
+Elective Modules > Elective Modules - Programming and Software Engineering
+A minimum of 5 ECTS has to be collected from this list.
+Table (Elective Modules > Elective Modules - Programming and Software Engineering):
+Module Number; Module Title; ECTS; Remarks
+IN1503; Advanced Programming; 5; 
+IN2309; Advanced Topics of Software Engineering; 8; 
+IN99550; Accepted Elective Module in Programming and Software Engineering; ; 
+IN99551; Accepted Elective Module in Programming and Software Engineering; ; 
+IN3050; Selected Topics in Software Engineering; ; 
+IN2073; Cloud Computing; 4; 
+IN2003; Efficient Algorithms and Data Structures; 8; 
+IN2157; Fundamental Algorithms; 5; 
+IN2323; Machine Learning for Graphs and Sequential Data; 5; 
+IN2081; Patterns in Software Engineering; 5; 
+IN2147; Parallel Programming; 5; 
+IN4049; Practical Course iOS; 10; 
+IN2241; Social Computing; 5; 
+IN2087; Software Engineering for Business Applications - Master's Course: Web Application Engineering; 8; 
+
+
+Elective Modules - Image Processing, Computer Vision, and Pattern Recognition
+Elective Modules > Elective Modules - Image Processing, Computer Vision, and Pattern Recognition
+A minimum of 8 ECTS has to be collected from this list.
+Table (Elective Modules > Elective Modules - Image Processing, Computer Vision, and Pattern Recognition):
+Module Number; Module Title; ECTS; Remarks
+IN99555; Anerkennung aus dem Bereich Bildverarbeitung, Computer Vision und Mustererkennung; ; 
+IN99556; Anerkennung aus dem Bereich Bildverarbeitung, Computer Vision und Mustererkennung; ; 
+IN3200; Ausgewählte Themen aus dem Bereich Computergrafik und -vision; ; 
+PH2181; Bildverarbeitung in der Physik; 5; 
+IN2023; Image Understanding I: Machine Vision Algorithms; 3; 
+IN2246; Computer Vision I: Variational Methods; ; 
+IN2228; Computer Vision II: Multiple View Geometry; 8; 
+IN2339; Data Analysis and Visualization in R; 6; 
+IN2030; Data Mining und Knowledge Discovery; 3; 
+IN2061; Einführung in die digitale Signalverarbeitung; 7; 
+IN2346; Introduction to Deep Learning; 6; 
+IN2292; Introduction to Surgical Robotics; 6; To be moved to Imaging
+IN2357; Machine Learning for Computer Vision; 5; 
+IN4023; Master-Praktikum - Advanced Topics in 3D Computer Vision; 10; 
+IN2293; Medical Augmented Reality; 5; To be only in Augmented Reality list
+IN4204; Praktikum Deep Learning für Computer Vision und Biomedizin; 10; 
+IN4142; Praktikum Machine Learning in Medical Imaging; 10; 
+IN2308; Programmierung und Regelung für Mensch-Roboterinteraktion; 5; To be moved to imaging
+IN4295; Tracking and Detection in Computer Vision; 10; 
+IN2355; Robotic 3D Vision; 5; To be moved to Imaging
+IN2375; Computer Vision III: Detection, Segmentation, and Tracking; 5; 
+IN2364; Advanced Deep Learning for Computer Vision; 8;
+Links relevant for questions related to Elective Modules: https://www.cit.tum.de/cit/studium/studiengaenge/master-biomedical-computing/
+Elective Modules
+----------------------------------------
+
+Support Elective Modules
+Support Elective Modules
+The BMC Support Electives Catalogue can be found in TUMonline.
+Table (Support Elective Modules):
+; ECTS; Recommended Semester
+IN2163 Information Systems in Health Care; 3; 1,2,3
+Links relevant for questions related to Support Elective Modules: https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=460582&pOrgNr=14189, https://www.cit.tum.de/cit/studium/studiengaenge/master-biomedical-computing/
+Support Elective Modules
+----------------------------------------
+
+Examinations and Regulations
+Examinations and Regulations
+Detailed information can be found under examinations.
+The General Examination and Study Regulations of TUM (Allgemeine Prüfungs- und Studienordnung, APSO) of TUM and the program-specific Academic and Examination Regulations (Fachprüfungs- und Studienordnung, FPSO) apply to all students.
+Note that the German versions of the regulation and respective amendments are the official documents; only the German text is legally binding. We offer the English translations of a readable version of regulations with the current valid amendment for your convenience.
+FPSO vom 15. November 2021: applies to students who started the program in winter semester 2022/23
+FPSO vom 25. Oktober 2018, in der Fassung vom 11. Oktober 2019: english translation applies to students who started the program in or after winter semester 2019/20 but before winter semester 2022/23
+FPSO vom 25. Oktober 2018: english translation applies to students who started the program in or after winter semester 2018/19 but before winter semester 2019/20
+Links relevant for questions related to Examinations and Regulations: https://www.cit.tum.de/cit/studium/studierende/pruefungsangelegenheiten-module/informatik/, https://www.tum.de/studium/im-studium/das-studium-organisieren/satzungen-ordnungen#statute;t:Allgemeine%20Pr%C3%BCfungs-%20und%20Studienordnung;sort:106;page:1, https://www.tum.de/studium/im-studium/das-studium-organisieren/satzungen-ordnungen#statute;c:Biomedical%20Computing;d:Master, https://www.tum.de/studium/im-studium/das-studium-organisieren/satzungen-ordnungen?tx_in2tumstatutedatabase_pi1%5Baction%5D=download&tx_in2tumstatutedatabase_pi1%5Bcontroller%5D=Statute&tx_in2tumstatutedatabase_pi1%5BfileId%5D=P005725074&cHash=c70d02eeaa75853b90f521446c773d95, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Biomedical_Computing/lesb._F._FPSO_MA_BiomedicalComputing_mit_AES_vom_11.10.2019.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Biomedical_Computing/Examination_Regulations_MSc_Biomedical_Computing_11_Oct_2019.pdf, https://www.tum.de/studium/im-studium/das-studium-organisieren/satzungen-ordnungen?tx_in2tumstatutedatabase_pi1%5Baction%5D=download&tx_in2tumstatutedatabase_pi1%5Bcontroller%5D=Statute&tx_in2tumstatutedatabase_pi1%5BfileId%5D=P004949484&cHash=40c1ab9f1da3ace57660e7ebe63ff563, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Biomedical_Computing/Examination_Regulations_MSc_Biomedical_Computing_25_Oct_2018.pdf, https://www.cit.tum.de/cit/studium/studiengaenge/master-biomedical-computing/
+Examinations and Regulations
+----------------------------------------
+
+Thesis
+Thesis
+The final requirement for the master's degree is the master's thesis (30 ECTS). Students have six months to write this scientific research paper. Registration can always be made by the 15th of the month. Everything you need to know from planning to submission can be found under thesis.
+Links relevant for questions related to Thesis: https://www.cit.tum.de/cit/studium/studierende/abschlussarbeit-abschluss/informatik/, https://www.cit.tum.de/cit/studium/studiengaenge/master-biomedical-computing/
+Thesis
+----------------------------------------
+
+Graduation
+Graduation
+After successful completion of the course requirements and master’s thesis, you graduate with the Master of Science (M.Sc.) degree and begin your professional life. For tips and advice on graduation and your next steps, go to Graduation.
+Links relevant for questions related to Graduation: https://www.tum.de/en/studies/graduation, https://www.cit.tum.de/cit/studium/studiengaenge/master-biomedical-computing/
+Graduation
+----------------------------------------
+

@@ -1,0 +1,62 @@
+https://www.cit.tum.de/cit/studium/studiengaenge/master-bioinformatik/module-lmu/
+Module der Ludwig-Maximilians-Universität München - TUM - TUM School of Computation, Information and Technology
+
+Bioinformatik Module der Ludwig-Maximilians-Universität München
+Bioinformatik Module der Ludwig-Maximilians-Universität München
+
+Bioinformatik
+Bioinformatik Module der Ludwig-Maximilians-Universität München > Bioinformatik
+- IN5000_Algorithmische_Bioinformatik_01.pdf
+- IN5001_Algortihmische_Bioinformatik_II_01.pdf
+- IN5002_Einfuehrung_in_die_Programmierung_01.pdf
+- IN5004_Algorithmen_und_Datenstrukturen_01.pdf
+- IN5005_Formale_Sprachen_und_Komplexitaet_01.pdf
+- IN5006_Datenbanksysteme_1_01.pdf
+- IN5007_Analysis_02.pdf
+- IN5008_Logik_und_Diskrete_Strukturen_03.pdf
+- IN5009_Lineare_Algebra_07.pdf
+- IN5010_Stochastik_und_Statistik_06.pdf
+- IN5019_W_AlgoBioinfSystembiologie.pdf
+- IN5020_W_AlgoBioinfBaeumeUndGraphen.pdf
+- IN5021_AlgoBioinfNetzGraphundSyst.pdf
+- IN5022_W_AlgorithmenAufSequenzen.pdf
+- IN5025_W_Spatial__Temporal_and_Multimedia_Databases.pdf
+- IN5027_PraktikumGenomorientierteBioinf.pdf
+- IN5030_W_Biostatistische_Methoden.pdf
+- IN5032_Programmierpraktikum_Bioinformatik_03.pdf
+- IN5033_W_DatenbanksystemeII.pdf
+- IN5035_W_BasicEvolutionaryGenomics.pdf
+- IN5036_W_AdvancedEvolutionaryGenomics.pdf
+- IN5037_W_Evolutionary_Genetics.pdf
+- IN5042_Data_Mining_Algorithmen_I.pdf
+- IN5043_W_Knowledge_Discovery_in_Databases_2.pdf
+- IN5056_MolekulareVirologie.pdf
+- IN5062_Biochemie_IV_Zellulaere_Biochemie.pdf
+- IN5063_Biochemie3.pdf
+- IN5064_Biochemie_V_Life_Cycle_of_Proteins.pdf
+- IN5065_Biochemie_VI_Model_Organisms.pdf
+- IN5066_Biochemie_VII_Flow_of_Genetic_Information.pdf
+- IN5073_FortgeschrittenenpraktikumBioinformatik_2021.pdf
+- IN5075_W_Machine_Learning.pdf
+- IN5082_W_Software_Engineering_fuer_spezielle_Anwendungsbereiche.pdf
+- IN5085_W_ParallelComputingGA.pdf
+- IN5088_W_ComputationalMethodsEvolBiol.pdf
+- IN5089_W_StatMethGenProt.pdf
+- IN5096_W_PerlenBioinfENCODE.pdf
+- IN5109_Multivariate_Statistics_in_Ecology_and_Quantitative_Genetics.pdf
+- IN5111_W_Grundlagen_der_multivariatan_Verfahren.pdf
+- IN5112_Tutorium_Bioinformatik_03.pdf
+- IN5113_Biologie_02.pdf
+- IN5116_W_PerlenBioinfAlgorithmen.pdf
+- IN5159_Big_Data_Management_and_Analytics.pdf
+- IN5166_Chemie_02.pdf
+- IN5167_Grundlagen_zur_Biochemie_01.pdf
+- IN5168_Fortgeschrittene_Biochemie_02.pdf
+- IN5176_DeepLearningandArtificialIntelligence_Schubert_2021.10.13.pdf
+- IN5180_Lineare_Optimierung_in_der_Bioinformatik.pdf
+- IN5184_Modul_BSc_Sem_Ethik_Bioinformatik.pdf
+- IN5187_Modul_MSc_MasterSem_Ethik_Bioinformatik.pdf
+Links relevant for questions related to Bioinformatik Module der Ludwig-Maximilians-Universität München: https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5000_Algorithmische_Bioinformatik_01.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5001_Algortihmische_Bioinformatik_II_01.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5002_Einfuehrung_in_die_Programmierung_01.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5004_Algorithmen_und_Datenstrukturen_01.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5005_Formale_Sprachen_und_Komplexitaet_01.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5006_Datenbanksysteme_1_01.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5007_Analysis_02.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5008_Logik_und_Diskrete_Strukturen_03.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5009_Lineare_Algebra_07.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5010_Stochastik_und_Statistik_06.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5019_W_AlgoBioinfSystembiologie.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5020_W_AlgoBioinfBaeumeUndGraphen.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5021_AlgoBioinfNetzGraphundSyst.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5022_W_AlgorithmenAufSequenzen.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5025_W_Spatial__Temporal_and_Multimedia_Databases.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5027_PraktikumGenomorientierteBioinf.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5030_W_Biostatistische_Methoden.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5032_Programmierpraktikum_Bioinformatik_03.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5033_W_DatenbanksystemeII.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5035_W_BasicEvolutionaryGenomics.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5036_W_AdvancedEvolutionaryGenomics.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5037_W_Evolutionary_Genetics.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5042_Data_Mining_Algorithmen_I.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5043_W_Knowledge_Discovery_in_Databases_2.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5056_MolekulareVirologie.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5062_Biochemie_IV_Zellulaere_Biochemie.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5063_Biochemie3.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5064_Biochemie_V_Life_Cycle_of_Proteins.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5065_Biochemie_VI_Model_Organisms.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5066_Biochemie_VII_Flow_of_Genetic_Information.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5073_FortgeschrittenenpraktikumBioinformatik_2021.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5075_W_Machine_Learning.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5082_W_Software_Engineering_fuer_spezielle_Anwendungsbereiche.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5085_W_ParallelComputingGA.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5088_W_ComputationalMethodsEvolBiol.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5089_W_StatMethGenProt.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5096_W_PerlenBioinfENCODE.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5109_Multivariate_Statistics_in_Ecology_and_Quantitative_Genetics.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5111_W_Grundlagen_der_multivariatan_Verfahren.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5112_Tutorium_Bioinformatik_03.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5113_Biologie_02.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5116_W_PerlenBioinfAlgorithmen.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5159_Big_Data_Management_and_Analytics.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5166_Chemie_02.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5167_Grundlagen_zur_Biochemie_01.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5168_Fortgeschrittene_Biochemie_02.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5176_DeepLearningandArtificialIntelligence_Schubert_2021.10.13.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5180_Lineare_Optimierung_in_der_Bioinformatik.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5184_Modul_BSc_Sem_Ethik_Bioinformatik.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5187_Modul_MSc_MasterSem_Ethik_Bioinformatik.pdf, https://www.cit.tum.de/cit/studium/studiengaenge/master-bioinformatik/module-lmu/
+Bioinformatik Module der Ludwig-Maximilians-Universität München
+----------------------------------------
+
