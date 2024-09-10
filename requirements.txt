@@ -1,14 +1,17 @@
-flask
-openai
-python-dotenv
+openai~=1.43.1
+python-dotenv~=1.0.1
 tiktoken
 numpy
 langchain-community
 langchain-openai
 langchain-core
-langchain
+langchain~=0.2.16
 bs4
 chromadb
 pypdf
 cryptography
 
+
+fastapi~=0.113.0
+pydantic~=2.9.0
+requests~=2.32.3
