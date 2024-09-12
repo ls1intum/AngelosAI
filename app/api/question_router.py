@@ -1,14 +1,14 @@
 import logging
 
-from fastapi import HTTPException, FastAPI, APIRouter, Depends
+from fastapi import HTTPException, APIRouter, status
 from pydantic import BaseModel
 
-from app.managers.request_handler import RequestHandler
-from app.managers.weaviate_manager import WeaviateManager
-from app.prompt.prompt_manager import PromptManager
+from app.utils.dependencies import request_handler, weaviate_manager
+from app.utils.environment import config
+from app.utils.vector_store_initializer import initialize_vectorstores
 
 
-class Request(BaseModel):
+class UserRequest(BaseModel):
     message: str
     study_program: str
 
@@ -16,19 +16,34 @@ class Request(BaseModel):
 router = APIRouter(prefix="/api/v1/question", tags=["response"])
 
 
-def get_request_handler(weaviate_manager: WeaviateManager = Depends()):
-    prompt_manager = PromptManager()
-    return RequestHandler(weaviate_manager, prompt_manager)
-
-
 @router.post("/ask")
-async def ask(request: Request, request_handler: RequestHandler = Depends(get_request_handler)):
+async def ask(request: UserRequest):
     question = request.message
-    classification = request.classification
+    classification = request.study_program
     if not question or not classification:
         raise HTTPException(status_code=400, detail="No question or classification provided")
 
     logging.info(f"Received question: {question} with classification: {classification}")
     answer = request_handler.handle_question(question, classification)
+    logging.info(f"Generated answer: {answer}")
+    return {"answer": answer}
+
+
+@router.get("/initSchema",
+            status_code=status.HTTP_202_ACCEPTED, )
+async def ask():
+    initialize_vectorstores(config.KNOWLEDGE_BASE_FOLDER, weaviate_manager)
+    return
+
+
+@router.post("/document")
+async def add_document(request: UserRequest):
+    question = request.message
+    classification = request.study_program
+    if not question or not classification:
+        raise HTTPException(status_code=400, detail="No question or classification provided")
+
+    logging.info(f"Received question: {question} with classification: {classification}")
+    answer = request_handler.add_document(question, classification)
     logging.info(f"Generated answer: {answer}")
     return {"answer": answer}

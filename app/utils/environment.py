@@ -1,18 +1,24 @@
 import os
-from app.models.ollama_model import OllamaModel
-from app.models.openai_model import OpenAIModel
+
+from dotenv import load_dotenv
+
+load_dotenv("./../development.env")
 
 
-def get_model():
-    """Select and return the appropriate model based on environment configuration."""
-    use_ollama = os.getenv("USE_OLLAMA", "true").lower() == "true"
+class Config:
+    WEAVIATE_URL = os.getenv("WEAVIATE_URL", "localhost")
+    WEAVIATE_PORT = os.getenv("WEAVIATE_PORT", "8001")
+    KNOWLEDGE_BASE_FOLDER = os.getenv("KNOWLEDGE_BASE_FOLDER", "./knowledge")
+    DELETE_BEFORE_INIT = os.getenv("DELETE_BEFORE_INIT", "false")
+    USE_OLLAMA = os.getenv("USE_OLLAMA", "true")
+    OLLAMA_URL = os.getenv("GPU_URL")
+    MODEL = os.getenv("OLLAMA_MODEL")
+    EMBED_MODEL = os.getenv("EMBED_MODEL")
+    API_KEY = os.getenv("LLAMA_MODEL_TOKEN")
+    URL = os.getenv("LLAMA_MODEL_URI")
+    GPU_USER = os.getenv("GPU_USER")
+    GPU_PASSWORD = os.getenv("GPU_PASSWORD")
+    GPU_HOST = os.getenv("GPU_HOST")
 
-    if use_ollama:
-        ollama_url = os.getenv("GPU_URL")
-        model = os.getenv("OLLAMA_MODEL")
-        embed_model = os.getenv("EMBED_MODEL")
-        return OllamaModel(model, ollama_url, embed_model)
-    else:
-        api_key = os.getenv("LLAMA_MODEL_TOKEN")
-        url = os.getenv("LLAMA_MODEL_URI")
-        return OpenAIModel(api_key, url)
+
+config = Config()

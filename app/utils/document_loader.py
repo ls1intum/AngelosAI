@@ -1,8 +1,9 @@
-import os
-from langchain_community.document_loaders import PyPDFLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-from langchain.docstore.document import Document
 import logging
+import os
+
+from langchain.docstore.document import Document
+from langchain.text_splitter import RecursiveCharacterTextSplitter
+from langchain_community.document_loaders import PyPDFLoader
 
 
 def load_documents_from_folder(folder_path: str):
