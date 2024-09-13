@@ -16,7 +16,7 @@ class DocumentSchema(Enum):
     Schema for the lecture slides
     """
 
-    COLLECTION_NAME = "DocumentSnowflake"
+    COLLECTION_NAME = "DocumentMxbai"
     STUDY_PROGRAM = "study_program"
     CONTENT = "content"
     EMBEDDING = "embedding"
@@ -104,15 +104,23 @@ class WeaviateManager:
             logging.error(f"Error retrieving relevant context: {e}")
             return ""
 
-    def delete_collection(self, collection_name):
+    def delete_collection(self):
         """
         Delete a collection from the database
         """
+        collection_name = DocumentSchema.COLLECTION_NAME.value
+
         if self.client.collections.exists(collection_name):
-            if self.client.collections.delete(collection_name):
+            try:
+                self.client.collections.delete(collection_name)
                 logging.info(f"Collection {collection_name} deleted")
-            else:
-                logging.error(f"Collection {collection_name} failed to delete")
+                return True
+            except Exception as e:
+                logging.error(f"Failed to delete collection {collection_name}: {str(e)}")
+                return False
+        else:
+            logging.warning(f"Collection {collection_name} does not exist")
+            return False
 
     def add_documents(self, chunks, study_program: str):
         # docs = list()

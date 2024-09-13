@@ -1,4 +1,5 @@
 import logging
+from contextlib import asynccontextmanager
 
 import uvicorn
 from fastapi import FastAPI, Request, status
@@ -12,14 +13,17 @@ from app.utils.setup_logging import setup_logging
 
 setup_logging()
 logging.info("Starting application...")
-app = FastAPI(default_response_class=ORJSONResponse)
 
 
-@app.on_event("shutdown")
-async def shutdown_event():
-    """Close the model session when the app shuts down"""
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    logging.info("Starting up the application...")
+    yield
     logging.info("Shutting down models and closing sessions.")
     shutdown_model()
+
+
+app = FastAPI(default_response_class=ORJSONResponse, lifespan=lifespan)
 
 
 @app.exception_handler(RequestValidationError)

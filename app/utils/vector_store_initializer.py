@@ -22,7 +22,7 @@ def initialize_vectorstores(base_folder: str, weaviate_manager: WeaviateManager)
     # Delete existing data if the DELETE_BEFORE_INIT is set to true
     if delete_before_init:
         print("Deleting existing data before initialization...")
-        weaviate_manager.delete_collection("Document")
+        weaviate_manager.delete_collection()
     else:
         print("Skipping data deletion...")
 
