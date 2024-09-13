@@ -1,6 +1,3 @@
-from langchain_core.prompts import PromptTemplate
-
-
 class PromptManager:
     def __init__(self):
         self.prompt_template = """
@@ -21,12 +18,23 @@ class PromptManager:
     Question: {question}
 
     Ensure your response is accurate, student-friendly, and directly addresses the student's concern.
+    If you don't think you can answer this question with the provided context, give a standard answer like:
+    'I'm sorry for the inconvenience! But I cannot answer this question with the provided context.'
     """
-        self.prompt = PromptTemplate(template=self.prompt_template)
 
-    def format_prompt(self, general_context, specific_context, question):
-        return self.prompt.format(
+    def create_messages(self, general_context, specific_context, question):
+        """Converts the template into a message format suitable for LLMs like OpenAI's GPT."""
+
+        # Construct the system prompt
+        system_content = self.prompt_template.format(
             general_context=general_context,
             specific_context=specific_context or "No specific context available.",
             question=question
         )
+
+        # Return the messages structure for the LLM
+        return [
+            {"role": "system",
+             "content": "You are an intelligent assistant that helps TUM students with their studies."},
+            {"role": "user", "content": system_content}
+        ]

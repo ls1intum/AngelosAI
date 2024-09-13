@@ -7,8 +7,8 @@ class RequestHandler:
         """Handles the question by fetching relevant documents and generating an answer."""
         general_context = self.weaviate_manager.get_relevant_context(question, "general")
         specific_context = self.weaviate_manager.get_relevant_context(question, classification)
-        prompt = self.prompt_manager.format_prompt(general_context, specific_context, question)
-        return self.weaviate_manager.model.completeSingle(prompt)
+        messages = self.prompt_manager.create_messages(general_context, specific_context, question)
+        return self.weaviate_manager.model.complete(messages)
 
     def add_document(self, question: str, classification: str):
         return self.weaviate_manager.add_document(question, classification)

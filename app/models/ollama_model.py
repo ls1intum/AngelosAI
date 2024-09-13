@@ -29,9 +29,6 @@ class OllamaModel(BaseModelClient):
         self.init_model()
 
     def complete(self, messages: []) -> (str, float):
-        logging.info(messages)
-        logging.info("WTF")
-
         response = self.session.post(
             f"{self.url}chat",
             json={"model": self.model, "messages": messages, "stream": False,
@@ -43,22 +40,6 @@ class OllamaModel(BaseModelClient):
         response.raise_for_status()
         confidence = float(response_data['logprobs']['content']) if response_data.get('logprobs') and response_data[
             'logprobs'].get('content') is not None else 0.81
-        return response_data["message"]["content"], confidence
-
-    def completeSingle(self, prompt: str) -> (str, float):
-        response = self.session.post(
-            f"{self.url}chat",
-            json={"model": self.model, "prompt": prompt, "stream": False,
-                  "options": {"logprobs": True, "temperature": 0.7}},
-            headers=self.headers
-        )
-        response_data = response.json()
-        logging.info(f"Got response for model {self.model}: {response_data}")
-        response.raise_for_status()
-        confidence = float(response_data['logprobs']['content']) if response_data.get('logprobs') and response_data[
-            'logprobs'].get('content') is not None else 0.81
-
-        logging.info(f"Confidence = {confidence}")
         return response_data["message"]["content"], confidence
 
     def embed(self, text):

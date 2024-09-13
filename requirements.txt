@@ -7,7 +7,6 @@ langchain-openai
 langchain-core
 langchain~=0.2.16
 bs4
-chromadb
 pypdf
 cryptography
 
