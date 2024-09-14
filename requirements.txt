@@ -1,16 +1,30 @@
-openai~=1.43.1
+fastapi~=0.113.0
+uvicorn
+
 python-dotenv~=1.0.1
-tiktoken
+
+requests~=2.32.3
+
 numpy
+pandas
+datetime
+
+pytest
+
+openai~=1.44.1
+tiktoken
+scikit-learn
+weaviate-client
+
 langchain-community
 langchain-openai
 langchain-core
 langchain~=0.2.16
+
 bs4
 pypdf
 cryptography
 
+deepeval
 
-fastapi~=0.113.0
 pydantic~=2.9.0
-requests~=2.32.3

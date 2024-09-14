@@ -1,9 +1,9 @@
 import os
+import logging
 
 from dotenv import load_dotenv
 
-load_dotenv("./../development.env")
-
+load_dotenv(".env")
 
 class Config:
     WEAVIATE_URL = os.getenv("WEAVIATE_URL", "localhost")
@@ -19,6 +19,8 @@ class Config:
     GPU_USER = os.getenv("GPU_USER")
     GPU_PASSWORD = os.getenv("GPU_PASSWORD")
     GPU_HOST = os.getenv("GPU_HOST")
+    OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+    TEST_MODE = os.getenv("TEST_MODE")
 
 
 config = Config()

@@ -1,25 +1,54 @@
 import logging
-
-from openai import OpenAI
+from typing import Tuple, List
+import openai
 
 from app.models.base_model import BaseModelClient
 
 
 class OpenAIModel(BaseModelClient):
     def __init__(self, api_key: str, url: str):
-        logging.info("Initializing OpenAIModel")
-        self._client = OpenAI(base_url=url, api_key=api_key)
+        self.model = "gpt-4o-mini"
+        self.max_tokens = 100
+        self.temperature = 0.5
+        openai.api_key = api_key
+        self.emmodel = "text-embedding-3-small"
+        
 
-    def complete(self, messages: []) -> (str, float):
-        response = self._client.chat.completions.create(
+    def complete(self, messages: list) -> str:
+        response = openai.chat.completions.create(
+            model=self.model,
             messages=messages,
-            logprobs=True
+            max_tokens=self.max_tokens,
+            temperature=self.temperature
         )
-        logging.info(f"Got prompt: {messages}")
-        logging.info(f"Got : {response}")
-        confidence = float(response['logprobs']['content']) if response.get('logprobs') and response['logprobs'].get(
-            'content') is not None else 0.81
-        return response.choices[0]["message"]["content"], confidence
+        logging.info(f"Promt to OpenAI: {messages}")
+        logging.info(f"Respones from OpenAI : {response}")
+        return response.choices[0].message.content
     
-    def embed(self, text, model="text-embedding-3-small"):
-        return self._client.embeddings.create(input=[text], model=model).data[0].embedding
+    def complete_with_tokens(self, messages: list) -> Tuple[str, int]:
+        response = openai.chat.completions.create(
+            model=self.model,
+            messages=messages,
+            max_tokens=self.max_tokens,
+            temperature=self.temperature
+        )
+        return (response.choices[0].message.content, response.usage.total_tokens)
+
+    
+    def embed(self, text) -> List[float]:
+        response = openai.embeddings.create(
+            input=text,
+            model=self.emmodel
+        )
+        return response.data[0].embedding
+    
+    def embed_batch(self, texts: List[str]) -> List[List[float]]:
+        response = openai.embeddings.create(
+            input=texts,
+            model=self.emmodel
+        )
+        return [e.embedding for e in response.data]
+    
+    def close_session(self):
+        # Not required for this model
+        return

@@ -1,5 +1,8 @@
 import logging
+from app.utils.setup_logging import setup_logging
 from contextlib import asynccontextmanager
+
+setup_logging()
 
 import uvicorn
 from fastapi import FastAPI, Request, status
@@ -11,9 +14,7 @@ from app.api.question_router import router as question_router
 from app.utils.dependencies import shutdown_model
 from app.utils.setup_logging import setup_logging
 
-setup_logging()
 logging.info("Starting application...")
-
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
@@ -22,9 +23,7 @@ async def lifespan(app: FastAPI):
     logging.info("Shutting down models and closing sessions.")
     shutdown_model()
 
-
 app = FastAPI(default_response_class=ORJSONResponse, lifespan=lifespan)
-
 
 @app.exception_handler(RequestValidationError)
 async def validation_exception_handler(request: Request, exc: RequestValidationError):
@@ -35,9 +34,8 @@ async def validation_exception_handler(request: Request, exc: RequestValidationE
         content=content, status_code=status.HTTP_422_UNPROCESSABLE_ENTITY
     )
 
-
 app.include_router(router=question_router)
 
 if __name__ == "__main__":
-    logging.info("Starting fast api")
-    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True, log_level="info")
+    logging.info("Starting FastAPI server")
+    uvicorn.run("app.main:app", host="0.0.0.0", port=8000, reload=True, log_level="info")
