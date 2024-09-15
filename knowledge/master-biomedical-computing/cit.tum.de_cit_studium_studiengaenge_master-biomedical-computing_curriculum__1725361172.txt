@@ -1,0 +1,39 @@
+https://www.cit.tum.de/cit/studium/studiengaenge/master-biomedical-computing/curriculum/
+Curriculum - Master Biomedical Computing - TUM - TUM School of Computation, Information and Technology
+
+Diese Seite ist nur auf Englisch verfügbar, da die Unterrichtssprache Englisch ist und wir für diesen Studiengang keinen Deutschnachweis fordern.
+Links relevant for questions related to : https://www.cit.tum.de/cit/studium/studiengaenge/master-biomedical-computing/curriculum/
+
+----------------------------------------
+
+Curriculum Master Biomedical Computing
+Curriculum Master Biomedical Computing
+The successful completion of the Biomedical Computing Master Program requires 120 credits: 90 credits for lectures, exercises, seminars and practical courses; 30 credits for the Master's Thesis. The credits split up into compulsory and elective modules according to the following scheme:
+Table (Curriculum Master Biomedical Computing):
+Sem; Credits; Compulsory; Electives; 
+30; IN2021 Computer Aided Medical Procedures,6 ECTS; Modules from the Elective Course Catalog BMC (including Support Elective Modues) amounting to 18 credits; 
+Medical Instrumentation and Computer Aided Surgery,6 ECTS; 
+30; IN2022 Computer Aided Medical Procedures II,5 ECTS; Modules from the Elective Course Catalog BMC (including Support Elective Modues) amounting to 21 credits; 
+Medical Imaging Technology,4 ECTS; 
+30; IN2107 Master Seminar, 5/4*) ECTS; Modules from the Elective Course Catalog BMC (including Support Elective Modues) amounting to 9/10*) credits; 
+IN2249 Clinical Internship,10 ECTS; 
+Medical Information Processing and Pathophysiology,6 ECTS; 
+30; Master's thesis,30 ECTS
+
+*) the first number refers to students who start in winter term 2016/17 the second number to students who started before winter term 2016/17
+
+Scheme for students who started in winter term 2016/17 or thereafter
+Curriculum Master Biomedical Computing > Scheme for students who started in winter term 2016/17 or thereafter
+- 26 credits for Compulsory Informatics Modules
+- 16 credits for Compulsory Medical Modules
+- minimum of 48 credits for Elective Modules, including Support Elective Modules
+
+Scheme for students who started before winter term 2016/17
+Curriculum Master Biomedical Computing > Scheme for students who started before winter term 2016/17
+- 25 credits for Compulsory Informatics Modules
+- 16 credits for Compulsory Medical Modules
+- minimum of 49 credits for Elective Modules, including Support Elective Modules
+Links relevant for questions related to Curriculum Master Biomedical Computing: https://www.cit.tum.de/cit/studium/studiengaenge/master-biomedical-computing/#c2356, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=473851&pOrgNr=14189, https://www.cit.tum.de/cit/studium/studiengaenge/master-biomedical-computing/#c2360, https://www.cit.tum.de/cit/studium/studiengaenge/master-biomedical-computing/#c2359, http://campar.in.tum.de/Chair/TeachingWs13MICAS, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=456378&pOrgNr=14189, https://www.cit.tum.de/cit/studium/studiengaenge/master-biomedical-computing/#c2360, https://www.cit.tum.de/cit/studium/studiengaenge/master-biomedical-computing/#c2359, http://www.rad.mri.tum.de/study/medImaging, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=485429&pOrgNr=14189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1248712&pOrgNr=14189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=485429&pOrgNr=14189, https://www.cit.tum.de/cit/studium/studiengaenge/master-biomedical-computing/#c2360, https://www.cit.tum.de/cit/studium/studiengaenge/master-biomedical-computing/#c2359, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=691074&pOrgNr=14189, https://campus.tum.de/tumonline/wbModHb.wbShowMHBReadOnly?pKnotenNr=1143420, https://www.cit.tum.de/cit/studium/studiengaenge/master-biomedical-computing/#c2356, https://www.cit.tum.de/cit/studium/studiengaenge/master-biomedical-computing/curriculum/
+Curriculum Master Biomedical Computing
+----------------------------------------
+

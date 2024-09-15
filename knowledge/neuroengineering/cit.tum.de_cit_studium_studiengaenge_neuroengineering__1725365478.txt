@@ -1,0 +1,297 @@
+https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/
+Master Neuroengineering - TUM - TUM School of Computation, Information and Technology
+
+Diese Seite ist nur auf Englisch verfügbar, da die Unterrichtssprache Englisch ist und wir für diesen Studiengang keinen Deutschnachweis fordern.
+Links relevant for questions related to : https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/
+
+----------------------------------------
+
+Neuroengineering – Elite Master Program
+Neuroengineering – Elite Master Program
+
+Master of Science (M.Sc.)
+Neuroengineering – Elite Master Program > Master of Science (M.Sc.)
+Links relevant for questions related to Neuroengineering – Elite Master Program: https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/
+Neuroengineering – Elite Master Program
+----------------------------------------
+
+Before your Studies | During your Studies | Contact
+Links relevant for questions related to : https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/#c865, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/#c851, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/#c870, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/
+
+----------------------------------------
+
+The ENB Elite Master of Science program in Neuroengineering (MSNE) at the Technical University of Munich is a two-year graduate program, with an optional Research Excellence Certificate. The program is interdisciplinary and combines experimental and theoretical neuroscience with profound training in engineering. Besides taking a series of mandatory core courses, students have the opportunity to choose from electives from multiple disciplines and to gain research experience under the guidance of world-renowned faculty. A personal mentor is supporting the students all over the two years. The program attracts high-profile international and national students and creates graduates opting for a career in academia or in research-oriented industry.
+Neuroengineering is an emerging interdisciplinary field that aims to translate findings in neuroscience to real-world practical engineering applications. The successful development of neuro-inspired technical approaches will lead to a new generation of smart systems that achieve complex functions in an efficient manner, and will simultaneously advance our understanding of neuroscience. Advances in neurotechnology such as neuroprostheses, cochlear and retina implants, EEG-based therapy, brain-computer interfaces, and exoskeletons for neurorehabilitation are rapidly changing medical care for people with neurological diseases and disabilities. At the same time, there is a trend towards neuro-inspired principles for next-generation computing technologies and autonomous systems. Both directions of technological progress are based on the synergetic combination of engineering and neuroscience which has only recently given rise to the new research field called “neuroengineering”.
+Links relevant for questions related to : https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/
+
+----------------------------------------
+
+Key Data
+Key Data
+Type of Study: Full-time
+Standard Duration of Studies: 4 Semesters
+Credits: 120 ECTS  + optional 30 ECTS for Research Excellence Certificate
+Main Locations: Munich
+Start of Degree Program: Winter Semester
+Language of Instruction: Englisch
+Costs: semester fee, tuition fees for students from non-EU countries
+Please find here information on scholarships and waivers for international students: Scholarships and Waivers
+Professional Profile: Electrical and Computer Engineering
+Links relevant for questions related to Key Data: https://www.tum.de/studium/im-studium/das-studium-organisieren/wichtige-begriffe-im-ueberblick-glossar#c2288, https://www.tum.de/en/studies/fees, https://www.tum.de/en/studies/fees/tuition, https://www.tum.de/en/studies/fees/tuition/scholarships-and-waivers, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/
+Key Data
+----------------------------------------
+
+How is the program structured?
+How is the program structured?
+The MSNE program is designed as a two-year full time (120 ECTS) Master-of-Science training, with an optional Research Excellence Certificate (REC, additional 30 ECTS).
+MSNE Curriculum (incl. REC)
+The set of mandatory courses (58 ECTS) covers all basic aspects of neuroengineering from brain anatomy and neurophysiology, to neuro-recording, electronics, and computational processing, up to engineering of neuro-inspired systems. The mandatory modules include hands-on implementation of acquired knowledge in small-team projects with tight supervision to ensure the students are able to apply the relevant methods and techniques.  Furthermore, students conduct a mandatory 9-week research project (12 ECTS), mainly during their semester breaks but inculding flexible part-time options. Students select and suggest elective modules (20 ECTS) and discuss this individual set of modules with their personal mentor (learning agreement). The overall timeline is three semesters of classes including hands-on projects, intense projects during the semester breaks (possibly abroad); with a fourth semester for the mandatory Master's thesis.
+REC: Enrolled students may decide to take additional four elective courses, to conduct an additional 6-week research project (8 ECTS), thereby allowing a substantially stronger individual specialization, and to present results of both their research projects in an annual symposium to obtain a “Research Excellence Certificate” (2 ECTS). Students completing the additional REC (120 ECTS + 30 ECTS) will be awarded a Master’s degree (M.Sc.) in Neuroengineering with the special grade "with honors".
+Links relevant for questions related to How is the program structured?: https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/curriculum/, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/
+How is the program structured?
+----------------------------------------
+
+Which further expertise and skills will I acquire?
+Which further expertise and skills will I acquire?
+As an emergent research and technological field, neuroengineering requires a new kind of engineer who is firmly educated in fundamental neuroscience as well as engineering theory and is able to apply and combine the methods from both domains. The purpose of the neuroengineering master program at TUM is to educate such a new generation of interdisciplinary engineers and to equip them with the ethical sensitivity to integrate societal values and stakeholders into their future work.  Students not only enhance their knowledge in neuroengineering, but also develop research skills through the coursework and thesis. Apart from the cutting edge knowledge and technical skills acquired, students also develop their basic soft skills. Beyond the skill sets of only one or two disciplines, Neuroengineering students become proficient in neuroscience, engineering, mathematics, psychology, and informatics, which is specifically geared towards solving complex engineering problems with high societal impact. Students are able to combine several aspects of neuro-inspired systems and are able to define an own research focus, thereby going beyond the ability to conduct research with the ability to identify an individual research field that allows a smooth transition into doctoral studies.
+Links relevant for questions related to Which further expertise and skills will I acquire?: https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/
+Which further expertise and skills will I acquire?
+----------------------------------------
+
+What career opportunities do I have afterwards?
+What career opportunities do I have afterwards?
+The main career opportunities for graduates of the master's degree program in MSNE are in academia and in research-orieted industry. MSNE perfectly prepares students for a start to doctoral studies at TUM or elsewhere in the world. Two thirds of all MSNE graduates are following this path, propeled by a professional network students are building during their Masters and further propeled in case of first research publications, all together bolstering a smooth transition into PhD studies.
+Further MSNE graduates are employed mainly in research oriented industry (e.g. medical engineering domain, hardware & software development, AI/ML-focused companies) or they are entrepreneuring.
+Links relevant for questions related to What career opportunities do I have afterwards?: https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/
+What career opportunities do I have afterwards?
+----------------------------------------
+
+Application
+Application
+Links relevant for questions related to Application: https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/
+Application
+----------------------------------------
+
+The Elite Master's degree program in Neuroengineering in the context of the funding support from the Elite Network of Bavaria (ENB) has accepted new students for the last time at the start of the winter semester 24/25. In the ENB-funded MSNE program, no new applications will therefore be accepted beyond winter semester 24/25.
+We anticipate the continuation of the MSNE program following the ENB-supported phase. We will update the website once there is more information available about a reorganized program. If you are interested in the course, please visit the website again at a later date (as of August 2024).
+Links relevant for questions related to : https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/
+
+----------------------------------------
+
+MSNE Onboarding Support
+MSNE Onboarding Support
+MSNE has designed a set of onboarding activities, enabling a smooth transition into Neuroaneginnering master studies at TUM:
+- For new students, the MSNE Project Week is offered, a MSNE student initiative offered in the last week before the lecture period starts. This Project week also includes student-driven voluntary trainings and workshops, preparing for a smooth start to MSNE studies.We strongly recommend all admitted students to arrive in Munich at the beginning of October, having a first week to settle, and a second week for attending the voluntary MSNE-Project Week. The Project Week in 2024 wil take place October 9 -11.
+- We offer an official MSNE Student Welcome Event (now part of MSNE Project Week), discussing and introducing the MSNE.
+- Sophomore MSNE students are volunteering in a  MSNE Buddy program, helping new students arriving and smoothening their start in Munich.
+- Administrative information starts with a MSNE Newsletter (~mid of September) for all admitted students, providing information how to prepare best for the program.
+- We share a literature recommendation list for all first-semester mandatories.
+- We send out self tests and surveys, helping students to level themselves and to link to supporting first-semester courses such as MSNE Make-Up Modules
+- We pre-arranged for all your seats in MSNE mandatory courses, so there is no race for the best spots! All MSNE students have guaranteed seats in MSNE mandatories.
+- Admitted students may approach MSNE team (msne(at)ei.tum.de) in order to get information on general 3-weeks mathematical primer courses offerred by TUM (starting End of September, Germn language only)
+- Students may find all recommended literature and a detailed syllabus by browsing the module catalogue using TUM-Online system.
+Furthermore, your School and TUM are supporting your onboarding in various fashion.
+Links relevant for questions related to MSNE Onboarding Support: https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Neuroengineering/20220914-MSNE-Literature-Recommendations.pdf, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/#c848, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/#, https://www.cit.tum.de/cit/studienbeginn/, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/
+MSNE Onboarding Support
+----------------------------------------
+
+During your Studies
+During your Studies
+The elite program Neuroengineering is designed as a 2-year full-time program, which requires students to complete 120 ECTS to obtain the academic degree Master of Science:
+- Mandatory Modules
+- Elective Modules
+- Research Projects
+- Master's Thesis
+- Research Excellence Certificate
+Links relevant for questions related to During your Studies: https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/
+During your Studies
+----------------------------------------
+
+Mandatory Modules
+Mandatory Modules
+The MSNE curriculum spans a total of 11 mandatory modules (58 ECTS). Due to an included lab part, all MSNE mandatory modules are exclusive for MSNE students, with guaranteed seats for all MSNE students. Most lecturers allow for 1-2 more students in the classes, limited to students of partnering ENB Elite Master Programs and PhD Programs. Latest after second semester, MSNE students must have pased 4 mandatory modules. Students must pass all mandatory modules in order to graduate in MSNE.
+Links relevant for questions related to Mandatory Modules: https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/curriculum/, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/
+Mandatory Modules
+----------------------------------------
+
+Elective Modules / Learning Agreements
+Elective Modules / Learning Agreements
+The MSNE curriculum encloses 20 ECTS of elective modules (typically 4 modules). In addition, students may enhance their individual profile by taking an optional Research Excellence Certificate, including another 20 ECTS of elective modules.All electives (for MSNE and for REC!) require a mentor approval in order to become part of a student's curriculum. The so-called "MSNE Learning Agreement" reports on this discussions. The Learning Agreements will evolve during studies. In general, all (!) modules offered by TUM , LMU or any other university may become part of the electives section in your curriculum. Outside the scope study programs partnering with MSNE, ressource constraints may limit availability, especially in case of labs.
+MSNE provides a list of elective modules completed by MSNE-Students so far (browse for MSNE section). This list is intended to support MSNE students starting to explore opportunities in MSNE program. As well, the list may help applicants to get a very first overview. This list is not intended to limit or to bind students to a fixed set of elective modules. Students may discuss any module offered at TUM, LMU or elsewhere with individual mentor in order to generate individual learning agreements.
+Effective January 2024 and effective for all enrolled MSNE students: Students no longer have to request mentor approval for electives modules listed in MSNE Electvies and REC electives Section in TUM Online (those modules are mentor-approved by default). The list of MSNE tracks may help students to combine elective modules aligned to a certain specialization.
+MSNE Make-up Modules - preparing for a smart start
+MSNE Make-Up Modules are designed exclusively for MSNE students, enabling MSNE students lacking specific engineering-related background knowledge to catch up quickly with peers during the first semester. All MSNE students are allowed to attend on a voluntary basis. Make-Up modules may become an elective (i.e. counting towards study progress) in case of a mentor assignment (considering student's previous transcripts, preferences, and students self-estimation). In the past, MSNE offered Make-Up modules for
+- EI60014 Fundamentals of computer science for Neuroengineering (WS, 1|3|0, 5 ECTS)-> discontinued, became recently part of MSNE Project Week
+- EI60015 Fundamentals of electronics for Neuroengineering (WS,1|3|0, 5 ECTS)-> discontinued, became recently part of MSNE Project Week
+- EI60022 Fundamentals of Mathematics for Neuroengineering (WS,1|3|0, 5 ECST)-> active module
+Sophomore MSNE students also contribute to the MSNE Project Week (~ week before lectureperiod) offering student-driven workshops and trainings, such as trainings on electronics for Neuroengineering, trainings on Python for Neuroengineering. The offer depends on admitted students' requirements and sophomore students initiative/capacity. Some workshops are offered ina blocked fashion, some during the entire first semester.
+Learning Agreement
+All electives that are not part of the MSNE Electives catalogue in TUM Online must be mentor-agreed in order to become part of your transcript. MSNE Students use a Learning Agreement form sheet for this purpose. Please pre-fill the form and discuss this list with your mentor, finally have it signed mutually and send a scan to msne(at)ei.tum.de. Deadline for summer semester is September 30th, deadline for winter semester is March 31st. Students are allowed to pick freely within all modules in the individual learning agreement. We consider all learning agreements received so far. There is no need to attend and to pass all modules included in your learning agreement. In case you once passed a module, you may not register for the same module once again (i.e. no retakes for grade-tuning). However,  you may do more electives and pick the one with best results later for your transcript, tuning your cGPA. All results (i.e. grades) in modules not listed in students individual Learning Agreement automatically become part of a transcript appendix, labeled with the semester of examination. Such additional modules do not count towards the 120 ECTS + 30 ECTS curriculum. It is not possible to convert such modules to MSNE Electives effective to the past.
+Best Practice: Discuss your plans with your mentor early. You may agree on a superset of modules in your learning agreement in order to have some flexibility while aligning your individual electives schedule  with mandatory modules schedule.
+Links relevant for questions related to Elective Modules / Learning Agreements: http://www.en.uni-muenchen.de/students/exchange/incomings/austausch_engl/studying/choosing_courses/index.html, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Neuroengineering/MSNE-20230330-List-of-Electives.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Neuroengineering/MSNE_tracks.pdf, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1500498&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1289899&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1500501&pOrgNr=14188, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Neuroengineering/MSNE-20230330-Learning-Agreement-Formsheet-V3.pdf, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/#, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/
+Elective Modules / Learning Agreements
+----------------------------------------
+
+Research Projects
+Research Projects
+The MSNE curriculum includes 2 research projects, a mandatory project and a project for the optional REC. Students opting for a career in research-oriented industry are strongly encouraged to do the 6-week project (EI60013) in industry.
+Default process for EI60013 (6 week project, performed in a university), and EI60016 Research Project (9 Week, in industry or at university):
+-search for an MSNE examiner-register the project with MSNE examiner (form sheet / process see below)<do the work>-send your report to MSNE examiner, check for presentation requirements with examiner-MSNE examiner confirms on completion Simplified process for EI60013 (6 week project) , if performed in industry:
+- send a workplan (1-2 pages, confirmed by industry partner) to msne@ei.tum.de- register the project: edit supervision by MSNE Program Director Prof. Kozielski and send the form to msne@ei.tum.de<do the work in industry, 6 week fulltime-equivalent>- send a project report (~10-15 pages) to msne@ei.tum.de- wait for confirmation. Prof. Kozielski will assess & invite some students for a short presentation, in case of further questions.
+The curriculum suggests to do both projects in the first two semester breaks, however students may decide to sequence the projects differently. The main part has to be completed in a blocked fashion, while remaining parts of the project (e.g. writing the report) may also be done in parallel to the lecture periode. You cannot upgrade a 6 week project to a 9 week project by starting another tiny project of two weeks duration. The research internship can be carried out at the university or in industry, as long as a MSNE examiner agrees to the research plan and signs responsible for the project. Research projects are assessed in a passed/not passed way, not counting toward your final cGPA. Since you're supposed to present your neuroengineering research work in the "Neuroengineering Summit" module (part of optional REC), it is a good idea to perform at least one project during the first two semester breaks.
+Registration /Completion:
+Process for Research Projects and Thesis started after Jan 15th 2024:
+MSNE examiners have to start the process, using the CIT Koinon Portal-→ https://portal.cit.tum.de/de/Theses
+Process for Research Projects and Thesis started before Jan 15th 2024:
+You may find further information and documents here:
+- Information
+- Registration form for the research internship
+- Confirmation
+How-to fill "Registration of the Research Internship/Research Project" form:
+- Supervisior: The person who actually supervises the student (e.g. professor, post-docs, doct. candiates & contact information). Projects performed not at an institute operated by MSNE official examiners provide the name of the remote supervisor.
+- Professor": Your MSNE examiner
+- Chair/Professorship": Affiliation of MSNE examiner (e.g. ICS/TUM for Prof. Gordon Cheng)
+The cooperation between MSNE examiner and remote supervisor is not specified by MSNE regulations. Ideally, all three stakeholders agree on a work plan and deliverables before the project starts. Typically, this also safes effort on students' side. A good strategy is to agree with your MSNE examiner on report and presentation details first and provide this information to your remote supervisor in a second step. Most remote supervisors will adapt to this suggestion. Requirements and Assessment: The person finally giving a pass/not passed grade is your MSNE examiner at TUM. Therefore, the MSNE examiner will decide on the requirements with respect to your study program. In case of projects performed at external institutes (i.e. not under direct supervision by MSNE examiner), the remote supervisor may also have constraints. Kindly ask your MSNE examiner to send this form electronically to master(at)ei.tum.de, no signature required.
+Links relevant for questions related to Research Projects: https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/curriculum/, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Neuroengineering/MSNE-Examiner.pdf, https://portal.cit.tum.de/de/Theses, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/#, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/
+Research Projects
+----------------------------------------
+
+Thesis
+Thesis
+The final requirement for the master's degree is the master's thesis (30 ECTS, equivalent to 900 hours workload). A Master's Thesis may be conducted at any research facility or in a company, as long as a MSNE examiner agrees to the research plan and signs responsible for the project.
+Before you can commence work on the thesis, you must have completed 60 credits of the coursework requirements (not considered: REC specific modules).
+It is required to register a Master's Thesis before starting on the week. You may consider to use the first 1-2 weeks to check if all equipment / supervision / ressources are available before registering the thesis.
+You have max. six months to write this scientific research paper. Upon submission of the thesis, you are required to give a presentation on its contents (which will not be included in your grade).
+Date of thesis completion will be the date of submission or date of final presentation (whatever is later).
+TUM MSNE does not provide thesis templates. Therefore, we recommend to approach the examiner for constraints or e.g. to use a TUM thesis template (not mandatory).
+Registration /Completion:
+Process for Research Projects and Thesis started after Jan 15th 2024:
+MSNE examiners have to start the process, using the CIT Koinon Portal-→ https://portal.cit.tum.de/de/Theses
+Process for Research Projects and Thesis registered before Jan 15th 2024:
+Completion form Sheet on request, request to be sent by MSNE examiner (msne@ei.tum.de)
+Links relevant for questions related to Thesis: https://www.cit.tum.de/cit/studium/studierende/abschlussarbeit-abschluss/informatik/, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Neuroengineering/MSNE-Examiner.pdf, https://portal.mytum.de/corporatedesign/vorlagen/index_vorlagen/vorlagen/index_wissenschaftliche_arbeiten/document_view?, https://portal.cit.tum.de/de/Theses, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/
+Thesis
+----------------------------------------
+
+Research Excellence Certificate (REC: optional)
+Research Excellence Certificate (REC: optional)
+By completing another 30 ECTS in parallel to Neuroengineering study program, a Research Excellence Certificate (REC) will be awarded. Students completing MSNE and REC get awarded a Master's Degree with the special grade "of honors". Students graduating in MSNE without completing REC will receive a Master's degree in the Elite-Master Program Neuroengineering.
+Elements of REC are:
+- 6 week Research Project (8 ECTS)
+- Neuroengineering Summit (2 ECTS)
+- Additional Electives, mentor-approved (20 ECTS)
+Students attending at Schools-/Conferences- or similar events, as well as students publishing/presenting in a way that is in line with MSNE qualification profile, may request Accreditation/Recognition of performances for REC up to a total of 5 ECTS per performance and up to a total of 15 ECTS.
+Links relevant for questions related to Research Excellence Certificate (REC: optional): https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Neuroengineering/MSNE-Recognition-of-Conference-School-Publication-performance-for-REC.pdf, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/
+Research Excellence Certificate (REC: optional)
+----------------------------------------
+
+Examinations and Regulations / MSNE Study Handbook
+Examinations and Regulations / MSNE Study Handbook
+Detailed information can be found under examinations. The General Examination and Study Regulations of TUM (Allgemeine Prüfungs- und Studienordnung, APSO) of TUM and the program-specific Academic and Examination Regulations (Fachprüfungs- und Studienordnung, FPSO) apply to all students.
+The MSNE Study Handbook (English) is intended to help international and national students, summarizing main aspects of APSO and MSNE FPSO in a legally non-binding way. Please refer to your copy, depending on your start semester / cohort within TUM MSNE.
+MSNE Study Handbook - version for students starting in WS17/18 | WS18/19 | WS19/20 | WS20/21 | WS21/22 | WS22/23
+Links relevant for questions related to Examinations and Regulations / MSNE Study Handbook: https://www.cit.tum.de/cit/studium/studierende/pruefungen/electrical-computer-engineering/, https://www.tum.de/studium/im-studium/das-studium-organisieren/satzungen-ordnungen#statute;t:Allgemeine%20Pr%C3%BCfungs-%20und%20Studienordnung;sort:106;page:1, https://www.tum.de/en/studies/during-your-studies/organizing-your-studies/statutes-regulations, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Neuroengineering/Study-Handbook-MSNE-WS1718.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Neuroengineering/Study-Handbook-MSNE-WS1819.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Neuroengineering/Study-Handbook-MSNE-WS1920.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Neuroengineering/Study-Handbook-MSNE-WS2021.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Neuroengineering/Study-Handbook-MSNE-WS2122.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Neuroengineering/Study-Handbook-MSNE-WS2223.pdf, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/
+Examinations and Regulations / MSNE Study Handbook
+----------------------------------------
+
+Project / Student Mobility Support
+Project / Student Mobility Support
+The MSNE program is pushing student's research profile. All students are encouraged to present their research work at conferences and workshops. Beside of the Neuroengineering Summit (part of REC), it is also possible to attend at research conferences or summer/winter schools, at TUM or abroad.
+In order to apply for funding, an abstract of the planned activity as well as a detailed cost plan has to be sent to msne(at)ei.tum.de.Applications may be provided anytime, hence at least 4 weeks in advance to the intended activity.
+Furthermore, students are encouraged to suggest scientific projects, retreats, workshops, scientific guests etc. anytime. We involvve our students in organizing academic events in a self-responsible fashion, facilitated by MSNE funding and administrative support.
+Links relevant for questions related to Project / Student Mobility Support: https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/#, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/
+Project / Student Mobility Support
+----------------------------------------
+
+Graduation
+Graduation
+After successful completion of the course requirements and master’s thesis, you graduate with the Master of Science (M.Sc.) degree and begin your professional life. For tips and advice on graduation and your next steps, go to Graduation.
+Links relevant for questions related to Graduation: https://www.tum.de/en/studies/graduation, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/
+Graduation
+----------------------------------------
+
+MSNE Associated Faculty & People
+MSNE Associated Faculty & People
+Links relevant for questions related to MSNE Associated Faculty & People: https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/
+MSNE Associated Faculty & People
+----------------------------------------
+
+Students
+Students
+MSNE started in winter term 2016/2017 with a first batch of 15 students. More than 150 students enrolled since 2016, some graduates of first cohort already received their PhD. The background of the students covers a wide spectrum of disciplines (mainly biomedical engineering or electrical engineering, but also neuroinformatics, cognitive science, physics, psychology) perfectly supporting the interdisciplinary nature of MSNE program and projects.
+Beside of the official TUM/MSNE website, you can get an impression of our program and student-driven initiatives in a MSNE-Student blog (private blog operated by a group of MSNE - students). Applicants may also get in touch with MSNE Student Representatives, getting first-hand experience (contacts will be shared on request -> msne@ei.tum.de).
+MSNE Students are also interacting beyond the curriculum. E.g. they are attending on student-organized MSNE retreats, attending at Cybathlon Challenge, or sharing social activities in the program (e.g. visit of Christmas market, student-organized welcome events for arriving freshmen, intercultural evenings) and sportive events. The MSNE team “Neuruns” participated in Elite Network of Bavaria football tournament “ENB EliteCup” 2017, 2018 and 2019. Beside of football, the MSNE team and MSNE associated faculty are attending regularly at TUM Campus Run, a TUM-wide running challenge. Sophomore MSNE students are supporting a MSNE Buddy program, helping new students arriving and smoothening their start in Munich. The service has been suggested and is coordinated by MSNE-students.  All these activities correlate with a reported “overall satisfaction with program workload and study-life balance”, monitored in MSNE Quality Meetings jointly with MSNE Student Representatives and supported by program-wide surveys)
+Links relevant for questions related to Students: https://neuroengineering.blog/, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/
+Students
+----------------------------------------
+
+Professors
+Professors
+TUM - School of Computation, Information and Technology
+- Prof. Dr. Gordon Cheng, Cognitive Systems
+- Prof. Dr. Kristen Kozielski, Neuroengineering
+- Prof. Dr. Werner Hemmert, Bioanaloge Informationsverarbeitung
+- Prof. Dr. Alois Knoll, Robotik, Künstliche Intelligenz und Echtzeitsysteme
+- Prof. Dr. Bernhard U. Seeber, Audio-Signalverarbeitung
+- Prof. Dr. Bernhard Wolfrum, Neuroelectronics
+TUM - Other Departments
+- Prof. Dr. Silke Beck, Sociology of Science and Technology (TUM School of Social Sciences and Technology)
+- Prof. Dr. David Franklin, Neuromuscular Diagnostics (TUM School of Medicine and Health)
+- Prof. Dr. Julijana Gjorgjieva, Computational Neurosciences (TUM School of Life Science)
+- Prof. Dr. Simon Jacob, Translational Neurotechnology (TUM School of Medicine and Health)
+- Prof. Dr. Thomas Misgeld, Neuronal Cell Biology (TUM School of Medicine and Health)
+- Prof. Dr. Markus Ploner, Human Pain Research (TUM School of Medicine and Health)
+- Prof. Dr. Ruben Portugues Peters, Brain Circuit Function and Disfunction (TUM School of Medicine and Health)
+- Prof. Dr. Gil Westmeyer, Neurobiological Engineering (TUM School of Medicine and Health, TUM School of Natural Sciences)
+Ludwig-Maximilians-Universität München (LMU)
+- Prof. Dr. Anton Sirota, Cognition and Neural Plasticity (LMU Faculty of Biology)
+As of March 2023
+Links relevant for questions related to Professors: https://www.ce.cit.tum.de/ics/home/, https://www.ce.cit.tum.de/en/nen/home/, https://www.ce.cit.tum.de/bai/startseite/, https://www.ce.cit.tum.de/air/home/, https://www.ce.cit.tum.de/aip/startseite/, https://www.ee.cit.tum.de/nel/home/, https://www.sts.sot.tum.de/en/sts/people/professors/prof-dr-silke-beck/, http://www.nd.sg.tum.de/, https://www1.ls.tum.de/compneuro/home/, https://www.professoren.tum.de/en/jacob-simon, https://web.med.tum.de/neuroscience/home/, https://www.professoren.tum.de/ploner-markus, https://www.professoren.tum.de/portugues-ruben, https://www.professoren.tum.de/westmeyer-gil, http://www.sirotalab.bio.lmu.de/index.html, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/
+Professors
+----------------------------------------
+
+MSNE Steering Board
+MSNE Steering Board
+Table (MSNE Steering Board):
+Name; Position
+Prof. Dr. Gordon Cheng; Director (since 2016)
+Prof. Dr. Kristen Kozielski; Director (since 2021)
+Dipl.-Ing. Florian Rattei; Program Manager (since 2016)
+; 
+Prof. Dr. Jörg Conradt; Director (2016-2018)
+Prof. Dr. Jakob Macke; Director (2018-2020)
+Links relevant for questions related to MSNE Steering Board: https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/
+MSNE Steering Board
+----------------------------------------
+
+MSNE Mentors
+MSNE Mentors
+Mentoring in MSNE is based on several pillars. Most prominent for each student is a program assigned mentor for each student. Student-mentor ration is capped at ~ 3:1 in order to support well-ballanced mentoring workload.  Main responibility of the assigned mentor is support in creating and updating individual students' learning agreements. In addition, MSNE associated faculty as well as visiting guests help students to learn on carreer options, role models, and to create a very first professional network. --> List of MSNE Mentors
+Links relevant for questions related to MSNE Mentors: https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Neuroengineering/MSNE-20220914-List-of-Mentors.pdf, https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/
+MSNE Mentors
+----------------------------------------
+
+MSNE Advisory Board
+MSNE Advisory Board
+MSNE program has been co-designed and is continously improved with support of an advisory board. The board combines TUM-internal and external, national and international expertise on various fields of Neuroengineering. The boards members meet regularly along with MSNE Team and MSNE Student Representatives to discuss status and strategy of the program.
+
+MSNE Advisory Board Members
+MSNE Advisory Board Members
+- Prof. Dr. Jens Clausen
+- Prof. Dr. Klaus Diepold
+- Prof. Cuntai Guan
+- Prof. Dr. Benedikt Grothe
+- Prof. Dr. Bernhard Hemmer
+- Prof. Dr. Renée Lampe
+- Mikhail A. Lebedev, PhD
+- Prof. Dr. Jakob Macke
+- Prof. Dr. Hermann Müller
+- Prof. Dr. Josef Rauschecker
+- Prof. Dr. Giulio Sandini
+- Prof. Dr. Stefan Schaal
+- Prof. Nitish V. Thakor
+As of Jan 2024
+Links relevant for questions related to MSNE Advisory Board: https://www.cit.tum.de/cit/studium/studiengaenge/neuroengineering/
+MSNE Advisory Board
+----------------------------------------
+

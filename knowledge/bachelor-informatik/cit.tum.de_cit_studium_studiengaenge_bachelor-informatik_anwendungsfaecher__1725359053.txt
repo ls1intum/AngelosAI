@@ -1,0 +1,829 @@
+https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/
+Anwendungsfächer - Bachelor Informatik - TUM - TUM School of Computation, Information and Technology
+
+Anwendungsfächer
+Anwendungsfächer
+Mit dem Studium eines Anwendungsfachs im Bachelorstudiengang Informatik lernen Sie Aufgabenstellungen aus der Informatik in der Fachsprache eines Anwendungsgebietes zu formulieren. Standardmäßig gibt es die Anwendungsfächer:
+- Elektrotechnik
+- Maschinenwesen
+- Mathematik
+- Medizin
+- Wirtschaftswissenschaften
+Weitere Anwendungsfächer kann der Prüfungsausschuss auf Antrag genehmigen. Informationen dazu finden Sie unter Sonderanwendungsfächer.
+Links relevant for questions related to Anwendungsfächer: https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/#c1572, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/#c1603, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/#c1584, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/#c1612, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/#c1623, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/sonderanwendungsfaecher/, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/
+Anwendungsfächer
+----------------------------------------
+
+Anleitung für die Anmeldung über TUMonline
+Anwendungsfächer > Anleitung für die Anmeldung über TUMonline
+- Loggen Sie sich ein, wählen Sie im Menü "Studium" den Punkt "Studienstatus/Studienplan" und dann die Nummer Ihres Studienplanes.
+- Öffnen Sie den Punkt Anwendungsfächer und wählen Sie im Kästchen neben dem "W" das gewünschte Anwendungsfach.
+- Weitere Informationen können Ihnen auch die Studienberater:innen geben.
+Links relevant for questions related to Anleitung für die Anmeldung über TUMonline: https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/
+Anleitung für die Anmeldung über TUMonline
+----------------------------------------
+
+Eine Wahl ist nur einmal möglich!
+Links relevant for questions related to : https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/
+
+----------------------------------------
+
+Elektrotechnik
+Anwendungsfächer > Elektrotechnik
+Links relevant for questions related to Elektrotechnik: https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/
+Elektrotechnik
+----------------------------------------
+
+Studienplan ab Studienbeginn Wintersemester 2018/19
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2018/19
+
+Pflichtveranstaltungen
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2018/19 > Pflichtveranstaltungen
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2018/19 > Pflichtveranstaltungen):
+Semester; Pflichtveranstaltungen Elektrotechnik
+
+
+
+
+
+* Ersetzt ab WS19/20 EI0204 Signaldarstellung
+
+Vertiefungsmöglichkeiten
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2018/19 > Vertiefungsmöglichkeiten
+Aus der Liste von Modulen einer der folgenden Vertiefungslinien sind mindestens 10 Credits zu wählen:
+
+Vertiefungsgebiet Automatisierungstechnik
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2018/19 > Vertiefungsmöglichkeiten > Vertiefungsgebiet Automatisierungstechnik
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2018/19 > Vertiefungsmöglichkeiten > Vertiefungsgebiet Automatisierungstechnik):
+Modul; Semester; Credits
+EI0701 Computational Intelligence; WiSe; 7
+EI0711 Ereignisdiskrete Systeme; SoSe; 5
+EI00440 Nachrichtentechnik **; SoSe; 5
+EI06811 Optimierungsverfahren in der Automatisierungstechnik; WiSe; 5
+EI0472 Optomechatronische Messsysteme; WiSe; 6
+EI00450 Regelungssysteme ***; SoSe; 5
+
+** Ersetzt ab SoS 2020 EI0308 Nachrichtentechnik 1
+*** Ersetzt EI0307 Regelungssysteme
+
+Vertiefungsgebiet Energietechnik
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2018/19 > Vertiefungsmöglichkeiten > Vertiefungsgebiet Energietechnik
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2018/19 > Vertiefungsmöglichkeiten > Vertiefungsgebiet Energietechnik):
+Modul; Semester; Credits
+EI7324 Elektrische Aktoren und Sensoren in geregelten Antrieben; WiSe; 5
+EI70840 Energieübertragungstechnik*; SoSe; 5
+EI0671 Simulation elektromechanischer Aktoren; SoSe; 5
+
+*Ersetzt ab SoSe 2020 die Veranstaltung EI0684 Energieübertragungstechnik
+
+Vertiefungsgebiet Medientechnik
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2018/19 > Vertiefungsmöglichkeiten > Vertiefungsgebiet Medientechnik
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2018/19 > Vertiefungsmöglichkeiten > Vertiefungsgebiet Medientechnik):
+Modul; Semester; Credits
+EI0602 Audiokommunikation; SoSe; 5
+EI7341 Image and Video Compression; SoSe; 5
+EI04001 Komputer & Creativität; WiSe; 6
+EI0631 Medientechnik; WiSe; 5
+EI0632 Mensch-Maschine-Kommunikation; WiSe; 5
+EI0697 Mobile Communications; SoSe; 5
+
+
+Vertiefungsgebiet Mikroelektronik
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2018/19 > Vertiefungsmöglichkeiten > Vertiefungsgebiet Mikroelektronik
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2018/19 > Vertiefungsmöglichkeiten > Vertiefungsgebiet Mikroelektronik):
+Modul; Semester; Credits
+EI7399 Modellierung mikrostrukturierter Bauelemente und Systeme; WiSe; 5
+EI04022 Bioengineering - Einführung zur Zellbiologie *; WiSe; 5
+EI0559 Mikroelektronik in der Mechatronik; SoSe; 5
+EI0639 Optik für Ingenieure; SoSe; 5
+
+* Ersetzt EI04009 Bioengineering
+
+Vertiefungsgebiet System- und Schaltungsentwurf
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2018/19 > Vertiefungsmöglichkeiten > Vertiefungsgebiet System- und Schaltungsentwurf
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2018/19 > Vertiefungsmöglichkeiten > Vertiefungsgebiet System- und Schaltungsentwurf):
+Modul; Semester; Credits
+EI00120 Digitaltechnik; WiSe; 5
+EI00130 Schaltungstheorie; WiSe; 6
+EI00220 Systemtheorie; SoSe; 6
+Links relevant for questions related to Studienplan ab Studienbeginn Wintersemester 2018/19: https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1458034&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=467694&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1130509&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1573874&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1330274&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1458040&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1439638&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=261303&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1458041&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=919592&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1744299&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=972993&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=836182&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=965236&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1242444&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=939998&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=940013&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1126235&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=898893&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1707628&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1338714&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=958776&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1458029&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1458030&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1458032&pOrgNr=14188, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/
+Studienplan ab Studienbeginn Wintersemester 2018/19
+----------------------------------------
+
+Studienplan ab Studienbeginn Wintersemester 2014/15
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2014/15
+
+Pflichtveranstaltungen
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2014/15 > Pflichtveranstaltungen
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2014/15 > Pflichtveranstaltungen):
+Semester; Pflichtveranstaltungen Elektrotechnik
+1; ; 
+2; ; 
+3; EI0204 Signaldarstellung 			5 ECTS; 
+4; EI5309 Elektrische Messtechnik für Informatiker 			3 ECTS; EI4693 Einführung in die Signal-verarbeitung * 			3 ECTS
+
+* Das Modul EI4693 Einführung in die Signalverarbeitung für IN ersetzt ab SS2015 das Modul EI4691 Einführung in die Signalverarbeitung
+
+Vertiefungsmöglichkeiten
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2014/15 > Vertiefungsmöglichkeiten
+Vertiefungsmöglichkeiten (mindestens 10 ECTS bei Anwendungsfachbeginn mit oder nach WS 2014/15): Es ist eine Vertiefungslinie aus Automatisierungstechnik, System- und Schaltungsentwurf, Medientechnik, Mikroelektronik oder Energietechnik zu wählen.
+
+Vertiefungsgebiet Automatisierungstechnik
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2014/15 > Vertiefungsmöglichkeiten > Vertiefungsgebiet Automatisierungstechnik
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2014/15 > Vertiefungsmöglichkeiten > Vertiefungsgebiet Automatisierungstechnik):
+Semester; ; ; 
+5; EI0472 Optomechatronische Messsysteme 			6 ECTS; EI0701 Computational Intelligence 			7 ECTS; 
+4 oder 6; EI0307 Regelungssysteme 			5 ECTS; EI0711 Ereingisdiskrete Systeme 			5 ECTS 			EI06811 Optimierungsverfahren in der Automatisierungstechnik 			5 ECTS; EI00440 Nachrichtentechnik* 			5 ECTS
+
+*Ersetzt ab SoS 2020 EI0308 Nachrichtentechnik 1
+
+Vertiefungsgebiet System- und Schaltungsentwurf
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2014/15 > Vertiefungsmöglichkeiten > Vertiefungsgebiet System- und Schaltungsentwurf
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2014/15 > Vertiefungsmöglichkeiten > Vertiefungsgebiet System- und Schaltungsentwurf):
+Semester; ; 
+5; EI00130 Schaltungstheorie* 			6 ECTS; EI00120 Digitaltechnik 			5 ECTS
+4 oder 6; EI00220 Systemtheorie 			6 ECTS; 
+
+* Ersetzt ab WS18/19 EI0001 Schaltungstechnik 1
+Die Module EI00130 Schaltungstheorie, EI00220 Systemtheorie und EI00120 Digitaltechnik sind Module der Grundlagenprüfung im Bachelor EI, für die BachelorEI-Studierende automatisch vom Studiendekanat angemeldet werden. Studierende der Informatik mit Anwendungsfach Elektrotechnik melden sich für die Prüfungsanmeldung zu den o.g. Modulen innerhalb des TUM weiten Anmeldeschlusses daher bitte im Studiendekanat der EI unter BachelorEI(at)ei.tum.de
+
+Vertiefungsgebiet Medientechnik
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2014/15 > Vertiefungsmöglichkeiten > Vertiefungsgebiet Medientechnik
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2014/15 > Vertiefungsmöglichkeiten > Vertiefungsgebiet Medientechnik):
+Semester; ; ; 
+5; EI04001 Komputer& Creativität* 			6 ECTS; EI0631 Medientechnik 			5 ECTS; EI0632 Mensch-Maschine-Kommunikation 1 			5 ECTS
+4 oder 6; EI7341 Image and Video Compression 			5 ECTS; EI0602 Audiokommunikation 			5 ECTS; EI0697 Mobile Communications 			5 ECTS
+
+* Ersetzt EI04001 Digitales Video
+
+Vertiefungsgebiet Mikroelektronik
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2014/15 > Vertiefungsmöglichkeiten > Vertiefungsgebiet Mikroelektronik
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2014/15 > Vertiefungsmöglichkeiten > Vertiefungsgebiet Mikroelektronik):
+Semester; ; ; 
+5; EI7399 Modellierung mikrostrukturierter Bauelemente und Systeme 1 			5 ECTS; EI04022 Biomedical Engineering-Einführung zur Zellbiologie 			5 ECTS; EI0613 Elektrische und optische Verfahren in der Bioanalytik * 			5 ECTS
+4 oder 6; EI0559 Mikroelektronik in der Mechatronik 			5 ECTS; EI0639 Optik für Ingenieure 			5 ECTS; 
+
+* Letztmalig im WS18/19 angeboten
+
+Vertiefungsgebiet Energietechnik
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2014/15 > Vertiefungsmöglichkeiten > Vertiefungsgebiet Energietechnik
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2014/15 > Vertiefungsmöglichkeiten > Vertiefungsgebiet Energietechnik):
+Semester; ; ; 
+5; EI7324 Elektrische Aktoren und Sensoren in geregelten Antrieben * 			5 ECTS; ; 
+4 oder 6; EI70840 Energieübertragungstechnik**** 			5 ECTS; EI7327 Elektrische Straßenfahrzeuge** 			5 ECTS; EI0671 Simulation elektromechanischer Aktoren*** 			5 ECTS
+
+* ersetzt ab WS 2018/19 die Veranstaltung EI0006 Digitaltechnik
+** letztmalig angeboten im SoSe18
+*** ersetzt ab SoSe 2011 Simulation von Stromrichtern und elektromechanischen Wandlern
+****ersetzt ab SoSe2020 die Veranstaltung EI0684 Energieübertragungstechnik
+Links relevant for questions related to Studienplan ab Studienbeginn Wintersemester 2014/15: https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=834834&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=467694&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1130509&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=261303&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1573874&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=835298&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1330274&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1439638&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1458040&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1458030&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1458029&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1458032&pOrgNr=14188, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/#, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1242444&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=939998&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=940013&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=965236&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=836182&pOrgNr=14188, https://campus.tum.de/tumonline/wbModHb.wbShowMHBReadOnly?pKnotenNr=1126235, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=898893&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1707628&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=929701&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1338714&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=958776&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=919592&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1744299&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=964442&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=972993&pOrgNr=14188, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/
+Studienplan ab Studienbeginn Wintersemester 2014/15
+----------------------------------------
+
+Studienplan bis Studienbeginn Sommersemester 2014
+Anwendungsfächer > Studienplan bis Studienbeginn Sommersemester 2014
+
+Pflichtveranstaltungen
+Anwendungsfächer > Studienplan bis Studienbeginn Sommersemester 2014 > Pflichtveranstaltungen
+Table (Anwendungsfächer > Studienplan bis Studienbeginn Sommersemester 2014 > Pflichtveranstaltungen):
+Semester; Pflichtveranstaltungen Elektrotechnik
+1; 
+2; 
+3; EI0200 Signale * 			9 ECTS
+4; EI5309 Elektrische Messtechnik für Informatiker 			3 ECTS
+
+* Das Modul Signale besteht aus den zwei Vorlesungen Signaldarstellung (im WS) und Stochastische Signale (auch WS!). Es findet für beide Teile eine gemeinsame Modulprüfung Signale statt.
+
+Vertiefungsmöglichkeiten
+Anwendungsfächer > Studienplan bis Studienbeginn Sommersemester 2014 > Vertiefungsmöglichkeiten
+Vertiefungsmöglichkeiten (mindestens 9 ECTS bei Anwendungsfachbeginn vor WS 2014/15): Es ist eine Vertiefungslinie aus Automatisierungstechnik, System- und Schaltungsentwurf, Medientechnik, Mikroelektronik oder Energietechnik zu wählen.
+Table (Anwendungsfächer > Studienplan bis Studienbeginn Sommersemester 2014 > Vertiefungsmöglichkeiten):
+Semester; Vertiefungsgebiet Automatisierungstechnik
+5; EI0472 Optomechatronische Messsysteme 			6 ECTS; EI0701 Computational Intelligence 			7 ECTS; 
+4 oder 6; EI0307 Regelungssysteme 			5 ECTS; EI0711 Ereingisdiskrete Systeme 			5 ECTS 			EI06811 Optimierungsverfahren in der Automatisierungstechnik 			5 ECTS; EI0308 Nachrichtentechnik 1 			5 ECTS
+
+Table (Anwendungsfächer > Studienplan bis Studienbeginn Sommersemester 2014 > Vertiefungsmöglichkeiten):
+Semester; Vertiefungsgebiet System- und Schaltungsentwurf Stand 4.10.2018
+5; EI00130 Schaltungstheorie* 			6 ECTS; EI00120 Digitaltechnik* 			5 ECTS; EI74041 Optimization Methods for Circuit Design 			7 ECTS
+4 oder 6; EI00220 Systemtheorie* 			6 ECTS; ; 
+
+* Die Module EI00130 Schaltungstheorie, EI00220 Systemtheorie und EI00120 Digitaltechnik sind Module der Grundlagenprüfung im Bachelor EI, für die BachelorEI-Studierende automatisch vom Studiendekanat angemeldet werden. Studierende der Informatik mit Anwendungsfach Elektrotechnik melden sich für die Prüfungsanmeldung zu den o.g. Modulen innerhalb des TUMweiten Anmeldeschlusses daher bitte im Studiendekanat der EI unter BachelorEI(at)ei.tum.de
+Table (Anwendungsfächer > Studienplan bis Studienbeginn Sommersemester 2014 > Vertiefungsmöglichkeiten):
+Semester; Vertiefungsgebiet Medientechnik
+5; EI0417 Digitales Video 			6 ECTS; EI0631 Medientechnik 			5 ECTS; EI0632 Mensch-Maschine-Kommunikation 1 			5 ECTS
+4 oder 6; EI7341 Image and Video Compression 			5 ECTS; EI0602 Audiokommunikation 			5 ECTS; EI0697 Mobile Communications 			5 ECTS
+
+Table (Anwendungsfächer > Studienplan bis Studienbeginn Sommersemester 2014 > Vertiefungsmöglichkeiten):
+Semester; Vertiefungsgebiet Mikroelektronik
+5; EI7399 Modellierung mikrostrukturierter Bauelemente und Systeme 1 			5 ECTS; EI04099 Bioengineering-Einführung zur Zellbiologie ersetzt ab Wintersemester 2017/18 EI0605 Biomedical Engineering 1 * 			5 ECTS; EI0613 Elektrische und optische Verfahren in der Bioanalytik * 			5 ECTS
+4 oder 6; EI0559 Mikroelektronik in der Mechatronik 			5 ECTS; EI0639 Optik für Ingenieure 			5 ECTS; 
+
+* diese beiden Veranstaltungen ersetzen Biomedical Engineering 1 (6 ECTS)
+Table (Anwendungsfächer > Studienplan bis Studienbeginn Sommersemester 2014 > Vertiefungsmöglichkeiten):
+Semester; Vertiefungsgebiet Energietechnik
+5; EI7324 Elektrische Aktoren und Sensoren in geregelten Antrieben * 			5 ECTS; ; 
+4 oder 6; EI0684 Energieübertragungstechnik 			5 ECTS; EI7327 Elektrische Straßenfahrzeuge 			5 ECTS; EI0671 Simulation elektromechanischer Aktoren** 			5 ECTS
+
+* ersetzt ab WS 2018/19 die Veranstaltung EI0006 Digitaltechnik
+** ersetzt ab SoSe 2011 Simulation von Stromrichtern und elektromechanischen Wandlern
+***ersetzt ab WS 2017/18 die Verantaltung EI7404 Optimization Methods of Circuit Design mit 6 ECTS
+Links relevant for questions related to Studienplan bis Studienbeginn Sommersemester 2014: https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=455443&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=467694&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=261303&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1130054&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=835298&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1330274&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1439638&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=835302&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1191741&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1458029&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1335966&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=833364&pOrgNr=14188, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/#, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=467705&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=939998&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=940013&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=965236&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=836182&pOrgNr=14188, https://campus.tum.de/tumonline/wbModHb.wbShowMHBReadOnly?pKnotenNr=1126235, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=898893&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1373489&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1237005&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=929701&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1338714&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=958776&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=919592&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=948335&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=964442&pOrgNr=14188, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=972993&pOrgNr=14188, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/
+Studienplan bis Studienbeginn Sommersemester 2014
+----------------------------------------
+
+Maschinenwesen
+Anwendungsfächer > Maschinenwesen
+Links relevant for questions related to Maschinenwesen: https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/
+Maschinenwesen
+----------------------------------------
+
+Studienplan ab Studienbeginn Wintersemester 2018/19
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2018/19
+
+
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2018/19 > 
+
+Pflichtveranstaltungen
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2018/19 > Pflichtveranstaltungen
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2018/19 > Pflichtveranstaltungen):
+Semester; Pflichtveranstaltungen Maschinenwesen
+1; ; 
+2; ; 
+3; MW1108 Technische Mechanik für TUM-BWL(6 ECTS); MW2385 Grundlagen CAD und Maschinen- zeichnen I(Teil 1)
+4; MW2022 Regelungstechnik(5 ECTS); MW2385 Grundlagen CAD und Maschinen- zeichnen II(Teil 2, 5 ECTS)
+5; ; 
+6; ; 
+
+
+Wahlveranstaltungen
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2018/19 > Wahlveranstaltungen
+Aus folgender Liste von Modulen sind mindestens 5 Credits zu erbringen:
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2018/19 > Wahlveranstaltungen):
+Modul; Semester; Credits
+MW1902 Automatisierungstechnik; WiSe; 5
+MW1907 Introduction to Flight Mechanics and Control; WiSe; 5
+MW1339 Intelligente Systeme und Machine Learning für Produktionsprozesse; SoSe; 5
+MW1990 Grundlagen der Luftfahrttechnik; WiSe; 5
+MW1914 Grundlagen der Raumfahrt; WiSe; 5
+MW1918 Industrielle Softwareentwicklung mechatronischer Systeme und Implementierung in C++*; SoSe; 5
+MW1926 Produktentwicklung - Konzepte und Entwurf ***; SoSe; 5
+MW1929 Systemtheorie in der Mechatronik; WiSe; 5
+
+* MW1918 Industrielle Softwareentwicklung mechatronischer Systeme und Implementierung in C++ ersetzt MW1818 Industrielle Softwareentwicklung für Ingenieur*innen (letztmals im WiSe 2023/24 angeboten)
+** MW1926 Produktentwicklung - Konzept und Entwurf ersetzt MW1926 Produktentwicklung und Konstruktion (letztmals im WiSe 2018/19 angeboten)
+Links relevant for questions related to Studienplan ab Studienbeginn Wintersemester 2018/19: https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=584907&pOrgNr=15276, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1506863&pOrgNr=15299, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=780571&pOrgNr=15272, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1506863&pOrgNr=15299, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=767672&pOrgNr=15268, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=2938815&pOrgNr=51267, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1838242&pOrgNr=14187, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=779538&pOrgNr=15304, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=768263&pOrgNr=15309, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=DE/WBMODHB.wbShowMHBReadOnly?pKnotenNr=3397113&pOrgNr=15268, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1647576&pOrgNr=48837, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=768326&pOrgNr=15272, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/
+Studienplan ab Studienbeginn Wintersemester 2018/19
+----------------------------------------
+
+Studienplan ab Studienbeginn Wintersemester 2015/16
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2015/16
+
+Prüfungsordnung Studienbeginn vor Sommersemester 2015
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2015/16 > Prüfungsordnung Studienbeginn vor Sommersemester 2015
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2015/16 > Prüfungsordnung Studienbeginn vor Sommersemester 2015):
+S; Maschinenwesen 			Pflicht-veranstaltungen; ; Vertiefungsgebiet Mechatronik (Alternative); Vertiefungsgebiet Produktentstehungs-prozess (Alternative); Vertiefungsgebiet Luft- und Raumfahrt (Alternative)
+1; ; ; ; ; 
+2; ; ; ; ; 
+3; Technische Mechanik für TUM-BWL 			6 ECTS; Grundlagen CAD und Maschinen- zeichnen I 			2 ECTS; ; ; 
+4; Regelungstechnik 			5 ECTS; Grundlagen CAD und Maschinen- zeichnen II **** 			3 ECTS; ; ; 
+5; ; ; Automatisierungstechnik 			5 ECTS 			 			Systemtheorie in der Mechatronik 			5 ECTS; ; Grundlagen der Luftfahrttechnik ** 			5 ECTS 			Grundlagen der Raumfahrt*** 			5 ECTS 			Einführung in die Flugsystem- dynamik und Flugregelung 			5 ECTS
+6; ; ; Entwicklung intelligenter verteilter eingebetteter Systeme in der Mechatronik* 			5 ECTS; Produktentwicklung und Konstruktion 			5 ECTS 			Industrielle 			Softwareentwicklung für Ingenieure 			5 ECTS; 
+
+* früher: Entwicklungsmethodik in der Mechatronik 5 ECTS (MW0078 gültig von WS 02 bis WS 11)
+** ersetzt Luftfahrtsysteme ab WS 12/13
+*** ersetzt Raumfahrttechnik I (MW0401 gültig von WS 03 bis WS 13)
+**** Der Lerninhalt CAD-Geometrie, entfällt für Informatiker:innen; somit fallen nur 3 ECTS an.
+Aus einem der Vertiefungsgebiete Mechatronik, Produktentstehungsprozess sowie Luft- und Raumfahrttechnik sind 5 ECTS zu wählen.
+Zur Zusammenstellung Ihres Stundenplans beraten Sie die Studienberater:innen gerne.
+
+Prüfungsordnung, Fassung 19. Mai 2010, gültig vor Sommersemester 2015
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2015/16 > Prüfungsordnung, Fassung 19. Mai 2010, gültig vor Sommersemester 2015
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2015/16 > Prüfungsordnung, Fassung 19. Mai 2010, gültig vor Sommersemester 2015):
+S; Maschinenwesen 			Pflicht-veranstaltungen; ; Vertiefungsgebiet Mechatronik (Alternative); Vertiefungsgebiet Produkt-entstehungs-prozess (Alternative); Vertiefungsgebiet Luft- und Raumfahrt (Alternative)
+1; ; ; ; ; 
+2; ; ; ; ; 
+3; Technische Mechanik für TUM-BWL 			6 ECTS; CAD und Maschinen- zeichnen, Teil 1 (Bitte Sonderregelung unten beachten) 			3 ECTS; ; ; 
+4; Regelungstechnik 			5 ECTS; CAD und Maschinen- zeichnen, Teil 2 * 			2 ECTS; ; ; 
+5; ; ; Automatisierungs-technik 			5 ECTS; Kommunikations-systeme in der Automatisierungstechnik 			5 ECTS; Grundlagen der Luftfahrttechnik*** 			5 ECTS 			Grundlagen der Raumfahrt 			5 ECTS 			Einführung in die Flugsystem- dynamik und Flugregelung 			5 ECTS
+6; ; ; Entwicklung intelligenter verteilter eingebetteter Systeme in der Mechatronik** 			5 ECTS 			Industrielle Softwareentwicklung für Ingenieure 			5 ECTS; Produktentwicklung und Konstruktion 			5 ECTS; 
+
+* Der Lehrinhalt D, CAD-Geometrie, entfällt für Informatiker:innen; somit fallen nur 2 ECTS an (im Gegensatz zu Maschinenbauer:innen).
+** früher: Entwicklungsmethodik in der Mechatronik 5 ECTS
+*** ersetzt Luftfahrtsysteme ab WS 12/13
+Aus einem der Vertiefungsgebiete Mechatronik, Produktentstehungsprozess sowie Luft- und Raumfahrttechnik sind 5 ECTS zu wählen.
+Links relevant for questions related to Studienplan ab Studienbeginn Wintersemester 2015/16: http://www.wkm.mw.tum.de/lehre/lehrveranstaltungen/tm-tum-bwl/, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=780530&pOrgNr=15299, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=780571&pOrgNr=15272, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=780521&pOrgNr=15299, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=767672&pOrgNr=15268, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=261393&pOrgNr=15272, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=779538&pOrgNr=15304, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=768263&pOrgNr=15309, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=767686&pOrgNr=15305, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=559776&pOrgNr=15268, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=768311&pOrgNr=48837, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=768277&pOrgNr=14187, https://www.in.tum.de/in/fuer-studierende/beratung-und-unterstuetzung/studienberatung/, http://www.wkm.mw.tum.de/lehre/lehrveranstaltungen/tm-tum-bwl/, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=780530&pOrgNr=15299, http://www.rt.mw.tum.de/, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=780521&pOrgNr=15299, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=767672&pOrgNr=15268, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=779538&pOrgNr=15304, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=768263&pOrgNr=15309, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=767686&pOrgNr=15305, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=559776&pOrgNr=15268, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=768277&pOrgNr=14187, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=768311&pOrgNr=48837, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/
+Studienplan ab Studienbeginn Wintersemester 2015/16
+----------------------------------------
+
+Studienplan bis Studienbeginn einschließlich Sommersemester 2015
+Anwendungsfächer > Studienplan bis Studienbeginn einschließlich Sommersemester 2015
+Table (Anwendungsfächer > Studienplan bis Studienbeginn einschließlich Sommersemester 2015):
+S; Maschinenwesen 			Pflicht-veranstaltungen; ; Vertiefungsgebiet Mechatronik (Alternative); Vertiefungsgebiet Produkt-entstehungs-prozess (Alternative); Vertiefungsgebiet Luft- und Raumfahrt (Alternative)
+1; ; ; ; ; 
+2; ; ; ; ; 
+3; Technische Mechanik für TUM-BWL 			6 ECTS; CAD und Maschinen-zeichnen, Teil 1 (Bitte Sonderregelung unten beachten) 			3 ECTS; ; ; 
+4; Regelungstechnik 			5 ECTS; CAD und Maschinenzeichnen, Teil 2 * 			2 ECTS; ; ; 
+5; ; ; Automatisierungs-technik 			5 ECTS; Kommunikations-systeme in der Automatisierungs-technik 			5 ECTS; Grundlagen der Luftfahrttechnik*** 			5 ECTS 			Grundlagen der Raumfahrt 			5 ECTS 			Einführung in die Flugsystem- dynamik und Flugregelung 			5 ECTS
+6; ; ; Entwicklung intelligenter verteilter eingebetteter Systeme in der Mechatronik** 			5 ECTS 			Industrielle Softwareentwicklung für Ingenieure 			5 ECTS; Produkt-entwicklung und Konstruktion 			5 ECTS; 
+
+* Der Lehrinhalt D, CAD-Geometrie, entfällt für Informatiker:innen; somit fallen nur 2 ECTS an (im Gegensatz zu Maschinenbauer:innen).
+** früher: Entwicklungsmethodik in der Mechatronik 5 ECTS
+*** ersetzt Luftfahrtsysteme ab WS 12/13
+Aus einem der Vertiefungsgebiete Mechatronik, Produktentstehungsprozess sowie Luft- und Raumfahrttechnik sind 5 ECTS zu wählen.
+Links relevant for questions related to Studienplan bis Studienbeginn einschließlich Sommersemester 2015: http://www.wkm.mw.tum.de/lehre/lehrveranstaltungen/tm-tum-bwl/, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=780530&pOrgNr=15299, http://www.rt.mw.tum.de/, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=780521&pOrgNr=15299, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=767672&pOrgNr=15268, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=779538&pOrgNr=15304, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=768263&pOrgNr=15309, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=767686&pOrgNr=15305, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=559776&pOrgNr=15268, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=768277&pOrgNr=14187, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=768311&pOrgNr=48837, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/
+Studienplan bis Studienbeginn einschließlich Sommersemester 2015
+----------------------------------------
+
+Mathematik
+Anwendungsfächer > Mathematik
+Links relevant for questions related to Mathematik: https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/
+Mathematik
+----------------------------------------
+
+Dr. rer. nat. Felix Dietrich
+Anwendungsfächer > Dr. rer. nat. Felix Dietrich
+Büro: Boltzmannstr. 3(5605)/II, Raum 5605.02.041 E-Mail: felix.dietrich(at)tum.de Tel. +49 89 289 18638
+Sprechstunde nach Vereinbarung via E-Mail
+Links relevant for questions related to Dr. rer. nat. Felix Dietrich: https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/#, tel:+498928918638, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/
+Dr. rer. nat. Felix Dietrich
+----------------------------------------
+
+Studienplan ab Studienbeginn Wintersemester 2021/22
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2021/22
+
+Pflichtveranstaltungen
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2021/22 > Pflichtveranstaltungen
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2021/22 > Pflichtveranstaltungen):
+Semester; Pflichtveranstaltungen Mathematik
+1; ; 
+2; ; 
+3; IN0019: Numerisches Programmieren(6 ECTS)Gehört zum Informatik-Plan, schon im 3. Semester besuchen!; 
+4; IN2366: Modellbildung und Simulation (Fokus Analysis)(9 ECTS); 
+5; ; 
+6; ; 
+
+Aus dem Pflichtbereich ergeben sich 9 Credits.
+
+Wahlmodule
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2021/22 > Wahlmodule
+Aus folgender Liste von Modulen sind mindestens 12 Credits zu erbringen:
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2021/22 > Wahlmodule):
+Modul; Semester; ECTS
+MA0003 Analysis 3; WiSe; 9
+MA2006 Funktionentheorie; SoSe; 6
+MA2010 Algebra; SoSe; 9
+MA2011 Geometrie; SoSe; 9
+MA2012 Einführung in die Optimierung; SoSe; 9
+MA2404 Markovketten; SoSe; 6
+MA3001 Funktionalanalysis*; WiSe; 9
+MA3005 Partielle Differentialgleichungen*; SoSe; 9
+MA3301 Numerik der Differentialgleichungen; WiSe; 9
+MA3303 Numerik partieller Differentialgleichungen; WiSe; 9
+MA3404 Statistical Computing; SoSe; 6
+MA3503 Nichtlineare Optimierung; WiSe; 6
+MA3505 Integer Optimization; WiSe; 9
+MA3409 Applied Regression**; WiSe; 6
+MA9712 Statistik für BWL***; SoSe; 6
+CIT5130002 Introduction to Data Science and Statistical Thinking***; SoSe; 6
+*  Kenntnisse von MA0003 (oder vergleichbar) Voraussetzung** Kenntnisse von IN0018 (oder vergleichbar) und Programmiersprache R zusätzliche Voraussetzung*** CIT5130002 ersetzt MA9712; es kann nur eins der beiden Module eingebracht werden; ;
+Links relevant for questions related to Studienplan ab Studienbeginn Wintersemester 2021/22: https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=454055&pOrgNr=14189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1508039&pOrgNr=14189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1542097&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=456708&pOrgNr=14178, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1542196&pOrgNr=14178, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1542197&pOrgNr=14178, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1542198&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458207&pOrgNr=14178, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458213&pOrgNr=14178, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458215&pOrgNr=14178, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=261293&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=819298&pOrgNr=14178, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=2991465&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458304&pOrgNr=14178, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=2838185&pOrgNr=14178, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=3017495&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1189803&pOrgNr=14178, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=3305433&pOrgNr=53597, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/
+Studienplan ab Studienbeginn Wintersemester 2021/22
+----------------------------------------
+
+Studienplan ab Studienbeginn Wintersemester 2019/20
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2019/20
+
+Pflichtveranstaltungen
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2019/20 > Pflichtveranstaltungen
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2019/20 > Pflichtveranstaltungen):
+Semester; Pflichtveranstaltungen Mathematik
+1; ; 
+2; ; 
+3; IN0019: Numerisches Programmieren(6 ECTS)Gehört zum Informatik-Plan, schon im 3. Semester besuchen!; 
+4; IN2366: Modellbildung und Simulation (Fokus Analysis)(9 ECTS); 
+5; ; 
+6; ; 
+
+Aus dem Pflichtbereich ergeben sich 9 Credits.
+
+Wahlmodule
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2019/20 > Wahlmodule
+Aus folgender Liste von Modulen sind mindestens 12 Credits zu erbringen:
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2019/20 > Wahlmodule):
+Modul; Semester; ECTS; Ersetzt ***
+MA0003 Analysis 3; WiSe; 9; 
+MA2006 Funktionentheorie; SoSe; 6; 
+MA2010 Algebra; SoSe; 9; ersetzt MA2101
+MA2011 Geometrie; SoSe; 9; ersetzt MA2204
+MA2012 Einführung in die Optimierung; SoSe; 9; ersetzt MA2503 und MA2504
+MA2404 Markovketten; SoSe; 6; 
+MA3001 Funktionalanalysis*; WiSe; 9; 
+MA3005 Partielle Differentialgleichungen*; SoSe; 9; 
+MA3301 Numerik der Differentialgleichungen; WiSe; 9; ersetzt MA2304
+MA3303 Numerik partieller Differentialgleichungen; WiSe; 9; 
+MA3404 Statistical Computing**; SoSe; 6; ersetzt MA3402
+MA3503 Nichtlineare Optimierung; WiSe; 6; 
+MA3505 Integer Optimization; WiSe; 9; ersetzt MA3502
+MA3409 Applied Regression**; WiSe; 6; ersetzt MA4401
+CIT5130002 Introduction to Data Science and Statistical Thinking; SoSe; 6; ersetzt MA9712 Statistik für BWL
+
+*  Kenntnisse von MA0003 (oder vergleichbar) Voraussetzung** Kenntnisse von IN0018 (oder vergleichbar) und Programmiersprache R zusätzliche Voraussetzung
+*** Das neue Fach (erste Spalte) kann nicht eingebracht werden, wenn das alte Fach (vierte Spalte) schon eingebracht wurde!
+Die folgenden Module werden ab dem Wintersemester 2021/22 (teilweise auch früher) nicht mehr angeboten, sollten Sie diese schon vorher belegt haben, zählen diese selbstverständlich weiterhin zu Ihrem Studienplan und können eingebracht werden:
+- MA2101 Algebra
+- MA2204 Differentialgeometrie: Grundlagen
+- MA2304 Numerik gewöhnlicher Differentialgleichungen
+- MA2402 Statistik: Grundlagen
+- MA2501 Algorithmisch Diskrete Mathematik
+- MA2503 Nichtlineare Optimierung: Grundlagen
+- MA2504 Lineare und Konvexe Optimierung
+- MA3203 Projektive Geometrie
+- MA3402 Computational Statistics
+- MA3502 Discrete Optimization
+- MA4401 Applied Regression
+Links relevant for questions related to Studienplan ab Studienbeginn Wintersemester 2019/20: https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=454055&pOrgNr=14189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1508039&pOrgNr=14189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1542097&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=456708&pOrgNr=14178, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1542196&pOrgNr=14178, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1542197&pOrgNr=14178, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1542198&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458207&pOrgNr=14178, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458213&pOrgNr=14178, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458215&pOrgNr=14178, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=261293&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=819298&pOrgNr=14178, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=2991465&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458304&pOrgNr=14178, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=2838185&pOrgNr=14178, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=3017495&pOrgNr=14178, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=3305433&pOrgNr=53597, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/
+Studienplan ab Studienbeginn Wintersemester 2019/20
+----------------------------------------
+
+Studienplan bis Studienbeginn Sommersemester 2019
+Anwendungsfächer > Studienplan bis Studienbeginn Sommersemester 2019
+
+Pflicht- und Wahlveranstaltungen
+Anwendungsfächer > Studienplan bis Studienbeginn Sommersemester 2019 > Pflicht- und Wahlveranstaltungen
+Table (Anwendungsfächer > Studienplan bis Studienbeginn Sommersemester 2019 > Pflicht- und Wahlveranstaltungen):
+Semester; Veranstaltungen Mathematik
+; Pflicht:; Wahlbereich: 			Eine der beiden Veranstaltungen muss bestanden werden
+1; ; 
+2; ; 
+3; IN0019: Numerisches Programmieren 			(6 ECTS) 			Gehört zum Informatik-Plan, schon im 3. Semester besuchen!; 
+4; IN2366: Modellbildung und Simulation (Fokus Analysis) 			(9 ECTS); 
+5; ; MA2203: Geometriekalküle 			(6 ECTS) 			oder 			MA2501: Algorithmische Diskrete Mathematik 			(6 ECTS)
+6; ; 
+
+Aus dem Pflicht- und dem Wahlbereich ergeben sich 15 ECTS.
+
+Vertiefungsmodule
+Anwendungsfächer > Studienplan bis Studienbeginn Sommersemester 2019 > Vertiefungsmodule
+Aus dem nachfolgenden Vertiefungskatalog muss eine Lehrveranstaltung mit mindestens 6 ECTS belegt werden:
+Table (Anwendungsfächer > Studienplan bis Studienbeginn Sommersemester 2019 > Vertiefungsmodule):
+Modul; Semester; ECTS; Ersetzt ***
+MA0003 Analysis 3; WiSe; 9; 
+MA2006 Funktionentheorie; SoSe; 6; 
+MA2010 Algebra; SoSe; 9; ersetzt MA2101
+MA2011 Geometrie; SoSe; 9; ersetzt MA2204
+MA2012 Einführung in die Optimierung; SoSe; 9; ersetzt MA2503 und MA2504
+MA2404 Markovketten; SoSe; 6; 
+MA3001 Funktionalanalysis*; WiSe; 9; 
+MA3005 Partielle Differentialgleichungen*; SoSe; 9; 
+MA3301 Numerik der Differentialgleichungen; WiSe; 9; ersetzt MA2304
+MA3303 Numerik partieller Differentialgleichungen; WiSe; 9; 
+MA3402 Computational Statistics**; SoSe; 6; 
+MA3503 Nichtlineare Optimierung; WiSe; 6; 
+MA3505 Integer Optimization; WiSe; 9; ersetzt MA3502
+MA4401 Applied Regression**; WiSe; 6; 
+MA9712 Statistik für BWL; SoSe; 6; 
+
+*  Kenntnisse von MA0003 (oder vergleichbar) Voraussetzung ** Kenntnisse von IN0018 (oder vergleichbar) und Programmiersprache R zusätzliche Voraussetzung
+*** Das neue Fach (erste Spalte) kann nicht eingebracht werden, wenn das alte Fach (vierte Spalte) schon eingebracht wurde!
+Die folgenden Module werden ab dem Wintersemester 2021/22 (teilweise auch früher) nicht mehr angeboten, sollten Sie diese schon vorher belegt haben, zählen diese selbstverständlich weiterhin zu Ihrem Studienplan und können eingebracht werden:
+- MA2101 Algebra
+- MA2204 Differentialgeometrie: Grundlagen
+- MA2304 Numerik gewöhnlicher Differentialgleichungen
+- MA2402 Statistik: Grundlagen
+- MA2501 Algorithmisch Diskrete Mathematik
+- MA2503 Nichtlineare Optimierung: Grundlagen
+- MA2504 Lineare und Konvexe Optimierung
+- MA3203 Projektive Geometrie
+- MA3502 Discrete Optimization
+Links relevant for questions related to Studienplan bis Studienbeginn Sommersemester 2019: https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=454055&pOrgNr=14189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1508039&pOrgNr=14189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458197&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1139467&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1542097&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=456708&pOrgNr=14178, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1542196&pOrgNr=14178, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1542197&pOrgNr=14178, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1542198&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458207&pOrgNr=14178, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458213&pOrgNr=14178, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458215&pOrgNr=14178, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=261293&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=819298&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458223&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458304&pOrgNr=14178, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=2838185&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=702795&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1189803&pOrgNr=14178, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/
+Studienplan bis Studienbeginn Sommersemester 2019
+----------------------------------------
+
+Studienplan ab Studienbeginn Wintersemester 2009/10
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2009/10
+
+Pflicht- und Wahlveranstaltungen
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2009/10 > Pflicht- und Wahlveranstaltungen
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2009/10 > Pflicht- und Wahlveranstaltungen):
+Semester; Veranstaltungen Mathematik
+; Pflicht; Wahlbereich: 			Eine der beiden Veranstaltungen muss bestanden werden
+1; ; 
+2; ; 
+3; IN0019: Numerisches Programmieren 			(6 ECTS) 			Gehört zum Informatik-Plan, 			schon im 3. Semester 			besuchen!; 
+4; IN2010: Modellbildung und Simulation 			(8 ECTS); 
+5; ; MA2203: Geometriekalküle (5 ECTS) 			oder 			MA 2501: Algorithmische Diskrete Mathematik (5 ECTS) * 			(umbenannt von: Diskrete Optimierung)
+6; ; 
+
+* wird im SoSe 2021 durch MA1107 Diskrete Strukturen LG  (5 ECTS) ersetzt
+Aus dem Pflicht- und dem Wahlbereich ergeben sich 13 ECTS.
+
+Vertiefungsmodule
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2009/10 > Vertiefungsmodule
+Aus einer der nachfolgend genannten Vertiefungslinien sind Lehrveranstaltungen im Umfang von mindestens 8 ECTS (faktisch 9 oder 10) zu belegen;
+eventuelle inhaltliche Abhängigkeiten, die zu Einschränkungen bei der Belegung der zuvor genannten Wahlpflicht-Module führen, sind jeweils angegeben:
+Vertiefungslinie „Algebra“ (keine Einschränkungen)
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2009/10 > Vertiefungsmodule):
+Modul; Titel; Sem.; ECTS
+MA 2101; Algebra; 5; 9
+
+Vertiefungslinie „Geometrie“ (nur nach MA 2203)
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2009/10 > Vertiefungsmodule):
+Modul; Titel; Sem.; ECTS
+MA 3203; Projektive Geometrie**; unregelmäßig; 9
+MA 2204; Differentialgeometrie: Grundlagen; unregelmäßig; 5
+MA 3504; Convex Analysis1; 5-6; 5
+MA 4211; Grundlagen der Geometrie; unregelmäßig; 5
+
+**nur alle 2 Jahre im WS; entspricht inhaltlich der früher angebotenen Vorlesung "Selected Topics in Geometry" (MA3208)
+1Wird nicht mehr angeboten, da MA3504 mit MA3501 zusammengefasst wurde und nun als MA 2504 als 9 ECTS-Vorlesung in der Vertiefungslinie Optimierung angeboten wird
+Vertiefungslinie „Statistik und Stochastik“ (keine Einschränkungen)
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2009/10 > Vertiefungsmodule):
+Modul; Titel; Sem.; ECTS
+MA 2402; Statistik: Grundlagen; 4, 6; 5
+MA 2404; Markovketten; 3, 5; 5
+MA 3402; Computational Statistics; 6; 5
+MA 4401; Applied Regression; 3, 5; 5
+
+Vertiefungslinie „Numerik“ (MA 3303 nur bei profunden Numerik-Vorkenntnissen)
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2009/10 > Vertiefungsmodule):
+Modul; Titel; Sem.; ECTS
+MA 2304; Numerik gewöhnlicher Differentialgleichungen4; 4, 6; 9
+MA 3303; Numerik partieller Differentialgleichungen4; 5; 9
+
+4Ersetzen die Numerikvorlesungen MA2302 Numerik und MA3301 Numerics of Differential Equations. Es handelt sich im wesentlichen um eine Umbenennung der Veranstaltungen.
+Vertiefungslinie „Optimierung“ (MA2504 nur nach MA2501; MA3503 nur nach MA2503)
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2009/10 > Vertiefungsmodule):
+Modul; Titel; Sem.; ECTS
+MA 2504; Lineare und Konvexe Optimierung 5; 4,6; 9
+MA 2503; Nichtlineare Optimierung: Grundlagen; 3,5; 5
+MA 3503; Nichtlineare Optimierung; 3,5; 5
+MA 3502; Diskrete Optimierung; 3,5; 5
+
+5Die Optimierungsvorlesungen MA2504 und MA3501 wurden zusammengefasst zur neuen Vorlesung MA2504. Die Vorlesungsinhalte bleiben identisch.
+Links relevant for questions related to Studienplan ab Studienbeginn Wintersemester 2009/10: https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=454055&pOrgNr=14189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=456362&pOrgNr=14189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458197&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1139467&pOrgNr=14178, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1717079&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458195&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=555242&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458199&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458308&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=556801&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458205&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458207&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458223&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=702795&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=809907&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=819298&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1471350&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458203&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458304&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458269&pOrgNr=14178, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/
+Studienplan ab Studienbeginn Wintersemester 2009/10
+----------------------------------------
+
+Studienplan ab Studienbeginn Wintersemester 2008/09
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2008/09
+
+Pflicht- und Wahlveranstaltungen
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2008/09 > Pflicht- und Wahlveranstaltungen
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2008/09 > Pflicht- und Wahlveranstaltungen):
+Semester; Veranstaltungen Mathematik
+; Pflicht; Wahlbereich: 			Eine der beiden Veranstaltungen muss bestanden werden
+1; ; 
+2; ; 
+3; IN0019: Numerisches Programmieren (6 ECTS) 			Gehört zum Informatik-Plan, 			schon im 3. Semester besuchen! 			Zusätzlich: 1 ECTS durch Mathematische 			Aspekte der Numerischen Programmierung in 			separater Übungsgruppe; dieser Punkt zählt 			zum Anwendungsfach Mathematik; 
+4; MA1902: Einführung in die math. Modellbildung 			(4 ECTS); MA 2005: 			Gewöhnliche Differentialgleichungen (4 ECTS)
+5; MA 2501: Diskrete Optimierung (4 ECTS); MA2203: 			Geometriekalküle (4 ECTS)
+6; ; 
+
+Aus dem Pflicht- und dem Wahlbereich ergeben sich 13 ECTS.
+Vertiefung: Aus einer der nachfolgend genannten Vertiefungslinien sind Lehrveranstaltungen im Umfang von mindestens 8 ECTS zu belegen;
+eventuelle inhaltliche Abhängigkeiten, die zu Einschränkungen bei der Belegung der zuvor genannten Wahlpflicht-Module führen, sind jeweils angegeben.
+
+Vertiefungsmodule
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2008/09 > Vertiefungsmodule
+Aus einer der nachfolgend genannten Vertiefungslinien sind Lehrveranstaltungen im Umfang von mindestens 8 ECTS zu belegen;
+eventuelle inhaltliche Abhängigkeiten, die zu Einschränkungen bei der Belegung der zuvor genannten Wahlpflicht-Module führen, sind jeweils angegeben:
+Vertiefungslinie „Algebra“ (keine Einschränkungen)
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2008/09 > Vertiefungsmodule):
+Modul; Titel; Sem.; ECTS
+MA 2101; Algebra; 5; 8
+MA 3101; Computeralgebra; 5-6; 8
+
+Vertiefungslinie „Geometrie“ (nur nach MA 2203)
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2008/09 > Vertiefungsmodule):
+Modul; Titel; Sem.; ECTS
+MA 3208; Selected Topics in Geometry; 5-6; 4
+MA 2204; Differentialgeometrie: Grundlagen; 4, 6; 4
+MA 3501; Linear Optimization; 5; 4
+MA 3504; Convex Analysis; 5-6; 4
+
+Vertiefungslinie „Statistik und Stochastik“ (keine Einschränkungen)
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2008/09 > Vertiefungsmodule):
+Modul; Titel; Sem.; ECTS
+MA 2402; Statistik: Grundlagen; 4, 6; 4
+MA 2404; Markovketten; 4, 6; 4
+MA 3402; Computational Statistics; 6; 4
+
+Vertiefungslinie „Numerik“ (MA 3301 nur bei profunden Numerik-Vorkenntnissen)
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2008/09 > Vertiefungsmodule):
+Modul; Titel; Sem.; ECTS
+MA 2302; Numerik; 4, 6; 8
+MA 3301; Numerics of Differential Equations; 5; 8
+
+Vertiefungslinie „Optimierung“ (keine Einschränkungen, da MA 2501 Pflicht; „Advanced“ nur nach den jeweiligen „Grundlagen“)
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2008/09 > Vertiefungsmodule):
+Modul; Titel; Sem.; ECTS
+MA 2503; Nichtlineare Optimierung: Grundlagen; 3, 5; 4
+MA 3501; Linear Optimization; 5; 4
+MA 3502; Combinatorial Optimization: Advanced; 5-6; 4
+MA 3503; Nonlinear Optimization: Advanced; 5-6; 4
+Links relevant for questions related to Studienplan ab Studienbeginn Wintersemester 2008/09: https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=454055&pOrgNr=14189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=456695&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=456703&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458201&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458197&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458195&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=478017&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458199&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458233&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458308&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458205&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458207&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458223&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458209&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=261293&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458203&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458233&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458269&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458304&pOrgNr=14178, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/
+Studienplan ab Studienbeginn Wintersemester 2008/09
+----------------------------------------
+
+Medizin
+Anwendungsfächer > Medizin
+Links relevant for questions related to Medizin: https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/
+Medizin
+----------------------------------------
+
+Dr. Ulrich Eck
+Anwendungsfächer > Dr. Ulrich Eck
+Büro: Klinikum der Universität München NARVIS Forschungslabor Nussbaumstraße 20, 80336 München Raum: C2.06   E-Mail: ulrich.eck(at)tum.de Website
+Links relevant for questions related to Dr. Ulrich Eck: https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/#, http://campar.in.tum.de/Main/UlrichEck, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/
+Dr. Ulrich Eck
+----------------------------------------
+
+Studienplan ab Studienbeginn Wintersemester 2018/19
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2018/19
+
+Pflicht- und Wahlveranstaltungen
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2018/19 > Pflicht- und Wahlveranstaltungen
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2018/19 > Pflicht- und Wahlveranstaltungen):
+Semester; Pflichtmodule Medizin
+3; ME520 Medizin 1 			(5 Credits); 
+4; ME521 Medizin 2 			(5 Credits); 
+5; ; 
+6; ME525 Klinisches Anwendungsprojekt (mind. ein Betreuer aus der Fakultät Medizin) 			(6 Credits); 
+
+Aus dem Pflichtbereich ergeben sich 16 Credits.
+
+Wahlmodule
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2018/19 > Wahlmodule
+Aus folgender Liste von Modulen sind mindestens 5 Credits zu erbringen:
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2018/19 > Wahlmodule):
+Modul; Semester; Credits
+ME0156 Bildgebende Verfahren, Nuklearmedizin; WiSe, SoSe; 5
+ME522 Informationssysteme und Entscheidungunterstützung; WiSe; 5
+ME523 Medizinische Statistik; WiSe, SoSe; 3
+ME700 Imagine Neurooncology - Medizin und Technik in der Neuroradiologie; ; 2
+ME562 Introduction to Biological Imaging; WiSe; 6
+ME25666 Introduction to Bioengineering; SoSe; 6
+
+Anmeldung eines Klinischen Anwendungsprojektes: Formular
+Aktueller Ansprechpartner für das klinische Anwendungsprojekt: Dr. Ulrich Eck
+Bitte senden Sie die Projektanfragen über diese Webseite inkl. eines CV und eines Transcripts, und einem kurzen Anschreiben, aus dem die bisherigen Erfahrungen, Kenntnisse ersichtlich sind, sowie eine Auswahl von möglichen Themenbereichen:
+- Computer Assisted Surgery
+- Computer Vision for Medical Applications
+- Deep Learning for Medical Applications
+- Medical Augmented Reality
+- Medical Imaging and Image Processing
+- Surgical Robotics
+- Surgical Simulation
+Aufgabensteller (e.g. Prüfungsberechtigte in einer Medizinischen Fakultät) können Projektvorschläge per E-Mail an Dr. Ulrich Eck senden.
+Links relevant for questions related to Studienplan ab Studienbeginn Wintersemester 2018/19: https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1143417&pOrgNr=16070, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1143418&pOrgNr=16070, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=261501&pOrgNr=15999, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=261597&pOrgNr=16070, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1143419&pOrgNr=16070, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1153578&pOrgNr=16037, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=632058&pOrgNr=14191, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1607092&pOrgNr=15745, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Informatik/CAP_Registration_Form.pdf, https://www.cs.cit.tum.de/camp/members/ulrich-eck/, https://intranet.in.tum.de/pages/1r6h4135emweuz9z1bzk1sowv/Submit-Application, https://www.cs.cit.tum.de/camp/members/ulrich-eck/, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/
+Studienplan ab Studienbeginn Wintersemester 2018/19
+----------------------------------------
+
+Studienplan ab Studienbeginn Wintersemester 2009/10
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2009/10
+Umfang 21 ECTS
+
+Grundlagen
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2009/10 > Grundlagen
+6 ECTS Pflicht
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2009/10 > Grundlagen):
+Semester; Veranstaltung
+
+
+
+Medizin II (Krankheitslehre, Klinische Propädeutik) und Medizinische Informatik 			3 ECTS (Kuhn, Striebeck)
+
+Vertiefung
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2009/10 > Vertiefung
+6 ECTS Klinisches Anwendungsprojekt + 9 ECTS Wahl
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2009/10 > Vertiefung):
+Semester; Veranstaltung
+5; Informationssysteme und Entscheidungsunterstützung 			5 ECTS (Kuhn/Prasser); Medizinische Statistik 			3 ECTS (Ulm)
+Introduction to Biological Imaging 			6 ECTS (Ntziachristos); Bildgebende Verfahren 			5 ECTS (Ziegler)
+ME700 Imagine Neurooncology - Medizin und Technik in der Neuroradiologie 2 ECTS; 2 ECTS
+; Introduction to Bioengineering 6 ECTS
+6; Klinisches Anwendungsprojekt 6 ECTS (Pflicht; mindestens ein:e Betreuer:in von der Med. Fakultät)
+
+Anmeldung eines Klinischen Anwendungsprojektes: Formular
+Aktueller Ansprechpartner für das klinische Anwendungsprojekt: Dr. Ulrich Eck
+Links relevant for questions related to Studienplan ab Studienbeginn Wintersemester 2009/10: https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=261597&pOrgNr=14187, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1143419&pOrgNr=16070, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=632058&pOrgNr=14191, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=261501&pOrgNr=14187, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1153578&pOrgNr=16037, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1607092&pOrgNr=15745, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Informatik/CAP_Registration_Form.pdf, https://www.cs.cit.tum.de/camp/members/ulrich-eck/, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/
+Studienplan ab Studienbeginn Wintersemester 2009/10
+----------------------------------------
+
+Aktuelle Ausschreibungen für das klinische Anwendungsprojekt
+Anwendungsfächer > Aktuelle Ausschreibungen für das klinische Anwendungsprojekt
+Aktuelle Ausschreibungen finden Sie im Intranet Wiki.
+Im Intranet können sich Studierende direkt für ein Projekt anmelden.
+Falls Sie als Betreuer:in Vorschläge für ein klinisches Projekt haben, senden Sie diese bitte inklusive einer Beschreibung, des gewünschten Zeitraums und der Ansprechpersonen per E-Mail an Dr. Ulrich Eck.
+Links relevant for questions related to Aktuelle Ausschreibungen für das klinische Anwendungsprojekt: https://intranet.in.tum.de/pages/ibwlt2wkspvvt19v3twed7o3x/Clinical-Application-Project-Offers, https://intranet.in.tum.de/pages/axtovajzmis5qa819qea8hrmf/Submit-Application#_kcv7o6c0saqn5026xbe8dcxte=submission_view, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/#, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/
+Aktuelle Ausschreibungen für das klinische Anwendungsprojekt
+----------------------------------------
+
+Wirtschaftswissenschaften
+Anwendungsfächer > Wirtschaftswissenschaften
+Links relevant for questions related to Wirtschaftswissenschaften: https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/
+Wirtschaftswissenschaften
+----------------------------------------
+
+Jana Vatter
+Anwendungsfächer > Jana Vatter
+Büro: Boltzmannstr. 3(5606)/I, Raum 5606.01.058 E-Mail: jana.vatter(at)tum.de Tel. +49 (89) 289 - 18453 Webseite
+Links relevant for questions related to Jana Vatter: https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/#, https://www.cs.cit.tum.de/dis/team/jana-vatter/, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/
+Jana Vatter
+----------------------------------------
+
+Studienplan ab Studienbeginn Wintersemester 2013/14
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2013/14
+
+Pflichtveranstaltungen
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2013/14 > Pflichtveranstaltungen
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2013/14 > Pflichtveranstaltungen):
+Semester; Pflichtveranstaltungen Wirtschaftswissenschaften
+
+
+
+
+
+
+
+
+Wahlveranstaltungen
+Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2013/14 > Wahlveranstaltungen
+Aus folgender Liste von Modulen sind mindestens 9 Credits zu erbringen:
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2013/14 > Wahlveranstaltungen):
+Modul; ; Semster; Credits; 
+WI000219 Investitions- und Finanzmanagement *; ; WiSe; 6; 
+WI000219_E Investment and Financial Management  *; ; WiSe; 6
+WI000027 Wirtschaftsprivatrecht I (inkl. jurist. Fallbearb.); ; WiSe; 6; 
+WI000030 Wirtschaftsprivatrecht II (inkl. jurist. Fallbearb.); ; SoSe; 6; 
+POL70041 Arbeits- und Industriesoziologie; ; WiSe/SoSe; 3; 
+WI000835 Basics of Advanced Planning and Supply Chain Management; ; WiSe; 6; 
+WI001059_E Financial Accounting**; ; WiSe; 6; 
+WI000969 Entrepreneurship für Wirtschaftsinformatiker; ; WiSe; 3; 
+WI001057_E Cost Accounting ***; ; SoSe; 6; 
+WI001132 Kostenrechnung für Wirtschaftsinformatik und NF ***; ; SoSe; 6; 
+WI000820 Marketing and Innovation Management; ; SoSe; 6; 
+WI000023_E Economics II - Macroeconomics ****; ; SoSe; 6; 
+WI000023 Volkswirtschaftslehre II - Makroökonomie ****; ; SoSe; 6; 
+
+Table (Anwendungsfächer > Studienplan ab Studienbeginn Wintersemester 2013/14 > Wahlveranstaltungen):
+* Es ist nur EINES der Module WI00219 oder WI000219_E einbringbar. 			** Bei Studienbeginn bis SoSe2021 kann auch WI001059 anstatt WI001059_E eingebracht werden. 			*** Es ist nur EINES der Module WI001057_E oder WI001132 einbringbar. WI001132 letzmalig im SoSe2021 angeboten. 			**** Es ist nur EINES der Module WI000023_E oder WI000023 einbringbar.
+Links relevant for questions related to Studienplan ab Studienbeginn Wintersemester 2013/14: https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=470711&pOrgNr=14811, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=260979&pOrgNr=14807, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=477914&pOrgNr=14766, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=463710&pOrgNr=14808, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1175354&pOrgNr=14181, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=452772&pOrgNr=14823, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=452776&pOrgNr=14823, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=261469&pOrgNr=47717, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=614769&pOrgNr=44106, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1175370&pOrgNr=46476, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=723339&pOrgNr=45170, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1175366&pOrgNr=14807, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1204030&pOrgNr=14807, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=584615&pOrgNr=14811, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1175350&pOrgNr=47679, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=452764&pOrgNr=47679, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/
+Studienplan ab Studienbeginn Wintersemester 2013/14
+----------------------------------------
+
+Studienplan bis Studienbeginn einschließlich Sommersemester 2013
+Anwendungsfächer > Studienplan bis Studienbeginn einschließlich Sommersemester 2013
+
+Pflichtveranstaltungen
+Anwendungsfächer > Studienplan bis Studienbeginn einschließlich Sommersemester 2013 > Pflichtveranstaltungen
+Table (Anwendungsfächer > Studienplan bis Studienbeginn einschließlich Sommersemester 2013 > Pflichtveranstaltungen):
+Semester; Pflichtveranstaltungen Wirtschaftswissenschaften; 
+1; ; ; 
+2; ; ; 
+3; WI000729 Grundlagen der Betriebswirtschaftslehre 2 * 			3 Credits; WI000220 Grundzüge der Volkswirtschaftslehre 			(oder auch im 5. Semester, wenn keineWahlvorlesung aus dem Bereich Volkswirtschaftslehre) 			3 Credits; 
+4; WI000728 Grundlagen der Betriebswirtschaftslehre 1 * 			3 Credits; WI000689 Kosten- und Erlösrechnung 			3 Credits **; 
+5; ; ; Wahlveranstaltungen 			6 Credits
+6; ; ; Wahlveranstaltungen 			3 Credits
+
+* Die Inhalte der beiden BWL-Lehrveranstaltungen bauen nicht aufeinander auf und können unabhängig voneinander besucht werden. Es werden keinerlei Vorkenntnisse vorausgesetzt.
+**Falls jemand das Fach Kostenrechnung für Wirtschaftsinformatik und Nebenfach gemacht hat, bei der Schriftführung melden.
+
+Wahlveranstaltungen
+Anwendungsfächer > Studienplan bis Studienbeginn einschließlich Sommersemester 2013 > Wahlveranstaltungen
+Wahlveranstaltungen sind aus den Bereichen Betriebswirtschaftslehre, Volkswirtschaftslehre, Rechtswissenschaften, Psychologie sowie Soziologie im Umfang von mindestens 9 Credits zu wählen. Sie können aus mehreren Bereichen wählen.
+Zur Zusammenstellung Ihres Stundenplans berät Sie die Studienberatung gerne.
+Table (Anwendungsfächer > Studienplan bis Studienbeginn einschließlich Sommersemester 2013 > Wahlveranstaltungen):
+Bereich; Veranstaltungstitel; Credits; SWS; Semesterlage; Unterrichtssprache
+Betriebswirt- schaftslehre:; ; ; ; ; 
+WI001057; Kostenrechnung **; 6; 2 V + 2 Ü; SS; Deutsch
+WI001132; Kostenrechnung für Wirtschaftsinformatik und Nebenfach *******; 6; 2 V + 2 Ü; SS; Deutsch
+WI000835; Basics of Advanced Planning and Supply Chain Management ***; 6; 4V; SS/WS; Englisch
+WI001059; Buchführung und Rechnungswesen *****; 6; 2 V + 2 Ü; WS; Deutsch
+WI000219; Investitions- und Finanzmanagement ******; 6; 2V + 2Ü; WS; Deutsch
+WI000820; Marketing and Innovation Management *********; 6; 2 V; SS; Englisch
+WI000969; Entrepreneurship für Wirtschaftsinformatiker; 3; 2 V; WS; Englisch
+Volkswirtschaftslehre:; ; ; ; ; 
+WI000021; Volkswirtschaftslehre I ****; 6; 2 V + 2 Ü; WS; Deutsch
+WI000023; Volkswirtschaftslehre II; 6; 2 V + 2 Ü; SS; Deutsch
+Rechtswissenschaften:; ; ; ; ; 
+WI000027; Wirtschaftsprivatrecht I (inkl. juristischer Fallbearbeitung); 6; 2 V + 2 Ü; WS; Deutsch
+WI000030; Wirtschaftsprivatrecht II (inkl. juristischer Fallbearbeitung); 6; 2 V + 2 Ü; SS; Deutsch
+Psychologie:; ; ; ; ; 
+WI000031; Organizational Psychology; 3; 2 V; WS; Englisch
+Soziologie:; ; ; ; ; 
+ED0061; Arbeits- und Industriesoziologie; 3; 2Ü; WS / SS; Deutsch
+
+**: Nur wählbar für Studierende, die ihr Anwendungsfach im WS 2013/14 oder später aufnehmen. Die Prüfung wird für den Bachelor Informatik nur bis einschl. WS 2015/16 angeboten.
+***: Ersetzt ab WS 2012/13 Produktions- und Supply Chain Management.
+****: Nur wählbar für Studierende, die ihr Anwendungsfachstudium vor dem WS 2013/14 aufgenommen haben.
+*****: Ersetzt ab WS 2015/16 Buchführung (WI000002).
+******: Ersetzt ab WS 2015/16 Investitions- und Finanzmanagement (WI000218). Die Prüfung WI000218 ist nur für Wiederholer.
+*******: Ersetzt ab SS 2016 Kostenrechnung (WI001057).
+********: Die Prüfung wird für den Bachelor Informatik nur bis einschl. SS 2015 angeboten.
+*********: Ersetzt ab WS 2015/16 Technology and Innovation Management: Introduction (WI000114).
+*********: Ersetzt ab Sommersemester 2016 Technology and Innovation Management: Introduction (WI000114) und Marketing (WI000688)
+Links relevant for questions related to Studienplan bis Studienbeginn einschließlich Sommersemester 2013: https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=470711&pOrgNr=14181, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=585550&pOrgNr=14766, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=260979&pOrgNr=14807, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=261213&pOrgNr=14181, https://www.in.tum.de/in/fuer-studierende/beratung-und-unterstuetzung/, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=863362&pOrgNr=14807, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1204030&pOrgNr=14807, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=614769&pOrgNr=44106, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=863366&pOrgNr=44724, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=463710&pOrgNr=14808, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=584615&pOrgNr=14811, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=723339&pOrgNr=45170, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=477914&pOrgNr=14766, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=452764&pOrgNr=14766, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=452772&pOrgNr=14823, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=452776&pOrgNr=14823, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=261307&pOrgNr=14830, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=261469&pOrgNr=40661, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik/anwendungsfaecher/
+Studienplan bis Studienbeginn einschließlich Sommersemester 2013
+----------------------------------------
+

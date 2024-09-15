@@ -1,0 +1,279 @@
+https://www.cit.tum.de/cit/studium/studiengaenge/master-bioinformatik/modulkatalog/
+Studieninhalte Master Bioinformatik - TUM - TUM School of Computation, Information and Technology
+
+Modulkatalog Master Bioinformatik
+Modulkatalog Master Bioinformatik
+Links relevant for questions related to Modulkatalog Master Bioinformatik: https://www.cit.tum.de/cit/studium/studiengaenge/master-bioinformatik/modulkatalog/
+Modulkatalog Master Bioinformatik
+----------------------------------------
+
+Informationen zum Masterstudiengang
+Modulkatalog Master Bioinformatik > Informationen zum Masterstudiengang
+Der Masterstudiengang Bioinformatik wird gemeinsam von der Ludwig-Maximilians-Universität (LMU) und der Technischen Universität München (TUM) angeboten.
+
+Downloads und Links
+Modulkatalog Master Bioinformatik > Informationen zum Masterstudiengang > Downloads und Links
+- Wichtiges und Wissenswertes zu den Ersti-Tagen 2022
+- TUM-Seite mit Satzungen und Ordnungen, Hier finden Sie rechtlichen Grundlagen für Ihr Studium
+- Allgemeine Prüfungs- und Studienordnung für Bachelor- und Masterstudiengänge an der Technischen Universität München (APSO)
+Links relevant for questions related to Informationen zum Masterstudiengang: https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/Modulkatalog/WS22_FPSO_Vorstellung.pdf, https://www.tum.de/studium/im-studium/das-studium-organisieren/satzungen-ordnungen#statute;c:Bioinformatik;d:Master, https://www.tum.de/studium/im-studium/das-studium-organisieren/satzungen-ordnungen#statute;t:Allgemeine%20Pr%C3%BCfungs-%20und%20Studienordnung;sort:106, https://www.cit.tum.de/cit/studium/studiengaenge/master-bioinformatik/modulkatalog/
+Informationen zum Masterstudiengang
+----------------------------------------
+
+Modulkatalog M.Sc. Bioinformatik FPSO 2021
+Modulkatalog Master Bioinformatik > Modulkatalog M.Sc. Bioinformatik FPSO 2021
+
+Bioinformatik Pflichtveranstaltungen (Prüfungsordnung 2021)
+Modulkatalog Master Bioinformatik > Modulkatalog M.Sc. Bioinformatik FPSO 2021 > Bioinformatik Pflichtveranstaltungen (Prüfungsordnung 2021)
+Table (Modulkatalog Master Bioinformatik > Modulkatalog M.Sc. Bioinformatik FPSO 2021 > Bioinformatik Pflichtveranstaltungen (Prüfungsordnung 2021)):
+Veranstaltung; Universität*; Modulnummer; SWS; Credits; Bemerkung
+Masterpraktikum Bioinformatik; LMU/TUM; IN2370; 10P; 12; 
+Masterarbeit; LMU/TUM; IN2218; ; 30;
+Links relevant for questions related to Modulkatalog M.Sc. Bioinformatik FPSO 2021: https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1695463&pOrgNr=14189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=588838&pOrgNr=14189, https://www.cit.tum.de/cit/studium/studiengaenge/master-bioinformatik/modulkatalog/
+Modulkatalog M.Sc. Bioinformatik FPSO 2021
+----------------------------------------
+
+Wahlveranstaltungen (Prüfungsordnung 2021)
+Modulkatalog Master Bioinformatik > Wahlveranstaltungen (Prüfungsordnung 2021)
+Die Wahlmodule werden in drei Katalogen geführt. Es sind insgesamt mindestens 78 Credits in Wahlmodulen nachzuweisen.
+Links relevant for questions related to Wahlveranstaltungen (Prüfungsordnung 2021): https://www.cit.tum.de/cit/studium/studiengaenge/master-bioinformatik/modulkatalog/
+Wahlveranstaltungen (Prüfungsordnung 2021)
+----------------------------------------
+
+Wahlmodulkatalog Methoden und Forschung
+Modulkatalog Master Bioinformatik > Wahlmodulkatalog Methoden und Forschung
+Es sind Module im Umfang von mindestens 33 Credits nachzuweisen:
+Table (Modulkatalog Master Bioinformatik > Wahlmodulkatalog Methoden und Forschung):
+Modul; Modulnummer; Universität; SWS; Credits; Bemerkung
+Advanced Data Handling and Visualization Techniques; IN2379; TUM; 5; 6; 
+Algorithmen auf Sequenzen; IN5022; LMU; 6; 9; 
+Algorithmische Bioinformatik: Bäume und Graphen; IN5020; LMU; 6; 9; 
+Algorithmische Bioinformatik: Netzwerke, Graphen und Systeme; IN5021; LMU; 6; 9; 
+Algorithmische Systembiologie; IN5019; LMU; 6; 9; 
+Masterseminar Ethik und Bioinformatik; IN5187; LMU; 2; 3; Kann nicht im Bachelorstudium Bioinformatik eingebracht werden
+Computational methods for single-cell biology; MA5617; TUM; 6; 6; 
+Computational Methods in Evolutionary Biology; IN5088; LMU; 7; 9; 8 ECTS bis einschließlich WiSe22/23 ab WiSe 23/24 gibt es 9 ECTS
+Computational Modeling for Systems Genetics; CIT4230001; TUM; 6; 4; Nachfolgemodul für die IN2344 (gegenseitiger Ausschluss)
+Computer-aided Drug and Protein Design; WZ8097; TUM; 5; 6; Wird nicht mehr angeboten
+Fortgeschrittenen-Praktikum Bioinformatik; IN5073; LMU/TUM; 6; 12; 
+Immunoinformatik; WZ8096; TUM; 5; 6; Wird nicht mehr angeboten
+Machine learning for regulatory genomics; IN2393; TUM; 4; 6; 
+Methoden der Genomanalyse; WZ8128; TUM; 4; 5; 
+Modellierung biologischer Makromoleküle; WZ2621; TUM; 5; 6; 
+Perlen der Bioinformatik: Algorithmen; IN5116; LMU; 6; 9; 
+Perlen der Bioinformatik: ENCODE; IN5096; LMU; 6; 9; 
+Protein Prediction I for Bioinformaticians; IN2221; TUM; 6; 8; 
+Protein Predicition II for Bioinformaticians; IN2230; TUM; 6; 8; 
+Statistical Methods for Systems Genetics; IN2344; TUM; 4; 5; Wird nicht mehr angeboten. Nachfolgemodul: CIT4230001 (gegenseitiger Ausschluss)
+Strukturbioinformatik; WZ0402; TUM; 4; 5; 
+Systems BioMedicine; WZ8119; TUM; 5; 6;
+Links relevant for questions related to Wahlmodulkatalog Methoden und Forschung: https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1855630&pOrgNr=14189, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/2.Master_Studiengaenge/4.Bioinformatik/FPSO_2016/150901_W_AlgorithmenAufSequenzen_IN5022_final.pdf, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/2.Master_Studiengaenge/4.Bioinformatik/FPSO_2016/150804_W_AlgoBioinfBaeumeUndGraphen_IN5020_final.pdf, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/1.Bachelor_Studiengaenge/3.Bioinformatik/2.Liste_der_LMU-Modelle/IN5021_AlgoBioinfNetzGraphundSyst.pdf, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/2.Master_Studiengaenge/4.Bioinformatik/FPSO_2016/150901_W_AlgoBioinfSystembiologie_IN5019_final.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5187_Modul_MSc_MasterSem_Ethik_Bioinformatik.pdf, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1860490&pOrgNr=14178, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/1.Bachelor_Studiengaenge/3.Bioinformatik/2.Liste_der_LMU-Modelle/150925_W_ComputationalMethodsEvolBiol_IN5088_final.pdf, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=3307984&pOrgNr=14189, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1236884&pOrgNr=24777, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/1.Bachelor_Studiengaenge/3.Bioinformatik/2.Liste_der_LMU-Modelle/IN5073_FortgeschrittenenpraktikumBioinformatik_2021.pdf, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1235892&pOrgNr=24777, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=2806034&pOrgNr=14189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1149731&pOrgNr=15563, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=780265&pOrgNr=24777, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/2.Master_Studiengaenge/4.Bioinformatik/FPSO_2016/150901_W_PerlenBioinfAlgorithmen_IN5116_final.pdf, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/1.Bachelor_Studiengaenge/3.Bioinformatik/2.Liste_der_LMU-Modelle/150901_W_PerlenBioinfENCODE_IN5096_final.pdf, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=487480&pOrgNr=14189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=608646&pOrgNr=14189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1331781&pOrgNr=14189, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=463229&pOrgNr=15563, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1739903&pOrgNr=48698, https://www.cit.tum.de/cit/studium/studiengaenge/master-bioinformatik/modulkatalog/
+Wahlmodulkatalog Methoden und Forschung
+----------------------------------------
+
+Wahlmodulkatalog Theorie Informatik, Mathematik und Statistik
+Modulkatalog Master Bioinformatik > Wahlmodulkatalog Theorie Informatik, Mathematik und Statistik
+Es sind Module im Unfang von mindestens 15 Credits nachzuweisen:
+Table (Modulkatalog Master Bioinformatik > Wahlmodulkatalog Theorie Informatik, Mathematik und Statistik):
+Veranstaltung; Modulnummer; Universität; SWS; Credits; Bemerkung
+Advanced Topics of Software Engineering; IN2309; TUM; 6; 8; 
+Artificial Intelligence in Medicine; IN2403; TUM; 4; 5; 
+Big Data Management and Analytics; IN5159; LMU; 5; 6; 
+Biostatistische Methoden; IN5030; LMU; 4; 6; 
+Computer Vision III: Detection, Segmentation, and Tracking; IN2375; TUM; 4; 6; 
+Data Analysis and visualization in R; IN2339; TUM; 6; 6; 
+Data Mining Algorithmen I; IN5042; LMU; 5; 6; Gegenseitiger Ausschluss mit IN2064. (Bis SoSe 22/23 "Knowledge Discovery in Datenbanken I")
+Deep Learning and Artificial Intelligence; IN5176; LMU; 5; 6; Gegenseitiger Ausschluss mit IN2346
+Efficient Algorithms and Data Structures; IN2003; TUM; 6; 8; 
+Effiziente Algorithmen und Datenstrukturen II; IN2004; TUM; 6; 8; 
+Einsatz und Realisierung von Datenbanksystemen; IN2031; TUM; 5; 6; 
+Grundlagen der Programm- und Systementwicklung; IN2078; TUM; 3; 4; Wurde zum WiSe 23/24 eingestellt
+Introduction to Deep Learning; IN2346; TUM; 4; 6; Gegenseitiger Ausschluss mit IN5176
+Knowledge Discovery in Datenbanken II; IN5043; LMU; 5; 6; 
+Knowledge-based Systems for Industrial Applications; IN2071; TUM; 3; 4; 
+Machine Learning; IN5075; LMU; 5; 6; Gegenseitiger Ausschluss mit IN2064
+Machine Learning for Graphs and Sequential Data; IN2323; TUM; 4; 5; 
+Machinelles Lernen; IN2064; TUM; 6; 8; Die IN2064 schließt sich jeweils gegenseitig mit der IN5042, der IN5075 und der IN2357 aus.
+Maschinelles Lernen für Computersehen; IN2357; TUM; 4; 5; Gegenseitiger Ausschluss mit IN2064
+Mathematische Modelle in der Biologie; MA3601; TUM; 6; 9; 
+Modellierung verteilter Systeme; IN2080; TUM; 3; 4; 
+Natural Language Processing; IN2361; TUM; 4; 5; 
+Parallel and High Performance Computing; IN5085; LMU; 5; 6; Gegenseitiger Ausschluss mit IN2147 "Parallel Programming"
+Parallel Programming; IN2147; TUM; 4; 5; Gegenseitiger Ausschluss mit IN5085 "Parallel and High Performance Computing"
+Petri Nets; IN2052; TUM; 4; 5; 
+Analysis of high-dimensional biological data; IN5089; LMU; 4; 6; Ab SoSe 2023 (Bis WiSe22/23 "Statistische Methoden in Genomik und Proteomik")
+Visual Data Analytics; IN2026; TUM; 4; 5;
+Links relevant for questions related to Wahlmodulkatalog Theorie Informatik, Mathematik und Statistik: https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1060130&pOrgNr=14189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=2930921&pOrgNr=53598, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Bioinformatik/IN5159_Big_Data_Management_and_Analytics.pdf, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=588991&pOrgNr=14189, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1733754&pOrgNr=14189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1254188&pOrgNr=14189, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5042_Data_Mining_Algorithmen_I.pdf, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/1.Bachelor_Studiengaenge/3.Bioinformatik/2.Liste_der_LMU-Modelle/IN5176_DeepLearningandArtificialIntelligence_Schubert_2021.10.13.pdf, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=456350&pOrgNr=14189, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=455704&pOrgNr=14189, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=261475&pOrgNr=14189, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=2674325&pOrgNr=53598, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1334293&pOrgNr=14189, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/1.Bachelor_Studiengaenge/3.Bioinformatik/2.Liste_der_LMU-Modelle/IN5043_W_Knowledge_Discovery_in_Databases_2.pdf, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=476903&pOrgNr=14189, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Bioinformatik/IN5075_W_Machine_Learning.pdf, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1799629&pOrgNr=53598, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=456537&pOrgNr=14189, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1446338&pOrgNr=14189, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458312&pOrgNr=14178, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=456926&pOrgNr=14189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1493755&pOrgNr=53599, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/2.Master_Studiengaenge/4.Bioinformatik/FPSO_2016/150925_W_ParallelComputingGA_IN5085_final.pdf, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=457062&pOrgNr=14189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=456506&pOrgNr=14189, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5089_Analysis_of_high-dimensional_biological_data.pdf, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=261857&pOrgNr=14189, https://www.cit.tum.de/cit/studium/studiengaenge/master-bioinformatik/modulkatalog/
+Wahlmodulkatalog Theorie Informatik, Mathematik und Statistik
+----------------------------------------
+
+Wahlmodulkatalog Theorie Biologie/Biochemie/Chemie
+Modulkatalog Master Bioinformatik > Wahlmodulkatalog Theorie Biologie/Biochemie/Chemie
+Es sind Module im Unfang von mindestens 15 Credits nachzuweisen:
+Table (Modulkatalog Master Bioinformatik > Wahlmodulkatalog Theorie Biologie/Biochemie/Chemie):
+Veranstaltung; Modulnummer; Universität; SWS; Credits; Bemerkung
+Advanced Evolutionary Genomics; IN5036; LMU; 2; 3; Blockveranstaltung
+Basic Evolutionary Genomics; IN5035; LMU; 2; 3; Blockveranstaltung
+Biochemie 4 - Zelluläre Biochemie; IN5062; LMU; 4; 6; 
+Biochemie 5 - Life Cycle of Proteins; IN5064; LMU; 2; 3; 
+Biochemie 6 - Model Organism; IN5065; LMU; 2; 3; 
+Biochemie 7 - Genetischer Informationsfluss; IN5066; LMU; 2; 3; 
+Cognitive Neuroscience; WZ2693; TUM; 2; 3; 
+Computational Neuroscience: eine Ringvorlesung von Modellen bis zu Anwendungen; EI7646; TUM-LMU; 2; 3; 
+Einführung in die Biologie und Diagnostik pathogener Bakterien; WZ2048; TUM; 2; 3; Gegenseitigen Ausschluss mit der  WZ2372 "Mikroorganismen als Krankheitserreger"
+Epigenetik; IN5129; LMU; 2; 3; 
+Evolution von Krankheitserregern; WZ2375; TUM; 3; 5; 
+Evolutionary Genetics; IN5037; LMU; 4; 6; 
+Genetics of Aging and Cancer; IN5026; LMU; 2; 3; 
+Genomics of Human Deseases; CIT803001; LMU; 2; 3; 
+Human Genomics; CIT803000; LMU; 2; 3; 
+Mikroorganismen als Krankheitserreger; WZ2372; TUM; 3; 5; Gegenseitigen Ausschluss mit der WZ2048 "Einführung in die Biologie und Diagnostik pathogener Bakterien"
+Molekulare Biologie Biotechnologisch Relevanter Pilze; WZ1174; TUM; 4; 5; 
+Molekulare Onkologie; ME2648 (Bis SoSe22 ME2635); TUM; 2; 5; Besteht aus zwei Lehrveranstaltungen (ME2648-1 Molekulare Onkologie 1 und ME2648-2 Molekulare Onkologie I Hausarbeit) die beide erfolgreich absolviert werden müssen um das Modul zu bestehen.
+Molekulare Virologie; IN5056; LMU; 2; 3; 
+Neurobiologie; WZ2457; TUM; 2; 3; 
+Pflanzensystembiologie; WZ2381; TUM; 4; 5; 
+Protein-Engineering; WZ2580; TUM; 3; 5; 
+Proteomics: Analytische Grundlagen und Biomedizinische Anwendungen; WZ2439; TUM; 5; 6;
+Links relevant for questions related to Wahlmodulkatalog Theorie Biologie/Biochemie/Chemie: https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/1.Bachelor_Studiengaenge/3.Bioinformatik/2.Liste_der_LMU-Modelle/151012_W_AdvancedEvolutionaryGenomics_IN5036_final.pdf, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/1.Bachelor_Studiengaenge/3.Bioinformatik/2.Liste_der_LMU-Modelle/151012_W_BasicEvolutionaryGenomics_IN5035_final.pdf, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/1.Bachelor_Studiengaenge/3.Bioinformatik/2.Liste_der_LMU-Modelle/IN5062_Biochemie_IV_Zellulaere_Biochemie.pdf, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/1.Bachelor_Studiengaenge/3.Bioinformatik/2.Liste_der_LMU-Modelle/IN5064_Biochemie_V_Life_Cycle_of_Proteins.pdf, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/1.Bachelor_Studiengaenge/3.Bioinformatik/2.Liste_der_LMU-Modelle/IN5065_Biochemie_VI_Model_Organisms.pdf, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/1.Bachelor_Studiengaenge/3.Bioinformatik/2.Liste_der_LMU-Modelle/IN5066_Biochemie_VII_Flow_of_Genetic_Information.pdf, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1641528&pOrgNr=15671, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1120549&pOrgNr=53599, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=477743&pOrgNr=55577, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=681661&pOrgNr=50817, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/1.Bachelor_Studiengaenge/3.Bioinformatik/2.Liste_der_LMU-Modelle/IN5037_W_Evolutionary_Genetics.pdf, https://campus.tum.de/tumonline/wbModHb.wbShowMHBReadOnly?pKnotenNr=632576, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=3876843&pOrgNr=53641, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=3876846&pOrgNr=53641, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=681649&pOrgNr=50817, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1055955&pOrgNr=46778, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=795678&pOrgNr=14190, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/1.Bachelor_Studiengaenge/3.Bioinformatik/2.Liste_der_LMU-Modelle/IN5056_MolekulareVirologie.pdf, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=478869&pOrgNr=15671, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=675541&pOrgNr=25178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=773252&pOrgNr=15556, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=733508&pOrgNr=15569, https://www.cit.tum.de/cit/studium/studiengaenge/master-bioinformatik/modulkatalog/
+Wahlmodulkatalog Theorie Biologie/Biochemie/Chemie
+----------------------------------------
+
+Modulkatalog M.Sc. Bioinformatik FPSO 2016
+Modulkatalog Master Bioinformatik > Modulkatalog M.Sc. Bioinformatik FPSO 2016
+
+Bioinformatik Pflichtveranstaltungen (Prüfungsordnung 2016)
+Modulkatalog Master Bioinformatik > Modulkatalog M.Sc. Bioinformatik FPSO 2016 > Bioinformatik Pflichtveranstaltungen (Prüfungsordnung 2016)
+
+Pflichtmodule Bioinformatik
+Modulkatalog Master Bioinformatik > Modulkatalog M.Sc. Bioinformatik FPSO 2016 > Pflichtmodule Bioinformatik
+Table (Modulkatalog Master Bioinformatik > Modulkatalog M.Sc. Bioinformatik FPSO 2016 > Pflichtmodule Bioinformatik):
+Veranstaltung; Universität*; Modulnummer; SWS; Credits; Bemerkung
+Masterpraktikum Bioinformatik; LMU/TUM-IN/TUM-WZ; WZ8007; 10P; 12; 
+Master-Arbeit; LMU/TUM-IN/TUM-WZ; IN2218; ; 30
+Links relevant for questions related to Modulkatalog M.Sc. Bioinformatik FPSO 2016: https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=478887&pOrgNr=15559, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=588838&pOrgNr=14189, https://www.cit.tum.de/cit/studium/studiengaenge/master-bioinformatik/modulkatalog/
+Modulkatalog M.Sc. Bioinformatik FPSO 2016
+----------------------------------------
+
+Wahlveranstaltungen (Prüfungsordnung 2016)
+Modulkatalog Master Bioinformatik > Wahlveranstaltungen (Prüfungsordnung 2016)
+Die Wahlmodule werden in drei Katalogen geführt. Es sind insgesamt mindestens 78 Credits in Wahlmodulen nachzuweisen.
+
+Wahlmodulkatalog Bioinformatik
+Modulkatalog Master Bioinformatik > Wahlveranstaltungen (Prüfungsordnung 2016) > Wahlmodulkatalog Bioinformatik
+Es sind Module im Umfang von mindestens 33 Credits nachzuweisen:
+Table (Modulkatalog Master Bioinformatik > Wahlveranstaltungen (Prüfungsordnung 2016) > Wahlmodulkatalog Bioinformatik):
+Veranstaltung; Universität*; Modulnummer; SWS; Credits; Bemerkung
+In der FPSO festgelegte Module:
+Methoden der Genomanalyse; TUM-LS; WZ8128; 3V+1Ü; 5; 
+Strukturbioinformatik; TUM-LS; WZ0402; 3V+1Ü; 5; 
+Systems Biology of Disease and Drug Treatment; TUM-LS; WZ8048; 3V+2Ü; 6; Wird seit dem SoSe 2019 nicht mehr angeboten
+Protein Prediction I for Bioinformaticians; TUM-IN; IN2221; 4V+2Ü; 8; 
+Protein Predicition II for Bioinformaticians; TUM-IN; IN2230; 4V+2Ü; 8; 
+Modellierung biologischer Makromoleküle; TUM-LS; WZ2621; 2V+3P; 6; 
+Immunoinformatik; TUM-LS; WZ8096; 2V+3P; 6; Wird nicht mehr angeboten
+Computer-aided Protein and Drug Design; TUM-LS; WZ8097; 2V+3P; 6; Wird nicht mehr angeboten
+Computational Methods in Evolutionary Biology; LMU; IN5088; 4V+3Ü; 9; 8 ECTS bis einschließlich WiSe22/23 ab WiSe 23/24 gibt es 9 ECTS
+Algorithmen auf Sequenzen; LMU; IN5022; 4V+2Ü; 9; 
+Algorithmische Bioinformatik: Bäume und Graphen; LMU; IN5020; 4V+2Ü; 9; 
+Algorithmische Bioinformatik: Netzwerke, Graphen und Systeme; LMU; IN5021; 4V+2Ü; 9; 
+Algorithmische Systembiologie; LMU; IN5019; 4V+2Ü; 9; 
+Perlen der Bioinformatik: Algorithmen; LMU; IN5116; 4V+2Ü; 9; 
+Perlen der Bioinformatik: ENCODE; LMU; IN5096; 4V+2Ü; 9; 
+Fortgeschrittenenpraktikum Bioinformatik; LMU/TUM-IN/TUM-LS; IN5073; 6Pr; 12; Bis einschließlich SoSe2021 hatte dieses Modul 8 ECTS. Ab WiSe 2021/22 sind es 12.
+Fortgeschrittenenseminar Bioinformatik; TUM-LS; WZ8009; 2S; 5; Wird seit dem SoSe 2017 nicht mehr angeboten
+Weitere per Beschluss zugelassene Module:
+Advanced Data Handling and Visualization Techniques; TUM-IN; IN2379; 2V-3Ü; 6; 
+Masterseminar Ethik und Bioinformatik; LMU; IN5187; 2; 3; Kann nicht im Bachelorstudium eingebracht werden
+Computational methods for single-cell biology; TUM-MA; MA5617; 2V+4Ü; 6; 
+Computational Modeling for Systems Genetics; CIT4230001; TUM-CIT; 6; 4; Nachfolgemodul für die IN2344 (gegenseitiger Ausschluss)
+Lineare Optimierung in der Bioinformatik; LMU; IN5180; 2V+2Ü; 5; Achtung: Nur zugelassen für Masterstudierende, die dieses Modul im WiSe19/20 bestehen. Es kann entweder im Wahlbereich Bioinformatik oder Informatik eingebracht werden.
+Machine learning for regulatory genomics; TUM-IN; IN2393; 2V+2Ü; 6; 
+Statistical Methods for Systems Genetics; TUM; IN2344; 2V+2Ü; 5; Wird nicht mehr angeboten. Nachfolge Modul: CIT4230001 (gegenseitiger Ausschluss)
+Systems BioMedicine; TUM-LS; WZ8119; 2V+3Ü; 6; 
+
+
+Wahlmodulkatalog Informatik, Mathematik und Statistik
+Modulkatalog Master Bioinformatik > Wahlveranstaltungen (Prüfungsordnung 2016) > Wahlmodulkatalog Informatik, Mathematik und Statistik
+Es sind Module im Umfang von mindestens 15 Credits nachzuweisen:
+Table (Modulkatalog Master Bioinformatik > Wahlveranstaltungen (Prüfungsordnung 2016) > Wahlmodulkatalog Informatik, Mathematik und Statistik):
+Veranstaltung; Universität*; Modulnummer; SWS; Credits; Bemerkung
+In der FPSO festgelegte Module:
+3D Computer Vision; TUM-IN; IN2057; 4V; 5; Wird seit WiSe 14/15 nicht mehr angeboten
+Computer Grafik; TUM-IN; IN2017; 4V; 6; Wird seit WiSe 17/18 nicht mehr angeboten
+Effiziente Algorithmen und Datenstrukturen; TUM-IN; IN2003; 4V+2Ü; 8; 
+Effiziente Algorithmen und Datenstrukturen II; TUM-IN; IN2004; 4V+2Ü; 8; 
+Einsatz und Realisierung von Datenbanksystemen; TUM-IN; IN2031; 3V+2Ü; 6; 
+Grundlagen der Programm- und Systementwicklung; TUM-IN; IN2078; 3V; 4; Das Modul wurde bis einschließlich SoSe2020 mit 6 ECTS  (3V+2Ü) angeboten und nach dem SoSe2023 eingestellt.
+Modellierung verteilter Systeme; TUM-IN; IN2080; 2V+1Ü; 4; 
+Projektorganisation und -management in der Softwaretechnik; TUM-IN; IN2083; 3V+1Ü; 6; Das Modul wurde im SoSe2019 zuletzt angeboten.Bis einschließlich SoSe 2017 gab es für dieses Modul 2V+2Ü mit 5 ECTS und eine kürzere Klausur.
+Petrinetze; TUM-IN; IN2052; 2V+2Ü; 5; 
+Advanced Topics of Software Engineering; TUM-IN; IN2309; 4V+2Ü; 8; 
+Wissensbasierte Systeme für industrielle Anwendungen; TUM-IN; IN2071; 3V; 4; 
+Wissenschaftliche Visualisierung; TUM-IN; IN2026; 3V+1Ü; 5; 
+Mathematische Modelle in der Biologie; TUM-MA; MA3601; 4V+2Ü; 9; 
+Datenbanksysteme II; LMU; IN5033; 3V+2Ü; 6; Wird seit WiSe 16/17 nicht mehr angeboten
+Data Mining Algorithmen I; LMU; IN5042; 3V+2Ü; 6; Gegenseitiger Ausschluss mit IN2064. (Bis SoSe 22/23 "Knowledge Discovery in Datenbanken I")
+Knowledge Discovery in Databases II; LMU; IN5043; 3V+2Ü; 6; 
+Parallel Computing: Grundlagen und Anwendungen (bzw. Parallel High Performance Computing); LMU; IN5085; 3V+2Ü; 6; Gegenseitiger Ausschluss mit IN2147 "Parallel Programming"
+Analysis of high-dimensional biological data; LMU; IN5089; 4; 6; Ab SoSe 2023 (Bis WiSe22/23 "Statistische Methoden in Genomik und Proteomik")
+Weitere per Beschluss zugelassene Module:
+Artificial Intelligence in Medicine; TUM; IN2403; 4; 5; 
+Big Data Management and Analytics; LMU; IN5159; 3V+2Ü; 6; 
+Biostatistische Methoden; LMU; IN5030; 3V+1Ü; 6; 
+Data Analysis and visualization in R; TUM; IN2339; 2V+4Ü; 6; 
+Deep Learning and Artificial Intelligence; LMU; IN5176; 3V+2Ü; 6; Gegenseitiger Ausschluss mit IN2346
+Grundlagen der multivariaten Verfahren; LMU; IN5111; 3V+2Ü; 6; Wird nicht mehr angeboten
+Introduction to Deep Learning; TUM-IN; IN2346; 4; 6; Gegenseitiger Ausschluss mit IN5176
+Lineare Optimierung in der Bioinformatik; LMU; IN5180; 2V+2Ü; 5; Achtung: Nur zugelassen für Masterstudierende die dieses Modul im WiSe19/20 bestehen. Es kann entweder im Wahlbereich Bioinformatik oder Informatik eingebracht werden.
+Machine Learning; LMU; IN5075; 3V+2Ü; 6; Gegenseitiger Ausschluss mit IN2064
+Machine Learning for Graphs and Sequential Data; TUM; IN2323; 5; 6; 
+Machinelles Lernen; CIT; IN2064; 6; 8; Die IN2064 schließt sich jeweils gegenseitig mit IN5042 und IN5075 aus.
+Methoden des Software Engineerings; LMU; IN5078; 3V+2Ü; 6; Wird seit SoSe 2016 nicht mehr angeboten
+Natural Language Processing; TUM; IN2361; 4; 6; 
+Multivariate Statistics in Ecology and Quantitative Genetics; LMU; IN5109; 2V+2Ü; 6; Wird seit WiSe18/19 nicht mehr angeboten
+Parallel Programming; TUM; IN2147; 4; 5; Gegenseitiger Ausschluss mit IN5085 "Parallel and High Performance Computing"
+Software Engineering für spezielle Anwendungsgebiete: Entwurf und Implementierung paralleler Programme; LMU; IN5082; 3V+2Ü; 6; Wird seit SoSe 2018 nicht mehr angeboten
+Spatial, Temporal and Multimedia Databases; LMU; IN5025; 3V+2Ü; 6; Wird seit WiSe 14/15 nicht mehr angeboten
+Statistical Modeling and Machine Learning; TUM; IN2332; 4V+4Ü; 8; Wird seit WiSe20/21 nicht mehr angeboten
+
+
+Wahlmodulkatalog Biologie/Chemie
+Modulkatalog Master Bioinformatik > Wahlveranstaltungen (Prüfungsordnung 2016) > Wahlmodulkatalog Biologie/Chemie
+Es sind Module im Umfang von mindestens 15 Credits nachzuweisen:
+Table (Modulkatalog Master Bioinformatik > Wahlveranstaltungen (Prüfungsordnung 2016) > Wahlmodulkatalog Biologie/Chemie):
+Veranstaltung; Universität*; Modulnummer; SWS; Credits; Bemerkung; 
+In der FPSO festgelegte Module:; 
+Biochemie 4 - Zelluläre Biochemie; LMU; IN5062; 4V; 6; ; 
+Biochemie 3 - Makromoleküle; LMU; IN5063; 2V; 3; Nicht zugelassen für Studierenden die die IN5168 "Fortgeschrittenen Biochemie" im Bachelor erbracht oder anerkannt bekommen haben; 
+Evolutionary Genetics; LMU; IN5037; 4V; 6; ; 
+Basic Evolutionary Genomics; LMU; IN5035; 2V; 3; Blockveranstaltung; 
+Advanced Evolutionary Genomics; LMU; IN5036; 2V; 3; Blockveranstaltung; 
+Biologie humanpathogener Bakterien; TUM-LS; WZ2373; 2V+1S; 5; Wird nicht mehr angeboten; 
+Pflanzensystembiologie; TUM-LS; WZ2381; 2V+2S; 5; ; 
+Proteomics: Analytische Grundlagen und Biomedizinische Anwendungen; TUM-LS; WZ2439; 2V+3Ü; 6; ; 
+Humangenetik für Biologen; TUM-LS; WZ2489; 3V; 5; ; 
+Protein-Engineering; TUM-LS; WZ2580; 3V; 5; ; 
+Weitere per Beschluss zugelassene Module:
+Biochemie 5 - Life Cycle of Proteins; LMU; IN5064; 2V; 3; ; 
+Biochemie 6 - Model Organism; LMU; IN5065; 2V; 3; ; 
+Biochemie 7 - Flow of Genetic Information; LMU; IN5066; 2V; 3; ; 
+Cognitive Neuroscience; TUM-LS; WZ2693; 2; 3; ; 
+Computational Neuroscience: Eine Ringvolesung von Modellen bis zu Anwendungen; TUM-LMU; EI7646; 2; 3; ; 
+Einführung in die Biologie und Diagnostik pathogener Bakterien; TUM; WZ2048; 2; 3; Gegenseitigen Ausschluss mit der  WZ2372 "Mikroorganismen als Krankheitserreger"; 
+Epigenetik; LMU; IN5129; 2; 3; ; 
+Evolution von Krankheitserregern; TUM-LS; WZ2375; 3; 5; ; 
+Genetics of Aging and Cancer; LMU; IN5026; 2V; 3; Hieß bis WiSe 19/20 "Genetics of Aging"; 
+Genomics of Human Deseases; LMU; CIT803001; 2; 3; ; 
+Human Genomics; LMU; CIT803000; 2; 3; ; 
+Mikroorganismen als Krankheitserreger; TUM-LS; WZ2372; 3; 5; Gegenseitigen Ausschluss mit der WZ2048 "Einführung in die Biologie und Diagnostik pathogener Bakterien"; 
+Molekulare Biologie Biotechnologisch Relevanter Pilze; TUM; WZ1174; 4; 5; ; 
+Molekulare Onkologie; TUM-LS; ME2648 (bis SoSe22 ME2635); 3; 5; Besteht aus zwei Lehrveranstaltungen (ME2648-1 Molekulare Onkologie 1 und ME2648-2 Molekulare Onkologie I Hausarbeit) die beide erfolgreich absolviert werden müssen um das Modul zu bestehen.; 
+Molekulare Virologie I; LMU; IN5056; 2V; 3; ; 
+Neurobiologie; TUM-LS; WZ2457; 2; 3; ; 
+
+* TUM-IN = TUM Informatik / TUM-MA = TUM Mathematik / TUM-LS = TUM School of Life Sciences (ehm. Wissenschaftszentrum Weihenstephan)
+Links relevant for questions related to Wahlveranstaltungen (Prüfungsordnung 2016): https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1149731&pOrgNr=15563, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=463229&pOrgNr=15563, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=487480&pOrgNr=14189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=608646&pOrgNr=14189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=780265&pOrgNr=24777, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1235892&pOrgNr=24777, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1236884&pOrgNr=24777, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/1.Bachelor_Studiengaenge/3.Bioinformatik/2.Liste_der_LMU-Modelle/150925_W_ComputationalMethodsEvolBiol_IN5088_final.pdf, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/2.Master_Studiengaenge/4.Bioinformatik/FPSO_2016/150901_W_AlgorithmenAufSequenzen_IN5022_final.pdf, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/2.Master_Studiengaenge/4.Bioinformatik/FPSO_2016/150804_W_AlgoBioinfBaeumeUndGraphen_IN5020_final.pdf, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/1.Bachelor_Studiengaenge/3.Bioinformatik/2.Liste_der_LMU-Modelle/IN5021_AlgoBioinfNetzGraphundSyst.pdf, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/2.Master_Studiengaenge/4.Bioinformatik/FPSO_2016/150901_W_AlgoBioinfSystembiologie_IN5019_final.pdf, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/2.Master_Studiengaenge/4.Bioinformatik/FPSO_2016/150901_W_PerlenBioinfAlgorithmen_IN5116_final.pdf, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/1.Bachelor_Studiengaenge/3.Bioinformatik/2.Liste_der_LMU-Modelle/150901_W_PerlenBioinfENCODE_IN5096_final.pdf, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/1.Bachelor_Studiengaenge/3.Bioinformatik/2.Liste_der_LMU-Modelle/IN5073_FortgeschrittenenpraktikumBioinformatik_2021.pdf, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1855630&pOrgNr=14189, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1860490&pOrgNr=14178, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=3307984&pOrgNr=14189, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/1.Bachelor_Studiengaenge/3.Bioinformatik/2.Liste_der_LMU-Modelle/8.2_RZ_LinOpt_Bioinf_Modulbeschreibung.pdf, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=2806034&pOrgNr=14189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1331781&pOrgNr=14189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1739903&pOrgNr=48698, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=456519&pOrgNr=14189, https://campus.tum.de/tumonline/wblv.wbShowLvDetail?pStpSpNr=950181659&pSpracheNr=1&pMUISuche=FALSE, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=456350&pOrgNr=14189, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=455704&pOrgNr=14189, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=261475&pOrgNr=14189, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=2674325&pOrgNr=53598, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=456926&pOrgNr=14189, https://campus.tum.de/tumonline/wblv.wbShowLvDetail?pStpSpNr=950179400&pSpracheNr=1&pMUISuche=FALSE, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=456506&pOrgNr=14189, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1060130&pOrgNr=14189, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=476903&pOrgNr=14189, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=261857&pOrgNr=14189, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458312&pOrgNr=14178, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/2.Master_Studiengaenge/4.Bioinformatik/FPSO_2016/IN5033_W_DatenbanksystemeII.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5042_Data_Mining_Algorithmen_I.pdf, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/1.Bachelor_Studiengaenge/3.Bioinformatik/2.Liste_der_LMU-Modelle/IN5043_W_Knowledge_Discovery_in_Databases_2.pdf, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/2.Master_Studiengaenge/4.Bioinformatik/FPSO_2016/150925_W_ParallelComputingGA_IN5085_final.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Bachelor_Bioinformatik/LMU_Module/IN5089_Analysis_of_high-dimensional_biological_data.pdf, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=2930921&pOrgNr=53598, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/1.Bachelor_Studiengaenge/3.Bioinformatik/2.Liste_der_LMU-Modelle/IN5159_Big_Data_Management_and_Analytics.pdf, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=588991&pOrgNr=14189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1254188&pOrgNr=14189, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/1.Bachelor_Studiengaenge/3.Bioinformatik/2.Liste_der_LMU-Modelle/IN5176_DeepLearningandArtificialIntelligence_Schubert_2021.10.13.pdf, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/2.Master_Studiengaenge/4.Bioinformatik/FPSO_2016/IN5111_W_Grundlagen_der_multivariatan_Verfahren.pdf, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1334293&pOrgNr=14189, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/1.Bachelor_Studiengaenge/3.Bioinformatik/2.Liste_der_LMU-Modelle/8.2_RZ_LinOpt_Bioinf_Modulbeschreibung.pdf, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/2.Master_Studiengaenge/4.Bioinformatik/FPSO_2016/IN5075_W_Machine_Learning.pdf, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1799629&pOrgNr=53598, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=456537&pOrgNr=14189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1493755&pOrgNr=53599, https://lsf.verwaltung.uni-muenchen.de/qisserver/rds?state=verpublish&status=init&vmfile=no&publishid=635654&moduleCall=webInfo&publishConfFile=webInfo&publishSubDir=veranstaltung, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=457062&pOrgNr=14189, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/1.Bachelor_Studiengaenge/3.Bioinformatik/2.Liste_der_LMU-Modelle/IN5110_W_Software_Engineering_fuer_spezielle_Anwendungsbereiche.pdf, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/2.Master_Studiengaenge/4.Bioinformatik/FPSO_2016/IN5025_W_Spatial__Temporal_and_Multimedia_Databases.pdf, https://campus.tum.de/tumonline/wbLv.wbShowLVDetail?pStpSpNr=950259678&pSpracheNr=1, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/1.Bachelor_Studiengaenge/3.Bioinformatik/2.Liste_der_LMU-Modelle/IN5062_Biochemie_IV_Zellulaere_Biochemie.pdf, https://www.in.tum.de/fuer-studierende/master-studiengaenge/bioinformatik/pruefungsordnung-modulkatalog/fpso-2016/, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/1.Bachelor_Studiengaenge/3.Bioinformatik/2.Liste_der_LMU-Modelle/IN5037_W_Evolutionary_Genetics.pdf, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/1.Bachelor_Studiengaenge/3.Bioinformatik/2.Liste_der_LMU-Modelle/151012_W_BasicEvolutionaryGenomics_IN5035_final.pdf, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/1.Bachelor_Studiengaenge/3.Bioinformatik/2.Liste_der_LMU-Modelle/151012_W_AdvancedEvolutionaryGenomics_IN5036_final.pdf, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=681655&pOrgNr=15564, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=675541&pOrgNr=25178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=733508&pOrgNr=15569, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=710341&pOrgNr=15560, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=773252&pOrgNr=15556, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/1.Bachelor_Studiengaenge/3.Bioinformatik/2.Liste_der_LMU-Modelle/IN5064_Biochemie_V_Life_Cycle_of_Proteins.pdf, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/1.Bachelor_Studiengaenge/3.Bioinformatik/2.Liste_der_LMU-Modelle/IN5065_Biochemie_VI_Model_Organisms.pdf, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/1.Bachelor_Studiengaenge/3.Bioinformatik/2.Liste_der_LMU-Modelle/IN5066_Biochemie_VII_Flow_of_Genetic_Information.pdf, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1641528&pOrgNr=15671, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1120549&pOrgNr=53599, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=477743&pOrgNr=55577, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=681661&pOrgNr=15564, https://campus.tum.de/tumonline/wbModHb.wbShowMHBReadOnly?pKnotenNr=632576, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=3876843&pOrgNr=53641, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=3876846&pOrgNr=53641, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=681649&pOrgNr=15564, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1055955&pOrgNr=46778, https://campus.tum.de/tumonline/pl/ui/$ctx/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1229760&pOrgNr=16049, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/1.Bachelor_Studiengaenge/3.Bioinformatik/2.Liste_der_LMU-Modelle/IN5056_MolekulareVirologie.pdf, https://campus.tum.de/tumonline/pl/ui/$ctx;design=pl;header=max;lang=de/WBMODHB.wbShowMHBReadOnly?pKnotenNr=478869&pOrgNr=15671, https://www.cit.tum.de/cit/studium/studiengaenge/master-bioinformatik/modulkatalog/
+Wahlveranstaltungen (Prüfungsordnung 2016)
+----------------------------------------
+

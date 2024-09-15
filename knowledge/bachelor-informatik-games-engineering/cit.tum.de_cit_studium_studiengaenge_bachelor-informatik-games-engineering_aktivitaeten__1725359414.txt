@@ -1,0 +1,56 @@
+https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik-games-engineering/aktivitaeten/
+Aktivitäten - Bachelor Informatik: Games Engineering - TUM - TUM School of Computation, Information and Technology
+
+Aktivitäten im Studiengang Informatik: Games Engineering
+Aktivitäten im Studiengang Informatik: Games Engineering
+Im Rahmen des neuen Bachelorstudiengangs Informatik: Games Engineering bieten wir regelmäßig Veranstaltungen an.
+- Zu den Besonderheiten zählt der Demo Day, der immer am Ende der Vorlesungszeit stattfindet. Dabei stellen Studierende aller Studienrichtungen und aller Semester Ihre Abschlussarbeiten vor.
+- Im Sommersemester 2022 fand eine Ringvorlesung "Games Engieering" statt – mit Vorträgen unterschiedlicher Branchen aus dem Games-Bereich.
+- Jedes Jahr organisieren wir eine Fahrt zur gamescom.
+- Studierende organisieren auch regelmäßig Game Jams, bei denen Teilnehmende in kürzester Zeit anhand eines vorgegebenen Themas Spiele entwickeln.
+Videos zu einigen der Lehrveranstaltungen finden Sie auf dem Youtube-Kanal des Fachgebiets Augmented Reality.
+Links relevant for questions related to Aktivitäten im Studiengang Informatik: Games Engineering: https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik-games-engineering/aktivitaeten/#c1708, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik-games-engineering/aktivitaeten/#c1671, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik-games-engineering/aktivitaeten/#c2485, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik-games-engineering/aktivitaeten/#c1687, https://www.youtube.com/user/AugmentedRealityTUM, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik-games-engineering/aktivitaeten/
+Aktivitäten im Studiengang Informatik: Games Engineering
+----------------------------------------
+
+Ringvorlesung "Games Engineering"
+Aktivitäten im Studiengang Informatik: Games Engineering > Ringvorlesung "Games Engineering"
+Die Ringvorlesung "Games Engineering" ist eine neue Vortragsserie und richtet sich in erster Linie an Informatik: Games Engineering Studierende. In dieser Ringvorlesung tragen unterschiedliche Kooperationspartner vor. Sie geben Einblicke in Themenfelder und Einsatzbereiche der Games Branche:
+- Gründung & Förderung
+- Einsatz von Technologie
+- Prozesse und Businessmodelle
+- Evolution von Produkten
+- Integration in die Industrie.
+Die Veranstaltungen dauern 60 bis 90 Minuten und bieten im Anschluss Zeit für eine kleine Diskussionsrunde. Die Vortragssprache kann Deutsch oder Englisch sein.
+Die Ringvorlesung kann mit 2 ECTS im Wahlbereich "Informatik und Games Engineering" für Bachelor Studierende und als Wahlmodul "Informatik: Games Engineering" für den Master angerechnet werden. Dafür müssen Sie die 60-minütige schriftliche Prüfung ablegen. Darin verfassen Sie einen Aufsatz zu einem vorgegebenen Thema aus den während der Ringvorlesung behandelten Gebieten. Hierbei können verschiedene Aufgaben-Schwerpunkte wie Analysieren, Begründen, Beurteilen, Beweisen oder Charakterisieren, Definieren, Erläutern, Erörtern und Vergleichen im Rahmen der Aufsatz-Themen gestellt werden. Der Aufsatz wird mit "bestanden" oder "nicht bestanden" bewertet. Weitere Informationen finden Sie in TUM Online.
+Links relevant for questions related to Ringvorlesung "Games Engineering": https://campus.tum.de/tumonline/wbLv.wbShowLVDetail?pStpSpNr=950427313, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik-games-engineering/aktivitaeten/
+Ringvorlesung "Games Engineering"
+----------------------------------------
+
+Gamescom
+Aktivitäten im Studiengang Informatik: Games Engineering > Gamescom
+Der Bachelor-Studiengang Informatik: Games-Engineering organisiert jedes Jahr eine Fahrt zur gamescom in Köln.
+Links relevant for questions related to Gamescom: https://www.gamescom.de/de, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik-games-engineering/aktivitaeten/
+Gamescom
+----------------------------------------
+
+Game Jam
+Aktivitäten im Studiengang Informatik: Games Engineering > Game Jam
+In einem Game Jam geht es darum, in einer kurzen Zeit (24-48 Stunden) in einem kleinen Team ein Spiel zu implementieren. Dabei treffen sich alle Teilnehmenden an einem Ort und bekommen zu Beginn der Bearbeitungszeit ein grobes Thema vorgegeben.
+Die Veranstaltung SemesterGameJam (SGJ) findet an der TUM derzeit einmal im Semester statt. Die besten Projekte werden am Demo Day gezeigt. Die SGJ bietet rund um die Uhr Vollverpflegung und ein Rahmenprogramm mit Vorträgen und Aktivitäten. Die Teams werden von Mentor:innen begleitet, am Ende bewerten alle Teilnehmenden sowie eine Fachjury die Spiele.
+Weitere Informationen zur SemesterGameJam
+Links relevant for questions related to Game Jam: https://www.semestergamejam.de/, https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik-games-engineering/aktivitaeten/
+Game Jam
+----------------------------------------
+
+Games Übungsräume in der TUM
+Aktivitäten im Studiengang Informatik: Games Engineering > Games Übungsräume in der TUM
+Die Games Übungsräume stehen allen Studierenden offen, um eigene Projekte und Hausaufgaben zu bearbeiten. Auf den Rechnern sind unter anderem Unity Pro und Visual Studio installiert. Als Zugangsdaten dienen Ihre RBG-Accounts. Falls eine Tutorübung im Raum stattfindet, können Sie eine:n Übungsleiter:in bitten, ob Sie (leise) an einem freien Rechner arbeiten dürfen.
+Im Gebäude FMI am Campus Garching stehen folgende Games Übungsräume zur Verfügung:
+- 01.05.012
+- 01.10.020
+- 02.13.008
+Links relevant for questions related to Games Übungsräume in der TUM: https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-informatik-games-engineering/aktivitaeten/
+Games Übungsräume in der TUM
+----------------------------------------
+

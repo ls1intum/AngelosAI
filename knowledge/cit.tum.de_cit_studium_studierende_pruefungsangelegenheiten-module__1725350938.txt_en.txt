@@ -1,0 +1,85 @@
+https://www.cit.tum.de/en/cit/studies/students/examination-matters-modules/
+Examination Matters & Modules - TUM - TUM School of Computation, Information and Technology
+
+Examination Matters and Modules
+Examination Matters and Modules
+Links relevant for questions related to Examination Matters and Modules: https://www.cit.tum.de/cit/studium/studierende/pruefungsangelegenheiten-module/
+Examination Matters and Modules
+----------------------------------------
+
+Academic year
+Examination Matters and Modules > Academic year
+The academic year at German universities always begins on October 1 of a year and ends on September 30 of the following year; it is divided into two semesters. Within a semester are the lecture and examination periods followed by a "lecture-free period". The exact dates of current and future semesters for the start and end of lectures as well as semester breaks and holidays can be found on the central TUM websites.
+
+Semester Structure
+Examination Matters and Modules > Academic year > Semester Structure
+Winter semester: begins on October 1 and ends on March 31 Lecture period: approx. mid-October to mid-February
+Summer semester: begins on April 1 and ends on September 30 Lecture period: approx. mid-April to mid-July
+
+Exams
+Examination Matters and Modules > Academic year > Semester Structure > Exams
+Mathematics: in the first to the third week of the lecture period Informatics: in the last week of the lecture period until the third week of the lecture-free period Electrical and Computer Engineering: in the first to the third week of the lecture-free period
+
+Retake exams
+Examination Matters and Modules > Academic year > Semester Structure > Retake exams
+Mathematics: last three lecture-free weeks Informatics: last three lecture-free weeks or in the first lecture week of the following semester Electrical and Computer Engineering: at the end of the following semester; Attention! Exception are the repeat examinations of the GOP, these take place in the last three lecture-free weeks.
+Links relevant for questions related to Academic year: https://www.tum.de/en/studies/application/application-info-portal/dates-periods-and-deadlines, https://www.cit.tum.de/cit/studium/studierende/pruefungsangelegenheiten-module/
+Academic year
+----------------------------------------
+
+Basic Information on exam registration
+Examination Matters and Modules > Basic Information on exam registration
+- Registration for examination must be done via TUMonline.
+- Registration for a course does NOT mean you are automatically registered for the respective examination.
+- Separate, advance registration must be made via TUMonline EVERY time you take an examination (including retake exams). The only exception are mid-term exams. If you registered for a mid-term exam, then you will be automatically registered for the final exam.
+- Taking an examination does not replace registration. If you do not register for an exam in TUMonline, the credits will not count towards to your degree program.
+- Please pay attention to further information given by your lecturers and teaching staff. Additional on-site registration may be necessary for some examinations.
+- Don't forget to check if your registration has been succesfull befor the end of the registration period. How you can find out to which examinations you are registrated please look at bulletpoint "How can I see the exams I am registered for?"
+Links relevant for questions related to Basic Information on exam registration: https://campus.tum.de/tumonline/webnav.ini, https://www.cit.tum.de/cit/studium/studierende/pruefungsangelegenheiten-module/
+Basic Information on exam registration
+----------------------------------------
+
+How to register for exams in TUMonline
+Examination Matters and Modules > How to register for exams in TUMonline
+
+1. Log in to the TUMonline portal
+Examination Matters and Modules > 1. Log in to the TUMonline portal
+- You need a myTUM account to log in to the TUMonline portal. If you have forgotten your password or the answer to your security question, please contact TUM IT support.
+- Log in with your myTUM ID (xxxx@mytum.de) and myTUM password
+- If your myTUM ID is rejected, please try your LRZ ID and your myTUM password. Your LRZ ID can be viewed at: portal.mytum.de > Login > Meine Einstellungen > Accountinformationen
+- If log in fails with your LRZ ID, please try to reset your myTUM password within the myTUM portal.
+- If you are still not able to log in, please contact TUM IT support.
+
+2. Register for an examination in TUMonline
+Examination Matters and Modules > 2. Register for an examination in TUMonline
+See this page for information about logging in and registering for examinations. Explanations for registration and other topics around TUMonline: Videos of the TUM Student Info
+The registration system automatically marks all registrations as "provisional". You can ignore this, as there are no admission requirements for examinations in the Department of Informatics.
+If your examinations do not appear in your curriculum tree, please use the "Prüfungs An-/Abmeldung" for registration (see information sheet). Please search for the module ID of the related course using the search field next to "Prüfung". If the examination cannot be found, please contact the Secretary of Examination Board of your degree program directly by E-Mail.
+The examination registration for resits in TUMonline doesn´t work! What can I do? Step by step instruction as PDF
+Details:
+- Check if the exam you intend to repeat has already been graded, if not, be patient and try again after a few days. Only if the grades have been submitted and you have not passed, you can register for the repetition!
+- If the exam has been graded and you failed, but you still can not register, refer to http://www.it.tum.de/en/tumonline/ or the TUMonline brochure.
+- If you are still facing difficulties, contact the Secretary of Examination Board of your degree program by E-Mail before end of registration period.
+Links relevant for questions related to How to register for exams in TUMonline: http://portal.mytum.de/erstlogin/index_html, http://www.support.tum.de/, http://portal.mytum.de/, http://www.support.tum.de/, http://www.it.tum.de/en/tumonline/studying/manuals/, https://www.youtube.com/channel/UCx0umWxDASjFmTYlttdkelA/, https://www.in.tum.de/fileadmin/w00bws/in/2.Fur_Studierende/Pruefungen_und_Formalitaeten/3.Pruefungen/Die_Pruefungsanmeldung_zur_Wiederholungspruefung_in_TUMonline_funktioniert_nicht_03.pdf, http://www.it.tum.de/en/tumonline/, https://www.cit.tum.de/cit/studium/studierende/pruefungsangelegenheiten-module/
+How to register for exams in TUMonline
+----------------------------------------
+
+How can I see the exams that I registered for?
+Examination Matters and Modules > How can I see the exams that I registered for?
+There are different options to check if you are actually registered for an exam:  1) click "Exam Registration" in your personal business card (find some information about your personal business card here)  2) click "Student Files" in your personal business card, Tab "all exams"  3) click "Study Status / Curriculum" in your personal business card, choose the exam (green flag) and look for the check mark over the green "P" button  Attention: If you are registered for an exam not by yourself but by the staff of the TUM (e.g. registration for the IDP), the exam is not visible in the "Exam Registration" (option 1) - choose option 2 or 3
+Links relevant for questions related to How can I see the exams that I registered for?: https://wiki.tum.de/pages/viewpage.action?pageId=19411527, https://www.cit.tum.de/cit/studium/studierende/pruefungsangelegenheiten-module/
+How can I see the exams that I registered for?
+----------------------------------------
+
+Grading
+Examination Matters and Modules > Grading
+Grades
+1.0, 1.3:  "very good" = excellent performance
+1.7, 2.0, 2.3:  "good" = performance well above average
+2.7, 3.0, 3.3:  "satisfactory" = average performance
+3.7, 4.0:  "sufficient" = performance meets the standards in spite of deficiencies
+4.3, 4.7, 5.0:  "fail" = performance does not meet the standards because of substantial deficiencies.
+Links relevant for questions related to Grading: https://www.cit.tum.de/cit/studium/studierende/pruefungsangelegenheiten-module/
+Grading
+----------------------------------------
+

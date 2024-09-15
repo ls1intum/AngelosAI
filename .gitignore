@@ -1,0 +1,9 @@
+.env
+rag-venv
+/development.env
+.DS_Store
+.vscode
+*/DS_Store
+.pytest_cache/
+docker/.docker-data
+testing/results/*

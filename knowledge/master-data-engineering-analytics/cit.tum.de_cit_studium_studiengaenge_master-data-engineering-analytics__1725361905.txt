@@ -1,0 +1,480 @@
+https://www.cit.tum.de/cit/studium/studiengaenge/master-data-engineering-analytics/
+Master Data Engineering and Analytics - TUM - TUM School of Computation, Information and Technology
+
+Data Engineering and Analytics
+Data Engineering and Analytics
+
+Master of Science (M.Sc.)
+Data Engineering and Analytics > Master of Science (M.Sc.)
+Links relevant for questions related to Data Engineering and Analytics: https://www.cit.tum.de/cit/studium/studiengaenge/master-data-engineering-analytics/
+Data Engineering and Analytics
+----------------------------------------
+
+Vor dem Studium | Im Studium | Kontakt
+Links relevant for questions related to : https://www.cit.tum.de/cit/studium/studiengaenge/master-data-engineering-analytics/#c2254, https://www.cit.tum.de/cit/studium/studiengaenge/master-data-engineering-analytics/#c2240, https://www.cit.tum.de/cit/studium/studiengaenge/master-data-engineering-analytics/#c2259, https://www.cit.tum.de/cit/studium/studiengaenge/master-data-engineering-analytics/
+
+----------------------------------------
+
+Die Verarbeitung und Auswertung von extrem großen Datenmengen ist ein drängendes Problem in vielen Bereichen und erfordert ganz neue Techniken und Verfahren. Dieser Trend zu "Big Data" wird durch eine Reihe von Entwicklungen vorangetrieben:
+- Es wird immer einfacher, große Mengen von Daten zu erzeugen und zu speichern, wegen günstigem Speicherplatz, Sensoren, Smart Devices, Sozialen Netzwerken und anderem.
+- Diese großen Datenmengen lassen sich durch technische Fortschritte wie schnelle multi-core Systeme und Cloud Computing auch in großem Stil verarbeiten.
+- Solche Datenmengen werden nicht mehr nur von "klassischen" Anwendungsgebieten wie Geschäftsdaten erzeugt, sondern fallen inzwischen in sehr vielen Lebensbereichen an. Beispielsweise erzeugen immer mehr Fahrzeuge mittels Sensoren und intelligenter Vernetzung große Datenmengen, die unter anderem zur Modellweiterentwicklung oder für diagnostische Zwecke genutzt werden. Ein wichtiges Anwendungsgebiet ist derzeit auch die intelligente Energienetzsteuerung.
+Der Masterstudiengang Data Engineering und Analytics greift diese Entwicklungen auf und vermittelt eine Ausbildung, die Absolvent:innen zum einen befähigt, praktische Lösungen in diesem Themenbereich zu entwerfen und zu planen, und zum anderen solide Grundlage zur Forschung bietet.
+Links relevant for questions related to : https://www.cit.tum.de/cit/studium/studiengaenge/master-data-engineering-analytics/
+
+----------------------------------------
+
+Eckdaten
+Data Engineering and Analytics > Eckdaten
+Art des Studiums: Vollzeit
+Regelstudienzeit: 4 Semester
+Credits: 120 ECTS
+Hauptstandort: Garching
+Beginn des Studiums: Sommer- oder Wintersemester
+Unterrichtssprache: Englisch
+Kosten: Semesterbeitrag, Studiengebühren für internationale Studierende aus Nicht EU-Staaten
+Professional Profile: Data Science and Artificial Intelligence
+Links relevant for questions related to Eckdaten: https://www.tum.de/studium/im-studium/das-studium-organisieren/wichtige-begriffe-im-ueberblick-glossar#c2288, https://www.tum.de/studium/studienfinanzierung, https://www.tum.de/studium/studienfinanzierung/studiengebuehren-fuer-studierende-aus-nicht-eu-laendern, https://www.cit.tum.de/cit/studium/studiengaenge/master-data-engineering-analytics/
+Eckdaten
+----------------------------------------
+
+Wie ist das Studium aufgebaut?
+Data Engineering and Analytics > Wie ist das Studium aufgebaut?
+Das Programm ist in die drei Schwerpunkte Data Analysis, Data Engineering and Analytics und Data Engineering aufgeteilt. Im Bereich Data Analysis werden Grundlagen zum Verständnis von Daten und zur Modellierung von zugrunde liegenden Zusammenhängen vermittelt. Der Bereich Data Engineering umfasst Vorlesungen zur Konstruktion von Systemen die durch effiziente und skalierbare Datenverarbeitung Methoden der Data Analysis auf großen Datensätzen ermöglichen.
+Das Curriculum umfasst zu jeweils Data Analysis und Data Engineering eine verpflichtende Grundlagenveranstaltung.
+Weiterführende Veranstaltungen werden für alle drei Schwerpunkte angeboten:
+Der Bereich Data Engineering umfasst unter anderem Vorlesungen zu verteilten Systemen, verteilten Datenbanken, Anfrageoptimierung, Datenbanksystemen auf modernen CPU-Architekturen und High Performance Computing.
+Data Engineering and Analytics bietet Veranstaltungen zu Machine Learning, Business Analytics, Computer Vision und Scientific Visualization.
+Data Analysis enthält Veranstaltungen die solide mathematische Grundkenntnisse benötigen: Fundamentals of Convex Optimization, Computational Statistics und weitere.
+Links relevant for questions related to Wie ist das Studium aufgebaut?: https://www.cit.tum.de/cit/studium/studiengaenge/master-data-engineering-analytics/
+Wie ist das Studium aufgebaut?
+----------------------------------------
+
+Welche Karriere-Chancen habe ich im Anschluss?
+Data Engineering and Analytics > Welche Karriere-Chancen habe ich im Anschluss?
+Absolvent:innen des Masterstudiengangs Data Engineering and Analytics öffnen sich unzählige berufliche Perspektiven: in der Forschung, der Beratung, in der IT-Security oder als Data Analysts oder Data Engineers in Unternehmen fast aller Branchen.
+Links relevant for questions related to Welche Karriere-Chancen habe ich im Anschluss?: https://www.cit.tum.de/cit/studium/studiengaenge/master-data-engineering-analytics/
+Welche Karriere-Chancen habe ich im Anschluss?
+----------------------------------------
+
+Kooperation mit Masterprogram "Mathematics in Data Science"
+Data Engineering and Analytics > Kooperation mit Masterprogram "Mathematics in Data Science"
+Parallel zum Informatik-Studiengang "Data Engineering and Analytics" bietet die TUM School of Computation, Information and Technology den Masterstudiengang "Mathematics in Data Science". Die beiden Studiengänge bauend auf einer gemeinsamen Grundlage auf und behandeln speziell die informatischen bzw. mathematischen Aspekte von Big Data. Die Sammlung, Modellierung, Speicherung, Verarbeitung und Auswertung extrem großer (Beispiel: Soziale Medien), sich schnell ändernder (Beispiel: Sensoren) und komplexer (Beispiel: ökologische Systeme) Datenmengen ist das Ziel beider Studiengänge.
+Im Informatik-Studiengang legen wir mehr Wert darauf, die Daten so zur Verfügung zu stellen, dass sie mit unterschiedlichen Methoden zu unterschiedlichen Zwecken effizient verarbeitet werden können. Die Datenspeicherung und der Datenzugriff müssen auf die gewaltige Menge, die hohe Änderungsrate und die große Komplexität der Daten abgestimmt sein und variabel reagieren können. Weiterhin müssen sie sich den wechselnden Analysealgorithmen sowie den Visualisierungen der Ergebnisse anpassen.
+"Data Engineering and Analytics" vermittelt ein tiefgreifendes Verständnis der grundlegenden Methoden und praktische Techniken zur Verarbeitung sehr großer Datenmengen. Im Gegensatz dazu liegt der Fokus im Studiengang "Mathematics in Data Science" auf der Berechnung, Simulation und Vorhersage komplexer Phänomene, wie Kundenverhalten, Wirtschaftsentwicklung und medizinische Krankendaten. Die oft schwierige Interpretation dieser Daten erfordert komplexe mathematische Modelle.
+Links relevant for questions related to Kooperation mit Masterprogram "Mathematics in Data Science": http://www.ma.tum.de/Studium/MScDS, https://www.cit.tum.de/cit/studium/studiengaenge/master-data-engineering-analytics/
+Kooperation mit Masterprogram "Mathematics in Data Science"
+----------------------------------------
+
+Bewerbung und Zulassung
+Data Engineering and Analytics > Bewerbung und Zulassung
+Der Master Data Engineering and Analytics richtet sich an Interessierte mit einem Bachelorabschluss in Informatik, die sich im Bereich der Verarbeitung und Auswertung von extrem großen Datenmengen spezialisieren wollen.
+Zur Auswahl der Studierenden zum Master Data Engineering and Analytics führen wir ein Eignungsverfahren durch. Das ist ein zweistufiger Prozess, in dem wir Ihre Eignung für die besonderen qualitativen Anforderungen des Masterstudiengangs prüfen.
+Links relevant for questions related to Bewerbung und Zulassung: https://www.cit.tum.de/cit/studium/studiengaenge/master-data-engineering-analytics/
+Bewerbung und Zulassung
+----------------------------------------
+
+Bewerbungsfrist
+Data Engineering and Analytics > Bewerbungsfrist
+Wintersemester: 01. Februar – 31. Mai
+Sommersemester: 01. September – 30. November
+Links relevant for questions related to Bewerbungsfrist: https://www.cit.tum.de/cit/studium/studiengaenge/master-data-engineering-analytics/
+Bewerbungsfrist
+----------------------------------------
+
+Wie bewerbe ich mich?
+Data Engineering and Analytics > Wie bewerbe ich mich?
+Die Bewerbung für einen Studienplatz für diesen Masterstudiengang erfolgt über unser Portal TUMonline. Nachdem Sie dort Ihren Account angelegt haben, geben Sie persönliche Daten und Informationen zu Ihrer Ausbildung an und laden Sie die erforderlichen Dokumente hoch. Die Bewerbung erfolgt elektronisch.
+Studieninteressierte mit eine Bachelor von außerhalb der Europäischen Union müssen in der Regel vorab eine Vorprüfungsdokumentation bei uni-assist anfordern.
+Nur wenn Sie eine Zulassung erhalten, müssen Sie für eine Immatrikulation zusätzlich einige Dokumente als beglaubigte Kopien in Papierform einreichen.
+Bewerbung für einen Masterstudiengang – Schritt für Schritt
+Links relevant for questions related to Wie bewerbe ich mich?: https://campus.tum.de/tumonline/ee/ui/ca2/app/desktop/#/login, http://www.tum.de/studium/bewerbung/uni-assist/, https://www.tum.de/studium/bewerbung/master/bewerbung-master, https://www.cit.tum.de/cit/studium/studiengaenge/master-data-engineering-analytics/
+Wie bewerbe ich mich?
+----------------------------------------
+
+Welche Dokumente muss ich einreichen?
+Data Engineering and Analytics > Welche Dokumente muss ich einreichen?
+Für Ihre Bewerbung müssen Sie folgende Dokumente in TUMonline hochladen:
+- Begründungsschreiben - eine von Ihnen selbst verfasste schriftliche Begründung für die Wahl des Studiengangs und für die Wahl der Technische Universität München als Hochschule (max. 2 Seiten; s. unten)
+- ein tabellarischer Lebenslauf
+- ein Aufsatz zu einem vorgegebenen Thema (ca. 1000 Wörter, Themen s. unten)
+- ein offizielles Transkript über die bisherigen Studienleistungen; ggf. offizielle Übersetzung, falls nicht in deutscher oder englischer Sprache vorliegend
+- das dem Hochschulabschluss zugrunde liegende Curriculum (Modulbeschreibungen, z.B. in Form eines Modulhandbuchs oder Syllabus); dieses Dokument ist für den Abgleich der fachlichen Qualifikation sehr wichtig!
+- Formblatt zur Curricularanalyse (s. unten)
+- Englischnachweis (s. akzeptierte Sprachnachweise)
+- ggf. GRE oder GATE Test (s. unten)
+- ggf. Vorprüfungsdokumentation von uni-assist
+- ggf. Zertfikat der Akademischen Prüfstelle (APS) für Bewerbende mit einem Bachelor aus China, Vietnam und Indien
+- ggf. studiengangsspezifische Ausbildungs- und Arbeitszeugnisse, fachspezifische Zusatzqualifikation (z.B. Teilnahme an einem Forschungswettbewerb)
+- ggf. Nachweis der Hochschulsemester (z.B. Exmatrikulationsbescheinigung oder Studienbuch) und Unbedenklichkeitsbescheinigung
+- ein Passfoto
+- Nachweis über Ihren Hochschulabschluss (kann zur Immatrikulation nachgereicht werden)
+- Kopie Ihres Ausweises/Passes
+- Nachweis der studentischen Krankenversicherung (wird erst für die Immatrikulation benötigt)
+Details zu allen geforderten Dokumenten finden Sie im Dokumentenglossar der Technischen Universität München. Je nach Ihrer Vorbildung und Herkunft benötigen wir eventuell noch weitere Bewerbungsunterlagen. Welche Unterlagen das sind, erfahren Sie bei der Onlinebewerbung über TUMonline.
+Links relevant for questions related to Welche Dokumente muss ich einreichen?: https://www.tum.de/studium/bewerbung/zulassungsvoraussetzungen/sprachnachweise/, https://www.tum.de/studium/bewerbung/uni-assist/, https://www.tum.de/studium/bewerbung/infoportal-bewerbung/aps, https://www.tum.de/studium/bewerbung/infoportal-bewerbung/dokumentenglossar, https://www.tum.de/studium/bewerbung/infoportal-bewerbung/sonderregeln-fuer-einzelne-laender, https://www.cit.tum.de/cit/studium/studiengaenge/master-data-engineering-analytics/
+Welche Dokumente muss ich einreichen?
+----------------------------------------
+
+Was muss ich beachten, wenn ich aus dem Ausland komme (Studiengebühren, VPD, GRE, APS)?
+Data Engineering and Analytics > Was muss ich beachten, wenn ich aus dem Ausland komme (Studiengebühren, VPD, GRE, APS)?
+
+Studiengebühren für internationale Studierende aus Drittstaaten
+Data Engineering and Analytics > Was muss ich beachten, wenn ich aus dem Ausland komme (Studiengebühren, VPD, GRE, APS)? > Studiengebühren für internationale Studierende aus Drittstaaten
+An der Technischen Universität München (TUM) werden ab Wintersemester 2024/25 Gebühren für internationale Studierende aus Drittstaaten erhoben, die sich neu in einen Studiengang einschreiben.
+
+Vorprüfungsdokumentation von uni-assist (VPD)
+Data Engineering and Analytics > Was muss ich beachten, wenn ich aus dem Ausland komme (Studiengebühren, VPD, GRE, APS)? > Vorprüfungsdokumentation von uni-assist (VPD)
+Bewerbende, die ihren Bachelorabschluss in einem Land außerhalb der EU/EWR erworben haben, müssen zusätzlich zur Bewerbung an der TUM eine Vorprüfungsdokumentation (VPD) von uni-assist beantragen. Das heißt, dass Sie eine Onlinebewerbung bei der TUM anlegen und gleichzeitig einen Antrag auf Vorprüfungsdokumentation bei uni-assist stellen.
+Welche Unterlagen müssen bei uni-assist eingereicht werden?
+- Antrag auf Vorprüfungsdokumentation (siehe uni-assist)
+- eine Kopie Ihrer Studienabschlussurkunde (sofern bereits vorhanden)
+- eine Kopie der Fächer- und Notenübersicht (Transcript)
+- eine Übersetzung, wenn die Originaldokumente nicht in deutscher oder englischer Sprache ausgestellt wurden
+- ggf. Zertifikat der Akademischen Prüfstelle (APS)
+Sie müssen also keine vollständige Bewerbung bei uni-assist für einen spezifischen Masterstudiengang abgeben, sondern eine allgemeine Vorprüfungsdokumentation mit den o.g. Unterlagen beantragen.
+Der Antrag auf Vorprüfungsdokumentation bei uni-assist alleine zählt nicht als Bewerbung für einen Studiengang an der TUM.
+
+GRE und GATE
+Data Engineering and Analytics > Was muss ich beachten, wenn ich aus dem Ausland komme (Studiengebühren, VPD, GRE, APS)? > GRE und GATE
+Bewerber*innen, die ihren Hochschulabschluss in Bangladesch, China, Indien, Iran oder Pakistan gemacht haben, müssen einen GRE (General) mit den geforderten Mindestpunktzahlen einreichen. Werden die Mindestpunktzahlen nicht erreicht, kann die Bewerbung nicht berücksichtigt werden.Die nötigen Mindestpunktzahlen sind:Verbal Reasoning: keine MindestpunktzahlQuantitative Reasoning: 164Analytical Writing: 4,0Institution Code: 7806, Department code: 5199 ("all other departments").
+Alternativ kann ein Testergebnis (Score Sheet) des indischen GATE Tests eingereicht werden.
+
+Zertifikat der Akademischen Prüfstelle (APS)
+Data Engineering and Analytics > Was muss ich beachten, wenn ich aus dem Ausland komme (Studiengebühren, VPD, GRE, APS)? > Zertifikat der Akademischen Prüfstelle (APS)
+Bewerbende, die Ihren Hochschulabschluss in China, Indien oder Vietnam gemacht haben, müssen ein Zertifikat der Akademischen Prüfstelle (APS) einreichen.
+Links relevant for questions related to Was muss ich beachten, wenn ich aus dem Ausland komme (Studiengebühren, VPD, GRE, APS)?: https://www.tum.de/studium/studienfinanzierung/studiengebuehren-fuer-studierende-aus-nicht-eu-laendern, https://www.tum.de/studium/bewerbung/uni-assist/, https://my.uni-assist.de/, https://www.tum.de/studium/bewerbung/infoportal-bewerbung/aps, https://www.tum.de/studium/bewerbung/infoportal-bewerbung/aps, https://www.cit.tum.de/cit/studium/studiengaenge/master-data-engineering-analytics/
+Was muss ich beachten, wenn ich aus dem Ausland komme (Studiengebühren, VPD, GRE, APS)?
+----------------------------------------
+
+Qualifikationsvoraussetzungen und Zulassungsverfahren
+Data Engineering and Analytics > Qualifikationsvoraussetzungen und Zulassungsverfahren
+Qualifikationsvoraussetzung für den M.Sc. Data Engineering and Analytics ist ein B.Sc. in Informatik äquivalent zum B.Sc. Informatik der TUM.
+Zudem müssen ausreichende Englischkenntnisse nachgewiesen werden. Hier finden Sie die akzeptierten Englischnachweise.
+Überblick Zulassungsverfahren ab Bewerbungsphase für das Sommersemester 2025 (gültig ab 01.09.2024):
+Links relevant for questions related to Qualifikationsvoraussetzungen und Zulassungsverfahren: https://www.tum.de/studium/bewerbung/infoportal-bewerbung/zulassungsvoraussetzungen/sprachnachweise/, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Informatik/Overview_assessment_process_MScInformaticsMScData_Sep2024.pdf, https://www.cit.tum.de/cit/studium/studiengaenge/master-data-engineering-analytics/
+Qualifikationsvoraussetzungen und Zulassungsverfahren
+----------------------------------------
+
+Curricularanalyse
+Data Engineering and Analytics > Curricularanalyse
+Vor dem Ausfüllen der Curricularanalyse müssen Sie Ihre Bewerbung in TUMonline anlegen und speichern(!), um Ihre Bewerbernummer zu erhalten.
+Füllen Sie anschließend das Formular für die Curricularanalyse aus. Danach laden Sie das generierte PDF in Ihrer Bewerbung in TUMonline hoch.
+WICHTIG: es dürfen nur Module eingetragen werden, die bereits bestanden sind! Noch nicht abgeschlossene Module dürfen nicht eingetragen werden.
+Link zum Formular: https://apply.db.in.tum.de/
+Links relevant for questions related to Curricularanalyse: https://apply.db.in.tum.de/, https://apply.db.in.tum.de/, https://www.cit.tum.de/cit/studium/studiengaenge/master-data-engineering-analytics/
+Curricularanalyse
+----------------------------------------
+
+Themen für den wissenschaftlichen Aufsatz / Essay
+Data Engineering and Analytics > Themen für den wissenschaftlichen Aufsatz / Essay
+Der wissenschaftliche Essay bzw. Aufsatz, den Sie zusammen mit der Online-Bewerbung eingereichen, sollte etwa 1.000 Wörter umfassen und muss in englischer Sprache verfasst sein.
+Ihr wissenschaftlicher Aufsatz muss in das Thema einführen, es diskutieren und zu einer logischen Schlussfolgerung führen. Bitte verwenden Sie relevante Daten und wissenschaftliche Literatur, um Ihre Argumentation zu untermauern. Ideen, die nicht Ihre eigenen sind, müssen als solche gekennzeichnet werden! Der Begriff "Essay" kann irreführend sein - wir verlangen eine wissenschaftliche Arbeit mit korrekter Zitierung. Die verwendeten Quellen müssen am Ende aufgeführt werden. Der Aufsatz muss Ihre eigene Arbeit sein und Sie müssen ihn ohne jegliche Hilfe schreiben. Wir behalten uns das Recht vor, den Aufsatz auf die Urheberschaft des Bewerbenden und die Verwendung nicht autorisierter Hilfsmittel zu überprüfen.
+Bitte wählen Sie eines der folgenden Themen:
+- Topic 1:Should we move data and computation to the cloud, and when?
+- Topic 2:Which new challenges for computer science arise from recent advances in deep learning, e.g., autonomous driving, Google's LaMDA, and Deepfakes?
+- Topic 3:With the recent development of powerful CPUs, is it still necessary to write highly efficient code?
+Links relevant for questions related to Themen für den wissenschaftlichen Aufsatz / Essay: https://www.cit.tum.de/cit/studium/studiengaenge/master-data-engineering-analytics/
+Themen für den wissenschaftlichen Aufsatz / Essay
+----------------------------------------
+
+Begründungsschreiben für die Wahl des Studiengangs
+Data Engineering and Analytics > Begründungsschreiben für die Wahl des Studiengangs
+Die Begründung für die Wahl des Studiengangs, die Sie zusammen mit der Online-Bewerbung einreichen, sollte nicht länger als zwei DIN-A4-Seiten und muss in englischer Sprache verfasst sein.
+Legen Sie in Ihrem Begründungsschreiben Ihre besondere Qualifikation und Ihr außergewöhnliches Engagement für diesen speziellen Masterstudiengang dar. Dazu kann der Nachweis von Qualifikationen gehören, die über die im Grundstudium erworbenen Kenntnisse und Qualifikationen hinausgehen, etwa studiengangsbezogene Berufsausbildung, Praktika, Auslandsaufenthalte, wissenschaftliche Arbeiten etc. Sie sollten den Zusammenhang zwischen Ihren spezifischen Qualifikationen und den Inhalten des Studiengangs deutlich machen.
+Die Begründung muss von Ihnen selbst, ohne fremde Hilfe, verfasst werden. Wir behalten uns das Recht vor, den Aufsatz auf die Urheberschaft des Bewerbers und die Verwendung nicht zugelassener Hilfsmittel zu überprüfen.
+Links relevant for questions related to Begründungsschreiben für die Wahl des Studiengangs: https://www.cit.tum.de/cit/studium/studiengaenge/master-data-engineering-analytics/
+Begründungsschreiben für die Wahl des Studiengangs
+----------------------------------------
+
+Wechsel von TUM B.Sc. Informatik: Games Engineering / Wirtschaftsinformatik
+Data Engineering and Analytics > Wechsel von TUM B.Sc. Informatik: Games Engineering / Wirtschaftsinformatik
+1. Ist es möglich, sich mit einem Bachelor in Informatik: Games Engineering von der TUM für den M.Sc. Informatik zu bewerben?
+Studierende der TUM mit einem Bachelor in Informatik: Games Engineering können zugelassen werden, wenn Sie folgende Module als Wahl- bzw. Zusatzfach absolvieren. Bitte beachten Sie, dass diese Module bereits zum Bewerbungszeitpunkt bestanden sein müssen:
+- IT Sicherheit (IN0042); alternativ: Vorlesung Einführung in die Rechnerarchitektur (IN0004)
+- Starke Empfehlung: Funktionale Programmierung und Verifikation (IN0003). Ohne IN0003 ist keine Direktzulassung in Stufe 1 möglich. Bei B.Sc.-Note 1,5 und schlechter erfolgt eine Direktablehnung.
+2. Ist es möglich, sich mit einem Bachelor in Wirtschaftsinformatik von der TUM für den M.Sc. Informatik / M.Sc. Data Engineering and Analytics zu bewerben?
+Voraussetzung für die Zulassung ist ein Studium, welches dem B.Sc. Informatik der TUM gleichwertig ist. Eine Bewerbung ist daher nur sinnvoll, wenn fehlende Kompetenzen durch Wahl- und Zusatzmodule abgedeckt werden können. Bitte beachten, dass nur Module berücksichtigt werden, die zum Bewerbungszeitpunkt bereits bestanden sind.
+Speziell für Studierende des B.Sc. Wirtschaftsinformatik der TUM:Eine Zulassung kann möglich sein, wenn folgende Wahl- bzw. Zusatzmodule zum Bewerbungszeitpunkt erfolgreich bestanden sind:
+- Einführung in die Rechnerarchitektur (IN0004)
+- Grundlagen: Betriebssysteme und Systemsoftware (IN0009)
+- Einführung in die Theoretische Informatik (IN0011)
+- Starke Empfehlung: Funktionale Programmierung und Verifikation (IN0003). Ohne IN0003 ist keine Direktzulassung in Stufe 1 möglich. Bei B.Sc.-Note 1,5 und schlechter erfolgt eine Direktablehnung.
+- Hinweis zu Diskrete Wahrscheinlichkeitstheorie (IN0018): hierfür werden auch die Module CIT5130002 und MA9712 akzeptiert.
+Links relevant for questions related to Wechsel von TUM B.Sc. Informatik: Games Engineering / Wirtschaftsinformatik: https://www.cit.tum.de/cit/studium/studiengaenge/master-data-engineering-analytics/
+Wechsel von TUM B.Sc. Informatik: Games Engineering / Wirtschaftsinformatik
+----------------------------------------
+
+Informationen zum Test (Stufe 2)
+Data Engineering and Analytics > Informationen zum Test (Stufe 2)
+Die Leistungserhebung in schriftlicher Form (Test) dauert 90 Minuten und umfasst ca. 20-30 Fragen. Die Aufgaben werden auf Englisch gestellt. Der Inhalt des Tests bezieht sich auf die Grundlagen des einschlägigen Bachelorstudiengangs und erstreckt sich auf folgende Themenbereiche:
+a) Allgemeine Grundlagen (maximal 12 Punkte):Fähigkeit zum abstrakten, logischen und systemorientierten Denken und zur Formalisierung von Lösungsansätzen.
+b) Mathematische Grundlagen (maximal 13 Punkte):Wissen aus dem Erststudium in den Teilbereichen Stochastik, Kombinatorik, Analysis, Lineare Algebra, Numerisches Programmieren.
+c) Theoretische Grundlagen der Informatik (maximal 13 Punkte):Wissen aus dem Erststudium in den Teilbereichen Automatentheorie, Komplexitätstheorie, Algorithmen und Datenstrukturen, Verifikation.
+d) Praktische Grundlagen der Informatik (maximal 13 Punkte):Wissen aus dem Erststudium in den Teilbereichen Datenbanken, Rechnerarchitektur, Programmierung in Java.
+Wenn Sie zum Test eingeladen werden, erhalten Sie von uns rechtzeitig eine Email mit Informationen zum Ablauf, zur Durchführung und Anfahrt.
+Sample Test und Ausfüllhilfe
+Links relevant for questions related to Informationen zum Test (Stufe 2): https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Informatik/sample-test_Master_application1.pdf, https://www.cit.tum.de/cit/studium/studiengaenge/master-data-engineering-analytics/
+Informationen zum Test (Stufe 2)
+----------------------------------------
+
+Zeitplan Bewerbung
+Data Engineering and Analytics > Zeitplan Bewerbung
+Online-Bewerbung und Einreichung der erforderlichen UnterlagenFür das Wintersemester:1. Februar - 31. März: empfohlene Bewerbungsfrist für visumspflichtige Bewerber*innen1. Februar - 31. Mai: verbindliche Bewerbungsfrist
+Für das Sommersemester:1. September - 31. Oktober: empfohlene Bewerbungsfrist für visumspflichtige Bewerber:innen1. September - 30. November: verbindliche Bewerbungsfrist
+Nach der offiziellen Bewerbungsfrist können Sie keine Bewerbungsunterlagen nachreichen!
+Zeitrahmen für den Test auf dem Campus:Bewerbung für das Wintersemester: Juli - SeptemberBewerbung für das Sommersemester: Januar - März
+Termin Eignungstest Bewerbung für das Wintersemester 2024/25: Dienstag, 13.08.2024
+Beginn des Studiums (Vorlesungszeit)Wintersemester: OktoberSommersemester: April
+Akademischer Kalender TUM
+Links relevant for questions related to Zeitplan Bewerbung: https://www.tum.de/studium/bewerbung/infoportal-bewerbung/termine-und-fristen, https://www.cit.tum.de/cit/studium/studiengaenge/master-data-engineering-analytics/
+Zeitplan Bewerbung
+----------------------------------------
+
+Im Studium
+Data Engineering and Analytics > Im Studium
+Der Masterstudiengang Data Engineering and Analytics verbreitert und vertieft die vorhandenen Kenntnisse. Er bietet zudem die Möglichkeit zur individuellen Spezialisierung auf einen oder mehrere fachliche Schwerpunkte.  Das Qualifikationsprofil des Masterstudiengangs Data Engineering and Analytics setzt sich zusammen aus den einzelnen Modulen. Im Studium müssen Sie insgesamt 120 Credits einbringen. Diese setzen sich zusammen aus:
+- Pflichtmodule (31 ECTS)
+- Wahlmodule (53 ECTS)
+- Überfachliche Grundlagen (6 ECTS)
+- Abschlussarbeit (30 ECTS)
+Erklärungen finden Sie im Folgenden.
+Links relevant for questions related to Im Studium: https://www.cit.tum.de/cit/studium/studiengaenge/master-data-engineering-analytics/
+Im Studium
+----------------------------------------
+
+Neuigkeiten und Updates
+Data Engineering and Analytics > Neuigkeiten und Updates
+
+Modulkatalog-Aktualisierungen
+Data Engineering and Analytics > Neuigkeiten und Updates > Modulkatalog-Aktualisierungen
+Da Katalog-Anderungen in TUMOnline eingepflegt werden müssen, kann es einige Zeit dauern, bis die neuesten Änderungen im Modulkatalog sichtbar sind. Die neuesten Änderungen finden Sie deshalb unter ChangesDEA.pdf. Wir aktualisieren die Datei jedes Semester, sobald alle Änderungen zusammengetragen sind. (Letzte Aktualisierung 05.04.2023)
+Links relevant for questions related to Neuigkeiten und Updates: https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Data_Engineering_and_Analytics/DEAChanges.pdf, https://www.cit.tum.de/cit/studium/studiengaenge/master-data-engineering-analytics/
+Neuigkeiten und Updates
+----------------------------------------
+
+Pflichtmodule
+Data Engineering and Analytics > Pflichtmodule
+Folgende Pflicht-Module sind im Master-Studiengang Data Engineering and Analytics zu absolvieren:
+IN2326 Foundations in Data Engineering (Wintersemester)
+MA4800 Foundations in Data Analysis (Sommersemester)
+IN2107 Master-Seminar
+IN2106 Master-Praktikum
+Links relevant for questions related to Pflichtmodule: https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1231549, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1209286&pOrgNr=14178, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1248712&pOrgNr=14189, https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1248717&pOrgNr=14189, https://www.cit.tum.de/cit/studium/studiengaenge/master-data-engineering-analytics/
+Pflichtmodule
+----------------------------------------
+
+Wahlmodule
+Data Engineering and Analytics > Wahlmodule
+Aus den Wahlmodulen der unten genannten Bereichen und den Wahlmodulen der Informatik sind insgesamt mindestens 53 Credits zu erbringen. Dabei müssen Sie folgende Bedingungen beachten:
+- Aus den drei Bereichen "Data Engineering", "Data Analytics" und "Data Analysis" sind Module im Umfang von insgesamt mindestens 15 Credits zu erbringen, wobei mindestens ein Modul aus jedem der drei Bereiche erbracht werden muss.
+- Aus den zwei Bereichen "Advanced Topics in Data Engineering" und "Special Topics in Analytics" sind Module im Umfang von mindestens 25 Credits zu erbringen, wobei eines der Module IN2169 "Forschungsarbeit unter Anleitung" oder IN2328 "Anwendungsprojekt" enthalten sein muss.
+Die Liste aller Module finden Sie in TUMonline in Ihrem Studienplan.
+
+Sonderregelungen zu einzelnen Modulen
+Data Engineering and Analytics > Sonderregelungen zu einzelnen Modulen
+Im Bereich Data Analytics können Sie nur eines aus den folgenden drei Modulen anrechnen lassen: IN2028 Business Analytics and Machine Learning IN2339 Data Analysis and Visualization in R IN2030 Data Mining und Knowledge Discovery
+Wenn Sie Ihr Studium vor dem Oktober 2019 aufgenommen haben, koennen Sie im Bereich Data Analytics auch das Modul IN2323 einbringen
+Im Bereich B2.2 Special Topics in Data Analytics können Sie nur eines der folgenden drei Module anrechnen lassen: IN2364 Advanced Deep Learning for Computer Vision IN2389 Advanced Deep Learning for Computer Vision: Dynamic Vision IN2390 Advanced Deep Learning for Computer Vision: Visual Computing
+Im Bereich Wahlmodule Informatik, Unterbereich "Formale Methoden und ihre Anwendungen" können Sie nur eines der folgenden zwei Module anrechnen lassen: IN2048 Gleichungslogik und Lambda-Kalkül IN2358 Lambda Calculus
+Links relevant for questions related to Wahlmodule: https://www.cit.tum.de/cit/studium/studiengaenge/master-data-engineering-analytics/#c4775, https://www.cit.tum.de/cit/studium/studiengaenge/master-data-engineering-analytics/#c2236, https://campus.tum.de/tumonline/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/wbstpcs.showSpoTree?$ctx=design=ca2;header=max;lang=de&pSJNr=1615&pStStudiumNr=&pStartSemester=&pStpStpNr=4733, https://www.cit.tum.de/cit/studium/studiengaenge/master-data-engineering-analytics/
+Wahlmodule
+----------------------------------------
+
+Anwendungsprojekt
+Data Engineering and Analytics > Anwendungsprojekt
+Das Modul Anwendungsprojekt beinhaltet eine praktische Tätigkeit im Bereich des Anwendungsfaches und schlägt eine Brücke von Data Engineering and Analytics zum Anwendungsfach.
+Prüfungsberechtigte der TUM vergeben Projekte, in denen Studierende des Studiengangs Data Engineering and Analytics alleine oder in Kleingruppen eine Lösung zu einem Thema mit Bezug zu der Verarbeitung spezieller großer Datenmengen erarbeiten, die im Lehr- und Forschungsumfeld der Projektsteller:innen angesiedelt sind.
+Der Projektauftrag umfasst in der Regel einen praktischen Teil (Erstellen eines Programms) sowie die Dokumentation und Präsentation der Projektarbeit. Die Bearbeiter:innen müssen sich mit dem:r Projektsteller:in intensiv abstimmen. Die Projektarbeit kann innerhalb von einem oder zwei Semestern bearbeitet werden.
+
+Anforderungen
+Data Engineering and Analytics > Anwendungsprojekt > Anforderungen
+Das Anwendungsprojekt hat folgende Rahmenparameter, die erfüllt sein müssen:
+- Die Anmeldung des Anwendungsprojektes muss in der ersten Vorlesungswoche des Semesters beim Prüfungsausschuss eingehen. Weitere Details finden Sie im verlinkten Anmeldeformular weiter unten auf dieser Seite.
+- Prüfer:in (Examiner) muss ein prüfungsberechtigtes Mitglied der TUM Informatik oder eines anderen Departments/School der TUM sein.
+- Das Thema muss einen Bezug zur Verarbeitung spezieller großer Datenmengen haben und in das Lehr- und Forschungsumfeld des:r Projektsteller:in (Prüfer:in) fallen.
+- Das Anwendungsprojekt kann auch in Kooperation mit einem externen Partner, wie einer anderen Universität, Forschungseinrichtung, Firma oder Start-up durchgeführt werden, sofern alle genannten Anforderungen erfüllt sind.
+
+Wie finde ich ein Anwendungsprojekt-Thema?
+Data Engineering and Analytics > Anwendungsprojekt > Wie finde ich ein Anwendungsprojekt-Thema?
+Im Folgenden finden Sie Tipps, wie Sie ein Anwendungsprojekt finden können.
+- Suchen Sie nach ausgeschriebenen Themen auf den Lehrstuhl-Websites der TUM Informatik oder anderer Departments/Schools.
+- Kontaktieren Sie Personen, mit denen Sie während Ihres Studiums bereits Kontakt hatten, z. B. Übungsleiter:innen oder Professor:innen von Modulen, die Sie belegt haben.
+- Oft können ausgeschriebene Themen für das interdisziplinäre Projekt (IDP) im Master Informatik auch als Anwendungsprojekt durchgeführt werden. Kontaktieren Sie die Themensteller:innen und fragen Sie nach, ob Sie das Thema auch als Anwendungsprojekt durchführen können. Die Unterschiede zwischen einem IDP und Anwendungsprojekt sind in diesen Folien aufgelistet.
+- Themen aus dem TUM Data Innovation Lab können ebenfalls als Anwendungsprojekt durchgeführt werden. Bitte beachten Sie, dass für die Teilnahme eine Bewerbung erforderlich ist.
+
+Ablauf
+Data Engineering and Analytics > Anwendungsprojekt > Ablauf
+- Anmeldung in der ersten Vorlesungswoche jedes Semesters beim Prüfungsausschuss
+- Zu erbringende Leistungen: 	 		Erfolgreiche Durchführung Ihrer Forschungsaufgaben 		Regelmäßige Durchführung der Kontakttermine 		Präsentation der Ergebnisse durch einen Vortrag (am Lehrstuhl oder auf einer wissenschaftlichen Veranstaltung) 		Abgabedokumente: 		 			Dokumentation, d.h. eine zugängliche Beschreibung der praktischen Lösung in einer für Experten auf dem Gebiet des Problems verständlichen Form 			Programm, Quellcode und eine Anleitung zur Nutzung des Programms
+- Erfolgreiche Durchführung Ihrer Forschungsaufgaben
+- Regelmäßige Durchführung der Kontakttermine
+- Präsentation der Ergebnisse durch einen Vortrag (am Lehrstuhl oder auf einer wissenschaftlichen Veranstaltung)
+- Abgabedokumente: 		 			Dokumentation, d.h. eine zugängliche Beschreibung der praktischen Lösung in einer für Experten auf dem Gebiet des Problems verständlichen Form 			Programm, Quellcode und eine Anleitung zur Nutzung des Programms
+- Dokumentation, d.h. eine zugängliche Beschreibung der praktischen Lösung in einer für Experten auf dem Gebiet des Problems verständlichen Form
+- Programm, Quellcode und eine Anleitung zur Nutzung des Programms
+- Spätestens zu Beginn des folgenden Semesters: Die Abgabe erfolgt spätestens in der ersten Vorlesungswoche des Folgesemesters beim Betreuer, die Bewertung spätestens in der 5. Vorlesungswoche des Folgesemesters.
+Antrag Anwendungsprojekt
+Links relevant for questions related to Anwendungsprojekt: https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=1233516&pOrgNr=14189, https://www.cit.tum.de/cit/studium/studiengaenge/master-informatik/interdisziplinaeres-projekt/, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Data_Engineering_and_Analytics/Slides_Let_s_talk_about_-_Application_Project_DEA.pdf, https://www.di-lab.tum.de/tum-di-lab/, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Data_Engineering_and_Analytics/Antrag_ApplicationProject_EN.pdf, https://www.cit.tum.de/cit/studium/studiengaenge/master-data-engineering-analytics/
+Anwendungsprojekt
+----------------------------------------
+
+Guided Research
+Data Engineering and Analytics > Guided Research
+Im Modul Guided Research erlernen Sie grundlegende Fähigkeiten, um selbstständig zu forschen. Dies geschieht, indem Sie eine Forschungsfrage unter Betreuung bearbeiten.
+- Anmeldung in der ersten Vorlesungswoche jedes Semesters beim Prüfungsausschuss
+- Zu erbringende Leistungen: 	 		erfolgreiche Durchführung der Arbeit 		regelmäßige Durchführung der Kontakttermine 		Präsentation der Ergebnisse durch einen Vortrag (am Lehrstuhl oder auf einer wissenschaftlichen Veranstaltung) 		Abgabe eines knappen wissenschaftlichen Ergebnisberichts (8-12 Seiten in Englisch)
+- erfolgreiche Durchführung der Arbeit
+- regelmäßige Durchführung der Kontakttermine
+- Präsentation der Ergebnisse durch einen Vortrag (am Lehrstuhl oder auf einer wissenschaftlichen Veranstaltung)
+- Abgabe eines knappen wissenschaftlichen Ergebnisberichts (8-12 Seiten in Englisch)
+- Abgabe spätestens zu Beginn des folgenden Semesters: Die Abgabe des Ergebnisberichtes erfolgt spätestens in der ersten Vorlesungswoche des Folgesemesters beim Betreuer, die Bewertung spätestens in der 5. Vorlesungswoche des Folgesemesters.
+Um das Online Formular für einen Antrag für Guided Research auszufüllen, müssen Sie sich mit ihrer TUM-Kennung anmelden. Bitte reichen Sie die Anmeldungen nebst Projektbeschreibung im Original oder ausgedruckt mit Unterschrift ein.
+Die Anmeldung im Onlineportal ist noch keine garantierte Anmeldung. Die Prüfung erfolgt erst, wenn das unterschriebene Formular vorliegt.
+Wie Sie Ihre Anmeldung einreichen:
+- Online-Anmeldung über das obere Formular. Anmeldeschluss für das Wintersemester 2023/24: 22. Oktober 2023. Das Anmeldefenster öffnet zwei Monate vor der ersten Vorlesungswoche des kommenden Semesters.
+- Drucken Sie (1) die Projektbeschreibung und (2) Ihr ausgedrucktes Anmeldeformular (= E-Mail, die Sie nach dem Absenden dieses Formulars erhalten) aus.
+- Reichen Sie die beiden ausgedruckten Dokumente (siehe Schritt 2.) bei Ihrem/ihrer betreuenden Professor:in ein.
+- Der/die betreuende Professor:in unterschreibt das Anmeldeformular.
+- Anschließend leitet der/die Professor:in bzw. sein/ihr Lehrstuhl das ausgedruckte und unterschriebene Anmeldeformular an das CIT ASA Office zur Eingabe in TUMonline weiter. Der Professor hat ca. 2 Wochen Zeit, die Ausdrucke bis zum 3. November 2023 beim CIT ASA Office einzureichen.
+- Das CIT ASA Office wird die Daten Ihrer Anmeldung in Ihr TUMonline-Konto eingeben. Sie werden keine Bestätigungsmail erhalten.
+- Bitte überprüfen Sie Ihren TUMonline-Account regelmäßig ab November bzw. Mai. Die Anmeldedaten werden nach dem Stichtag 3. November 2023 bis Ende November in TUMonline eingepflegt.
+Links relevant for questions related to Guided Research: https://campus.tum.de/tumonline/WBMODHB.wbShowMHBReadOnly?pKnotenNr=458261&pOrgNr=14189, https://collab.dvb.bayern/x/EPdPB, https://www.cit.tum.de/cit/studium/studiengaenge/master-data-engineering-analytics/
+Guided Research
+----------------------------------------
+
+Überfachliche Grundlagen
+Data Engineering and Analytics > Überfachliche Grundlagen
+Im Bereich Überfachliche Grundlagen sind insgesamt 6 ECTS zu erbringen. Davon müssen jeweils 3 ECTS aus den beiden folgenden Bereichen erbracht werden:
+- Überfachliche Grundlagen aus dem Master Informatik (inklusive Sprachkurse und Kurse der Carl-von-Linde-Akademie)
+- Social and Political Aspects of Data Science
+Die Liste der möglichen Kurse finden Sie in Ihrem Studienplan in TUMonline.
+
+Sonderregelungen zu einzelnen Modulen
+Data Engineering and Analytics > Sonderregelungen zu einzelnen Modulen
+- Es kann nur entweder SZ1101 oder SZ11011 eingebracht werden
+- Es kann nur entweder WI001056 oder WI001056_1 eingebracht werden
+Links relevant for questions related to Überfachliche Grundlagen: https://campus.tum.de/tumonline/ee/ui/ca2/app/desktop/#/pl/ui/$ctx/wbstpcs.showSpoTree?$ctx=design=ca2;header=max;lang=de&pSJNr=1615&pStStudiumNr=&pStartSemester=&pStpStpNr=4733, https://www.cit.tum.de/cit/studium/studiengaenge/master-data-engineering-analytics/
+Überfachliche Grundlagen
+----------------------------------------
+
+Studienfortschrittskontrolle
+Data Engineering and Analytics > Studienfortschrittskontrolle
+In diesem Masterstudieng sind aus den in der jeweiligen FPSO festgelegten Modulen
+- Bis zum Ende des 2. Fachsemesters: mindestens ein Modul aus Abschnitt A oder B
+- Bis zum Ende des 3. Fachsemesters ≥ 30 ECTS-Punkte
+- Bis zum Ende des 4. Fachsemesters ≥ 60 ECTS-Credits
+- Bis zum Ende des 5. Fachsemesters ≥ 90 ECTS-Credits
+- Bis zum Ende des 6. Fachsemesters 120 ECTS-Credits
+zu erbringen.
+Die rechtlich bindenden Details können in der APSO und FPSO nachgelesen werden.
+Links relevant for questions related to Studienfortschrittskontrolle: https://www.cit.tum.de/cit/studium/studiengaenge/master-data-engineering-analytics/
+Studienfortschrittskontrolle
+----------------------------------------
+
+Beispiel-Studienplan
+Data Engineering and Analytics > Beispiel-Studienplan
+Table (Data Engineering and Analytics > Beispiel-Studienplan):
+Fächergruppe; Anlage 1 FPSO; Credits
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+SEMESTER 1
+Foundations in Data Engineering (Beginn WiSe) oder Foundations in Data Analysis (Beginn SoSe)
+Abschnitt A
+8
+Data Engineering
+Abschnitt B1.1
+11
+Special Topics in Data Analytics
+Abschnitt B2.2
+6
+Data Analysis
+Abschnitt B3
+5
+30
+SEMESTER 2
+Foundations in Data Analysis (Beginn WiSe) oder Foundations in Data Engineering (Beginn SoSe)
+Abschnitt A1.1
+8
+Advanced Topics in Data Engineering
+Abschnitt B1.2
+7
+Masterpraktikum
+Abschnitt A
+10
+Masterseminar
+Abschnitt A
+5
+30
+SEMESTER 3
+Special Topics in Data Analytics
+Abschnitt B2.2
+8
+Data Analytics
+Abschnitt B2.1
+6
+Überfachliche Grundlagen
+Abschnitt C
+6
+Anwendungsprojekt oder Forschungsarbeit unter Anleitung
+Abschnitt B1.2
+10
+30
+SEMESTER 4
+Master's Thesis
+30
+30
+Links relevant for questions related to Beispiel-Studienplan: https://www.cit.tum.de/cit/studium/studiengaenge/master-data-engineering-analytics/
+Beispiel-Studienplan
+----------------------------------------
+
+Prüfungen und Prüfungsordnungen
+Data Engineering and Analytics > Prüfungen und Prüfungsordnungen
+Detaillierte Informationen finden Sie unter Prüfungen.
+Für alle Studierenden gilt die Allgemeine Prüfungs- und Studienordnung (APSO) der TUM und die jeweilige Fachprüfungs- und Studienordnung (FPSO).
+Dritte Satzung zur Änderung der FPSO vom 19.08.2024gültig für Studierende, die ihr Fachstudium zum SoSe 2024 aufnehmen
+Satzung zur Änderung der FPSO vom 14.12.2022gültig für Studierende, die ihr Fachstudium zum WiSe 2023/24 aufnehmen
+FPSO 2021 vom 16. September 2021gültig für alle Studierenden mit Studienbeginn vom Wintersemester 2021/22
+FPSO 2018 in der Fassung vom 11. Oktober 2019gültig für alle Studierenden mit Studienbeginn von Wintersemester 2019/20 bis Sommersemester 2021
+FPSO 2018 vom 15. Oktober 2018gültig für alle Studierenden mit Studienbeginn von Wintersemester 2018/19 bis Sommersemester 2019
+FPSO 2016 vom 20. April 2016
+FPSO 2016: Sammeländerungssatzung zur Änderung des englischen Sprachnachweises vom 07.02.2018
+Bitte beachten:Rechtsverbindlich sind allein die in der Hochschule offiziell niedergelegten Fassungen der Fachprüfungs- und Studienordnungen und der entsprechenden Änderungssatzungen dazu. Siehe Satzungen & Ordnungen der TUM.
+Links relevant for questions related to Prüfungen und Prüfungsordnungen: https://www.cit.tum.de/cit/studium/studierende/pruefungsangelegenheiten-module/informatik/, https://www.tum.de/studium/im-studium/das-studium-organisieren/satzungen-ordnungen#statute;t:Allgemeine%20Pr%C3%BCfungs-%20und%20Studienordnung;sort:106;page:1, https://www.tum.de/studium/im-studium/das-studium-organisieren/satzungen-ordnungen?tx_in2tumstatutedatabase_pi1%5Baction%5D=download&tx_in2tumstatutedatabase_pi1%5Bcontroller%5D=Statute&tx_in2tumstatutedatabase_pi1%5BfileId%5D=P008470763&cHash=a55e17d206a0bc360c40aca491c7bc88, https://www.tum.de/studium/im-studium/das-studium-organisieren/satzungen-ordnungen?tx_in2tumstatutedatabase_pi1%5Baction%5D=download&tx_in2tumstatutedatabase_pi1%5Bcontroller%5D=Statute&tx_in2tumstatutedatabase_pi1%5BfileId%5D=P006738839&cHash=0897e3ad6d3e2020d2b8837e96527140, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Data_Engineering_and_Analytics/FPSO_MA_Data__Engineering_and_Analytics_2021-09-16.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Data_Engineering_and_Analytics/lesb._F._FPSO_MA_DataEngineeringAnalysis_mit_AES_vom_11.10.2019.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Data_Engineering_and_Analytics/2018-71-FPSO-MA-Data-Engineering-Analysis-15-10-2018-2.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Data_Engineering_and_Analytics/FPSO_MA_Data_Engineering_20.04.2016.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Studiengaenge/Master_Data_Engineering_and_Analytics/2018-02-SammelAeS-Sprachnachweis-FINAL-7-2-18-1.pdf, https://www.tum.de/studium/im-studium/das-studium-organisieren/satzungen-ordnungen, https://www.cit.tum.de/cit/studium/studiengaenge/master-data-engineering-analytics/
+Prüfungen und Prüfungsordnungen
+----------------------------------------
+
+Abschlussarbeit
+Data Engineering and Analytics > Abschlussarbeit
+Für den Abschluss eines Masterstudiums müssen Studierende eine wissenschaftliche Arbeit schreiben: die Masterarbeit. Dafür haben Sie sechs Monate Zeit. Die Anmeldung kann immer zum 15. des Monats erfolgen. Alles Wissenswerte von der Planung bis zur Abgabe finden Sie unter Abschlussarbeit.
+Links relevant for questions related to Abschlussarbeit: https://www.cit.tum.de/cit/studium/studierende/abschlussarbeit-abschluss/informatik/, https://www.cit.tum.de/cit/studium/studiengaenge/master-data-engineering-analytics/
+Abschlussarbeit
+----------------------------------------
+
+Abschluss
+Data Engineering and Analytics > Abschluss
+Nachdem Sie die erforderlichen Leistungen erbracht und Ihre Abschlussarbeit abgegeben haben, schließen Sie mit dem Master of Science (M.Sc.) ab. Damit können Sie ins Berufsleben starten. Tipps und Hinweise zum Abschluss und Ihren nächsten Schritten erhalten Sie unter Studienabschluss.
+Links relevant for questions related to Abschluss: https://www.tum.de/studium/studienabschluss, https://www.cit.tum.de/cit/studium/studiengaenge/master-data-engineering-analytics/
+Abschluss
+----------------------------------------
+

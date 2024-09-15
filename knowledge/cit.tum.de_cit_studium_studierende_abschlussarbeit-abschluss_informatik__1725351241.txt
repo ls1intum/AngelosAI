@@ -1,0 +1,224 @@
+https://www.cit.tum.de/cit/studium/studierende/abschlussarbeit-abschluss/informatik/
+Abschlussarbeit Informatik - TUM - TUM School of Computation, Information and Technology
+
+Abschlussarbeit und Abschluss in der Informatik
+Abschlussarbeit und Abschluss in der Informatik
+Links relevant for questions related to Abschlussarbeit und Abschluss in der Informatik: https://www.cit.tum.de/cit/studium/studierende/abschlussarbeit-abschluss/informatik/
+Abschlussarbeit und Abschluss in der Informatik
+----------------------------------------
+
+Allgemeine Hinweise zur Abschlussarbeit
+Abschlussarbeit und Abschluss in der Informatik > Allgemeine Hinweise zur Abschlussarbeit
+- Tipps zur Suche nach einem Thema und zur Durchführung der Abschlussarbeit bekommen Sie in jedem Semester in der Veranstaltung Let's talk about - Final Thesis @in.tum
+- Es besteht Immatrikulationspflicht während der Erstellung der Abschlussarbeit.
+- Informationen zu Schreibrichtlinien, Formatierung, Verlängerung, Abgabe sowie Sichtbarkeit der Anmeldung und Abgabe finden Sie unter Abschlussarbeit im Detail.
+Links relevant for questions related to Allgemeine Hinweise zur Abschlussarbeit: https://www.cit.tum.de/cit/studium/studierende/beratung/informatik/studienfachberatung/, https://www.cit.tum.de/cit/studium/studierende/abschlussarbeit-abschluss/#c4748, https://www.cit.tum.de/cit/studium/studierende/abschlussarbeit-abschluss/informatik/#c4295, https://www.cit.tum.de/cit/studium/studierende/abschlussarbeit-abschluss/informatik/
+Allgemeine Hinweise zur Abschlussarbeit
+----------------------------------------
+
+Abschlussarbeit im Detail
+Abschlussarbeit und Abschluss in der Informatik > Abschlussarbeit im Detail
+Links relevant for questions related to Abschlussarbeit im Detail: https://www.cit.tum.de/cit/studium/studierende/abschlussarbeit-abschluss/informatik/
+Abschlussarbeit im Detail
+----------------------------------------
+
+Vorgaben
+Abschlussarbeit und Abschluss in der Informatik > Vorgaben
+Links relevant for questions related to Vorgaben: https://www.cit.tum.de/cit/studium/studierende/abschlussarbeit-abschluss/informatik/
+Vorgaben
+----------------------------------------
+
+Mögliche Prüfer:innen
+Abschlussarbeit und Abschluss in der Informatik > Mögliche Prüfer:innen
+Prüfer:in für Bachelor- und Masterarbeiten können alle Professorinnen und Professoren der TUM School of Computation, Information and Technology (CIT) sein, sowie alle Zweitmitglieder der CIT:
+Liste der Professorinnen und Professoren auf der Webseite der School of CIT
+Links relevant for questions related to Mögliche Prüfer:innen: https://www.cit.tum.de/cit/school/personen/professuren/, https://www.cit.tum.de/cit/studium/studierende/abschlussarbeit-abschluss/informatik/
+Mögliche Prüfer:innen
+----------------------------------------
+
+Formatierung
+Abschlussarbeit und Abschluss in der Informatik > Formatierung
+
+Allgemeines
+Abschlussarbeit und Abschluss in der Informatik > Allgemeines
+- DIN A4
+- gedruckt
+- keine handschriftlichen Einträge (abgesehen von Datum und Unterschrift bei der Erklärung auf Seite 2)
+
+Einband
+Abschlussarbeit und Abschluss in der Informatik > Einband
+- Karton (keine Transparentfolie, keine Einbände aus Plastik)
+
+Bindung
+Abschlussarbeit und Abschluss in der Informatik > Bindung
+- fest gebunden (keine Lochbindung, Ringbindung bzw. Spiralbindung)
+
+Sprache
+Abschlussarbeit und Abschluss in der Informatik > Sprache
+- Für die Angaben auf dem Deckblatt soll die Sprache verwendet werden (Deutsch oder Englisch), in der die Arbeit verfasst ist.
+
+Äußeres Deckblatt
+Abschlussarbeit und Abschluss in der Informatik > Äußeres Deckblatt
+- Technische Universität München bzw. Technical University of Munich, optional mit Logo der TUM
+- School of Computation, Information and Technology - Informatik bzw. - Informatics
+- Diplomarbeit in | Masterarbeit in | Bachelorarbeit in Informatik | Informatik: Games Engineering | Wirtschaftsinformatik | Biomedical Computing | Data Engineering and Analytics | Robotics, Cognition, Intelligence | ... 	bzw. 	Diploma Thesis in | Master's Thesis in | Bachelor's Thesis in Informatics | Informatics: Games Engineering | Information Systems | Biomedical Computing | Data Engineering and Analytics | Robotics, Cognition, Intelligence | ...
+- Titel der Arbeit (in der Sprache, in der die Arbeit verfasst wurde) 	Achtung: Bei Abweichung vom angemeldeten Titel muss der:die Prüfer:in den neuen Titel bestätigen.
+- Vorname und Nachname des:der Bearbeiter:in.
+- Bitte beachten: 	Logo der TUM oder der School sind optional.  	Keine handschriftlichen Einträge oder sonstige aufgeklebten Logos 	Kein Firmenname oder Firmenlogo
+
+Buchrücken
+Abschlussarbeit und Abschluss in der Informatik > Buchrücken
+- Bearbeiter:in und Kurztitel, aufgedruckt oder dauerhaft befestigt (z.B. Text mit breitem Klebeband aufgeklebt)
+
+Seite 1
+Abschlussarbeit und Abschluss in der Informatik > Seite 1
+- Wiederholung der Angaben vom Deckblatt
+- Zusätzlich: 	 		Titel der Arbeit sowohl auf Deutsch als auch auf Englisch 		Prüfer:in: bzw. Examiner: Titel, Vor- und Nachname des:der Prüfer:in 		Betreuer:in: bzw. Supervisors: Titel, Vor- und Nachname des:der Betreuer:in. 		Abgabedatum: bzw. Submission date: Abgabedatum (darf nicht handschriftlich sein) 		 			 entweder das tatsächliche Abgabedatum  			 oder Deadline der Abgabe (der 15. des Monats)
+- Titel der Arbeit sowohl auf Deutsch als auch auf Englisch
+- Prüfer:in: bzw. Examiner: Titel, Vor- und Nachname des:der Prüfer:in
+- Betreuer:in: bzw. Supervisors: Titel, Vor- und Nachname des:der Betreuer:in.
+- Abgabedatum: bzw. Submission date: Abgabedatum (darf nicht handschriftlich sein) 		 			 entweder das tatsächliche Abgabedatum  			 oder Deadline der Abgabe (der 15. des Monats)
+- entweder das tatsächliche Abgabedatum
+- oder Deadline der Abgabe (der 15. des Monats)
+- Bitte beachten:  	Keine Angabe von Matrikelnummer oder anderen persönlichen Daten wie Geburtsdatum  	Kein Firmenname oder Firmenlogo.
+
+Seite 2
+Abschlussarbeit und Abschluss in der Informatik > Seite 2
+- Folgende Erklärung: 	Ich versichere, dass ich diese Diplomarbeit | Masterarbeit | Bachelorarbeit selbstständig verfasst und nur die angegebenen Quellen und Hilfsmittel verwendet habe. 	bzw. 	I confirm that this diploma | bachelor's | master's thesis is my own work and I have documented all sources and material used.
+- Mit Datum der Unterschrift (darf auch handschriftlich sein) und Unterschrift im Original
+Links relevant for questions related to Formatierung: https://www.cit.tum.de/cit/studium/studierende/abschlussarbeit-abschluss/informatik/
+Formatierung
+----------------------------------------
+
+Formatierung (Beispiele und Vorlage)
+Abschlussarbeit und Abschluss in der Informatik > Formatierung (Beispiele und Vorlage)
+LaTeX-Vorlage
+Es gibt eine (nicht offizielle) LaTeX-Vorlage, jedoch sollten auch hierbei immer noch einmal die zuvor erwähnten Hinweise kontrolliert werden.
+Links relevant for questions related to Formatierung (Beispiele und Vorlage): https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Im_Studium/Thesis/bachelor-thesis-example-1.jpg, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Im_Studium/Thesis/bachelor-thesis-example-2.jpg, https://github.com/fwalch/tum-thesis-latex, https://www.cit.tum.de/cit/studium/studierende/abschlussarbeit-abschluss/informatik/
+Formatierung (Beispiele und Vorlage)
+----------------------------------------
+
+Grundsätze guter studentischer Praxis
+Abschlussarbeit und Abschluss in der Informatik > Grundsätze guter studentischer Praxis
+Bitte beachten Sie den Leitfaden zu den Grundsätzen guter studentischer Praxis.
+Links relevant for questions related to Grundsätze guter studentischer Praxis: https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Im_Studium/Thesis/leitfaden-de_2016Jun22.pdf, https://www.cit.tum.de/cit/studium/studierende/abschlussarbeit-abschluss/informatik/
+Grundsätze guter studentischer Praxis
+----------------------------------------
+
+Schreibrichtlinien der TUM
+Abschlussarbeit und Abschluss in der Informatik > Schreibrichtlinien der TUM
+- TUM Verwendung des Englischen in Thesistiteln
+Links relevant for questions related to Schreibrichtlinien der TUM: https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Im_Studium/Thesis/TUM_Verwendung_des_Englischen_in_Thesistiteln.pdf, https://www.cit.tum.de/cit/studium/studierende/abschlussarbeit-abschluss/informatik/
+Schreibrichtlinien der TUM
+----------------------------------------
+
+TUM-Merkblatt Abschlussarbeiten
+Abschlussarbeit und Abschluss in der Informatik > TUM-Merkblatt Abschlussarbeiten
+Die aktuellste Version des Merkblattes finden Sie auf der zentralen Webseite Downloads – Lehre und Qualitätsmanagement.
+Links relevant for questions related to TUM-Merkblatt Abschlussarbeiten: https://www.tum.de/studium/lehre/downloads/#c64094, https://www.cit.tum.de/cit/studium/studierende/abschlussarbeit-abschluss/informatik/
+TUM-Merkblatt Abschlussarbeiten
+----------------------------------------
+
+Anmeldung
+Abschlussarbeit und Abschluss in der Informatik > Anmeldung
+Links relevant for questions related to Anmeldung: https://www.cit.tum.de/cit/studium/studierende/abschlussarbeit-abschluss/informatik/
+Anmeldung
+----------------------------------------
+
+Bachelorarbeit / Masterarbeit
+Abschlussarbeit und Abschluss in der Informatik > Bachelorarbeit / Masterarbeit
+Ab 15. Januar 2024 werden alle Abschlussarbeiten in der School of Computation, Information and Technology über das CIT-Portal verwaltet (ausgenommen sind die Bioinformatik Studiengänge).
+Wenn Sie ein Thema und einen betreuenden Lehrstuhl für Ihre Abschlussarbeit gefunden haben, werden Sie vom betreuenden Lehrstuhl angemeldet. Sie erhalten eine E-Mail mit der Aufforderung, die Anmeldung der Abschlussarbeit zu bestätigen. Erst nachdem Sie die Anmeldung bestätigt haben, können die Zulassungsvoraussetzungen vom Academic Programs Office geprüft werden und Sie erhalten eine E-Mail über die verbindliche Anmeldung zur Abschlussarbeit.
+Weitere Infos siehe Abschlussarbeit und Abschluss des Studiums
+Bearbeitungszeit Bachelorarbeiten für Studiengänge der Informatik: 4 Monate im Bachelor Informatik und Informatik: Games Engineering; 5 Monate im Bachelor Wirtschaftsinformatik.
+Bearbeitungszeit Masterarbeiten für Studiengänge der Informatik: 6 Monate. Für Teilzeit-Studierende gelten andere Fristen.
+Links relevant for questions related to Bachelorarbeit / Masterarbeit: https://portal.cit.tum.de/de/Theses, https://www.cit.tum.de/cit/studium/studierende/abschlussarbeit-abschluss/, https://www.cit.tum.de/cit/studium/studiengaenge/master-informatik/in-teilzeit-studieren/, https://www.cit.tum.de/cit/studium/studierende/abschlussarbeit-abschluss/informatik/
+Bachelorarbeit / Masterarbeit
+----------------------------------------
+
+Sichtbarkeit in TUMonline (Anmeldung und Abgabe)
+Abschlussarbeit und Abschluss in der Informatik > Sichtbarkeit in TUMonline (Anmeldung und Abgabe)
+Wie kann ich in TUMonline sehen, dass meine Abschlussarbeit angemeldet ist?
+Wenn Sie von der Startseite mit den Kacheln in TUMonline ausgehen, finden Sie im Bereich "Studium und Lehre" die Kachel "Studierendenkartei". Wenn Sie diese anklicken, gelangen Sie in Ihre Kartei, in der auch ein Reiter "Abschlüsse" zu finden ist. Ihre Abschlussarbeit ist dort im unteren Bereich aufgeführt, sobald Ihre Anmeldung registriert wurde. Wenn Sie den Mauszeiger über den orangenen Punkt halten, wird Ihr Abgabedatum angezeigt.
+Alternativ können Sie über die Kachel "Studienstatus/Studienplan" zu Ihrem Curriculum Support gelangen. Wenn Sie dort den Eintrag "Bachelor Thesis" bzw. "Master Thesis" mit dem "Plus" zweimal erweitern, sehen Sie dort einen Vermerk, dass die Arbeit angemeldet ist.
+Wenn Ihre Thesis bei uns eingegangen und verbucht ist, wird an dieser Stelle auch die Abgabe angezeigt.
+Links relevant for questions related to Sichtbarkeit in TUMonline (Anmeldung und Abgabe): https://www.cit.tum.de/cit/studium/studierende/abschlussarbeit-abschluss/informatik/
+Sichtbarkeit in TUMonline (Anmeldung und Abgabe)
+----------------------------------------
+
+Abgabe und Verlängerung für Arbeiten mit Beginn vor dem 15.01.2024
+Abschlussarbeit und Abschluss in der Informatik > Abgabe und Verlängerung für Arbeiten mit Beginn vor dem 15.01.2024
+Die nachstehenden Regularien betreffen nur Studierende der folgenden Studiengänge und wenn die Thesis vor dem 15.01.2024 begonnen wurde:
+- Bachelor: Informatik, Informatik: Games Engineering, Wirschaftsinformatik
+- Master: Biomedical Computing, Data Engineering and Analytics, Informatik, Informatik: Games Engineering, Information Systems (Wirtschaftsinformatik)
+Links relevant for questions related to Abgabe und Verlängerung für Arbeiten mit Beginn vor dem 15.01.2024: https://www.cit.tum.de/cit/studium/studierende/abschlussarbeit-abschluss/informatik/
+Abgabe und Verlängerung für Arbeiten mit Beginn vor dem 15.01.2024
+----------------------------------------
+
+Abgabe vor Ort - Für Bioinformatik Abschlussarbeiten unabhängig vom Beginndatum der Arbeit, für alle anderen Studienrichtungen nur wenn das Anfangsdatum der Arbeit vor dem 15.01.2024 liegt.
+Abschlussarbeit und Abschluss in der Informatik > Abgabe vor Ort - Für Bioinformatik Abschlussarbeiten unabhängig vom Beginndatum der Arbeit, für alle anderen Studienrichtungen nur wenn das Anfangsdatum der Arbeit vor dem 15.01.2024 liegt.
+Alle Studierenden, deren Arbeit nicht über Koinon angemeldet wurde und deswegen physisch abzugeben ist,  können sich mit ihrer jeweiligen Sachbearbeiterin (oder Susanne Kinzel) in Verbindung setzen, um einen individuellen Abgabetermin zu vereinbaren
+Links relevant for questions related to Abgabe vor Ort - Für Bioinformatik Abschlussarbeiten unabhängig vom Beginndatum der Arbeit, für alle anderen Studienrichtungen nur wenn das Anfangsdatum der Arbeit vor dem 15.01.2024 liegt.: https://www.cit.tum.de/cit/studium/studierende/abschlussarbeit-abschluss/informatik/
+Abgabe vor Ort - Für Bioinformatik Abschlussarbeiten unabhängig vom Beginndatum der Arbeit, für alle anderen Studienrichtungen nur wenn das Anfangsdatum der Arbeit vor dem 15.01.2024 liegt.
+----------------------------------------
+
+Abgabe per Post - Nur für Arbeiten mit Beginn vor dem 15.01.2024
+Abschlussarbeit und Abschluss in der Informatik > Abgabe per Post - Nur für Arbeiten mit Beginn vor dem 15.01.2024
+Sollte es Ihnen nicht möglich sein, Ihre Abschlussarbeit vor Ort abzugeben, müssen Sie diese per Post einsenden. Bitte schicken Sie ein Exemplar Ihrer Abschlussarbeit per Post an:
+Technische Universität München Servicebüro Studium Informatik, SB-S-IN Boltzmannstr. 3 D-85748 Garching
+Als Tag der Abgabe zählt der Tag des Poststempels.
+Links relevant for questions related to Abgabe per Post - Nur für Arbeiten mit Beginn vor dem 15.01.2024: https://www.cit.tum.de/cit/studium/studierende/abschlussarbeit-abschluss/informatik/
+Abgabe per Post - Nur für Arbeiten mit Beginn vor dem 15.01.2024
+----------------------------------------
+
+Regularien zur Abgabe - Nur für Arbeiten mit Beginn vor dem 15.01.2024
+Abschlussarbeit und Abschluss in der Informatik > Regularien zur Abgabe - Nur für Arbeiten mit Beginn vor dem 15.01.2024
+- Termin ist jeweils am 15. eines Monats bzw. am ersten Arbeitstag danach, wenn der 15. auf einen Samstag, Sonntag oder Feiertag fällt
+- Freiwillige frühere Abgabe ist möglich
+- Ein Exemplar in Papierform beim Servicebüro Studium Informatik
+- Ein Exemplar bei dem:der Prüfer:in (klären Sie bitte mit Ihrem:r Prüfer:in, wie dieses Exemplar eingereicht werden soll)
+- Freiwillig ein Exemplar in der Fachbereichsbibliothek
+- Freiwillig Exemplare für den:die Betreuerin
+Wenn eine Abschlussarbeit in Absprache mit dem:der Prüfer:in im Sinne von §18 Abs. 2 der APSO als Gruppenarbeit zugelassen wurde, muss trotzdem jede:r Autor:in ein eigenes Exemplar der Arbeit mit einer eigenen Eidesstattlichen Erklärung abgeben. Die individuelle Zuordnung der zu bewertenden Prüfungsleistungen soll deutlich aus der Arbeit hervorgehen. Auf dem Deckblatt und dem Buchrücken steht nur der Namen des Studierenden, der dieses Exemplar einreicht. Auf die erste Seite können dann bei "Autor:innen" alle Autor:innen gelistet werden.
+Links relevant for questions related to Regularien zur Abgabe - Nur für Arbeiten mit Beginn vor dem 15.01.2024: https://www.cit.tum.de/cit/studium/studierende/abschlussarbeit-abschluss/informatik/
+Regularien zur Abgabe - Nur für Arbeiten mit Beginn vor dem 15.01.2024
+----------------------------------------
+
+Verlängerung
+Abschlussarbeit und Abschluss in der Informatik > Verlängerung
+Sollten Sie aus triftigen, nicht von Ihnen zu vertretenden Gründen nicht in der Lage sein, Ihren Abgabetermin einzuhalten, können Sie einen Antrag auf Verlängerung der Abschlussarbeit an den Prüfungsausschuss stellen.
+Nur für Arbeiten mit Beginn vor dem 15.01.2024 ist der Antrag per Formular (siehe unten) unverzüglich bei der für Ihren Studiengang zuständigen Schriftführung per Email von Ihrer TUM-Adresse einzureichen. Bitte füllen Sie den Antrag nach Möglichkeit digital aus und unterschreiben ihn digital.
+Postadresse:Technische Universität MünchenName der SchriftführungServicebüro Studium Informatik, SB-S-INBoltzmannstr. 3D-85748 Garching
+Die Bearbeitungszeit nach Einreichung aller Unterlagen beträgt in der Regel zwei Wochen, die Entscheidung des Prüfungsausschusses wird Ihnen mitgeteilt.
+Anträge lassen sich grundsätzlich in zwei Kategorien unterteilen:
+1) Gesundheitliche Gründe
+Wenn Sie erkrankt sind und durch ein Attest nachweisen können, dass Sie an der Bearbeitung Ihrer Thesis gehindert sind, ruht die Bearbeitungszeit. In der Fakultät für Informatik wird dies durch eine Verlängerung abgebildet. Dem Antrag ist ein ärztliches Attest beizulegen. Eine Arbeitsunfähigkeitsbescheinigung reicht nicht aus. Unter Rücktritt von Prüfungen – Atteste und Vertrauensärzte finden Sie die Anforderungen an ein Attest.
+Antrag aus gesundheitlichen Gründen
+2) Sonstige Gründe
+Bei Anträgen aus anderen triftigen, nicht von Ihnen zu vertretenden Gründen, kann die Bearbeitungsfrist in besonders begründeten Ausnahmefällen im Einvernehmen mit dem:der Themensteller:in und mit Genehmigung des Prüfungsausschusses verlängert werden. Bitte fügen Sie Ihrem Antrag eine ausführliche Begründung (möglichst mit Belegen) bei.
+Antrag aus sonstigen Gründen
+Links relevant for questions related to Verlängerung: https://www.tum.de/studium/im-studium/das-studium-organisieren/pruefungen-und-ergebnisse/ruecktritt-von-pruefungen-einreichung-von-attesten, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Im_Studium/Thesis/AntragBA-MA_Krankheit.pdf, https://www.cit.tum.de/fileadmin/w00byx/cit/Studium/Im_Studium/Thesis/AntragBA-MA_sonstiges.pdf, https://www.cit.tum.de/cit/studium/studierende/abschlussarbeit-abschluss/informatik/
+Verlängerung
+----------------------------------------
+
+Abschluss
+Abschlussarbeit und Abschluss in der Informatik > Abschluss
+
+Freigabe Abschlusszeugnis
+Abschlussarbeit und Abschluss in der Informatik > Abschluss > Freigabe Abschlusszeugnis
+Bitte melden Sie sich für die Freigabe Ihrer Abschlussdokumente per E-Mail bei der Schriftführung Ihres Studiengangs, wenn alle Noten eingetragen und gültig gesetzt sind. Für die Immatrikulation zu konsekutiven Masterstudiengängen der Informatik an der TUM gilt: Jeweils ab Mitte September sowie ab Mitte März wird der Abschluss nach der Zeugnisfreigabe direkt an das Immatrikulationsamt gemeldet, sodass die Abschlussdokumente für die Immatrikulation nicht mehr nötig sind.
+
+Übergang Bachelor zum Master
+Abschlussarbeit und Abschluss in der Informatik > Abschluss > Übergang Bachelor zum Master
+Wenn Sie sich nach Ihrem Bachelorabschluss in einem Informatikstudiengang an der TUM School of Computation, Information and Technology zu einem anschließenden Master-Informatik-Studiengang an unserer School einschreiben, wird Ihr Bachelorabschluss für die Immatrikulation (nicht für die Bewerbung!) nach der Zeugnisfreigabe intern an die Abteilung für Immatrikulation weitergeleitet. Die Abschlussdokumente sind somit für die Immatrikulation nicht mehr nötig. Im Online-Bewerbungsportal erscheint dann für die Studienabschlussurkunde und das Studienabschlusszeugnis ein grüner Haken (Status der Bewerbung). Bitte beachten Sie, dass es einige Tage dauern kann, bis die Dokumente im Portal verbucht sind. Wenn Sie nach der Zeugnisfreigabe diese beiden grünen Haken eine Woche vor der Immatrikulationsfrist noch nicht zu sehen sind, kontaktieren Sie bitte schnellstmöglich die Schriftführung Ihres Studiengangs.
+
+Bescheinigungen über den erfolgreichen Studienabschluss
+Abschlussarbeit und Abschluss in der Informatik > Abschluss > Bescheinigungen über den erfolgreichen Studienabschluss
+Bitte beachten Sie, dass wir eine Bescheinigung über den erfolgreichen Studienabschluss nur erstellt können, wenn alle Noten einschließlich Abschlussarbeit in TUMonline gültig sind. Die Ausstellung von Studienabschlussbescheinigungen für Studierende der Informatik erfolgt ausschließlich durch das Graduation Office and Academic Records Campus Garching nach Freigabe durch den Prüfungsausschuss. Wenden Sie sich bitte für die Zeugnisfreigabe rechtzeitig nach Gültigsetzen aller Leistungen an die Schriftführung Ihres Studiengangs. Weitere Informationen finden Sie unter Studienabschluss.
+
+
+Abschlussarbeit und Abschluss in der Informatik > Abschluss >
+Links relevant for questions related to Abschluss: https://www.tum.de/studium/bewerbung/onlinebewerbung/onlinebewerbung-status/, https://www.tum.de/studium/studienabschluss/abschlussdokumente/, https://campus.tum.de/tumonline/wborggruppen.gruppen?pOrgNr=48157, https://www.tum.de/studium/studienabschluss/, https://www.cit.tum.de/cit/studium/studierende/abschlussarbeit-abschluss/informatik/
+Abschluss
+----------------------------------------
+
