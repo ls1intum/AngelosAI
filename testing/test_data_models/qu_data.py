@@ -1,5 +1,5 @@
 class QAData:
-    def __init__(self, question: str, answer: str, key_facts: list, expected_sources: list, study_program: str, label: str):
+    def __init__(self, question: str, answer: str, key_facts: list, expected_sources: list, classification: str, label: str):
         """
         Initializes the QAData object with the given attributes.
 
@@ -12,7 +12,7 @@ class QAData:
         self.answer = answer
         self.key_facts = key_facts
         self.expected_sources = expected_sources
-        self.classification = study_program
+        self.classification = classification
         self.label = label
 
     def __repr__(self):

@@ -33,7 +33,7 @@ os.makedirs(results_dir, exist_ok=True)
 
 # Initialize CSV columns
 CSV_COLUMNS = [
-    'Question', 'Answer', 'Ground Truth', 'Cosine Similarity', 'Euclidean Distance',
+    'Label', 'Question', 'Answer', 'Ground Truth', 'Used Tokens', 'Cosine Similarity', 'Euclidean Distance',
     'Custom LLM Classification', 'Custom LLM Fact Evaluation',
     'Contextual Precision (General)', 'Contextual Precision Reason (General)',
     'Contextual Precision (Specific)', 'Contextual Precision Reason (Specific)',
@@ -70,6 +70,7 @@ def test_rag_api(qaData):
     answer = rag_response['answer']
     general_context = rag_response['general_context']
     specific_context = rag_response['specific_context']
+    used_tokens = rag_response['used_tokens']
 
     # Step 2: Run LLM Fact Classification
     llm_classification = llm_eval.ask_llm_to_classify(qaData, answer)
@@ -118,9 +119,11 @@ def test_rag_api(qaData):
 
     # Step 6: Store results in DataFrame
     result_row = {
+        'Label': qaData.label,
         'Question': qaData.question,
         'Answer': answer,
         'Ground Truth': qaData.answer,
+        'Used Tokens': used_tokens,
         'Cosine Similarity': embedding_results['cosine_similarity'],
         'Euclidean Distance': embedding_results['euclidean_distance'],
         'Custom LLM Classification': llm_classification,

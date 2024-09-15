@@ -162,7 +162,6 @@ class WeaviateManager:
         
 
     def add_documents(self, chunks: List[Document], study_program: str):
-        logging.info(self.schema_initialized)
         try:
             # Make use of OpenAI mass batch embedding
             if isinstance(self.model, OpenAIModel):

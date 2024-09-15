@@ -6,3 +6,4 @@ rag-venv
 */DS_Store
 .pytest_cache/
 docker/.docker-data
+testing/results/*

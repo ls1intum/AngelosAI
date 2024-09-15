@@ -11,6 +11,7 @@ class RequestHandler:
     def handle_question(self, question: str, classification: str):
         """Handles the question by fetching relevant documents and generating an answer."""
         general_context = self.weaviate_manager.get_relevant_context(question, "general")
+        specific_context = None
         if classification != "general":
             specific_context = self.weaviate_manager.get_relevant_context(question, classification)
         messages = self.prompt_manager.create_messages(general_context, specific_context, question)
@@ -20,6 +21,7 @@ class RequestHandler:
     def handle_question_test_mode(self, question: str, classification: str):
         """Handles the question by fetching relevant documents and generating an answer."""
         general_context, general_context_list = self.weaviate_manager.get_relevant_context_as_list(question, "general")
+        specific_context = None
         if classification != "general":
             specific_context, specific_context_list = self.weaviate_manager.get_relevant_context_as_list(question, classification)
         else:

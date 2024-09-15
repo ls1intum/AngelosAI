@@ -8,7 +8,7 @@ from app.models.base_model import BaseModelClient
 class OpenAIModel(BaseModelClient):
     def __init__(self, api_key: str, url: str):
         self.model = "gpt-4o-mini"
-        self.max_tokens = 100
+        self.max_tokens = 800
         self.temperature = 0.5
         openai.api_key = api_key
         self.emmodel = "text-embedding-3-small"
