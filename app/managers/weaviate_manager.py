@@ -54,6 +54,9 @@ class WeaviateManager:
                 name=DocumentSchema.STUDY_PROGRAM.value,
                 description="The study program of the document",
                 data_type=DataType.TEXT,
+                index_filterable=True,
+                index_range_filters=True,
+                index_searchable=True
             ),
             Property(
                 name=DocumentSchema.CONTENT.value,
@@ -68,6 +71,11 @@ class WeaviateManager:
             distance_metric=VectorDistances.COSINE
         )
 
+        # Defne inverted index configuration
+        inverted_index_config = Configure.inverted_index(
+            index_property_length= True
+        )
+
         try:
             # Create the collection with the specified configuration
             collection = self.client.collections.create(
@@ -75,7 +83,8 @@ class WeaviateManager:
                 description="A collection for storing study-related documents for RAG system",
                 properties=properties,
                 vector_index_config=vector_index_config,
-                vectorizer_config=None  # Since we are manually providing embeddings
+                vectorizer_config=None,  # Since we are manually providing embeddings
+                inverted_index_config=inverted_index_config,
             )
             logging.info(f"Schema for {collection_name} created successfully")
             self.schema_initialized = True
@@ -102,9 +111,14 @@ class WeaviateManager:
         """Retrieve documents based on the question embedding and study program."""
         try:
             question_embedding = self.model.embed(question)  # Embed the query
+            study_program = WeaviateManager.normalize_study_program_name(study_program)
+            study_program_length = len(study_program)
             query_result = self.documents.query.near_vector(
                 near_vector=question_embedding,
-                filters=Filter.by_property(DocumentSchema.STUDY_PROGRAM.value).equal(study_program),
+                filters=Filter.all_of([
+                    Filter.by_property(DocumentSchema.STUDY_PROGRAM.value).equal(study_program),
+                    Filter.by_property(DocumentSchema.STUDY_PROGRAM.value, length=True).equal(study_program_length),
+                ]),
                 limit=5,
                 return_metadata=wvc.query.MetadataQuery(certainty=True)
             )
@@ -117,26 +131,34 @@ class WeaviateManager:
             return context
         except Exception as e:
             logging.error(f"Error retrieving relevant context: {e}")
-            return ""
-        
+            return ""        
+
     def get_relevant_context_as_list(self, question: str, study_program: str):
         """Retrieve documents based on the question embedding and study program and context as list for test mode."""
         try:
-            question_embedding = self.model.embed(question)  # Embed the query
+            limit = 7
+            if study_program != "general":
+                limit = 10
+            question_embedding = self.model.embed(question)
+            study_program = WeaviateManager.normalize_study_program_name(study_program)
+            study_program_length = len(study_program)
             query_result = self.documents.query.near_vector(
                 near_vector=question_embedding,
-                filters=Filter.by_property(DocumentSchema.STUDY_PROGRAM.value).equal(study_program),
-                limit=5,
+                filters=Filter.all_of([
+                    Filter.by_property(DocumentSchema.STUDY_PROGRAM.value).equal(study_program),
+                    Filter.by_property(DocumentSchema.STUDY_PROGRAM.value, length=True).equal(study_program_length),
+                ]),
+                limit=limit,
                 return_metadata=wvc.query.MetadataQuery(certainty=True)
             )
             for result in query_result.objects:
-                print(result.properties)
-                print(result.metadata)
+                logging.info(f"Document study program: {result.properties['study_program']}")
+                #print(result.metadata)
 
             context = "\n\n".join(result.properties['content'] for result in query_result.objects)
             context_list = [result.properties['content'] for result in query_result.objects]
-            logging.info(context)
-            logging.info(context_list)
+            # logging.info(context)
+            # logging.info(context_list)
             return context, context_list
         except Exception as e:
             logging.error(f"Error retrieving relevant context: {e}")
@@ -182,3 +204,8 @@ class WeaviateManager:
         except Exception as e:
             logging.error(f"Error adding document {e}")
 
+    @staticmethod
+    def normalize_study_program_name(study_program: str) -> str:
+        """Normalize study program names to a consistent format."""
+        # Lowercase and replace spaces with hyphens
+        return study_program.strip().lower().replace(" ", "-")
