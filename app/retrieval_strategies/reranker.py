@@ -91,7 +91,7 @@ class Reranker:
             # Get the ranked documents based on the response indexes
             ranked_context_list = [context_list[result.index] for result in response.results]
 
-            return ranked_context_list[:top_n]
+            return ranked_context_list
         except Exception as e:
             logging.error(f"Error during Cohere re-ranking: {e}")
-            return context_list
+            return context_list[:top_n]
