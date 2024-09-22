@@ -3,12 +3,15 @@ from enum import Enum
 from typing import List
 from app.models.openai_model import OpenAIModel
 from app.models.base_model import BaseModelClient
+from app.retrieval_strategies.keyword_extractor_bert import KeywordExtractorBERT
 from langchain.docstore.document import Document
+from app.retrieval_strategies.reranker import Reranker, DocumentWithEmbedding
 
 import weaviate
 import weaviate.classes as wvc
 from weaviate.collections import Collection
 from weaviate.collections.classes.config import DataType, Configure, Property
+from weaviate.classes.query import Rerank
 from weaviate.collections.classes.config_vectorizers import VectorDistances
 from weaviate.collections.classes.filters import Filter
 
@@ -27,12 +30,13 @@ class DocumentSchema(Enum):
 
 
 class WeaviateManager:
-    def __init__(self, url: str, embedding_model: BaseModelClient):
+    def __init__(self, url: str, embedding_model: BaseModelClient, reranker: Reranker):
         logging.info("Initializing Weaviate Manager")
         self.client = weaviate.connect_to_local(host=config.WEAVIATE_URL, port=config.WEAVIATE_PORT)
         self.model = embedding_model
         self.schema_initialized = False
         self.documents = self._initialize_schema()
+        self.reranker = reranker
 
     def __del__(self):
         self.client.close()
@@ -120,7 +124,7 @@ class WeaviateManager:
                     Filter.by_property(DocumentSchema.STUDY_PROGRAM.value, length=True).equal(study_program_length),
                 ]),
                 limit=5,
-                return_metadata=wvc.query.MetadataQuery(certainty=True)
+                return_metadata=wvc.query.MetadataQuery(certainty=True, score=True)
             )
             for result in query_result.objects:
                 print(result.properties)
@@ -133,15 +137,18 @@ class WeaviateManager:
             logging.error(f"Error retrieving relevant context: {e}")
             return ""        
 
-    def get_relevant_context_as_list(self, question: str, study_program: str):
+    def get_relevant_context_as_list(self, question: str, study_program: str, keywords: str):
         """Retrieve documents based on the question embedding and study program and context as list for test mode."""
         try:
-            limit = 7
+            limit = 10
             if study_program != "general":
                 limit = 10
             question_embedding = self.model.embed(question)
+            # Get study program name and length
             study_program = WeaviateManager.normalize_study_program_name(study_program)
             study_program_length = len(study_program)
+            logging.info(f"Keywords: {keywords}")
+
             query_result = self.documents.query.near_vector(
                 near_vector=question_embedding,
                 filters=Filter.all_of([
@@ -149,17 +156,30 @@ class WeaviateManager:
                     Filter.by_property(DocumentSchema.STUDY_PROGRAM.value, length=True).equal(study_program_length),
                 ]),
                 limit=limit,
-                return_metadata=wvc.query.MetadataQuery(certainty=True)
+                include_vector=True,
+                # rerank=Rerank(
+                #     prop=DocumentSchema.CONTENT.value,
+                #     query=keywords
+                # ),
+                return_metadata=wvc.query.MetadataQuery(certainty=True, score=True, distance=True)
             )
+            documents_with_embeddings: List[DocumentWithEmbedding] = []
             for result in query_result.objects:
-                logging.info(f"Document study program: {result.properties['study_program']}")
-                #print(result.metadata)
-
-            context = "\n\n".join(result.properties['content'] for result in query_result.objects)
+                logging.info(f"Certainty: {result.metadata.certainty}, Score: {result.metadata.score}, Distance: {result.metadata.distance}")
+                documents_with_embeddings.append(DocumentWithEmbedding(content=result.properties['content'], embedding=result.vector['default']))
+            
+            # sorted_context = self.reranker.rerank_with_embeddings(documents_with_embeddings, keyword_string=keywords)
+            # context = "\n\n".join(sorted_context)
             context_list = [result.properties['content'] for result in query_result.objects]
+            for ctxt in context_list:
+                logging.info(ctxt)
+            logging.info(context_list)
+            # context = "\n\n".join(context_list)
+            sorted_context = self.reranker.rerank_with_cohere(context_list=context_list, query=question, top_n=5)
+            context = "\n\n".join(sorted_context)
             # logging.info(context)
             # logging.info(context_list)
-            return context, context_list
+            return context, sorted_context
         except Exception as e:
             logging.error(f"Error retrieving relevant context: {e}")
             return ""
