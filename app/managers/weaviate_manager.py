@@ -150,8 +150,16 @@ class WeaviateManager:
                     Filter.by_property(DocumentSchema.STUDY_PROGRAM.value, length=True).equal(study_program_length),
                 ]),
                 limit=limit,
+                # include_vector=True,
                 return_metadata=wvc.query.MetadataQuery(certainty=True, score=True, distance=True)
             )
+            # documents_with_embeddings: List[DocumentWithEmbedding] = []
+            for result in query_result.objects:
+                logging.info(f"Certainty: {result.metadata.certainty}, Score: {result.metadata.score}, Distance: {result.metadata.distance}")
+                # documents_with_embeddings.append(DocumentWithEmbedding(content=result.properties['content'], embedding=result.vector['default']))
+            
+            # sorted_context = self.reranker.rerank_with_embeddings(documents_with_embeddings, keyword_string=keywords)
+
             context_list = [result.properties['content'] for result in query_result.objects]
 
             # Remove exact duplicates from context_list
