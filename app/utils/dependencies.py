@@ -1,4 +1,3 @@
-import logging
 from app.managers.request_handler import RequestHandler
 from app.managers.weaviate_manager import WeaviateManager
 from app.models.model_loader import get_model
