@@ -7,6 +7,7 @@ import weaviate.classes as wvc
 from langchain.docstore.document import Document
 from weaviate.collections import Collection
 from weaviate.collections.classes.config import DataType, Configure, Property
+from weaviate.classes.query import Rerank
 from weaviate.collections.classes.config_vectorizers import VectorDistances
 from weaviate.collections.classes.filters import Filter
 
@@ -27,12 +28,13 @@ class DocumentSchema(Enum):
 
 
 class WeaviateManager:
-    def __init__(self, url: str, embedding_model: BaseModelClient):
+    def __init__(self, url: str, embedding_model: BaseModelClient, reranker: Reranker):
         logging.info("Initializing Weaviate Manager")
         self.client = weaviate.connect_to_local(host=config.WEAVIATE_URL, port=config.WEAVIATE_PORT)
         self.model = embedding_model
         self.schema_initialized = False
         self.documents = self.initialize_schema()
+        self.reranker = reranker
 
     def __del__(self):
         self.client.close()
@@ -54,6 +56,9 @@ class WeaviateManager:
                 name=DocumentSchema.STUDY_PROGRAM.value,
                 description="The study program of the document",
                 data_type=DataType.TEXT,
+                index_filterable=True,
+                index_range_filters=True,
+                index_searchable=True
             ),
             Property(
                 name=DocumentSchema.CONTENT.value,
@@ -68,6 +73,11 @@ class WeaviateManager:
             distance_metric=VectorDistances.COSINE
         )
 
+        # Defne inverted index configuration
+        inverted_index_config = Configure.inverted_index(
+            index_property_length= True
+        )
+
         try:
             # Create the collection with the specified configuration
             collection = self.client.collections.create(
@@ -75,7 +85,8 @@ class WeaviateManager:
                 description="A collection for storing study-related documents for RAG system",
                 properties=properties,
                 vector_index_config=vector_index_config,
-                vectorizer_config=None  # Since we are manually providing embeddings
+                vectorizer_config=None,  # Since we are manually providing embeddings
+                inverted_index_config=inverted_index_config,
             )
             logging.info(f"Schema for {collection_name} created successfully")
             self.schema_initialized = True
@@ -101,49 +112,74 @@ class WeaviateManager:
         except Exception as e:
             logging.error(f"Failed to add document: {e}")
 
-    def get_relevant_context(self, question: str, study_program: str):
-        """Retrieve documents based on the question embedding and study program."""
+    def get_relevant_context(self, question: str, study_program: str, keywords: str = None, test_mode: bool = False) -> Union[str, Tuple[str, List[str]]]:
+        """
+        Retrieve relevant documents based on the question embedding and study program.
+        Optionally returns both the concatenated context and the sorted context list for testing purposes.
+
+        Args:
+            question (str): The student's question.
+            study_program (str): The study program of the student.
+            keywords (str, optional): Extracted keywords for boosting. Defaults to None.
+            test_mode (bool, optional): If True, returns both context and sorted_context. Defaults to False.
+
+        Returns:
+            Union[str, Tuple[str, List[str]]]:
+                - If test_mode is False: Returns the concatenated context string.
+                - If test_mode is True: Returns a tuple of (context, sorted_context list).
+        """
         try:
-            question_embedding = self.model.embed(question)  # Embed the query
+            # Define the number of documents to retrieve
+            limit = 10
+            if study_program.lower() != "general":
+                limit = 10  # Adjust this value if needed based on study program specificity
+
+            # Embed the question using the embedding model
+            question_embedding = self.model.embed(question)
+
+            # Normalize the study program name and calculate its length
+            study_program = WeaviateManager.normalize_study_program_name(study_program)
+            study_program_length = len(study_program)
+
+            # logging.info(f"Keywords: {keywords}")
+
+            # Perform the vector-based query with filters
             query_result = self.documents.query.near_vector(
                 near_vector=question_embedding,
-                filters=Filter.by_property(DocumentSchema.STUDY_PROGRAM.value).equal(study_program),
-                limit=5,
-                return_metadata=wvc.query.MetadataQuery(certainty=True)
+                filters=Filter.all_of([
+                    Filter.by_property(DocumentSchema.STUDY_PROGRAM.value).equal(study_program),
+                    Filter.by_property(DocumentSchema.STUDY_PROGRAM.value, length=True).equal(study_program_length),
+                ]),
+                limit=limit,
+                # include_vector=True,
+                return_metadata=wvc.query.MetadataQuery(certainty=True, score=True, distance=True)
             )
+            # documents_with_embeddings: List[DocumentWithEmbedding] = []
             for result in query_result.objects:
-                print(result.properties)
-                print(result.metadata)
+                logging.info(f"Certainty: {result.metadata.certainty}, Score: {result.metadata.score}, Distance: {result.metadata.distance}")
+                # documents_with_embeddings.append(DocumentWithEmbedding(content=result.properties['content'], embedding=result.vector['default']))
 
-            context = "\n\n".join(result.properties['content'] for result in query_result.objects)
-            logging.info(context)
-            return context
-        except Exception as e:
-            logging.error(f"Error retrieving relevant context: {e}")
-            return ""
+            # sorted_context = self.reranker.rerank_with_embeddings(documents_with_embeddings, keyword_string=keywords)
 
-    def get_relevant_context_as_list(self, question: str, study_program: str):
-        """Retrieve documents based on the question embedding and study program and context as list for test mode."""
-        try:
-            question_embedding = self.model.embed(question)  # Embed the query
-            query_result = self.documents.query.near_vector(
-                near_vector=question_embedding,
-                filters=Filter.by_property(DocumentSchema.STUDY_PROGRAM.value).equal(study_program),
-                limit=5,
-                return_metadata=wvc.query.MetadataQuery(certainty=True)
-            )
-            for result in query_result.objects:
-                print(result.properties)
-                print(result.metadata)
-
-            context = "\n\n".join(result.properties['content'] for result in query_result.objects)
             context_list = [result.properties['content'] for result in query_result.objects]
-            logging.info(context)
-            logging.info(context_list)
-            return context, context_list
+
+            # Remove exact duplicates from context_list
+            context_list = WeaviateManager.remove_exact_duplicates(context_list)
+            logging.info(f"Context list length after removing exact duplicates: {len(context_list)}")
+
+            # Rerank the unique contexts using Cohere
+            sorted_context = self.reranker.rerank_with_cohere(context_list=context_list, query=question, top_n=5)
+            context = "\n\n".join(sorted_context)
+
+            # Return based on test_mode
+            if test_mode:
+                return context, sorted_context
+            else:
+                return context
+
         except Exception as e:
             logging.error(f"Error retrieving relevant context: {e}")
-            return ""
+            return "" if not test_mode else ("", [])
 
     def delete_collection(self):
         """
@@ -183,3 +219,19 @@ class WeaviateManager:
 
         except Exception as e:
             logging.error(f"Error adding document {e}")
+
+    @staticmethod
+    def normalize_study_program_name(study_program: str) -> str:
+        """Normalize study program names to a consistent format."""
+        # Lowercase and replace spaces with hyphens
+        return study_program.strip().lower().replace(" ", "-")
+
+    @staticmethod
+    def remove_exact_duplicates(context_list: List[str]) -> List[str]:
+        seen = set()
+        unique_context = []
+        for context in context_list:
+            if context not in seen:
+                unique_context.append(context)
+                seen.add(context)
+        return unique_context

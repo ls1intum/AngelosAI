@@ -26,6 +26,7 @@ class Config:
     AZURE_OPENAI_API_KEY = os.getenv("AZURE_OPENAI_API_KEY")
     TEST_MODE = os.getenv("TEST_MODE")
     OPENAI_MODEL_DEPLOYMENT = os.getenv("OPENAI_MODEL_DEPLOYMENT")
+    COHERE_API_KEY = os.getenv("COHERE_API_KEY")
 
 
 config = Config()

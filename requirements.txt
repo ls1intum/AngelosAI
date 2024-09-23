@@ -13,3 +13,26 @@ numpy~=1.26.4
 scikit-learn~=1.5.1
 
 #-------------test-----------------------
+
+openai~=1.44.1
+tiktoken
+scikit-learn
+weaviate-client
+
+langchain-community
+langchain-openai
+langchain-core
+langchain~=0.2.16
+
+bs4
+pypdf
+cryptography
+
+deepeval
+
+pydantic~=2.9.0
+
+spacy
+keyword-spacy
+keybert
+cohere
