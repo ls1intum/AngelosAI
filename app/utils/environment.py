@@ -21,6 +21,7 @@ class Config:
     GPU_HOST = os.getenv("GPU_HOST")
     OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
     TEST_MODE = os.getenv("TEST_MODE")
+    COHERE_API_KEY = os.getenv("COHERE_API_KEY")
 
 
 config = Config()

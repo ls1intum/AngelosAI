@@ -28,3 +28,8 @@ cryptography
 deepeval
 
 pydantic~=2.9.0
+
+spacy
+keyword-spacy
+keybert
+cohere
