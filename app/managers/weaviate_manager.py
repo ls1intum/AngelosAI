@@ -1,6 +1,6 @@
 import logging
 from enum import Enum
-from typing import List
+from typing import List, Union, Tuple
 from app.models.openai_model import OpenAIModel
 from app.models.base_model import BaseModelClient
 from app.retrieval_strategies.keyword_extractor_bert import KeywordExtractorBERT
@@ -111,44 +111,38 @@ class WeaviateManager:
                                     vector=text_embedding)
         logging.info(f"Document successfully added with study program: {study_program}")
 
-    def get_relevant_context(self, question: str, study_program: str):
-        """Retrieve documents based on the question embedding and study program."""
-        try:
-            question_embedding = self.model.embed(question)  # Embed the query
-            study_program = WeaviateManager.normalize_study_program_name(study_program)
-            study_program_length = len(study_program)
-            query_result = self.documents.query.near_vector(
-                near_vector=question_embedding,
-                filters=Filter.all_of([
-                    Filter.by_property(DocumentSchema.STUDY_PROGRAM.value).equal(study_program),
-                    Filter.by_property(DocumentSchema.STUDY_PROGRAM.value, length=True).equal(study_program_length),
-                ]),
-                limit=5,
-                return_metadata=wvc.query.MetadataQuery(certainty=True, score=True)
-            )
-            for result in query_result.objects:
-                print(result.properties)
-                print(result.metadata)
+    def get_relevant_context(self, question: str, study_program: str, keywords: str = None, test_mode: bool = False) -> Union[str, Tuple[str, List[str]]]:
+        """
+        Retrieve relevant documents based on the question embedding and study program.
+        Optionally returns both the concatenated context and the sorted context list for testing purposes.
 
-            context = "\n\n".join(result.properties['content'] for result in query_result.objects)
-            logging.info(context)
-            return context
-        except Exception as e:
-            logging.error(f"Error retrieving relevant context: {e}")
-            return ""        
+        Args:
+            question (str): The student's question.
+            study_program (str): The study program of the student.
+            keywords (str, optional): Extracted keywords for boosting. Defaults to None.
+            test_mode (bool, optional): If True, returns both context and sorted_context. Defaults to False.
 
-    def get_relevant_context_as_list(self, question: str, study_program: str, keywords: str):
-        """Retrieve documents based on the question embedding and study program and context as list for test mode."""
+        Returns:
+            Union[str, Tuple[str, List[str]]]: 
+                - If test_mode is False: Returns the concatenated context string.
+                - If test_mode is True: Returns a tuple of (context, sorted_context list).
+        """
         try:
+            # Define the number of documents to retrieve
             limit = 10
-            if study_program != "general":
-                limit = 10
+            if study_program.lower() != "general":
+                limit = 10  # Adjust this value if needed based on study program specificity
+
+            # Embed the question using the embedding model
             question_embedding = self.model.embed(question)
-            # Get study program name and length
+
+            # Normalize the study program name and calculate its length
             study_program = WeaviateManager.normalize_study_program_name(study_program)
             study_program_length = len(study_program)
-            logging.info(f"Keywords: {keywords}")
 
+            # logging.info(f"Keywords: {keywords}")
+
+            # Perform the vector-based query with filters
             query_result = self.documents.query.near_vector(
                 near_vector=question_embedding,
                 filters=Filter.all_of([
@@ -156,30 +150,27 @@ class WeaviateManager:
                     Filter.by_property(DocumentSchema.STUDY_PROGRAM.value, length=True).equal(study_program_length),
                 ]),
                 limit=limit,
-                include_vector=True,
                 return_metadata=wvc.query.MetadataQuery(certainty=True, score=True, distance=True)
             )
-            documents_with_embeddings: List[DocumentWithEmbedding] = []
-            for result in query_result.objects:
-                logging.info(f"Certainty: {result.metadata.certainty}, Score: {result.metadata.score}, Distance: {result.metadata.distance}")
-                documents_with_embeddings.append(DocumentWithEmbedding(content=result.properties['content'], embedding=result.vector['default']))
-            
-            # sorted_context = self.reranker.rerank_with_embeddings(documents_with_embeddings, keyword_string=keywords)
-            # context = "\n\n".join(sorted_context)
             context_list = [result.properties['content'] for result in query_result.objects]
+
+            # Remove exact duplicates from context_list
             context_list = WeaviateManager.remove_exact_duplicates(context_list)
-            # for ctxt in context_list:
-            #     logging.info(ctxt)
-            logging.info(f"Context list length after removing duplicates: ${len(context_list)}")
-            # context = "\n\n".join(context_list)
+            logging.info(f"Context list length after removing exact duplicates: {len(context_list)}")
+
+            # Rerank the unique contexts using Cohere
             sorted_context = self.reranker.rerank_with_cohere(context_list=context_list, query=question, top_n=5)
             context = "\n\n".join(sorted_context)
-            # logging.info(context)
-            # logging.info(context_list)
-            return context, sorted_context
+
+            # Return based on test_mode
+            if test_mode:
+                return context, sorted_context
+            else:
+                return context
+
         except Exception as e:
             logging.error(f"Error retrieving relevant context: {e}")
-            return ""
+            return "" if not test_mode else ("", [])
 
     def delete_collection(self):
         """

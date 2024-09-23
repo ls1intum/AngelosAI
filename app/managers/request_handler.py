@@ -11,6 +11,12 @@ class RequestHandler:
 
     def handle_question(self, question: str, classification: str):
         """Handles the question by fetching relevant documents and generating an answer."""
+        # Get relevant keywords
+        # messages = self.prompt_manager.create_keyword_extraction_message(question)
+        # answer, tokens = self.model.complete_with_tokens(messages)
+        # logging.info(f"LLM Keyword extraction: {answer}, with tokens used: {tokens}")
+        # keywords = answer.replace(",", "")
+
         general_context = self.weaviate_manager.get_relevant_context(question, "general")
         specific_context = None
         if classification != "general":
@@ -22,15 +28,15 @@ class RequestHandler:
     def handle_question_test_mode(self, question: str, classification: str):
         """Handles the question by fetching relevant documents and generating an answer."""
         # Get relevant keywords
-        messages = self.prompt_manager.create_keyword_extraction_message(question)
-        answer, tokens = self.model.complete_with_tokens(messages)
-        logging.info(f"LLM Keyword extraction: {answer}, with tokens used: {tokens}")
-        keywords = answer.replace(",", "")
+        # messages = self.prompt_manager.create_keyword_extraction_message(question)
+        # answer, tokens = self.model.complete_with_tokens(messages)
+        # logging.info(f"LLM Keyword extraction: {answer}, with tokens used: {tokens}")
+        # keywords = answer.replace(",", "")
 
-        general_context, general_context_list = self.weaviate_manager.get_relevant_context_as_list(question, "general", keywords)
+        general_context, general_context_list = self.weaviate_manager.get_relevant_context(question, "general", test_mode=True)
         specific_context = None
         if classification != "general":
-            specific_context, specific_context_list = self.weaviate_manager.get_relevant_context_as_list(question, classification, keywords)
+            specific_context, specific_context_list = self.weaviate_manager.get_relevant_context(question, classification, test_mode=True)
         else:
             specific_context_list = []
         messages = self.prompt_manager.create_messages(general_context, specific_context, question)
