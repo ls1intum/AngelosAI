@@ -28,7 +28,9 @@ class Reranker:
         """
         self.model = model
         self.api_key = api_key
+        # TODO: Classifier should also get language, so the following lines should be based on the classifier
         self.rerank_model = "rerank-multilingual-v3.0"
+        # self.rerank_model = "rerank-english-v3.0"
 
     def rerank_with_embeddings(self, context_list: List[DocumentWithEmbedding], keyword_string: str) -> List[str]:
         """

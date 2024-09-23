@@ -157,10 +157,6 @@ class WeaviateManager:
                 ]),
                 limit=limit,
                 include_vector=True,
-                # rerank=Rerank(
-                #     prop=DocumentSchema.CONTENT.value,
-                #     query=keywords
-                # ),
                 return_metadata=wvc.query.MetadataQuery(certainty=True, score=True, distance=True)
             )
             documents_with_embeddings: List[DocumentWithEmbedding] = []
@@ -171,9 +167,10 @@ class WeaviateManager:
             # sorted_context = self.reranker.rerank_with_embeddings(documents_with_embeddings, keyword_string=keywords)
             # context = "\n\n".join(sorted_context)
             context_list = [result.properties['content'] for result in query_result.objects]
-            for ctxt in context_list:
-                logging.info(ctxt)
-            logging.info(context_list)
+            context_list = WeaviateManager.remove_exact_duplicates(context_list)
+            # for ctxt in context_list:
+            #     logging.info(ctxt)
+            logging.info(f"Context list length after removing duplicates: ${len(context_list)}")
             # context = "\n\n".join(context_list)
             sorted_context = self.reranker.rerank_with_cohere(context_list=context_list, query=question, top_n=5)
             context = "\n\n".join(sorted_context)
@@ -229,3 +226,13 @@ class WeaviateManager:
         """Normalize study program names to a consistent format."""
         # Lowercase and replace spaces with hyphens
         return study_program.strip().lower().replace(" ", "-")
+    
+    @staticmethod
+    def remove_exact_duplicates(context_list: List[str]) -> List[str]:
+        seen = set()
+        unique_context = []
+        for context in context_list:
+            if context not in seen:
+                unique_context.append(context)
+                seen.add(context)
+        return unique_context

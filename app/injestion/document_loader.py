@@ -27,22 +27,31 @@ def load_documents_from_folder(folder_path: str) -> List[Document]:
 
 
 def split_documents(documents: List[Document]) -> List[Document]:
+    tum_txt_documents = []
+    other_txt_documents = []
     other_documents = []
-    txt_documents = []
     logging.info(f"Splitting {len(documents)} documents")
     
-    # Separate documents based on the file type in the metadata
     for doc in documents:
-        if doc.metadata.get("source", "").lower().endswith(".txt"):
-            txt_documents.append(doc)
+        source_path = doc.metadata.get("source", "")
+        if source_path.lower().endswith(".txt"):
+            # Extract the file name from the source path
+            file_name = os.path.basename(source_path)
+            if file_name.startswith("tum_tum"):
+                # New .txt files starting with 'tum_tum'
+                tum_txt_documents.append(doc)
+            else:
+                # Existing .txt files
+                other_txt_documents.append(doc)
         else:
+            # Other file types (e.g., .pdf)
             other_documents.append(doc)
     
-    # Apply different splitting strategies for PDF and TXT documents
-    logging.info(f"Splitting {len(documents)} documents")
-    chunks = split_documents_recursive(other_documents)
-    txt_chunks = split_cit_txt_documents(txt_documents)
-    return chunks + txt_chunks
+    # Process tum_txt_documents and other_documents with split_documents_recursive
+    recursive_chunks = split_documents_recursive(tum_txt_documents + other_documents)
+    # Process other_txt_documents with split_cit_txt_documents
+    cit_txt_chunks = split_cit_txt_documents(other_txt_documents)
+    return recursive_chunks + cit_txt_chunks
 
 
 def split_documents_recursive(documents: List[Document]) -> List[Document]:
@@ -54,7 +63,6 @@ def split_cit_txt_documents(documents: List[Document]) -> List[Document]:
     processed_documents = []  
     for doc in documents:
         sections = doc.page_content.split('----------------------------------------')
-        logging.info(f"TXT Document split in {len(sections)} sections")
         for section in sections:
             section = section.strip()
             if section:
