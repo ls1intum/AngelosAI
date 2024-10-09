@@ -1,8 +1,8 @@
 import logging
 import os
 
-from app.managers.weaviate_manager import WeaviateManager
 from app.injestion.document_loader import load_documents_from_folder, split_documents
+from app.managers.weaviate_manager import WeaviateManager
 from app.utils.environment import config
 
 
@@ -22,8 +22,8 @@ def initialize_vectorstores(base_folder: str, weaviate_manager: WeaviateManager)
     # Delete existing data if the DELETE_BEFORE_INIT is set to true
     if delete_before_init:
         logging.warning("Deleting existing data before initialization...")
-        # TODO: this deletes the entire collection leading to errors, make this work by reinitializing after deletion
         weaviate_manager.delete_collection()
+        weaviate_manager.initialize_schema()
     else:
         logging.info("Skipping data deletion...")
 

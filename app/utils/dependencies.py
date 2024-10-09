@@ -1,4 +1,3 @@
-import logging
 from app.managers.request_handler import RequestHandler
 from app.managers.weaviate_manager import WeaviateManager
 from app.retrieval_strategies.reranker import Reranker

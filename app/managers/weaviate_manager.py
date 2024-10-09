@@ -1,20 +1,18 @@
 import logging
 from enum import Enum
-from typing import List, Union, Tuple
-from app.models.openai_model import OpenAIModel
-from app.models.base_model import BaseModelClient
-from app.retrieval_strategies.keyword_extractor_bert import KeywordExtractorBERT
-from langchain.docstore.document import Document
-from app.retrieval_strategies.reranker import Reranker, DocumentWithEmbedding
+from typing import List
 
 import weaviate
 import weaviate.classes as wvc
+from langchain.docstore.document import Document
 from weaviate.collections import Collection
 from weaviate.collections.classes.config import DataType, Configure, Property
 from weaviate.classes.query import Rerank
 from weaviate.collections.classes.config_vectorizers import VectorDistances
 from weaviate.collections.classes.filters import Filter
 
+from app.models.base_model import BaseModelClient
+from app.models.openai_model import OpenAIModel
 from app.utils.environment import config
 
 
@@ -23,7 +21,7 @@ class DocumentSchema(Enum):
     Schema for the embedded chunks
     """
 
-    COLLECTION_NAME = "CITKnowledgeBase"
+    COLLECTION_NAME = "DocumentMxbai"
     STUDY_PROGRAM = "study_program"
     CONTENT = "content"
     EMBEDDING = "embedding"
@@ -35,13 +33,13 @@ class WeaviateManager:
         self.client = weaviate.connect_to_local(host=config.WEAVIATE_URL, port=config.WEAVIATE_PORT)
         self.model = embedding_model
         self.schema_initialized = False
-        self.documents = self._initialize_schema()
+        self.documents = self.initialize_schema()
         self.reranker = reranker
 
     def __del__(self):
         self.client.close()
 
-    def _initialize_schema(self) -> Collection:
+    def initialize_schema(self) -> Collection:
         """Creates the schema in Weaviate for storing documents and embeddings."""
 
         collection_name = DocumentSchema.COLLECTION_NAME.value
@@ -104,12 +102,15 @@ class WeaviateManager:
 
     def add_document(self, text: str, study_program: str):
         """Add a document with classification to Weaviate."""
-        text_embedding = self.model.embed(text)
-        # logging.info(f"Adding document with embedding: {text_embedding}")
-        self.documents.data.insert(properties={DocumentSchema.CONTENT.value: text,
-                                                DocumentSchema.STUDY_PROGRAM.value: study_program},
-                                    vector=text_embedding)
-        logging.info(f"Document successfully added with study program: {study_program}")
+        try:
+            text_embedding = self.model.embed(text)
+            # logging.info(f"Adding document with embedding: {text_embedding}")
+            self.documents.data.insert(properties={DocumentSchema.CONTENT.value: text,
+                                                   DocumentSchema.STUDY_PROGRAM.value: study_program},
+                                       vector=text_embedding)
+            logging.info(f"Document successfully added with study program: {study_program}")
+        except Exception as e:
+            logging.error(f"Failed to add document: {e}")
 
     def get_relevant_context(self, question: str, study_program: str, keywords: str = None, test_mode: bool = False) -> Union[str, Tuple[str, List[str]]]:
         """
@@ -123,7 +124,7 @@ class WeaviateManager:
             test_mode (bool, optional): If True, returns both context and sorted_context. Defaults to False.
 
         Returns:
-            Union[str, Tuple[str, List[str]]]: 
+            Union[str, Tuple[str, List[str]]]:
                 - If test_mode is False: Returns the concatenated context string.
                 - If test_mode is True: Returns a tuple of (context, sorted_context list).
         """
@@ -157,7 +158,7 @@ class WeaviateManager:
             for result in query_result.objects:
                 logging.info(f"Certainty: {result.metadata.certainty}, Score: {result.metadata.score}, Distance: {result.metadata.distance}")
                 # documents_with_embeddings.append(DocumentWithEmbedding(content=result.properties['content'], embedding=result.vector['default']))
-            
+
             # sorted_context = self.reranker.rerank_with_embeddings(documents_with_embeddings, keyword_string=keywords)
 
             context_list = [result.properties['content'] for result in query_result.objects]
@@ -197,7 +198,6 @@ class WeaviateManager:
         else:
             logging.warning(f"Collection {collection_name} does not exist")
             return False
-        
 
     def add_documents(self, chunks: List[Document], study_program: str):
         try:
@@ -225,7 +225,7 @@ class WeaviateManager:
         """Normalize study program names to a consistent format."""
         # Lowercase and replace spaces with hyphens
         return study_program.strip().lower().replace(" ", "-")
-    
+
     @staticmethod
     def remove_exact_duplicates(context_list: List[str]) -> List[str]:
         seen = set()

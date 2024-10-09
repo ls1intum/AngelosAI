@@ -2,11 +2,10 @@ import logging
 
 from fastapi import HTTPException, APIRouter, status, Response
 from pydantic import BaseModel
-from app.utils.dependencies import model
 
+from app.injestion.vector_store_initializer import initialize_vectorstores
 from app.utils.dependencies import request_handler, weaviate_manager
 from app.utils.environment import config
-from app.injestion.vector_store_initializer import initialize_vectorstores
 
 
 class UserRequest(BaseModel):
@@ -26,9 +25,11 @@ async def ask(request: UserRequest):
 
     logging.info(f"Received question: {question} with classification: {classification}")
 
-    if config.TEST_MODE: 
-        answer, used_tokens, general_context, specific_context = request_handler.handle_question_test_mode(question, classification)
-        return {"answer": answer, "used_tokens": used_tokens, "general_context": general_context, "specific_context": specific_context}
+    if config.TEST_MODE:
+        answer, used_tokens, general_context, specific_context = request_handler.handle_question_test_mode(question,
+                                                                                                           classification)
+        return {"answer": answer, "used_tokens": used_tokens, "general_context": general_context,
+                "specific_context": specific_context}
     else:
         answer = request_handler.handle_question(question, classification)
         return {"answer": answer}
@@ -56,7 +57,8 @@ async def add_document(request: UserRequest):
     except Exception as e:
         logging.error(f"Failed to add document: {e}")
         raise HTTPException(status_code=500, detail="Failed to add document")
-    
+
+
 @router.get("/ping")
 async def ping():
     logging.info(config.OLLAMA_URL)

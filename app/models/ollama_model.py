@@ -1,7 +1,8 @@
 import logging
-from typing import Dict, Tuple, List
+from typing import Dict, Tuple, List, Optional, Any
 
 import requests
+from pydantic import ConfigDict
 
 from app.models.base_model import BaseModelClient
 from app.utils.environment import config
@@ -19,12 +20,14 @@ def create_auth_header() -> Dict[str, str]:
 
 
 class OllamaModel(BaseModelClient):
-    def __init__(self, model: str, url: str, embed_model: str, session=None):
-        self.session = session or requests.Session()
+    url: str
+    headers: Optional[Dict[str, str]] = None
+    session: requests.Session = requests.Session()
+
+    model_config = ConfigDict(arbitrary_types_allowed=True)
+
+    def model_post_init(self, __context: Any) -> None:
         logging.info("Initializing OllamaModel")
-        self.model = model
-        self.url = url
-        self.embed_model = embed_model
         self.headers = create_auth_header()
         self.init_model()
 
@@ -42,7 +45,7 @@ class OllamaModel(BaseModelClient):
         #     'logprobs'].get('content') is not None else 0.81
         # return response_data["message"]["content"], confidence
         return response_data["message"]["content"]
-    
+
     # TODO: Implement getting the tokens
     def complete_with_tokens(self, messages: list) -> Tuple[str, int]:
         response = self.session.post(
@@ -54,10 +57,7 @@ class OllamaModel(BaseModelClient):
         response_data = response.json()
         logging.info(f"Got response for model {self.model}: {response_data}")
         response.raise_for_status()
-        # confidence = float(response_data['logprobs']['content']) if response_data.get('logprobs') and response_data[
-        #     'logprobs'].get('content') is not None else 0.81
-        # return response_data["message"]["content"], confidence
-        return (response_data["message"]["content"], -1)
+        return response_data["message"]["content"], -1
 
     def embed(self, text) -> List[float]:
         response = self.session.post(
@@ -72,7 +72,7 @@ class OllamaModel(BaseModelClient):
         response_data = response.json()
 
         return response_data["embedding"]
-    
+
     def embed_batch(self, texts: List[str]) -> List[List[float]]:
         raise NotImplementedError("TODO: IMPLEMENT THIS METHOD IF POSSIBLE")
 
@@ -82,8 +82,5 @@ class OllamaModel(BaseModelClient):
             self.session.close()
 
     def init_model(self):
-        self.session.post(
-            f"{self.url}tags",
-            json={"model": self.model},
-            headers=self.headers
-        )
+        logging.info("Initializing Ollama model")
+        self.complete([{"role": "user", "content": "Hi"}])
