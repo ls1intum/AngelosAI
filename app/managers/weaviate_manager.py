@@ -1,6 +1,6 @@
 import logging
 from enum import Enum
-from typing import List
+from typing import List, Union, Tuple
 
 import weaviate
 import weaviate.classes as wvc
@@ -14,6 +14,7 @@ from weaviate.collections.classes.filters import Filter
 from app.models.base_model import BaseModelClient
 from app.models.openai_model import OpenAIModel
 from app.utils.environment import config
+from app.retrieval_strategies.reranker import Reranker
 
 
 class DocumentSchema(Enum):

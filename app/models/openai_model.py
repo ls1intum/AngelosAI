@@ -10,7 +10,7 @@ class OpenAIModel(BaseModelClient):
     api_key: str
     _client: OpenAI
     max_tokens: int = 800
-    temperature: float = 0.5
+    temperature: float = 0.3
 
     def model_post_init(self, __context: Any) -> None:
         self._client = OpenAI(api_key=self.api_key)
@@ -27,7 +27,7 @@ class OpenAIModel(BaseModelClient):
         return response.choices[0].message.content
 
     def complete_with_tokens(self, messages: list) -> Tuple[str, int]:
-        response = self.client.chat.completions.create(
+        response = self._client.chat.completions.create(
             model=self.model,
             messages=messages,
             max_tokens=self.max_tokens,
@@ -36,14 +36,14 @@ class OpenAIModel(BaseModelClient):
         return response.choices[0].message.content, response.usage.total_tokens
 
     def embed(self, text) -> List[float]:
-        response = self.client.embeddings.create(
+        response = self._client.embeddings.create(
             input=text,
             model=self.embed_model
         )
         return response.data[0].embedding
 
     def embed_batch(self, texts: List[str]) -> List[List[float]]:
-        response = self.client.embeddings.create(
+        response = self._client.embeddings.create(
             input=texts,
             model=self.embed_model
         )
