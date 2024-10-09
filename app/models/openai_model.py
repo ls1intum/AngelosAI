@@ -38,14 +38,14 @@ class OpenAIModel(BaseModelClient):
     def embed(self, text) -> List[float]:
         response = self.client.embeddings.create(
             input=text,
-            model=self.emmodel
+            model=self.embed_model
         )
         return response.data[0].embedding
 
     def embed_batch(self, texts: List[str]) -> List[List[float]]:
         response = self.client.embeddings.create(
             input=texts,
-            model=self.emmodel
+            model=self.embed_model
         )
         return [e.embedding for e in response.data]
 
