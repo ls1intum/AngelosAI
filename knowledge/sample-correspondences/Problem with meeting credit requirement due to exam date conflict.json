@@ -1,0 +1,15 @@
+{
+    "topic": "Scheduling Conflicts with Exams",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "I am facing a scheduling conflict with two upcoming exams that I must take in order to meet my credit requirements for the semester. What should I do in this situation?\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Unfortunately, you need to choose one exam to participate in due to the overlapping dates. Please send your examination report, enrollment record, and a screenshot of your study plan. If you are near the completion of your degree and facing difficulties, we recommend discussing your situation in detail during our open consultation hours."
+        }
+    ]
+}

@@ -11,6 +11,7 @@ from app.utils.environment import config
 class UserRequest(BaseModel):
     message: str
     study_program: str
+    language: str
 
 
 router = APIRouter(prefix="/api/v1/question", tags=["response"])
@@ -20,25 +21,25 @@ router = APIRouter(prefix="/api/v1/question", tags=["response"])
 async def ask(request: UserRequest):
     question = request.message
     classification = request.study_program
+    language = request.language
     if not question or not classification:
         raise HTTPException(status_code=400, detail="No question or classification provided")
 
     logging.info(f"Received question: {question} with classification: {classification}")
 
     if config.TEST_MODE:
-        answer, used_tokens, general_context, specific_context = request_handler.handle_question_test_mode(question,
-                                                                                                           classification)
+        answer, used_tokens, general_context, specific_context = request_handler.handle_question_test_mode(question, classification, language)
         return {"answer": answer, "used_tokens": used_tokens, "general_context": general_context,
                 "specific_context": specific_context}
     else:
-        answer = request_handler.handle_question(question, classification)
+        answer = request_handler.handle_question(question, classification, language)
         return {"answer": answer}
 
 
 @router.get("/initSchema",
             status_code=status.HTTP_202_ACCEPTED, )
 async def initializeDb():
-    initialize_vectorstores(config.KNOWLEDGE_BASE_FOLDER, weaviate_manager)
+    initialize_vectorstores(config.KNOWLEDGE_BASE_FOLDER, config.QA_FOLDER, weaviate_manager)
     return
 
 

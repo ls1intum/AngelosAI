@@ -1,0 +1,15 @@
+{
+    "topic": "Wahlmodule und ECTS-Anrechnung",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "Hallo, ich bin gerade dabei Module für das kommende Semester zu planen. Dabei möchte ich alle nötigen ECTS für Wahlmodule abschließen. Aktuell fehlen mir dazu noch 7 ECTS. Leider gibt es keine Vorlesung mit 7 ECTS. Auch zwei Vorlesungen mit 6+1 oder 5+2 ECTS zu finden ist schwer. Was passiert, wenn ich beispielsweise zwei Module mit jeweils 5 ECTS belegen würde, und somit einen Überschuss von 3 ECTS hätte? Ist das ein Problem? Wie wirkt sich das auf die Berechnung der Endnote aus? Können Module partiell angerechnet werden? Kann ich mir aussuchen, welche Module wie stark gewichtet werden (z.B. ein Modul mit schlechterer Endnote nur teils einbringen)? Danke im Vorraus! Mit freundlichen Grüßen,\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Wenn Sie zwei Module mit jeweils 5 ECTS machen und sich dadurch einen Überschuss von 3 ECTS 'erarbeiten', ist das kein Drama. Das wird dazu führen, dass Sie Ihr Studium mit 183 ECTS abschließen werden (wenn Sie im Bachelor's sind), Ihre Abschlussnote also mit dem Divisor 183 berechnet wird (statt 180). Viele Grüße,"
+        }
+    ]
+}

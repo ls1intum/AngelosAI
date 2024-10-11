@@ -1,0 +1,15 @@
+{
+    "topic": "Completion Certificate Request for Bachelor's Thesis",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "Good afternoon, I recently received the grade for my bachelor's thesis, the last requirement for completing my degree in Wirtschaftsinformatik. I would like to ask for my completion certificate. I have already applied for the Master's Degree in Information Systems and need the certificate of completion of the B.Sc. to complete my registration. Please let me know how to proceed.\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Please ensure you email the appropriate administration from your TUM email account. For the completion certificate, contact the responsible office as specified here: cit.tum.de/cit/kontakte-studium-informatik."
+        }
+    ]
+}

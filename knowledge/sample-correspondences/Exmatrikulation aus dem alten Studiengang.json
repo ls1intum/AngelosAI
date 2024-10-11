@@ -1,0 +1,15 @@
+{
+    "topic": "Exmatrikulation aus dem B.Sc. Informatik",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "Sehr geehrte Damen und Herren,\n\nIch bin derzeit sowohl im B.Sc. Informatik als auch im B.Sc. Wirtschaftsinformatik eingeschrieben. Ich strebe aktiv meinen Wirtschaftsinformatik-Abschluss an. Gemäß den zu erfüllenden ECTS-Grenzen werde ich am Ende dieses Semesters aus dem B.Sc. Informatik exmatrikuliert. Meine Frage ist: Muss ich mich selbst aus dem Studiengang exmatrikulieren oder kann ich ihn einfach verlassen und das System exmatrikuliert mich automatisch? Wenn ich das System mich automatisch exmatrikulieren lasse, hat das Auswirkungen auf meinen Status im B.Sc. Wirtschaftsinformatik oder nicht?\n\nDanke für Ihre Hilfe!\n\nMit freundlichen Grüßen,\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Wenn Sie die Kriterien der Studienfortschrittkontrolle nicht erfüllen, werden Sie automatisch aus dem Studiengang exmatrikuliert, für den Sie die Kriterien nicht erfüllen, ohne Auswirkungen auf andere Studiengänge.\n\nViele Grüße,"
+        }
+    ]
+}

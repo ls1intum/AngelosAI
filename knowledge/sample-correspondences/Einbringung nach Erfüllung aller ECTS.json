@@ -1,0 +1,15 @@
+{
+    "topic": "Masterarbeit und Vorlesung im letzten Semester",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "Ich plane in meinem letzten Semester meine Masterarbeit und eine Vorlesung zu schreiben. Alleine mit der Masterarbeit hätte ich schon alle ECTS. Falls die Note meiner Masterarbeit vor der Note der Vorlesung eingetragen wird, kann ich trotzdem die Vorlesung einbringen?\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Sie können die Note der Vorlesung einbringen, wenn Sie mit der Beantragung Ihres Zeugnisses warten, bis das Ergebnis der Klausur in TUMonline gültig ist. Dann können Sie sich mit Ihrer Schriftführung per Mail in Verbindung setzen und besprechen, welche Fächer Sie einbringen wollen und welche nicht, und Ihre Schriftführung beantragt dann Ihr Zeugnis für Sie."
+        }
+    ]
+}

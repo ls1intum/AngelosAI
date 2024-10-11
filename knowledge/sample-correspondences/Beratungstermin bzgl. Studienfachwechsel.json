@@ -1,0 +1,15 @@
+{
+    "topic": "Thema: Studienwechsel von Wirtschaftsinformatik zu Informatik",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "Ich studiere aktuell Wirtschaftsinformatik und habe Zweifel, ob dieser Studiengang der richtige für mich ist. Ich möchte herausfinden, wie der Modulplan für Informatik aussieht, ob ich Module aus dem Wirtschaftsbereich anrechnen lassen kann und wie sich ein Wechsel auf mein geplantes Auslandssemester auswirkt. Ich interessiere mich für einen persönlichen Beratungstermin.\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Bitte nutzen Sie für Ihre Anfragen einen TUM E-Mail Account. Auf unseren Webseiten finden Sie Studienpläne für Informatik und Wirtschaftsinformatik mit Modulbeschreibungen. Einige Module sind in beiden Studiengängen verankert, und Sie können nach einem Wechsel einen Anerkennungsantrag stellen. Ein Auslandssemester ist auch nach einem Wechsel möglich. Sie können ohne Termin in eine unserer Sprechstunden kommen, beachten Sie jedoch mögliche Wartezeiten."
+        }
+    ]
+}

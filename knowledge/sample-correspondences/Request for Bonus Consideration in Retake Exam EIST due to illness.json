@@ -1,0 +1,15 @@
+{
+    "topic": "Transfer of Bonus Points for Exam Retake",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "I would like to know if I can transfer my bonus points to the retake exam for the EIST course since I was unable to attend the Endterm exam due to illness. I have already reached out to the tutors and another department but haven't received a response. I can provide a doctor's note if needed.\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "You can use your bonus points for the retake exam since you were ill during the original exam. However, this is a decision for the examiner, so please follow up with them again."
+        }
+    ]
+}

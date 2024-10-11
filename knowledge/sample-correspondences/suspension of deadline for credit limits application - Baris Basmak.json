@@ -1,0 +1,15 @@
+{
+    "topic": "Deadline Suspension Request for Credit Limits",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "I am applying for a deadline suspension for my credit limits at the end of my 6th semester, as I will have 88 credits but am finishing my Master's Thesis on 01.11. I have attached the required documents.\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Thank you for your message. Please come to my consultation hour on Thursday so we can discuss your best options."
+        }
+    ]
+}

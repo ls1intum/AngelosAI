@@ -1,0 +1,15 @@
+{
+    "topic": "Thema: Fehlendes Pflichtmodul",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "Guten Tag, ich werde künftig von einem TUM E-Mail Account aus schreiben. Ich habe gesehen, dass mir als Pflichtmodul nur noch Theo fehlt. Ich werde Ihnen meinen TUMonline Kontoauszug senden. Könnten Sie mir sagen, bis wann ich das Modul bestehen sollte?\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Bitte senden Sie mir Ihren TUMonline Kontoauszug, damit ich Ihnen weiterhelfen kann. Teilen Sie mir auch mit, wann Sie planen, das Pflichtmodul zu absolvieren."
+        }
+    ]
+}

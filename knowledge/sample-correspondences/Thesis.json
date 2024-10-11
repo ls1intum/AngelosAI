@@ -1,0 +1,15 @@
+{
+    "topic": "Thesis Registration Inquiry",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "I have a question regarding the thesis registration for my Master's program. What is the latest date I can register for my thesis to finish it within the upcoming winter semester, and will registering in the first week of October allow me to complete it this semester?\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "If you register your thesis in October, you must submit it six months later in March, which is before the summer semester starts. Your graduation documents will not be ready by then, but you can submit your paper early if completed beforehand."
+        }
+    ]
+}

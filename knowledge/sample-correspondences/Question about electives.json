@@ -1,0 +1,15 @@
+{
+    "topic": "Informatics Module Recognition and Course Availability",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "Is the module '<ANONYMIZED> (IN0019)' recognized as an informatics elective for Wirtschafsinformatik students, and will the course 'Ringvorlesung Digitalisierung (IN2348)' be offered this summer semester?\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "To check if a module is part of your curriculum, refer to your curriculum support in TUMonline. If it is listed under electives, it counts toward your degree. For the course IN2348, while it is likely to be held, please contact the chair for confirmation."
+        }
+    ]
+}

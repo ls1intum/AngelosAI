@@ -1,0 +1,15 @@
+{
+    "topic": "Confirmation of Bachelor Degree Completion and Grade Entry",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "I have just graduated with a Bachelor degree in Information Systems and need to know if my grades can be entered this week. I also want confirmation that I have completed all 180 credits for my degree.\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "If you are starting your Master's program at TUM, the service office will notify the admission's office once your grades are entered, so you do not need a separate document. For more details, visit the following link: https://www.cit.tum.de/cit/studium/studierende/abschlussarbeit-abschluss/informatik/ --> Übergang Bachelor zu Master. If you are enrolling at a different university, contact the examination board for confirmation."
+        }
+    ]
+}

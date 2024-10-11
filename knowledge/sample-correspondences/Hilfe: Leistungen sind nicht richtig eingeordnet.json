@@ -1,0 +1,15 @@
+{
+    "topic": "Korrekte Einordnung von Leistungen",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "Sehr geehrtes Studienberatungs-Team, mir ist leider gerade erst aufgefallen, dass drei Leistungen bei mir noch nicht richtig eingeordnet sind, sondern als Freifächer markiert sind. Bei dem Seminar liegt es wahrscheinlich daran, dass ich zuerst \"Legal Tech\" gewählt hatte dann aber „<ANONYMIZED>“ belegt habe. Es geht um folgende Module: - Seminar Causal Reasoning -> Pflichtmodul Seminar - Spanisch B1.1 -> Wahlmodule Überfachliche Grundlagen - Spanisch B1.2 -> Wahlmodule Überfachliche Grundlagen. Könnten Sie mir hier weiterhelfen und mir erklären, wie ich die beiden Sprachmodule als Überfachliche Grundlagen und das Seminar als Pflicht-Seminar eintragen kann. Ich gebe am 19. Oktober meine Bachelorarbeit ab und würde es deshalb gerne davor noch richtig einsortieren. Entschuldigen Sie bitte die Unannehmlichkeiten. Mit freundlichen Grüßen, <ANONYMIZED> Matrikelnummer: <PHONE>\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "<ANONYMIZED>, bitte wenden Sie sich mit Ihrem Anliegen an die für Ihren Studiengang verantwortliche Schriftführung. Es ist sowieso sinnvoll mit der Schriftführung die Ausstellung Ihres Zeugnisses zu besprechen. An wen Sie sich wenden, finden Sie hier: cit.tum.de/en/cit/contact-studies-informatics/ Viele Grüße, <ANONYMIZED>."
+        }
+    ]
+}

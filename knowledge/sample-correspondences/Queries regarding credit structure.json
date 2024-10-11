@@ -1,0 +1,15 @@
+{
+    "topic": "Program Structure and Course Selection Inquiry",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "I am in my 4th semester of the Master's program in Informatics and need clarification on the program structure. Do I still need to complete three areas (Major, two minors), or is it enough to complete 53 credits under Elective modules? I have also completed a Major in Engineering software-intensive systems (18 credits) and a minor in Machine learning and analytics (12 credits). Do the extra 4 credits from the MLA minor count towards the Electives? Is there still a requirement for one area to be in FMA?\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "You still need 18 ECTS for your area of specialization and two supplemental areas, each 8 ECTS. The extra credits can come from either area (specialization or supplemental) or electives from any subject area. It appears that you may be referencing an old version of the Master's structure; please refer to the current version available here: https://www.cit.tum.de/en/cit/studies/degree-programs/master-informatics/curriculum/. I hope this helps!"
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "topic": "BAföG-Verfahren - Formblatt 5",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "Ich studiere Informatik an der TUM und möchte die Kontaktdaten der zuständigen Person für die Bestätigung des Formblatt 5 im Rahmen des BAföG-Verfahrens erfahren.\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Informationen zu BAföG-Bescheinigungen finden Sie bei unseren Tipps: cit.tum.de/cit/tipps-informatik."
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "topic": "Abgabe der Masterarbeit im Koinon System",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "Ich möchte fragen, ob ich die Seite, auf der ich versichern muss, dass die Thesis meine eigene Arbeit ist, ausdrucken und händisch unterschreiben muss, oder ob ich meinen Nachnamen dort schreiben und das Dokument in PDF-Form ins Koinon hochladen kann?\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Sie brauchen die Arbeit nur noch im Koinon Portal abgeben. Dort ist auch eine Checkbox, die die von Ihnen beschriebene Seite ersetzt. Wenn Sie im Portal anticken, dass die Thesis Ihre eigene Arbeit ist, ist das völlig ausreichend."
+        }
+    ]
+}

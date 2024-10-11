@@ -1,0 +1,15 @@
+{
+    "topic": "Doctor's Certificate and Course Retake Information",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "I will have a doctor's certificate in English soon and have registered for the retake exam of the Operations Research course on October 2nd. I hope to take another course next semester if granted an extension. Thank you for your help.\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Please refer to our website on prolongations (https://www.cit.tum.de/en/cit/studies/students/advising/informatics/tips-for-successful-studies/hardship-application/) for details regarding the doctor's certificate. Also, make sure to join one of the advisors' consultation hours."
+        }
+    ]
+}

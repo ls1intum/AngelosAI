@@ -1,0 +1,15 @@
+{
+    "topic": "Exmatrikulation und Bescheinigung",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "Ich habe erfolgreich mein Studium abgeschlossen und benötige die Exmatrikulationsbescheinigung so schnell wie möglich, da ich bald eine neue Tätigkeit beginne. Wie sollte ich vorgehen? Benötige ich einen Antrag? Ich habe bereits versucht, eine Antwort zu erhalten, aber ohne Erfolg.\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Eine Exmatrikulationsbescheinigung stellt das Graduation Office aus. Eine Bestätigung über den Studienabschluss kann auch die verantwortliche Schriftführung Ihres Studiengangs ausstellen. Vielleicht hilft das bereits weiter?"
+        }
+    ]
+}

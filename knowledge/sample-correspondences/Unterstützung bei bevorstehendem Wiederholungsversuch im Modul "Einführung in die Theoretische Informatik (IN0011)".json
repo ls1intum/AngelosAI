@@ -1,0 +1,15 @@
+{
+    "topic": "Nachteilsausgleich und Prüfungsversuch",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "Guten Tag, vielen Dank für Ihre Unterstützung und Ihre Zeit. Anbei sende ich Ihnen meinen Antrag auf Nachteilsausgleich für die bevorstehende Prüfung im Modul „Einführung in die Theoretische Informatik (IN0011)“ sowie meine aktuelle Studienverlaufsbescheinigung. Könnten Sie mir bitte bestätigen, ob dies mein letzter Versuch ist, das Modul erfolgreich abzuschließen, oder ob es noch weitere Möglichkeiten gibt, falls ich die Wiederholungsprüfung nicht bestehen sollte? Vielen Dank im Voraus für Ihre Unterstützung.\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Guten Tag, laut Ihren Unterlagen sind Sie im 12. Fachsemester und haben 5 Fristverlängerungen, d.h. Sie müssen den Studienfortschritt des 7. Semesters erbringen. Den haben Sie ja, wenn Ihnen nur noch Theo fehlt. Wenn Sie nach dem 7. Semester 150 ECTS haben, dürfen Sie insgesamt 9 Semester studieren, also auch das nächste Sommersemester um Theo zu bestehen. Ich gehe davon aus, dass Sie sich zur Wiederholungsprüfung angemeldet haben. Für den Fall, dass Sie erneut nicht bestehen, sollten Sie etwas unternehmen, damit es nächstes Jahr klappt. Haben Sie schon einen Plan? Über den Nachteilsausgleich können wir uns nach den Wiederholungsklausen unterhalten, da Sie mit der Beantragung für die Retakes zu spät dran sind. Viel Erfolg für die Wiederholungsklausur und melden Sie sich, sobald Sie die Ergebnisse haben."
+        }
+    ]
+}

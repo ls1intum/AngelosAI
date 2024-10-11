@@ -1,0 +1,15 @@
+{
+    "topic": "Zeugnis und Abschluss",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "Guten Tag, da ich alle Fächer meines Master sowie meine Masterarbeit abgeschlossen habe und alles gültige Leistungen im TUM Online sind, wollte ich fragen wann ich mit meinem Zeugnis und Abschluss rechnen kann? Best Grüße.\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Bitte wenden Sie sich an die für Ihren Studiengang verantwortliche Schriftführung, um mit ihr die Zeugnisfreigabe zu besprechen. Viele Grüße."
+        }
+    ]
+}

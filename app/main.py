@@ -1,7 +1,10 @@
 import logging
-from contextlib import asynccontextmanager
+from app.utils.setup_logging import setup_logging
+
+setup_logging()
 
 import uvicorn
+from contextlib import asynccontextmanager
 from fastapi import FastAPI, Request, status
 from fastapi.exceptions import RequestValidationError
 from fastapi.responses import ORJSONResponse
@@ -9,9 +12,7 @@ from starlette.responses import JSONResponse
 
 from app.api.question_router import router as question_router
 from app.utils.dependencies import shutdown_model
-from app.utils.setup_logging import setup_logging
 
-setup_logging()
 logging.info("Starting application...")
 
 

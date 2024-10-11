@@ -1,12 +1,12 @@
 import logging
 import os
 
-from app.injestion.document_loader import load_documents_from_folder, split_documents
+from app.injestion.document_loader import load_documents_from_folder, split_documents, load_qa_pairs_from_folder
 from app.managers.weaviate_manager import WeaviateManager
 from app.utils.environment import config
 
 
-def initialize_vectorstores(base_folder: str, weaviate_manager: WeaviateManager):
+def initialize_vectorstores(base_folder: str, qa_folder: str, weaviate_manager: WeaviateManager):
     """
     Initializes vector stores by adding documents to Weaviate with their embeddings.
 
@@ -22,12 +22,18 @@ def initialize_vectorstores(base_folder: str, weaviate_manager: WeaviateManager)
     # Delete existing data if the DELETE_BEFORE_INIT is set to true
     if delete_before_init:
         logging.warning("Deleting existing data before initialization...")
-        weaviate_manager.delete_collection()
+        weaviate_manager.delete_collections()
         weaviate_manager.initialize_schema()
+        weaviate_manager.initialize_qa_schema()
     else:
         logging.info("Skipping data deletion...")
 
     logging.info("Initializing vector stores...")
+
+    # Process QA pairs
+    qa_pairs = load_qa_pairs_from_folder(qa_folder)
+    weaviate_manager.add_qa_pairs(qa_pairs)
+
     general_docs = load_documents_from_folder(base_folder)
 
     # Split the documents into chunks

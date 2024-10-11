@@ -1,3 +1,7 @@
+from typing import List
+import logging
+from app.managers.weaviate_manager import SampleQuestion
+
 class PromptManager:
     def __init__(self):
         self.answer_prompt_template = """
@@ -9,24 +13,63 @@ class PromptManager:
     - Prioritize study program-specific context over general information.
     - If no specific context is provided, base your answer solely on the general context.
 
+    **Question:**
+    {question}
+
     **General Information:**
     {general_context}
 
     **Study Program Specific Information:**
     {specific_context}
 
-    **Question:**
-    {question}
+    **Similar Questions and Answers**
+    To assist in crafting an accurate response, refer to these sample questions and answers based on similar inquiries in the past:
+    {sample_questions}
 
     **Response:**
     - Be clear and concise.
     - Use a friendly and professional tone.
+    - If a sample question is highly relevant, you may rely heavily on the sample answer.
     - Avoid unnecessary jargon.
     - Keep the response within 200 words.
+
 
     Ensure your response is accurate, student-friendly, and directly addresses the student's concern.
     If you don't think you can answer this question with the provided context, simply reply with:
     'I'm sorry for the inconvenience! But I cannot answer this question with the provided context.'
+    """
+        
+        self.answer_prompt_template_de = """
+    Sie sind ein intelligenter Assistent, der die Studienberatung der TUM School of Computation, Information and Technology hilft, Fragen von TUM-Studierenden zu beantworten, die detaillierte und genaue Informationen zu ihrem Studium erhalten wollen.
+
+    **Anweisungen:**
+    - Lesen Sie die Frage sorgfältig durch.
+    - Analysieren Sie die bereitgestellten allgemeinen Informationen und, falls vorhanden, die studiengangspezifischen Informationen. Analysiere zudem, falls vorhanden die bereitgestellten ähnlichen Fragen und Antworten basierend auf früheren Anfragen.
+    - Wenn eine ähnliche Frage eines Studenten thematisch sehr ähnlich zur gestellten Frage ist, stützen Sie sich stark auf die jeweilige Beispielsantwort der Studienberatung.
+    - Sonst priorisieren Sie studiengangspezifische Informationen über allgemeine Informationen.
+    - Wenn keine spezifischen Informationen bereitgestellt werden, basieren Sie Ihre Antwort ausschließlich auf den allgemeinen Informationen.
+
+    **Frage:**
+    {question}
+
+    **Allgemeine Informationen:**
+    {general_context}
+
+    **Studiengangspezifische Informationen:**
+    {specific_context}
+
+    **Ähnliche Fragen und Antworten**
+    {sample_questions}
+
+    **Antwort:**
+    - Seien Sie klar und prägnant.
+    - Verwenden Sie einen freundlichen und professionellen Ton.
+    - Vermeiden Sie unnötigen Fachjargon.
+    - Halten Sie die Antwort unter 200 Wörtern.
+
+    Stellen Sie sicher, dass Ihre Antwort genau, studierendenfreundlich und direkt auf die Frage des Studierenden eingeht.
+    Wenn Sie die Frage mit den bereitgestellten Informationen nicht beantworten können, antworten Sie einfach mit:
+    „Entschuldigen Sie die Umstände! Leider kann ich die Frage mit den bereitgestellten Informationen nicht beantworten.“
     """
     
         # Adding keyword extraction template
@@ -38,22 +81,54 @@ class PromptManager:
     Only respond with the keywords, separated by a comma. Do not respond with anything else.
     """
 
-    def create_messages(self, general_context, specific_context, question):
+    def create_messages(self, general_context: str, specific_context: str, sample_questions: str, question: str, language: str):
         """Converts the template into a message format suitable for LLMs like OpenAI's GPT."""
         
         # Construct the system prompt
-        system_content = self.answer_prompt_template.format(
-            general_context=general_context,
-            specific_context=specific_context or "No specific context available.",
-            question=question
-        )
+        if language == "english":
+            user_content = self.answer_prompt_template.format(
+                general_context=general_context,
+                specific_context=specific_context or "No specific context available.",
+                question=question,
+                sample_questions=sample_questions
+            )
+            system_content = "You are an intelligent assistant that helps students of the Technical University of Munich (TUM) with questions related to their studies."
+
+        else:
+            user_content = self.answer_prompt_template_de.format(
+                general_context=general_context,
+                specific_context=specific_context or "Kein studienfachspezifischer Kontext verfügbar.",
+                question=question,
+                sample_questions=sample_questions
+            )
+            system_content = "Sie sind ein intelligenter Assistent, der den Studierenden der Technischen Universität München (TUM) bei Fragen rund um ihr Studium hilft"
+
+        logging.info(user_content)
 
         # Return the messages structure for the LLM
         return [
-            {"role": "system",
-             "content": "You are an intelligent assistant that helps students of the Technical University of Munich (TUM) with questions related to their studies."},
-            {"role": "user", "content": system_content}
+            {"role": "system", "content": system_content},
+            {"role": "user", "content": user_content}
         ]
+    
+    def format_sample_questions(self, sample_questions: List[SampleQuestion], language: str) -> str:
+        formatted_strings = []
+        for sq in sample_questions:
+            if language.lower() == "en":
+                formatted_string = f"""
+    Topic: {sq.topic}
+    Student: "{sq.question}"
+    Academic Advising: "{sq.answer}"
+    """.strip()   
+            else:
+                formatted_string = f"""
+    Thema: {sq.topic}
+    Student: "{sq.question}"
+    Studienberatung: "{sq.answer}"
+    """.strip()
+            formatted_strings.append(formatted_string)
+        combined_string = "\n\n".join(formatted_strings)
+        return combined_string
     
     # Method for creating keyword extraction message
     def create_keyword_extraction_message(self, question):

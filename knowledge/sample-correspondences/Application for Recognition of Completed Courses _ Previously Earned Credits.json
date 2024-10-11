@@ -1,0 +1,15 @@
+{
+    "topic": "Course substitution inquiry for Master's program",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "I would like to inquire about the possibility of performing a course substitution based on courses I completed during my Bachelor's degree, specifically the CENG4xx courses from my 7th and 8th semesters. Could you review these and let me know if they are eligible for recognition or substitution in my Master's program?\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Please contact the recognition team and ask your questions there: <MAIL>"
+        }
+    ]
+}

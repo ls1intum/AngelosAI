@@ -1,0 +1,15 @@
+{
+    "topic": "Options for Replacing Praktikum Grade",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "I am an MSc Informatics student who recently completed my second praktikum, but the grade was lower than expected. I have a few questions regarding options to replace this grade: Can I replace it with a new praktikum, regular courses, or guided research?\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "You can replace the grade of your praktikum by taking a new (3rd) praktikum, with regular courses instead, or by doing guided research."
+        }
+    ]
+}

@@ -1,0 +1,15 @@
+{
+    "topic": "Graduation Requirements for ECTS Points",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "Are 10 ECTS points in THEO only required for graduating and not moving on to the 7th semester?\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "You need at least 90 ECTS to fulfill the credit requirements."
+        }
+    ]
+}

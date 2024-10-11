@@ -1,0 +1,15 @@
+{
+    "topic": "Course Registration Inquiry",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "I completed the Advanced Practical Course 'IN4060 Practical Course Internet Ilab1' but it is not registered on the relevant page, despite showing as a valid achievement on TumOnline. Is this delay due to the registration process or is there another issue?\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "It might take a few more weeks to show up in your curriculum. Please be a little bit patient."
+        }
+    ]
+}

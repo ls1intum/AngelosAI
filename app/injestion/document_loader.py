@@ -1,6 +1,7 @@
 import logging
 import os
-from typing import List
+import json
+from typing import List, Dict, Any
 
 from langchain.docstore.document import Document
 from langchain.text_splitter import RecursiveCharacterTextSplitter
@@ -68,3 +69,53 @@ def split_cit_txt_documents(documents: List[Document]) -> List[Document]:
             if section:
                 processed_documents.append(Document(page_content=section, metadata=doc.metadata))
     return processed_documents
+
+
+def load_qa_pairs_from_folder(qa_folder: str) -> List[Dict[str, str]]:
+    """
+    Reads JSON files from the qa_folder and extracts QA pairs.
+
+    Args:
+    - qa_folder: Path to the folder containing JSON QA files.
+
+    Returns:
+    - List of QA pairs, each represented as a dictionary with 'topic', 'question', and 'answer'.
+    """
+    qa_pairs: List[Dict[str, str]] = []
+    
+    for file_name in os.listdir(qa_folder):
+        file_path = os.path.join(qa_folder, file_name)
+        if file_name.endswith(".json"):
+            try:
+                with open(file_path, 'r', encoding='utf-8') as file:
+                    data: Dict[str, Any] = json.load(file)
+                    
+                    # Default values and type validation
+                    topic = data.get("topic", "Unknown Topic")
+                    correspondence = data.get("correspondence", [])
+                    
+                    if not isinstance(correspondence, list):
+                        logging.warning(f"Unexpected format in file: {file_path}")
+                        continue
+                    
+                    question, answer = None, None
+                    for entry in correspondence:
+                        if isinstance(entry, dict):
+                            sender = entry.get("sender")
+                            message = entry.get("message", "")
+                            if sender == "STUDENT":
+                                question = message
+                            elif sender == "AA":
+                                answer = message
+                        
+                    if question and answer:
+                        qa_pairs.append({
+                            "topic": topic,
+                            "question": question,
+                            "answer": answer
+                        })
+            except (json.JSONDecodeError, FileNotFoundError) as e:
+                logging.error(f"Failed to load file {file_name}: {e}")
+                
+    logging.info(f"Loaded {len(qa_pairs)} QA pairs from folder: {qa_folder}")
+    return qa_pairs

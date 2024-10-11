@@ -1,6 +1,6 @@
 import logging
 from enum import Enum
-from typing import List, Union, Tuple
+from typing import List, Union, Tuple, Dict
 
 import weaviate
 import weaviate.classes as wvc
@@ -21,12 +21,25 @@ class DocumentSchema(Enum):
     """
     Schema for the embedded chunks
     """
-
-    COLLECTION_NAME = "DocumentMxbai"
+    COLLECTION_NAME = "CITKnowledgeBase"
     STUDY_PROGRAM = "study_program"
     CONTENT = "content"
     EMBEDDING = "embedding"
 
+class QASchema(Enum):
+    """
+    Schema for the QA Collection
+    """
+    COLLECTION_NAME = "QACollection"
+    TOPIC = "topic"
+    QUESTION = "question"
+    ANSWER = "answer"
+
+class SampleQuestion:
+    def __init__(self, topic: str, question: str, answer: str):
+        self.topic = topic
+        self.question = question
+        self.answer = answer
 
 class WeaviateManager:
     def __init__(self, url: str, embedding_model: BaseModelClient, reranker: Reranker):
@@ -34,8 +47,9 @@ class WeaviateManager:
         self.client = weaviate.connect_to_local(host=config.WEAVIATE_URL, port=config.WEAVIATE_PORT)
         self.model = embedding_model
         self.schema_initialized = False
-        self.documents = self.initialize_schema()
         self.reranker = reranker
+        self.documents = self.initialize_schema()
+        self.qa_collection = self.initialize_qa_schema()
 
     def __del__(self):
         self.client.close()
@@ -92,28 +106,74 @@ class WeaviateManager:
             logging.info(f"Schema for {collection_name} created successfully")
             self.schema_initialized = True
             return collection
-        except weaviate.WeaviateInvalidInputError as e:
+        except weaviate.exceptions.WeaviateInvalidInputError as e:
             logging.error(f"Invalid input error while creating schema: {e}")
-        except weaviate.WeaviateConnectionError as e:
+        except weaviate.exceptions.WeaviateConnectionError as e:
             logging.error(f"Connection error while creating schema: {e}")
-        except weaviate.UnexpectedStatusCodeError as e:
+        except weaviate.exceptions.UnexpectedStatusCodeError as e:
             logging.error(f"Unexpected status code while creating schema: {e}")
         except Exception as e:
             logging.error(f"Error creating schema for {collection_name}: {e}")
 
-    def add_document(self, text: str, study_program: str):
-        """Add a document with classification to Weaviate."""
-        try:
-            text_embedding = self.model.embed(text)
-            # logging.info(f"Adding document with embedding: {text_embedding}")
-            self.documents.data.insert(properties={DocumentSchema.CONTENT.value: text,
-                                                   DocumentSchema.STUDY_PROGRAM.value: study_program},
-                                       vector=text_embedding)
-            logging.info(f"Document successfully added with study program: {study_program}")
-        except Exception as e:
-            logging.error(f"Failed to add document: {e}")
+    def initialize_qa_schema(self) -> Collection:
+        """Creates the schema in Weaviate for storing questions and answers."""
 
-    def get_relevant_context(self, question: str, study_program: str, keywords: str = None, test_mode: bool = False) -> Union[str, Tuple[str, List[str]]]:
+        collection_name = QASchema.COLLECTION_NAME.value
+
+        # Check if the collection already exists
+        if self.client.collections.exists(collection_name):
+            logging.info(f"Existing schema found for {collection_name}")
+            return self.client.collections.get(collection_name)
+
+        logging.info(f"Creating new schema for {collection_name}")
+
+        # Define properties for the QA collection
+        properties = [
+            Property(
+                name=QASchema.TOPIC.value,
+                description="The topic of the conversation",
+                data_type=DataType.TEXT,
+                index_inverted=False  # Disable inverted index if not needed
+            ),
+            Property(
+                name=QASchema.QUESTION.value,
+                description="The student's question",
+                data_type=DataType.TEXT,
+                index_inverted=False
+            ),
+            Property(
+                name=QASchema.ANSWER.value,
+                description="The academic advisor's answer",
+                data_type=DataType.TEXT,
+                index_inverted=False
+            ),
+        ]
+
+        # Define vector index configuration
+        vector_index_config = Configure.VectorIndex.hnsw(
+            distance_metric=VectorDistances.COSINE
+        )
+
+        try:
+            # Create the QA collection with the specified configuration
+            collection = self.client.collections.create(
+                name=collection_name,
+                description="A collection for storing sample questions and answers for the RAG system",
+                properties=properties,
+                vector_index_config=vector_index_config,
+            )
+            logging.info(f"Schema for {collection_name} created successfully")
+            return collection
+        except weaviate.exceptions.WeaviateInvalidInputError as e:
+            logging.error(f"Invalid input error while creating schema: {e}")
+        except weaviate.exceptions.WeaviateConnectionError as e:
+            logging.error(f"Connection error while creating schema: {e}")
+        except weaviate.exceptions.UnexpectedStatusCodeError as e:
+            logging.error(f"Unexpected status code while creating schema: {e}")
+        except Exception as e:
+            logging.error(f"Error creating schema for {collection_name}: {e}")
+
+    def get_relevant_context(self, question: str, study_program: str, language: str, keywords: str = None, test_mode: bool = False) -> Union[str, Tuple[str, List[str]]]:
         """
         Retrieve relevant documents based on the question embedding and study program.
         Optionally returns both the concatenated context and the sorted context list for testing purposes.
@@ -156,20 +216,21 @@ class WeaviateManager:
                 return_metadata=wvc.query.MetadataQuery(certainty=True, score=True, distance=True)
             )
             # documents_with_embeddings: List[DocumentWithEmbedding] = []
-            for result in query_result.objects:
-                logging.info(f"Certainty: {result.metadata.certainty}, Score: {result.metadata.score}, Distance: {result.metadata.distance}")
+            # for result in query_result.objects:
+                # logging.info(f"Certainty: {result.metadata.certainty}, Score: {result.metadata.score}, Distance: {result.metadata.distance}")
                 # documents_with_embeddings.append(DocumentWithEmbedding(content=result.properties['content'], embedding=result.vector['default']))
 
             # sorted_context = self.reranker.rerank_with_embeddings(documents_with_embeddings, keyword_string=keywords)
 
-            context_list = [result.properties['content'] for result in query_result.objects]
+            context_list = [result.properties[DocumentSchema.CONTENT.value] for result in query_result.objects]
 
             # Remove exact duplicates from context_list
             context_list = WeaviateManager.remove_exact_duplicates(context_list)
-            logging.info(f"Context list length after removing exact duplicates: {len(context_list)}")
+            # logging.info(f"Context list length after removing exact duplicates: {len(context_list)}")
 
             # Rerank the unique contexts using Cohere
-            sorted_context = self.reranker.rerank_with_cohere(context_list=context_list, query=question, top_n=5)
+            sorted_context = self.reranker.rerank_with_cohere(context_list=context_list, query=question, language=language, top_n=5)
+            
             context = "\n\n".join(sorted_context)
 
             # Return based on test_mode
@@ -181,24 +242,84 @@ class WeaviateManager:
         except Exception as e:
             logging.error(f"Error retrieving relevant context: {e}")
             return "" if not test_mode else ("", [])
+        
+    def get_relevant_sample_questions(self, question: str, language: str) -> List[SampleQuestion]:
+        """
+        Retrieve relevant sample questions and answers based on the question embedding.
 
-    def delete_collection(self):
+        Args:
+            question (str): The student's question.
+            language (str): The language of the question.
+            top_k (int): The number of top relevant sample questions to return.
+
+        Returns:
+            List[SampleQuestion]: A list of SampleQuestion objects, sorted based on reranking results.
+        """
+        try:
+            limit = 5
+            top_n = 2
+            min_relevance_score = 0.85
+
+            # Embed the question using the embedding model
+            question_embedding = self.model.embed(question)
+
+            query_result = self.qa_collection.query.near_vector(
+                near_vector=question_embedding,
+                limit=limit,
+                return_metadata=wvc.query.MetadataQuery(certainty=True, score=True, distance=True)
+            )
+
+            # Collect the results
+            sample_questions: List[SampleQuestion] = []
+            for result in query_result.objects:
+                topic = result.properties.get(QASchema.TOPIC.value, "")
+                retrieved_question = result.properties.get(QASchema.QUESTION.value, "")
+                answer = result.properties.get(QASchema.ANSWER.value, "")
+                sample_questions.append(SampleQuestion(topic, retrieved_question, answer))
+
+            # Rerank the sample questions using the reranker
+            context_list = [sq.question for sq in sample_questions]
+            sorted_questions = self.reranker.rerank_with_cohere(
+                context_list=context_list, query=question, language=language, top_n=top_n, min_relevance_score=min_relevance_score
+            )
+
+            # Map the sorted questions back to SampleQuestion objects
+            sorted_sample_questions: List[SampleQuestion] = []
+            for sorted_question in sorted_questions:
+                for sq in sample_questions:
+                    if sq.question == sorted_question:
+                        sorted_sample_questions.append(sq)
+                        break
+
+            return sorted_sample_questions
+
+        except Exception as e:
+            logging.error(f"Error retrieving relevant sample questions: {e}")
+            return []
+
+    def delete_collections(self):
         """
         Delete a collection from the database
         """
-        collection_name = DocumentSchema.COLLECTION_NAME.value
-
-        if self.client.collections.exists(collection_name):
-            try:
-                self.client.collections.delete(collection_name)
-                logging.info(f"Collection {collection_name} deleted")
-                return True
-            except Exception as e:
-                logging.error(f"Failed to delete collection {collection_name}: {str(e)}")
-                return False
-        else:
-            logging.warning(f"Collection {collection_name} does not exist")
+        try:
+            self.client.collections.delete_all()
+            logging.info(f"Collections deleted")
+            return True
+        except Exception as e:
+            logging.error(f"Failed to delete collections: {str(e)}")
             return False
+
+    def add_document(self, text: str, study_program: str):
+        """Add a document with classification to Weaviate."""
+        try:
+            text_embedding = self.model.embed(text)
+            # logging.info(f"Adding document with embedding: {text_embedding}")
+            self.documents.data.insert(properties={DocumentSchema.CONTENT.value: text,
+                                                   DocumentSchema.STUDY_PROGRAM.value: study_program},
+                                       vector=text_embedding)
+            logging.info(f"Document successfully added with study program: {study_program}")
+        except Exception as e:
+            logging.error(f"Failed to add document: {e}")    
 
     def add_documents(self, chunks: List[Document], study_program: str):
         try:
@@ -220,6 +341,39 @@ class WeaviateManager:
 
         except Exception as e:
             logging.error(f"Error adding document {e}")
+
+    def add_qa_pairs(self, qa_pairs: List[Dict[str, str]]):
+        """
+        Adds QA pairs to the QA collection in Weaviate.
+
+        Args:
+        - qa_pairs: List of dictionaries, each containing 'topic', 'question', and 'answer' fields.
+
+        Returns:
+        - None
+        """
+        for qa_pair in qa_pairs:
+            try:
+                # Prepare the data entry for insertion
+                topic = qa_pair.get("topic", "")
+                question = qa_pair.get("question", "")
+                answer = qa_pair.get("answer", "")
+
+                # Add to QA collection in Weaviate
+                embedding = self.model.embed(question)
+
+                self.qa_collection.data.insert(
+                    properties={
+                        QASchema.TOPIC.value: topic,
+                        QASchema.QUESTION.value: question,
+                        QASchema.ANSWER.value: answer
+                    },
+                    vector=embedding
+                )
+                logging.info(f"Inserted QA pair with topic: {qa_pair.get('topic', 'Unknown')}")
+            except Exception as e:
+                logging.error(f"Failed to insert QA pair with topic {qa_pair.get('topic', 'Unknown')}: {e}")
+
 
     @staticmethod
     def normalize_study_program_name(study_program: str) -> str:

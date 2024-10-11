@@ -1,0 +1,15 @@
+{
+    "topic": "Thesis Registration and Timing for Master's Program",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "Hi, I have a couple of questions about the thesis: 1) Do I need to do anything for thesis registration? As far as I know, the supervisor does the registering. 2) Does the 4 months begin directly after registering or can I begin some time after registering? 3) If I want to begin my master's in the summer semester, until when must my thesis be finished?\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Your supervisor or chair will register your thesis in the CIT portal, and you will receive an email to confirm the data for further processing. The 4 months begin on the date entered by the supervisor in the CIT portal, who can register your thesis up to 2 weeks in advance. Ideally, your thesis should be finished and graded by the end of the winter semester (March/beginning of April) to start your master's in the summer."
+        }
+    ]
+}

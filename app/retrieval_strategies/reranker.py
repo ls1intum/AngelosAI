@@ -30,7 +30,7 @@ class Reranker:
         self.api_key = api_key
         # TODO: Classifier should also get language, so the following lines should be based on the classifier
         self.rerank_model = "rerank-multilingual-v3.0"
-        # self.rerank_model = "rerank-english-v3.0"
+        self.rerank_modelEn = "rerank-english-v3.0"
 
     def rerank_with_embeddings(self, context_list: List[DocumentWithEmbedding], keyword_string: str) -> List[str]:
         """
@@ -62,7 +62,7 @@ class Reranker:
 
         return ranked_context_list
 
-    def rerank_with_cohere(self, context_list: List[str], query: str, top_n: int = 5) -> List[str]:
+    def rerank_with_cohere(self, context_list: List[str], query: str, language: str, top_n: int = 5, min_relevance_score: float = 0.55) -> List[str]:
         """
         Re-ranks the context list using the Cohere reranking model and logs the document indexes based on relevance.
 
@@ -79,8 +79,12 @@ class Reranker:
             co = cohere.Client(self.api_key)
 
             # Use Cohere's reranking model to rank the documents based on the query
+            rerank_model = self.rerank_model
+            if language.lower() == "english":
+                rerank_model = self.rerank_modelEn
+
             response = co.rerank(
-                model=self.rerank_model,
+                model=rerank_model,
                 query=query,
                 documents=context_list,
                 top_n=top_n
@@ -90,8 +94,12 @@ class Reranker:
             for result in response.results:
                 logging.info(f"Document index: {result.index}, Relevance score: {result.relevance_score}")
 
+            filtered_results = [
+                result for result in response.results if result.relevance_score >= min_relevance_score
+            ]
+
             # Get the ranked documents based on the response indexes
-            ranked_context_list = [context_list[result.index] for result in response.results]
+            ranked_context_list = [context_list[result.index] for result in filtered_results]
 
             return ranked_context_list
         except Exception as e:
