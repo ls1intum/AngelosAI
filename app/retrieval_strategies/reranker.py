@@ -62,7 +62,7 @@ class Reranker:
 
         return ranked_context_list
 
-    def rerank_with_cohere(self, context_list: List[str], query: str, language: str, top_n: int = 5, min_relevance_score: float = 0.55) -> List[str]:
+    def rerank_with_cohere(self, context_list: List[str], query: str, language: str, min_relevance_score: float, top_n: int = 5) -> List[str]:
         """
         Re-ranks the context list using the Cohere reranking model and logs the document indexes based on relevance.
 

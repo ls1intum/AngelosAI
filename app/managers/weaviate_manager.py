@@ -32,6 +32,7 @@ class QASchema(Enum):
     """
     COLLECTION_NAME = "QACollection"
     TOPIC = "topic"
+    STUDY_PROGRAM = "study_program"
     QUESTION = "question"
     ANSWER = "answer"
 
@@ -133,7 +134,15 @@ class WeaviateManager:
                 name=QASchema.TOPIC.value,
                 description="The topic of the conversation",
                 data_type=DataType.TEXT,
-                index_inverted=False  # Disable inverted index if not needed
+                index_inverted=False
+            ),
+            Property(
+                name=QASchema.STUDY_PROGRAM.value,
+                description="The study program of the student",
+                data_type=DataType.TEXT,
+                index_filterable=True,
+                index_range_filters=True,
+                index_searchable=True
             ),
             Property(
                 name=QASchema.QUESTION.value,
@@ -154,6 +163,10 @@ class WeaviateManager:
             distance_metric=VectorDistances.COSINE
         )
 
+        inverted_index_config = Configure.inverted_index(
+            index_property_length= True
+        )
+
         try:
             # Create the QA collection with the specified configuration
             collection = self.client.collections.create(
@@ -161,6 +174,8 @@ class WeaviateManager:
                 description="A collection for storing sample questions and answers for the RAG system",
                 properties=properties,
                 vector_index_config=vector_index_config,
+                vectorizer_config=None,  # Since we are manually providing embeddings
+                inverted_index_config=inverted_index_config,
             )
             logging.info(f"Schema for {collection_name} created successfully")
             return collection
@@ -192,6 +207,7 @@ class WeaviateManager:
         try:
             # Define the number of documents to retrieve
             limit = 10
+            min_relevance_score = 0.45
             if study_program.lower() != "general":
                 limit = 10  # Adjust this value if needed based on study program specificity
 
@@ -229,9 +245,9 @@ class WeaviateManager:
             # logging.info(f"Context list length after removing exact duplicates: {len(context_list)}")
 
             # Rerank the unique contexts using Cohere
-            sorted_context = self.reranker.rerank_with_cohere(context_list=context_list, query=question, language=language, top_n=5)
+            sorted_context = self.reranker.rerank_with_cohere(context_list=context_list, query=question, language=language, min_relevance_score=min_relevance_score, top_n=5)
             
-            context = "\n\n".join(sorted_context)
+            context = "\n-----\n".join(sorted_context)
 
             # Return based on test_mode
             if test_mode:
@@ -257,8 +273,8 @@ class WeaviateManager:
         """
         try:
             limit = 5
-            top_n = 2
-            min_relevance_score = 0.85
+            top_n = 3
+            min_relevance_score = 0.5
 
             # Embed the question using the embedding model
             question_embedding = self.model.embed(question)
@@ -356,6 +372,7 @@ class WeaviateManager:
             try:
                 # Prepare the data entry for insertion
                 topic = qa_pair.get("topic", "")
+                study_program = qa_pair.get("study_program", "")
                 question = qa_pair.get("question", "")
                 answer = qa_pair.get("answer", "")
 
@@ -365,6 +382,7 @@ class WeaviateManager:
                 self.qa_collection.data.insert(
                     properties={
                         QASchema.TOPIC.value: topic,
+                        QASchema.STUDY_PROGRAM.value: study_program,
                         QASchema.QUESTION.value: question,
                         QASchema.ANSWER.value: answer
                     },

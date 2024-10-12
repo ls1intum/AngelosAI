@@ -92,6 +92,7 @@ def load_qa_pairs_from_folder(qa_folder: str) -> List[Dict[str, str]]:
                     
                     # Default values and type validation
                     topic = data.get("topic", "Unknown Topic")
+                    study_program = data.get("study_program", "general")
                     correspondence = data.get("correspondence", [])
                     
                     if not isinstance(correspondence, list):
@@ -103,17 +104,21 @@ def load_qa_pairs_from_folder(qa_folder: str) -> List[Dict[str, str]]:
                         if isinstance(entry, dict):
                             sender = entry.get("sender")
                             message = entry.get("message", "")
-                            if sender == "STUDENT":
+                            order_key = entry.get("orderKey")
+                            if (sender == "STUDENT" and order_key == 0):
                                 question = message
-                            elif sender == "AA":
+                            elif (sender == "AA" and order_key == 1):
                                 answer = message
                         
                     if question and answer:
                         qa_pairs.append({
                             "topic": topic,
+                            "study_program": study_program,
                             "question": question,
                             "answer": answer
                         })
+                    else:
+                        logging.error(f"Failed to parse JSON file {file_name}")
             except (json.JSONDecodeError, FileNotFoundError) as e:
                 logging.error(f"Failed to load file {file_name}: {e}")
                 

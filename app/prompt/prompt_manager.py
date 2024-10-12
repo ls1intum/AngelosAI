@@ -14,18 +14,28 @@ class PromptManager:
     - Else, prioritize study program-specific context over general information.
     - If no specific context is provided, base your answer solely on the general context.
 
+    --------------------
+
     **Question:**
     {question}
+
+    --------------------
 
     **General Information:**
     {general_context}
 
+    --------------------
+
     **Study Program Specific Information:**
     {specific_context}
 
+    --------------------
+
     **Similar Questions and Answers**
-    To assist in crafting an accurate response, refer to these sample questions and answers based on similar inquiries in the past:
+    To assist in crafting an accurate response, you may refer to these sample questions and answers based on similar inquiries in the past.
     {sample_questions}
+
+    --------------------
 
     **Response:**
     - Be clear and concise.
@@ -52,14 +62,23 @@ class PromptManager:
     **Frage:**
     {question}
 
+    --------------------
+
     **Allgemeine Informationen:**
     {general_context}
+
+    --------------------
 
     **Studiengangspezifische Informationen:**
     {specific_context}
 
+    --------------------
+
     **Ähnliche Fragen und Antworten**
+    Als Hilfestellung für eine korrekte Antwort können Sie diese Musterfragen und -antworten heranziehen, die auf ähnlichen Anfragen in der Vergangenheit basieren.
     {sample_questions}
+
+    --------------------
 
     **Antwort:**
     - Seien Sie klar und prägnant.
@@ -104,7 +123,6 @@ class PromptManager:
             system_content = "Sie sind ein intelligenter Assistent, der den Studierenden der Technischen Universität München (TUM) bei Fragen rund um ihr Studium hilft"
 
         logging.info(user_content)
-
         # Return the messages structure for the LLM
         return [
             {"role": "system", "content": system_content},
@@ -127,7 +145,7 @@ class PromptManager:
     Studienberatung: "{sq.answer}"
     """.strip()
             formatted_strings.append(formatted_string)
-        combined_string = "\n\n".join(formatted_strings)
+        combined_string = "\n-----\n".join(formatted_strings)
         return combined_string
     
     # Method for creating keyword extraction message
