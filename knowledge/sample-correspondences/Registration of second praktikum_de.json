@@ -1,0 +1,16 @@
+{
+    "topic": "Aktualisierung der Praktikumsdaten im Studiumum-Account",
+    "study_program": "general",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "Ich habe das zweite Praktikum absolviert und möchte es in meinem Studitumsaccount mit den Angaben zum Masterpraktikum aktualisieren."
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Bitte wenden Sie sich für Unterstützung bei der Aktualisierung Ihrer Daten an die Sekretärin Ihres Prüfungsausschusses."
+        }
+    ]
+}

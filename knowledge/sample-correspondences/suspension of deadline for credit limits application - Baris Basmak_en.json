@@ -1,0 +1,16 @@
+{
+    "topic": "Deadline Suspension for Credit Limits Inquiry",
+    "study_program": "general",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "I am applying for a deadline suspension for my credit limits for the end of my 6th semester as I will have 88 credits, but I am currently working on my Master's Thesis which is due soon. I have attached the required documents.\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Thank you for your message. Please come to my consultation hour on Thursday so we can discuss your best options."
+        }
+    ]
+}

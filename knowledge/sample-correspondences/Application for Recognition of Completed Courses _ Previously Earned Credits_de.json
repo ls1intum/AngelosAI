@@ -1,0 +1,16 @@
+{
+    "topic": "Kursersatzanfrage",
+    "study_program": "general",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "Ich möchte mich nach der Möglichkeit einer Kurssubstitution auf Basis von im Bachelorstudium absolvierten Lehrveranstaltungen erkundigen."
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Für Fragen zur Lehrveranstaltungssubstitution wenden Sie sich bitte an das Anerkennungsteam."
+        }
+    ]
+}

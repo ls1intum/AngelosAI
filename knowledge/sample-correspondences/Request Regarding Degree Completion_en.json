@@ -1,0 +1,16 @@
+{
+    "topic": "Extension Request for Completing Degree Credits",
+    "study_program": "general",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "I am currently short of one course to start my final semester and facing challenges in completing my remaining credits. Due to recent health issues, I kindly request an extension for one more semester to complete my thesis and remaining courses.\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Please send your examination report, enrollment record, and a screenshot of your study plan from TUMonline to help me understand your situation better."
+        }
+    ]
+}

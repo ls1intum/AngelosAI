@@ -1,0 +1,16 @@
+{
+    "topic": "Erläuterungen zum Masterseminar und zur Anmeldung zu Lehrveranstaltungen",
+    "study_program": "master-information-systems",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "Ich studiere im Masterstudiengang Wirtschaftsinformatik und habe Fragen zum Masterseminar Federated Learning: ob die dort erbrachten Credits auf mein Studium angerechnet werden können, außerdem möchte ich mich aufgrund der Empfehlung meines Professors für zwei Kurse anmelden und möchte wissen, ob es Einschränkungen bei der Mehrfachbelegung gibt.“"
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Das Seminar ist Teil deines Curriculums, daher werden die dafür angerechneten Credits für dein Studium angerechnet. Für die Kurse kannst du dich von deinem Professor anmelden und ob sie für deinen Abschluss angerechnet werden, hängt von den Modulnummern in deinem Studienplan ab."
+        }
+    ]
+}

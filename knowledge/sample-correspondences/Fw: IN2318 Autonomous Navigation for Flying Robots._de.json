@@ -1,0 +1,16 @@
+{
+    "topic": "Kursteilnahmeanfrage",
+    "study_program": "general",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "Ich bin Bachelorstudent an der TUM und möchte an der Vorlesung „Autonome Navigation für Flugroboter“ teilnehmen. Allerdings kann ich den zuständigen Dozenten dieser Vorlesung nicht erreichen. Können Sie mir bitte weiterhelfen?“"
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Die Lehrveranstaltung IN2318 wird unregelmäßig angeboten und fand zuletzt im Sommersemester 2021 statt. Im kommenden Wintersemester wird sie voraussichtlich nicht angeboten. Vielleicht möchten Sie sich nach anderen Lehrveranstaltungen mit interessanten Themen umsehen."
+        }
+    ]
+}

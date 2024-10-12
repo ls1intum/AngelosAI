@@ -1,0 +1,16 @@
+{
+    "topic": "Exmatriculation and Exmatriculation Certificate",
+    "study_program": "general",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "I have received my graduation certificate and urgently need the de-registration certificate because I will soon be starting a job. How can I get this as quickly as possible? Do I have to submit an application?\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "The certificate of de-registration is issued by the Graduation Office. Confirmation of graduation can also be issued by the secretary responsible for your degree program. This should probably help you."
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "topic": "Matriculation Issue with Praktikum Course",
+    "study_program": "general",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "I taken a praktikum course last semester, but it is still in my free registration and not assigned to my credits. Can you please fix this for me?\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Please contact your secretary of the examination board for assistance."
+        }
+    ]
+}

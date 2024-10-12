@@ -1,0 +1,16 @@
+{
+    "topic": "Confirmation for Doctoral Application",
+    "study_program": "master-informatik",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "I am applying for PhD positions and need confirmation of my enrollment in the Computer Science Master's program and the expected graduation date. Is it possible to obtain such a certificate or do I need to contact another agency?\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Please contact your secretary. I cannot guarantee that such a confirmation can be issued, but if so, it will come from there."
+        }
+    ]
+}

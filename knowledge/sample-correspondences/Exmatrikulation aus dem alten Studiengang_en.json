@@ -1,0 +1,16 @@
+{
+    "topic": "Exmatriculation from the B.Sc. Computer Science",
+    "study_program": "bachelor-informatik",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "I am enrolled in both the B.Sc. Computer Science and the B.Sc. Business Information Systems and will be exmatriculated from the B.Sc. Computer Science at the end of this semester. Do I have to exmatriculate myself or does it happen automatically? Will this affect my status in the B.Sc. Business Information Systems?\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "If you do not meet the criteria for the study progress control, you will automatically be exmatriculated from the study program without affecting other study programs."
+        }
+    ]
+}
