@@ -1,0 +1,16 @@
+{
+    "topic": "status of the diploma",
+    "study_program": "general",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "Hello, since I have completed all subjects of my master's degree as well as my master's thesis, I wanted to ask when I can expect to receive my certificate and degree?\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Please contact the secretary responsible for your degree program to discuss certificate release."
+        }
+    ]
+}

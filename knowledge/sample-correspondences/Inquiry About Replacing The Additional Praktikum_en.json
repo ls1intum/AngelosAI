@@ -1,0 +1,16 @@
+{
+    "topic": "Options for Replacing Praktikum Grade",
+    "study_program": "master-informatik",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "I am an MSc Informatics student and recently completed my second praktikum. Unfortunately, the grade I received is lower than I wanted, and I would like to inquire about options to replace it. Can I replace the grade with a new praktikum, regular courses, or guided research?\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Yes, you can replace the grade of your praktikum by taking a new praktikum, by taking regular courses, or by doing guided research."
+        }
+    ]
+}

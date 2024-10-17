@@ -1,0 +1,16 @@
+{
+    "topic": "Course Substitution Inquiry",
+    "study_program": "general",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "I would like to inquire about the possibility of performing a course substitution based on courses I completed during my Bachelor's degree."
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Please contact the recognition team for your questions regarding course substitution."
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "topic": "Fehlende ECTS und Masterarbeit",
+    "study_program": "general",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "Ich habe Schwierigkeiten bei der Suche nach einem Betreuer für meine Masterarbeit und habe daher 6 ECTS nicht erworben. Ich möchte wissen, ob es eine Lösung für diese fehlenden ECTS gibt, z. B. durch eine nachträgliche Eintragung eines Urlaubssemesters. Sollte ich möglicherweise persönlich vorbeikommen?\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Bitte senden Sie mir Ihren aktuellen Kontoauszug und die Studienverlaufsbescheinigung, damit ich Ihre Situation besser verstehen kann. Ist Ihre Masterarbeit bereits angemeldet?"
+        }
+    ]
+}

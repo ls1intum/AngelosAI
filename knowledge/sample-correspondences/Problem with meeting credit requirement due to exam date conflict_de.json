@@ -1,0 +1,16 @@
+{
+    "topic": "Terminliche Probleme bei Prüfungen und Abschlussarbeiten",
+    "study_program": "general",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "Ich habe einen Terminkonflikt mit zwei bevorstehenden Prüfungen und muss beide ablegen, um die erforderlichen Leistungspunkte zu erhalten. Ich stehe kurz vor dem Abschluss meines Studiums und brauche dringend Rat, wie ich diese Situation am besten meistern kann, da ich gerade mit meiner Masterarbeit begonnen habe.“"
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Leider müssen Sie sich für eine Prüfung entscheiden, an der Sie teilnehmen möchten. Bitte reichen Sie Ihren Prüfungsbericht und Ihre Studienunterlagen ein, damit ich Ihre Situation besser beurteilen kann. Es wäre von Vorteil, wenn Sie an unserer offenen Sprechstunde teilnehmen würden, um Ihre Optionen im Detail zu besprechen."
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "topic": "Fristaussetzung für Kreditlimitabfragen",
+    "study_program": "general",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "Ich beantrage eine Fristaussetzung für mein Leistungslimit zum Ende des 6. Semesters, da ich dann 88 Leistungspunkte habe, derzeit aber an meiner Masterarbeit arbeite, die bald fällig ist. Die erforderlichen Unterlagen habe ich beigefügt.\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Vielen Dank für Ihre Nachricht. Kommen Sie bitte am Donnerstag zu meiner Sprechstunde, damit wir Ihre besten Optionen besprechen können."
+        }
+    ]
+}

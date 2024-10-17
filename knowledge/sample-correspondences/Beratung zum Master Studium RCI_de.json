@@ -1,0 +1,16 @@
+{
+    "topic": "Studiengang RCI - Remote Teilnahme",
+    "study_program": "general",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "Ich bin Bachelorstudent der angewandten Informatik und interessiere mich für den Studiengang RCI. Ist es möglich, den Studiengang größtenteils remote durchzuführen, da ich nicht nach München ziehen kann, um einen Familienangehörigen zu pflegen?\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Bitte wenden Sie sich an den Studiengangskoordinator für genauere Informationen."
+        }
+    ]
+}

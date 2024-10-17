@@ -1,0 +1,16 @@
+{
+    "topic": "Anfrage zum Fertigstellungszeitplan der Masterarbeit",
+    "study_program": "master-data-engineering-analytics",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "Ich bin Masterstudent im Studiengang Data Engineering and Analytics. Ich habe die Leistungspunkte erfüllt und habe eine Frage zu meinen kommenden Semestern. Wenn ich meine Masterarbeit nicht im Wintersemester 2024 abschließen kann, habe ich dann noch ein 7. Semester Zeit, um sie fertigzustellen?"
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Wenn Sie zwei Corona-Verlängerungen hatten und nach dem 7. Semester 90 ECTS erreicht haben, können Sie Ihr Studium durchaus im 9. Semester beenden. Nähere Informationen finden Sie unter cit.tum.de/cit/tipps-informatik."
+        }
+    ]
+}

@@ -1,0 +1,16 @@
+{
+    "topic": "Abfrage des Einschreibungsstatus",
+    "study_program": "general",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "Ich möchte mich erkundigen, ob ich nach Erfüllung aller Studienvoraussetzungen und während ich auf meine Abschlussdokumente warte, weiterhin als immatrikuliert gelte."
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Sie sind für das gesamte Semester immatrikuliert, für das Sie Ihre Abschlussdokumente erhalten, das heißt, Sie sind mindestens bis zum 31.03.2025 immatrikuliert."
+        }
+    ]
+}
