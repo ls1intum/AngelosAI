@@ -7,6 +7,7 @@ import uvicorn
 from contextlib import asynccontextmanager
 from fastapi import FastAPI, Request, status
 from fastapi.exceptions import RequestValidationError
+from fastapi.middleware.cors import CORSMiddleware
 from fastapi.responses import ORJSONResponse
 from starlette.responses import JSONResponse
 
@@ -25,6 +26,14 @@ async def lifespan(app: FastAPI):
 
 
 app = FastAPI(default_response_class=ORJSONResponse, lifespan=lifespan)
+
+app.add_middleware(
+    CORSMiddleware,
+    allow_origins=["http://localhost:4200"],
+    allow_credentials=True,
+    allow_methods=["*"],
+    allow_headers=["*"],
+)
 
 
 @app.exception_handler(RequestValidationError)

@@ -3,8 +3,9 @@ import logging
 from fastapi import HTTPException, APIRouter, status, Response
 from pydantic import BaseModel
 
+from app.data.user_requests import UserChat
 from app.injestion.vector_store_initializer import initialize_vectorstores
-from app.utils.dependencies import request_handler, weaviate_manager
+from app.utils.dependencies import request_handler, weaviate_manager, model
 from app.utils.environment import config
 
 
@@ -28,12 +29,24 @@ async def ask(request: UserRequest):
     logging.info(f"Received question: {question} with classification: {classification}")
 
     if config.TEST_MODE:
-        answer, used_tokens, general_context, specific_context = request_handler.handle_question_test_mode(question, classification, language)
+        answer, used_tokens, general_context, specific_context = request_handler.handle_question_test_mode(question,
+                                                                                                           classification,
+                                                                                                           language)
         return {"answer": answer, "used_tokens": used_tokens, "general_context": general_context,
                 "specific_context": specific_context}
     else:
         answer = request_handler.handle_question(question, classification, language)
         return {"answer": answer}
+
+
+@router.post("/chat")
+async def chat(request: UserChat):
+    messages = request.messages
+    if not messages:
+        raise HTTPException(status_code=400, detail="No messages have been provided")
+    logging.info(f"Received messages.")
+    answer = request_handler.handle_chat(messages, study_program=request.study_program)
+    return {"answer": answer}
 
 
 @router.get("/initSchema",
@@ -64,3 +77,9 @@ async def add_document(request: UserRequest):
 async def ping():
     logging.info(config.OLLAMA_URL)
     return {"answer": "Server running."}
+
+
+@router.get("/hi")
+async def ping():
+    logging.info("hi")
+    return model.complete([{"role": "user", "content": "Hi"}])

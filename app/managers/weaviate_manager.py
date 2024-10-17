@@ -7,14 +7,13 @@ import weaviate.classes as wvc
 from langchain.docstore.document import Document
 from weaviate.collections import Collection
 from weaviate.collections.classes.config import DataType, Configure, Property
-from weaviate.classes.query import Rerank
 from weaviate.collections.classes.config_vectorizers import VectorDistances
 from weaviate.collections.classes.filters import Filter
 
 from app.models.base_model import BaseModelClient
 from app.models.openai_model import OpenAIModel
-from app.utils.environment import config
 from app.retrieval_strategies.reranker import Reranker
+from app.utils.environment import config
 
 
 class DocumentSchema(Enum):
@@ -26,6 +25,7 @@ class DocumentSchema(Enum):
     CONTENT = "content"
     EMBEDDING = "embedding"
 
+
 class QASchema(Enum):
     """
     Schema for the QA Collection
@@ -36,11 +36,13 @@ class QASchema(Enum):
     QUESTION = "question"
     ANSWER = "answer"
 
+
 class SampleQuestion:
     def __init__(self, topic: str, question: str, answer: str):
         self.topic = topic
         self.question = question
         self.answer = answer
+
 
 class WeaviateManager:
     def __init__(self, url: str, embedding_model: BaseModelClient, reranker: Reranker):
@@ -91,7 +93,7 @@ class WeaviateManager:
 
         # Defne inverted index configuration
         inverted_index_config = Configure.inverted_index(
-            index_property_length= True
+            index_property_length=True
         )
 
         try:
@@ -164,7 +166,7 @@ class WeaviateManager:
         )
 
         inverted_index_config = Configure.inverted_index(
-            index_property_length= True
+            index_property_length=True
         )
 
         try:
@@ -188,7 +190,8 @@ class WeaviateManager:
         except Exception as e:
             logging.error(f"Error creating schema for {collection_name}: {e}")
 
-    def get_relevant_context(self, question: str, study_program: str, language: str, keywords: str = None, test_mode: bool = False) -> Union[str, Tuple[str, List[str]]]:
+    def get_relevant_context(self, question: str, study_program: str, language: str, keywords: str = None,
+                             test_mode: bool = False) -> Union[str, Tuple[str, List[str]]]:
         """
         Retrieve relevant documents based on the question embedding and study program.
         Optionally returns both the concatenated context and the sorted context list for testing purposes.
@@ -233,8 +236,8 @@ class WeaviateManager:
             )
             # documents_with_embeddings: List[DocumentWithEmbedding] = []
             # for result in query_result.objects:
-                # logging.info(f"Certainty: {result.metadata.certainty}, Score: {result.metadata.score}, Distance: {result.metadata.distance}")
-                # documents_with_embeddings.append(DocumentWithEmbedding(content=result.properties['content'], embedding=result.vector['default']))
+            # logging.info(f"Certainty: {result.metadata.certainty}, Score: {result.metadata.score}, Distance: {result.metadata.distance}")
+            # documents_with_embeddings.append(DocumentWithEmbedding(content=result.properties['content'], embedding=result.vector['default']))
 
             # sorted_context = self.reranker.rerank_with_embeddings(documents_with_embeddings, keyword_string=keywords)
 
@@ -245,8 +248,10 @@ class WeaviateManager:
             # logging.info(f"Context list length after removing exact duplicates: {len(context_list)}")
 
             # Rerank the unique contexts using Cohere
-            sorted_context = self.reranker.rerank_with_cohere(context_list=context_list, query=question, language=language, min_relevance_score=min_relevance_score, top_n=5)
-            
+            sorted_context = self.reranker.rerank_with_cohere(context_list=context_list, query=question,
+                                                              language=language,
+                                                              min_relevance_score=min_relevance_score, top_n=5)
+
             context = "\n-----\n".join(sorted_context)
 
             # Return based on test_mode
@@ -258,7 +263,7 @@ class WeaviateManager:
         except Exception as e:
             logging.error(f"Error retrieving relevant context: {e}")
             return "" if not test_mode else ("", [])
-        
+
     def get_relevant_sample_questions(self, question: str, language: str) -> List[SampleQuestion]:
         """
         Retrieve relevant sample questions and answers based on the question embedding.
@@ -296,7 +301,8 @@ class WeaviateManager:
             # Rerank the sample questions using the reranker
             context_list = [sq.question for sq in sample_questions]
             sorted_questions = self.reranker.rerank_with_cohere(
-                context_list=context_list, query=question, language=language, top_n=top_n, min_relevance_score=min_relevance_score
+                context_list=context_list, query=question, language=language, top_n=top_n,
+                min_relevance_score=min_relevance_score
             )
 
             # Map the sorted questions back to SampleQuestion objects
@@ -325,6 +331,24 @@ class WeaviateManager:
             logging.error(f"Failed to delete collections: {str(e)}")
             return False
 
+    def delete_collection(self):
+        """
+        Delete a collection from the database
+        """
+        collection_name = DocumentSchema.COLLECTION_NAME.value
+
+        if self.client.collections.exists(collection_name):
+            try:
+                self.client.collections.delete(collection_name)
+                logging.info(f"Collection {collection_name} deleted")
+                return True
+            except Exception as e:
+                logging.error(f"Failed to delete collection {collection_name}: {str(e)}")
+                return False
+        else:
+            logging.warning(f"Collection {collection_name} does not exist")
+            return False
+
     def add_document(self, text: str, study_program: str):
         """Add a document with classification to Weaviate."""
         try:
@@ -335,7 +359,7 @@ class WeaviateManager:
                                        vector=text_embedding)
             logging.info(f"Document successfully added with study program: {study_program}")
         except Exception as e:
-            logging.error(f"Failed to add document: {e}")    
+            logging.error(f"Failed to add document: {e}")
 
     def add_documents(self, chunks: List[Document], study_program: str):
         try:
@@ -391,7 +415,6 @@ class WeaviateManager:
                 logging.info(f"Inserted QA pair with topic: {qa_pair.get('topic', 'Unknown')}")
             except Exception as e:
                 logging.error(f"Failed to insert QA pair with topic {qa_pair.get('topic', 'Unknown')}: {e}")
-
 
     @staticmethod
     def normalize_study_program_name(study_program: str) -> str:

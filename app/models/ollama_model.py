@@ -22,12 +22,13 @@ def create_auth_header() -> Dict[str, str]:
 class OllamaModel(BaseModelClient):
     url: str
     headers: Optional[Dict[str, str]] = None
-    session: requests.Session = requests.Session()
+    session: requests.Session = None
 
     model_config = ConfigDict(arbitrary_types_allowed=True)
 
     def model_post_init(self, __context: Any) -> None:
         logging.info("Initializing OllamaModel")
+        self.session = requests.Session()
         self.headers = create_auth_header()
         self.init_model()
 
@@ -35,7 +36,7 @@ class OllamaModel(BaseModelClient):
         response = self.session.post(
             f"{self.url}chat",
             json={"model": self.model, "messages": messages, "stream": False,
-                  "options": {"logprobs": True, "temperature": 0.7}},
+                  "options": {"logprobs": True, "temperature": 0.3}},
             headers=self.headers
         )
         response_data = response.json()
@@ -67,7 +68,7 @@ class OllamaModel(BaseModelClient):
         )
         # logging.info(response)
         # logging.info(response.headers)
-        logging.info(response.elapsed.total_seconds())
+        logging.info(f"embedding took: {response.elapsed.total_seconds()}")
         response.raise_for_status()
         response_data = response.json()
 
