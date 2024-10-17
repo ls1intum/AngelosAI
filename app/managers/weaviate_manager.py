@@ -234,9 +234,11 @@ class WeaviateManager:
                 # include_vector=True,
                 return_metadata=wvc.query.MetadataQuery(certainty=True, score=True, distance=True)
             )
+            logging.info(f"No error yet after {study_program} getting relevant context")
             # documents_with_embeddings: List[DocumentWithEmbedding] = []
             # for result in query_result.objects:
-            # logging.info(f"Certainty: {result.metadata.certainty}, Score: {result.metadata.score}, Distance: {result.metadata.distance}")
+            #     logging.info(
+            #         f"Certainty: {result.metadata.certainty}, Score: {result.metadata.score}, Distance: {result.metadata.distance}")
             # documents_with_embeddings.append(DocumentWithEmbedding(content=result.properties['content'], embedding=result.vector['default']))
 
             # sorted_context = self.reranker.rerank_with_embeddings(documents_with_embeddings, keyword_string=keywords)
@@ -262,6 +264,8 @@ class WeaviateManager:
 
         except Exception as e:
             logging.error(f"Error retrieving relevant context: {e}")
+            # tb = traceback.format_exc()
+            # logging.error("Traceback:\n%s", tb)
             return "" if not test_mode else ("", [])
 
     def get_relevant_sample_questions(self, question: str, language: str) -> List[SampleQuestion]:

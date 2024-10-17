@@ -72,7 +72,7 @@ class RequestHandler:
 
         general_context = self.weaviate_manager.get_relevant_context(last_message, "general", lang)
         specific_context = None
-        if study_program != "general":
+        if study_program != "general" and study_program != "":
             specific_context = self.weaviate_manager.get_relevant_context(last_message, study_program, lang)
         sample_questions = self.weaviate_manager.get_relevant_sample_questions(question=last_message, language=lang)
         sample_questions_formatted = self.prompt_manager.format_sample_questions(sample_questions, lang)

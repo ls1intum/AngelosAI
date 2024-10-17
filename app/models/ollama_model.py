@@ -25,6 +25,7 @@ class OllamaModel(BaseModelClient):
     session: requests.Session = None
 
     model_config = ConfigDict(arbitrary_types_allowed=True)
+    model_initialized: bool = False;
 
     def model_post_init(self, __context: Any) -> None:
         logging.info("Initializing OllamaModel")
@@ -78,10 +79,14 @@ class OllamaModel(BaseModelClient):
         raise NotImplementedError("TODO: IMPLEMENT THIS METHOD IF POSSIBLE")
 
     def close_session(self):
-        # Close the session when done
+        """Close session when done"""
         if self.session:
             self.session.close()
 
     def init_model(self):
-        logging.info("Initializing Ollama model")
-        self.complete([{"role": "user", "content": "Hi"}])
+        """Make sure the model is initialized once, not on every request."""
+        if not self.model_initialized:
+            logging.info("Initializing Ollama model")
+            self.complete([{"role": "user", "content": "Hi"}])
+            self.model_initialized = True
+            logging.info("Initialized Ollama model")
