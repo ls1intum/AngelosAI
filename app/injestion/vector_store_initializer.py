@@ -1,9 +1,13 @@
 import logging
 import os
+from typing import List
+from langchain.docstore.document import Document
 
-from app.injestion.document_loader import load_documents_from_folder, split_documents, load_qa_pairs_from_folder
+from app.injestion.document_loader import load_website_content_from_folder, load_pdf_documents_from_folder, load_qa_pairs_from_folder
+from app.injestion.document_splitter import split_cit_documents, split_tum_documents, split_pdf_documents
 from app.managers.weaviate_manager import WeaviateManager
 from app.utils.environment import config
+from app.data.user_requests import SampleQuestion, WebsiteContent
 
 
 def initialize_vectorstores(base_folder: str, qa_folder: str, weaviate_manager: WeaviateManager):
@@ -31,26 +35,21 @@ def initialize_vectorstores(base_folder: str, qa_folder: str, weaviate_manager: 
     logging.info("Initializing vector stores...")
 
     # Process QA pairs
-    qa_pairs = load_qa_pairs_from_folder(qa_folder)
+    qa_pairs: List[SampleQuestion] = load_qa_pairs_from_folder(qa_folder)
     weaviate_manager.add_qa_pairs(qa_pairs)
 
-    general_docs = load_documents_from_folder(base_folder)
+    # PDF files
+    pdf_docs: List[Document] = load_pdf_documents_from_folder(base_folder)
+    pdf_docs_split: List[Document] = split_pdf_documents(pdf_documents=pdf_docs)
+    weaviate_manager.add_documents(pdf_docs_split)
 
-    # Split the documents into chunks
-    general_chunks = split_documents(general_docs)
-
-    logging.info(f"Start with general embeddings {len(general_chunks)}")
-    weaviate_manager.add_documents(general_chunks, "general")  # 'general' classification
-
-    logging.info("Start with specific embeddings")
-
-    # Repeat for program-specific documents
-    for subdir in os.listdir(base_folder):
-        subfolder_path = os.path.join(base_folder, subdir)
-        if os.path.isdir(subfolder_path):
-            program_docs = load_documents_from_folder(subfolder_path)
-            program_chunks = split_documents(program_docs)
-            logging.info(f"Start with specific embeddings: {subdir} and chunks: {len(program_chunks)}")
-            weaviate_manager.add_documents(program_chunks, subdir)
+    # Website content
+    website_content: List[WebsiteContent] = load_website_content_from_folder(base_folder)
+    cit_content = [content for content in website_content if content.type == "CIT"]
+    tum_content = [content for content in website_content if content.type == "TUM"]
+    cit_chunks = split_cit_documents(cit_content)
+    tum_chunks = split_tum_documents(tum_content)
+    split_website_content: List[WebsiteContent] = cit_chunks + tum_chunks
+    weaviate_manager.add_website_content(split_website_content)
 
     logging.info("Vector stores initialized and documents saved to Weaviate.")

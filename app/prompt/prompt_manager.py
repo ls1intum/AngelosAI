@@ -46,8 +46,8 @@ class PromptManager:
     - Keep the response within 200 words.
 
     Ensure your response is accurate, student-friendly, and directly addresses the student's concern.
-    If you don't think you can answer this question with the provided context, simply reply with:
-    'I'm sorry for the inconvenience! But I cannot answer this question with the provided context.'
+    If you don't think you can answer this question only with the provided context, simply reply with:
+    'False'
     """
 
         self.answer_prompt_template_de = """
@@ -88,18 +88,10 @@ class PromptManager:
     - Halten Sie die Antwort unter 200 Wörtern.
 
     Stellen Sie sicher, dass Ihre Antwort genau, studierendenfreundlich und direkt auf die Frage des Studierenden eingeht.
-    Wenn Sie die Frage mit den bereitgestellten Informationen nicht beantworten können, antworten Sie einfach mit:
-    „Entschuldigen Sie die Umstände! Leider kann ich die Frage mit den bereitgestellten Informationen nicht beantworten.“
+    Wenn Sie die Frage nur mit den bereitgestellten Informationen nicht beantworten können, antworten Sie einfach mit:
+    „False“
     """
 
-        # Adding keyword extraction template
-        self.keyword_extraction_prompt_template = """
-    You are a smart assistant extracting keywords for a RAG system that answers questions of students to study administration. 
-    The keywords are important for ranking the retrieved context. Extract the most relevant academic and administrative keywords 
-    from the student’s query. The keywords should be related to university. Give me 7 keywords between ngram 2 and ngram 4 of the following question:
-    {question}
-    Only respond with the keywords, separated by a comma. Do not respond with anything else.
-    """
         self.answer_prompt_template_with_history = """
              You are an intelligent assistant that helps the TUM School of Computation, Information and Technology's academic advising service answer questions from TUM students who want to receive detailed and accurate information about their studies.
 
@@ -195,20 +187,7 @@ class PromptManager:
             formatted_strings.append(formatted_string)
         combined_string = "\n-----\n".join(formatted_strings)
         return combined_string
-
-    # Method for creating keyword extraction message
-    def create_keyword_extraction_message(self, question):
-        """Generates the prompt specifically for keyword extraction."""
-
-        # Construct the keyword extraction prompt
-        keyword_content = self.keyword_extraction_prompt_template.format(question=question)
-
-        # Return the messages structure for the LLM
-        return [
-            {"role": "system",
-             "content": "You are an intelligent assistant that helps extract relevant university-related keywords for RAG systems."},
-            {"role": "user", "content": keyword_content}
-        ]
+    
 
     def create_messages_with_history(self, general_context, specific_context, question, history: List[ChatMessage],
                                      sample_questions):

@@ -14,6 +14,7 @@ from app.models.base_model import BaseModelClient
 from app.models.openai_model import OpenAIModel
 from app.retrieval_strategies.reranker import Reranker
 from app.utils.environment import config
+from app.data.user_requests import SampleQuestion, WebsiteContent
 
 
 class DocumentSchema(Enum):
@@ -23,7 +24,7 @@ class DocumentSchema(Enum):
     COLLECTION_NAME = "CITKnowledgeBase"
     STUDY_PROGRAM = "study_program"
     CONTENT = "content"
-    EMBEDDING = "embedding"
+    LINK = "link"
 
 
 class QASchema(Enum):
@@ -35,13 +36,6 @@ class QASchema(Enum):
     STUDY_PROGRAM = "study_program"
     QUESTION = "question"
     ANSWER = "answer"
-
-
-class SampleQuestion:
-    def __init__(self, topic: str, question: str, answer: str):
-        self.topic = topic
-        self.question = question
-        self.answer = answer
 
 
 class WeaviateManager:
@@ -81,6 +75,12 @@ class WeaviateManager:
             Property(
                 name=DocumentSchema.CONTENT.value,
                 description="The content of the document",
+                data_type=DataType.TEXT,
+                index_inverted=False  # Disable inverted index if not needed
+            ),
+            Property(
+                name=DocumentSchema.LINK.value,
+                description="The link of the document",
                 data_type=DataType.TEXT,
                 index_inverted=False  # Disable inverted index if not needed
             )
@@ -190,7 +190,7 @@ class WeaviateManager:
         except Exception as e:
             logging.error(f"Error creating schema for {collection_name}: {e}")
 
-    def get_relevant_context(self, question: str, study_program: str, language: str, keywords: str = None,
+    def get_relevant_context(self, question: str, study_program: str, language: str,
                              test_mode: bool = False) -> Union[str, Tuple[str, List[str]]]:
         """
         Retrieve relevant documents based on the question embedding and study program.
@@ -210,7 +210,7 @@ class WeaviateManager:
         try:
             # Define the number of documents to retrieve
             limit = 10
-            min_relevance_score = 0.45
+            min_relevance_score = 0.35
             if study_program.lower() != "general":
                 limit = 10  # Adjust this value if needed based on study program specificity
 
@@ -300,7 +300,8 @@ class WeaviateManager:
                 topic = result.properties.get(QASchema.TOPIC.value, "")
                 retrieved_question = result.properties.get(QASchema.QUESTION.value, "")
                 answer = result.properties.get(QASchema.ANSWER.value, "")
-                sample_questions.append(SampleQuestion(topic, retrieved_question, answer))
+                study_program = result.properties.get(QASchema.STUDY_PROGRAM, "")
+                sample_questions.append(SampleQuestion(topic=topic, question=retrieved_question, answer=answer, study_program=study_program))
 
             # Rerank the sample questions using the reranker
             context_list = [sq.question for sq in sample_questions]
@@ -365,28 +366,77 @@ class WeaviateManager:
         except Exception as e:
             logging.error(f"Failed to add document: {e}")
 
-    def add_documents(self, chunks: List[Document], study_program: str):
+    def add_documents(self, chunks: List[Document]):
+        """
+        Add chunks of Document objects to the vector database.
+        """
         try:
-            # Make use of OpenAI mass batch embedding
-            if isinstance(self.model, OpenAIModel):
-                texts = [chunk.page_content for chunk in chunks]
-                embeddings = self.model.embed_batch(texts)
-            else:
-                # For other models, embed each chunk one at a time
-                embeddings = [self.model.embed(chunk.page_content) for chunk in chunks]
+            batch_size = 500
+            num_chunks = len(chunks)
+            logging.info(f"Adding {num_chunks} documents in batches of {batch_size}")
 
-            # Add the chunks to the vector database in a batch
-            with self.documents.batch.rate_limit(requests_per_minute=600) as batch:
-                for index, chunk in enumerate(chunks):
-                    batch.add_object(properties={
-                        DocumentSchema.CONTENT.value: chunk.page_content,
-                        DocumentSchema.STUDY_PROGRAM.value: study_program
-                    }, vector=embeddings[index])
+            # If using OpenAIModel, split the chunks into batches of 500
+            for i in range(0, num_chunks, batch_size):
+                chunk_batch = chunks[i:i + batch_size]
+                if isinstance(self.model, OpenAIModel):
+                    texts = [chunk.page_content for chunk in chunk_batch]
+                    embeddings = self.model.embed_batch(texts)  # Embed in batch
+                else:
+                    # For other models, embed each chunk one at a time
+                    embeddings = [self.model.embed(chunk.page_content) for chunk in chunk_batch]
+
+                # Add the chunks to the vector database in a batch
+                with self.documents.batch.rate_limit(requests_per_minute=600) as batch:
+                    for index, chunk in enumerate(chunk_batch):
+                        study_program = chunk.metadata.get("study_program", "general")
+                        # Prepare properties
+                        properties = {
+                            DocumentSchema.CONTENT.value: chunk.page_content,
+                            DocumentSchema.STUDY_PROGRAM.value: study_program,
+                        }
+
+                        # Add the document chunk to the batch
+                        batch.add_object(properties=properties, vector=embeddings[index])
 
         except Exception as e:
-            logging.error(f"Error adding document {e}")
+            logging.error(f"Error adding document: {e}")
 
-    def add_qa_pairs(self, qa_pairs: List[Dict[str, str]]):
+    def add_website_content(self, website_contents: List[WebsiteContent]):
+        """
+        Add chunks of WebsiteContent objects to the vector database, handling metadata and optional fields.
+        """
+        try:
+            batch_size = 500
+            num_chunks = len(website_contents)
+            logging.info(f"Adding {num_chunks} website contents in batches of {batch_size}")
+
+            # Split the contents into batches of 500 for embedding and adding
+            for i in range(0, num_chunks, batch_size):
+                content_batch = website_contents[i:i + batch_size]
+
+                # If using OpenAIModel, embed in batches, otherwise embed one by one
+                if isinstance(self.model, OpenAIModel):
+                    texts = [content.content for content in content_batch]
+                    embeddings = self.model.embed_batch(texts)  # Batch embed
+                else:
+                    embeddings = [self.model.embed(content.content) for content in content_batch]
+
+                # Add the contents to the vector database in a batch
+                with self.documents.batch.rate_limit(requests_per_minute=600) as batch:
+                    for index, content in enumerate(content_batch):
+                        properties = {
+                            DocumentSchema.CONTENT.value: content.content,
+                            DocumentSchema.STUDY_PROGRAM.value: content.study_program,
+                            DocumentSchema.LINK.value: content.link
+                        }
+
+                        # Add the content chunk to the batch
+                        batch.add_object(properties=properties, vector=embeddings[index])
+
+        except Exception as e:
+            logging.error(f"Error adding website content: {e}")
+
+    def add_qa_pairs(self, qa_pairs: List[SampleQuestion]):
         """
         Adds QA pairs to the QA collection in Weaviate.
 
@@ -399,10 +449,10 @@ class WeaviateManager:
         for qa_pair in qa_pairs:
             try:
                 # Prepare the data entry for insertion
-                topic = qa_pair.get("topic", "")
-                study_program = qa_pair.get("study_program", "")
-                question = qa_pair.get("question", "")
-                answer = qa_pair.get("answer", "")
+                topic = qa_pair.topic
+                study_program = qa_pair.study_program
+                question = qa_pair.question
+                answer = qa_pair.answer
 
                 # Add to QA collection in Weaviate
                 embedding = self.model.embed(question)
@@ -416,9 +466,9 @@ class WeaviateManager:
                     },
                     vector=embedding
                 )
-                logging.info(f"Inserted QA pair with topic: {qa_pair.get('topic', 'Unknown')}")
+                logging.info(f"Inserted QA pair with topic: {qa_pair.topic}")
             except Exception as e:
-                logging.error(f"Failed to insert QA pair with topic {qa_pair.get('topic', 'Unknown')}: {e}")
+                logging.error(f"Failed to insert QA pair with topic {qa_pair.topic}: {e}")
 
     @staticmethod
     def normalize_study_program_name(study_program: str) -> str:
