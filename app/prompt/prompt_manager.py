@@ -1,4 +1,5 @@
 from typing import List
+import logging
 
 from app.data.user_requests import ChatMessage
 from app.managers.weaviate_manager import SampleQuestion
@@ -36,6 +37,7 @@ class PromptManager:
 
     **Similar Questions and Answers**
     To assist in crafting an accurate response, you may refer to these sample questions and answers based on similar inquiries in the past.
+    -----
     {sample_questions}
 
     --------------------
@@ -81,6 +83,7 @@ class PromptManager:
 
     **Ähnliche Fragen und Antworten**
     Als Hilfestellung für eine korrekte Antwort können Sie diese Musterfragen und -antworten heranziehen, die auf ähnlichen Anfragen in der Vergangenheit basieren.
+    -----
     {sample_questions}
 
     --------------------
@@ -137,6 +140,7 @@ class PromptManager:
 
     **Similar Questions and Answers**
     To assist in crafting an accurate response, you may refer to these sample questions and answers based on similar inquiries in the past.
+    -----
     {sample_questions}
 
     --------------------
@@ -191,6 +195,7 @@ class PromptManager:
 
     **Ähnliche Fragen und Antworten**
     Als Hilfestellung für eine korrekte Antwort können Sie diese Musterfragen und -antworten heranziehen, die auf ähnlichen Anfragen in der Vergangenheit basieren.
+    -----
     {sample_questions}
 
     --------------------
@@ -227,7 +232,9 @@ class PromptManager:
                 sample_questions=sample_questions
             )
             system_content = "Sie sind ein intelligenter Assistent, der den Studierenden der Technischen Universität München (TUM) bei Fragen rund um ihr Studium hilft"
-
+        
+        # Log prompt for testing
+        logging.info(user_content)
         # Return the messages structure for the LLM
         return [
             {"role": "system", "content": system_content},
@@ -258,7 +265,10 @@ class PromptManager:
                 sample_questions=sample_questions
             )
             system_content = "Sie sind ein intelligenter Assistent, der den Studierenden der Technischen Universität München (TUM) bei Fragen rund um ihr Studium hilft"
-
+        
+        # Log prompt for testing
+        logging.info(user_content)
+        # Return the messages structure for the LLM
         return [
             {"role": "system","content": system_content},
             {"role": "user", "content": user_content}
