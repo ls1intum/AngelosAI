@@ -5,7 +5,6 @@ class ChatMessage(BaseModel):
     message: str
     type: str
 
-
 class UserChat(BaseModel):
     messages: List[ChatMessage]
     study_program: str

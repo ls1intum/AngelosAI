@@ -210,9 +210,10 @@ class WeaviateManager:
         try:
             # Define the number of documents to retrieve
             limit = 10
-            min_relevance_score = 0.35
+            min_relevance_score = 0.25
             if study_program.lower() != "general":
-                limit = 10  # Adjust this value if needed based on study program specificity
+                limit = 10
+                min_relevance_score = 0.15
 
             # Embed the question using the embedding model
             question_embedding = self.model.embed(question)
@@ -283,7 +284,7 @@ class WeaviateManager:
         try:
             limit = 5
             top_n = 3
-            min_relevance_score = 0.5
+            min_relevance_score = 0.4
 
             # Embed the question using the embedding model
             question_embedding = self.model.embed(question)
