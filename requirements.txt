@@ -17,6 +17,7 @@ langchain-openai==0.2.2
 langchain-core==0.3.10
 weaviate-client==4.8.1
 pydantic==2.9.2
+langdetect==1.0.9
 #-------------testing dependencies-----------------------
 pytest==8.3.3
 pandas==2.2.3

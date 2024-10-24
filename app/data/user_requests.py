@@ -1,14 +1,22 @@
 from pydantic import BaseModel
-
+from typing import List
 
 class ChatMessage(BaseModel):
     message: str
     type: str
 
-    def __str__(self):
-        return f"{self.type}:  {self.message}"
-
-
 class UserChat(BaseModel):
-    messages: list[ChatMessage]
+    messages: List[ChatMessage]
+    study_program: str
+
+class SampleQuestion(BaseModel):
+    topic: str
+    question: str
+    answer: str
+    study_program: str
+
+class WebsiteContent(BaseModel):
+    type: str
+    content: str
+    link: str
     study_program: str

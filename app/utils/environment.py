@@ -8,8 +8,8 @@ load_dotenv("./../development.env")
 class Config:
     WEAVIATE_URL = os.getenv("WEAVIATE_URL", "localhost")
     WEAVIATE_PORT = os.getenv("WEAVIATE_PORT", "8001")
-    KNOWLEDGE_BASE_FOLDER = os.getenv("KNOWLEDGE_BASE_FOLDER", "./../knowledge/documents")
-    QA_FOLDER = os.getenv("QA_FOLDER", "./../knowledge/sample-correspondences")
+    KNOWLEDGE_BASE_FOLDER = os.getenv("KNOWLEDGE_BASE_FOLDER", "./knowledge/documents")
+    QA_FOLDER = os.getenv("QA_FOLDER", "./knowledge/sample-correspondences")
     DELETE_BEFORE_INIT = os.getenv("DELETE_BEFORE_INIT", "false")
     USE_OLLAMA = os.getenv("USE_OLLAMA", "true")
     USE_AZURE = os.getenv("USE_AZURE", "true")
@@ -28,6 +28,8 @@ class Config:
     TEST_MODE = os.getenv("TEST_MODE")
     OPENAI_MODEL_DEPLOYMENT = os.getenv("OPENAI_MODEL_DEPLOYMENT")
     COHERE_API_KEY = os.getenv("COHERE_API_KEY")
+    COHERE_API_KEY_MULTI = os.getenv("COHERE_API_KEY_MULTI")
+    COHERE_API_KEY_EN = os.getenv("COHERE_API_KEY_EN")
 
 
 config = Config()

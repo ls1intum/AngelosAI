@@ -15,12 +15,6 @@ class RequestHandler:
 
     def handle_question(self, question: str, classification: str, language: str):
         """Handles the question by fetching relevant documents and generating an answer."""
-        # Get relevant keywords
-        # messages = self.prompt_manager.create_keyword_extraction_message(question)
-        # answer, tokens = self.model.complete_with_tokens(messages)
-        # logging.info(f"LLM Keyword extraction: {answer}, with tokens used: {tokens}")
-        # keywords = answer.replace(",", "")
-
         general_context = self.weaviate_manager.get_relevant_context(question=question, study_program="general",
                                                                      language=language)
         specific_context = None
@@ -37,12 +31,6 @@ class RequestHandler:
 
     def handle_question_test_mode(self, question: str, classification: str, language: str):
         """Handles the question by fetching relevant documents and generating an answer."""
-        # Get relevant keywords
-        # messages = self.prompt_manager.create_keyword_extraction_message(question)
-        # answer, tokens = self.model.complete_with_tokens(messages)
-        # logging.info(f"LLM Keyword extraction: {answer}, with tokens used: {tokens}")
-        # keywords = answer.replace(",", "")
-
         general_context, general_context_list = self.weaviate_manager.get_relevant_context(question=question,
                                                                                            study_program="general",
                                                                                            language=language,
@@ -61,22 +49,38 @@ class RequestHandler:
                                                        question, language)
         answer, tokens = self.model.complete_with_tokens(messages)
         return answer, tokens, general_context_list, specific_context_list
-
-    def add_document(self, question: str, classification: str):
-        return self.weaviate_manager.add_document(question, classification)
-
+    
     def handle_chat(self, messages: List[ChatMessage], study_program: str):
         """Handles the question by fetching relevant documents and generating an answer."""
+        # The last message is the user's current question
         last_message = messages[-1].message
+        # Determine language
         lang = LanguageDetector.get_language(last_message)
-
+        # Get context
         general_context = self.weaviate_manager.get_relevant_context(last_message, "general", lang)
         specific_context = None
-        if study_program != "general" and study_program != "":
+        if study_program and study_program.lower() != "general":
             specific_context = self.weaviate_manager.get_relevant_context(last_message, study_program, lang)
+        # Retrieve and format sample questions
         sample_questions = self.weaviate_manager.get_relevant_sample_questions(question=last_message, language=lang)
         sample_questions_formatted = self.prompt_manager.format_sample_questions(sample_questions, lang)
-        messages = self.prompt_manager.create_messages_with_history(general_context, specific_context, messages[-1],
-                                                                    messages[:-1], sample_questions_formatted)
+        # Format chat history (excluding the last message)
+        if len(messages) > 1:
+            history_formatted = self.prompt_manager.format_chat_history(messages[:-1], lang)
+        else:
+            history_formatted = None  # No history to format
+        # Create messages for the model
+        messages_to_model = self.prompt_manager.create_messages_with_history(
+            general_context=general_context,
+            specific_context=specific_context,
+            question=last_message,
+            history=history_formatted,
+            sample_questions=sample_questions_formatted,
+            language=lang
+        )
 
-        return self.model.complete(messages)
+        # Generate and return the answer
+        return self.model.complete(messages_to_model)
+    
+    def add_document(self, question: str, classification: str):
+        return self.weaviate_manager.add_document(question, classification)
