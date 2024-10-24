@@ -6,7 +6,7 @@ load_dotenv("./../development.env")
 
 
 class Config:
-    WEAVIATE_URL = os.getenv("WEAVIATE_URL", "localhost")
+    WEAVIATE_URL = os.getenv("WEAVIATE_URL", "weaviate")
     WEAVIATE_PORT = os.getenv("WEAVIATE_PORT", "8001")
     KNOWLEDGE_BASE_FOLDER = os.getenv("KNOWLEDGE_BASE_FOLDER", "./knowledge/documents")
     QA_FOLDER = os.getenv("QA_FOLDER", "./knowledge/sample-correspondences")
@@ -25,7 +25,7 @@ class Config:
     GPU_HOST = os.getenv("GPU_HOST")
     OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
     AZURE_OPENAI_API_KEY = os.getenv("AZURE_OPENAI_API_KEY")
-    TEST_MODE = os.getenv("TEST_MODE")
+    TEST_MODE = os.getenv("TEST_MODE", "false")
     OPENAI_MODEL_DEPLOYMENT = os.getenv("OPENAI_MODEL_DEPLOYMENT")
     COHERE_API_KEY = os.getenv("COHERE_API_KEY")
     COHERE_API_KEY_MULTI = os.getenv("COHERE_API_KEY_MULTI")

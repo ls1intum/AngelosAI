@@ -82,25 +82,30 @@ jobs:
           script: |
             rm .env.prod
             touch .env.prod
-            echo "EMAIL_ADDRESS=${{ secrets.EMAIL_ADDRESS }}" >> .env.prod
-            echo "EMAIL_PASSWORD=${{ secrets.EMAIL_PASSWORD }}" >> .env.prod
-            echo "IMAP_SERVER=${{ vars.IMAP_SERVER }}" >> .env.prod
-            echo "SMTP_SERVER=${{ vars.SMTP_SERVER }}" >> .env.prod
-            echo "IMAP_PORT=${{ vars.IMAP_PORT }}" >> .env.prod
-            echo "SMTP_PORT=${{ vars.SMTP_PORT }}" >> .env.prod
-            echo "USE_OPENAI=${{ vars.USE_OPENAI }}" >> .env.prod
-            echo "USE_AZURE=${{ vars.USE_AZURE }}" >> .env.prod
+            echo "WEAVIATE_URL=${{ secrets.WEAVIATE_URL }}" >> .env.prod
+            echo "WEAVIATE_PORT=${{ secrets.WEAVIATE_PORT }}" >> .env.prod
+            echo "KNOWLEDGE_BASE_FOLDER=${{ secrets.KNOWLEDGE_BASE_FOLDER }}" >> .env.prod
+            echo "QA_FOLDER=${{ secrets.QA_FOLDER }}" >> .env.prod
+            echo "DELETE_BEFORE_INIT=${{ secrets.DELETE_BEFORE_INIT }}" >> .env.prod
+            echo "USE_OLLAMA=${{ secrets.USE_OLLAMA }}" >> .env.prod
+            echo "USE_AZURE=${{ secrets.USE_AZURE }}" >> .env.prod
+            echo "OLLAMA_URL=${{ secrets.OLLAMA_URL }}" >> .env.prod
+            echo "EMBED_MODEL=${{ secrets.EMBED_MODEL }}" >> .env.prod
+            echo "OPENAI_EMBEDDING_MODEL=${{ secrets.OPENAI_EMBEDDING_MODEL }}" >> .env.prod
+            echo "API_KEY=${{ secrets.LLAMA_MODEL_TOKEN }}" >> .env.prod
+            echo "URL=${{ secrets.LLAMA_MODEL_URI }}" >> .env.prod
             echo "GPU_USER=${{ secrets.GPU_USER }}" >> .env.prod
             echo "GPU_PASSWORD=${{ secrets.GPU_PASSWORD }}" >> .env.prod
-            echo "GPU_HOST=${{ vars.GPU_HOST }}" >> .env.prod
-            echo "GPU_MODEL=${{ vars.GPU_MODEL }}" >> .env.prod
-            echo "GPU_URL=${{ vars.GPU_URL }}" >> .env.prod
-            echo "ANGELOS_URI=${{ vars.ANGELOS_URI }}" >> .env.prod
-            echo "ANGELOS_PORT=${{ vars.ANGELOS_PORT }}" >> .env.prod
-            echo "ANGELOS_API_KEY=${{ secrets.ANGELOS_API_KEY }}" >> .env.prod
-            echo "OPENAI_MODEL=${{ vars.OPENAI_MODEL }}" >> .env.prod
-            echo "AZURE_DEPLOYMENT=${{ vars.AZURE_DEPLOYMENT }}" >> .env.prod
+            echo "OPENAI_MODEL=${{ secrets.OPENAI_MODEL }}" >> .env.prod
+            echo "GPU_MODEL=${{ secrets.OLLAMA_MODEL }}" >> .env.prod
+            echo "GPU_HOST=${{ secrets.GPU_HOST }}" >> .env.prod
             echo "OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}" >> .env.prod
+            echo "AZURE_OPENAI_API_KEY=${{ secrets.AZURE_OPENAI_API_KEY }}" >> .env.prod
+            echo "TEST_MODE=${{ secrets.TEST_MODE }}" >> .env.prod
+            echo "OPENAI_MODEL_DEPLOYMENT=${{ secrets.OPENAI_MODEL_DEPLOYMENT }}" >> .env.prod
+            echo "COHERE_API_KEY=${{ secrets.COHERE_API_KEY }}" >> .env.prod
+            echo "COHERE_API_KEY_MULTI=${{ secrets.COHERE_API_KEY_MULTI }}" >> .env.prod
+            echo "COHERE_API_KEY_EN=${{ secrets.COHERE_API_KEY_EN }}" >> .env.prod
 
 
       - name: SSH to VM and Execute Docker-Compose Up
