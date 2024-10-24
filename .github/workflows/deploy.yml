@@ -54,7 +54,7 @@ jobs:
           proxy_key: ${{ secrets.DEPLOYMENT_GATEWAY_SSH_KEY }}
           proxy_port: ${{ vars.DEPLOYMENT_GATEWAY_PORT }}
           source: "./docker-compose.yml"
-          target: /home/${{ vars.VM_USERNAME }}
+          target: /home/${{ vars.VM_USERNAME }}/${{ github.repository }}
 
       - name: Copy Docker Compose File for weaviate From Repo to VM Host
         uses: appleboy/scp-action@v0.1.7
@@ -67,7 +67,7 @@ jobs:
           proxy_key: ${{ secrets.DEPLOYMENT_GATEWAY_SSH_KEY }}
           proxy_port: ${{ vars.DEPLOYMENT_GATEWAY_PORT }}
           source: "./docker/weaviate.yml"
-          target: /home/${{ vars.VM_USERNAME }}
+          target: /home/${{ vars.VM_USERNAME }}/${{ github.repository }}
 
       - name: SSH to VM and create .env.prod
         uses: appleboy/ssh-action@v1.0.3
@@ -119,4 +119,4 @@ jobs:
           proxy_key: ${{ secrets.DEPLOYMENT_GATEWAY_SSH_KEY }}
           proxy_port: ${{ vars.DEPLOYMENT_GATEWAY_PORT }}
           script: |
-            docker compose -f /home/${{ vars.VM_USERNAME }}/docker-compose.yml -f /home/${{ vars.VM_USERNAME }}/weaviate.yml --env-file=.env.prod up --pull=always -d
+            docker compose -f /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/docker-compose.yml -f /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/docker/weaviate.yml --env-file=.env.prod up --pull=always -d
