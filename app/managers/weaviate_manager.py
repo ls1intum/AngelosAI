@@ -244,18 +244,35 @@ class WeaviateManager:
 
             # sorted_context = self.reranker.rerank_with_embeddings(documents_with_embeddings, keyword_string=keywords)
 
-            context_list = [result.properties[DocumentSchema.CONTENT.value] for result in query_result.objects]
+            context_list = [
+                {
+                    'content': result.properties[DocumentSchema.CONTENT.value],
+                    'link': result.properties.get(DocumentSchema.LINK.value, None)
+                }
+                for result in query_result.objects
+            ]
+            content_content_list: List[str] = [doc['content'] for doc in context_list]
 
             # Remove exact duplicates from context_list
-            context_list = WeaviateManager.remove_exact_duplicates(context_list)
+            content_content_list = WeaviateManager.remove_exact_duplicates(content_content_list)
             # logging.info(f"Context list length after removing exact duplicates: {len(context_list)}")
 
             # Rerank the unique contexts using Cohere
-            sorted_context = self.reranker.rerank_with_cohere(context_list=context_list, query=question,
+            sorted_context = self.reranker.rerank_with_cohere(context_list=content_content_list, query=question,
                                                               language=language,
                                                               min_relevance_score=min_relevance_score, top_n=5)
+            # Integrate links
+            sorted_context_with_links = []
+            for sorted_content in sorted_context:
+                for doc in context_list:
+                    if doc['content'] == sorted_content:
+                        if doc['link']:
+                            sorted_context_with_links.append(f'Link: {doc["link"]}\Content: {doc["content"]}')
+                        else:
+                            sorted_context_with_links.append(f'Link: -\Content: {doc["content"]}')
+                        break
 
-            context = "\n-----\n".join(sorted_context)
+            context = "\n-----\n".join(sorted_context_with_links)
 
             # Return based on test_mode
             if test_mode:

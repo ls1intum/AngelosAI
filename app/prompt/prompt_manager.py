@@ -12,7 +12,7 @@ class PromptManager:
 
     **Instructions:**
     - Re-read the question carefully.
-    - Analyze the provided general information and, if available, study program-specific context.
+    - Analyze the provided general information and, if available, study program-specific context. If the information is retrieved from a website, the link to that website is also provided.
     - If a provided similar question from a student is thematically very similar to the question asked, rely heavily on the respective sample answer from academic advising.
     - Else, prioritize study program-specific context over general information.
     - If no specific context is provided, base your answer solely on the general context.
@@ -45,8 +45,11 @@ class PromptManager:
     **Response:**
     - Be clear and concise.
     - Use a friendly and professional tone.
-    - Avoid unnecessary jargon.
     - Keep the response within 200 words.
+    - Start the response with: "Dear <STUDENT NAME>,"
+    - End with "Best regards, Academic Advising"
+    - If a provided similar question from a student is thematically very similar to the question asked, rely heavily on the respective sample answer from academic advising.
+    - If information that is **highly** relevant to the question is accompanied by a link (in the general or specific context), include the links in your answer like this: "For more detailed information, please visit the following link(s): <LINKS>"
 
     Ensure your response is accurate, student-friendly, and directly addresses the student's concern.
     If you don't think you can answer this question only with the provided context, simply reply with:
@@ -91,8 +94,11 @@ class PromptManager:
     **Antwort:**
     - Seien Sie klar und prägnant.
     - Verwenden Sie einen freundlichen und professionellen Ton.
-    - Vermeiden Sie unnötigen Fachjargon.
     - Halten Sie die Antwort unter 200 Wörtern.
+    - Beginnen Sie die Antwort mit: "Liebe(r) <NAME DES STUDENTEN>,"
+    - Beenden Sie die Antwort mit: "Viele Grüße, Ihre Studienberatung"
+    - Wenn eine ähnliche Frage eines Studenten thematisch sehr ähnlich zur gestellten Frage ist, stützen Sie sich stark auf die jeweilige Beispielsantwort der Studienberatung.
+    - Wenn Informationen, die für die Frage von **höchster** Relevanz sind, mit einem Link versehen sind (im allgemeinen oder studiengangspezifischen Kontext), fügen Sie die Links in Ihre Antwort ein, etwa so: „Für mehr Informationen besuchen Sie bitte den/die folgenden Link(s): <LINKS>“
 
     Stellen Sie sicher, dass Ihre Antwort genau, studierendenfreundlich und direkt auf die Frage des Studierenden eingeht.
     Wenn Sie die Frage nur mit den bereitgestellten Informationen nicht beantworten können, antworten Sie einfach mit:
@@ -148,8 +154,11 @@ class PromptManager:
     **Response:**
     - Be clear and concise.
     - Use a friendly and professional tone.
-    - Avoid unnecessary jargon.
     - Keep the response within 200 words.
+    - Start the response with: "Dear <STUDENT NAME>,"
+    - End with "Best regards, Academic Advising"
+    - If a provided similar question from a student is thematically very similar to the question asked, rely heavily on the respective sample response from academic advising.
+    - If information that is **highly** relevant to the question is accompanied by a link (in the general or specific context), include the links in your response like this: "For more detailed information, please visit the following link(s): <LINKS>"
 
     Ensure your response is accurate, student-friendly, and directly addresses the student's concern.
     If you cannot answer the question using only the information provided, please respond with: “I'm sorry, but I cannot answer this question based on the provided information."
@@ -203,8 +212,9 @@ class PromptManager:
     **Antwort:**
     - Seien Sie klar und prägnant.
     - Verwenden Sie einen freundlichen und professionellen Ton.
-    - Vermeiden Sie unnötigen Fachjargon.
     - Halten Sie die Antwort unter 200 Wörtern.
+    - Wenn eine ähnliche Frage eines Studenten thematisch sehr ähnlich zur gestellten Frage ist, stützen Sie sich stark auf die jeweilige Beispielsantwort der Studienberatung.
+    - Wenn Informationen, die für die Frage von **höchster** Relevanz sind, mit einem Link versehen sind (im allgemeinen oder studiengangspezifischen Kontext), fügen Sie die Links in Ihre Antwort ein, etwa so: „Für mehr Informationen besuchen Sie bitte den/die folgenden Link(s): <LINKS>“
 
     Stellen Sie sicher, dass Ihre Antwort genau, studierendenfreundlich und direkt auf die Frage des Studierenden eingeht.
     Falls Sie die Frage nicht mit ausschließlich den bereitgestellten Informationen beantworten können, antworten Sie mit: „Es tut mir leid, aber ich kann diese Frage basierend auf den vorliegenden Informationen nicht beantworten.“
