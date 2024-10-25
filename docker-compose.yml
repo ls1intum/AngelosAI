@@ -37,5 +37,5 @@ services:
 
 networks:
   angelos-network:
-    external: true
-
+    name: angelos-network
+    driver: bridge
