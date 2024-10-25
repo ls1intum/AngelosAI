@@ -8,6 +8,30 @@ services:
     #    env_file:
     #      - development.env
     command: [ "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000" ]
+    environment:
+      - WEAVIATE_URL
+      - WEAVIATE_PORT
+      - KNOWLEDGE_BASE_FOLDER
+      - QA_FOLDER
+      - DELETE_BEFORE_INIT
+      - USE_OLLAMA
+      - USE_AZURE
+      - OLLAMA_URL
+      - EMBED_MODEL
+      - API_KEY
+      - URL
+      - GPU_USER
+      - GPU_PASSWORD
+      - GPU_MODEL
+      - GPU_HOST
+      - OPENAI_EMBEDDING_MODEL
+      - OPENAI_MODEL_DEPLOYMENT
+      - OPENAI_MODEL
+      - OPENAI_API_VERSION
+      - AZURE_OPENAI_API_KEY
+      - COHERE_API_KEY
+      - COHERE_API_KEY_MULTI
+      - COHERE_API_KEY_EN
     networks:
       - angelos-network
 
