@@ -14,7 +14,7 @@ class Config:
     DELETE_BEFORE_INIT = os.getenv("DELETE_BEFORE_INIT", "false")
     USE_OLLAMA = os.getenv("USE_OLLAMA", "true")
     USE_AZURE = os.getenv("USE_AZURE", "true")
-    OLLAMA_URL = os.getenv("GPU_URL")
+    GPU_URL = os.getenv("GPU_URL")
     EMBED_MODEL = os.getenv("EMBED_MODEL")
     OPENAI_EMBEDDING_MODEL = os.getenv("OPENAI_EMBEDDING_MODEL")
     API_KEY = os.getenv("LLAMA_MODEL_TOKEN")

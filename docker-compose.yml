@@ -16,7 +16,7 @@ services:
       - DELETE_BEFORE_INIT
       - USE_OLLAMA
       - USE_AZURE
-      - OLLAMA_URL
+      - GPU_URL
       - EMBED_MODEL
       - API_KEY
       - URL

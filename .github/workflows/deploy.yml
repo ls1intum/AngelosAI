@@ -102,7 +102,7 @@ jobs:
             echo "DELETE_BEFORE_INIT=${{ vars.DELETE_BEFORE_INIT }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
             echo "USE_OLLAMA=${{ vars.USE_OLLAMA }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
             echo "USE_AZURE=${{ vars.USE_AZURE }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
-            echo "OLLAMA_URL=${{ vars.OLLAMA_URL }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
+            echo "GPU_URL=${{ vars.GPU_URL }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
             echo "EMBED_MODEL=${{ vars.EMBED_MODEL }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
             echo "OPENAI_EMBEDDING_MODEL=${{ vars.OPENAI_EMBEDDING_MODEL }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
             echo "API_KEY=${{ secrets.LLAMA_MODEL_TOKEN }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
