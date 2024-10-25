@@ -110,7 +110,7 @@ jobs:
             echo "GPU_USER=${{ vars.GPU_USER }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
             echo "GPU_PASSWORD=${{ secrets.GPU_PASSWORD }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
             echo "OPENAI_MODEL=${{ vars.OPENAI_MODEL }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
-            echo "GPU_MODEL=${{ vars.OLLAMA_MODEL }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
+            echo "GPU_MODEL=${{ vars.GPU_MODEL }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
             echo "GPU_HOST=${{ vars.GPU_HOST }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
             echo "AZURE_OPENAI_API_KEY=${{ secrets.AZURE_OPENAI_API_KEY }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
             echo "OPENAI_MODEL_DEPLOYMENT=${{ vars.OPENAI_MODEL_DEPLOYMENT }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod

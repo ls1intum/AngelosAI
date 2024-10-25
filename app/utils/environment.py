@@ -22,7 +22,7 @@ class Config:
     GPU_USER = os.getenv("GPU_USER")
     GPU_PASSWORD = os.getenv("GPU_PASSWORD")
     OPENAI_MODEL = os.getenv("OPENAI_MODEL")
-    GPU_MODEL = os.getenv("OLLAMA_MODEL")
+    GPU_MODEL = os.getenv("GPU_MODEL")
     GPU_HOST = os.getenv("GPU_HOST")
     OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
     AZURE_OPENAI_API_KEY = os.getenv("AZURE_OPENAI_API_KEY")
