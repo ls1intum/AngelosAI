@@ -9,8 +9,8 @@ services:
     ports:
       - "8000:8000"
     restart: unless-stopped
-    env_file:
-      - development.env
+    #    env_file:
+    #      - development.env
     command: [ "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000" ]
     networks:
       - angelos-network
