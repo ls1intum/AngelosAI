@@ -26,15 +26,6 @@ jobs:
       - name: Set up Docker Buildx
         uses: docker/setup-buildx-action@v3
 
-      - name: Check if Docker network exists and create it if not
-        run: |
-          if ! docker network inspect angelos-network >/dev/null 2>&1; then
-            echo "Network 'angelos-network' does not exist, creating it..."
-            docker network create angelos-network
-          else
-            echo "Network 'angelos-network' already exists."
-          fi
-
       - name: Build and Push to GitHub Container Registry
         uses: docker/build-push-action@v6
         with:
@@ -139,4 +130,9 @@ jobs:
           proxy_key: ${{ secrets.DEPLOYMENT_GATEWAY_SSH_KEY }}
           proxy_port: ${{ vars.DEPLOYMENT_GATEWAY_PORT }}
           script: |
+            if ! docker network inspect angelos-network >/dev/null 2>&1; then
+              echo "Network 'angelos-network' does not exist, creating it..."
+              docker network create angelos-network
+            fi
+            docker network ls
             docker compose -f /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/docker-compose.yml -f /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/docker/weaviate.yml --env-file=/home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod up --pull=always -d
