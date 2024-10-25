@@ -22,3 +22,7 @@ services:
       - ./docker/weaviate/default.env
     networks:
       - angelos-network
+
+networks:
+  angelos-network:
+    external: true
