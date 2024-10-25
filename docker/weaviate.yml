@@ -22,9 +22,3 @@ services:
       - ./docker/weaviate/default.env
     networks:
       - angelos-network
-
-networks:
-  angelos-network:
-    name: angelos-network
-    driver: bridge
-    external: true
