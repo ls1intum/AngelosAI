@@ -1,11 +1,7 @@
 services:
   angelos-app:
     container_name: angelos-app
-    #    image: ghcr.io/ls1intum/angelos:latest
-    build:
-      context: .
-    #      dockerfile: Dockerfile
-    #      pull: true
+    image: ghcr.io/ls1intum/angelos:latest
     ports:
       - "8000:8000"
     restart: unless-stopped
