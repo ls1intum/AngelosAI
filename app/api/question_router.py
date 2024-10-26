@@ -75,7 +75,7 @@ async def add_document(request: UserRequest):
 
 @router.get("/ping")
 async def ping():
-    logging.info(config.OLLAMA_URL)
+    logging.info(config.GPU_URL)
     return {"answer": "Server running."}
 
 

@@ -2,12 +2,13 @@ import os
 
 from dotenv import load_dotenv
 
-load_dotenv("./../development.env")
+if os.getenv("ENVIRONMENT") == "development":
+    load_dotenv("./../development.env")
 
 
 class Config:
     # Weaviate Database
-    WEAVIATE_URL = os.getenv("WEAVIATE_URL", "localhost")
+    WEAVIATE_URL = os.getenv("WEAVIATE_URL", "weaviate")
     WEAVIATE_PORT = os.getenv("WEAVIATE_PORT", "8001")
     # Knowledge base folders (TODO: Remove)
     KNOWLEDGE_BASE_FOLDER = os.getenv("KNOWLEDGE_BASE_FOLDER", "./knowledge/documents")
@@ -16,15 +17,14 @@ class Config:
     TEST_MODE = os.getenv("TEST_MODE")
     DELETE_BEFORE_INIT = os.getenv("DELETE_BEFORE_INIT", "false")
     # Ollama
-    USE_OLLAMA = os.getenv("USE_OLLAMA", "true")
-    OLLAMA_URL = os.getenv("GPU_URL")
-    EMBED_MODEL = os.getenv("EMBED_MODEL")
+    USE_OLLAMA = os.getenv("USE_OLLAMA", "false")
     API_KEY = os.getenv("LLAMA_MODEL_TOKEN")
     URL = os.getenv("LLAMA_MODEL_URI")
+    GPU_URL = os.getenv("GPU_URL")
     GPU_USER = os.getenv("GPU_USER")
     GPU_PASSWORD = os.getenv("GPU_PASSWORD")
-    OPENAI_MODEL = os.getenv("OPENAI_MODEL")
-    GPU_MODEL = os.getenv("OLLAMA_MODEL")
+    GPU_MODEL = os.getenv("GPU_MODEL")
+    GPU_EMBED_MODEL = os.getenv("GPU_EMBED_MODEL")
     GPU_HOST = os.getenv("GPU_HOST")
     # OpenAI
     OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")

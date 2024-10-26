@@ -26,5 +26,7 @@ def get_model() -> BaseModelClient:
                 embed_model=config.AZURE_OPENAI_EMBEDDING_DEPLOYMENT
             )
     else:
-        logging.info("Using ollama as model")
-        return OllamaModel(model=config.GPU_MODEL, embed_model=config.EMBED_MODEL, url=config.OLLAMA_URL)
+        logging.info(f"Using ollama as model: {config.GPU_MODEL} ")
+        if not config.GPU_MODEL:
+            logging.error("No config gpu model")
+        return OllamaModel(model=config.GPU_MODEL, embed_model=config.EMBED_MODEL, url=config.GPU_URL)
