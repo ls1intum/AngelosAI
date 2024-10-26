@@ -29,4 +29,4 @@ def get_model() -> BaseModelClient:
         logging.info(f"Using ollama as model: {config.GPU_MODEL} ")
         if not config.GPU_MODEL:
             logging.error("No config gpu model")
-        return OllamaModel(model=config.GPU_MODEL, embed_model=config.EMBED_MODEL, url=config.GPU_URL)
+        return OllamaModel(model=config.GPU_MODEL, embed_model=config.GPU_EMBED_MODEL, url=config.GPU_URL)
