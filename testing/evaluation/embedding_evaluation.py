@@ -1,5 +1,5 @@
 import os
-import openai
+from testing.models.azure_testing_model import AzureTestingModel
 from dotenv import load_dotenv
 import numpy as np
 from sklearn.metrics.pairwise import cosine_similarity
@@ -8,24 +8,18 @@ from sklearn.metrics.pairwise import cosine_similarity
 load_dotenv()
 
 class EmbeddingEvaluation:
-    def __init__(self):
+    def __init__(self, model: AzureTestingModel):
         """
         Initialize the EmbeddingEvaluation class, setting up OpenAI API key and model configuration.
         """
-        openai_api_key = os.getenv("OPENAI_API_KEY")
-        openai.api_key = openai_api_key
-        self.model = "text-embedding-3-small"
+        self.model = model
 
     def get_embedding(self, text):
         """
         Get the embedding for the input text using the OpenAI API.
         """
         try:
-            response = openai.embeddings.create(
-                input=text,
-                model=self.model
-            )
-            return response.data[0].embedding
+            return self.model.embed(text)
         except Exception as e:
             print(f"Error generating embedding: {e}")
             return None

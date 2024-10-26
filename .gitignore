@@ -7,3 +7,5 @@ rag-venv
 .pytest_cache/
 docker/.docker-data
 testing/results/*
+testing/testing.env
+.deepeval

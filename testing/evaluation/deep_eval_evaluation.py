@@ -2,22 +2,15 @@ import os
 from dotenv import load_dotenv
 from deepeval.metrics import ContextualPrecisionMetric, ContextualRecallMetric, ContextualRelevancyMetric, AnswerRelevancyMetric, HallucinationMetric, FaithfulnessMetric
 from deepeval.test_case import LLMTestCase
-from testing.test_data_models.qu_data import QAData
+from testing.test_data_models.qa_data import QAData
 
 class DeepEvalEvaluation:
-    def __init__(self):
+    def __init__(self, model_name: str, threshold: float = 0.7):
         """
         Initialize DeepEvalEvaluation class.
         """
-        # Load environment variables from the .env file
-        load_dotenv()
-        # Retrieve the OpenAI API key from the environment variables
-        self.api_key = os.getenv("OPENAI_API_KEY")
-        if not self.api_key:
-            raise ValueError("OPENAI_API_KEY is missing. Ensure it is set in the .env file.")
-
-        self.model = "gpt-4o-mini"  # Can be changed to any other model you'd like to use
-        self.threshold = 0.7  # Threshold for all metrics
+        self.model = model_name
+        self.threshold = threshold
 
     def evaluate_contextual_precision(self, qa_data: QAData, actual_output: str, retrieval_context: list):
         """

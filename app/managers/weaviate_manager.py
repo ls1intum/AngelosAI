@@ -11,7 +11,7 @@ from weaviate.collections.classes.config_vectorizers import VectorDistances
 from weaviate.collections.classes.filters import Filter
 
 from app.models.base_model import BaseModelClient
-from app.models.openai_model import OpenAIModel
+from app.models.ollama_model import OllamaModel
 from app.retrieval_strategies.reranker import Reranker
 from app.utils.environment import config
 from app.data.user_requests import SampleQuestion, WebsiteContent
@@ -393,15 +393,15 @@ class WeaviateManager:
             num_chunks = len(chunks)
             logging.info(f"Adding {num_chunks} documents in batches of {batch_size}")
 
-            # If using OpenAIModel, split the chunks into batches of 500
+            # If using OpenAI model, split the chunks into batches of 500
             for i in range(0, num_chunks, batch_size):
                 chunk_batch = chunks[i:i + batch_size]
-                if isinstance(self.model, OpenAIModel):
-                    texts = [chunk.page_content for chunk in chunk_batch]
-                    embeddings = self.model.embed_batch(texts)  # Embed in batch
-                else:
+                if isinstance(self.model, OllamaModel):
                     # For other models, embed each chunk one at a time
                     embeddings = [self.model.embed(chunk.page_content) for chunk in chunk_batch]
+                else:
+                    texts = [chunk.page_content for chunk in chunk_batch]
+                    embeddings = self.model.embed_batch(texts)  # Embed in batch
 
                 # Add the chunks to the vector database in a batch
                 with self.documents.batch.rate_limit(requests_per_minute=600) as batch:
@@ -432,12 +432,12 @@ class WeaviateManager:
             for i in range(0, num_chunks, batch_size):
                 content_batch = website_contents[i:i + batch_size]
 
-                # If using OpenAIModel, embed in batches, otherwise embed one by one
-                if isinstance(self.model, OpenAIModel):
+                # If using OpenAI model, embed in batches, otherwise embed one by one
+                if isinstance(self.model, OllamaModel):
+                    embeddings = [self.model.embed(content.content) for content in content_batch]
+                else:
                     texts = [content.content for content in content_batch]
                     embeddings = self.model.embed_batch(texts)  # Batch embed
-                else:
-                    embeddings = [self.model.embed(content.content) for content in content_batch]
 
                 # Add the contents to the vector database in a batch
                 with self.documents.batch.rate_limit(requests_per_minute=600) as batch:

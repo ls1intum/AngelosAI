@@ -1,25 +1,15 @@
 import os
-import openai
 from dotenv import load_dotenv
-from testing.test_data_models.qu_data import QAData
+from testing.test_data_models.qa_data import QAData
+from testing.models.azure_testing_model import AzureTestingModel
 
 
 class LlmEvaluation:
-    def __init__(self):
+    def __init__(self, model: AzureTestingModel):
         """
-        Initialize the LlmEvaluation class, setting up OpenAI API key and other parameters.
+        Initialize the LlmEvaluation class, setting up testing model
         """
-        # Load environment variables from the .env file
-        load_dotenv()
-        # Retrieve the OpenAI API key from the environment variables
-        self.api_key = os.getenv("OPENAI_API_KEY")
-        if not self.api_key:
-            raise ValueError("OPENAI_API_KEY is missing. Ensure it is set in the .env file.")
-
-        # Set default model and other configuration values
-        self.model = "gpt-4o-mini"
-        self.max_tokens = 100  # Increased token limit for detailed responses
-        self.temperature = 0  # Deterministic for evaluation purposes
+        self.model = model
 
 
     def ask_llm_to_classify(self, qaData: QAData, answer):
@@ -53,16 +43,7 @@ class LlmEvaluation:
         ]
 
         try:
-            # Send the request to the OpenAI Chat Completions API
-            response = openai.chat.completions.create(
-                model=self.model,
-                messages=messages,
-                max_tokens=self.max_tokens,
-                temperature=self.temperature
-            )
-
-            # Extract the assistant's message from the response
-            response_message = response.choices[0].message.content.strip()
+            response_message = self.model.complete(messages=messages)
 
         except Exception as e:
             # Handle any errors (e.g., network, rate-limiting)
@@ -89,7 +70,7 @@ class LlmEvaluation:
                 You are given a list of facts, a question, and a provided answer. Your job is to evaluate whether
                 each fact is present in the answer based on content, regardless of exact wording or phrasing.
                 
-                Respond with a binary vector (e.score_percentageg., [1, 0, 1]) where:
+                Respond with a binary vector (e.g. [1, 0, 1]) where:
                 1 means the fact is present in the answer,
                 0 means the fact is missing.
                 """
@@ -112,16 +93,7 @@ class LlmEvaluation:
         score_percentage = 0
 
         try:
-            # Send the request to the OpenAI Chat Completions API
-            response = openai.chat.completions.create(
-                model=self.model,
-                messages=messages,
-                max_tokens=self.max_tokens,
-                temperature=self.temperature
-            )
-
-            # Extract the assistant's message from the response (e.g., "[1, 0, 1]")
-            response_message = response.choices[0].message.content.strip()
+            response_message = self.model.complete(messages)
 
             print(response_message)
 
