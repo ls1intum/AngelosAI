@@ -9,26 +9,36 @@ services:
     #      - development.env
     command: [ "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000" ]
     environment:
+      # Weaviate Database
       - WEAVIATE_URL
       - WEAVIATE_PORT
       - KNOWLEDGE_BASE_FOLDER
       - QA_FOLDER
+      # Development config
+      - TEST_MODE
       - DELETE_BEFORE_INIT
+      # Ollama
       - USE_OLLAMA
-      - USE_AZURE
-      - GPU_URL
-      - EMBED_MODEL
       - API_KEY
       - URL
+      - GPU_URL
       - GPU_USER
       - GPU_PASSWORD
       - GPU_MODEL
+      - GPU_EMBED_MODEL
       - GPU_HOST
-      - OPENAI_EMBEDDING_MODEL
-      - OPENAI_MODEL_DEPLOYMENT
+      # OpenAI
+      - OPENAI_API_KEY
       - OPENAI_MODEL
-      - OPENAI_API_VERSION
+      - OPENAI_EMBEDDING_MODEL
+      # Azure OpenAI
+      - USE_AZURE=true
       - AZURE_OPENAI_API_KEY
+      - AZURE_OPENAI_DEPLOYMENT
+      - AZURE_OPENAI_EMBEDDING_DEPLOYMENT
+      - AZURE_OPENAI_ENDPOINT
+      - AZURE_OPENAI_VERSION
+      # Cohere
       - COHERE_API_KEY
       - COHERE_API_KEY_MULTI
       - COHERE_API_KEY_EN

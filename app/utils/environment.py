@@ -8,7 +8,7 @@ if os.getenv("ENVIRONMENT") == "development":
 
 class Config:
     # Weaviate Database
-    WEAVIATE_URL = os.getenv("WEAVIATE_URL", "weaviate")
+    WEAVIATE_URL = os.getenv("WEAVIATE_URL", "localhost")
     WEAVIATE_PORT = os.getenv("WEAVIATE_PORT", "8001")
     # Knowledge base folders (TODO: Remove)
     KNOWLEDGE_BASE_FOLDER = os.getenv("KNOWLEDGE_BASE_FOLDER", "./knowledge/documents")
