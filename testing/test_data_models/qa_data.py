@@ -1,5 +1,7 @@
+from typing import List
+
 class QAData:
-    def __init__(self, question: str, answer: str, key_facts: list, expected_sources: list, classification: str, label: str):
+    def __init__(self, question: str, answer: str, language: str, key_facts: List[str], expected_sources: List[str], classification: str, label: str):
         """
         Initializes the QAData object with the given attributes.
 
@@ -10,6 +12,7 @@ class QAData:
         """
         self.question = question
         self.answer = answer
+        self.language = language
         self.key_facts = key_facts
         self.expected_sources = expected_sources
         self.classification = classification
@@ -19,5 +22,5 @@ class QAData:
         """
         String representation for easy debugging.
         """
-        return (f"QAData(label='{self.label}' question='{self.question}', answer='{self.answer}', "
+        return (f"QAData(label='{self.label}' question='{self.question}', answer='{self.answer}', language='{self.language}', "
                 f"key_facts={self.key_facts}, expected_sources={self.expected_sources}, classification='{self.classification}')")

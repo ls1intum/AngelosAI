@@ -3,28 +3,38 @@ import pytest
 import requests
 import numpy as np
 import pandas as pd
+import logging
 from dotenv import load_dotenv
 from datetime import datetime
+from typing import List
+
+from testing.models.azure_testing_model import AzureTestingModel
 from testing.tests.test_data import qa_objects
 from testing.evaluation.llm_evaluation import LlmEvaluation
 from testing.evaluation.embedding_evaluation import EmbeddingEvaluation
 from testing.evaluation.deep_eval_evaluation import DeepEvalEvaluation
 from testing.evaluation.relevant_links_evaluation import RelevantLinkEvaluation
-import logging
+from testing.test_data_models.qa_data import QAData
 
 # Load environment variables
-load_dotenv()
+load_dotenv(os.path.join(os.path.dirname(__file__), "../testing.env"))
 
-# Fetch EUNOMNIA_URL from the .env file
+# Fetch ANGELOS from the .env file
 TEST_URL = os.getenv("TEST_URL")
+AZURE_OPENAI_API_KEY = os.getenv("AZURE_OPENAI_API_KEY")
+AZURE_OPENAI_DEPLOYMENT = os.getenv("AZURE_OPENAI_DEPLOYMENT")
+AZURE_OPENAI_EMBEDDING_DEPLOYMENT = os.getenv("AZURE_OPENAI_EMBEDDING_DEPLOYMENT")
+AZURE_OPENAI_ENDPOINT = os.getenv("AZURE_OPENAI_ENDPOINT")
+AZURE_OPENAI_VERSION = os.getenv("AZURE_OPENAI_VERSION")
 
 # Initialize logging
 logging.basicConfig(level=logging.INFO)
 
 # Initialize all evaluation classes
-llm_eval = LlmEvaluation()
-embedding_eval = EmbeddingEvaluation()
-deep_eval = DeepEvalEvaluation()
+testing_model = AzureTestingModel(api_key=AZURE_OPENAI_API_KEY, api_version=AZURE_OPENAI_VERSION, azure_endpoint=AZURE_OPENAI_ENDPOINT, model=AZURE_OPENAI_DEPLOYMENT, embed_model=AZURE_OPENAI_EMBEDDING_DEPLOYMENT)
+llm_eval = LlmEvaluation(model=testing_model)
+embedding_eval = EmbeddingEvaluation(model=testing_model)
+deep_eval = DeepEvalEvaluation(model_name=AZURE_OPENAI_DEPLOYMENT)
 link_eval = RelevantLinkEvaluation()
 
 # Create a results directory if it doesn't exist
@@ -45,20 +55,48 @@ CSV_COLUMNS = [
     'Link Accuracy'
 ]
 
-# Prepare the DataFrame to collect results
+# Prepare the DataFrame to collect results across tests
 results_df = pd.DataFrame(columns=CSV_COLUMNS)
 
 # Generate a unique CSV filename based on the timestamp
 current_time = datetime.now().strftime("%Y-%m-%d_%H-%M-%S")
 csv_filename = os.path.join(results_dir, f"rag_evaluation_results_{current_time}.csv")
+summary_csv_filename = os.path.join(results_dir, f"rag_evaluation_summary_{current_time}.csv")
+
+
+@pytest.fixture(scope="session", autouse=True)
+def gather_results():
+    # Initialize a global DataFrame to collect results
+    global results_df
+    yield  # This will allow all tests to run first
+    # After all tests are run, calculate and save the summary
+    if not results_df.empty:
+        create_summary_csv(results_df, summary_csv_filename)
+
+
+def create_summary_csv(results_df: pd.DataFrame, summary_csv_filename: str):
+    # Filter numeric columns that can be averaged
+    numeric_columns = [
+        'Used Tokens', 'Cosine Similarity', 'Euclidean Distance',
+        'Contextual Precision (General)', 'Contextual Precision (Specific)',
+        'Contextual Recall', 'Contextual Relevancy',
+        'Answer Relevancy', 'Faithfulness', 'Hallucination', 'Link Accuracy'
+    ]
+    # Calculate averages for each numeric column
+    summary_data = {column: results_df[column].mean() for column in numeric_columns if column in results_df}
+    # Save the summary to CSV
+    summary_df = pd.DataFrame([summary_data])
+    summary_df.to_csv(summary_csv_filename, index=False)
+    logging.info(f"Summary CSV saved to {summary_csv_filename}")
+    
 
 @pytest.mark.parametrize("qaData", qa_objects)
-def test_rag_api(qaData):
+def test_rag_api(qaData: QAData):
     global results_df
 
     response = requests.post(
         TEST_URL,
-        json={"message": qaData.question, "study_program": qaData.classification}
+        json={"message": qaData.question, "study_program": qaData.classification, "language": qaData.language}
     )
 
     # If there's an issue with the server response, fail gracefully
@@ -147,9 +185,6 @@ def test_rag_api(qaData):
 
     # Append to DataFrame
     results_df = pd.concat([results_df, pd.DataFrame([result_row])], ignore_index=True)
-
-    # Display interim results with numpy for quick evaluation
-    print(np.array(results_df))
 
     # Save the CSV after every test case
     results_df.to_csv(csv_filename, index=False)

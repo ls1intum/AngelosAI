@@ -17,12 +17,16 @@ def get_model() -> BaseModelClient:
             return OpenAIModel(model=config.OPENAI_MODEL, embed_model=config.OPENAI_EMBEDDING_MODEL,
                                api_key=config.OPENAI_API_KEY)
         else:
-            logging.info("Using OpenAI hosted on azure as model")
-            return AzureOpenAIModel(model=config.OPENAI_MODEL, embed_model=config.OPENAI_EMBEDDING_MODEL,
-                                    azure_deployment=config.OPENAI_MODEL_DEPLOYMENT,
-                                    api_key=config.AZURE_OPENAI_API_KEY)
+            logging.info("Using OpenAI hosted on Azure as model")
+            return AzureOpenAIModel(
+                api_key=config.AZURE_OPENAI_API_KEY,
+                api_version=config.AZURE_OPENAI_VERSION,
+                azure_endpoint=config.AZURE_OPENAI_ENDPOINT,
+                model=config.AZURE_OPENAI_DEPLOYMENT,
+                embed_model=config.AZURE_OPENAI_EMBEDDING_DEPLOYMENT
+            )
     else:
         logging.info(f"Using ollama as model: {config.GPU_MODEL} ")
         if not config.GPU_MODEL:
             logging.error("No config gpu model")
-        return OllamaModel(model=config.GPU_MODEL, embed_model=config.EMBED_MODEL, url=config.GPU_URL)
+        return OllamaModel(model=config.GPU_MODEL, embed_model=config.GPU_EMBED_MODEL, url=config.GPU_URL)
