@@ -18,8 +18,6 @@ class Config:
     DELETE_BEFORE_INIT = os.getenv("DELETE_BEFORE_INIT", "false")
     # Ollama
     USE_OLLAMA = os.getenv("USE_OLLAMA", "false")
-    API_KEY = os.getenv("LLAMA_MODEL_TOKEN")
-    URL = os.getenv("LLAMA_MODEL_URI")
     GPU_URL = os.getenv("GPU_URL")
     GPU_USER = os.getenv("GPU_USER")
     GPU_PASSWORD = os.getenv("GPU_PASSWORD")

@@ -99,11 +99,8 @@ jobs:
             echo "WEAVIATE_PORT=${{ vars.WEAVIATE_PORT }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
             echo "KNOWLEDGE_BASE_FOLDER=${{ vars.KNOWLEDGE_BASE_FOLDER }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
             echo "QA_FOLDER=${{ vars.QA_FOLDER }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
-            echo "TEST_MODE=${{ vars.TEST_MODE }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
             echo "DELETE_BEFORE_INIT=${{ vars.DELETE_BEFORE_INIT }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
             echo "USE_OLLAMA=${{ vars.USE_OLLAMA }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
-            echo "API_KEY=${{ secrets.LLAMA_MODEL_TOKEN }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
-            echo "URL=${{ vars.LLAMA_MODEL_URI }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
             echo "GPU_URL=${{ vars.GPU_URL }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
             echo "GPU_USER=${{ vars.GPU_USER }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
             echo "GPU_PASSWORD=${{ secrets.GPU_PASSWORD }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
