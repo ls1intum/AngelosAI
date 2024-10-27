@@ -4,6 +4,7 @@ import requests
 import numpy as np
 import pandas as pd
 import logging
+import asyncio
 from dotenv import load_dotenv
 from datetime import datetime
 from typing import List
@@ -52,7 +53,7 @@ CSV_COLUMNS = [
     'Answer Relevancy', 'Answer Relevancy Reason',
     'Faithfulness', 'Faithfulness Reason',
     'Hallucination', 'Hallucination Reason',
-    'Link Accuracy'
+    'RAGAS Score', 'Link Accuracy',
 ]
 
 # Prepare the DataFrame to collect results across tests
@@ -80,7 +81,7 @@ def create_summary_csv(results_df: pd.DataFrame, summary_csv_filename: str):
         'Used Tokens', 'Cosine Similarity', 'Euclidean Distance',
         'Contextual Precision (General)', 'Contextual Precision (Specific)',
         'Contextual Recall', 'Contextual Relevancy',
-        'Answer Relevancy', 'Faithfulness', 'Hallucination', 'Link Accuracy'
+        'Answer Relevancy', 'Faithfulness', 'Hallucination', 'RAGAS Score', 'Link Accuracy'
     ]
     # Calculate averages for each numeric column
     summary_data = {column: results_df[column].mean() for column in numeric_columns if column in results_df}
@@ -89,9 +90,9 @@ def create_summary_csv(results_df: pd.DataFrame, summary_csv_filename: str):
     summary_df.to_csv(summary_csv_filename, index=False)
     logging.info(f"Summary CSV saved to {summary_csv_filename}")
     
-
+@pytest.mark.asyncio
 @pytest.mark.parametrize("qaData", qa_objects)
-def test_rag_api(qaData: QAData):
+async def test_rag_api(qaData: QAData):
     global results_df
 
     response = requests.post(
@@ -150,6 +151,9 @@ def test_rag_api(qaData: QAData):
     hallucination, hallucination_reason = deep_eval.hallucination(qaData.question, answer, general_context + specific_context)
     logging.info(f"Hallucination: {hallucination}")
     logging.info(f"Hallucination Reason: {hallucination_reason}")
+    
+    ragas_score = deep_eval.evaluate_ragas(qaData, answer, general_context + specific_context)
+    logging.info(f"RAGAS Score: {ragas_score}")
 
     # Step 5: Relevant Link Accuracy
     link_accuracy = link_eval.evaluate_relevant_links(qaData.expected_sources, answer)
@@ -180,6 +184,7 @@ def test_rag_api(qaData: QAData):
         'Faithfulness Reason': faithfulness_reason,
         'Hallucination': hallucination,
         'Hallucination Reason': hallucination_reason,
+        'RAGAS Score': ragas_score,
         'Link Accuracy': link_accuracy
     }
 

@@ -2,6 +2,7 @@ import os
 from dotenv import load_dotenv
 from deepeval.metrics import ContextualPrecisionMetric, ContextualRecallMetric, ContextualRelevancyMetric, AnswerRelevancyMetric, HallucinationMetric, FaithfulnessMetric
 from deepeval.test_case import LLMTestCase
+from deepeval.metrics.ragas import RagasMetric
 from testing.test_data_models.qa_data import QAData
 
 class DeepEvalEvaluation:
@@ -175,3 +176,35 @@ class DeepEvalEvaluation:
         # Measure the metric score and reason
         metric.measure(test_case)
         return metric.score, metric.reason
+    
+    def evaluate_ragas(self, qa_data: QAData, actual_output: str, retrieval_context: list):
+        """
+        Evaluates RAGAS metric for the RAG retriever and generator.
+
+        The RAGAS metric measures the overall quality of the RAG pipeline by
+        evaluating how well the generated answer aligns with both the retrieval context 
+        and the expected output.
+
+        Args:
+            qa_data (QAData): Contains the input question and expected output.
+            actual_output (str): The generated answer from the LLM.
+            retrieval_context (list): The retrieved context for the given input.
+
+        Returns:
+            score (float): The RAGAS score.
+            reason (str): Explanation of the score from the LLM (self-explaining metric).
+        """
+        metric = RagasMetric(
+            threshold=self.threshold,
+            model=self.model
+        )
+
+        test_case = LLMTestCase(
+            input=qa_data.question,
+            actual_output=actual_output,
+            expected_output=qa_data.answer,
+            retrieval_context=retrieval_context
+        )
+
+        metric.measure(test_case)
+        return metric.score

@@ -501,8 +501,11 @@ pytest==8.3.3
     # via
     #   -r requirements.txt
     #   deepeval
+    #   pytest-asyncio
     #   pytest-repeat
     #   pytest-xdist
+pytest-asyncio==0.24.0
+    # via -r requirements.txt
 pytest-repeat==0.9.3
     # via deepeval
 pytest-xdist==3.6.1
