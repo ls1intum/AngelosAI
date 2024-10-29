@@ -1,5 +1,6 @@
 from typing import List
 import logging
+import re
 
 from app.data.user_requests import ChatMessage
 from app.managers.weaviate_manager import SampleQuestion
@@ -31,6 +32,8 @@ class PromptManager:
     --------------------
 
     **Study Program Specific Information:**
+    {study_program}
+    -----
     {specific_context}
 
     --------------------
@@ -80,6 +83,8 @@ class PromptManager:
     --------------------
 
     **Studiengangspezifische Informationen:**
+    {study_program}
+    -----
     {specific_context}
 
     --------------------
@@ -140,6 +145,8 @@ class PromptManager:
     --------------------
 
     **Study Program Specific Information:**
+    {study_program}
+    -----
     {specific_context}
 
     --------------------
@@ -196,6 +203,8 @@ class PromptManager:
     --------------------
 
     **Studiengangspezifische Informationen:**
+    {study_program}
+    -----
     {specific_context}
 
     --------------------
@@ -219,16 +228,17 @@ class PromptManager:
     """
 
     def create_messages(self, general_context: str, specific_context: str, sample_questions: str, question: str,
-                        language: str):
+                        language: str, study_program):
         """Converts the template into a message format suitable for LLMs like OpenAI's GPT."""
-
+        study_program_text = self.format_study_program(study_program, language)
         # Construct the system prompt
         if language.lower() == "english":
             user_content = self.answer_prompt_template.format(
                 general_context=general_context,
                 specific_context=specific_context or "No specific context available.",
                 question=question,
-                sample_questions=sample_questions
+                sample_questions=sample_questions,
+                study_program=study_program_text
             )
             system_content = "You are an intelligent assistant that helps students of the Technical University of Munich (TUM) with questions related to their studies."
 
@@ -237,7 +247,8 @@ class PromptManager:
                 general_context=general_context,
                 specific_context=specific_context or "Kein studienfachspezifischer Kontext verfügbar.",
                 question=question,
-                sample_questions=sample_questions
+                sample_questions=sample_questions,
+                study_program=study_program_text
             )
             system_content = "Sie sind ein intelligenter Assistent, der den Studierenden der Technischen Universität München (TUM) bei Fragen rund um ihr Studium hilft"
         
@@ -251,8 +262,9 @@ class PromptManager:
     
 
     def create_messages_with_history(self, general_context: str, specific_context: str, question: str, history: str,
-                                     sample_questions: str, language: str):
+                                     sample_questions: str, language: str, study_program: str):
         """Converts the template into a message format suitable for LLMs like OpenAI's GPT."""
+        study_program_text = self.format_study_program(study_program, language)
         # Construct the system prompt including history
         if language.lower() == "english":
             user_content = self.answer_prompt_template_with_history.format(
@@ -260,7 +272,8 @@ class PromptManager:
                 specific_context=specific_context or "No specific context available.",
                 question=question,
                 history=history or "No conversation history available.",
-                sample_questions=sample_questions
+                sample_questions=sample_questions,
+                study_program=study_program_text
             )
             system_content = "You are an intelligent assistant that helps students of the Technical University of Munich (TUM) with questions related to their studies."
 
@@ -270,7 +283,8 @@ class PromptManager:
                 specific_context=specific_context or "Kein studienfachspezifischer Kontext verfügbar.",
                 question=question,
                 history=history or "Kein Verlauf verfügbar.",
-                sample_questions=sample_questions
+                sample_questions=sample_questions,
+                study_program=study_program_text
             )
             system_content = "Sie sind ein intelligenter Assistent, der den Studierenden der Technischen Universität München (TUM) bei Fragen rund um ihr Studium hilft"
         
@@ -320,3 +334,16 @@ class PromptManager:
         # Join formatted messages with separator
         combined_string = "\n\n".join(formatted_strings)
         return combined_string
+    
+    # Format the study program
+    def format_study_program(self, study_program: str, language: str) -> str:
+        if not study_program or study_program.lower() == "general":
+            return "No study program specified" if language.lower() == "english" else "Kein Studiengang angegeben"
+        
+        # Capitalize first letter of each word and replace hyphens with spaces
+        formatted_program = re.sub(r'-', ' ', study_program).title()
+        
+        if language.lower() == "english":
+            return f"The study program of the student is {formatted_program}"
+        else:
+            return f"Der Studiengang des Studenten ist {formatted_program}"
