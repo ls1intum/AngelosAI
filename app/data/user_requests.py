@@ -1,5 +1,5 @@
 from pydantic import BaseModel
-from typing import List
+from typing import List, Optional
 
 class ChatMessage(BaseModel):
     message: str
@@ -7,8 +7,8 @@ class ChatMessage(BaseModel):
 
 class UserChat(BaseModel):
     messages: List[ChatMessage]
-    study_program: str
-
+    study_program: Optional[str] = None
+    
 class SampleQuestion(BaseModel):
     topic: str
     question: str
