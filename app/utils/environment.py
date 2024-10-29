@@ -7,6 +7,7 @@ if os.getenv("ENVIRONMENT") == "development":
 
 
 class Config:
+    MAX_MESSAGE_LENGTH = 3000
     # Weaviate Database
     WEAVIATE_URL = os.getenv("WEAVIATE_URL", "localhost")
     WEAVIATE_PORT = os.getenv("WEAVIATE_PORT", "8001")
