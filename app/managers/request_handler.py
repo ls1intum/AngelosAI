@@ -25,7 +25,7 @@ class RequestHandler:
         sample_questions = self.weaviate_manager.get_relevant_sample_questions(question=question, language=language)
         sample_questions_formatted = self.prompt_manager.format_sample_questions(sample_questions, language)
         messages = self.prompt_manager.create_messages(general_context, specific_context, sample_questions_formatted,
-                                                       question, language)
+                                                       question, language, classification)
 
         return self.model.complete(messages)
 
@@ -46,7 +46,7 @@ class RequestHandler:
         sample_questions = self.weaviate_manager.get_relevant_sample_questions(question=question, language=language)
         sample_questions_formatted = self.prompt_manager.format_sample_questions(sample_questions, language)
         messages = self.prompt_manager.create_messages(general_context, specific_context, sample_questions_formatted,
-                                                       question, language)
+                                                       question, language, classification)
         answer, tokens = self.model.complete_with_tokens(messages)
         return answer, tokens, general_context_list, specific_context_list
     
@@ -76,7 +76,8 @@ class RequestHandler:
             question=last_message,
             history=history_formatted,
             sample_questions=sample_questions_formatted,
-            language=lang
+            language=lang,
+            study_program=study_program
         )
 
         # Generate and return the answer
