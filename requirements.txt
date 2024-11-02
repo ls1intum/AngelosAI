@@ -88,7 +88,7 @@ cloudpickle==2.2.1
     # via
     #   mlflow-skinny
     #   sagemaker
-cohere==5.11.0
+cohere==5.11.1
     # via -r requirements.txt
 confection==0.1.5
     # via
@@ -491,6 +491,7 @@ pydantic-settings==2.5.2
     # via langchain-community
 pygments==2.18.0
     # via rich
+pyjwt==2.9.0
 pyparsing==3.1.4
     # via matplotlib
 pypdf==5.0.1
@@ -761,6 +762,8 @@ zipp==3.20.2
     #   importlib-resources
 zope-interface==7.0.3
     # via datetime
+
+
 
 # The following packages are considered to be unsafe in a requirements file:
 # setuptools
