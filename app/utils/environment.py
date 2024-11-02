@@ -41,5 +41,9 @@ class Config:
     COHERE_API_KEY_MULTI = os.getenv("COHERE_API_KEY_MULTI")
     COHERE_API_KEY_EN = os.getenv("COHERE_API_KEY_EN")
 
+    # safeguard
+    API_ENDPOINT_KEY = os.getenv("API_ENDPOINT_KEY")
+    ANGELOS_APP_API_KEY = os.getenv("ANGELOS_APP_API_KEY")
+
 
 config = Config()

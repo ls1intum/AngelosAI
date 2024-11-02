@@ -44,6 +44,8 @@ services:
       - COHERE_API_KEY
       - COHERE_API_KEY_MULTI
       - COHERE_API_KEY_EN
+      - API_ENDPOINT_KEY
+      - ANGELOS_APP_API_KEY
     networks:
       - angelos-network
 
