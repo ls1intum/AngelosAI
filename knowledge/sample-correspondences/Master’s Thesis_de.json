@@ -1,0 +1,16 @@
+{
+    "topic": "Anfrage zum Schreibprozess einer Abschlussarbeit",
+    "study_program": "general",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "Ich möchte wissen, welche Formalitäten für den Beginn meiner Abschlussarbeit gelten. Ich möchte wissen, welche Schritte ich unternehmen muss und welche Fristen und Einschränkungen gelten."
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Hilfreiche Informationen zur Abschlussarbeitsfindung und zum Verfassen einer Abschlussarbeit findest du in unserem Moodle-Kurs, außerdem kannst du dich auf unserer Webseite ausführlich informieren: https://www.cit.tum.de/cit/studium/studieren/beratung/informatik/studienberatung/."
+        }
+    ]
+}

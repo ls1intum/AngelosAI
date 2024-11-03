@@ -1,0 +1,16 @@
+{
+    "topic": "Recognition of language course credits",
+    "study_program": "bachelor-informatik-games-engineering",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "I am studying Game Engineering in my 3rd semester and I studied Japanese A1.1+A1.2 in my 1st semester. I thought this course did not count towards my total credits, but I found out that it could be credited retroactively as a language course. Is it possible to have the 6 credits for this course credited retroactively?\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Please contact your secretary of the examination board for further information."
+        }
+    ]
+}

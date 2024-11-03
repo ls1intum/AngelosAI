@@ -1,0 +1,16 @@
+{
+    "topic": "Studienabschluss und Fragen zur Einschreibung und Rückerstattung",
+    "study_program": "general",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "Ich habe gerade mein Studium beendet und die Note für meine Abschlussarbeit erhalten. Welche Schritte muss ich unternehmen, um mein Studium abzuschließen und mein Abschlusszeugnis zu erhalten? Werde ich außerdem nach Abgabe meiner Abschlussarbeit von meinem Deutschkurs B2.1 exmatrikuliert? Und kann ich mir den noch ausstehenden Semesterbeitrag und das Restguthaben auf meinem Studierendenausweis zurückerstatten lassen?"
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Sobald Ihre letzte Note in TUMonline gültig ist, wenden Sie sich an das Sekretariat des Prüfungsausschusses, um Ihr Zertifikat anzufordern. Sie können Ihren Deutsch-B2.1-Kurs fortsetzen, da Sie das ganze Semester über immatrikuliert bleiben. Beachten Sie, dass Sie die Kursgebühr nicht zurückerstattet bekommen können. Für Rückerstattungsanfragen bezüglich der Semestergebühr und der Löschung Ihres Studierendenausweises wenden Sie sich bitte an die allgemeine Studienberatung."
+        }
+    ]
+}

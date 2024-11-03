@@ -1,0 +1,16 @@
+{
+    "topic": "Stellungnahme des Studiendekanats zur Freistellung vom Praktikum",
+    "study_program": "bachelor-informatik",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "Mit diesem Schreiben bitte ich um Unterstützung bei der Einholung einer Stellungnahme des Studiengangs über die Relevanz meines Praktikums für meine Beurlaubung. Der Vertrag ist beigefügt. Wenn Sie weitere Informationen benötigen, lassen Sie es mich bitte wissen.\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Für die Beantragung einer Beurlaubung benötigen Sie eine Stellungnahme der Studienfachberatung Informatik. Bitte senden Sie die unter \"Praktika\" angegebenen Unterlagen per E-Mail an: https://www.cit.tum.de/cit/studium/studierende/beratung/informatik/tipps-fuer-ein-erfolgreiches-studium/"
+        }
+    ]
+}

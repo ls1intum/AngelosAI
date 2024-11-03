@@ -1,0 +1,16 @@
+{
+    "topic": "Anmeldung für die Bachelorarbeit",
+    "study_program": "bachelor-informatik",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "Ich bin Bachelorstudent der Informatik und schreibe derzeit meine Bachelorarbeit unter der Betreuung eines Professors. Könnten Sie mir bitte mitteilen, wie ich mich für meine Bachelorarbeit anmelden kann?\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Sie können die Informationen zur Anmeldung für die Bachelorarbeit hier finden: https://www.cit.tum.de/cit/studium/studierende/abschlussarbeit-abschluss/"
+        }
+    ]
+}

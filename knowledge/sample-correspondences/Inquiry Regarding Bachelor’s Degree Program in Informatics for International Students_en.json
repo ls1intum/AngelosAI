@@ -1,0 +1,16 @@
+{
+    "topic": "Informatics Bachelor's Program Inquiry",
+    "study_program": "bachelor-informatik",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "I am interested in pursuing a bachelor’s degree in Informatics at TUM, specifically an English-taught program. Could you provide information on program availability, credit transfer opportunities, scholarships for international students, application deadlines, and part-time work opportunities in IT/SWE?\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Our Bachelor's programs are primarily taught in German, and proof of sufficient German skills is required during the application process. For further details on our programs, please visit our websites: https://www.cit.tum.de/en/cit/studies/degree-programs/ and https://www.tum.de/en/studies/application/application-info-portal/admission-requirements/language-certificates."
+        }
+    ]
+}

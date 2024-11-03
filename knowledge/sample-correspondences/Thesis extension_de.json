@@ -1,0 +1,16 @@
+{
+    "topic": "Unterstützung nach dem Verlust eines Familienmitglieds und Anfrage nach ärztlichen Attesten",
+    "study_program": "general",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "Ich habe mit meinem Vorgesetzten über meine Situation gesprochen und seine Zustimmung erhalten. An wen kann ich mich bei genaueren Fragen wenden? Welche Art von ärztlichem Attest kann ich als Beleg für meinen Verlust vorlegen? Wäre eine Sterbeurkunde ausreichend und wie kann ich in dieser Zeit ein ärztliches Attest erhalten?“"
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Die notwendigen Informationen findest du auf der angegebenen Webseite. Für ein ärztliches Attest wende dich an das Studierendenwerk, dort gibt es eine psychologische Beratung, die dir weiterhelfen kann. Prüfe auch, ob du deine Abschlussarbeit ohne negative Konsequenzen offiziell zurückgeben kannst."
+        }
+    ]
+}

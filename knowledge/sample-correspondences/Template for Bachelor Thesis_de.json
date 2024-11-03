@@ -1,0 +1,16 @@
+{
+    "topic": "Muster für Bachelorarbeit in Informatik",
+    "study_program": "bachelor-informatik",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "Kann ich für meine Bachelorarbeit die Abschlussarbeitsvorlage des Fachbereichs Maschinenbau verwenden oder muss ich die Vorlage des Fachbereichs Informatik verwenden?“"
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Sie können die Vorlage verwenden, solange Sie die Formatierungshinweise hier beachten: https://www.cit.tum.de/cit/studium/studierende/abschlussarbeit/informatik/"
+        }
+    ]
+}
