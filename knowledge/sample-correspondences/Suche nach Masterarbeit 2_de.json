@@ -1,0 +1,16 @@
+{
+    "topic": "Thema: Zuweisung einer Abschlussarbeit",
+    "study_program": "general",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "Ich habe seit einem Monat auf der Suche nach einem Thema für meine Abschlussarbeit im Masterstudium Schwierigkeiten und bisher keine positiven Rückmeldungen erhalten. Ich muss jedoch in diesem Semester meine Abschlussarbeit schreiben. Gibt es einen Prozess, um ein Thema zugewiesen zu bekommen?"
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Wenn Sie sich mit Lebenslauf, Leistungsnachweis und Anschreiben beworben haben und mindestens 5 Absagen erhalten haben, kann Ihnen ein Thema zugewiesen werden. Diese Option sollte jedoch die letzte Möglichkeit sein, da Sie keinen Einfluss auf das Thema haben. Falls Sie dennoch eine Zuweisung wünschen, senden Sie bitte die Absagen zusammen mit Ihrem Lebenslauf und Leistungsnachweis per Email zu."
+        }
+    ]
+}

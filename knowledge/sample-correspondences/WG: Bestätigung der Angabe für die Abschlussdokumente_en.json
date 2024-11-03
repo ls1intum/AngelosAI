@@ -1,0 +1,16 @@
+{
+    "topic": "Topic: Application for a certificate",
+    "study_program": "general",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "How can I request my certificate?\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "As soon as the last grade in TUMonline is valid, you can contact your secretary of the examination board so that she can request your certificate for you: cit.tum.de/cit/kontakte-studium-informatik/#c4432"
+        }
+    ]
+}

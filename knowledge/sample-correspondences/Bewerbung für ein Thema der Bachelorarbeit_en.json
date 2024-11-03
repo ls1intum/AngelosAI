@@ -1,0 +1,16 @@
+{
+    "topic": "Topic: Assignment of a topic for the final thesis",
+    "study_program": "bachelor-informatik",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "I have gone through all the departments and have not found any interesting topic or area. Can you help me assign a topic?\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "An assignment should always be the last option. Computer science covers many research areas. Review the possibilities again and also consider second members of the CIT."
+        }
+    ]
+}

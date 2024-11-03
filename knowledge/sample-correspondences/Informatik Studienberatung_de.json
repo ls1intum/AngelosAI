@@ -1,0 +1,16 @@
+{
+    "topic": "Möglichkeiten für Studiengangwechsel und ECTS-Anrechnung",
+    "study_program": "bachelor-informatik-games-engineering",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "Guten Tag, ich habe heute das Ergebnis von einem retake Klausur erhalten und bestehe somit die ECTS Hürde nicht. Ich studiere Informatik Games Engineering seit 3 Jahren und habe nur 86 ECTS. Ich möchte wissen, ob es möglich ist, zu einem anderen Informatik Studiengang zu wechseln und einen Teil meiner ECTS zu behalten, und wenn ja, wie.\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Guten Tag, kommen Sie am besten ohne vorherige Terminvereinbarung in eine unserer offenen Sprechstunden. Dort können wir Ihre aktuelle Situation besprechen und gemeinsam Ihre Möglichkeiten evaluieren."
+        }
+    ]
+}

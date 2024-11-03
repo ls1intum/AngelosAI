@@ -1,0 +1,16 @@
+{
+    "topic": "Kursanmeldung für Wirtschaftsinformatik",
+    "study_program": "bachelor-wirtschaftsinformatik",
+    "correspondence": [
+        {
+            "orderKey": 0,
+            "sender": "STUDENT",
+            "message": "Ich studiere Wirtschaftsinformatik im 5. Semester und habe im aktuellen Semester als Wahlmodul Economics belegt. Ich habe bereits ein ähnliches Fach als überfachliche Grundlage gehabt. Ist das problematisch?\""
+        },
+        {
+            "orderKey": 1,
+            "sender": "AA",
+            "message": "Die beiden Module schließen sich gegenseitig aus, wie auf der Webseite unter 'Überfachliche Grundlagen' nachzulesen ist."
+        }
+    ]
+}
