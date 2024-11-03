@@ -132,6 +132,8 @@ jobs:
             echo "COHERE_API_KEY=${{ secrets.COHERE_API_KEY }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
             echo "COHERE_API_KEY_MULTI=${{ secrets.COHERE_API_KEY_MULTI }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
             echo "COHERE_API_KEY_EN=${{ secrets.COHERE_API_KEY_EN }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
+            echo "ANGELOS_APP_API_KEY=${{ secrets.ANGELOS_APP_API_KEY }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
+            echo "API_ENDPOINT_KEY=${{ secrets.API_ENDPOINT_KEY }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
 
 
       - name: SSH to VM and Execute Docker-Compose Up
@@ -150,4 +152,4 @@ jobs:
               docker network create angelos-network
             fi
             docker network ls
-            docker compose -f /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/docker-compose.yml -f /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/docker/weaviate.yml --env-file=/home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod up --pull=always -d
+            docker compose -f /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/docker-compose.yml -f /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/docker/weaviate.yml --env-file=/home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod up --pull=always -d --force-recreate --remove-orphans
