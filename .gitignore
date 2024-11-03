@@ -9,3 +9,5 @@ docker/.docker-data
 testing/results/*
 testing/testing.env
 .deepeval
+
+docker/weaviate.yml

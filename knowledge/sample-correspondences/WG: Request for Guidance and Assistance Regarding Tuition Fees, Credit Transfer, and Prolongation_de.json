@@ -10,7 +10,7 @@
         {
             "orderKey": 1,
             "sender": "AA",
-            "message": "Bei einem Studiengangswechsel müssen Sie die höheren Studiengebühren bezahlen. Bei Fragen zu Erlass und Stipendien können Sie sich an die Allgemeine Studienberatung wenden. Informationen zur Anerkennung Ihrer Studienleistungen finden Sie unter https://www.cit.tum.de/cit/studium/studierende/prüfungsthemen-module/informatik/anrechnung/."
+            "message": "Bei einem Studiengangswechsel müssen Sie die höheren Studiengebühren bezahlen. Bei Fragen zu Erlass und Stipendien können Sie sich an die Allgemeine Studienberatung (studium@tum.de) wenden. Informationen zur Anerkennung Ihrer Studienleistungen finden Sie unter https://www.cit.tum.de/cit/studium/studierende/prüfungsthemen-module/informatik/anrechnung/."
         }
     ]
 }
