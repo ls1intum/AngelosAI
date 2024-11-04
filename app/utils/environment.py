@@ -7,7 +7,6 @@ if os.getenv("ENVIRONMENT") == "development":
 
 
 class Config:
-    MAX_MESSAGE_LENGTH = 3000
     # Weaviate Database
     WEAVIATE_URL = os.getenv("WEAVIATE_URL", "localhost")
     WEAVIATE_PORT = os.getenv("WEAVIATE_PORT", "8001")
@@ -40,10 +39,12 @@ class Config:
     COHERE_API_KEY = os.getenv("COHERE_API_KEY")
     COHERE_API_KEY_MULTI = os.getenv("COHERE_API_KEY_MULTI")
     COHERE_API_KEY_EN = os.getenv("COHERE_API_KEY_EN")
-
-    # safeguard
+    # Safeguard
     API_ENDPOINT_KEY = os.getenv("API_ENDPOINT_KEY")
     ANGELOS_APP_API_KEY = os.getenv("ANGELOS_APP_API_KEY")
+    ALGORITHM = "HS256"
+    ACCESS_TOKEN_EXPIRE_MINUTES = 60
+    MAX_MESSAGE_LENGTH = 3000
 
 
 config = Config()
