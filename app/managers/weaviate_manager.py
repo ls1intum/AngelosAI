@@ -191,7 +191,7 @@ class WeaviateManager:
             logging.error(f"Error creating schema for {collection_name}: {e}")
 
     def get_relevant_context(self, question: str, study_program: str, language: str,
-                             test_mode: bool = False) -> Union[str, Tuple[str, List[str]]]:
+                             test_mode: bool = False, limit = 10, top_n = 5) -> Union[str, Tuple[str, List[str]]]:
         """
         Retrieve relevant documents based on the question embedding and study program.
         Optionally returns both the concatenated context and the sorted context list for testing purposes.
@@ -209,7 +209,6 @@ class WeaviateManager:
         """
         try:
             # Define the number of documents to retrieve
-            limit = 10
             min_relevance_score = 0.25
             if study_program.lower() != "general":
                 limit = 10
@@ -235,7 +234,6 @@ class WeaviateManager:
                 # include_vector=True,
                 return_metadata=wvc.query.MetadataQuery(certainty=True, score=True, distance=True)
             )
-            logging.info(f"No error yet after {study_program} getting relevant context")
             # documents_with_embeddings: List[DocumentWithEmbedding] = []
             # for result in query_result.objects:
             #     logging.info(
@@ -260,7 +258,7 @@ class WeaviateManager:
             # Rerank the unique contexts using Cohere
             sorted_context = self.reranker.rerank_with_cohere(context_list=content_content_list, query=question,
                                                               language=language,
-                                                              min_relevance_score=min_relevance_score, top_n=5)
+                                                              min_relevance_score=min_relevance_score, top_n=top_n)
             # Integrate links
             sorted_context_with_links = []
             for sorted_content in sorted_context:

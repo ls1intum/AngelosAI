@@ -59,8 +59,6 @@ class Reranker:
         # Rank the documents based on cosine similarity (in descending order)
         ranked_indices = np.argsort(-np.array(cosine_similarities))
 
-        logging.info(f"Ranked indices: {ranked_indices}")
-
         # Extract the content from the ranked DocumentWithEmbedding objects
         ranked_context_list = [context_list[i].content for i in ranked_indices]
 
@@ -110,7 +108,6 @@ class Reranker:
             response_json = response.json()
 
             # Log the full response from the API for debugging
-            logging.info(f"Cohere full response: {response_json}")
             results = response_json.get('results', [])
 
             # Log the ranked documents that are in the top_n

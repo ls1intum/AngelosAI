@@ -1,63 +1,19 @@
 import logging
-from datetime import datetime, timezone, timedelta
 
-import jwt
-from fastapi import HTTPException, APIRouter, status, Response, Header, Depends
-from pydantic import BaseModel
+from fastapi import HTTPException, APIRouter, status, Response, Depends
 
-from app.data.user_requests import UserChat
+from app.data.user_requests import UserChat, UserRequest
 from app.injestion.vector_store_initializer import initialize_vectorstores
-from app.utils.dependencies import request_handler, weaviate_manager, model
+from app.utils.dependencies import request_handler, auth_handler, weaviate_manager, model
 from app.utils.environment import config
 
-
-class UserRequest(BaseModel):
-    message: str
-    study_program: str
-    language: str
-
-
-SECRET_KEY = config.API_ENDPOINT_KEY
-ALGORITHM = "HS256"
-ACCESS_TOKEN_EXPIRE_MINUTES = 60
-
-
-def create_access_token(data: dict):
-    """
-    Generates a JWT token with an expiration time.
-    """
-    to_encode = data.copy()
-    expire = datetime.now(timezone.utc) + timedelta(minutes=ACCESS_TOKEN_EXPIRE_MINUTES)
-    to_encode.update({"exp": expire})
-    return jwt.encode(to_encode, SECRET_KEY, algorithm=ALGORITHM)
-
-
-async def verify_api_key(x_api_key: str = Header(None)):
-    if x_api_key != config.ANGELOS_APP_API_KEY:
-        raise HTTPException(status_code=403, detail="Unauthorized access")
-
-
-async def verify_token(authorization: str = Header(...)):
-    """
-    Dependency to validate the JWT token in the Authorization header.
-    """
-    try:
-        token = authorization.split(" ")[1]
-        payload = jwt.decode(token, SECRET_KEY, algorithms=[ALGORITHM])
-    except jwt.ExpiredSignatureError:
-        raise HTTPException(status_code=403, detail="Token has expired")
-    except jwt.PyJWTError:
-        raise HTTPException(status_code=403, detail="Invalid token")
-
-
-router = APIRouter(prefix="/api/v1/question", tags=["response"], dependencies=[Depends(verify_token)])
-auth = APIRouter(prefix="/api", tags=["response"], dependencies=[Depends(verify_api_key)])
-
+router = APIRouter(prefix="/api/v1/question", tags=["response"], dependencies=[Depends(auth_handler.verify_token)])
+auth = APIRouter(prefix="/api", tags=["response"], dependencies=[Depends(auth_handler.verify_api_key)])
 
 @auth.post("/token")
 async def login():
     token_data = {"sub": "angular_app"}
-    access_token = create_access_token(data=token_data)
+    access_token = auth_handler.create_access_token(data=token_data)
     return {"access_token": access_token, "token_type": "bearer"}
 
 

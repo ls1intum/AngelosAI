@@ -20,3 +20,8 @@ class WebsiteContent(BaseModel):
     content: str
     link: str
     study_program: str
+
+class UserRequest(BaseModel):
+    message: str
+    study_program: str
+    language: str

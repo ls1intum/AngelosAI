@@ -1,4 +1,4 @@
-from typing import List
+from typing import List, Tuple, Union
 import logging
 import re
 
@@ -117,7 +117,7 @@ class PromptManager:
     - Re-read the question carefully.
     - Analyze the provided general information and, if available, study program-specific context.
     - You are part of an ongoing conversation. The 'History' section contains previous exchanges with the student, which you should refer to in order to maintain continuity and avoid repeating information.
-    - Use the 'History' to understand the flow of the conversation and ensure your answer fits within the context of the ongoing dialogue.
+    - Use the 'History' to understand the question and the flow of the conversation and ensure your answer fits within the context of the ongoing dialogue.
     - If a provided similar question from a student is thematically very similar to the question asked, rely heavily on the respective sample answer from academic advising.
     - Else, prioritize study program-specific context over general information.
     - If no specific context is provided, base your answer solely on the general context.
@@ -176,7 +176,7 @@ class PromptManager:
     - Lesen Sie die Frage sorgfältig durch.
     - Analysieren Sie die bereitgestellten allgemeinen Informationen und, falls vorhanden, die studiengangspezifischen Informationen. Analysiere zudem, falls vorhanden die bereitgestellten ähnlichen Fragen und Antworten basierend auf früheren Anfragen.
     - Du bist Teil eines laufenden Gesprächs. Der Abschnitt 'Verlauf' enthält frühere Nachrichten der Unterhaltung zwischen zwischen Ihnen und dem Studenten, auf die du dich beziehen solltest, um die Kontinuität aufrechtzuerhalten und Wiederholungen zu vermeiden.
-	- Nutze den 'Verlauf', um den Gesprächsfluss zu verstehen und sicherzustellen, dass deine Antwort in den Kontext des laufenden Dialogs passt.
+	- Nutze den 'Verlauf', um den Gesprächsfluss und Frage zu verstehen und sicherzustellen, dass deine Antwort in den Kontext des laufenden Dialogs passt.
     - Wenn eine ähnliche Frage eines Studenten thematisch sehr ähnlich zur gestellten Frage ist, stützen Sie sich stark auf die jeweilige Beispielsantwort der Studienberatung.
     - Sonst priorisieren Sie studiengangspezifische Informationen über allgemeine Informationen.
     - Stellen Sie keine Vermutungen an, bieten Sie keine Interpretationen an und schaffen Sie keine neuen Informationen. Antworten Sie nur auf der Grundlage der bereitgestellten Informationen.
@@ -347,3 +347,26 @@ class PromptManager:
             return f"The study program of the student is {formatted_program}"
         else:
             return f"Der Studiengang des Studenten ist {formatted_program}"
+        
+    def build_chat_query(self, messages: List[ChatMessage], study_program: str, num_messages: int = 3) -> str:
+        """
+        Builds a query string from the last num_messages user messages.
+
+        Args:
+            messages (List[ChatMessage]): The list of chat messages.
+            num_messages (int): The number of recent user messages to include.
+
+        Returns:
+            str: The concatenated query string.
+        """
+        # Extract messages of type 'user'
+        user_messages = [msg.message for msg in messages if msg.type == 'user']
+        # Take the last num_messages
+        recent_user_messages = user_messages[-num_messages:]
+        # Concatenate them into one query string
+        query = " ".join(recent_user_messages)
+        # Integrate study program
+        formatted_program = re.sub(r'-', ' ', study_program).title()
+        query_with_program = f"{formatted_program}: {query}"
+        return query_with_program
+    
