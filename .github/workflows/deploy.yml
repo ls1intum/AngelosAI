@@ -134,6 +134,8 @@ jobs:
             echo "COHERE_API_KEY_EN=${{ secrets.COHERE_API_KEY_EN }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
             echo "ANGELOS_APP_API_KEY=${{ secrets.ANGELOS_APP_API_KEY }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
             echo "API_ENDPOINT_KEY=${{ secrets.API_ENDPOINT_KEY }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
+            echo "EXPECTED_USERNAME=${{ secrets.EXPECTED_USERNAME }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
+            echo "EXPECTED_PASSWORD=${{ secrets.EXPECTED_PASSWORD }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
 
 
       - name: SSH to VM and Execute Docker-Compose Up

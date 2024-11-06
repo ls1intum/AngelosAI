@@ -46,6 +46,8 @@ services:
       - COHERE_API_KEY_EN
       - API_ENDPOINT_KEY
       - ANGELOS_APP_API_KEY
+      - EXPECTED_PASSWORD
+      - EXPECTED_USERNAME
     networks:
       - angelos-network
 

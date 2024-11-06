@@ -4,17 +4,22 @@ from fastapi import HTTPException, APIRouter, status, Response, Depends
 
 from app.data.user_requests import UserChat, UserRequest
 from app.injestion.vector_store_initializer import initialize_vectorstores
+from app.managers.auth_handler import LoginRequest
 from app.utils.dependencies import request_handler, auth_handler, weaviate_manager, model
 from app.utils.environment import config
 
 router = APIRouter(prefix="/api/v1/question", tags=["response"], dependencies=[Depends(auth_handler.verify_token)])
 auth = APIRouter(prefix="/api", tags=["response"], dependencies=[Depends(auth_handler.verify_api_key)])
 
+
 @auth.post("/token")
-async def login():
-    token_data = {"sub": "angular_app"}
-    access_token = auth_handler.create_access_token(data=token_data)
-    return {"access_token": access_token, "token_type": "bearer"}
+async def login(login_request: LoginRequest):
+    if login_request.username == config.EXPECTED_USERNAME and login_request.password == config.EXPECTED_PASSWORD:
+        token_data = {"sub": "angular_app"}
+        access_token = auth_handler.create_access_token(data=token_data)
+        return {"access_token": access_token, "token_type": "bearer"}
+    else:
+        raise HTTPException(status_code=401, detail="Invalid username or password")
 
 
 @router.post("/ask")
