@@ -136,6 +136,7 @@ jobs:
             echo "API_ENDPOINT_KEY=${{ secrets.API_ENDPOINT_KEY }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
             echo "EXPECTED_USERNAME=${{ secrets.EXPECTED_USERNAME }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
             echo "EXPECTED_PASSWORD=${{ secrets.EXPECTED_PASSWORD }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
+            echo "WIRHOUT_USER_LOGIN=${{ vars.WIRHOUT_USER_LOGIN }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
 
 
       - name: SSH to VM and Execute Docker-Compose Up

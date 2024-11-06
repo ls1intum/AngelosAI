@@ -47,6 +47,7 @@ class Config:
     MAX_MESSAGE_LENGTH = 3000
     EXPECTED_USERNAME = os.getenv("EXPECTED_USERNAME")
     EXPECTED_PASSWORD = os.getenv("EXPECTED_PASSWORD")
+    WIRHOUT_USER_LOGIN = os.getenv("WIRHOUT_USER_LOGIN")
 
 
 config = Config()
