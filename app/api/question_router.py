@@ -23,7 +23,7 @@ async def login(login_request: LoginRequest):
         raise HTTPException(status_code=401, detail="Invalid username or password")
 
 
-@router.post("/ask")
+@router.post("/ask", dependencies=[Depends(auth_handler.verify_api_key)])
 async def ask(request: UserRequest):
     question = request.message
     classification = request.study_program
