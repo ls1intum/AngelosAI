@@ -8,11 +8,13 @@ from app.managers.auth_handler import LoginRequest
 from app.utils.dependencies import request_handler, auth_handler, weaviate_manager, model
 from app.utils.environment import config
 
-router = APIRouter(prefix="/api/v1/question", tags=["response"], dependencies=[Depends(auth_handler.verify_token)])
-auth = APIRouter(prefix="/api", tags=["response"], dependencies=[Depends(auth_handler.verify_api_key)])
+question_router = APIRouter(prefix="/api/v1/question", tags=["response"])
+admin_router = APIRouter(prefix="/api/admin", tags=["settings", "admin"],
+                         dependencies=[Depends(auth_handler.verify_token)])
+auth_router = APIRouter(prefix="/api", tags=["authorization"], dependencies=[Depends(auth_handler.verify_api_key)])
 
 
-@auth.post("/token")
+@auth_router.post("/token")
 async def login(login_request: LoginRequest):
     if config.WITHOUT_USER_LOGIN == "true" or (
             login_request.username == config.EXPECTED_USERNAME and login_request.password == config.EXPECTED_PASSWORD):
@@ -23,7 +25,7 @@ async def login(login_request: LoginRequest):
         raise HTTPException(status_code=401, detail="Invalid username or password")
 
 
-@router.post("/ask", dependencies=[Depends(auth_handler.verify_api_key)])
+@question_router.post("/ask", tags=["email"], dependencies=[Depends(auth_handler.verify_api_key)])
 async def ask(request: UserRequest):
     question = request.message
     classification = request.study_program
@@ -50,7 +52,7 @@ async def ask(request: UserRequest):
         return {"answer": answer}
 
 
-@router.post("/chat")
+@question_router.post("/chat", tags=["chatbot"], dependencies=[Depends(auth_handler.verify_token)])
 async def chat(request: UserChat):
     messages = request.messages
     if not messages:
@@ -68,14 +70,14 @@ async def chat(request: UserChat):
     return {"answer": answer}
 
 
-@router.get("/initSchema",
-            status_code=status.HTTP_202_ACCEPTED, )
+@admin_router.get("/initSchema",
+                  status_code=status.HTTP_202_ACCEPTED, )
 async def initializeDb():
     initialize_vectorstores(config.KNOWLEDGE_BASE_FOLDER, config.QA_FOLDER, weaviate_manager)
     return
 
 
-@router.post("/document")
+@admin_router.post("/document")
 async def add_document(request: UserRequest):
     question = request.message
     classification = request.study_program
@@ -92,13 +94,13 @@ async def add_document(request: UserRequest):
         raise HTTPException(status_code=500, detail="Failed to add document")
 
 
-@router.get("/ping")
+@admin_router.get("/ping")
 async def ping():
     logging.info(config.GPU_URL)
     return {"answer": "Server running."}
 
 
-@router.get("/hi")
+@admin_router.get("/hi")
 async def ping():
     logging.info("hi")
     return model.complete([{"role": "user", "content": "Hi"}])
