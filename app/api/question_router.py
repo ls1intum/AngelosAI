@@ -8,10 +8,10 @@ from app.managers.auth_handler import LoginRequest
 from app.utils.dependencies import request_handler, auth_handler, weaviate_manager, model
 from app.utils.environment import config
 
+auth_router = APIRouter(prefix="/api", tags=["authorization"], dependencies=[Depends(auth_handler.verify_api_key)])
 question_router = APIRouter(prefix="/api/v1/question", tags=["response"])
 admin_router = APIRouter(prefix="/api/admin", tags=["settings", "admin"],
                          dependencies=[Depends(auth_handler.verify_token)])
-auth_router = APIRouter(prefix="/api", tags=["authorization"], dependencies=[Depends(auth_handler.verify_api_key)])
 
 
 @auth_router.post("/token")
