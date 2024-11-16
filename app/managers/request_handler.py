@@ -1,6 +1,5 @@
 from typing import List
 import re
-import logging
 
 from app.data.user_requests import ChatMessage
 from app.managers.weaviate_manager import WeaviateManager

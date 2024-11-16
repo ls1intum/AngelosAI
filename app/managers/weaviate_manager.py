@@ -1,6 +1,6 @@
 import logging
 from enum import Enum
-from typing import List, Union, Tuple, Dict
+from typing import List, Union, Tuple
 
 import weaviate
 import weaviate.classes as wvc
@@ -221,8 +221,6 @@ class WeaviateManager:
             study_program = WeaviateManager.normalize_study_program_name(study_program)
             study_program_length = len(study_program)
 
-            # logging.info(f"Keywords: {keywords}")
-
             # Perform the vector-based query with filters
             query_result = self.documents.query.near_vector(
                 near_vector=question_embedding,
@@ -234,13 +232,6 @@ class WeaviateManager:
                 # include_vector=True,
                 return_metadata=wvc.query.MetadataQuery(certainty=True, score=True, distance=True)
             )
-            # documents_with_embeddings: List[DocumentWithEmbedding] = []
-            # for result in query_result.objects:
-            #     logging.info(
-            #         f"Certainty: {result.metadata.certainty}, Score: {result.metadata.score}, Distance: {result.metadata.distance}")
-            # documents_with_embeddings.append(DocumentWithEmbedding(content=result.properties['content'], embedding=result.vector['default']))
-
-            # sorted_context = self.reranker.rerank_with_embeddings(documents_with_embeddings, keyword_string=keywords)
 
             context_list = [
                 {
@@ -265,7 +256,7 @@ class WeaviateManager:
                 for doc in context_list:
                     if doc['content'] == sorted_content:
                         if doc['link']:
-                            sorted_context_with_links.append(f'Link: {doc["link"]}\Content: {doc["content"]}')
+                            sorted_context_with_links.append(f'Link: {doc["link"]}\nContent: {doc["content"]}')
                         else:
                             sorted_context_with_links.append(f'Link: -\Content: {doc["content"]}')
                         break

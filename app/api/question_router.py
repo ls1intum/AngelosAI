@@ -28,8 +28,8 @@ async def login(login_request: LoginRequest):
 @question_router.post("/ask", tags=["email"], dependencies=[Depends(auth_handler.verify_api_key)])
 async def ask(request: UserRequest):
     question = request.message
-    classification = request.study_program
-    language = request.language
+    classification = request.study_program.lower()
+    language = request.language.lower()
     if not question or not classification:
         raise HTTPException(status_code=400, detail="No question or classification provided")
 
@@ -45,10 +45,20 @@ async def ask(request: UserRequest):
         answer, used_tokens, general_context, specific_context = request_handler.handle_question_test_mode(question,
                                                                                                            classification,
                                                                                                            language)
+        if language == "german":
+            answer += "\n\n**Diese Antwort wurde automatisch generiert.**"
+        else:
+            answer += "\n\n**This answer was automatically generated.**"
+        
         return {"answer": answer, "used_tokens": used_tokens, "general_context": general_context,
                 "specific_context": specific_context}
     else:
         answer = request_handler.handle_question(question, classification, language)
+        if language == "german":
+            answer += "\n\n**Diese Antwort wurde automatisch generiert.**"
+        else:
+            answer += "\n\n**This answer was automatically generated.**"
+        
         return {"answer": answer}
 
 

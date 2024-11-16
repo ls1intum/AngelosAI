@@ -10,7 +10,7 @@
         {
             "orderKey": 1,
             "sender": "AA",
-            "message": "Wenn Sie zwei Module mit jeweils 5 ECTS belegen und einen Überschuss von 3 ECTS haben, ist das unproblematisch. Ihr Studium wird dann mit 183 ECTS abgeschlossen, und die Abschlussnote wird mit dem Divisor 183 berechnet. Viele Grüße."
+            "message": "Wenn Sie zwei Module mit jeweils 5 ECTS belegen und einen Überschuss von 3 ECTS haben, ist das unproblematisch. Ihr Studium wird dann mit 183 ECTS abgeschlossen, und die Abschlussnote wird mit dem Divisor 183 berechnet, falls sie im Bachelor studieren. Viele Grüße."
         }
     ]
 }
