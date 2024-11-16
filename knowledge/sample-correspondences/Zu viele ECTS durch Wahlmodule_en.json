@@ -10,7 +10,7 @@
         {
             "orderKey": 1,
             "sender": "AA",
-            "message": "If you take two modules of 5 ECTS each and have a surplus of 3 ECTS, this is not a problem. Your studies will then be completed with 183 ECTS and the final grade will be calculated using the divisor 183. Best regards."
+            "message": "If you take two modules of 5 ECTS each and have a surplus of 3 ECTS, this is not a problem. Your studies will then be completed with 183 ECTS and the final grade will be calculated using the divisor 183 if you are a Bachelor student. Best regards."
         }
     ]
 }
