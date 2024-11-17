@@ -258,7 +258,7 @@ class WeaviateManager:
                         if doc['link']:
                             sorted_context_with_links.append(f'Link: {doc["link"]}\nContent: {doc["content"]}')
                         else:
-                            sorted_context_with_links.append(f'Link: -\Content: {doc["content"]}')
+                            sorted_context_with_links.append(f'Link: -\nContent: {doc["content"]}')
                         break
 
             context = "\n-----\n".join(sorted_context_with_links)
