@@ -9,6 +9,7 @@ from langchain_community.document_loaders import PyPDFLoader
 from app.data.user_requests import SampleQuestion, WebsiteContent
 
 
+# TODO: Remove
 def load_pdf_documents_from_folder(base_folder: str, study_program: str = "general") -> List[Document]:
     """
     Traverse the base folder and all its subfolders to find and load PDF files into Document objects.
@@ -52,6 +53,8 @@ def load_pdf_documents_from_folder(base_folder: str, study_program: str = "gener
 
     return documents
 
+
+# TODO: Remove
 def load_qa_pairs_from_folder(qa_folder: str) -> List[SampleQuestion]:
     """
     Reads JSON files from the qa_folder and extracts QA pairs.
@@ -107,6 +110,8 @@ def load_qa_pairs_from_folder(qa_folder: str) -> List[SampleQuestion]:
     logging.info(f"Loaded {len(qa_pairs)} QA pairs from folder: {qa_folder}")
     return qa_pairs
 
+
+# TODO: Remove
 def load_website_content_from_folder(base_folder: str) -> List[WebsiteContent]:
     """
     Traverse through the base folder and all subfolders to find and load JSON files

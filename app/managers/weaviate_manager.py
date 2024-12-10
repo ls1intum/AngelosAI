@@ -1,6 +1,6 @@
 import logging
 from enum import Enum
-from typing import List, Union, Tuple
+from typing import List, Union, Tuple, Optional
 
 import weaviate
 import weaviate.classes as wvc
@@ -15,6 +15,7 @@ from app.models.ollama_model import OllamaModel
 from app.retrieval_strategies.reranker import Reranker
 from app.utils.environment import config
 from app.data.user_requests import SampleQuestion, WebsiteContent
+from app.data.database_requests import DatabaseDocument, DatabaseSampleQuestion, DatabaseDocumentMetadata
 
 
 class DocumentSchema(Enum):
@@ -22,7 +23,8 @@ class DocumentSchema(Enum):
     Schema for the embedded chunks
     """
     COLLECTION_NAME = "CITKnowledgeBase"
-    STUDY_PROGRAM = "study_program"
+    KNOWLEDGE_BASE_ID = "kb_id"
+    STUDY_PROGRAMS = "study_programs"
     CONTENT = "content"
     LINK = "link"
 
@@ -32,8 +34,9 @@ class QASchema(Enum):
     Schema for the QA Collection
     """
     COLLECTION_NAME = "QACollection"
+    KNOWLEDGE_BASE_ID = "kb_id"
     TOPIC = "topic"
-    STUDY_PROGRAM = "study_program"
+    STUDY_PROGRAMS = "study_programs"
     QUESTION = "question"
     ANSWER = "answer"
 
@@ -65,9 +68,17 @@ class WeaviateManager:
         # Define properties for the collection
         properties = [
             Property(
-                name=DocumentSchema.STUDY_PROGRAM.value,
+                name=DocumentSchema.KNOWLEDGE_BASE_ID.value,
+                description="The Angelos ID of the document",
+                data_type=DataType.INT,
+                index_filterable=True,
+                index_range_filters=False,
+                index_searchable=False 
+            ),
+            Property(
+                name=DocumentSchema.STUDY_PROGRAMS.value,
                 description="The study program of the document",
-                data_type=DataType.TEXT,
+                data_type=[DataType.TEXT],
                 index_filterable=True,
                 index_range_filters=True,
                 index_searchable=True
@@ -133,15 +144,23 @@ class WeaviateManager:
         # Define properties for the QA collection
         properties = [
             Property(
+                name=QASchema.KNOWLEDGE_BASE_ID.value,
+                description="The Angelos ID of the sample question",
+                data_type=DataType.INT,
+                index_filterable=True,
+                index_range_filters=False,
+                index_searchable=False 
+            ),
+            Property(
                 name=QASchema.TOPIC.value,
-                description="The topic of the conversation",
+                description="The topic of the sample question",
                 data_type=DataType.TEXT,
                 index_inverted=False
             ),
             Property(
-                name=QASchema.STUDY_PROGRAM.value,
-                description="The study program of the student",
-                data_type=DataType.TEXT,
+                name=QASchema.STUDY_PROGRAMS.value,
+                description="The relevant study program",
+                data_type=[DataType.TEXT],
                 index_filterable=True,
                 index_range_filters=True,
                 index_searchable=True
@@ -360,22 +379,10 @@ class WeaviateManager:
         else:
             logging.warning(f"Collection {collection_name} does not exist")
             return False
-
-    def add_document(self, text: str, study_program: str):
-        """Add a document with classification to Weaviate."""
-        try:
-            text_embedding = self.model.embed(text)
-            # logging.info(f"Adding document with embedding: {text_embedding}")
-            self.documents.data.insert(properties={DocumentSchema.CONTENT.value: text,
-                                                   DocumentSchema.STUDY_PROGRAM.value: study_program},
-                                       vector=text_embedding)
-            logging.info(f"Document successfully added with study program: {study_program}")
-        except Exception as e:
-            logging.error(f"Failed to add document: {e}")
-
-    def add_documents(self, chunks: List[Document]):
+            
+    def add_documents(self, chunks: List[DatabaseDocument]):
         """
-        Add chunks of Document objects to the vector database.
+        Add chunks of DatabaseDocument objects to the vector database.
         """
         try:
             batch_size = 500
@@ -387,19 +394,21 @@ class WeaviateManager:
                 chunk_batch = chunks[i:i + batch_size]
                 if isinstance(self.model, OllamaModel):
                     # For other models, embed each chunk one at a time
-                    embeddings = [self.model.embed(chunk.page_content) for chunk in chunk_batch]
+                    embeddings = [self.model.embed(chunk.content) for chunk in chunk_batch]
                 else:
-                    texts = [chunk.page_content for chunk in chunk_batch]
+                    texts = [chunk.content for chunk in chunk_batch]
                     embeddings = self.model.embed_batch(texts)  # Embed in batch
 
                 # Add the chunks to the vector database in a batch
                 with self.documents.batch.rate_limit(requests_per_minute=600) as batch:
                     for index, chunk in enumerate(chunk_batch):
-                        study_program = chunk.metadata.get("study_program", "general")
+                        study_programs = chunk.study_programs
                         # Prepare properties
                         properties = {
-                            DocumentSchema.CONTENT.value: chunk.page_content,
-                            DocumentSchema.STUDY_PROGRAM.value: study_program,
+                            DocumentSchema.KNOWLEDGE_BASE_ID.value: chunk.id,
+                            DocumentSchema.CONTENT.value: chunk.content,
+                            DocumentSchema.LINK.value: chunk.link,
+                            DocumentSchema.STUDY_PROGRAMS.value: study_programs,
                         }
 
                         # Add the document chunk to the batch
@@ -407,75 +416,164 @@ class WeaviateManager:
 
         except Exception as e:
             logging.error(f"Error adding document: {e}")
-
-    def add_website_content(self, website_contents: List[WebsiteContent]):
+            raise
+            
+    def delete_by_kb_id(self, kb_id: int, return_metadata: bool) -> Optional[DatabaseDocumentMetadata]:
         """
-        Add chunks of WebsiteContent objects to the vector database, handling metadata and optional fields.
+        Delete all database entries by kb_id and return other properties
         """
         try:
-            batch_size = 500
-            num_chunks = len(website_contents)
-            logging.info(f"Adding {num_chunks} website contents in batches of {batch_size}")
+            if return_metadata:
+                query_result = self.documents.query.fetch_objects(
+                    filters=Filter.by_property(DocumentSchema.KNOWLEDGE_BASE_ID.value).equal(kb_id)
+                )
 
-            # Split the contents into batches of 500 for embedding and adding
-            for i in range(0, num_chunks, batch_size):
-                content_batch = website_contents[i:i + batch_size]
-
-                # If using OpenAI model, embed in batches, otherwise embed one by one
-                if isinstance(self.model, OllamaModel):
-                    embeddings = [self.model.embed(content.content) for content in content_batch]
+                if not query_result.objects:
+                    logging.info(f"No documents found with knowledge_base_id: {kb_id}")
+                    return None
                 else:
-                    texts = [content.content for content in content_batch]
-                    embeddings = self.model.embed_batch(texts)  # Batch embed
-
-                # Add the contents to the vector database in a batch
-                with self.documents.batch.rate_limit(requests_per_minute=600) as batch:
-                    for index, content in enumerate(content_batch):
-                        properties = {
-                            DocumentSchema.CONTENT.value: content.content,
-                            DocumentSchema.STUDY_PROGRAM.value: content.study_program,
-                            DocumentSchema.LINK.value: content.link
-                        }
-
-                        # Add the content chunk to the batch
-                        batch.add_object(properties=properties, vector=embeddings[index])
-
+                    result = query_result.objects[0]
+                    properties = result.properties
+                    metadata = DatabaseDocumentMetadata(
+                        link=properties[DocumentSchema.LINK],
+                        study_programs=properties[DocumentSchema.STUDY_PROGRAMS]
+                    )
+                    self.documents.data.delete_many(
+                        where=Filter.by_property(DocumentSchema.KNOWLEDGE_BASE_ID).equal(kb_id)
+                    )
+                    return metadata
+            else:
+                self.documents.data.delete_many(
+                    where=Filter.by_property(DocumentSchema.KNOWLEDGE_BASE_ID).equal(kb_id)
+                )
+                return None
+                
         except Exception as e:
-            logging.error(f"Error adding website content: {e}")
+            logging.error(f"Error deleting documents: {e}")
+            
+    def update_documents(self, kb_id: int, document: DatabaseDocumentMetadata):
+        try:
+            query_result = self.documents.query.fetch_objects(
+                filters=Filter.by_property(DocumentSchema.KNOWLEDGE_BASE_ID.value).equal(document.id)
+            )
 
-    def add_qa_pairs(self, qa_pairs: List[SampleQuestion]):
+            if not query_result.objects:
+                logging.info(f"No documents found with knowledge_base_id: {document.id}")
+                return
+
+            # Iterate through the results and update the properties
+            for result in query_result.objects:
+                uuid = result.uuid
+                properties = result.properties
+                properties[DocumentSchema.LINK] = document.link  # Update the link
+                properties[DocumentSchema.STUDY_PROGRAMS] = document.study_programs # Update the study programs
+
+                # Reinsert the object with the updated properties
+                self.documents.data.update(
+                    uuid=uuid,
+                    properties=properties
+                )
+
+            logging.info(f"Updated title for documents with knowledge_base_id: {kb_id}")
+        except Exception as e:
+            logging.error(f"Error updating title for knowledge_base_id {kb_id}: {e}")
+            raise
+
+    def add_sample_question(self, sample_question: DatabaseSampleQuestion):
         """
-        Adds QA pairs to the QA collection in Weaviate.
+        Adds a sample question to the QA collection in Weaviate.
 
         Args:
-        - qa_pairs: List of dictionaries, each containing 'topic', 'question', and 'answer' fields.
+        - The SampleQuestion to add
 
         Returns:
         - None
         """
-        for qa_pair in qa_pairs:
-            try:
-                # Prepare the data entry for insertion
-                topic = qa_pair.topic
-                study_program = qa_pair.study_program
-                question = qa_pair.question
-                answer = qa_pair.answer
+        try:
+            # Prepare the data entry for insertion
+            kb_id = sample_question.id
+            topic = sample_question.topic
+            study_programs = sample_question.study_programs
+            question = sample_question.question
+            answer = sample_question.answer
 
-                # Add to QA collection in Weaviate
-                embedding = self.model.embed(question)
+            # Add to QA collection in Weaviate
+            embedding = self.model.embed(question)
 
-                self.qa_collection.data.insert(
-                    properties={
-                        QASchema.TOPIC.value: topic,
-                        QASchema.STUDY_PROGRAM.value: study_program,
-                        QASchema.QUESTION.value: question,
-                        QASchema.ANSWER.value: answer
-                    },
+            self.qa_collection.data.insert(
+                properties={
+                    QASchema.KNOWLEDGE_BASE_ID.value: kb_id,
+                    QASchema.TOPIC.value: topic,
+                    QASchema.STUDY_PROGRAMS.value: study_programs,
+                    QASchema.QUESTION.value: question,
+                    QASchema.ANSWER.value: answer
+                },
+                vector=embedding
+            )
+            logging.info(f"Inserted QA pair with topic: {sample_question.topic}")
+        except Exception as e:
+            logging.error(f"Failed to insert sample question with topic {sample_question.topic}: {e}")
+            raise
+        
+    def update_sample_question(self, sample_question: DatabaseSampleQuestion):
+        """
+        Adds a sample question to the QA collection in Weaviate.
+
+        Args:
+        - The SampleQuestion to add
+
+        Returns:
+        - None
+        """
+        try:
+            # Prepare the data entry for insertion
+            kb_id = sample_question.id
+            topic = sample_question.topic
+            study_programs = sample_question.study_programs
+            question = sample_question.question
+            answer = sample_question.answer
+
+            # Add to QA collection in Weaviate
+            embedding = self.model.embed(question)
+            
+            query_result = self.documents.query.fetch_objects(
+                filters=Filter.by_property(QASchema.KNOWLEDGE_BASE_ID.value).equal(sample_question.id)
+            )
+
+            if not query_result.objects:
+                logging.info(f"No documents found with knowledge_base_id: {sample_question.id}")
+                return
+
+            # Iterate through the results and update the properties
+            for result in query_result.objects:
+                uuid = result.uuid
+                properties = result.properties
+                properties[QASchema.KNOWLEDGE_BASE_ID.value] = kb_id
+                properties[QASchema.TOPIC.value] = topic
+                properties[QASchema.STUDY_PROGRAMS.value] = study_programs
+                properties[QASchema.QUESTION.value] = question
+                properties[QASchema.ANSWER].value = answer
+
+                # Reinsert the object with the updated properties
+                self.qa_collection.data.update(
+                    uuid=uuid,
+                    properties=properties,
                     vector=embedding
                 )
-                logging.info(f"Inserted QA pair with topic: {qa_pair.topic}")
-            except Exception as e:
-                logging.error(f"Failed to insert QA pair with topic {qa_pair.topic}: {e}")
+
+            logging.info(f"Updated title for documents with knowledge_base_id: {kb_id}")
+        except Exception as e:
+            logging.error(f"Failed to update sample question with topic {sample_question.topic}: {e}")
+            raise
+
+    def delete_sample_question(self, id: int):
+        try:
+            self.documents.data.delete_many(
+                where=Filter.by_property(DocumentSchema.KNOWLEDGE_BASE_ID).equal(id)
+            )
+        except Exception as e:
+            logging.error(f"Failed to update sample question with ID {id}: {e}")
+            raise
 
     @staticmethod
     def normalize_study_program_name(study_program: str) -> str:

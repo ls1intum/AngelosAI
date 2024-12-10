@@ -1,6 +1,9 @@
 import logging
 
-from app.api.question_router import question_router, admin_router, auth_router
+from app.api.question_router import question_router
+from app.api.admin_router import admin_router
+from app.api.auth_router import auth_router
+from app.api.knowledge_router import knowledge_router
 from app.utils.setup_logging import setup_logging
 
 setup_logging()
@@ -30,7 +33,7 @@ app = FastAPI(default_response_class=ORJSONResponse, lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:4200"],
+    allow_origins=["http://localhost:9007"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],
@@ -50,6 +53,7 @@ async def validation_exception_handler(request: Request, exc: RequestValidationE
 app.include_router(router=question_router)
 app.include_router(router=admin_router)
 app.include_router(router=auth_router)
+app.include_router(router=knowledge_router)
 
 if __name__ == "__main__":
     logging.info("Starting FastAPI server")
