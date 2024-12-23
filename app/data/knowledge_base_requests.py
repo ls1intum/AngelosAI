@@ -3,7 +3,8 @@ from typing import List
 
 
 class AddWebsiteRequest(BaseModel):
-    id: int
+    id: str
+    orgId: int
     title: str
     link: str
     studyPrograms: List[str]
@@ -15,27 +16,30 @@ class RefreshContentRequest(BaseModel):
 
 class EditWebsiteRequest(BaseModel):
     title: str
-    studyPrograms: List[int]
+    studyPrograms: List[str]
 
 class AddDocumentRequest(BaseModel):
-    id: int
+    id: str
+    orgId: int
     title: str
-    studyPrograms: List[int]
+    studyPrograms: List[str]
     content: str
 
 class EditDocumentRequest(BaseModel):
     title: str
-    studyPrograms: List[int]
+    studyPrograms: List[str]
 
 class AddSampleQuestionRequest(BaseModel):
-    id: int
+    id: str
+    orgId: int
     question: str
     answer: str
     topic: str
-    studyPrograms: List[int]
+    studyPrograms: List[str]
 
 class EditSampleQuestionRequest(BaseModel):
     question: str
     answer: str
     topic: str
-    studyPrograms: List[int]
+    studyPrograms: List[str]
+    orgId: int

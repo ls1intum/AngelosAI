@@ -13,7 +13,8 @@ class DocumentSplitter:
         sections = content.split('----------------------------------------')
         for section in sections:
             section = section.strip()
-            result.append(section)
+            if section:
+                result.append(section)
         return result
     
     def split_tum_content(self, content: str, chunk_size: int = 1200, chunk_overlap: int = 200):

@@ -14,27 +14,42 @@ class InjestionHandler:
         website_docs: List[DatabaseDocument] = []
         if website.type == "CIT":
             chunks = self.document_splitter.split_cit_content(website.content)
-            for chunk in chunks:
-                website_docs.append(
-                    DatabaseDocument(
-                        id=website.id,
-                        content=chunk,
-                        link=website.link,
-                        study_programs=self.prepare_study_programs(website.studyPrograms)
-                    )
-                )
         else:
-            chunks = self.document_splitter.split_tum_content(website.content)
+            chunks = self.document_splitter.split_tum_content(website.content) 
+        
+        for chunk in chunks:
+            website_docs.append(
+                DatabaseDocument(
+                    id=website.id,
+                    content=chunk,
+                    link=website.link,
+                    study_programs=self.prepare_study_programs(website.studyPrograms),
+                    org_id=website.orgId
+                )
+            )
+            
+        self.weaviate_manager.add_documents(website_docs)
+        
+    def add_websites(self, websites: List[AddWebsiteRequest]):
+        all_website_docs: List[DatabaseDocument] = []
+        for website in websites:
+            if website.type == "CIT":
+                chunks = self.document_splitter.split_cit_content(website.content)
+            else:
+                chunks = self.document_splitter.split_tum_content(website.content)
+
             for chunk in chunks:
-                website_docs.append(
+                all_website_docs.append(
                     DatabaseDocument(
                         id=website.id,
                         content=chunk,
                         link=website.link,
-                        study_programs=self.prepare_study_programs(website.studyPrograms)
+                        study_programs=self.prepare_study_programs(website.studyPrograms),
+                        org_id=website.orgId
                     )
                 )
-        self.weaviate_manager.add_documents(website_docs)
+
+        self.weaviate_manager.add_documents(all_website_docs)
         
     def add_document(self, document: AddDocumentRequest):
         website_docs: List[DatabaseDocument] = []
@@ -44,15 +59,16 @@ class InjestionHandler:
                 DatabaseDocument(
                     id=document.id,
                     content=chunk,
-                    study_programs=self.prepare_study_programs(document.studyPrograms)
+                    study_programs=self.prepare_study_programs(document.studyPrograms),
+                    org_id=document.orgId
                 )
             )
         self.weaviate_manager.add_documents(website_docs)
         
-    def update_database_document(self, id: int, metadata: DatabaseDocumentMetadata):
+    def update_database_document(self, id: str, metadata: DatabaseDocumentMetadata):
         self.weaviate_manager.update_documents(id, self.prepare_study_programs(metadata.study_programs))
         
-    def refresh_content(self, id: int, content: str):
+    def refresh_content(self, id: str, content: str):
         metadata: Optional[DatabaseDocumentMetadata] = self.weaviate_manager.delete_by_kb_id(kb_id=id, return_metadata=True)
         if metadata is not None:
             website_docs: List[DatabaseDocument] = []
@@ -63,7 +79,8 @@ class InjestionHandler:
                         DatabaseDocument(
                             id=id,
                             content=chunk,
-                            study_programs=self.prepare_study_programs(metadata.study_programs)
+                            study_programs=self.prepare_study_programs(metadata.study_programs),
+                            org_id=metadata.org_id
                         )
                     )
             else:
@@ -75,7 +92,8 @@ class InjestionHandler:
                                 id=id,
                                 content=chunk,
                                 link=metadata.link,
-                                study_programs=self.prepare_study_programs(metadata.study_programs)
+                                study_programs=self.prepare_study_programs(metadata.study_programs),
+                                org_id=metadata.org_id
                             )
                         )
                 else:
@@ -86,7 +104,8 @@ class InjestionHandler:
                                 id=id,
                                 content=chunk,
                                 link=metadata.link,
-                                study_programs=self.prepare_study_programs(metadata.study_programs)
+                                study_programs=self.prepare_study_programs(metadata.study_programs),
+                                org_id=metadata.org_id
                             )
                         )
             self.weaviate_manager.add_documents(website_docs)
@@ -100,21 +119,38 @@ class InjestionHandler:
             topic=sample_question.topic,
             question=sample_question.question,
             answer=sample_question.answer,
-            study_programs=sample_question.studyPrograms
+            study_programs=self.prepare_study_programs(sample_question.studyPrograms),
+            org_id=sample_question.orgId
         )
         self.weaviate_manager.add_sample_question(database_sq)
         
-    def update_sample_question(self, kb_id: int, sample_question: EditSampleQuestionRequest):
+    def add_sample_questions(self, sample_questions: List[AddSampleQuestionRequest]):
+        db_questions = []
+        for sq in sample_questions:
+            db_questions.append(
+                DatabaseSampleQuestion(
+                    id=sq.id,
+                    topic=sq.topic,
+                    question=sq.question,
+                    answer=sq.answer,
+                    study_programs=self.prepare_study_programs(sq.studyPrograms),
+                    org_id=sq.orgId
+                )
+            )
+        self.weaviate_manager.add_sample_questions(db_questions)
+        
+    def update_sample_question(self, kb_id: str, sample_question: EditSampleQuestionRequest):
         database_sq = DatabaseSampleQuestion(
             id=kb_id,
             topic=sample_question.topic,
             question=sample_question.question,
             answer=sample_question.answer,
-            study_programs=sample_question.studyPrograms
+            study_programs=self.prepare_study_programs(sample_question.studyPrograms),
+            org_id=sample_question.orgId
         )
         self.weaviate_manager.update_sample_question(database_sq)
         
-    def delete_sample_question(self, id: int):
+    def delete_sample_question(self, id: str):
         self.weaviate_manager.delete_sample_question(id=id)
     
     # Handle content not specific to study programs
@@ -122,7 +158,5 @@ class InjestionHandler:
         if len(study_programs) == 0:
             return ["general"]
         else:
-            return study_programs
-        
-        
+            return [sp.replace(" ", "-").lower() for sp in study_programs]
             

@@ -1,14 +1,15 @@
 import logging
+import uvicorn
+
+from app.utils.setup_logging import setup_logging
+
+setup_logging()
 
 from app.api.question_router import question_router
 from app.api.admin_router import admin_router
 from app.api.auth_router import auth_router
 from app.api.knowledge_router import knowledge_router
-from app.utils.setup_logging import setup_logging
 
-setup_logging()
-
-import uvicorn
 from contextlib import asynccontextmanager
 from fastapi import FastAPI, Request, status
 from fastapi.exceptions import RequestValidationError
@@ -17,8 +18,6 @@ from fastapi.responses import ORJSONResponse
 from starlette.responses import JSONResponse
 
 from app.utils.dependencies import shutdown_model
-
-logging.info("Starting application...")
 
 
 @asynccontextmanager
@@ -33,7 +32,7 @@ app = FastAPI(default_response_class=ORJSONResponse, lifespan=lifespan)
 
 app.add_middleware(
     CORSMiddleware,
-    allow_origins=["http://localhost:9007"],
+    allow_origins=["http://localhost:9007", "http://localhost:4200"],
     allow_credentials=True,
     allow_methods=["*"],
     allow_headers=["*"],

@@ -27,6 +27,7 @@ class DocumentSchema(Enum):
     STUDY_PROGRAMS = "study_programs"
     CONTENT = "content"
     LINK = "link"
+    ORGANISATION_ID = "org_id"
 
 
 class QASchema(Enum):
@@ -39,6 +40,7 @@ class QASchema(Enum):
     STUDY_PROGRAMS = "study_programs"
     QUESTION = "question"
     ANSWER = "answer"
+    ORGANISATION_ID = "org_id"
 
 
 class WeaviateManager:
@@ -70,7 +72,7 @@ class WeaviateManager:
             Property(
                 name=DocumentSchema.KNOWLEDGE_BASE_ID.value,
                 description="The Angelos ID of the document",
-                data_type=DataType.INT,
+                data_type=DataType.TEXT,
                 index_filterable=True,
                 index_range_filters=False,
                 index_searchable=False 
@@ -78,23 +80,32 @@ class WeaviateManager:
             Property(
                 name=DocumentSchema.STUDY_PROGRAMS.value,
                 description="The study program of the document",
-                data_type=[DataType.TEXT],
+                data_type=DataType.TEXT_ARRAY,
                 index_filterable=True,
-                index_range_filters=True,
-                index_searchable=True
+                index_range_filters=False,
+                index_searchable=False,
+                index_inverted=True 
             ),
             Property(
                 name=DocumentSchema.CONTENT.value,
                 description="The content of the document",
                 data_type=DataType.TEXT,
-                index_inverted=False  # Disable inverted index if not needed
+                index_inverted=False
             ),
             Property(
                 name=DocumentSchema.LINK.value,
                 description="The link of the document",
                 data_type=DataType.TEXT,
-                index_inverted=False  # Disable inverted index if not needed
-            )
+                index_inverted=False
+            ),
+            Property(
+                name=DocumentSchema.ORGANISATION_ID.value,
+                description="The Organisation ID of the document",
+                data_type=DataType.INT,
+                index_filterable=True,
+                index_range_filters=False,
+                index_searchable=False 
+            ),
         ]
 
         # Define vector index configuration (use cosine distance metric)
@@ -146,7 +157,7 @@ class WeaviateManager:
             Property(
                 name=QASchema.KNOWLEDGE_BASE_ID.value,
                 description="The Angelos ID of the sample question",
-                data_type=DataType.INT,
+                data_type=DataType.TEXT,
                 index_filterable=True,
                 index_range_filters=False,
                 index_searchable=False 
@@ -160,10 +171,11 @@ class WeaviateManager:
             Property(
                 name=QASchema.STUDY_PROGRAMS.value,
                 description="The relevant study program",
-                data_type=[DataType.TEXT],
+                data_type=DataType.TEXT_ARRAY,
                 index_filterable=True,
-                index_range_filters=True,
-                index_searchable=True
+                index_range_filters=False,
+                index_searchable=False,
+                index_inverted=True 
             ),
             Property(
                 name=QASchema.QUESTION.value,
@@ -176,6 +188,14 @@ class WeaviateManager:
                 description="The academic advisor's answer",
                 data_type=DataType.TEXT,
                 index_inverted=False
+            ),
+            Property(
+                name=QASchema.ORGANISATION_ID.value,
+                description="The Organisation ID of the sample question",
+                data_type=DataType.INT,
+                index_filterable=True,
+                index_range_filters=False,
+                index_searchable=False 
             ),
         ]
 
@@ -229,6 +249,7 @@ class WeaviateManager:
         try:
             # Define the number of documents to retrieve
             min_relevance_score = 0.25
+            
             if study_program.lower() != "general":
                 limit = 10
                 min_relevance_score = 0.15
@@ -238,14 +259,12 @@ class WeaviateManager:
 
             # Normalize the study program name and calculate its length
             study_program = WeaviateManager.normalize_study_program_name(study_program)
-            study_program_length = len(study_program)
 
             # Perform the vector-based query with filters
             query_result = self.documents.query.near_vector(
                 near_vector=question_embedding,
                 filters=Filter.all_of([
-                    Filter.by_property(DocumentSchema.STUDY_PROGRAM.value).equal(study_program),
-                    Filter.by_property(DocumentSchema.STUDY_PROGRAM.value, length=True).equal(study_program_length),
+                    Filter.by_property(DocumentSchema.STUDY_PROGRAMS.value).contains_any([study_program])
                 ]),
                 limit=limit,
                 # include_vector=True,
@@ -263,7 +282,6 @@ class WeaviateManager:
 
             # Remove exact duplicates from context_list
             content_content_list = WeaviateManager.remove_exact_duplicates(content_content_list)
-            # logging.info(f"Context list length after removing exact duplicates: {len(context_list)}")
 
             # Rerank the unique contexts using Cohere
             sorted_context = self.reranker.rerank_with_cohere(context_list=content_content_list, query=question,
@@ -326,7 +344,7 @@ class WeaviateManager:
                 topic = result.properties.get(QASchema.TOPIC.value, "")
                 retrieved_question = result.properties.get(QASchema.QUESTION.value, "")
                 answer = result.properties.get(QASchema.ANSWER.value, "")
-                study_program = result.properties.get(QASchema.STUDY_PROGRAM, "")
+                study_program = result.properties.get(QASchema.STUDY_PROGRAMS, [])
                 sample_questions.append(SampleQuestion(topic=topic, question=retrieved_question, answer=answer, study_program=study_program))
 
             # Rerank the sample questions using the reranker
@@ -393,22 +411,23 @@ class WeaviateManager:
             for i in range(0, num_chunks, batch_size):
                 chunk_batch = chunks[i:i + batch_size]
                 if isinstance(self.model, OllamaModel):
-                    # For other models, embed each chunk one at a time
+                    # For Ollama models, embed each chunk one at a time
                     embeddings = [self.model.embed(chunk.content) for chunk in chunk_batch]
                 else:
                     texts = [chunk.content for chunk in chunk_batch]
                     embeddings = self.model.embed_batch(texts)  # Embed in batch
-
+                logging.info(f"Chunk batch size: {len(chunk_batch)}")
+                    
                 # Add the chunks to the vector database in a batch
                 with self.documents.batch.rate_limit(requests_per_minute=600) as batch:
                     for index, chunk in enumerate(chunk_batch):
-                        study_programs = chunk.study_programs
                         # Prepare properties
                         properties = {
                             DocumentSchema.KNOWLEDGE_BASE_ID.value: chunk.id,
                             DocumentSchema.CONTENT.value: chunk.content,
                             DocumentSchema.LINK.value: chunk.link,
-                            DocumentSchema.STUDY_PROGRAMS.value: study_programs,
+                            DocumentSchema.STUDY_PROGRAMS.value: chunk.study_programs,
+                            DocumentSchema.ORGANISATION_ID.value: chunk.org_id
                         }
 
                         # Add the document chunk to the batch
@@ -418,7 +437,7 @@ class WeaviateManager:
             logging.error(f"Error adding document: {e}")
             raise
             
-    def delete_by_kb_id(self, kb_id: int, return_metadata: bool) -> Optional[DatabaseDocumentMetadata]:
+    def delete_by_kb_id(self, kb_id: str, return_metadata: bool) -> Optional[DatabaseDocumentMetadata]:
         """
         Delete all database entries by kb_id and return other properties
         """
@@ -435,23 +454,24 @@ class WeaviateManager:
                     result = query_result.objects[0]
                     properties = result.properties
                     metadata = DatabaseDocumentMetadata(
-                        link=properties[DocumentSchema.LINK],
-                        study_programs=properties[DocumentSchema.STUDY_PROGRAMS]
+                        link=properties[DocumentSchema.LINK.value],
+                        study_programs=properties[DocumentSchema.STUDY_PROGRAMS.value],
+                        org_id=properties[DocumentSchema.STUDY_PROGRAMS.value]
                     )
                     self.documents.data.delete_many(
-                        where=Filter.by_property(DocumentSchema.KNOWLEDGE_BASE_ID).equal(kb_id)
+                        where=Filter.by_property(DocumentSchema.KNOWLEDGE_BASE_ID.value).equal(kb_id)
                     )
                     return metadata
             else:
                 self.documents.data.delete_many(
-                    where=Filter.by_property(DocumentSchema.KNOWLEDGE_BASE_ID).equal(kb_id)
+                    where=Filter.by_property(DocumentSchema.KNOWLEDGE_BASE_ID.value).equal(kb_id)
                 )
                 return None
                 
         except Exception as e:
             logging.error(f"Error deleting documents: {e}")
             
-    def update_documents(self, kb_id: int, document: DatabaseDocumentMetadata):
+    def update_documents(self, kb_id: str, document: DatabaseDocumentMetadata):
         try:
             query_result = self.documents.query.fetch_objects(
                 filters=Filter.by_property(DocumentSchema.KNOWLEDGE_BASE_ID.value).equal(document.id)
@@ -465,8 +485,8 @@ class WeaviateManager:
             for result in query_result.objects:
                 uuid = result.uuid
                 properties = result.properties
-                properties[DocumentSchema.LINK] = document.link  # Update the link
-                properties[DocumentSchema.STUDY_PROGRAMS] = document.study_programs # Update the study programs
+                properties[DocumentSchema.LINK.value] = document.link  # Update the link
+                properties[DocumentSchema.STUDY_PROGRAMS.value] = document.study_programs # Update the study programs
 
                 # Reinsert the object with the updated properties
                 self.documents.data.update(
@@ -496,6 +516,7 @@ class WeaviateManager:
             study_programs = sample_question.study_programs
             question = sample_question.question
             answer = sample_question.answer
+            org_id = sample_question.org_id
 
             # Add to QA collection in Weaviate
             embedding = self.model.embed(question)
@@ -506,13 +527,54 @@ class WeaviateManager:
                     QASchema.TOPIC.value: topic,
                     QASchema.STUDY_PROGRAMS.value: study_programs,
                     QASchema.QUESTION.value: question,
-                    QASchema.ANSWER.value: answer
+                    QASchema.ANSWER.value: answer,
+                    QASchema.ORGANISATION_ID.value: org_id
                 },
                 vector=embedding
             )
             logging.info(f"Inserted QA pair with topic: {sample_question.topic}")
         except Exception as e:
             logging.error(f"Failed to insert sample question with topic {sample_question.topic}: {e}")
+            raise
+        
+    def add_sample_questions(self, questions: List[DatabaseSampleQuestion]):
+        """
+        Add multiple sample questions to the QA collection in Weaviate.
+        Batches the embedding and insertion process for efficiency.
+        """
+        try:
+            batch_size = 500
+            num_questions = len(questions)
+            logging.info(f"Adding {num_questions} sample questions in batches of {batch_size}")
+
+            for i in range(0, num_questions, batch_size):
+                question_batch = questions[i:i + batch_size]
+
+                if isinstance(self.model, OllamaModel):
+                    # For Ollama models, embed each question one at a time
+                    embeddings = [self.model.embed(q.question) for q in question_batch]
+                else:
+                    # For other models, embed in batch
+                    texts = [q.question for q in question_batch]
+                    embeddings = self.model.embed_batch(texts)
+
+                # Insert into the QA collection in a batch
+                with self.qa_collection.batch.rate_limit(requests_per_minute=600) as batch:
+                    for idx, sq in enumerate(question_batch):
+                        properties = {
+                            QASchema.KNOWLEDGE_BASE_ID.value: sq.id,
+                            QASchema.TOPIC.value: sq.topic,
+                            QASchema.STUDY_PROGRAMS.value: sq.study_programs,
+                            QASchema.QUESTION.value: sq.question,
+                            QASchema.ANSWER.value: sq.answer,
+                            QASchema.ORGANISATION_ID.value: sq.org_id
+                        }
+
+                        batch.add_object(properties=properties, vector=embeddings[idx])
+
+            logging.info(f"Successfully inserted {num_questions} sample questions.")
+        except Exception as e:
+            logging.error(f"Failed to insert sample questions: {e}")
             raise
         
     def update_sample_question(self, sample_question: DatabaseSampleQuestion):
@@ -526,12 +588,11 @@ class WeaviateManager:
         - None
         """
         try:
-            # Prepare the data entry for insertion
-            kb_id = sample_question.id
             topic = sample_question.topic
             study_programs = sample_question.study_programs
             question = sample_question.question
             answer = sample_question.answer
+            
 
             # Add to QA collection in Weaviate
             embedding = self.model.embed(question)
@@ -548,11 +609,10 @@ class WeaviateManager:
             for result in query_result.objects:
                 uuid = result.uuid
                 properties = result.properties
-                properties[QASchema.KNOWLEDGE_BASE_ID.value] = kb_id
                 properties[QASchema.TOPIC.value] = topic
                 properties[QASchema.STUDY_PROGRAMS.value] = study_programs
                 properties[QASchema.QUESTION.value] = question
-                properties[QASchema.ANSWER].value = answer
+                properties[QASchema.ANSWER.value] = answer
 
                 # Reinsert the object with the updated properties
                 self.qa_collection.data.update(
@@ -561,12 +621,12 @@ class WeaviateManager:
                     vector=embedding
                 )
 
-            logging.info(f"Updated title for documents with knowledge_base_id: {kb_id}")
+            logging.info(f"Updated sample question with knowledge_base_id: {sample_question.id}")
         except Exception as e:
             logging.error(f"Failed to update sample question with topic {sample_question.topic}: {e}")
             raise
 
-    def delete_sample_question(self, id: int):
+    def delete_sample_question(self, id: str):
         try:
             self.documents.data.delete_many(
                 where=Filter.by_property(DocumentSchema.KNOWLEDGE_BASE_ID).equal(id)
