@@ -456,7 +456,7 @@ class WeaviateManager:
                     metadata = DatabaseDocumentMetadata(
                         link=properties[DocumentSchema.LINK.value],
                         study_programs=properties[DocumentSchema.STUDY_PROGRAMS.value],
-                        org_id=properties[DocumentSchema.STUDY_PROGRAMS.value]
+                        org_id=properties[DocumentSchema.ORGANISATION_ID.value]
                     )
                     self.documents.data.delete_many(
                         where=Filter.by_property(DocumentSchema.KNOWLEDGE_BASE_ID.value).equal(kb_id)
@@ -474,7 +474,7 @@ class WeaviateManager:
     def update_documents(self, kb_id: str, document: DatabaseDocumentMetadata):
         try:
             query_result = self.documents.query.fetch_objects(
-                filters=Filter.by_property(DocumentSchema.KNOWLEDGE_BASE_ID.value).equal(document.id)
+                filters=Filter.by_property(DocumentSchema.KNOWLEDGE_BASE_ID.value).equal(kb_id)
             )
 
             if not query_result.objects:
