@@ -229,8 +229,8 @@ class WeaviateManager:
         except Exception as e:
             logging.error(f"Error creating schema for {collection_name}: {e}")
 
-    def get_relevant_context(self, question: str, study_program: str, language: str,
-                             test_mode: bool = False, limit = 10, top_n = 5) -> Union[str, Tuple[str, List[str]]]:
+    def get_relevant_context(self, question: str, study_program: str, language: str, org_id: Optional[int], test_mode: bool = False, 
+                             limit = 10, top_n = 5, filter_by_org: bool = False) -> Union[str, Tuple[str, List[str]]]:
         """
         Retrieve relevant documents based on the question embedding and study program.
         Optionally returns both the concatenated context and the sorted context list for testing purposes.
@@ -250,6 +250,16 @@ class WeaviateManager:
             # Define the number of documents to retrieve
             min_relevance_score = 0.25
             
+            # Define filter
+            if filter_by_org and org_id is not None:
+                filters=Filter.all_of([
+                    Filter.by_property(DocumentSchema.STUDY_PROGRAMS.value).contains_any([study_program]),
+                    Filter.by_property(DocumentSchema.ORGANISATION_ID.value).equal(org_id),
+                ])
+            else:
+                filters=Filter.by_property(DocumentSchema.STUDY_PROGRAMS.value).contains_any([study_program])
+            
+            # If getting general context, adjust the parameters
             if study_program.lower() != "general":
                 limit = 10
                 min_relevance_score = 0.15
@@ -263,9 +273,7 @@ class WeaviateManager:
             # Perform the vector-based query with filters
             query_result = self.documents.query.near_vector(
                 near_vector=question_embedding,
-                filters=Filter.all_of([
-                    Filter.by_property(DocumentSchema.STUDY_PROGRAMS.value).contains_any([study_program])
-                ]),
+                filters=filters,
                 limit=limit,
                 # include_vector=True,
                 return_metadata=wvc.query.MetadataQuery(certainty=True, score=True, distance=True)
@@ -312,7 +320,7 @@ class WeaviateManager:
             # logging.error("Traceback:\n%s", tb)
             return "" if not test_mode else ("", [])
 
-    def get_relevant_sample_questions(self, question: str, language: str) -> List[SampleQuestion]:
+    def get_relevant_sample_questions(self, question: str, language: str, org_id: int) -> List[SampleQuestion]:
         """
         Retrieve relevant sample questions and answers based on the question embedding.
 
@@ -335,6 +343,7 @@ class WeaviateManager:
             query_result = self.qa_collection.query.near_vector(
                 near_vector=question_embedding,
                 limit=limit,
+                filters=Filter.by_property(DocumentSchema.ORGANISATION_ID.value).equal(org_id),
                 return_metadata=wvc.query.MetadataQuery(certainty=True, score=True, distance=True)
             )
 
@@ -597,12 +606,12 @@ class WeaviateManager:
             # Add to QA collection in Weaviate
             embedding = self.model.embed(question)
             
-            query_result = self.documents.query.fetch_objects(
+            query_result = self.qa_collection.query.fetch_objects(
                 filters=Filter.by_property(QASchema.KNOWLEDGE_BASE_ID.value).equal(sample_question.id)
             )
 
             if not query_result.objects:
-                logging.info(f"No documents found with knowledge_base_id: {sample_question.id}")
+                logging.info(f"No sample question found with knowledge_base_id: {sample_question.id}")
                 return
 
             # Iterate through the results and update the properties

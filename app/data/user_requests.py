@@ -8,6 +8,7 @@ class ChatMessage(BaseModel):
 class UserChat(BaseModel):
     messages: List[ChatMessage]
     study_program: Optional[str] = None
+    orgId: int
     
 class SampleQuestion(BaseModel):
     topic: str
