@@ -358,6 +358,7 @@ class WeaviateManager:
 
             # Rerank the sample questions using the reranker
             context_list = [sq.question for sq in sample_questions]
+            logging.info(f" SAMPLE QUESTION CONTEXT LIST: {context_list}")
             sorted_questions = self.reranker.rerank_with_cohere(
                 context_list=context_list, query=question, language=language, top_n=top_n,
                 min_relevance_score=min_relevance_score

@@ -14,7 +14,7 @@ class SampleQuestion(BaseModel):
     topic: str
     question: str
     answer: str
-    study_program: str
+    study_program: List[str]
 
 class WebsiteContent(BaseModel):
     type: str
