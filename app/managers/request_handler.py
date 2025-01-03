@@ -14,15 +14,16 @@ class RequestHandler:
         self.model = model
         self.prompt_manager = prompt_manager
 
-    def handle_question(self, question: str, classification: str, language: str):
+    def handle_question(self, question: str, classification: str, language: str, org_id: int):
         """Handles the question by fetching relevant documents and generating an answer."""
         general_context = self.weaviate_manager.get_relevant_context(question=question, study_program="general",
-                                                                     language=language)
+                                                                     language=language, org_id=org_id)
         specific_context = None
         if classification != "general":
             specific_context = self.weaviate_manager.get_relevant_context(question=question,
                                                                           study_program=classification,
-                                                                          language=language)
+                                                                          language=language,
+                                                                          org_id=org_id)
         sample_questions = self.weaviate_manager.get_relevant_sample_questions(question=question, language=language)
         sample_questions_formatted = self.prompt_manager.format_sample_questions(sample_questions, language)
         messages = self.prompt_manager.create_messages(general_context, specific_context, sample_questions_formatted,
@@ -30,21 +31,23 @@ class RequestHandler:
 
         return self.model.complete(messages)
 
-    def handle_question_test_mode(self, question: str, classification: str, language: str):
+    def handle_question_test_mode(self, question: str, classification: str, language: str, org_id: int):
         """Handles the question by fetching relevant documents and generating an answer."""
         general_context, general_context_list = self.weaviate_manager.get_relevant_context(question=question,
                                                                                            study_program="general",
                                                                                            language=language,
+                                                                                           org_id=org_id,
                                                                                            test_mode=True)
         specific_context = None
         if classification != "general":
             specific_context, specific_context_list = self.weaviate_manager.get_relevant_context(question=question,
                                                                                                  study_program=classification,
                                                                                                  language=language,
+                                                                                                 org_id=org_id,
                                                                                                  test_mode=True)
         else:
             specific_context_list = []
-        sample_questions = self.weaviate_manager.get_relevant_sample_questions(question=question, language=language)
+        sample_questions = self.weaviate_manager.get_relevant_sample_questions(question=question, language=language, org_id=org_id)
         sample_questions_formatted = self.prompt_manager.format_sample_questions(sample_questions, language)
         messages = self.prompt_manager.create_messages(general_context, specific_context, sample_questions_formatted,
                                                        question, language, classification)

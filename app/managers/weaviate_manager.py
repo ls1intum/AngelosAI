@@ -14,8 +14,7 @@ from app.models.base_model import BaseModelClient
 from app.models.ollama_model import OllamaModel
 from app.retrieval_strategies.reranker import Reranker
 from app.utils.environment import config
-from app.data.user_requests import SampleQuestion, WebsiteContent
-from app.data.database_requests import DatabaseDocument, DatabaseSampleQuestion, DatabaseDocumentMetadata
+from app.data.database_requests import DatabaseDocument, DatabaseSampleQuestion, DatabaseDocumentMetadata, SampleQuestion
 
 
 class DocumentSchema(Enum):
@@ -230,7 +229,7 @@ class WeaviateManager:
             logging.error(f"Error creating schema for {collection_name}: {e}")
 
     def get_relevant_context(self, question: str, study_program: str, language: str, org_id: Optional[int], test_mode: bool = False, 
-                             limit = 10, top_n = 5, filter_by_org: bool = False) -> Union[str, Tuple[str, List[str]]]:
+                             limit = 10, top_n = 5, filter_by_org: bool = True) -> Union[str, Tuple[str, List[str]]]:
         """
         Retrieve relevant documents based on the question embedding and study program.
         Optionally returns both the concatenated context and the sorted context list for testing purposes.
@@ -250,6 +249,9 @@ class WeaviateManager:
             # Define the number of documents to retrieve
             min_relevance_score = 0.25
             
+            # Normalize the study program name
+            study_program = WeaviateManager.normalize_study_program_name(study_program)
+            
             # Define filter
             if filter_by_org and org_id is not None:
                 filters=Filter.all_of([
@@ -266,9 +268,6 @@ class WeaviateManager:
 
             # Embed the question using the embedding model
             question_embedding = self.model.embed(question)
-
-            # Normalize the study program name and calculate its length
-            study_program = WeaviateManager.normalize_study_program_name(study_program)
 
             # Perform the vector-based query with filters
             query_result = self.documents.query.near_vector(
@@ -353,8 +352,8 @@ class WeaviateManager:
                 topic = result.properties.get(QASchema.TOPIC.value, "")
                 retrieved_question = result.properties.get(QASchema.QUESTION.value, "")
                 answer = result.properties.get(QASchema.ANSWER.value, "")
-                study_program = result.properties.get(QASchema.STUDY_PROGRAMS, [])
-                sample_questions.append(SampleQuestion(topic=topic, question=retrieved_question, answer=answer, study_program=study_program))
+                study_programs = result.properties.get(QASchema.STUDY_PROGRAMS, [])
+                sample_questions.append(SampleQuestion(topic=topic, question=retrieved_question, answer=answer, study_programs=study_programs))
 
             # Rerank the sample questions using the reranker
             context_list = [sq.question for sq in sample_questions]

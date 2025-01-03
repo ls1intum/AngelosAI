@@ -20,3 +20,9 @@ class DatabaseSampleQuestion(BaseModel):
     answer: str
     study_programs: List[str]
     org_id: int
+    
+class SampleQuestion(BaseModel):
+    topic: str
+    question: str
+    answer: str
+    study_programs: List[str]

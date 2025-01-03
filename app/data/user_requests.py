@@ -9,20 +9,9 @@ class UserChat(BaseModel):
     messages: List[ChatMessage]
     study_program: Optional[str] = None
     orgId: int
-    
-class SampleQuestion(BaseModel):
-    topic: str
-    question: str
-    answer: str
-    study_program: List[str]
-
-class WebsiteContent(BaseModel):
-    type: str
-    content: str
-    link: str
-    study_program: str
 
 class UserRequest(BaseModel):
+    org_id: int
     message: str
     study_program: str
     language: str

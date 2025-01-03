@@ -14,6 +14,8 @@ async def ask(request: UserRequest):
     question = request.message
     classification = request.study_program.lower()
     language = request.language.lower()
+    org_id = request.org_id
+    
     if not question or not classification:
         raise HTTPException(status_code=400, detail="No question or classification provided")
 
@@ -28,7 +30,8 @@ async def ask(request: UserRequest):
     if config.TEST_MODE:
         answer, used_tokens, general_context, specific_context = request_handler.handle_question_test_mode(question,
                                                                                                            classification,
-                                                                                                           language)
+                                                                                                           language,
+                                                                                                           org_id=org_id)
         if language == "german":
             answer += "\n\n**Diese Antwort wurde automatisch generiert.**"
         else:
@@ -37,7 +40,7 @@ async def ask(request: UserRequest):
         return {"answer": answer, "used_tokens": used_tokens, "general_context": general_context,
                 "specific_context": specific_context}
     else:
-        answer = request_handler.handle_question(question, classification, language)
+        answer = request_handler.handle_question(question, classification, language, org_id=org_id)
         if language == "german":
             answer += "\n\n**Diese Antwort wurde automatisch generiert.**"
         else:
