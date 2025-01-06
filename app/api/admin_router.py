@@ -6,8 +6,7 @@ from app.utils.dependencies import auth_handler, model
 from app.utils.environment import config
 
 
-admin_router = APIRouter(prefix="/api/admin", tags=["settings", "admin"],
-                         dependencies=[Depends(auth_handler.verify_token)])
+admin_router = APIRouter(prefix="/api/admin", tags=["settings", "admin"])
 
 @admin_router.get("/ping")
 async def ping():
