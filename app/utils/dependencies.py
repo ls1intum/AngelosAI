@@ -15,7 +15,7 @@ weaviate_manager = WeaviateManager(config.WEAVIATE_URL, embedding_model=model, r
 prompt_manager = PromptManager()
 document_splitter = DocumentSplitter()
 request_handler = RequestHandler(weaviate_manager=weaviate_manager, model=model, prompt_manager=prompt_manager)
-auth_handler = AuthHandler(angelos_api_key=config.ANGELOS_APP_API_KEY, secret_key=config.API_ENDPOINT_KEY, algorithm=config.ALGORITHM, access_token_expires_minutes=config.ACCESS_TOKEN_EXPIRE_MINUTES)
+auth_handler = AuthHandler(angelos_api_key=config.ANGELOS_APP_API_KEY)
 injestion_handler = InjestionHandler(weaviate_manager=weaviate_manager, document_splitter=document_splitter)
 
 # Provide a shutdown mechanism for the model

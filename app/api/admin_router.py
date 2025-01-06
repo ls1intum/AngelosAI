@@ -4,7 +4,6 @@ from fastapi import APIRouter, Depends
 
 from app.utils.dependencies import auth_handler, model
 from app.utils.environment import config
-from app.data.user_requests import UserChat, UserRequest
 
 
 admin_router = APIRouter(prefix="/api/admin", tags=["settings", "admin"],

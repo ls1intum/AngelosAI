@@ -7,7 +7,6 @@ setup_logging()
 
 from app.api.question_router import question_router
 from app.api.admin_router import admin_router
-from app.api.auth_router import auth_router
 from app.api.knowledge_router import knowledge_router
 
 from contextlib import asynccontextmanager
@@ -51,7 +50,6 @@ async def validation_exception_handler(request: Request, exc: RequestValidationE
 
 app.include_router(router=question_router)
 app.include_router(router=admin_router)
-app.include_router(router=auth_router)
 app.include_router(router=knowledge_router)
 
 if __name__ == "__main__":

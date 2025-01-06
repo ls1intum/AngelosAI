@@ -8,7 +8,7 @@ services:
     volumes:
       - ./knowledge:/app/knowledge
     #    env_file:
-    #      - development.env
+    #      - .env.prod
     command: [ "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000" ]
     environment:
       # Weaviate Database
@@ -17,12 +17,9 @@ services:
       - KNOWLEDGE_BASE_FOLDER
       - QA_FOLDER
       # Development config
-      - TEST_MODE
       - DELETE_BEFORE_INIT
       # Ollama
       - USE_OLLAMA
-      - API_KEY
-      - URL
       - GPU_URL
       - GPU_USER
       - GPU_PASSWORD
@@ -34,7 +31,7 @@ services:
       - OPENAI_MODEL
       - OPENAI_EMBEDDING_MODEL
       # Azure OpenAI
-      - USE_AZURE=true
+      - USE_AZURE
       - AZURE_OPENAI_API_KEY
       - AZURE_OPENAI_DEPLOYMENT
       - AZURE_OPENAI_EMBEDDING_DEPLOYMENT
@@ -44,12 +41,8 @@ services:
       - COHERE_API_KEY
       - COHERE_API_KEY_MULTI
       - COHERE_API_KEY_EN
-      # some auth
-      - API_ENDPOINT_KEY
+      # Authentication
       - ANGELOS_APP_API_KEY
-      - EXPECTED_PASSWORD
-      - EXPECTED_USERNAME
-      - WITHOUT_USER_LOGIN
     networks:
       - angelos-network
 
