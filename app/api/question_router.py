@@ -19,12 +19,6 @@ async def ask(request: UserRequest):
     if not question or not classification:
         raise HTTPException(status_code=400, detail="No question or classification provided")
 
-    if len(question) > config.MAX_MESSAGE_LENGTH:
-        raise HTTPException(
-            status_code=400,
-            detail=f"Question length exceeds the allowed limit of {config.MAX_MESSAGE_LENGTH} characters"
-        )
-
     logging.info(f"Received question: {question} with classification: {classification}")
 
     if config.TEST_MODE:
