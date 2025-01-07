@@ -24,7 +24,7 @@ class RequestHandler:
                                                                           study_program=classification,
                                                                           language=language,
                                                                           org_id=org_id)
-        sample_questions = self.weaviate_manager.get_relevant_sample_questions(question=question, language=language)
+        sample_questions = self.weaviate_manager.get_relevant_sample_questions(question=question, language=language, org_id=org_id)
         sample_questions_formatted = self.prompt_manager.format_sample_questions(sample_questions, language)
         messages = self.prompt_manager.create_messages(general_context, specific_context, sample_questions_formatted,
                                                        question, language, classification)
