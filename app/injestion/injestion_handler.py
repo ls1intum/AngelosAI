@@ -1,4 +1,5 @@
 from typing import List, Optional
+import logging
 
 from app.managers.weaviate_manager import WeaviateManager
 from app.injestion.document_splitter import DocumentSplitter
@@ -66,7 +67,7 @@ class InjestionHandler:
         self.weaviate_manager.add_documents(website_docs)
         
     def update_database_document(self, id: str, metadata: DatabaseDocumentMetadata):
-        self.weaviate_manager.update_documents(id, self.prepare_study_programs(metadata.study_programs))
+        self.weaviate_manager.update_documents(id, metadata)
         
     def refresh_content(self, id: str, content: str):
         metadata: Optional[DatabaseDocumentMetadata] = self.weaviate_manager.delete_by_kb_id(kb_id=id, return_metadata=True)
