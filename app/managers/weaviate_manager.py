@@ -49,6 +49,11 @@ class WeaviateManager:
         self.model = embedding_model
         self.schema_initialized = False
         self.reranker = reranker
+        
+        if config.DELETE_BEFORE_INIT.lower() == "true":
+            logging.warning("Deleting existing data before initialization...")
+            self.delete_collections()
+        
         self.documents = self.initialize_schema()
         self.qa_collection = self.initialize_qa_schema()
 
@@ -503,9 +508,9 @@ class WeaviateManager:
                     properties=properties
                 )
 
-            logging.info(f"Updated title for documents with knowledge_base_id: {kb_id}")
+            logging.info(f"Updated documents with knowledge_base_id: {kb_id}")
         except Exception as e:
-            logging.error(f"Error updating title for knowledge_base_id {kb_id}: {e}")
+            logging.error(f"Error updating documents with knowledge_base_id {kb_id}: {e}")
             raise
 
     def add_sample_question(self, sample_question: DatabaseSampleQuestion):

@@ -2,7 +2,7 @@ import logging
 
 from fastapi import APIRouter, Depends
 
-from app.utils.dependencies import auth_handler, model
+from app.utils.dependencies import weaviate_manager, model
 from app.utils.environment import config
 
 

@@ -15,6 +15,7 @@ class RefreshContentRequest(BaseModel):
     content: str
 
 class EditWebsiteRequest(BaseModel):
+    orgId: int
     title: str
     studyPrograms: List[str]
 
@@ -26,6 +27,7 @@ class AddDocumentRequest(BaseModel):
     content: str
 
 class EditDocumentRequest(BaseModel):
+    orgId: int
     title: str
     studyPrograms: List[str]
 

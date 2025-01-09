@@ -1,4 +1,5 @@
 from typing import List
+import logging
 from fastapi import HTTPException, APIRouter, status, Response, Depends
 from app.data.knowledge_base_requests import AddWebsiteRequest, EditDocumentRequest, EditSampleQuestionRequest, EditWebsiteRequest, AddDocumentRequest, AddSampleQuestionRequest, RefreshContentRequest
 from app.utils.dependencies import injestion_handler, auth_handler
@@ -33,8 +34,10 @@ async def refresh_website(id: str, body: RefreshContentRequest):
 @knowledge_router.post("/website/{id}/update", dependencies=[Depends(auth_handler.verify_api_key)])
 async def update_website(id: str, body: EditWebsiteRequest):
     try:
+        logging.info("Test")
         metadata: DatabaseDocumentMetadata = DatabaseDocumentMetadata(
-            study_programs=body.studyPrograms
+            study_programs=body.studyPrograms,
+            org_id=body.orgId
         )
         injestion_handler.update_database_document(id=id, metadata=metadata)
         return Response(status_code=200)
@@ -80,7 +83,8 @@ async def refresh_document(id: str, body: RefreshContentRequest):
 async def edit_document(id: str, body: EditDocumentRequest):
     try:
         metadata: DatabaseDocumentMetadata = DatabaseDocumentMetadata(
-            study_programs=body.studyPrograms
+            study_programs=body.studyPrograms,
+            org_id=body.orgId
         )
         injestion_handler.update_database_document(id=id, metadata=metadata)
         return Response(status_code=200)
