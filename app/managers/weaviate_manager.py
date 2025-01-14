@@ -4,9 +4,8 @@ from typing import List, Union, Tuple, Optional
 
 import weaviate
 import weaviate.classes as wvc
-from langchain.docstore.document import Document
 from weaviate.collections import Collection
-from weaviate.collections.classes.config import DataType, Configure, Property
+from weaviate.collections.classes.config import DataType, Configure, Property, Tokenization
 from weaviate.collections.classes.config_vectorizers import VectorDistances
 from weaviate.collections.classes.filters import Filter
 
@@ -88,7 +87,8 @@ class WeaviateManager:
                 index_filterable=True,
                 index_range_filters=False,
                 index_searchable=False,
-                index_inverted=True 
+                index_inverted=True,
+                tokenization=Tokenization.FIELD
             ),
             Property(
                 name=DocumentSchema.CONTENT.value,
@@ -179,7 +179,8 @@ class WeaviateManager:
                 index_filterable=True,
                 index_range_filters=False,
                 index_searchable=False,
-                index_inverted=True 
+                index_inverted=True,
+                tokenization=Tokenization.FIELD
             ),
             Property(
                 name=QASchema.QUESTION.value,
