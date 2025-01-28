@@ -2,8 +2,8 @@ import os
 
 from dotenv import load_dotenv
 
-if os.getenv("ENVIRONMENT") == "development":
-    load_dotenv("./../development.env")
+# if os.getenv("ENVIRONMENT") == "development":
+load_dotenv("./../development.env")
 
 
 class Config:
@@ -28,6 +28,12 @@ class Config:
     OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
     OPENAI_MODEL = os.getenv("OPENAI_MODEL")
     OPENAI_EMBEDDING_MODEL = os.getenv("OPENAI_EMBEDDING_MODEL")
+    # Local Model
+    USE_LOCAL_MODEL = os.getenv("USE_LOCAL_MODEL", "true")
+    LOCAL_API_KEY = os.getenv("LOCAL_API_KEY", "lm-studio")
+    LOCAL_MODEL = os.getenv("LOCAL_MODEL")
+    LOCAL_EMBED_MODEL = os.getenv("LOCAL_EMBED_MODEL")
+    LOCAL_ENDPOINT = os.getenv("LOCAL_ENDPOINT")
     # Azure OpenAI
     USE_AZURE = os.getenv("USE_AZURE", "true")
     AZURE_OPENAI_API_KEY = os.getenv("AZURE_OPENAI_API_KEY")

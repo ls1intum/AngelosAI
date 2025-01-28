@@ -1,6 +1,6 @@
-from typing import List, Tuple, Union
 import logging
 import re
+from typing import List
 
 from app.data.user_requests import ChatMessage
 from app.managers.weaviate_manager import SampleQuestion
@@ -45,12 +45,12 @@ class PromptManager:
 
     --------------------
 
-    **Response:**
+    **Response:**   
     - Be clear and concise.
     - Use a friendly and professional tone.
     - Keep the response within 200 words.
     - Start the response with: "Dear <STUDENT NAME>,"
-    - End with "Best regards, Academic Advising"
+    - End with "Best regards, Academic Advising \n (This E-Mail was "
     - If a provided similar question from a student is thematically very similar to the question asked, rely heavily on the respective sample answer from academic advising.
     - If information that is **highly** relevant to the question is accompanied by a link (in the general or specific context), include the links in your answer like this: "For more detailed information, please visit the following link(s): <LINKS>"
 
@@ -168,7 +168,7 @@ class PromptManager:
     Ensure your response is accurate, student-friendly, and directly addresses the student's concern.
     If you cannot answer the question using only the information provided, please respond with: “I'm sorry, but I cannot answer this question based on the provided information."
     """
-        
+
         self.answer_prompt_template_with_history_de = """
         Sie sind ein intelligenter Assistent auf der offiziellen Website der TUM School of Computation, Information and Technology (CIT). Ihre Aufgabe ist es, Fragen von Studierenden zu beantworten, die detaillierte und genaue Informationen zu ihrem Studium erhalten möchten.
 
@@ -251,7 +251,7 @@ class PromptManager:
                 study_program=study_program_text
             )
             system_content = "Sie sind ein intelligenter Assistent, der den Studierenden der Technischen Universität München (TUM) bei Fragen rund um ihr Studium hilft"
-        
+
         # Log prompt for testing
         logging.info(user_content)
         # Return the messages structure for the LLM
@@ -259,7 +259,6 @@ class PromptManager:
             {"role": "system", "content": system_content},
             {"role": "user", "content": user_content}
         ]
-    
 
     def create_messages_with_history(self, general_context: str, specific_context: str, question: str, history: str,
                                      sample_questions: str, language: str, study_program: str):
@@ -287,15 +286,15 @@ class PromptManager:
                 study_program=study_program_text
             )
             system_content = "Sie sind ein intelligenter Assistent, der den Studierenden der Technischen Universität München (TUM) bei Fragen rund um ihr Studium hilft"
-        
+
         # Log prompt for testing
         logging.info(user_content)
         # Return the messages structure for the LLM
         return [
-            {"role": "system","content": system_content},
+            {"role": "system", "content": system_content},
             {"role": "user", "content": user_content}
         ]
-    
+
     def format_sample_questions(self, sample_questions: List[SampleQuestion], language: str) -> str:
         formatted_strings = []
         for sq in sample_questions:
@@ -314,7 +313,7 @@ class PromptManager:
             formatted_strings.append(formatted_string)
         combined_string = "\n-----\n".join(formatted_strings)
         return combined_string
-    
+
     def format_chat_history(self, chat_messages: List[ChatMessage], language: str) -> str:
         # Determine labels based on language
         if language.lower() == "english":
@@ -334,20 +333,20 @@ class PromptManager:
         # Join formatted messages with separator
         combined_string = "\n\n".join(formatted_strings)
         return combined_string
-    
+
     # Format the study program
     def format_study_program(self, study_program: str, language: str) -> str:
         if not study_program or study_program.lower() == "general":
             return "No study program specified" if language.lower() == "english" else "Kein Studiengang angegeben"
-        
+
         # Capitalize first letter of each word and replace hyphens with spaces
         formatted_program = re.sub(r'-', ' ', study_program).title()
-        
+
         if language.lower() == "english":
             return f"The study program of the student is {formatted_program}"
         else:
             return f"Der Studiengang des Studenten ist {formatted_program}"
-        
+
     def build_chat_query(self, messages: List[ChatMessage], study_program: str, num_messages: int = 3) -> str:
         """
         Builds a query string from the last num_messages user messages.
@@ -369,4 +368,3 @@ class PromptManager:
         formatted_program = re.sub(r'-', ' ', study_program).title()
         query_with_program = f"{formatted_program}: {query}"
         return query_with_program
-    
