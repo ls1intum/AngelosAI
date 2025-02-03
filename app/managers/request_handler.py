@@ -49,10 +49,11 @@ class RequestHandler:
             specific_context_list = []
         sample_questions = self.weaviate_manager.get_relevant_sample_questions(question=question, language=language, org_id=org_id)
         sample_questions_formatted = self.prompt_manager.format_sample_questions(sample_questions, language)
+        sample_questions_context_list = self.prompt_manager.format_sample_questions_test_mode(sample_questions=sample_questions, language=language)
         messages = self.prompt_manager.create_messages(general_context, specific_context, sample_questions_formatted,
                                                        question, language, classification)
         answer, tokens = self.model.complete_with_tokens(messages)
-        return answer, tokens, general_context_list, specific_context_list
+        return answer, tokens, general_context_list, specific_context_list, sample_questions_context_list
     
     def handle_chat(self, messages: List[ChatMessage], study_program: str, org_id: int, filter_by_org: bool):
         """Handles the question by fetching relevant documents and generating an answer."""

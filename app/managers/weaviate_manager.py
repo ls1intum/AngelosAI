@@ -315,7 +315,7 @@ class WeaviateManager:
 
             # Return based on test_mode
             if test_mode:
-                return context, sorted_context
+                return context, sorted_context_with_links
             else:
                 return context
 
@@ -363,7 +363,6 @@ class WeaviateManager:
 
             # Rerank the sample questions using the reranker
             context_list = [sq.question for sq in sample_questions]
-            logging.info(f" SAMPLE QUESTION CONTEXT LIST: {context_list}")
             sorted_questions = self.reranker.rerank_with_cohere(
                 context_list=context_list, query=question, language=language, top_n=top_n,
                 min_relevance_score=min_relevance_score
@@ -444,7 +443,7 @@ class WeaviateManager:
                             DocumentSchema.STUDY_PROGRAMS.value: chunk.study_programs,
                             DocumentSchema.ORGANISATION_ID.value: chunk.org_id
                         }
-
+                        
                         # Add the document chunk to the batch
                         batch.add_object(properties=properties, vector=embeddings[index])
 
@@ -486,6 +485,15 @@ class WeaviateManager:
         except Exception as e:
             logging.error(f"Error deleting documents: {e}")
             
+    def delete_documents(self, kb_ids: List[str]):
+        """Batch delete all documents where knowledge base ID is in the provided list."""
+        try:
+            self.documents.data.delete_many(
+                where=Filter.by_property(DocumentSchema.KNOWLEDGE_BASE_ID.value).contains_any(kb_ids)
+            )
+        except Exception as e:
+            logging.error(f"Error deleting documents: {e}")
+            
     def update_documents(self, kb_id: str, document: DatabaseDocumentMetadata):
         try:
             query_result = self.documents.query.fetch_objects(
@@ -502,7 +510,7 @@ class WeaviateManager:
                 properties = result.properties
                 properties[DocumentSchema.LINK.value] = document.link  # Update the link
                 properties[DocumentSchema.STUDY_PROGRAMS.value] = document.study_programs # Update the study programs
-
+                
                 # Reinsert the object with the updated properties
                 self.documents.data.update(
                     uuid=uuid,
@@ -643,11 +651,20 @@ class WeaviateManager:
 
     def delete_sample_question(self, id: str):
         try:
-            self.documents.data.delete_many(
-                where=Filter.by_property(DocumentSchema.KNOWLEDGE_BASE_ID).equal(id)
+            self.qa_collection.data.delete_many(
+                where=Filter.by_property(QASchema.KNOWLEDGE_BASE_ID).equal(id)
             )
         except Exception as e:
-            logging.error(f"Failed to update sample question with ID {id}: {e}")
+            logging.error(f"Failed to delete sample question with ID {id}: {e}")
+            raise
+        
+    def delete_sample_questions(self, ids: List[str]):
+        try:
+            self.qa_collection.data.delete_many(
+                where=Filter.by_property(DocumentSchema.KNOWLEDGE_BASE_ID).contains_any(ids)
+            )
+        except Exception as e:
+            logging.error(f"Failed to batch delete sample questions: {e}")
             raise
 
     @staticmethod
