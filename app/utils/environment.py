@@ -29,7 +29,7 @@ class Config:
     OPENAI_MODEL = os.getenv("OPENAI_MODEL")
     OPENAI_EMBEDDING_MODEL = os.getenv("OPENAI_EMBEDDING_MODEL")
     # Local Model
-    USE_LOCAL_MODEL = os.getenv("USE_LOCAL_MODEL", "true")
+    USE_LOCAL_MODEL = os.getenv("USE_LOCAL_MODEL", "false")
     LOCAL_API_KEY = os.getenv("LOCAL_API_KEY", "lm-studio")
     LOCAL_MODEL = os.getenv("LOCAL_MODEL")
     LOCAL_EMBED_MODEL = os.getenv("LOCAL_EMBED_MODEL")

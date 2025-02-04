@@ -45,12 +45,12 @@ class PromptManager:
 
     --------------------
 
-    **Response:**   
+    **Response:**
     - Be clear and concise.
     - Use a friendly and professional tone.
     - Keep the response within 200 words.
     - Start the response with: "Dear <STUDENT NAME>,"
-    - End with "Best regards, Academic Advising \n (This E-Mail was "
+    - End with "Best regards, Academic Advising"
     - If a provided similar question from a student is thematically very similar to the question asked, rely heavily on the respective sample answer from academic advising.
     - If information that is **highly** relevant to the question is accompanied by a link (in the general or specific context), include the links in your answer like this: "For more detailed information, please visit the following link(s): <LINKS>"
 
