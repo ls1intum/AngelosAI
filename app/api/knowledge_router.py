@@ -7,6 +7,8 @@ from app.data.database_requests import DatabaseDocumentMetadata
 
 knowledge_router = APIRouter(prefix="/api/knowledge", tags=["knowledge"])
 
+# === Website Endpoints ===
+
 @knowledge_router.post("/website/add", dependencies=[Depends(auth_handler.verify_api_key)])
 async def add_website(body: AddWebsiteRequest):
     try:
@@ -51,6 +53,14 @@ async def delete_website(id: str):
         return Response(status_code=200)
     except Exception as e:
         return Response(status_code=500)
+    
+@knowledge_router.delete("/website/deleteBatch", dependencies=[Depends(auth_handler.verify_api_key)])
+async def delete_website(ids: List[str]):
+    try:
+        injestion_handler.delete_documents(ids=ids)
+        return Response(status_code=200)
+    except Exception as e:
+        return Response(status_code=500)
 
 
 # === Document Endpoints ===
@@ -59,14 +69,6 @@ async def delete_website(id: str):
 async def add_document(body: AddDocumentRequest):
     try:
         injestion_handler.add_document(body)
-        return Response(status_code=200)
-    except Exception as e:
-        return Response(status_code=500)
-    
-@knowledge_router.post("/sample-question/addBatch", dependencies=[Depends(auth_handler.verify_api_key)])
-async def add_sample_questions(body: List[AddSampleQuestionRequest]):
-    try:
-        injestion_handler.add_sample_questions(body)
         return Response(status_code=200)
     except Exception as e:
         return Response(status_code=500)
@@ -98,6 +100,14 @@ async def delete_document(id: str):
         return Response(status_code=200)
     except Exception as e:
         return Response(status_code=500)
+    
+@knowledge_router.delete("/document/deleteBatch", dependencies=[Depends(auth_handler.verify_api_key)])
+async def delete_document(body: List[str]):
+    try:
+        injestion_handler.delete_documents(ids=body)
+        return Response(status_code=200)
+    except Exception as e:
+        return Response(status_code=500)
 
 
 # === Sample Question Endpoints ===
@@ -106,6 +116,14 @@ async def delete_document(id: str):
 async def add_sample_question(body: AddSampleQuestionRequest):
     try:
         injestion_handler.add_sample_question(sample_question=body)
+        return Response(status_code=200)
+    except Exception as e:
+        return Response(status_code=500)
+    
+@knowledge_router.post("/sample-question/addBatch", dependencies=[Depends(auth_handler.verify_api_key)])
+async def add_sample_questions(body: List[AddSampleQuestionRequest]):
+    try:
+        injestion_handler.add_sample_questions(body)
         return Response(status_code=200)
     except Exception as e:
         return Response(status_code=500)
@@ -121,7 +139,15 @@ async def edit_sample_question(id: str, body: EditSampleQuestionRequest):
 @knowledge_router.delete("/sample-question/{id}/delete", dependencies=[Depends(auth_handler.verify_api_key)])
 async def delete_sample_question(id: str):
     try:
-        injestion_handler.delete_sample_question(id=id)
+        injestion_handler.delete_sample_questions(ids=[id])
+        return Response(status_code=200)
+    except Exception as e:
+        return Response(status_code=500)
+    
+@knowledge_router.delete("/sample-question/deleteBatch", dependencies=[Depends(auth_handler.verify_api_key)])
+async def delete_sample_question(body: List[str]):
+    try:
+        injestion_handler.delete_sample_questions(ids=body)
         return Response(status_code=200)
     except Exception as e:
         return Response(status_code=500)

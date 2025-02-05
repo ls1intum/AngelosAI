@@ -67,6 +67,7 @@ class InjestionHandler:
         self.weaviate_manager.add_documents(website_docs)
         
     def update_database_document(self, id: str, metadata: DatabaseDocumentMetadata):
+        metadata.study_programs = self.prepare_study_programs(metadata.study_programs)
         self.weaviate_manager.update_documents(id, metadata)
         
     def refresh_content(self, id: str, content: str):
@@ -114,6 +115,9 @@ class InjestionHandler:
     def delete_document(self, id: str):
         self.weaviate_manager.delete_by_kb_id(kb_id=id, return_metadata=False)
         
+    def delete_documents(self, ids: List[str]):
+        self.weaviate_manager.delete_documents(kb_ids=ids)
+        
     def add_sample_question(self, sample_question: AddSampleQuestionRequest):
         database_sq = DatabaseSampleQuestion(
             id=sample_question.id,
@@ -151,8 +155,8 @@ class InjestionHandler:
         )
         self.weaviate_manager.update_sample_question(database_sq)
         
-    def delete_sample_question(self, id: str):
-        self.weaviate_manager.delete_sample_question(id=id)
+    def delete_sample_questions(self, ids: List[str]):
+        self.weaviate_manager.delete_sample_questions(ids=ids)
     
     # Handle content not specific to study programs
     def prepare_study_programs(self, study_programs: List[str]) -> List[str]:

@@ -348,6 +348,24 @@ class PromptManager:
         else:
             return f"Der Studiengang des Studenten ist {formatted_program}"
         
+    def format_sample_questions_test_mode(self, sample_questions: List[SampleQuestion], language: str) -> List[str]:
+        formatted_strings = []
+        for sq in sample_questions:
+            if language.lower() == "english":
+                formatted_string = f"""
+    Topic: {sq.topic}
+    Student: "{sq.question}"
+    Academic Advising: "{sq.answer}"
+    """.strip()
+            else:
+                formatted_string = f"""
+    Thema: {sq.topic}
+    Student: "{sq.question}"
+    Studienberatung: "{sq.answer}"
+    """.strip()
+            formatted_strings.append(formatted_string)
+        return formatted_strings
+        
     def build_chat_query(self, messages: List[ChatMessage], study_program: str, num_messages: int = 3) -> str:
         """
         Builds a query string from the last num_messages user messages.
