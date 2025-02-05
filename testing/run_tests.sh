@@ -19,3 +19,6 @@ fi
 
 # Step 2: Run the tests in tests/test_rag.py with pytest
 pytest ./testing/tests/test_rag.py --disable-warnings
+
+# Uncomment the following to run tests with logging
+#pytest -o log_cli=true --log-cli-level=INFO ./testing/tests/test_rag.py

@@ -22,7 +22,7 @@ async def ask(request: UserRequest):
     logging.info(f"Received question: {question} with classification: {classification}")
 
     if config.TEST_MODE:
-        answer, used_tokens, general_context, specific_context = request_handler.handle_question_test_mode(question,
+        answer, used_tokens, general_context, specific_context, sq_context = request_handler.handle_question_test_mode(question,
                                                                                                            classification,
                                                                                                            language,
                                                                                                            org_id=org_id)
@@ -32,7 +32,7 @@ async def ask(request: UserRequest):
             answer += "\n\n**This answer was automatically generated.**"
         
         return {"answer": answer, "used_tokens": used_tokens, "general_context": general_context,
-                "specific_context": specific_context}
+                "specific_context": specific_context, "sq_context": sq_context}
     else:
         answer = request_handler.handle_question(question, classification, language, org_id=org_id)
         if language == "german":

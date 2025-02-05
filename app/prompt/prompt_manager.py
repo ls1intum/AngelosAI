@@ -125,7 +125,7 @@ class PromptManager:
     
     **Handling of off-topic or sensitive inquiries:**
     - Questions unrelated to studies: If the question is not related to studying at TUM, politely respond with: “I am here to assist with questions about studying at TUM. Please ask a study-related question.”
-    - Sensitive or personal matters: For sensitive inquiries, such as those related to psychological problems, kindly refer the student to the academic advising service with the following message: “For personal matters of this kind, I recommend contacting the academic advising service. You can reach them via email at study-advising@in.tum.de or visit https://www.cit.tum.de/en/cit/studies/students/advising/ for more information.”
+    - Sensitive or personal matters: For sensitive inquiries, such as those related to psychological problems, kindly refer the student to the academic advising service with the following message: “For personal matters like this, I’d recommend reaching out to our academic advising service. They’ll be happy to assist you!”
 
     --------------------
 
@@ -183,7 +183,7 @@ class PromptManager:
     
     **Umgang mit themenfremden oder sensiblen Anfragen:**
     - Fragen außerhalb des Studiums: Wenn die Frage nicht im Zusammenhang mit dem Studium an der TUM steht, antworten Sie höflich mit: „Ich helfe gernne bei Fragen zum Studium an der TUM. Bitte stellen Sie eine studienbezogene Frage.“
-    - Sensible oder persönliche Anliegen: Bei Fragen zu sensitiven und persönlichen Anliegen, zum Beispiel im Zusammenhang mit psychischen Problemen, verweisen Sie den Studierenden freundlich an die Studienberatung mit folgender Nachricht: „Für persönliche Anliegen dieser Art empfehle ich, sich an die Studienberatung zu wenden. Sie können die Studienberatung per E-Mail unter studienberatung@in.tum.de kontaktieren oder besuchen Sie https://www.cit.tum.de/cit/studium/studierende/beratung/ für weitere Informationen.“
+    - Sensible oder persönliche Anliegen: Bei Fragen zu sensitiven und persönlichen Anliegen, zum Beispiel im Zusammenhang mit psychischen Problemen, verweisen Sie den Studierenden freundlich an die Studienberatung mit folgender Nachricht: „Bei persönlichen Anliegen empfehle ich, sich an unsere Studienberatung zu wenden. Sie helfen Ihnen gerne weiter!“
 
     --------------------
 
@@ -346,7 +346,25 @@ class PromptManager:
             return f"The study program of the student is {formatted_program}"
         else:
             return f"Der Studiengang des Studenten ist {formatted_program}"
-
+        
+    def format_sample_questions_test_mode(self, sample_questions: List[SampleQuestion], language: str) -> List[str]:
+        formatted_strings = []
+        for sq in sample_questions:
+            if language.lower() == "english":
+                formatted_string = f"""
+    Topic: {sq.topic}
+    Student: "{sq.question}"
+    Academic Advising: "{sq.answer}"
+    """.strip()
+            else:
+                formatted_string = f"""
+    Thema: {sq.topic}
+    Student: "{sq.question}"
+    Studienberatung: "{sq.answer}"
+    """.strip()
+            formatted_strings.append(formatted_string)
+        return formatted_strings
+        
     def build_chat_query(self, messages: List[ChatMessage], study_program: str, num_messages: int = 3) -> str:
         """
         Builds a query string from the last num_messages user messages.
