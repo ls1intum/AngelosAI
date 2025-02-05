@@ -139,7 +139,7 @@ async def edit_sample_question(id: str, body: EditSampleQuestionRequest):
 @knowledge_router.delete("/sample-question/{id}/delete", dependencies=[Depends(auth_handler.verify_api_key)])
 async def delete_sample_question(id: str):
     try:
-        injestion_handler.delete_sample_question(id=id)
+        injestion_handler.delete_sample_questions(ids=[id])
         return Response(status_code=200)
     except Exception as e:
         return Response(status_code=500)

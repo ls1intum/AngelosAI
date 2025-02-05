@@ -648,15 +648,6 @@ class WeaviateManager:
         except Exception as e:
             logging.error(f"Failed to update sample question with topic {sample_question.topic}: {e}")
             raise
-
-    def delete_sample_question(self, id: str):
-        try:
-            self.qa_collection.data.delete_many(
-                where=Filter.by_property(QASchema.KNOWLEDGE_BASE_ID).equal(id)
-            )
-        except Exception as e:
-            logging.error(f"Failed to delete sample question with ID {id}: {e}")
-            raise
         
     def delete_sample_questions(self, ids: List[str]):
         try:

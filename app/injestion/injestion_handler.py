@@ -155,9 +155,6 @@ class InjestionHandler:
         )
         self.weaviate_manager.update_sample_question(database_sq)
         
-    def delete_sample_question(self, id: str):
-        self.weaviate_manager.delete_sample_question(id=id)
-        
     def delete_sample_questions(self, ids: List[str]):
         self.weaviate_manager.delete_sample_questions(ids=ids)
     
