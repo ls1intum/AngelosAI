@@ -25,7 +25,7 @@ class OllamaModel(BaseModelClient):
     session: requests.Session = None
 
     model_config = ConfigDict(arbitrary_types_allowed=True)
-    model_initialized: bool = False
+    initialized_model: bool = False
 
     def model_post_init(self, __context: Any) -> None:
         logging.info("Initializing OllamaModel")
@@ -67,12 +67,8 @@ class OllamaModel(BaseModelClient):
             json={"model": self.embed_model, "prompt": text},
             headers=self.headers
         )
-        # logging.info(response)
-        # logging.info(response.headers)
-        logging.info(f"embedding took: {response.elapsed.total_seconds()}")
         response.raise_for_status()
         response_data = response.json()
-
         return response_data["embedding"]
 
     def embed_batch(self, texts: List[str]) -> List[List[float]]:
@@ -85,8 +81,8 @@ class OllamaModel(BaseModelClient):
 
     def init_model(self):
         """Make sure the model is initialized once, not on every request."""
-        if not self.model_initialized:
+        if not self.initialized_model:
             logging.info("Initializing Ollama model")
             self.complete([{"role": "user", "content": "Hi"}])
-            self.model_initialized = True
+            self.initialized_model = True
             logging.info("Initialized Ollama model")

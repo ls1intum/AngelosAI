@@ -2,6 +2,7 @@ import logging
 
 from app.models.azure_openai_model import AzureOpenAIModel
 from app.models.base_model import BaseModelClient
+from app.models.local_model import LocalModel
 from app.models.ollama_model import OllamaModel
 from app.models.openai_model import OpenAIModel
 from app.utils.environment import config
@@ -11,7 +12,14 @@ def get_model() -> BaseModelClient:
     """Select and return the appropriate model based on environment configuration."""
     logging.info('Getting model')
     use_ollama = config.USE_OLLAMA.lower() == "true"
-    if not use_ollama:
+    local = config.USE_LOCAL_MODEL.lower() == "true"
+    logging.info(f"{config.LOCAL_ENDPOINT} is the endpoint")
+    if local:
+        logging.info("Using local model")
+        return LocalModel(model=config.LOCAL_MODEL, embed_model=config.LOCAL_EMBED_MODEL,
+                          api_key=config.LOCAL_API_KEY, endpoint=config.LOCAL_ENDPOINT)
+
+    elif not use_ollama:
         if not config.USE_AZURE == "true":
             logging.info("Using OpenAI as model")
             return OpenAIModel(model=config.OPENAI_MODEL, embed_model=config.OPENAI_EMBEDDING_MODEL,

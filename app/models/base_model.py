@@ -1,3 +1,4 @@
+import logging
 from typing import List, Tuple
 
 from pydantic import BaseModel
@@ -18,3 +19,6 @@ class BaseModelClient(BaseModel):
 
     def embed_batch(self, texts: List[str]) -> List[List[float]]:
         raise NotImplementedError("This method should be implemented by subclasses.")
+
+    def close_session(self):
+        logging.info("Model has been shutdown.")
