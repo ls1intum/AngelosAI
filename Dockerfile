@@ -9,7 +9,9 @@ RUN npm install
 ARG ANGULAR_ENV=production
 # Copy the application code and build the app
 COPY . ./
-RUN npm run build -- --configuration=${ANGULAR_ENV} --base-href=/chat/
+
+ARG ANGULAR_CONFIG=production
+RUN npm run build -- --configuration=${ANGULAR_CONFIG}
 
 # Stage 2: Serve the app with NGINX
 FROM nginx:stable-alpine

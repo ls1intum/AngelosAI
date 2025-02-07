@@ -60,6 +60,28 @@
               "outputHashing": "all",
               "baseHref": "/chat/"
             },
+            "production-heilbronn": {
+              "budgets": [
+                {
+                  "type": "initial",
+                  "maximumWarning": "500kB",
+                  "maximumError": "1MB"
+                },
+                {
+                  "type": "anyComponentStyle",
+                  "maximumWarning": "2kB",
+                  "maximumError": "4kB"
+                }
+              ],
+              "fileReplacements": [
+                {
+                  "replace": "src/environments/environment.ts",
+                  "with": "src/environments/environment.prod.heilbronn.ts"
+                }
+              ],
+              "outputHashing": "all",
+              "baseHref": "/chat-heilbronn/"
+            },
             "development": {
               "optimization": false,
               "extractLicenses": false,
