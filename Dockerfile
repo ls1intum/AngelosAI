@@ -6,7 +6,6 @@ WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm install
 
-ARG ANGULAR_ENV=production
 # Copy the application code and build the app
 COPY . ./
 
