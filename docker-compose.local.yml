@@ -16,7 +16,7 @@ services:
       context: .
       dockerfile: Dockerfile
       args:
-        ANGULAR_ENV: development
+        ANGULAR_CONFIG: development
     container_name: chatbot
     expose:
       - "80"
