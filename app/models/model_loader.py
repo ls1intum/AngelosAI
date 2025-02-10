@@ -13,7 +13,7 @@ def get_model() -> BaseModelClient:
     logging.info('Getting model')
     use_ollama = config.USE_OLLAMA.lower() == "true"
     local = config.USE_LOCAL_MODEL.lower() == "true"
-    logging.info(f"{config.LOCAL_ENDPOINT} is the endpoint")
+    
     if local:
         logging.info("Using local model")
         return LocalModel(model=config.LOCAL_MODEL, embed_model=config.LOCAL_EMBED_MODEL,

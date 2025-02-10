@@ -9,11 +9,12 @@ from weaviate.collections.classes.config import DataType, Configure, Property, T
 from weaviate.collections.classes.config_vectorizers import VectorDistances
 from weaviate.collections.classes.filters import Filter
 
+from app.data.database_requests import DatabaseDocument, DatabaseSampleQuestion, DatabaseDocumentMetadata, \
+    SampleQuestion
 from app.models.base_model import BaseModelClient
 from app.models.ollama_model import OllamaModel
 from app.retrieval_strategies.reranker import Reranker
 from app.utils.environment import config
-from app.data.database_requests import DatabaseDocument, DatabaseSampleQuestion, DatabaseDocumentMetadata, SampleQuestion
 
 
 class DocumentSchema(Enum):
@@ -48,11 +49,11 @@ class WeaviateManager:
         self.model = embedding_model
         self.schema_initialized = False
         self.reranker = reranker
-        
+
         if config.DELETE_BEFORE_INIT.lower() == "true":
             logging.warning("Deleting existing data before initialization...")
             self.delete_collections()
-        
+
         self.documents = self.initialize_schema()
         self.qa_collection = self.initialize_qa_schema()
 
@@ -78,7 +79,7 @@ class WeaviateManager:
                 data_type=DataType.TEXT,
                 index_filterable=True,
                 index_range_filters=False,
-                index_searchable=False 
+                index_searchable=False
             ),
             Property(
                 name=DocumentSchema.STUDY_PROGRAMS.value,
@@ -108,7 +109,7 @@ class WeaviateManager:
                 data_type=DataType.INT,
                 index_filterable=True,
                 index_range_filters=False,
-                index_searchable=False 
+                index_searchable=False
             ),
         ]
 
@@ -164,7 +165,7 @@ class WeaviateManager:
                 data_type=DataType.TEXT,
                 index_filterable=True,
                 index_range_filters=False,
-                index_searchable=False 
+                index_searchable=False
             ),
             Property(
                 name=QASchema.TOPIC.value,
@@ -200,7 +201,7 @@ class WeaviateManager:
                 data_type=DataType.INT,
                 index_filterable=True,
                 index_range_filters=False,
-                index_searchable=False 
+                index_searchable=False
             ),
         ]
 
@@ -234,8 +235,9 @@ class WeaviateManager:
         except Exception as e:
             logging.error(f"Error creating schema for {collection_name}: {e}")
 
-    def get_relevant_context(self, question: str, study_program: str, language: str, org_id: Optional[int], test_mode: bool = False, 
-                             limit = 10, top_n = 5, filter_by_org: bool = True) -> Union[str, Tuple[str, List[str]]]:
+    def get_relevant_context(self, question: str, study_program: str, language: str, org_id: Optional[int],
+                             test_mode: bool = False,
+                             limit=10, top_n=5, filter_by_org: bool = True) -> Union[str, Tuple[str, List[str]]]:
         """
         Retrieve relevant documents based on the question embedding and study program.
         Optionally returns both the concatenated context and the sorted context list for testing purposes.
@@ -254,19 +256,19 @@ class WeaviateManager:
         try:
             # Define the number of documents to retrieve
             min_relevance_score = 0.25
-            
+
             # Normalize the study program name
             study_program = WeaviateManager.normalize_study_program_name(study_program)
-            
+
             # Define filter
             if filter_by_org and org_id is not None:
-                filters=Filter.all_of([
+                filters = Filter.all_of([
                     Filter.by_property(DocumentSchema.STUDY_PROGRAMS.value).contains_any([study_program]),
                     Filter.by_property(DocumentSchema.ORGANISATION_ID.value).equal(org_id),
                 ])
             else:
-                filters=Filter.by_property(DocumentSchema.STUDY_PROGRAMS.value).contains_any([study_program])
-            
+                filters = Filter.by_property(DocumentSchema.STUDY_PROGRAMS.value).contains_any([study_program])
+
             # If getting general context, adjust the parameters
             if study_program.lower() != "general":
                 limit = 10
@@ -359,7 +361,8 @@ class WeaviateManager:
                 retrieved_question = result.properties.get(QASchema.QUESTION.value, "")
                 answer = result.properties.get(QASchema.ANSWER.value, "")
                 study_programs = result.properties.get(QASchema.STUDY_PROGRAMS, [])
-                sample_questions.append(SampleQuestion(topic=topic, question=retrieved_question, answer=answer, study_programs=study_programs))
+                sample_questions.append(SampleQuestion(topic=topic, question=retrieved_question, answer=answer,
+                                                       study_programs=study_programs))
 
             # Rerank the sample questions using the reranker
             context_list = [sq.question for sq in sample_questions]
@@ -411,7 +414,7 @@ class WeaviateManager:
         else:
             logging.warning(f"Collection {collection_name} does not exist")
             return False
-            
+
     def add_documents(self, chunks: List[DatabaseDocument]):
         """
         Add chunks of DatabaseDocument objects to the vector database.
@@ -431,7 +434,7 @@ class WeaviateManager:
                     texts = [chunk.content for chunk in chunk_batch]
                     embeddings = self.model.embed_batch(texts)  # Embed in batch
                 logging.info(f"Chunk batch size: {len(chunk_batch)}")
-                    
+
                 # Add the chunks to the vector database in a batch
                 with self.documents.batch.rate_limit(requests_per_minute=600) as batch:
                     for index, chunk in enumerate(chunk_batch):
@@ -443,14 +446,14 @@ class WeaviateManager:
                             DocumentSchema.STUDY_PROGRAMS.value: chunk.study_programs,
                             DocumentSchema.ORGANISATION_ID.value: chunk.org_id
                         }
-                        
+
                         # Add the document chunk to the batch
                         batch.add_object(properties=properties, vector=embeddings[index])
 
         except Exception as e:
             logging.error(f"Error adding document: {e}")
             raise
-            
+
     def delete_by_kb_id(self, kb_id: str, return_metadata: bool) -> Optional[DatabaseDocumentMetadata]:
         """
         Delete all database entries by kb_id and return other properties
@@ -481,10 +484,10 @@ class WeaviateManager:
                     where=Filter.by_property(DocumentSchema.KNOWLEDGE_BASE_ID.value).equal(kb_id)
                 )
                 return None
-                
+
         except Exception as e:
             logging.error(f"Error deleting documents: {e}")
-            
+
     def delete_documents(self, kb_ids: List[str]):
         """Batch delete all documents where knowledge base ID is in the provided list."""
         try:
@@ -493,7 +496,7 @@ class WeaviateManager:
             )
         except Exception as e:
             logging.error(f"Error deleting documents: {e}")
-            
+
     def update_documents(self, kb_id: str, document: DatabaseDocumentMetadata):
         try:
             query_result = self.documents.query.fetch_objects(
@@ -509,8 +512,8 @@ class WeaviateManager:
                 uuid = result.uuid
                 properties = result.properties
                 properties[DocumentSchema.LINK.value] = document.link  # Update the link
-                properties[DocumentSchema.STUDY_PROGRAMS.value] = document.study_programs # Update the study programs
-                
+                properties[DocumentSchema.STUDY_PROGRAMS.value] = document.study_programs  # Update the study programs
+
                 # Reinsert the object with the updated properties
                 self.documents.data.update(
                     uuid=uuid,
@@ -559,7 +562,7 @@ class WeaviateManager:
         except Exception as e:
             logging.error(f"Failed to insert sample question with topic {sample_question.topic}: {e}")
             raise
-        
+
     def add_sample_questions(self, questions: List[DatabaseSampleQuestion]):
         """
         Add multiple sample questions to the QA collection in Weaviate.
@@ -599,7 +602,7 @@ class WeaviateManager:
         except Exception as e:
             logging.error(f"Failed to insert sample questions: {e}")
             raise
-        
+
     def update_sample_question(self, sample_question: DatabaseSampleQuestion):
         """
         Adds a sample question to the QA collection in Weaviate.
@@ -615,11 +618,10 @@ class WeaviateManager:
             study_programs = sample_question.study_programs
             question = sample_question.question
             answer = sample_question.answer
-            
 
             # Add to QA collection in Weaviate
             embedding = self.model.embed(question)
-            
+
             query_result = self.qa_collection.query.fetch_objects(
                 filters=Filter.by_property(QASchema.KNOWLEDGE_BASE_ID.value).equal(sample_question.id)
             )
@@ -648,7 +650,7 @@ class WeaviateManager:
         except Exception as e:
             logging.error(f"Failed to update sample question with topic {sample_question.topic}: {e}")
             raise
-        
+
     def delete_sample_questions(self, ids: List[str]):
         try:
             self.qa_collection.data.delete_many(
