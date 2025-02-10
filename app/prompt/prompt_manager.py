@@ -286,10 +286,6 @@ class PromptManager:
                 study_program=study_program_text
             )
             system_content = "Sie sind ein intelligenter Assistent, der den Studierenden der Technischen Universität München (TUM) bei Fragen rund um ihr Studium hilft"
-
-        # Log prompt for testing
-        logging.info(user_content)
-        # Return the messages structure for the LLM
         return [
             {"role": "system", "content": system_content},
             {"role": "user", "content": user_content}
@@ -346,7 +342,7 @@ class PromptManager:
             return f"The study program of the student is {formatted_program}"
         else:
             return f"Der Studiengang des Studenten ist {formatted_program}"
-        
+
     def format_sample_questions_test_mode(self, sample_questions: List[SampleQuestion], language: str) -> List[str]:
         formatted_strings = []
         for sq in sample_questions:
@@ -364,7 +360,7 @@ class PromptManager:
     """.strip()
             formatted_strings.append(formatted_string)
         return formatted_strings
-        
+
     def build_chat_query(self, messages: List[ChatMessage], study_program: str, num_messages: int = 3) -> str:
         """
         Builds a query string from the last num_messages user messages.
