@@ -17,6 +17,15 @@ $logo-size-small: 24px;
   box-sizing: border-box;
 }
 
+:host ::ng-deep .ng-dropdown-panel .ng-option,
+:host ::ng-deep .ng-dropdown-panel .ng-option .ng-option-label {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important; 
+  word-break: break-word !important; 
+  display: block !important;
+}
+
 .chat-container {
   font-family: roboto, sans-serif;
   margin: 0;
