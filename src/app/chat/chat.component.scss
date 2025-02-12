@@ -11,6 +11,7 @@ $chat-height: 100vh;
 $chat-width: 100%;
 $header-height: 40px;
 $logo-size: 40px;
+$logo-size-small: 24px;
 
 *, *::before, *::after {
   box-sizing: border-box;
@@ -29,6 +30,13 @@ $logo-size: 40px;
   border-radius: 8px;
   overflow: hidden;
 
+  @media (max-width: 600px) {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    height: 100vh;
+  }
+
   .chat-header {
     display: flex;
     align-items: center;
@@ -36,16 +44,32 @@ $logo-size: 40px;
     background-color: $primary-color;
     color: white;
     padding: 8px;
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 6px;
+    }
   }
 
   .chat-logo {
     width: $logo-size;
     height: $logo-size;
     object-fit: contain;
+
+    @media (max-width: 600px) {
+      display: none;
+    }
   }
 
   .study-program-dropdown {
     min-width: 400px;
+
+    @media (max-width: 600px) {
+      min-width: unset;
+      width: 100%;
+      font-size: 14px;
+    }
   }
 
   .chat-body {
@@ -66,6 +90,13 @@ $logo-size: 40px;
     word-wrap: break-word;
     line-height: 1.5;
     display: inline-block;
+
+    @media (max-width: 600px) {
+      max-width: 96%;
+      padding: 6px;
+      font-size: 14px;
+      margin: 4px 0;
+    }
 
     &.system {
       background-color: $tum-light-blue;
@@ -88,6 +119,10 @@ $logo-size: 40px;
     background-color: $tum-acordion-blue;
     border-top: 1px solid $border-color;
 
+    @media (max-width: 600px) {
+      padding: 6px;
+    }
+
     textarea {
       box-sizing: border-box;
       flex: 1;
@@ -100,6 +135,11 @@ $logo-size: 40px;
       overflow-y: hidden;
       min-height: calc(1.5em * 1); // Minimum height for 1 line
       max-height: calc(1.5em * 4); // Maximum height for 4 lines
+
+      @media (max-width: 600px) {
+        padding: 8px;
+        font-size: 14px;
+      }
     }
 
     button {
@@ -113,6 +153,11 @@ $logo-size: 40px;
       display: flex;
       align-items: center;
       justify-content: center;
+
+      @media (max-width: 600px) {
+        padding: 6px;
+        margin-left: 5px;
+      }
 
       &:hover {
         background-color: $primary-color;
