@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component, ElementRef, ViewChild, OnInit, ViewChildren, QueryList, AfterViewChecked } from '@angular/core';
+import { Component, ElementRef, ViewChild, OnInit, ViewChildren, QueryList, AfterViewChecked, HostListener } from '@angular/core';
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ChatbotService } from '../services/chatbot.service';
 import { NgSelectModule } from '@ng-select/ng-select';
@@ -23,7 +23,7 @@ export const MESSAGES = {
       If you'd like program-specific advice, please select your study program from the dropdown menu at the top, and I'll provide you with the most relevant information.
     `,
     errorMessage: `Sorry, but I am currently unable to answer your questions. Please try again at a later time.`,
-    placeholder: `Type your message here...`,
+    placeholder: `Enter your message here...`,
     dropdownLabel: `Select Study Program`
   },
   de: {
@@ -74,6 +74,8 @@ export class ChatComponent implements OnInit, AfterViewChecked {
   private needScrollToBottom: boolean = false;
   disableSending: boolean = false;
 
+  private widthBreakpoint = 600;
+
   constructor(private chatbotService: ChatbotService, private studyProgramService: StudyProgramService, private route: ActivatedRoute) { }
 
   ngOnInit() {
@@ -90,10 +92,14 @@ export class ChatComponent implements OnInit, AfterViewChecked {
         this.errorSnackbar.showError('Studiengänge konnten nicht geladen werden. Bitte versuchen Sie es zu einem späteren Zeitpunkt erneut.', 5000);
       }
     });
+
     this.route.data.subscribe(data => {
       this.language = data['language'] || 'en';
       this.setLanguageContent();
     });
+
+    this.updatePlaceholderText(window.innerWidth);
+
     this.messages.push({ message: this.welcomeMessage, type: 'system' });
   }
 
@@ -109,6 +115,21 @@ export class ChatComponent implements OnInit, AfterViewChecked {
     this.errorMessage = MESSAGES[this.language].errorMessage;
     this.placeholderText = MESSAGES[this.language].placeholder;
     this.dropdownLabel = MESSAGES[this.language].dropdownLabel;
+  }
+
+  updatePlaceholderText(width: number): void {
+    if (width <= this.widthBreakpoint) {
+      this.placeholderText = '';
+    } else {
+      this.placeholderText = MESSAGES[this.language].placeholder;
+    }
+  }
+
+  // Listen for window resize events
+  @HostListener('window:resize', ['$event'])
+  onResize(event: Event) {
+    const target = event.target as Window;
+    this.updatePlaceholderText(target.innerWidth);
   }
 
   onKeyDown(event: KeyboardEvent): void {
