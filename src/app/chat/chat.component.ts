@@ -87,6 +87,10 @@ export class ChatComponent implements OnInit, AfterViewChecked {
           if (a.name > b.name) return 1;
           return 0;
         });
+        this.studyPrograms.push({
+          id: 120,
+          name: "Extra Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Long Test Name"
+        })
       },
       error: (error) => {
         this.errorSnackbar.showError('Studiengänge konnten nicht geladen werden. Bitte versuchen Sie es zu einem späteren Zeitpunkt erneut.', 5000);
