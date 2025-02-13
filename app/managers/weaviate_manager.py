@@ -253,7 +253,7 @@ class WeaviateManager:
         """
         try:
             # Define the number of documents to retrieve
-            min_relevance_score = 0.25
+            min_relevance_score = 0.35
             
             # Normalize the study program name
             study_program = WeaviateManager.normalize_study_program_name(study_program)
@@ -270,7 +270,7 @@ class WeaviateManager:
             # If getting general context, adjust the parameters
             if study_program.lower() != "general":
                 limit = 10
-                min_relevance_score = 0.15
+                min_relevance_score = 0.25
 
             # Embed the question using the embedding model
             question_embedding = self.model.embed(question)
@@ -340,7 +340,7 @@ class WeaviateManager:
         try:
             limit = 5
             top_n = 3
-            min_relevance_score = 0.4
+            min_relevance_score = 0.5
 
             # Embed the question using the embedding model
             question_embedding = self.model.embed(question)
