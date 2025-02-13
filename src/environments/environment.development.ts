@@ -1,7 +1,7 @@
 export const environment = {
     production: false,
-    angelosUrl: 'http://localhost:9007/api/chat',
+    angelosUrl: '/api/chat',
     angelosAppApiKey: 'SOME_SECRET_KEY',
-    organisation : 2,
+    organisation: 102,
     filterByOrg: true,
 };

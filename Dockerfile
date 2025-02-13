@@ -8,6 +8,7 @@ RUN npm install
 
 # Copy the application code and build the app
 COPY . ./
+
 ARG ANGULAR_CONFIG=production
 RUN npm run build -- --configuration=${ANGULAR_CONFIG}
 

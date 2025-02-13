@@ -1,0 +1,28 @@
+services:
+  proxy:
+    image: nginx:stable-alpine
+    container_name: reverse-proxy
+    volumes:
+      - ./nginx.local.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - "80:80" # Expose the reverse proxy on localhost:8080
+    depends_on:
+      - chatbot
+    networks:
+      - angelos-network
+
+  chatbot:
+    build:
+      context: .
+      dockerfile: Dockerfile
+      args:
+        ANGULAR_CONFIG: development
+    container_name: chatbot
+    expose:
+      - "80"
+    networks:
+      - angelos-network
+
+networks:
+  angelos-network:
+    external: true
