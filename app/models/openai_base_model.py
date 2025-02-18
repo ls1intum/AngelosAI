@@ -5,8 +5,6 @@ from app.models.base_model import BaseModelClient
 
 
 class OpenAIBaseModel(BaseModelClient):
-    max_tokens: int = 800
-    temperature: float = 0.3
     _client: Any
 
     def complete(self, messages: list) -> str:

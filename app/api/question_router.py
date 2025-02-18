@@ -14,7 +14,7 @@ async def ask(request: UserRequest):
     classification = request.study_program.lower()
     language = request.language.lower()
     org_id = request.org_id
-    
+
     if not question or not classification:
         raise HTTPException(status_code=400, detail="No question or classification provided")
 
@@ -34,15 +34,15 @@ async def ask(request: UserRequest):
 
 @question_router.post("/chat", tags=["chatbot"], dependencies=[Depends(auth_handler.verify_api_key)])
 async def chat(
-    request: UserChat,
-    filterByOrg: bool = Query(..., description="Indicates whether to filter context by organization")
+        request: UserChat,
+        filterByOrg: bool = Query(..., description="Indicates whether to filter context by organization")
 ):
     messages = request.messages
     org_id = request.orgId
 
     if not messages:
         raise HTTPException(status_code=400, detail="No messages have been provided")
-        
+
     answer = request_handler.handle_chat(
         messages,
         study_program=request.study_program,

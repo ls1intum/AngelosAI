@@ -7,6 +7,8 @@ from pydantic import BaseModel
 class BaseModelClient(BaseModel):
     model: str
     embed_model: str
+    max_tokens: int = 800
+    temperature: float = 0.3
 
     def complete(self, messages: list) -> str:
         raise NotImplementedError("This method should be implemented by subclasses.")

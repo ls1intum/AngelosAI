@@ -19,15 +19,18 @@ class RequestHandler:
 
     def handle_question(self, question: str, classification: str, language: str, org_id: int):
         """Handles the question by fetching relevant documents and generating an answer."""
-        general_context = self.weaviate_manager.get_relevant_context(question=question, study_program="general",
+        embedding = self.weaviate_manager.get_question_embedding(question=question)
+        
+        general_context = self.weaviate_manager.get_relevant_context(question=question, question_embedding=embedding, study_program="general",
                                                                      language=language, org_id=org_id)
         specific_context = None
         if classification != "general":
             specific_context = self.weaviate_manager.get_relevant_context(question=question,
+                                                                          question_embedding=embedding,
                                                                           study_program=classification,
                                                                           language=language,
                                                                           org_id=org_id)
-        sample_questions = self.weaviate_manager.get_relevant_sample_questions(question=question, language=language, org_id=org_id)
+        sample_questions = self.weaviate_manager.get_relevant_sample_questions(question=question, question_embedding=embedding, language=language, org_id=org_id)
         sample_questions_formatted = self.prompt_manager.format_sample_questions(sample_questions, language)
         messages = self.prompt_manager.create_messages(general_context, specific_context, sample_questions_formatted,
                                                        question, language, classification)
@@ -40,7 +43,10 @@ class RequestHandler:
 
     def handle_question_test_mode(self, question: str, classification: str, language: str, org_id: int):
         """Handles the question by fetching relevant documents and generating an answer."""
+        embedding = self.weaviate_manager.get_question_embedding(question=question)
+        
         general_context, general_context_list = self.weaviate_manager.get_relevant_context(question=question,
+                                                                                           question_embedding=embedding,
                                                                                            study_program="general",
                                                                                            language=language,
                                                                                            org_id=org_id,
@@ -48,13 +54,14 @@ class RequestHandler:
         specific_context = None
         if classification != "general":
             specific_context, specific_context_list = self.weaviate_manager.get_relevant_context(question=question,
+                                                                                                 question_embedding=embedding,
                                                                                                  study_program=classification,
                                                                                                  language=language,
                                                                                                  org_id=org_id,
                                                                                                  test_mode=True)
         else:
             specific_context_list = []
-        sample_questions = self.weaviate_manager.get_relevant_sample_questions(question=question, language=language, org_id=org_id)
+        sample_questions = self.weaviate_manager.get_relevant_sample_questions(question=question, question_embedding=embedding, language=language, org_id=org_id)
         sample_questions_formatted = self.prompt_manager.format_sample_questions(sample_questions, language)
         sample_questions_context_list = self.prompt_manager.format_sample_questions_test_mode(sample_questions=sample_questions, language=language)
         messages = self.prompt_manager.create_messages(general_context, specific_context, sample_questions_formatted,
@@ -69,6 +76,8 @@ class RequestHandler:
         """Handles the question by fetching relevant documents and generating an answer."""
         # The last message is the user's current question
         last_message = messages[-1].message
+        
+        last_message_embedding = self.weaviate_manager.get_question_embedding(question=last_message)
 
         # Determine language
         lang = LanguageDetector.get_language(last_message)
@@ -77,17 +86,21 @@ class RequestHandler:
         if len(messages) <= 2:
             get_history_context = False
             general_query = f"{re.sub(r'-', ' ', study_program).title()}: {last_message}"
+            general_query_embedding = self.weaviate_manager.get_question_embedding(question=general_query)
             context_limit = 10
             context_top_n = 5
+            
         else:
             get_history_context = True
             general_query = last_message
+            general_query_embedding = last_message_embedding
             context_limit = 8
             context_top_n = 4
 
         # Retrieve general context based on the last message
         general_context_last = self.weaviate_manager.get_relevant_context(
-            general_query, "general", lang, limit=context_limit, top_n=context_top_n, org_id=org_id, filter_by_org=filter_by_org
+            question=general_query, question_embedding=general_query_embedding, study_program="general", 
+            language=lang, limit=context_limit, top_n=context_top_n, org_id=org_id, filter_by_org=filter_by_org
         )
         general_context = general_context_last
 
@@ -95,10 +108,13 @@ class RequestHandler:
         if get_history_context:
             # Build a query from the chat history
             chat_query = self.prompt_manager.build_chat_query(messages, study_program, num_messages=3)
+            
+            chat_query_embedding = self.weaviate_manager.get_question_embedding(question=chat_query)
 
             # Retrieve general context using the chat history
             general_context_history = self.weaviate_manager.get_relevant_context(
-                chat_query, "general", lang, limit=4, top_n=2, org_id=org_id, filter_by_org=filter_by_org
+                question=chat_query, question_embedding=chat_query_embedding, study_program="general", 
+                language=lang, limit=4, top_n=2, org_id=org_id, filter_by_org=filter_by_org
             )
             # Combine the contexts
             general_context = f"{general_context_last}\n-----\n{general_context_history}"
@@ -108,21 +124,23 @@ class RequestHandler:
         if study_program and study_program.lower() != "general":
             # Retrieve specific context based on the last message
             specific_context_last = self.weaviate_manager.get_relevant_context(
-                last_message, study_program, lang, limit=context_limit, top_n=context_top_n, org_id=org_id, filter_by_org=filter_by_org
+                question=last_message, question_embedding=last_message_embedding, study_program=study_program, 
+                language=lang, limit=context_limit, top_n=context_top_n, org_id=org_id, filter_by_org=filter_by_org
             )
             specific_context = specific_context_last
 
             if get_history_context:
                 # Retrieve specific context using the chat history
                 specific_context_history = self.weaviate_manager.get_relevant_context(
-                    chat_query, study_program, lang, limit=4, top_n=2, org_id=org_id, filter_by_org=filter_by_org
+                    question=chat_query, question_embedding=chat_query_embedding, study_program=study_program,
+                    language=lang, limit=4, top_n=2, org_id=org_id, filter_by_org=filter_by_org
                 )
                 # Combine the contexts
                 specific_context = f"{specific_context_last}\n-----\n{specific_context_history}"
 
         # Retrieve and format sample questions
         sample_questions = self.weaviate_manager.get_relevant_sample_questions(
-            question=last_message, language=lang, org_id=org_id
+            question=last_message, question_embedding=last_message_embedding, language=lang, org_id=org_id
         )
         sample_questions_formatted = self.prompt_manager.format_sample_questions(
             sample_questions=sample_questions, language=lang
