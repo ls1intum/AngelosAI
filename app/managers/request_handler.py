@@ -1,18 +1,21 @@
 from typing import List
 import re
+import logging
 
 from app.data.user_requests import ChatMessage
 from app.managers.weaviate_manager import WeaviateManager
 from app.models.base_model import BaseModelClient
 from app.prompt.prompt_manager import PromptManager
 from app.utils.language_detector import LanguageDetector
+from app.post_retrieval.response_evaluator import ResponseEvaluator
 
 
 class RequestHandler:
-    def __init__(self, weaviate_manager: WeaviateManager, model: BaseModelClient, prompt_manager: PromptManager):
+    def __init__(self, weaviate_manager: WeaviateManager, model: BaseModelClient, prompt_manager: PromptManager, response_evaluator: ResponseEvaluator):
         self.weaviate_manager = weaviate_manager
         self.model = model
         self.prompt_manager = prompt_manager
+        self.response_evaluator = response_evaluator
 
     def handle_question(self, question: str, classification: str, language: str, org_id: int):
         """Handles the question by fetching relevant documents and generating an answer."""
@@ -28,8 +31,12 @@ class RequestHandler:
         sample_questions_formatted = self.prompt_manager.format_sample_questions(sample_questions, language)
         messages = self.prompt_manager.create_messages(general_context, specific_context, sample_questions_formatted,
                                                        question, language, classification)
-
-        return self.model.complete(messages)
+        
+        answer = self.model.complete(messages)
+                        
+        answer = self.response_evaluator.process_response(question=question, response=answer, language=language)
+        
+        return answer
 
     def handle_question_test_mode(self, question: str, classification: str, language: str, org_id: int):
         """Handles the question by fetching relevant documents and generating an answer."""
@@ -53,6 +60,9 @@ class RequestHandler:
         messages = self.prompt_manager.create_messages(general_context, specific_context, sample_questions_formatted,
                                                        question, language, classification)
         answer, tokens = self.model.complete_with_tokens(messages)
+        
+        answer = self.response_evaluator.process_response(question=question, response=answer, language=language)
+        
         return answer, tokens, general_context_list, specific_context_list, sample_questions_context_list
     
     def handle_chat(self, messages: List[ChatMessage], study_program: str, org_id: int, filter_by_org: bool):

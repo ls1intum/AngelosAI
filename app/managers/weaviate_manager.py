@@ -11,7 +11,7 @@ from weaviate.collections.classes.filters import Filter
 
 from app.models.base_model import BaseModelClient
 from app.models.ollama_model import OllamaModel
-from app.retrieval_strategies.reranker import Reranker
+from app.post_retrieval.reranker import Reranker
 from app.utils.environment import config
 from app.data.database_requests import DatabaseDocument, DatabaseSampleQuestion, DatabaseDocumentMetadata, SampleQuestion
 

@@ -108,7 +108,7 @@ class PromptManager:
     """
 
         self.answer_prompt_template_with_history = """
-             You are an intelligent assistant that helps the TUM School of Computation, Information and Technology's academic advising service answer questions from TUM students who want to receive detailed and accurate information about their studies.
+    You are an intelligent assistant that helps the TUM School of Computation, Information and Technology's academic advising service answer questions from TUM students who want to receive detailed and accurate information about their studies.
 
     **Instructions:**
     - Re-read the question carefully.
@@ -167,7 +167,7 @@ class PromptManager:
     """
 
         self.answer_prompt_template_with_history_de = """
-        Sie sind ein intelligenter Assistent auf der offiziellen Website der TUM School of Computation, Information and Technology (CIT). Ihre Aufgabe ist es, Fragen von Studierenden zu beantworten, die detaillierte und genaue Informationen zu ihrem Studium erhalten möchten.
+    Sie sind ein intelligenter Assistent auf der offiziellen Website der TUM School of Computation, Information and Technology (CIT). Ihre Aufgabe ist es, Fragen von Studierenden zu beantworten, die detaillierte und genaue Informationen zu ihrem Studium erhalten möchten.
 
     **Anweisungen:**
     - Lesen Sie die Frage sorgfältig durch.
@@ -222,6 +222,66 @@ class PromptManager:
 
     Stellen Sie sicher, dass Ihre Antwort genau, studierendenfreundlich und direkt auf die Frage des Studierenden eingeht.
     Falls Sie die Frage nicht mit ausschließlich den bereitgestellten Informationen beantworten können, antworten Sie mit: „Es tut mir leid, aber ich kann diese Frage basierend auf den vorliegenden Informationen nicht beantworten.“
+    """
+
+        self.judge_prompt_template = """
+    You are a specialized evaluator for TUM School of CIT's academic advising responses.
+
+    **Context:**
+    - The system should answer a student's question using only the information it has. 
+    - If the system cannot answer the question with certainty based on that information, it must respond exactly with "False" (no additional text).
+    - However, sometimes the system returns an uncertain or partial answer instead of "False."
+
+    **Your Task:**
+    1. You will be given:
+    - The student's original question.
+    - The system's final answer.
+    2. Determine if the final answer indicates uncertainty, missing information, or an inability to fully answer the question. 
+    - For example, phrases like "I cannot say for sure," "I don’t have enough information," "I’m not certain," or "It might be this or that," suggest the system should have returned "False."
+    3. If the system **should** have responded with "False" but did not, output **"NEEDS_FALSE"**.
+    4. Otherwise, if the system’s answer is either a confident or complete response, output **"OK"**.
+
+    **Instructions:**
+    - Your output must be either "OK" or "NEEDS_FALSE" (without quotes).
+    - Do not provide any additional text or explanation.
+
+    --------------------
+    **Student’s Question:**
+    {question}
+
+    --------------------
+    **System’s Answer:**
+    {answer}  
+    """
+    
+        self.judge_prompt_template_de = """
+    Sie sind ein spezialisierter Bewerter für die Antworten der Studienberatung an der TUM School of CIT.
+
+    **Kontext:**
+    - Das System soll die Frage eines Studierenden ausschließlich auf Grundlage der verfügbaren Informationen beantworten.
+    - Falls das System die Frage nicht mit Sicherheit anhand dieser Informationen beantworten kann, muss es exakt "False" (ohne zusätzlichen Text) ausgeben.
+    - Mitunter liefert das System jedoch eine unsichere oder unvollständige Antwort, anstatt "False" zu verwenden.
+
+    **Ihre Aufgabe:**
+    1. Ihnen werden folgende Angaben übermittelt:
+       - Die ursprüngliche Frage des Studierenden.
+       - Die finale Antwort des Systems.
+    2. Bestimmen Sie, ob die finale Antwort auf Unsicherheit, fehlende Informationen oder die Unfähigkeit hindeutet, die Frage vollständig zu beantworten.
+       - Beispielsweise deuten Formulierungen wie „Ich bin mir nicht sicher“, „Mir liegen nicht genügend Informationen vor“ oder „Es könnte sein, dass …“ darauf hin, dass das System eigentlich „False“ hätte zurückgeben sollen.
+    3. Falls das System „False“ hätte zurückgeben müssen, dies aber nicht getan hat, geben Sie bitte **"NEEDS_FALSE"** aus.
+    4. Andernfalls, wenn die Antwort des Systems eine überzeugende und vollständige Antwort ist, geben Sie **"OK"** aus.
+
+    **Anweisungen:**
+    - Ihre Ausgabe muss entweder "OK" oder "NEEDS_FALSE" sein (ohne Anführungszeichen).
+    - Geben Sie keinerlei weiteren Text oder Erklärungen aus.
+
+    --------------------
+    **Frage des Studierenden:**
+    {question}
+
+    --------------------
+    **Antwort des Systems:**
+    {answer}
     """
 
     def create_messages(self, general_context: str, specific_context: str, sample_questions: str, question: str,
@@ -287,6 +347,30 @@ class PromptManager:
         # Log prompt for testing
         logging.info(user_content)
         # Return the messages structure for the LLM
+        return [
+            {"role": "system", "content": system_content},
+            {"role": "user", "content": user_content}
+        ]
+        
+    def create_response_evaluation_messages(self, question: str, answer: str, language: str): 
+        if language.lower() == "english":
+            system_content = (
+                "You are a specialized evaluator for TUM School of CIT's academic advising responses. "
+                "Your job is to output exactly OK or NEEDS_FALSE, with no additional text, punctuation, or quotation marks."
+            )
+            user_content = self.judge_prompt_template.format(
+                question = question,
+                answer = answer
+            )
+        else:
+            system_content = (
+                "Sie sind ein spezialisierter Bewerter für Antworten der Studienberatung an der TUM School of CIT. "
+                "Ihre Aufgabe ist es, genau OK oder NEEDS_FALSE auszugeben, ohne zusätzlichen Text, Satzzeichen oder Anführungszeichen."
+            )
+            user_content = self.judge_prompt_template_de.format(
+                question = question,
+                answer = answer
+            )
         return [
             {"role": "system", "content": system_content},
             {"role": "user", "content": user_content}
