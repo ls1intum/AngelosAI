@@ -8,7 +8,6 @@ from app.utils.environment import config
 
 question_router = APIRouter(prefix="/api/v1/question", tags=["response"])
 
-
 @question_router.post("/ask", tags=["email"], dependencies=[Depends(auth_handler.verify_api_key)])
 async def ask(request: UserRequest):
     question = request.message
@@ -19,28 +18,15 @@ async def ask(request: UserRequest):
     if not question or not classification:
         raise HTTPException(status_code=400, detail="No question or classification provided")
 
-    logging.info(f"Received question: {question} with classification: {classification}")
-
-    if config.TEST_MODE:
+    if config.TEST_MODE is "true":
         answer, used_tokens, general_context, specific_context, sq_context = request_handler.handle_question_test_mode(question,
                                                                                                            classification,
                                                                                                            language,
                                                                                                            org_id=org_id)
-        if language == "german":
-            answer += "\n\n**Diese Antwort wurde automatisch generiert.**"
-        else:
-            answer += "\n\n**This answer was automatically generated.**"
-
         return {"answer": answer, "used_tokens": used_tokens, "general_context": general_context,
                 "specific_context": specific_context, "sq_context": sq_context}
     else:
         answer = request_handler.handle_question(question, classification, language, org_id=org_id)
-        if answer.strip() != "False":
-            if language == "german":
-                answer += "\n\n**Diese Antwort wurde automatisch generiert.**"
-            else:
-                answer += "\n\n**This answer was automatically generated.**"
-
         return {"answer": answer}
 
 

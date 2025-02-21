@@ -5,6 +5,7 @@ import numpy as np
 import pandas as pd
 import logging
 import asyncio
+import httpx
 from dotenv import load_dotenv
 from datetime import datetime
 from typing import List
@@ -49,7 +50,7 @@ os.makedirs(results_dir, exist_ok=True)
 
 # Initialize CSV columns
 CSV_COLUMNS = [
-    'Label', 'Question', 'Answer', 'Ground Truth', 'Used Tokens', 'Cosine Similarity', 'Euclidean Distance',
+    'Label', 'Question', 'Answer', 'Ground Truth', 'Used Tokens',
     'Contextual Precision (General)', 'Contextual Precision Reason (General)',
     'Contextual Precision (Specific)', 'Contextual Precision Reason (Specific)',
     'Contextual Precision (Sample Questions)', 'Contextual Precision Reason (Sample Questions)',
@@ -83,7 +84,7 @@ def gather_results():
 def create_summary_csv(results_df: pd.DataFrame, summary_csv_filename: str):
     # Filter numeric columns that can be averaged
     numeric_columns = [
-        'Used Tokens', 'Cosine Similarity', 'Euclidean Distance',
+        'Used Tokens'
         'Contextual Precision (General)', 'Contextual Precision (Specific)', 'Contextual Precision (Sample Questions)',
         'Contextual Recall', 'Contextual Relevancy',
         'Answer Relevancy', 'Faithfulness', 'Hallucination', 'RAGAS Score', 'Link Accuracy'
@@ -98,6 +99,8 @@ def create_summary_csv(results_df: pd.DataFrame, summary_csv_filename: str):
 @pytest.mark.asyncio
 @pytest.mark.parametrize("qaData", qa_objects)
 async def test_rag_api(qaData: QAData):
+    logging.info("Test started.")
+    
     global results_df
     
     headers = {
@@ -105,11 +108,16 @@ async def test_rag_api(qaData: QAData):
         "Content-Type": "application/json"
     }
 
-    response = requests.post(
-        TEST_URL,
-        json={"message": qaData.question, "study_program": qaData.classification, "language": qaData.language, "org_id": TEST_ORG_ID},
-        headers=headers
-    )
+    request_payload = {
+        "message": qaData.question,
+        "study_program": qaData.classification,
+        "language": qaData.language,
+        "org_id": TEST_ORG_ID,
+    }
+
+    # Use an async client
+    async with httpx.AsyncClient(timeout=30.0) as client:
+        response = await client.post(TEST_URL, json=request_payload, headers=headers)
 
     # If there's an issue with the server response, fail gracefully
     if response.status_code != 200:
@@ -133,44 +141,40 @@ async def test_rag_api(qaData: QAData):
     #logging.info(f"LLM Fact Evaluation: {fact_evaluation}")
 
     # Step 3: Run Embedding Evaluation for similarity metrics
-    embedding_results = embedding_eval.evaluate_similarity(qaData.answer, answer)
-    logging.info(f"Cosine Similarity: {embedding_results['cosine_similarity']}")
-    logging.info(f"Euclidean Distance: {embedding_results['euclidean_distance']}")
+    #embedding_results = embedding_eval.evaluate_similarity(qaData.answer, answer)
+    #logging.info(f"Cosine Similarity: {embedding_results['cosine_similarity']}")
+    #logging.info(f"Euclidean Distance: {embedding_results['euclidean_distance']}")
 
     # Step 4: Run DeepEval Evaluation for various metrics
-    contextual_precision, contextual_precision_reason = deep_eval.evaluate_contextual_precision(qaData, answer, general_context)
+    contextual_precision, contextual_precision_reason = await deep_eval.evaluate_contextual_precision(qaData, answer, general_context)
     logging.info(f"Contextual Precision (General): {contextual_precision}")
     logging.info(f"Contextual Precision Reason (General): {contextual_precision_reason}")
     
-    contextual_precision_specific, contextual_precision_specific_reason = deep_eval.evaluate_contextual_precision(qaData, answer, specific_context)
+    contextual_precision_specific, contextual_precision_specific_reason = await deep_eval.evaluate_contextual_precision(qaData, answer, specific_context)
     logging.info(f"Contextual Precision (Specific): {contextual_precision_specific}")
     logging.info(f"Contextual Precision Reason (Specific): {contextual_precision_specific_reason}")
     
-    contextual_precision_specific, contextual_precision_specific_reason = deep_eval.evaluate_contextual_precision(qaData, answer, specific_context)
-    logging.info(f"Contextual Precision (Specific): {contextual_precision_specific}")
-    logging.info(f"Contextual Precision Reason (Specific): {contextual_precision_specific_reason}")
-    
-    contextual_precision_sq, contextual_precision_sq_reason = deep_eval.evaluate_contextual_precision(qaData, answer, sample_questions_context)
+    contextual_precision_sq, contextual_precision_sq_reason = await deep_eval.evaluate_contextual_precision(qaData, answer, sample_questions_context)
     logging.info(f"Contextual Precision (Sample Questions): {contextual_precision_sq}")
     logging.info(f"Contextual Precision Reason (Sample Questions): {contextual_precision_sq_reason}")
     
-    contextual_recall, contextual_recall_reason = deep_eval.evaluate_contextual_recall(qaData, answer, general_context + specific_context)
+    contextual_recall, contextual_recall_reason = await deep_eval.evaluate_contextual_recall(qaData, answer, general_context + specific_context)
     logging.info(f"Contextual Recall: {contextual_recall}")
     logging.info(f"Contextual Recall Reason: {contextual_recall_reason}")
 
-    contextual_relevancy, contextual_relevancy_reason = deep_eval.evaluate_contextual_relevancy(qaData, answer, general_context + specific_context + sample_questions_context)
+    contextual_relevancy, contextual_relevancy_reason = await deep_eval.evaluate_contextual_relevancy(qaData, answer, general_context + specific_context + sample_questions_context)
     logging.info(f"Contextual Relevancy: {contextual_relevancy}")
     logging.info(f"Contextual Relevancy Reason: {contextual_relevancy_reason}")
 
-    answer_relevancy, answer_relevancy_reason = deep_eval.answer_relevancy(qaData.question, answer)
+    answer_relevancy, answer_relevancy_reason = await deep_eval.answer_relevancy(qaData.question, answer)
     logging.info(f"Answer Relevancy: {answer_relevancy}")
     logging.info(f"Answer Relevancy Reason: {answer_relevancy_reason}")
 
-    faithfulness, faithfulness_reason = deep_eval.faithfulness(qaData.question, answer, general_context + specific_context + sample_questions_context)
+    faithfulness, faithfulness_reason = await deep_eval.faithfulness(qaData.question, answer, general_context + specific_context + sample_questions_context)
     logging.info(f"Faithfulness: {faithfulness}")
     logging.info(f"Faithfulness Reason: {faithfulness_reason}")
 
-    hallucination, hallucination_reason = deep_eval.hallucination(qaData.question, answer, general_context + specific_context + sample_questions_context)
+    hallucination, hallucination_reason = await deep_eval.hallucination(qaData.question, answer, general_context + specific_context + sample_questions_context)
     logging.info(f"Hallucination: {hallucination}")
     logging.info(f"Hallucination Reason: {hallucination_reason}")
     
@@ -188,8 +192,8 @@ async def test_rag_api(qaData: QAData):
         'Answer': answer,
         'Ground Truth': qaData.answer,
         'Used Tokens': used_tokens,
-        'Cosine Similarity': embedding_results['cosine_similarity'],
-        'Euclidean Distance': embedding_results['euclidean_distance'],
+        #'Cosine Similarity': embedding_results['cosine_similarity'],
+        #'Euclidean Distance': embedding_results['euclidean_distance'],
         #'Custom LLM Classification': llm_classification,
         #'Custom LLM Fact Evaluation': fact_evaluation,
         'Contextual Precision (General)': contextual_precision,
@@ -217,3 +221,5 @@ async def test_rag_api(qaData: QAData):
 
     # Save the CSV after every test case
     results_df.to_csv(csv_filename, index=False)
+    
+    logging.info("Test complete.")

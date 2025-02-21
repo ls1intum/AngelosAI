@@ -13,7 +13,7 @@ from app.data.database_requests import DatabaseDocument, DatabaseSampleQuestion,
     SampleQuestion
 from app.models.base_model import BaseModelClient
 from app.models.ollama_model import OllamaModel
-from app.retrieval_strategies.reranker import Reranker
+from app.post_retrieval.reranker import Reranker
 from app.utils.environment import config
 
 
@@ -234,8 +234,12 @@ class WeaviateManager:
             logging.error(f"Unexpected status code while creating schema: {e}")
         except Exception as e:
             logging.error(f"Error creating schema for {collection_name}: {e}")
+            
+    def get_question_embedding(self, question: str) -> List[float]:
+        question_embedding = self.model.embed(question)
+        return question_embedding
 
-    def get_relevant_context(self, question: str, study_program: str, language: str, org_id: Optional[int],
+    def get_relevant_context(self, question: str, question_embedding: str, study_program: str, language: str, org_id: Optional[int],
                              test_mode: bool = False,
                              limit=10, top_n=5, filter_by_org: bool = True) -> Union[str, Tuple[str, List[str]]]:
         """
@@ -255,8 +259,8 @@ class WeaviateManager:
         """
         try:
             # Define the number of documents to retrieve
-            min_relevance_score = 0.25
-
+            min_relevance_score = 0.35
+            
             # Normalize the study program name
             study_program = WeaviateManager.normalize_study_program_name(study_program)
 
@@ -272,10 +276,8 @@ class WeaviateManager:
             # If getting general context, adjust the parameters
             if study_program.lower() != "general":
                 limit = 10
-                min_relevance_score = 0.15
+                min_relevance_score = 0.25
 
-            # Embed the question using the embedding model
-            question_embedding = self.model.embed(question)
 
             # Perform the vector-based query with filters
             query_result = self.documents.query.near_vector(
@@ -327,7 +329,7 @@ class WeaviateManager:
             # logging.error("Traceback:\n%s", tb)
             return "" if not test_mode else ("", [])
 
-    def get_relevant_sample_questions(self, question: str, language: str, org_id: int) -> List[SampleQuestion]:
+    def get_relevant_sample_questions(self, question: str, question_embedding: str, language: str, org_id: int) -> List[SampleQuestion]:
         """
         Retrieve relevant sample questions and answers based on the question embedding.
 
@@ -342,10 +344,7 @@ class WeaviateManager:
         try:
             limit = 5
             top_n = 3
-            min_relevance_score = 0.4
-
-            # Embed the question using the embedding model
-            question_embedding = self.model.embed(question)
+            min_relevance_score = 0.5
 
             query_result = self.qa_collection.query.near_vector(
                 near_vector=question_embedding,
@@ -543,8 +542,7 @@ class WeaviateManager:
             question = sample_question.question
             answer = sample_question.answer
             org_id = sample_question.org_id
-
-            # Add to QA collection in Weaviate
+            
             embedding = self.model.embed(question)
 
             self.qa_collection.data.insert(
