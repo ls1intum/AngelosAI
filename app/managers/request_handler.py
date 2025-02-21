@@ -19,7 +19,6 @@ class RequestHandler:
 
     def handle_question(self, question: str, classification: str, language: str, org_id: int):
         """Handles the question by fetching relevant documents and generating an answer."""
-        logging.info("Handle question...")
         embedding = self.weaviate_manager.get_question_embedding(question=question)
         
         general_context = self.weaviate_manager.get_relevant_context(question=question, question_embedding=embedding, study_program="general",
