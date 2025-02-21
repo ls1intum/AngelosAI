@@ -19,6 +19,7 @@ class RequestHandler:
 
     def handle_question(self, question: str, classification: str, language: str, org_id: int):
         """Handles the question by fetching relevant documents and generating an answer."""
+        logging.info("Handle question...")
         embedding = self.weaviate_manager.get_question_embedding(question=question)
         
         general_context = self.weaviate_manager.get_relevant_context(question=question, question_embedding=embedding, study_program="general",
@@ -36,9 +37,9 @@ class RequestHandler:
                                                        question, language, classification)
         
         answer = self.model.complete(messages)
-                        
+                                
         answer = self.response_evaluator.process_response(question=question, response=answer, language=language)
-        
+                
         return answer
 
     def handle_question_test_mode(self, question: str, classification: str, language: str, org_id: int):
@@ -162,7 +163,7 @@ class RequestHandler:
             language=lang,
             study_program=study_program
         )
-
+        
         # Generate and return the answer
         return self.model.complete(messages_to_model)
 

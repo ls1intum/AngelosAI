@@ -18,9 +18,7 @@ async def ask(request: UserRequest):
     if not question or not classification:
         raise HTTPException(status_code=400, detail="No question or classification provided")
 
-    logging.info(f"Received question: {question} with classification: {classification}")
-
-    if config.TEST_MODE:
+    if config.TEST_MODE is "true":
         answer, used_tokens, general_context, specific_context, sq_context = request_handler.handle_question_test_mode(question,
                                                                                                            classification,
                                                                                                            language,

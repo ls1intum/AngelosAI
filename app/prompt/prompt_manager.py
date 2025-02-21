@@ -20,7 +20,7 @@ class PromptManager:
     3. If a provided similar question from a student is thematically very similar to the question asked, rely heavily on the respective sample answer from academic advising.
     4. Otherwise, prioritize study program-specific information over general information.
     5. Do not make assumptions or add any information beyond what is provided. Only answer based on the provided context.
-    6. If the provided context does not contain enough information to answer the question with complete certainty, respond with exactly "False" (without any additional text or explanation).
+    6. If the provided context does not contain enough information to answer the question with certainty, respond with exactly "False" (without any additional text or explanation).
 
     --------------------
 
@@ -53,8 +53,6 @@ class PromptManager:
     - Start the response with: "Dear <STUDENT NAME>,"
     - End with "Best regards, Academic Advising"
     - If information that is **highly** relevant to the question is accompanied by a link (in the general or specific context), include the links in your answer like this: "For more detailed information, please visit the following link(s): <LINKS>"
-
-    **Reminder:** If you cannot accurately answer this question using only the provided context, respond with "False" (without any additional text).
     """
 
         self.answer_prompt_template_de = """
@@ -69,7 +67,7 @@ class PromptManager:
     3. Wenn eine ähnliche Frage eines Studenten thematisch sehr ähnlich zur gestellten Frage ist, stützen Sie sich stark auf die jeweilige Antwort der Studienberatung.
     4. Sonst priorisieren Sie studiengangspezifische Informationen über allgemeine Informationen.
     5. Treffen Sie keine Annahmen und fügen Sie keine Informationen hinzu, die nicht ausdrücklich in den bereitgestellten Inhalten enthalten sind. Antworten Sie ausschließlich auf Basis der bereitgestellten Informationen.  
-    6. Wenn die bereitgestellten Informationen nicht ausreichen, um die Frage mit absoluter Sicherheit zu beantworten, antworten Sie exakt mit „False“ (ohne zusätzlichen Text oder Erklärung).
+    6. Wenn die bereitgestellten Informationen nicht ausreichen, um die Frage mit Sicherheit zu beantworten, antworten Sie exakt mit „False“ (ohne zusätzlichen Text oder Erklärung).
 
     --------------------
 
@@ -102,9 +100,7 @@ class PromptManager:
     - Beginnen Sie die Antwort mit: "Liebe(r) <NAME DES STUDENTEN>,"
     - Beenden Sie die Antwort mit: "Viele Grüße, Ihre Studienberatung"
     - Wenn eine ähnliche Frage eines Studenten thematisch sehr ähnlich zur gestellten Frage ist, stützen Sie sich stark auf die jeweilige Beispielsantwort der Studienberatung.
-    - Falls Informationen, die für die Frage **besonders relevant** sind, mit einem Link versehen sind (im allgemeinen oder studiengangspezifischen Kontext), fügen Sie diese in Ihre Antwort ein. Verwenden Sie dabei folgendes Format: „Für mehr Informationen besuchen Sie bitte den/die folgenden Link(s): <LINKS>“
-    
-    **Erinnerung:** Falls Sie die Frage nicht sicher und korrekt ausschließlich mit den bereitgestellten Informationen beantworten können, antworten Sie exakt mit „False“ (ohne jeglichen zusätzlichen Text oder Erklärung).  
+    - Falls Informationen, die für die Frage **besonders relevant** sind, mit einem Link versehen sind (im allgemeinen oder studiengangspezifischen Kontext), fügen Sie diese in Ihre Antwort ein. Verwenden Sie dabei folgendes Format: „Für mehr Informationen besuchen Sie bitte den/die folgenden Link(s): <LINKS>“    
     """
 
         self.answer_prompt_template_with_history = """
