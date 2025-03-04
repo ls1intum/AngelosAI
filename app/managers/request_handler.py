@@ -36,8 +36,10 @@ class RequestHandler:
                                                        question, language, classification)
         
         answer = self.model.complete(messages)
+        logging.info(f"Answer: {answer}")
                                 
         answer = self.response_evaluator.process_response(question=question, response=answer, language=language)
+        logging.info(f"Answer after processing: {answer}")
                 
         return answer
 
