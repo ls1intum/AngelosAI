@@ -1,0 +1,132 @@
+name: Deploy Application Server
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - 'application-server/**'
+      - '.github/workflows/application-server.yml'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Set up QEMU for multi-arch
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+
+      # Log in to GitHub Container Registry
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      # Set up Buildx
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      # Build & Push Docker Image (Updated paths)
+      - name: Build and Push Angelos Server
+        uses: docker/build-push-action@v6
+        with:
+          platforms: linux/amd64, linux/arm64
+          file: application-server/Dockerfile
+          context: application-server
+          tags: ghcr.io/ls1intum/angelos-server:latest
+          push: true
+          no-cache: true
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      # Copy docker-compose.yml to the VM
+      - name: Copy Docker Compose to VM
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ vars.VM_HOST }}
+          username: ${{ vars.VM_USERNAME }}
+          key: ${{ secrets.VM_SSH_PRIVATE_KEY }}
+          proxy_host: ${{ vars.DEPLOYMENT_GATEWAY_HOST }}
+          proxy_username: ${{ vars.DEPLOYMENT_GATEWAY_USER }}
+          proxy_key: ${{ secrets.DEPLOYMENT_GATEWAY_SSH_KEY }}
+          proxy_port: ${{ vars.DEPLOYMENT_GATEWAY_PORT }}
+          source: "application-server/docker-compose.yml"
+          target: "/home/${{ vars.VM_USERNAME }}/${{ github.repository }}/application-server/"
+
+      # Create .env file on VM
+      - name: Create .env on VM
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ vars.VM_HOST }}
+          username: ${{ vars.VM_USERNAME }}
+          key: ${{ secrets.VM_SSH_PRIVATE_KEY }}
+          proxy_host: ${{ vars.DEPLOYMENT_GATEWAY_HOST }}
+          proxy_username: ${{ vars.DEPLOYMENT_GATEWAY_USER }}
+          proxy_key: ${{ secrets.DEPLOYMENT_GATEWAY_SSH_KEY }}
+          proxy_port: ${{ vars.DEPLOYMENT_GATEWAY_PORT }}
+          script: |
+            echo "DB_USERNAME=${{ secrets.DB_USERNAME }}" > /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/application-server/.env
+            echo "DB_PASSWORD=${{ secrets.DB_PASSWORD }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/application-server/.env
+            echo "MAIL_USERNAME=${{ secrets.MAIL_USERNAME }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/application-server/.env
+            echo "MAIL_PASSWORD=${{ secrets.MAIL_PASSWORD }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/application-server/.env
+            echo "JWT_SECRET_KEY=${{ secrets.JWT_SECRET_KEY }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/application-server/.env
+            echo "UPLOAD_DIR=${{ vars.UPLOAD_DIR }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/application-server/.env
+            echo "ADMIN_MAIL=${{ secrets.ADMIN_MAIL }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/application-server/.env
+            echo "ADMIN_PASSWORD=${{ secrets.ADMIN_PASSWORD }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/application-server/.env
+            echo "KB_ORIGIN=${{ secrets.KB_ORIGIN }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/application-server/.env
+            echo "CHATBOT_ORIGIN=${{ secrets.CHATBOT_ORIGIN }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/application-server/.env
+            echo "ANGELOS_URL=${{ secrets.ANGELOS_URL }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/application-server/.env
+            echo "ANGELOS_SECRET=${{ secrets.ANGELOS_SECRET }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/application-server/.env
+            echo "ANGELOS_USERNAME=${{ secrets.ANGELOS_USERNAME }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/application-server/.env
+            echo "ANGELOS_PASSWORD=${{ secrets.ANGELOS_PASSWORD }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/application-server/.env
+            echo "EUNOMIA_URL=${{ secrets.EUNOMIA_URL }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/application-server/.env
+            echo "EUNOMIA_SECRET=${{ secrets.EUNOMIA_SECRET }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/application-server/.env
+
+      # Create .env.postgres file for Postgres on VM
+      - name: Create .env.postgres on VM
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ vars.VM_HOST }}
+          username: ${{ vars.VM_USERNAME }}
+          key: ${{ secrets.VM_SSH_PRIVATE_KEY }}
+          proxy_host: ${{ vars.DEPLOYMENT_GATEWAY_HOST }}
+          proxy_username: ${{ vars.DEPLOYMENT_GATEWAY_USER }}
+          proxy_key: ${{ secrets.DEPLOYMENT_GATEWAY_SSH_KEY }}
+          proxy_port: ${{ vars.DEPLOYMENT_GATEWAY_PORT }}
+          script: |
+            echo "POSTGRES_USER=${{ secrets.DB_USERNAME }}" > /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/application-server/.env.postgres
+            echo "POSTGRES_PASSWORD=${{ secrets.DB_PASSWORD }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/application-server/.env.postgres
+            echo "POSTGRES_DB=kbdatabase" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/application-server/.env.postgres
+
+      # Run Docker Compose on VM
+      - name: SSH to VM and Compose Up
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ vars.VM_HOST }}
+          username: ${{ vars.VM_USERNAME }}
+          key: ${{ secrets.VM_SSH_PRIVATE_KEY }}
+          proxy_host: ${{ vars.DEPLOYMENT_GATEWAY_HOST }}
+          proxy_username: ${{ vars.DEPLOYMENT_GATEWAY_USER }}
+          proxy_key: ${{ secrets.DEPLOYMENT_GATEWAY_SSH_KEY }}
+          proxy_port: ${{ vars.DEPLOYMENT_GATEWAY_PORT }}
+          script: |
+            cd /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/application-server
+            # Ensure network
+            if ! docker network inspect angelos-network >/dev/null 2>&1; then
+              docker network create angelos-network
+            fi
+
+            # Start up containers
+            docker compose pull angelos-server
+            docker compose up --build -d --force-recreate --remove-orphans
+            docker ps

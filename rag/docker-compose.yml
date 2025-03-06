@@ -14,8 +14,6 @@ services:
       # Weaviate Database
       - WEAVIATE_URL
       - WEAVIATE_PORT
-      - KNOWLEDGE_BASE_FOLDER
-      - QA_FOLDER
       # Development config
       - DELETE_BEFORE_INIT
       # Ollama
