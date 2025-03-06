@@ -1,0 +1,6 @@
+.doc-row {
+    display: flex;
+    flex-direction: row;
+    gap: 16px;
+    align-items: end;
+  }

@@ -1,0 +1,32 @@
+<div class="app-container">
+  <!-- Top Bar -->
+  <div class="kb-header">
+    <h2>CIT Knowledge Base Manager</h2>
+    <div class="header-right">
+      <!-- Conditionally show logout link if tabs are visible (i.e., user is logged in) -->
+      <a *ngIf="showTabs" class="logout-link" (click)="logout()">Abmelden</a>
+      <img src="assets/logo.png" alt="Logo" class="kb-logo" />
+    </div>
+  </div>
+
+  <!-- Tabs -->
+  <div class="tabs" *ngIf="showTabs">
+    <a routerLink="/websites" routerLinkActive="active">Websites</a>
+    <a routerLink="/documents" routerLinkActive="active">Dokumente</a>
+    <a routerLink="/sample-questions" routerLinkActive="active">Beispielfragen</a>
+    <a routerLink="/admin" routerLinkActive="active">
+      Administration
+      <mat-icon
+        *ngIf="showWarnIcon"
+        style="margin-left: 4px; color: orange;"
+      >
+        error
+      </mat-icon>
+    </a>
+  </div>
+
+  <!-- Main Content Area -->
+  <div class="content">
+    <router-outlet></router-outlet>
+  </div>
+</div>
