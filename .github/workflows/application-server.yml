@@ -10,6 +10,7 @@ on:
 
 jobs:
   build:
+    if: ${{ vars.ENABLE_DEPLOYMENT == 'true' }}
     runs-on: ubuntu-latest
     steps:
       - name: Checkout repository
@@ -43,6 +44,7 @@ jobs:
           no-cache: true
 
   deploy:
+    if: ${{ vars.ENABLE_DEPLOYMENT == 'true' }}
     needs: build
     runs-on: ubuntu-latest
     steps:
