@@ -1,0 +1,53 @@
+<div class="chat-container">
+    <app-error-snackbar #errorSnackbar></app-error-snackbar>
+
+    <div class="chat-header">
+      <ng-select class="study-program-dropdown" [items]="studyPrograms" bindLabel="name" bindValue="id"
+        (change)="onProgramChange($event)" [placeholder]="dropdownLabel">
+      </ng-select>
+      <img src="assets/logo.png" alt="Logo" class="chat-logo" />
+    </div>
+
+    <div class="chat-body" #chatBody>
+        <div
+            class="message"
+            *ngFor="let message of messages"
+            [ngClass]="message.type"
+            #messageElements>
+            
+            <ng-container *ngIf="message.type === 'system'">
+                <span [innerHTML]="message.message"></span>
+            </ng-container>
+            
+            <ng-container *ngIf="message.type !== 'system'">
+                <span>{{ message.message }}</span>
+            </ng-container>
+
+            <ng-container *ngIf="message.type === 'loading'">
+                <span class="dot-loader">
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                  <span class="dot"></span>
+                </span>
+              </ng-container>
+        </div>
+    </div>
+
+    <div class="chat-footer">
+        <textarea 
+          #messageInput
+          [(ngModel)]="userMessage"
+          (input)="adjustTextAreaHeight($event)"
+          (keydown)="onKeyDown($event)"
+          [placeholder]="placeholderText"
+          rows="1"></textarea>
+        <button 
+          (click)="sendMessage()"
+          [disabled]="disableSending"
+          [ngClass]="{ 'disabled': disableSending }">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z"/>
+          </svg>
+        </button>
+    </div>
+</div>

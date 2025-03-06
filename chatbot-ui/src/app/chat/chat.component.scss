@@ -1,0 +1,235 @@
+$primary-color: #072140;
+$tum-light-blue: #3070b3;
+$tum-blue-dark: #072140;
+$tum-blue-light-dark: #0a2d57;
+$tum-acordion-blue: #f0f5fa;
+$system-message-color: #64a0c8;
+$user-message-color: #0a2d57;
+$background-color: #f4f4f4;
+$border-color: #ccc;
+$chat-height: 100vh;
+$chat-width: 100%;
+$header-height: 40px;
+$logo-size: 40px;
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+:host ::ng-deep .ng-dropdown-panel .ng-option,
+:host ::ng-deep .ng-dropdown-panel .ng-option .ng-option-label {
+  white-space: normal !important;
+  overflow: visible !important;
+  text-overflow: clip !important; 
+  word-break: break-word !important; 
+  display: block !important;
+}
+
+.chat-container {
+  font-family: roboto, sans-serif;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: $chat-width;
+  height: $chat-height;
+  border: 1px solid $border-color;
+  background-color: $background-color;
+  border-radius: 8px;
+  overflow: hidden;
+
+  @media (max-width: 600px) {
+    width: 100%;
+    border: none;
+    border-radius: 0;
+    height: 100vh;
+  }
+
+  .chat-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: $primary-color;
+    color: white;
+    padding: 8px;
+
+    @media (max-width: 600px) {
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 6px;
+    }
+  }
+
+  .chat-logo {
+    width: $logo-size;
+    height: $logo-size;
+    object-fit: contain;
+
+    @media (max-width: 600px) {
+      display: none;
+    }
+  }
+
+  .study-program-dropdown {
+    min-width: 400px;
+
+    @media (max-width: 600px) {
+      min-width: unset;
+      width: 100%;
+      font-size: 14px;
+    }
+  }
+
+  .chat-body {
+    flex: 1 1 auto;
+    padding: 10px;
+    overflow-y: auto;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .message {
+    margin: 8px 0;
+    padding: 10px;
+    border-radius: 16px;
+    max-width: 70%;
+    word-wrap: break-word;
+    line-height: 1.5;
+    display: inline-block;
+
+    @media (max-width: 600px) {
+      max-width: 96%;
+      padding: 6px;
+      font-size: 14px;
+      margin: 4px 0;
+    }
+
+    &.system {
+      background-color: $tum-light-blue;
+      color: white;
+      align-self: flex-start;
+      border-top-left-radius: 0;
+    }
+
+    &.user {
+      background-color: $tum-acordion-blue;
+      color: $tum-blue-dark;
+      align-self: flex-end;
+      border-top-right-radius: 0;
+    }
+  }
+
+  .chat-footer {
+    display: flex;
+    padding: 10px;
+    background-color: $tum-acordion-blue;
+    border-top: 1px solid $border-color;
+
+    @media (max-width: 600px) {
+      padding: 6px;
+    }
+
+    textarea {
+      box-sizing: border-box;
+      flex: 1;
+      padding: 10px;
+      border: 1px solid $border-color;
+      border-radius: 4px;
+      font-size: 14px;
+      line-height: 1.5;
+      resize: none;
+      overflow-y: hidden;
+      min-height: calc(1.5em * 1); // Minimum height for 1 line
+      max-height: calc(1.5em * 4); // Maximum height for 4 lines
+
+      @media (max-width: 600px) {
+        padding: 8px;
+        font-size: 14px;
+      }
+    }
+
+    button {
+      background-color: $tum-light-blue;
+      color: white;
+      padding: 10px;
+      margin-left: 10px;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      @media (max-width: 600px) {
+        padding: 6px;
+        margin-left: 5px;
+      }
+
+      &:hover {
+        background-color: $primary-color;
+      }
+
+      &.disabled {
+        background-color: $border-color;
+        color: #aaa;
+        cursor: not-allowed;
+      }
+
+      svg {
+        fill: white;
+        width: 20px;
+        height: 20px;
+      }
+    }
+  }
+}
+
+.dot-loader {
+  display: inline-flex;
+  gap: 4px;
+  background-color: $tum-light-blue; // Match the system message bubble color
+  color: white; // Text color within the bubble
+  padding: 10px;
+  border-radius: 16px;
+  align-self: flex-start;
+  border-top-left-radius: 0;
+}
+
+.dot {
+  display: inline-block;
+  width: 5px;
+  height: 5px;
+  background-color: white; // Dot color matches text color
+  border-radius: 50%;
+  animation: dotBounce 1s infinite ease-in-out;
+}
+
+.dot:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.dot:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.dot:nth-child(3) {
+  animation-delay: 0.4s;
+}
+
+@keyframes dotBounce {
+
+  0%,
+  80%,
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+
+  40% {
+    transform: translateY(-2px);
+    opacity: 0.7;
+  }
+}
+

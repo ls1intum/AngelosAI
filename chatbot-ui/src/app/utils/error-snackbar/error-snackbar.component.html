@@ -1,0 +1,24 @@
+<div class="snackbar-container" *ngIf="isVisible">
+    <div class="snackbar">
+      <span>{{ message }}</span>
+      <button
+        class="dismiss-button"
+        (click)="dismiss()"
+        aria-label="Dismiss"
+      >
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 40 40"
+        >
+        <path
+            d="M 10,10 L 30,30 M 30,10 L 10,30"
+            stroke="white"
+            stroke-width="4"
+            stroke-linecap="round"
+        />
+        </svg>
+      </button>
+    </div>
+  </div>
