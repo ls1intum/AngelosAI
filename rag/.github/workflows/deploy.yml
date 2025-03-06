@@ -1,0 +1,143 @@
+name: Deploy Angelos
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up QEMU
+        uses: docker/setup-qemu-action@v3
+
+      - name: Log in to GitHub Container Registry
+        uses: docker/login-action@v3
+        with:
+          registry: ghcr.io
+          username: ${{ github.actor }}
+          password: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Set up Docker Buildx
+        uses: docker/setup-buildx-action@v3
+
+      - name: Build and Push to GitHub Container Registry
+        uses: docker/build-push-action@v6
+        with:
+          platforms: amd64, arm64
+          file: ./Dockerfile
+          context: .
+          tags: ghcr.io/ls1intum/angelos-app:latest
+          push: true
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v4
+
+      - name: Copy Docker Compose File From Repo to VM Host
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ vars.VM_HOST }}
+          username: ${{ vars.VM_USERNAME }}
+          key: ${{ secrets.VM_SSH_PRIVATE_KEY }}
+          proxy_host: ${{ vars.DEPLOYMENT_GATEWAY_HOST }}
+          proxy_username: ${{ vars.DEPLOYMENT_GATEWAY_USER }}
+          proxy_key: ${{ secrets.DEPLOYMENT_GATEWAY_SSH_KEY }}
+          proxy_port: ${{ vars.DEPLOYMENT_GATEWAY_PORT }}
+          source: "./docker-compose.yml"
+          target: /home/${{ vars.VM_USERNAME }}/${{ github.repository }}
+
+      - name: Copy Docker Compose File for weaviate From Repo to VM Host
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ vars.VM_HOST }}
+          username: ${{ vars.VM_USERNAME }}
+          key: ${{ secrets.VM_SSH_PRIVATE_KEY }}
+          proxy_host: ${{ vars.DEPLOYMENT_GATEWAY_HOST }}
+          proxy_username: ${{ vars.DEPLOYMENT_GATEWAY_USER }}
+          proxy_key: ${{ secrets.DEPLOYMENT_GATEWAY_SSH_KEY }}
+          proxy_port: ${{ vars.DEPLOYMENT_GATEWAY_PORT }}
+          source: "./docker/weaviate.yml"
+          target: /home/${{ vars.VM_USERNAME }}/${{ github.repository }}
+
+      - name: Copy env file File for weaviate From Repo to VM Host
+        uses: appleboy/scp-action@v0.1.7
+        with:
+          host: ${{ vars.VM_HOST }}
+          username: ${{ vars.VM_USERNAME }}
+          key: ${{ secrets.VM_SSH_PRIVATE_KEY }}
+          proxy_host: ${{ vars.DEPLOYMENT_GATEWAY_HOST }}
+          proxy_username: ${{ vars.DEPLOYMENT_GATEWAY_USER }}
+          proxy_key: ${{ secrets.DEPLOYMENT_GATEWAY_SSH_KEY }}
+          proxy_port: ${{ vars.DEPLOYMENT_GATEWAY_PORT }}
+          source: "./docker/weaviate/default.env"
+          target: /home/${{ vars.VM_USERNAME }}/${{ github.repository }}
+
+      - name: SSH to VM and create .env.prod
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ vars.VM_HOST }}
+          username: ${{ vars.VM_USERNAME }}
+          key: ${{ secrets.VM_SSH_PRIVATE_KEY }}
+          proxy_host: ${{ vars.DEPLOYMENT_GATEWAY_HOST }}
+          proxy_username: ${{ vars.DEPLOYMENT_GATEWAY_USER }}
+          proxy_key: ${{ secrets.DEPLOYMENT_GATEWAY_SSH_KEY }}
+          proxy_port: ${{ vars.DEPLOYMENT_GATEWAY_PORT }}
+          script: |
+            rm /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod || true
+            touch /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
+      
+            # Add relevant environment variables
+            echo "WEAVIATE_URL=${{ vars.WEAVIATE_URL }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
+            echo "WEAVIATE_PORT=${{ vars.WEAVIATE_PORT }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
+            echo "KNOWLEDGE_BASE_FOLDER=${{ vars.KNOWLEDGE_BASE_FOLDER }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
+            echo "QA_FOLDER=${{ vars.QA_FOLDER }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
+            echo "DELETE_BEFORE_INIT=${{ vars.DELETE_BEFORE_INIT }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
+            echo "USE_OLLAMA=${{ vars.USE_OLLAMA }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
+            echo "GPU_URL=${{ vars.GPU_URL }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
+            echo "GPU_USER=${{ vars.GPU_USER }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
+            echo "GPU_PASSWORD=${{ secrets.GPU_PASSWORD }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
+            echo "GPU_MODEL=${{ vars.GPU_MODEL }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
+            echo "GPU_EMBED_MODEL=${{ vars.GPU_EMBED_MODEL }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
+            echo "GPU_HOST=${{ vars.GPU_HOST }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
+            echo "OPENAI_API_KEY=${{ secrets.OPENAI_API_KEY }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
+            echo "OPENAI_MODEL=${{ vars.OPENAI_MODEL }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
+            echo "OPENAI_EMBEDDING_MODEL=${{ vars.OPENAI_EMBEDDING_MODEL }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
+            echo "USE_AZURE=${{ vars.USE_AZURE }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
+            echo "AZURE_OPENAI_API_KEY=${{ secrets.AZURE_OPENAI_API_KEY }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
+            echo "AZURE_OPENAI_DEPLOYMENT=${{ vars.AZURE_OPENAI_DEPLOYMENT }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
+            echo "AZURE_OPENAI_EMBEDDING_DEPLOYMENT=${{ vars.AZURE_OPENAI_EMBEDDING_DEPLOYMENT }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
+            echo "AZURE_OPENAI_ENDPOINT=${{ secrets.AZURE_OPENAI_ENDPOINT }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
+            echo "AZURE_OPENAI_VERSION=${{ vars.AZURE_OPENAI_VERSION }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
+            echo "COHERE_API_KEY=${{ secrets.COHERE_API_KEY }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
+            echo "COHERE_API_KEY_MULTI=${{ secrets.COHERE_API_KEY_MULTI }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
+            echo "COHERE_API_KEY_EN=${{ secrets.COHERE_API_KEY_EN }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
+            echo "ANGELOS_APP_API_KEY=${{ secrets.ANGELOS_APP_API_KEY }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod
+
+
+      - name: SSH to VM and Execute Docker-Compose Up
+        uses: appleboy/ssh-action@v1.0.3
+        with:
+          host: ${{ vars.VM_HOST }}
+          username: ${{ vars.VM_USERNAME }}
+          key: ${{ secrets.VM_SSH_PRIVATE_KEY }}
+          proxy_host: ${{ vars.DEPLOYMENT_GATEWAY_HOST }}
+          proxy_username: ${{ vars.DEPLOYMENT_GATEWAY_USER }}
+          proxy_key: ${{ secrets.DEPLOYMENT_GATEWAY_SSH_KEY }}
+          proxy_port: ${{ vars.DEPLOYMENT_GATEWAY_PORT }}
+          script: |
+            if ! docker network inspect angelos-network >/dev/null 2>&1; then
+              echo "Network 'angelos-network' does not exist, creating it..."
+              docker network create angelos-network
+            fi
+            docker network ls
+            docker compose -f /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/docker-compose.yml -f /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/docker/weaviate.yml --env-file=/home/${{ vars.VM_USERNAME }}/${{ github.repository }}/.env.prod up --pull=always -d --force-recreate --remove-orphans

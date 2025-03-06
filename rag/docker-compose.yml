@@ -1,0 +1,53 @@
+services:
+  angelos-app:
+    container_name: angelos-app
+    image: "ghcr.io/ls1intum/angelos-app:latest"
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+    volumes:
+      - ./knowledge:/app/knowledge
+    #    env_file:
+    #      - .env.prod
+    command: [ "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000" ]
+    environment:
+      # Weaviate Database
+      - WEAVIATE_URL
+      - WEAVIATE_PORT
+      - KNOWLEDGE_BASE_FOLDER
+      - QA_FOLDER
+      # Development config
+      - DELETE_BEFORE_INIT
+      # Ollama
+      - USE_OLLAMA
+      - GPU_URL
+      - GPU_USER
+      - GPU_PASSWORD
+      - GPU_MODEL
+      - GPU_EMBED_MODEL
+      - GPU_HOST
+      # OpenAI
+      - OPENAI_API_KEY
+      - OPENAI_MODEL
+      - OPENAI_EMBEDDING_MODEL
+      # Azure OpenAI
+      - USE_AZURE
+      - AZURE_OPENAI_API_KEY
+      - AZURE_OPENAI_DEPLOYMENT
+      - AZURE_OPENAI_EMBEDDING_DEPLOYMENT
+      - AZURE_OPENAI_ENDPOINT
+      - AZURE_OPENAI_VERSION
+      # Cohere
+      - COHERE_API_KEY
+      - COHERE_API_KEY_MULTI
+      - COHERE_API_KEY_EN
+      # Authentication
+      - ANGELOS_APP_API_KEY
+    networks:
+      - angelos-network
+
+networks:
+  angelos-network:
+    name: angelos-network
+    driver: bridge
+    external: true

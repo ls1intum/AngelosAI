@@ -1,0 +1,15 @@
+.env
+rag-venv
+/development.env
+.DS_Store
+.vscode
+*/DS_Store
+.pytest_cache/
+docker/.docker-data
+testing/results/*
+testing/testing.env
+testing/tests/test_data.json
+testing/tests/test_data_backup.json
+.deepeval
+
+docker/weaviate.yml
