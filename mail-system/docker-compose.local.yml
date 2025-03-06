@@ -1,0 +1,30 @@
+services:
+  eunomia-app:
+    container_name: eunomia-app
+    build: .
+    env_file:
+      - development.env
+    restart: always
+    ports:
+      - "8082:8082"
+    environment:
+      - EMAIL_ADDRESS
+      - EMAIL_PASSWORD
+      - IMAP_SERVER
+      - SMTP_SERVER
+      - IMAP_PORT
+      - SMTP_PORT
+      - USE_OPENAI
+      - USE_AZURE
+      - GPU_USER
+      - GPU_PASSWORD
+      - GPU_HOST
+      - GPU_MODEL
+      - GPU_URL
+      - ANGELOS_URI
+      - ANGELOS_PORT
+      - OPENAI_MODEL
+      - STUDY_PROGRAMS_FOLDER
+      - ANGELOS_APP_API_KEY
+    volumes:
+      - ./knowledge:/app/knowledge
