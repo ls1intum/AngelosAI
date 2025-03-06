@@ -1,17 +1,18 @@
-# Eunomia
+# Email System
 
-This repository contains the implementation of the Email Categorization system, which classifies incoming emails into
-sensitive and non-sensitive categories. Sensitive emails are directed to staff for manual handling, while non-sensitive
-emails are processed further by the Response Generator system.
+This folder contains the **Email System**, which automates the handling of incoming emails. It classifies emails into **sensitive and non-sensitive** categories, ensuring efficient email management while maintaining privacy. The system also supports **multiple academic advising teams**, allowing team-specific configurations and responses.
 
-## Features
+## ✨ Features
 
-- **Email Classification**: Automatically categorizes emails into sensitive and non-sensitive categories.
-- **API Integration**: Exposes API endpoints for communication with the Response Generator system.
-- **Focus on Privacy**: Ensures data privacy and consent by handling sensitive emails manually.
+- **Email Classification** – Automatically categorizes emails as sensitive or non-sensitive.
+- **Team-Specific Routing** – Supports multiple academic advising teams, ensuring that emails are processed based on the appropriate team’s configuration.
+- **API Integration** – Exposes endpoints for seamless communication with other system components.
+- **Privacy-Focused** – Ensures that sensitive emails are handled manually by staff.
+- **Automated Responses** – Sends replies to routine inquiries while escalating complex queries to advisors.
 
-## Objectives
+## 🎯 Objectives
 
-- Enhance efficiency by automating the classification of emails.
-- Maintain data privacy and consent by managing sensitive emails with human oversight.
-- Facilitate seamless integration with the Response Generator system for non-sensitive emails.
+- Improve **efficiency** by automating email classification and response handling.
+- Maintain **data privacy** by ensuring human oversight for sensitive emails.
+- Facilitate **scalable team-based workflows**, enabling multiple advising teams to manage their own inquiries.
+- Integrate seamlessly with the **Response Generator** for non-sensitive queries.
