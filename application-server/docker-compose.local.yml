@@ -1,0 +1,40 @@
+version: "3.8"
+
+services:
+  db:
+    image: postgres:13
+    container_name: angelos-db
+    restart: always
+    ports:
+      - "5433:5432"
+    env_file:
+      - postgres.env
+    volumes:
+      - postgres_db_data:/var/lib/postgresql/data
+    networks:
+      - angelos-network
+
+  angelos-server:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: angelos-server
+    depends_on:
+      - db
+    expose:
+      - "9007"
+    ports:
+      - "9007:9007"
+    env_file:
+      - development.env
+    environment:
+      SPRING_PROFILES_ACTIVE: dev
+    networks:
+      - angelos-network
+
+volumes:
+  postgres_db_data:
+
+networks:
+  angelos-network:
+    external: true
