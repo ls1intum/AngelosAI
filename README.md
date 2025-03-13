@@ -53,7 +53,7 @@ docker compose -f docker-compose.local.yml up --build
 ```
 
 ### 4️⃣ Admin Login & User Registration
-- The Knowledge Manager is available on http://localhost/knowledge-manager/
+- The Knowledge Manager is available at http://localhost/knowledge-manager/
 - Log in as system admin using credentials from development.env (Application Server).
 - You can create an Organization in the Administration tab.
 -	The organization ID specified in ./chatbot-ui/src/environments/environment.development.ts determines which organization’s knowledge base the chatbot uses for generating responses.
