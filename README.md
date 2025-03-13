@@ -37,3 +37,28 @@ The system is composed of several key components:
 - **Ensures Information Accuracy** – Easily updated knowledge base to keep responses aligned with institutional policies.
 - **Data Privacy & Security** – No sensitive data storage. Can be deployed on-premise or in a secure cloud environment.
 - **Customizable & Scalable** – Adaptable to different institutions and workflows.
+
+## ⚙️ Local Setup  
+### 1️⃣ Prerequisites  
+- Install **Docker** and **Docker Compose**.  
+
+### 2️⃣ Environment Configuration  
+- RAG, mail system and application server require an **environment file (`development.env`)**.  
+- **Template files (`template.env`)** are available in the respective project folders.
+
+### 3️⃣ Start Docker Services  
+Run the following command in the **root project folder**:  
+```sh
+docker compose -f weaviate.local.yml up --build
+```
+
+### 4️⃣ Admin Login & User Registration
+- The Knowledge Manager is available on http://localhost/knowledge-manager/
+- Log in as system admin using credentials from development.env (Application Server).
+- You can create an Organization in the Administration tab.
+-	The organization ID specified in ./chatbot-ui/src/environments/environment.development.ts determines which organization’s knowledge base the chatbot uses for generating responses.
+-	New users must register and be approved by a (system) admin before gaining access.
+
+### 5️⃣ Database Initialization
+- The knowledge base of a organisation can be initialized using the Knowledge Manager UI
+- The init-db endpoint initializes the database for CIT advising given that the necessary study programs are added and the method is called by a system admin.
