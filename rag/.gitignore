@@ -11,5 +11,6 @@ testing/testing.env
 testing/tests/test_data.json
 testing/tests/test_data_backup.json
 .deepeval
+.docker-data
 
 docker/weaviate.yml

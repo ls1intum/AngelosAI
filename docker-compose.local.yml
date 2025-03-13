@@ -1,0 +1,159 @@
+version: "3.8"
+
+services:
+  # 1) Postgres Database
+  db:
+    image: postgres:13
+    container_name: angelos-db
+    restart: always
+    ports:
+      - "5435:5432"
+    env_file:
+      - ./application-server/postgres.env
+    volumes:
+      - postgres_db_data:/var/lib/postgresql/data
+    networks:
+      - angelos-network
+
+  # 2) Weaviate Database 
+  weaviate:
+    image: cr.weaviate.io/semitechnologies/weaviate:1.25.3
+    container_name: weaviate
+    command:
+      - --host
+      - 0.0.0.0
+      - --port
+      - '8001'
+      - --scheme
+      - http
+    expose:
+      - "8001"
+      - "50051"
+    ports:
+      - "8010:8001"
+      - "50060:50051"
+    volumes:
+      - ${WEAVIATE_VOLUME_MOUNT:-./rag/.docker-data/weaviate-data}:/var/lib/weaviate
+    restart: on-failure:3
+    env_file:
+      - ./rag/docker/weaviate/default.env
+    networks:
+      - angelos-network
+
+  # 3) Angelos Server
+  angelos-server:
+    build:
+      context: ./application-server
+      dockerfile: Dockerfile
+    container_name: angelos-server
+    depends_on:
+      - db
+    expose:
+      - "9007"
+    ports:
+      - "9007:9007"
+    env_file:
+      - ./application-server/development.env
+    environment:
+      SPRING_PROFILES_ACTIVE: dev
+    networks:
+      - angelos-network
+
+  # 4) Chatbot UI
+  chatbot:
+    build:
+      context: ./chatbot-ui
+      dockerfile: Dockerfile
+      args:
+        ANGULAR_CONFIG: development
+    container_name: chatbot
+    expose:
+      - "80"
+    networks:
+      - angelos-network
+
+  # 5) Knowledge Manager UI
+  knowledge-manager:
+    build:
+      context: ./knowledge-manager-ui
+      dockerfile: Dockerfile
+      args:
+        ANGULAR_ENV: development
+    container_name: knowledge-manager
+    expose:
+      - "80"
+    networks:
+      - angelos-network
+
+  # 6) Reverse Proxy
+  proxy:
+    image: nginx:stable-alpine
+    container_name: reverse-proxy
+    volumes:
+      - ./chatbot-ui/nginx.local.conf:/etc/nginx/conf.d/default.conf
+    ports:
+      - "80:80"
+    depends_on:
+      - chatbot
+      - knowledge-manager
+      - angelos-server
+    networks:
+      - angelos-network
+
+  # 7) Mail System (Eunomia)
+  eunomia-app:
+    container_name: eunomia-app
+    build:
+      context: ./mail-system
+      dockerfile: Dockerfile
+    env_file:
+      - ./mail-system/development.env
+    restart: always
+    ports:
+      - "8082:8082"
+    environment:
+      - ENVIRONMENT=development
+      - EMAIL_ADDRESS
+      - EMAIL_PASSWORD
+      - IMAP_SERVER
+      - SMTP_SERVER
+      - IMAP_PORT
+      - SMTP_PORT
+      - USE_OPENAI
+      - USE_AZURE
+      - GPU_USER
+      - GPU_PASSWORD
+      - GPU_HOST
+      - GPU_MODEL
+      - GPU_URL
+      - ANGELOS_URI
+      - ANGELOS_PORT
+      - OPENAI_MODEL
+      - STUDY_PROGRAMS_FOLDER
+      - ANGELOS_APP_API_KEY
+    networks:
+      - angelos-network
+
+  # 8) RAG (Angelos)
+  angelos-app:
+    container_name: angelos-app
+    build:
+      context: ./rag
+      dockerfile: Dockerfile
+    ports:
+      - "8000:8000"
+    restart: unless-stopped
+    env_file:
+      - ./rag/development.env
+    command: [ "uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000" ]
+    depends_on:
+      - weaviate
+    networks:
+      - angelos-network
+
+volumes:
+  postgres_db_data:
+
+networks:
+  angelos-network:
+    driver: bridge

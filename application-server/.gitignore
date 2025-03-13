@@ -1,4 +1,5 @@
 .env
+**.env
 
 uploads/
 docker/postgres/postgres.env
