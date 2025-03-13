@@ -49,7 +49,7 @@ The system is composed of several key components:
 ### 3️⃣ Start Docker Services  
 Run the following command in the **root project folder**:  
 ```sh
-docker compose -f weaviate.local.yml up --build
+docker compose -f docker-compose.local.yml up --build
 ```
 
 ### 4️⃣ Admin Login & User Registration
