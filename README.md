@@ -43,7 +43,7 @@ The system is composed of several key components:
 - Install **Docker** and **Docker Compose**.  
 
 ### 2️⃣ Environment Configuration  
-- RAG, mail system and application server require an **environment file (`development.env`)**.  
+- RAG, mail system and application server require an **environment file (`development.env`)**. In the application-server directory, a `posgres.env` file should be defined.
 - **Template files (`template.env`)** are available in the respective project folders.
 
 ### 3️⃣ Start Docker Services  
