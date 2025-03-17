@@ -4,4 +4,5 @@ export const environment = {
     angelosAppApiKey: 'SOME_SECRET_KEY',
     organisation: 2,
     filterByOrg: true,
+    chatbotUrl: "http://localhost/chat"
 };
