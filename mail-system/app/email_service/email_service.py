@@ -82,7 +82,7 @@ class EmailService:
         else:
             logging.error("Invalid UID. No email to flag.")
 
-    def send_reply_email(self, original_email: EmailDTO, reply_body):
+    def send_reply_email(self, original_email: EmailDTO, reply_body):        
         smtp_conn = self.email_client.get_smtp_connection()
 
         # Extract headers from the original email
@@ -98,8 +98,10 @@ class EmailService:
         msg['Subject'] = subject
         msg['In-Reply-To'] = message_id
         msg['References'] = message_id
+        # Format the reply body
+        reply_body_html = reply_body.replace("\n", "<br/>")
         # Attach the reply body
-        msg.attach(MIMEText(reply_body, 'plain'))
+        msg.attach(MIMEText(reply_body_html, 'html'))
 
         try:
             smtp_conn.send_message(msg)
