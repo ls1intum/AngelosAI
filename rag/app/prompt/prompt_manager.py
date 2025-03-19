@@ -52,7 +52,7 @@ class PromptManager:
     - Keep the response within 200 words.
     - Start the response with: "Dear <STUDENT NAME>,"
     - End with "Best regards, Academic Advising"
-    - If information that is **highly** relevant to the question is accompanied by a link (in the general or specific context), include the links in your answer like this: "For more detailed information, please visit the following link(s): <LINKS>"
+    - If information that is **highly** relevant to the question is accompanied by a link (in the general or specific context), include the links in your answer like this: "For more detailed information, please visit the following link(s): For more detailed information, please visit the following link(s): <a href="LINK URL" target="_blank"><LINK TTLE></a>"
     """
 
         self.answer_prompt_template_de = """
@@ -100,7 +100,7 @@ class PromptManager:
     - Beginnen Sie die Antwort mit: "Liebe(r) <NAME DES STUDENTEN>,"
     - Beenden Sie die Antwort mit: "Viele Grüße, Ihre Studienberatung"
     - Wenn eine ähnliche Frage eines Studenten thematisch sehr ähnlich zur gestellten Frage ist, stützen Sie sich stark auf die jeweilige Beispielsantwort der Studienberatung.
-    - Falls Informationen, die für die Frage **besonders relevant** sind, mit einem Link versehen sind (im allgemeinen oder studiengangspezifischen Kontext), fügen Sie diese in Ihre Antwort ein. Verwenden Sie dabei folgendes Format: „Für mehr Informationen besuchen Sie bitte den/die folgenden Link(s): <LINKS>“    
+    - Falls Informationen, die für die Frage **besonders relevant** sind, mit einem Link versehen sind (im allgemeinen oder studiengangspezifischen Kontext), fügen Sie diese in Ihre Antwort ein. Verwenden Sie dabei folgendes Format: „Für mehr Informationen besuchen Sie bitte den/die folgenden Link(s): <a href="LINK URL" target="_blank"><LINK TITEL></a>“    
     """
 
         self.answer_prompt_template_with_history = """
