@@ -60,5 +60,12 @@ class EmailClassifier(Classifier):
         classification = parsed_result.get("classification", "").lower()
         language = parsed_result.get("language", "").lower()
         study_program = parsed_result.get("study_program", "").lower()
-        logging.info(f"Classified as: {classification}, language: {language}, study_program: {study_program}")
-        return classification, language, study_program
+        is_colleague_raw = parsed_result.get("is_colleague", False)
+        if isinstance(is_colleague_raw, str):
+            is_colleague = is_colleague_raw.strip().lower() == "true"
+        else:
+            is_colleague = bool(is_colleague_raw)
+
+        logging.info(f"Classified as: {classification}, language: {language}, study_program: {study_program}, is_colleague: {is_colleague}")
+        
+        return classification, language, study_program, is_colleague

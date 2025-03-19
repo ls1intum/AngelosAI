@@ -76,14 +76,14 @@ class EmailResponder:
                     if email.in_reply_to is None and len(email.references) == 0 and (
                             email.spam == "NO" or email.spam is None):
                         try:
-                            classification, language, study_program = self.classify_with_retries(email)
+                            classification, language, study_program, is_colleague = self.classify_with_retries(email)
                         except Exception as e:
                             logging.error("Classification failed for email %s: %s", email, e)
                             # Optionally flag the email or handle it differently
                             self.email_service.flag_email(email.message_id)
                             # Continue processing the next email
                             continue
-                        self.handle_classification(email, classification, study_program, language)
+                        self.handle_classification(email, classification, study_program, language, is_colleague)
                     else:
                         self.email_service.flag_email(email.message_id)
                 time.sleep(60)
@@ -119,10 +119,10 @@ class EmailResponder:
         with self._lock:
             self._current_status = status
 
-    def handle_classification(self, email, classification, study_program, language):
+    def handle_classification(self, email, classification, study_program, language, is_colleague):
         try:
             response_content = None
-            if classification.strip().lower() == "non-sensitive":
+            if classification.strip().lower() == "non-sensitive" and not is_colleague:
                 payload = {
                     "org_id": self.org_id,
                     "message": email.body,
@@ -134,7 +134,7 @@ class EmailResponder:
                 self.email_service.send_reply_email(original_email=email, reply_body=response_content['answer'])
             else:
                 logging.info(
-                    f"No proper answer can be found: {response_content and response_content['answer'] == "False"} or it is classified as sensitive")
+                    f"No proper answer can be found: {response_content and response_content['answer'] == "False"}, or mail was classified as sensitive or internal")
                 self.email_service.flag_email(email.message_id)
         except Exception as e:
             logging.error("Failed to send email response: %s", e)
