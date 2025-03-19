@@ -12,7 +12,9 @@ $chat-width: 100%;
 $header-height: 40px;
 $logo-size: 40px;
 
-*, *::before, *::after {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
 }
 
@@ -20,8 +22,8 @@ $logo-size: 40px;
 :host ::ng-deep .ng-dropdown-panel .ng-option .ng-option-label {
   white-space: normal !important;
   overflow: visible !important;
-  text-overflow: clip !important; 
-  word-break: break-word !important; 
+  text-overflow: clip !important;
+  word-break: break-word !important;
   display: block !important;
 }
 
@@ -40,7 +42,6 @@ $logo-size: 40px;
 
   @media (max-width: 600px) {
     width: 100%;
-    border: none;
     border-radius: 0;
     height: 100vh;
   }
@@ -123,6 +124,7 @@ $logo-size: 40px;
 
   .chat-footer {
     display: flex;
+    flex-direction: column; // Keeps warning below input field
     padding: 10px;
     background-color: $tum-acordion-blue;
     border-top: 1px solid $border-color;
@@ -131,56 +133,105 @@ $logo-size: 40px;
       padding: 6px;
     }
 
-    textarea {
-      box-sizing: border-box;
-      flex: 1;
-      padding: 10px;
-      border: 1px solid $border-color;
-      border-radius: 4px;
-      font-size: 14px;
-      line-height: 1.5;
-      resize: none;
-      overflow-y: hidden;
-      min-height: calc(1.5em * 1); // Minimum height for 1 line
-      max-height: calc(1.5em * 4); // Maximum height for 4 lines
+    .footer-row {
+      display: flex;
+      align-items: center; // Ensures vertical alignment
+      width: 100%;
 
-      @media (max-width: 600px) {
-        padding: 8px;
+      textarea {
+        flex: 1;
+        padding: 10px;
+        border: 1px solid $border-color;
+        border-radius: 4px;
         font-size: 14px;
+        resize: none;
+        overflow-y: hidden;
+        min-height: calc(1.5em * 1);
+        max-height: calc(1.5em * 4);
+
+        @media (max-width: 600px) {
+          padding: 8px;
+          font-size: 14px;
+        }
+      }
+
+      button {
+        background-color: $tum-light-blue;
+        color: white;
+        padding: 10px;
+        margin-left: 10px;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        @media (max-width: 600px) {
+          padding: 6px;
+          margin-left: 5px;
+        }
+
+        &:hover {
+          background-color: $primary-color;
+        }
+
+        &.disabled {
+          background-color: $border-color;
+          color: #aaa;
+          cursor: not-allowed;
+        }
+
+        svg {
+          fill: white;
+          width: 20px;
+          height: 20px;
+        }
       }
     }
 
-    button {
-      background-color: $tum-light-blue;
-      color: white;
-      padding: 10px;
-      margin-left: 10px;
-      border: none;
-      border-radius: 4px;
-      cursor: pointer;
+    .chat-warning {
+      width: 100%;
+      font-size: 12px;
+      color: #666;
+      text-align: left;
       display: flex;
       align-items: center;
-      justify-content: center;
+      gap: 6px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      max-width: 100%;
+      margin-top: 4px;
 
       @media (max-width: 600px) {
-        padding: 6px;
-        margin-left: 5px;
+        font-size: 10px;
+        gap: 2px;
+        margin-top: 2px;
       }
 
-      &:hover {
-        background-color: $primary-color;
+      a {
+        color: $tum-blue-light-dark;
+        font-weight: 600;
+        text-decoration: none;
+        flex-shrink: 0;
+
+        &:hover {
+          text-decoration: underline;
+          cursor: pointer;
+        }
       }
 
-      &.disabled {
-        background-color: $border-color;
-        color: #aaa;
-        cursor: not-allowed;
-      }
+      .warning-icon {
+        width: 14px;
+        height: 14px;
+        fill: #666;
+        flex-shrink: 0;
 
-      svg {
-        fill: white;
-        width: 20px;
-        height: 20px;
+        @media (max-width: 600px) {
+          width: 12px;
+          height: 12px;
+        }
       }
     }
   }
@@ -232,4 +283,3 @@ $logo-size: 40px;
     opacity: 0.7;
   }
 }
-

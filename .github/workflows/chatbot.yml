@@ -36,7 +36,8 @@ jobs:
             angelosUrl: '/api/chat',
             angelosAppApiKey: '${{secrets.ANGELOS_APP_API_KEY}}',
             organisation: 2,
-            filterByOrg: true
+            filterByOrg: true,
+            chatbotUrl: 'https://chatbot.ase.cit.tum.de/chat'
           };" > chatbot-ui/src/environments/environment.prod.ts
 
       - name: Build & Push (Org 2)
@@ -58,7 +59,8 @@ jobs:
             angelosUrl: '/api/chat',
             angelosAppApiKey: '${{secrets.ANGELOS_APP_API_KEY}}',
             organisation: 5,
-            filterByOrg: true
+            filterByOrg: true,
+            chatbotUrl: 'https://chatbot.ase.cit.tum.de/chat-heilbronn'
           };" > chatbot-ui/src/environments/environment.prod.heilbronn.ts
 
       - name: Build & Push (Org 5)

@@ -7,6 +7,7 @@ import { ActivatedRoute } from '@angular/router';
 import { ErrorSnackbarComponent } from '../utils/error-snackbar/error-snackbar.component';
 import { StudyProgramService } from '../services/study-program.service';
 import { StudyProgram } from '../data/study-program';
+import { environment } from '../../environments/environment';
 
 export interface ChatMessage {
   message: string;
@@ -24,7 +25,8 @@ export const MESSAGES = {
     `,
     errorMessage: `Sorry, but I am currently unable to answer your questions. Please try again at a later time.`,
     placeholder: `Enter your message here...`,
-    dropdownLabel: `Select Study Program`
+    dropdownLabel: `Select Study Program`,
+    warningMessage: `may make mistakes. Please verify important information.`,
   },
   de: {
     welcomeMessage: `
@@ -36,7 +38,8 @@ export const MESSAGES = {
     `,
     errorMessage: `Entschuldigung, aber ich kann Ihre Fragen derzeit nicht beantworten. Bitte versuchen Sie es später erneut.`,
     placeholder: `Geben Sie hier Ihre Nachricht ein...`,
-    dropdownLabel: `Studiengang auswählen`
+    dropdownLabel: `Studiengang auswählen`,
+    warningMessage: `kann Fehler machen. Bitte verifizieren Sie wichtige Informationen.`,
   }
 };
 
@@ -44,9 +47,9 @@ export const MESSAGES = {
   selector: 'app-chat',
   standalone: true,
   imports: [
-    CommonModule, 
-    FormsModule, 
-    NgSelectModule, 
+    CommonModule,
+    FormsModule,
+    NgSelectModule,
     ReactiveFormsModule,
     ErrorSnackbarComponent
   ],
@@ -60,15 +63,18 @@ export class ChatComponent implements OnInit, AfterViewChecked {
   @ViewChildren('messageElements') messageElements!: QueryList<ElementRef>;
   @ViewChild('errorSnackbar') errorSnackbar!: ErrorSnackbarComponent;
 
+  chatbotUrl: string = environment.chatbotUrl;
+
   messages: ChatMessage[] = [];
   userMessage: string = '';
   placeholderText: string = '';
   welcomeMessage: string = '';
   errorMessage: string = '';
   dropdownLabel: string = '';
+  warningMessage: string = '';
 
   studyPrograms: StudyProgram[] = [];
-  selectedStudyProgram: StudyProgram | null = null; 
+  selectedStudyProgram: StudyProgram | null = null;
 
   language: 'en' | 'de' = 'en'; // Default language is English
   private needScrollToBottom: boolean = false;
@@ -115,6 +121,7 @@ export class ChatComponent implements OnInit, AfterViewChecked {
     this.errorMessage = MESSAGES[this.language].errorMessage;
     this.placeholderText = MESSAGES[this.language].placeholder;
     this.dropdownLabel = MESSAGES[this.language].dropdownLabel;
+    this.warningMessage = MESSAGES[this.language].warningMessage;
   }
 
   updatePlaceholderText(width: number): void {
@@ -159,7 +166,7 @@ export class ChatComponent implements OnInit, AfterViewChecked {
       const selectedProgramName = this.selectedStudyProgram?.name
         .toLowerCase()
         .replace(/\s+/g, '-') || '';
-  
+
       // Add a loading message to indicate the bot is typing
       const loadingMessage: ChatMessage = { message: '', type: 'loading' };
       this.messages.push(loadingMessage);
@@ -168,7 +175,7 @@ export class ChatComponent implements OnInit, AfterViewChecked {
       const nonLoadingMessages = this.messages.filter(msg => msg.type !== 'loading');
       // Keep only the last 5 messages, if there are 5 or more
       const messagesToSend = nonLoadingMessages.slice(-5);
-  
+
       // Call the bot service with the filtered messages
       this.chatbotService.getBotResponse(messagesToSend, selectedProgramName).subscribe({
         next: (response: any) => {
@@ -229,16 +236,16 @@ export class ChatComponent implements OnInit, AfterViewChecked {
 
     // Handle overflow
     if (textarea.scrollHeight > maxHeight) {
-        textarea.style.overflowY = 'auto';
+      textarea.style.overflowY = 'auto';
     } else {
-        textarea.style.overflowY = 'hidden';
+      textarea.style.overflowY = 'hidden';
     }
   }
 
   resetTextAreaHeight(): void {
     if (this.messageInput) {
       const textarea = this.messageInput.nativeElement as HTMLTextAreaElement;
-  
+
       // Reset the height back to a single line
       const computed = window.getComputedStyle(textarea);
       const lineHeight = parseFloat(computed.lineHeight);
@@ -246,9 +253,9 @@ export class ChatComponent implements OnInit, AfterViewChecked {
       const paddingBottom = parseFloat(computed.paddingBottom);
       const borderTop = parseFloat(computed.borderTopWidth);
       const borderBottom = parseFloat(computed.borderBottomWidth);
-  
+
       const singleLineHeight = lineHeight + paddingTop + paddingBottom + borderTop + borderBottom;
-  
+
       textarea.style.height = `${singleLineHeight}px`;
       textarea.style.overflowY = 'hidden';
     }
