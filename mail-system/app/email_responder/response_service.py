@@ -7,8 +7,8 @@ from app.common.environment import config
 
 class ResponseService:
     def __init__(self):
-        self.angelos_url = config.ANGELOS_URL
-        self.api_url = f"{self.angelos_url}/mail/ask"
+        self.server_url = config.SERVER_URL
+        self.api_url = f"{self.server_url}/mail/ask"
         self.session = requests.Session()
         self.api_key = config.ANGELOS_APP_API_KEY
         self._set_authorization_header()

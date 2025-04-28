@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'mail-system/**'
-      - '.github/workflows/mail-system.yml'
 
 jobs:
   build:
@@ -87,9 +84,9 @@ jobs:
             echo "GPU_HOST=${{ vars.GPU_HOST }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/mail-system/.env.prod
             echo "GPU_MODEL=${{ vars.GPU_MODEL }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/mail-system/.env.prod
             echo "GPU_URL=${{ vars.GPU_URL }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/mail-system/.env.prod
-            echo "ANGELOS_URL=${{ secrets.ANGELOS_URL }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/mail-system/.env.prod
+            echo "SERVER_URL=${{ secrets.SERVER_URL }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/mail-system/.env.prod
             echo "OPENAI_MODEL=${{ vars.OPENAI_MODEL }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/mail-system/.env.prod
-            echo "ANGELOS_APP_API_KEY=${{ secrets.ANGELOS_APP_API_KEY }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/mail-system/.env.prod
+            echo "ANGELOS_APP_API_KEY=${{ secrets.EUNOMIA_SECRET }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/mail-system/.env.prod
 
       - name: SSH to VM and Execute Docker-Compose Up for Eunomia
         uses: appleboy/ssh-action@v1.0.3

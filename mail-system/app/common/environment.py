@@ -34,7 +34,7 @@ class Config:
     TEST_EML_PATH = os.getenv("TEST_EML_PATH")
 
     # angelos
-    ANGELOS_URL = os.getenv("ANGELOS_URL")
+    SERVER_URL = os.getenv("SERVER_URL")
     ANGELOS_APP_API_KEY = os.getenv("ANGELOS_APP_API_KEY")
 
     # openai

@@ -22,7 +22,7 @@ services:
       - GPU_HOST
       - GPU_MODEL
       - GPU_URL
-      - ANGELOS_URL
+      - SERVER_URL
       - OPENAI_MODEL
       - ANGELOS_APP_API_KEY
     networks:
