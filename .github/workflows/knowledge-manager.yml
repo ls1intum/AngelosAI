@@ -22,7 +22,7 @@ jobs:
           echo "export const environment = {
             production: true,
             backendUrl: '/api',
-            angelosAppApiKey: '${{ secrets.ANGELOS_APP_API_KEY }}'
+            angelosAppApiKey: '${{ secrets.ANGELOS_SECRET }}'
           };" > knowledge-manager-ui/src/environments/environment.prod.ts
 
       - name: Verify Environment File Creation
