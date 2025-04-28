@@ -25,6 +25,7 @@ import { StudyProgramAdmin } from '../../data/model/study-program-admin.model';
 import { StatusButtonComponent } from '@app/layout/buttons/status-button/status-button.component';
 import { MatIconModule } from '@angular/material/icon';
 import { OrganisationService } from '@app/services/organisation.service';
+import { StatusCardComponent } from '@app/layout/cards/status-card/status-card.component';
 
 
 @Component({
@@ -35,12 +36,11 @@ import { OrganisationService } from '@app/services/organisation.service';
     MatIconModule,
     MainTableComponent,
     MatSnackBarModule,
-    NgClass,
     NgIf,
     AddButtonComponent,
     OrganisationComponent,
     MatPaginatorModule,
-    StatusButtonComponent
+    StatusCardComponent
   ],
   providers: [
     { provide: MatPaginatorIntl, useClass: CustomPaginatorIntl }
@@ -58,6 +58,7 @@ export class AdminComponent implements OnInit {
 
   mailStatus: MailStatus | null = null;
   mailCredentials: string | null = null;
+  organisationUrl: string | null = null;
   statusText: string = "";
 
   users: User[] = [];
@@ -128,6 +129,7 @@ export class AdminComponent implements OnInit {
         this.currentUser = userDTO;
         this.userIsSystemAdmin = this.currentUser.isSystemAdmin;
         this.chatbotActive = this.currentUser.organisationActive;
+        this.organisationUrl = this.currentUser.organisationUrl? this.currentUser.organisationUrl! : null;
 
         return forkJoin({
           programs: this.studyProgramService.fetchStudyPrograms(),

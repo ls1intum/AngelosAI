@@ -1,0 +1,20 @@
+<div [ngClass]="['card', borderClass]" (click)="handleClick()">
+    <!-- Leading Icon -->
+    <div class="icon leading" *ngIf="leadingIcon">
+      <mat-icon>{{ leadingIcon }}</mat-icon>
+    </div>
+  
+    <!-- Text-Bereich -->
+    <div class="text-block">
+      <h3 class="title">{{ title }}</h3>
+      <p class="subtitle">{{ subtitle }}</p>
+      <p class="status-label" [ngClass]="borderClass">
+        Status: {{ getStatusText(status) }}
+      </p>
+    </div>
+  
+    <!-- Trailing Icon -->
+    <div class="icon trailing" *ngIf="trailingIcon">
+      <mat-icon>{{ trailingIcon }}</mat-icon>
+    </div>
+  </div>

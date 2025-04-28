@@ -1,86 +1,84 @@
 <div class="page-wrapper">
   <h1 class="page-header">
-    {{ currentUser ? 'Administration - ' + currentUser.organisationName : 'Administration' }}
+    Administration
+    <span class="header-separator">|</span>
+    <span class="team-name">{{ currentUser?.organisationName || '' }}</span>
   </h1>
 
-  <div class="admin-container">
-    <!-- LEFT PANE: Mail + Benutzer -->
-    <div class="left-pane">
+  <div class="divider"></div>
+  
+  <!-- ======================================================
+    SECTION 1 – Systemstatus
+  ====================================================== -->
+  <section class="admin-section">
+    <h3 class="section-header">Systemstatus</h3>
 
-      <!-- MAIL SECTION -->
-      <div class="admin-table">
-        <div class="header-container">
-          <h3 class="page-header">Systemstatus</h3>
-          <app-status-button 
-            startText="Chatbot starten"
-            stopText="Chatbot pausieren"
-            [active]="chatbotActive" 
-            (onClick)="changeChatbotStatus()">
-          </app-status-button>
-        </div>
-        <div class="header-container">
-          <div></div>
-          <app-status-button *ngIf="mailStatus === MailStatus.ACTIVE"
-            startText="Mailantworten starten"
-            stopText="Mailantworten pausieren"
-            [active]="mailStatus === MailStatus.ACTIVE" 
-            (onClick)="changeMailStatus()">
-          </app-status-button>
-        </div>
+    <div class="status-row">
+      <!-- Status‑Card: Mail System -->
+      <app-status-card
+        title="Mail System"
+        [subtitle]="mailCredentials || 'Noch keine E-Mail Adresse konfiguriert'"
+        leadingIcon="mail"
+        [trailingIcon]="mailStatus === MailStatus.ACTIVE ? 'pause' : 'play_arrow'"
+        [status]="mailStatus === MailStatus.ACTIVE ? 'active' : (mailStatus === MailStatus.INACTIVE ? 'inactive' : 'error')"
+        [onEdit]="mailStatus === MailStatus.ACTIVE ? changeMailStatus.bind(this) : configureMail.bind(this)">
+      </app-status-card>
 
-        <div
-          class="mail-section mail-button"
-          [ngClass]="{
-            'status-active': mailStatus === MailStatus.ACTIVE,
-            'status-inactive': mailStatus === MailStatus.INACTIVE,
-            'status-error': mailStatus === MailStatus.ERROR
-          }"
-          (click)="configureMail()"
-          >
-          <div class="mail-section-content">
-            <p>
-              <strong>E-Mail Adresse:</strong>
-              {{ mailCredentials || 'Noch keine E-Mail Adresse konfiguriert' }}
-            </p>
-            <p>
-              <strong>Status:</strong>
-              {{ statusText }}
-            </p>
+      <!-- Status‑Card: Chatbot -->
+      <app-status-card
+        title="Chatbot"
+        [subtitle]="organisationUrl || (chatbotActive ? 'Chatbot online' : 'Nicht aktiviert für dieses Team')"
+        leadingIcon="chat"
+        [trailingIcon]="chatbotActive ? 'pause' : 'play_arrow'"
+        [status]="chatbotActive? 'active' : 'inactive'"
+        [onEdit]="changeChatbotStatus.bind(this)">
+      </app-status-card>
+    </div>
+  </section>
+
+  <!-- ======================================================
+    SECTION 2 – Team
+  ====================================================== -->
+  <section class="admin-section">
+    <h3 class="section-header">
+      Team
+    </h3>
+
+    <div class="admin-container">
+      <!-- Left Pane -->
+      <div class="left-pane">
+
+        <organisation-table *ngIf="userIsSystemAdmin"></organisation-table>
+
+        <!-- User -->
+        <div class="admin-table">
+          <h3 class="page-header">Nutzer</h3>
+          <app-main-table
+            [dataSource]="users"
+            [columns]="userColumns"
+            [parentComponent]="this">
+          </app-main-table>
+        </div>
+      </div>
+
+      <!-- Study Programs -->
+      <div class="right-pane">
+        <div class="admin-table">
+          <div class="header-container">
+            <h3 class="page-header">Studiengänge</h3>
+            <app-add-button
+              [text]="'Studiengang hinzufügen'"
+              (click)="addStudyProgram()">
+            </app-add-button>
           </div>
 
-          <mat-icon class="edit-icon">edit</mat-icon>
+          <app-main-table
+            [dataSource]="studyPrograms"
+            [columns]="studyProgramColumns"
+            [parentComponent]="this">
+          </app-main-table>
         </div>
       </div>
-
-      <organisation-table *ngIf="userIsSystemAdmin"></organisation-table>
-
-      <!-- BENUTZER SECTION -->
-      <div class="admin-table">
-        <h3 class="page-header">Nutzer</h3>
-        <app-main-table
-          [dataSource]="users"
-          [columns]="userColumns"
-          [parentComponent]="this"
-        ></app-main-table>
-      </div>
     </div>
-
-    <!-- RIGHT PANE: Studiengänge -->
-    <div class="right-pane">
-      <div class="admin-table">
-        <div class="header-container">
-          <h3 class="page-header">Studiengänge</h3>
-          <app-add-button
-            [text]="'Studiengang hinzufügen'"
-            (click)="addStudyProgram()"
-          ></app-add-button>
-        </div>
-        <app-main-table
-          [dataSource]="studyPrograms"
-          [columns]="studyProgramColumns"
-          [parentComponent]="this"
-        ></app-main-table>
-      </div>
-    </div>
-  </div>
+  </section>
 </div>

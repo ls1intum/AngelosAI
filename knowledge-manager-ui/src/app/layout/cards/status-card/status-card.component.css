@@ -1,0 +1,81 @@
+/* Host container ───────────────────────────────────────────── */
+.card {
+    --border-radius: 8px;
+    --padding-y: 24px; 
+    --padding-x: 32px;
+  
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    cursor: pointer;
+  
+    border: 2px solid var(--border-color);
+    border-radius: var(--border-radius);
+    padding: var(--padding-y) var(--padding-x);
+  
+    background: white;
+  
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.10);
+    transition: box-shadow 0.2s ease, transform 0.2s ease;
+  }
+  
+  /* Hover effect */
+  .card:hover {
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+    background: var(--tum-acordion-blue)
+  }
+  
+  /* Icon‑Container ───────────────────────────────────────────── */
+  .icon {
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .icon.leading { 
+    height: 56px;
+    width: 56px;
+  }
+  
+  /* Grössen differenzieren */
+  .icon.leading  mat-icon { 
+    font-size: 48px; 
+    margin: 0; padding: 0;
+    color: var(--tum-light-blue); 
+    height: 48px;
+    width: 48px;
+    line-height: 1;
+  }
+  .icon.trailing mat-icon { font-size: 28px; margin: 0; color: var(--primary-color) }
+  
+  /* Textblock ────────────────────────────────────────────────── */
+  .text-block {
+    flex: 1 1 auto;
+    min-width: 0;
+  }
+  
+  .title {
+    margin: 0 0 6px 0;
+    font-size: 1.75rem;
+    line-height: 1.2;
+    color: var(--primary-color);
+  }
+  
+  .subtitle {
+    margin: 0 0 12px 0;
+    font-weight: 600;
+    color: var(--tum-blue);
+    word-break: break-all;
+  }
+  
+  .status-label {
+    margin: 0;
+    font-weight: 500;
+  }
+  
+  /* Farb‑Klassen (unverändert) ───────────────────────────────── */
+  .status-active   { border-color: #2ecc71; color: #2ecc71; }
+  .status-inactive { border-color: orange;  color: orange;  }
+  .status-error    { border-color: #e74c3c; color: #e74c3c;}

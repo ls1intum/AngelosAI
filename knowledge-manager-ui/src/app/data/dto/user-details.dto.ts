@@ -6,4 +6,5 @@ export interface UserDetailsDTO {
   isApproved: boolean;
   organisationName: string;
   organisationActive: boolean;
+  organisationUrl?: string;
 }

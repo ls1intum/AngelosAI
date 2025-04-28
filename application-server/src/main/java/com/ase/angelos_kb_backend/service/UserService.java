@@ -64,6 +64,7 @@ public class UserService {
         userDetails.setApproved(user.isApproved());
         userDetails.setOrganisationName(user.getOrganisation().getName());
         userDetails.setOrganisationActive(Boolean.TRUE.equals(user.getOrganisation().getResponseActive()));
+        userDetails.setOrganisationUrl(user.getOrganisation().getChatbotUrl());
         
         return userDetails;
     }

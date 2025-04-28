@@ -111,6 +111,12 @@ public class OrganisationService {
         }
     }
 
+    public void setChatbotUrl(Long orgId, String chatbotUrl) {
+        Organisation org = this.getOrganisationById(orgId);
+        org.setChatbotUrl(chatbotUrl);
+        organisationRepository.save(org);
+    }
+
     @Cacheable("orgResponseActive") // or your chosen cache name
     public boolean isResponseActive(Long orgId) {
         return organisationRepository.findById(orgId)

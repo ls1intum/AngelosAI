@@ -32,6 +32,9 @@ public class Organisation {
     @Column(nullable = true)
     private Boolean responseActive = true;
 
+    @Column(nullable = true)
+    private String chatbotUrl;
+
     @OneToMany(mappedBy = "organisation", cascade = CascadeType.ALL, orphanRemoval = true)
     private List<User> users;
 

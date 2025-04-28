@@ -1,11 +1,16 @@
 <div class="app-container">
   <!-- Top Bar -->
+  <!-- Top Bar -->
   <div class="kb-header">
-    <h2>CIT Knowledge Base Manager</h2>
+    <div class="header-left">
+      <img src="assets/kb_logo.png" alt="StudiAssist Logo" class="sa-logo" />
+    </div>
     <div class="header-right">
-      <!-- Conditionally show logout link if tabs are visible (i.e., user is logged in) -->
       <a *ngIf="showTabs" class="logout-link" (click)="logout()">Abmelden</a>
-      <img src="assets/logo.png" alt="Logo" class="kb-logo" />
+      <div class="partner">
+        <span class="made-at">Made at</span>
+        <img src="assets/logo.png" alt="Partner Logo" class="kb-logo" />
+      </div>
     </div>
   </div>
 
