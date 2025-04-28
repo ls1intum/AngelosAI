@@ -57,7 +57,7 @@ jobs:
           proxy_key: ${{ secrets.DEPLOYMENT_GATEWAY_SSH_KEY }}
           proxy_port: ${{ vars.DEPLOYMENT_GATEWAY_PORT }}
           source: "rag/docker-compose.yml"
-          target: "/home/${{ vars.VM_USERNAME }}/${{ github.repository }}/rag/"
+          target: "/home/${{ vars.VM_USERNAME }}/${{ github.repository }}"
 
       # Copy the Weaviate compose file into the appropriate subfolder on the VM
       - name: Copy Weaviate Compose File to VM
@@ -71,7 +71,7 @@ jobs:
           proxy_key: ${{ secrets.DEPLOYMENT_GATEWAY_SSH_KEY }}
           proxy_port: ${{ vars.DEPLOYMENT_GATEWAY_PORT }}
           source: "rag/docker/weaviate.yml"
-          target: "/home/${{ vars.VM_USERNAME }}/${{ github.repository }}/rag/docker/"
+          target: "/home/${{ vars.VM_USERNAME }}/${{ github.repository }}"
 
       # Copy the default Weaviate env file into its proper folder so that the compose file’s relative path works
       - name: Copy Weaviate Default Env File to VM
@@ -85,7 +85,7 @@ jobs:
           proxy_key: ${{ secrets.DEPLOYMENT_GATEWAY_SSH_KEY }}
           proxy_port: ${{ vars.DEPLOYMENT_GATEWAY_PORT }}
           source: "rag/docker/weaviate/default.env"
-          target: "/home/${{ vars.VM_USERNAME }}/${{ github.repository }}/rag/docker/weaviate/"
+          target: "/home/${{ vars.VM_USERNAME }}/${{ github.repository }}"
 
       - name: Copy Weaviate backup script to VM
         uses: appleboy/scp-action@v0.1.7
