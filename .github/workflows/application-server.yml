@@ -4,9 +4,6 @@ on:
   push:
     branches:
       - main
-    paths:
-      - 'application-server/**'
-      - '.github/workflows/application-server.yml'
 
 jobs:
   build:
