@@ -1,6 +1,6 @@
 services:
   chatbot:
-    image: "ghcr.io/ls1intum/angelos-ui:latest"
+    image: "ghcr.io/ls1intum/angelosai/angelos-ui:latest"
     container_name: chatbot
     expose:
       - "80" 
@@ -8,7 +8,7 @@ services:
       - angelos-network 
 
   chatbot-org5:
-    image: "ghcr.io/ls1intum/angelos-ui:org5-latest"
+    image: "ghcr.io/ls1intum/angelosai/angelos-ui-org5-latest"
     container_name: chatbot-org5
     expose:
       - "80"

@@ -33,7 +33,7 @@ jobs:
           platforms: amd64, arm64
           file: rag/Dockerfile
           context: rag
-          tags: ghcr.io/ls1intum/angelos-app:latest
+          tags: ghcr.io/ls1intum/angelosai/angelos-app:latest
           push: true
 
   deploy:

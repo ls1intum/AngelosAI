@@ -45,7 +45,7 @@ jobs:
           context: chatbot-ui
           build-args: |
             ANGULAR_CONFIG=production
-          tags: ghcr.io/ls1intum/angelos-ui:latest
+          tags: ghcr.io/ls1intum/angelosai/angelos-ui:latest
           push: true
           no-cache: true
           
@@ -68,7 +68,7 @@ jobs:
           context: chatbot-ui
           build-args: |
             ANGULAR_CONFIG=production-heilbronn
-          tags: ghcr.io/ls1intum/angelos-ui:org5-latest
+          tags: ghcr.io/ls1intum/angelosai/angelos-ui-org5-latest
           push: true
           no-cache: true
 
