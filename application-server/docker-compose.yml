@@ -11,6 +11,7 @@ services:
       - .env.postgres
     volumes:
       - postgres_db_data:/var/lib/postgresql/data
+      - postgres_backups:/backups
     networks:
       - angelos-network
 
@@ -30,6 +31,7 @@ services:
 
 volumes:
   postgres_db_data:
+  postgres_backups:
 
 networks:
   angelos-network:
