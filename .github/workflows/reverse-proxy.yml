@@ -60,7 +60,7 @@ jobs:
           proxy_key: ${{ secrets.DEPLOYMENT_GATEWAY_SSH_KEY }}
           proxy_port: ${{ vars.DEPLOYMENT_GATEWAY_PORT }}
           source: "reverse-proxy/docker-compose.yml"
-          target: "/home/${{ vars.VM_USERNAME }}/${{ github.repository }}/reverse-proxy/"
+          target: "/home/${{ vars.VM_USERNAME }}/${{ github.repository }}"
 
       # Copy Reverse Proxy nginx.conf to the VM
       - name: Copy Reverse Proxy nginx.conf to VM
@@ -74,7 +74,7 @@ jobs:
           proxy_key: ${{ secrets.DEPLOYMENT_GATEWAY_SSH_KEY }}
           proxy_port: ${{ vars.DEPLOYMENT_GATEWAY_PORT }}
           source: "reverse-proxy/nginx.conf"
-          target: "/home/${{ vars.VM_USERNAME }}/${{ github.repository }}/reverse-proxy/"
+          target: "/home/${{ vars.VM_USERNAME }}/${{ github.repository }}"
 
       - name: SSH to VM and Start Reverse Proxy
         uses: appleboy/ssh-action@v1.0.3
