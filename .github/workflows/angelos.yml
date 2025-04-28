@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - main
+    paths:
+      - 'rag/**'
+      - '.github/workflows/angelos.yml'
 
 jobs:
   build:
