@@ -15,7 +15,7 @@ services:
       - angelos-network
 
   angelos-server:
-    image: ghcr.io/ls1intum/angelos-server:latest
+    image: ghcr.io/ls1intum/angelosai/angelos-server:latest
     container_name: angelos-server
     depends_on:
       - db

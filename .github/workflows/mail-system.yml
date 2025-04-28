@@ -33,7 +33,7 @@ jobs:
           platforms: amd64, arm64
           file: mail-system/Dockerfile
           context: mail-system
-          tags: ghcr.io/ls1intum/eunomia-app:latest
+          tags: ghcr.io/ls1intum/angelosai/eunomia-app:latest
           push: true
 
   deploy:

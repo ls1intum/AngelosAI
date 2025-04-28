@@ -35,7 +35,7 @@ jobs:
           platforms: linux/amd64, linux/arm64
           context: reverse-proxy
           file: reverse-proxy/Dockerfile
-          tags: ghcr.io/ls1intum/custom-openresty:latest
+          tags: ghcr.io/ls1intum/angelosai/custom-openresty:latest 
           push: true
           no-cache: true
 

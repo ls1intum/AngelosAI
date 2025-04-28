@@ -1,6 +1,6 @@
 services:
   knowledge-manager:
-    image: "ghcr.io/ls1intum/knowledge-manager:latest"
+    image: "ghcr.io/ls1intum/angelosai/knowledge-manager:latest"
     container_name: knowledge-manager
     expose:
       - "80"
