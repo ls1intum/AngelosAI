@@ -199,7 +199,7 @@ export class ChatComponent implements OnInit, AfterViewChecked {
           this.disableSending = false;
           if (error.message && error.message === 'TokenMissing') {
             this.errorSnackbar.showError('Ihre Session ist abgelaufen. Bitte melden Sie sich erneut an.', 5000);
-          }∂ƒ
+          }
         }
       });
     }
