@@ -98,8 +98,8 @@ jobs:
             echo "UPLOAD_DIR=${{ vars.UPLOAD_DIR }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/application-server/.env
             echo "ADMIN_MAIL=${{ secrets.ADMIN_MAIL }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/application-server/.env
             echo "ADMIN_PASSWORD=${{ secrets.ADMIN_PASSWORD }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/application-server/.env
-            echo "KB_ORIGIN=${{ secrets.KB_ORIGIN }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/application-server/.env
-            echo "CHATBOT_ORIGIN=${{ secrets.CHATBOT_ORIGIN }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/application-server/.env
+            echo "KB_ORIGIN=${{ vars.KB_ORIGIN }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/application-server/.env
+            echo "CHATBOT_ORIGIN=${{ vars.CHATBOT_ORIGIN }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/application-server/.env
             echo "ANGELOS_URL=${{ secrets.ANGELOS_URL }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/application-server/.env
             echo "ANGELOS_SECRET=${{ secrets.ANGELOS_SECRET }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/application-server/.env
             echo "ANGELOS_USERNAME=${{ secrets.ANGELOS_USERNAME }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/application-server/.env
