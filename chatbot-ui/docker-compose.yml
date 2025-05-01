@@ -8,8 +8,8 @@ services:
       - angelos-network 
 
   chatbot-org5:
-    image: "ghcr.io/ls1intum/angelosai/angelos-ui-org5-latest"
-    container_name: chatbot-org5
+    image: "ghcr.io/ls1intum/angelosai/angelos-ui-org3-latest"
+    container_name: chatbot-heilbronn
     expose:
       - "80"
     networks:
