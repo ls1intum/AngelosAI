@@ -76,7 +76,6 @@ jobs:
           source: "reverse-proxy/nginx.conf"
           target: "/home/${{ vars.VM_USERNAME }}/${{ github.repository }}"
 
-      # SSH to the VM and start up the Reverse Proxy
       - name: SSH to VM and Start Reverse Proxy
         uses: appleboy/ssh-action@v1.0.3
         with:
