@@ -52,18 +52,18 @@ jobs:
           push: true
           no-cache: true
           
-      - name: Create Environment File (Org 5)
+      - name: Create Environment File (Org 3)
         run: |
           echo "export const environment = {
             production: true,
             angelosUrl: '/api/chat',
             angelosAppApiKey: '${{secrets.ANGELOS_SECRET}}',
-            organisation: 5,
+            organisation: 3,
             filterByOrg: true,
             chatbotUrl: 'https://chatbot.ase.cit.tum.de/chat-heilbronn'
           };" > chatbot-ui/src/environments/environment.prod.heilbronn.ts
 
-      - name: Build & Push (Org 5)
+      - name: Build & Push (Org 3)
         uses: docker/build-push-action@v6
         with:
           platforms: amd64, arm64
@@ -71,7 +71,7 @@ jobs:
           context: chatbot-ui
           build-args: |
             ANGULAR_CONFIG=production-heilbronn
-          tags: ghcr.io/ls1intum/angelosai/angelos-ui-org5-latest
+          tags: ghcr.io/ls1intum/angelosai/angelos-ui-org3-latest
           push: true
           no-cache: true
 
