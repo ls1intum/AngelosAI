@@ -91,19 +91,19 @@ public class OrganisationController {
     }
 
     @PutMapping("/setChatbotUrl/{orgId}")
-     public ResponseEntity<String> setChatbotUrl(
-             @RequestHeader("Authorization") String token,
-             @PathVariable Long orgId,
-             @RequestParam String chatbotUrl) {
-         // Verify system admin access
-         if (!jwtUtil.extractIsSystemAdmin(token.replace("Bearer ", ""))) {
-             return ResponseEntity.status(HttpStatus.FORBIDDEN).body("Access denied.");
-         }
- 
-         organisationService.setChatbotUrl(orgId, chatbotUrl);
- 
-         return ResponseEntity.ok().build();
-     }
+    public ResponseEntity<String> setChatbotUrl(
+            @RequestHeader("Authorization") String token,
+            @PathVariable Long orgId,
+            @RequestParam String chatbotUrl) {
+        // Verify system admin access
+        if (!jwtUtil.extractIsSystemAdmin(token.replace("Bearer ", ""))) {
+            return ResponseEntity.status(HttpStatus.FORBIDDEN).body("Access denied.");
+        }
+
+        organisationService.setChatbotUrl(orgId, chatbotUrl);
+
+        return ResponseEntity.ok().build();
+    }
 
     @PutMapping("/chatActive")
     public ResponseEntity<OrganisationDTO> setChatStatus(
