@@ -107,13 +107,8 @@ public class UserController {
      */
     @PostMapping("/register")
     public ResponseEntity<UserDTO> registerUser(@RequestBody RegisterRequestDTO registerRequest) {
-        try {
-            UserDTO newUser = userService.registerUser(registerRequest.getEmail(), registerRequest.getPassword(), registerRequest.getOrgId());
-            return ResponseEntity.ok(newUser);
-        } catch(Exception e) {
-            System.out.println(e.getMessage());
-            return ResponseEntity.badRequest().build();
-        }
+        UserDTO newUser = userService.registerUser(registerRequest.getEmail(), registerRequest.getPassword(), registerRequest.getOrgId());
+        return ResponseEntity.ok(newUser);
     }
 
     /**
