@@ -5,5 +5,5 @@ export const environment = {
     organisation: 2,
     filterByOrg: true,
     chatbotUrl: "http://localhost/chat",
-    loginRequired: true,
+    loginRequired: false,
 };

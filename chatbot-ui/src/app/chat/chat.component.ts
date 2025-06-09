@@ -68,7 +68,7 @@ export class ChatComponent implements OnInit, AfterViewChecked {
   @ViewChild('successSnackbar') successSnackbar!: SuccessSnackbarComponent;
 
   chatbotUrl: string = environment.chatbotUrl;
-  companyUrl: string = "https://studi-assist.de"
+  companyUrl: string = environment.chatbotUrl;
 
   messages: ChatMessage[] = [];
   userMessage: string = '';
