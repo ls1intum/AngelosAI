@@ -35,7 +35,7 @@ export abstract class BaseDialogDirective<T extends BaseItem> {
   ) {
     this.editMode = !!data.id;
     this.availableStudyPrograms = data.availableStudyPrograms || [];
-    this.studyProgramsCopy = [...data.studyPrograms];
+    this.studyProgramsCopy = this.editMode ? [...data.studyPrograms] : data.selectedProgram ? [data.selectedProgram] : [];
   }
 
   ngOnInit(): void {

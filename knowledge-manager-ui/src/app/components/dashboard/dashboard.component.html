@@ -1,0 +1,84 @@
+<div class="page-wrapper">
+    <h1 class="page-header">Dashboard</h1>
+    <div class="divider"></div>
+  
+    <!-- ---------- Timeframe selector ------------------- -->
+    <mat-radio-group class="frame-selector" [formControl]="frameCtrl">
+      <mat-radio-button value="today">Heute</mat-radio-button>
+      <mat-radio-button value="week">Diese Woche</mat-radio-button>
+      <mat-radio-button value="month">Diesen Monat</mat-radio-button>
+      <mat-radio-button value="total">Gesamt</mat-radio-button>
+    </mat-radio-group>
+  
+    <!-- ---------- GRID --------------------------------- -->
+    <div class="grid">
+      <mat-card class="line-card">
+        <div *ngIf="lineCfg; else noDataLine" class="chart-wrapper">
+          <canvas baseChart
+            [data]="lineCfg.data"
+            [options]="lineCfg.options"
+            [type]="lineCfg.type">
+          </canvas>
+        </div>
+        <ng-template #noDataLine>
+          <p class="empty-msg">Keine Nutzungsdaten im gewählten Zeitraum.</p>
+        </ng-template>
+      </mat-card>
+  
+      <div class="stats">
+        <mat-card class="stat-box">
+            <div class="stat‐content">
+              <mat-icon class="stat-icon">chat</mat-icon>
+              <div>
+                <h3>{{ chatCount }}</h3>
+                <p class="stat-label">Chat-Anfragen</p>
+              </div>
+            </div>
+          </mat-card>
+          
+          <mat-card class="stat-box">
+            <div class="stat‐content">
+              <mat-icon class="stat-icon">mail</mat-icon>
+              <div>
+                <h3>{{ mailSensitive }}</h3>
+                <p class="stat-label">Sensitive E-Mails</p>
+              </div>
+            </div>
+            <div class="stat‐content">
+              <mat-icon class="stat-icon">alternate_email</mat-icon>
+              <div>
+                <h3>{{ mailAuto }}</h3>
+                <p class="stat-label">Automatische E-Mail Antworten</p>
+              </div>
+            </div>
+          </mat-card>
+        <mat-card class="stat-box pie">
+            <h3>{{ posPct }} % positives Feedback</h3>          
+            <div class="pie-chart-wrapper">
+              <canvas baseChart
+                *ngIf="pieCfg"
+                [data]="pieCfg.data"
+                [options]="pieCfg.options"
+                [type]="pieCfg.type">
+              </canvas>
+            </div>
+          </mat-card>
+      </div>
+    </div>
+  
+    <!-- ---------- LIMITS -------------------------------- -->
+    <h3 class="section-header">Aktuelle Limits</h3>
+    <div class="limits" *ngIf="limits">
+    <mat-card>{{ limits.totalLimit }} Anfragen/Tag (gesamt)</mat-card>
+    <mat-card>{{ limits.chatLimit }} Chat-Anfragen/Tag (IP)</mat-card>
+    <mat-card>{{ limits.mailLimit }} Mail-Antworten/Tag (Account)</mat-card>
+    </div>
+  
+    <!-- ---------- FEEDBACK LOG -------------------------- -->
+    <h3 class="section-header">Feedback Log</h3>
+    <app-main-table
+      [dataSource]="feedbackRows"
+      [columns]="feedbackColumns"
+      [parentComponent]="this">
+    </app-main-table>
+  </div>

@@ -1,0 +1,27 @@
+$studi-chat-primary:    #779EC4;
+
+/* General wrapper */
+.imprint-wrapper {
+    font-family: roboto, sans-serif;
+    max-width: 800px;
+    margin: 32px auto;
+    padding: 0 24px 64px;
+    line-height: 1.55;
+    font-size: 15px;
+    color: #333;
+  }
+  
+  /* Typography tweaks */
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 24px;
+    color: $studi-chat-primary;
+  }
+  
+  h2 {
+    margin: 32px 0 8px;
+    font-size: 1.25rem;
+    color: var(--primary-color, #072140);
+  }
+  
+  p { margin: 0 0 12px; }

@@ -9,6 +9,7 @@ import { RegisterComponent } from './components/register/register.component';
 import { ConfirmMailComponent } from './components/confirm-mail/confirm-mail.component';
 import { GuardComponent } from './components/guard/guard.component';
 import { RedirectGuard } from './guards/redirect.guard';
+import { DashboardComponent } from './components/dashboard/dashboard.component';
 
 export const routes: Routes = [
   { path: 'login', 
@@ -45,6 +46,11 @@ export const routes: Routes = [
   {
     path: 'websites',
     component: WebsitesComponent,
+    canActivate: [AuthGuard]
+  },
+  {
+    path: 'dashboard',
+    component: DashboardComponent,
     canActivate: [AuthGuard]
   },
   {

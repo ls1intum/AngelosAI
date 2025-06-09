@@ -28,3 +28,25 @@ class ResponseService:
         except Exception as err:
             logging.error(f"An error occurred: {err}")
             raise
+        
+    def log_event(self, event_type, org_id, metadata=None):
+        """Send a non-blocking event log request to the Java backend."""
+        try:
+            headers = self.headers.copy()
+            headers["x-api-key"] = config.ANGELOS_APP_API_KEY
+            
+            event_payload = {
+                "eventType": event_type,
+                "metadata": metadata,
+                "orgID": org_id,
+            }
+            
+            # Fire-and-forget, non-blocking
+            self.session.post(
+                f"{self.server_url}/event/create",
+                json=event_payload,
+                headers=self.headers,
+                timeout=2
+            )
+        except Exception as err:
+            logging.warning(f"Failed to log event {event_type}: {err}")

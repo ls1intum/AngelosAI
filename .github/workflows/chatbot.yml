@@ -33,11 +33,12 @@ jobs:
         run: |
           echo "export const environment = {
             production: true,
-            angelosUrl: '/api/chat',
+            angelosUrl: '/api',
             angelosAppApiKey: '${{secrets.ANGELOS_SECRET}}',
             organisation: 2,
             filterByOrg: true,
-            chatbotUrl: 'https://chatbot.ase.cit.tum.de/chat'
+            chatbotUrl: 'https://chatbot.ase.cit.tum.de/chat',
+            loginRequired: false
           };" > chatbot-ui/src/environments/environment.prod.ts
 
       - name: Build & Push (Org 2)
@@ -56,11 +57,12 @@ jobs:
         run: |
           echo "export const environment = {
             production: true,
-            angelosUrl: '/api/chat',
+            angelosUrl: '/api',
             angelosAppApiKey: '${{secrets.ANGELOS_SECRET}}',
             organisation: 3,
             filterByOrg: true,
-            chatbotUrl: 'https://chatbot.ase.cit.tum.de/chat-heilbronn'
+            chatbotUrl: 'https://chatbot.ase.cit.tum.de/chat-heilbronn',
+            loginRequired: false
           };" > chatbot-ui/src/environments/environment.prod.heilbronn.ts
 
       - name: Build & Push (Org 3)

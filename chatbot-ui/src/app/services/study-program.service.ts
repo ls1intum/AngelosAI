@@ -17,14 +17,18 @@ export class StudyProgramService {
   getStudyPrograms(): Observable<StudyProgram[]> {
     const token = sessionStorage.getItem('access_token');
 
-    if (!token) {
+    if (environment.loginRequired && !token) {
       throw new Error('User is not authenticated.');
     }
 
-    const headers = new HttpHeaders().set('ChatAuth', `Bearer ${token}`);
+    let headers = new HttpHeaders().set('x-api-key', environment.angelosAppApiKey);
+
+    if (token && environment.loginRequired) {
+      headers = headers.set('ChatAuth', `Bearer ${token}`);
+    }
 
     const params = { filterByOrg: this.filterByOrg.toString() };
-    const url = `${this.url}/study-programs/${this.orgId}`;
+    const url = `${this.url}/chat/study-programs/${this.orgId}`;
 
     return this.http.get<StudyProgram[]>(url, { headers, params });
   }

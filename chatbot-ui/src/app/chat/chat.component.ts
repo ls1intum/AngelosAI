@@ -3,11 +3,13 @@ import { Component, ElementRef, ViewChild, OnInit, ViewChildren, QueryList, Afte
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ChatbotService } from '../services/chatbot.service';
 import { NgSelectModule } from '@ng-select/ng-select';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import { ErrorSnackbarComponent } from '../utils/error-snackbar/error-snackbar.component';
 import { StudyProgramService } from '../services/study-program.service';
 import { StudyProgram } from '../data/study-program';
 import { environment } from '../../environments/environment';
+import { SuccessSnackbarComponent } from '../utils/success-snackbar/success-snackbar.component';
+import { EventService } from '../services/event.service';
 
 export interface ChatMessage {
   message: string;
@@ -51,7 +53,8 @@ export const MESSAGES = {
     FormsModule,
     NgSelectModule,
     ReactiveFormsModule,
-    ErrorSnackbarComponent
+    ErrorSnackbarComponent,
+    SuccessSnackbarComponent
   ],
   providers: [ChatbotService],
   templateUrl: './chat.component.html',
@@ -62,8 +65,10 @@ export class ChatComponent implements OnInit, AfterViewChecked {
   @ViewChild('messageInput') messageInput!: ElementRef;
   @ViewChildren('messageElements') messageElements!: QueryList<ElementRef>;
   @ViewChild('errorSnackbar') errorSnackbar!: ErrorSnackbarComponent;
+  @ViewChild('successSnackbar') successSnackbar!: SuccessSnackbarComponent;
 
   chatbotUrl: string = environment.chatbotUrl;
+  companyUrl: string = environment.chatbotUrl;
 
   messages: ChatMessage[] = [];
   userMessage: string = '';
@@ -80,9 +85,16 @@ export class ChatComponent implements OnInit, AfterViewChecked {
   private needScrollToBottom: boolean = false;
   disableSending: boolean = false;
 
-  private widthBreakpoint = 600;
+  private readonly widthBreakpoint = 600;
+  isLargeScreen: boolean = true;
 
-  constructor(private chatbotService: ChatbotService, private studyProgramService: StudyProgramService, private route: ActivatedRoute) { }
+  constructor(
+    private chatbotService: ChatbotService, 
+    private studyProgramService: StudyProgramService, 
+    private route: ActivatedRoute,
+    private eventService: EventService,
+    private router: Router
+  ) { }
 
   ngOnInit() {
     // Get language from route data (or query params if applicable)
@@ -95,6 +107,7 @@ export class ChatComponent implements OnInit, AfterViewChecked {
         });
       },
       error: (error) => {
+        this.successSnackbar.dismiss();
         this.errorSnackbar.showError('Studiengänge konnten nicht geladen werden. Bitte versuchen Sie es zu einem späteren Zeitpunkt erneut.', 5000);
       }
     });
@@ -126,8 +139,10 @@ export class ChatComponent implements OnInit, AfterViewChecked {
 
   updatePlaceholderText(width: number): void {
     if (width <= this.widthBreakpoint) {
+      this.isLargeScreen = false;
       this.placeholderText = '';
     } else {
+      this.isLargeScreen = true;
       this.placeholderText = MESSAGES[this.language].placeholder;
     }
   }
@@ -198,6 +213,7 @@ export class ChatComponent implements OnInit, AfterViewChecked {
           this.needScrollToBottom = true;
           this.disableSending = false;
           if (error.message && error.message === 'TokenMissing') {
+            this.successSnackbar.dismiss();
             this.errorSnackbar.showError('Ihre Session ist abgelaufen. Bitte melden Sie sich erneut an.', 5000);
           }
         }
@@ -276,5 +292,51 @@ export class ChatComponent implements OnInit, AfterViewChecked {
 
   onProgramChange(program: StudyProgram | null): void {
     this.selectedStudyProgram = program;
+  }
+
+  /**
+   * Feedback functionality
+   */
+  shouldShowFeedback(index: number): boolean {
+    return index > 0 && this.messages[index].type === 'system';
+  }
+
+  sendFeedback(index: number, positive: boolean): void {
+    const eventType = positive
+      ? 'chat_feedback_positive'
+      : 'chat_feedback_negative';
+
+    let question = '';
+    for (let i = index - 1; i >= 0; i--) {
+      if (this.messages[i].type === 'user') {
+        question = this.messages[i].message;
+        break;
+      }
+    }
+
+    const answer = this.messages[index].message;
+
+    const metadata = JSON.stringify({
+      question,
+      answer
+    });
+
+    this.errorSnackbar.dismiss();
+    this.successSnackbar.showMessage("Vielen Dank für dein Feedback!", 3000);
+
+    this.eventService.logEvent(eventType, metadata).subscribe({
+      error: err => console.warn('Feedback log failed', err)
+    });
+  }
+
+  /**
+   * Privacy and imprint
+   */
+  onClickDatenschutz() {
+    this.router.navigate(['/privacy']);
+  }
+  
+  onClickImpressum() {
+    this.router.navigate(['/imprint']);
   }
 }

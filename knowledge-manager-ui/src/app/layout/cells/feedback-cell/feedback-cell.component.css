@@ -1,0 +1,10 @@
+.cell-content {
+    display: -webkit-box;
+    -webkit-line-clamp: 12;
+    line-clamp: 12;
+    -webkit-box-orient: vertical;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    margin: 8px 0px;
+    max-width: 400px;
+  }

@@ -16,6 +16,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ase.angelos_kb_backend.dto.SampleQuestionDTO;
+import com.ase.angelos_kb_backend.service.EventService;
 import com.ase.angelos_kb_backend.service.SampleQuestionService;
 import com.ase.angelos_kb_backend.util.JwtUtil;
 
@@ -27,10 +28,12 @@ public class SampleQuestionController {
 
     private final SampleQuestionService sampleQuestionService;
     private final JwtUtil jwtUtil;
+    private final EventService eventService;
 
-    public SampleQuestionController(SampleQuestionService sampleQuestionService, JwtUtil jwtUtil) {
+    public SampleQuestionController(SampleQuestionService sampleQuestionService, JwtUtil jwtUtil, EventService eventService) {
         this.sampleQuestionService = sampleQuestionService;
         this.jwtUtil = jwtUtil;
+        this.eventService = eventService;
     }
 
     /**
@@ -50,11 +53,12 @@ public class SampleQuestionController {
     public ResponseEntity<SampleQuestionDTO> addSampleQuestion(
             @RequestHeader("Authorization") String token,
             @Valid @RequestBody SampleQuestionDTO sampleQuestionDTO) {
+        Long orgId = jwtUtil.extractOrgId(token.replace("Bearer ", ""));
         try {
-            Long orgId = jwtUtil.extractOrgId(token.replace("Bearer ", ""));
             SampleQuestionDTO responseDTO = sampleQuestionService.addSampleQuestion(orgId, sampleQuestionDTO);
             return ResponseEntity.ok(responseDTO);
         } catch (Exception e) {
+            eventService.logEventAsync("km_failed", "AddSampleQuestion: " + e.getMessage(), orgId);
             System.err.println("Error adding sample question: " + e.getMessage());
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR)
                     .body(null); // Adjust response as necessary for your API's design
@@ -71,8 +75,14 @@ public class SampleQuestionController {
             @Valid @RequestBody SampleQuestionDTO sampleQuestionDTO) {
 
         Long orgId = jwtUtil.extractOrgId(token.replace("Bearer ", ""));
-        SampleQuestionDTO responseDTO = sampleQuestionService.editSampleQuestion(orgId, sampleQuestionId, sampleQuestionDTO);
-        return ResponseEntity.ok(responseDTO);
+
+        try {
+            SampleQuestionDTO responseDTO = sampleQuestionService.editSampleQuestion(orgId, sampleQuestionId, sampleQuestionDTO);
+            return ResponseEntity.ok(responseDTO);
+        } catch (Exception e) {
+            eventService.logEventAsync("km_failed", "EditSampleQuestion: " + e.getMessage(), orgId);
+            throw e;
+        }
     }
 
     /**
@@ -84,7 +94,13 @@ public class SampleQuestionController {
             @PathVariable UUID id) {
 
         Long orgId = jwtUtil.extractOrgId(token.replace("Bearer ", ""));
-        sampleQuestionService.deleteSampleQuestion(id, orgId);
-        return ResponseEntity.ok().build();
+
+        try {
+            sampleQuestionService.deleteSampleQuestion(id, orgId);
+            return ResponseEntity.ok().build();
+        } catch (Exception e) {
+            eventService.logEventAsync("km_failed", "DeleteSampleQuestion: " + e.getMessage(), orgId);
+            throw e;
+        }
     }
 }

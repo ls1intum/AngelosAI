@@ -19,7 +19,7 @@ export class AuthService {
   login(username: string, password: string): Observable<AuthResponse> {
     const headers = new HttpHeaders().set('x-api-key', environment.angelosAppApiKey);
     const body = { email: username, password: password };
-    return this.http.post<AuthResponse>(this.url + "/login", body, { headers }).pipe(
+    return this.http.post<AuthResponse>(this.url + "/chat/login", body, { headers }).pipe(
       tap((response: AuthResponse) => {
         sessionStorage.setItem('access_token', response.accessToken);
         this.isAuthenticated.next(true);

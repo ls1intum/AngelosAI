@@ -74,8 +74,6 @@ jobs:
           script: |
             rm /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/mail-system/.env.prod || true
             touch /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/mail-system/.env.prod
-            echo "EMAIL_ADDRESS=${{ secrets.EMAIL_ADDRESS }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/mail-system/.env.prod
-            echo "EMAIL_PASSWORD=${{ secrets.EMAIL_PASSWORD }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/mail-system/.env.prod
             echo "IMAP_SERVER=${{ vars.IMAP_SERVER }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/mail-system/.env.prod
             echo "SMTP_SERVER=${{ vars.SMTP_SERVER }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/mail-system/.env.prod
             echo "IMAP_PORT=${{ vars.IMAP_PORT }}" >> /home/${{ vars.VM_USERNAME }}/${{ github.repository }}/mail-system/.env.prod

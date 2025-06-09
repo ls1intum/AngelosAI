@@ -54,6 +54,7 @@ public class SecurityConfig {
                     "/api/chat/study-programs/**",
                     "/api/chat/send",
                     "/api/mail/ask",
+                    "/api/event/create",
                     "/v3/api-docs/**",
                     "/swagger-ui/**",
                     "/docs/**",

@@ -2,6 +2,7 @@ package com.ase.angelos_kb_backend.controller;
 
 import com.ase.angelos_kb_backend.dto.WebsiteRequestDTO;
 import com.ase.angelos_kb_backend.dto.WebsiteResponseDTO;
+import com.ase.angelos_kb_backend.service.EventService;
 import com.ase.angelos_kb_backend.service.WebsiteService;
 import com.ase.angelos_kb_backend.util.JwtUtil;
 
@@ -18,10 +19,12 @@ public class WebsiteController {
 
     private final WebsiteService websiteService;
     private final JwtUtil jwtUtil;
+    private final EventService eventService;
 
-    public WebsiteController(WebsiteService websiteService, JwtUtil jwtUtil) {
+    public WebsiteController(WebsiteService websiteService, JwtUtil jwtUtil, EventService eventService) {
         this.websiteService = websiteService;
         this.jwtUtil = jwtUtil;
+        this.eventService = eventService;
     }
 
     /**
@@ -44,10 +47,14 @@ public class WebsiteController {
     public ResponseEntity<WebsiteResponseDTO> addWebsite(
             @RequestHeader("Authorization") String token,
             @Valid @RequestBody WebsiteRequestDTO websiteRequestDTO) {
-
         Long orgId = jwtUtil.extractOrgId(token.replace("Bearer ", ""));
-        WebsiteResponseDTO responseDTO = websiteService.addWebsite(orgId, websiteRequestDTO);
-        return ResponseEntity.ok(responseDTO);
+        try {
+            WebsiteResponseDTO responseDTO = websiteService.addWebsite(orgId, websiteRequestDTO);
+            return ResponseEntity.ok(responseDTO);
+        } catch (Exception e) {
+            eventService.logEventAsync("km_failed", "AddWebsite: " + e.getMessage(), orgId);
+            throw e;
+        }
     }
 
     /**
@@ -64,9 +71,13 @@ public class WebsiteController {
 
         Long orgId = jwtUtil.extractOrgId(token.replace("Bearer ", ""));
 
-        WebsiteResponseDTO responseDTO = websiteService.editWebsite(orgId, websiteId, websiteRequestDTO);
-
-        return ResponseEntity.ok(responseDTO);
+        try {
+            WebsiteResponseDTO responseDTO = websiteService.editWebsite(orgId, websiteId, websiteRequestDTO);
+            return ResponseEntity.ok(responseDTO);
+        } catch (Exception e) {
+            eventService.logEventAsync("km_failed", "EditWebsite: " + e.getMessage(), orgId);
+            throw e;
+        }
     }
 
     /**
@@ -80,7 +91,12 @@ public class WebsiteController {
             @PathVariable UUID id) {
 
         Long orgId = jwtUtil.extractOrgId(token.replace("Bearer ", ""));
-        websiteService.deleteWebsite(id, orgId);
-        return ResponseEntity.ok().build();
+        try {
+            websiteService.deleteWebsite(id, orgId);
+            return ResponseEntity.ok().build();
+        } catch (Exception e) {
+            eventService.logEventAsync("km_failed", "DeleteWebsite: " + e.getMessage(), orgId);
+            throw e;
+        }
     }
 }

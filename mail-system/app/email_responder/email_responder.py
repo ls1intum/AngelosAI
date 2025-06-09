@@ -3,6 +3,7 @@ import logging
 import threading
 import time
 import traceback
+import json
 from typing import List
 
 from app.email_classification.email_classifier import EmailClassifier
@@ -81,6 +82,14 @@ class EmailResponder:
                             logging.error("Classification failed for email %s: %s", email, e)
                             # Optionally flag the email or handle it differently
                             self.email_service.flag_email(email.message_id)
+                            self.response_service.log_event(
+                                event_type="mail_response_failed",
+                                org_id = self.org_id,
+                                metadata=json.dumps({
+                                    "message_id": email.message_id,
+                                    "error": str(e)
+                                }),
+                            )
                             # Continue processing the next email
                             continue
                         self.handle_classification(email, classification, study_program, language, is_colleague)
@@ -135,6 +144,17 @@ class EmailResponder:
             else:
                 logging.info(
                     f"No proper answer can be found: {response_content and response_content['answer'] == "False"}, or mail was classified as sensitive or internal")
+                # Event logging
+                event_type = None
+                if classification.strip().lower() == "sensitive":
+                    event_type = "mail_classified_sensitive"
+                elif is_colleague:
+                    event_type =  "mail_classified_internal"
+                if event_type:
+                    self.response_service.log_event(
+                        event_type=event_type,
+                        org_id=self.org_id
+                    )
                 self.email_service.flag_email(email.message_id)
         except Exception as e:
             logging.error("Failed to send email response: %s", e)
