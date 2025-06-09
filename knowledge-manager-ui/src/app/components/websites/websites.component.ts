@@ -109,6 +109,7 @@ export class WebsitesComponent extends BaseComponent<Website> {
       data: {
         ...item,
         availableStudyPrograms: this.availableStudyPrograms,
+        selectedProgram: this.selectedProgram,
         studyPrograms: item?.studyPrograms || [],
       },
       component: WebsiteDialogComponent

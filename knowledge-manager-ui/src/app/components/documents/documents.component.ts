@@ -98,6 +98,7 @@ export class DocumentsComponent extends BaseComponent<DocumentModel> {
       data: {
         ...item,
         availableStudyPrograms: this.availableStudyPrograms,
+        selectedProgram: this.selectedProgram,
         studyPrograms: item?.studyPrograms || [],
       },
       component: DocumentDialogComponent

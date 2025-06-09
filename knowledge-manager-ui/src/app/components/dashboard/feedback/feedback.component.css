@@ -1,0 +1,52 @@
+:host {
+    display: block;
+  }
+  
+  .feedback-container {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 6px 12px;
+    border-radius: 12px;
+    font-weight: 500;
+    font-size: 0.85rem;
+    line-height: 1.2;
+  }
+
+  .feedback-icon {
+    font-size: 1em;
+    vertical-align: middle;
+    line-height: 1.2;
+  }
+  
+  .feedback-container.positive {
+    background-color: #81c784;
+    color: #ffffff;
+  }
+  .feedback-container.positive .feedback-icon {
+    color: #ffffff;
+  }
+  
+  .feedback-container.negative {
+    background-color: #e57373; 
+    color: #ffffff;
+  }
+  .feedback-container.negative .feedback-icon {
+    color: #ffffff;
+  }
+  
+  .feedback-container.unknown {
+    background-color: #bdbdbd;
+    color: #424242; 
+  }
+  .feedback-container.unknown .feedback-icon {
+    color: #424242;
+  }
+  
+  .feedback-icon {
+    font-size: 1.2rem;
+  }
+  
+  .feedback-text {
+    display: inline-block;
+  }

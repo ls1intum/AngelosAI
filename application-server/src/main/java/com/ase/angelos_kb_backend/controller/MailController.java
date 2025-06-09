@@ -22,6 +22,7 @@ import com.ase.angelos_kb_backend.dto.eunomia.MailStatusDTO;
 import com.ase.angelos_kb_backend.dto.eunomia.MailThreadRequestDTO;
 import com.ase.angelos_kb_backend.service.AngelosService;
 import com.ase.angelos_kb_backend.service.EunomiaService;
+import com.ase.angelos_kb_backend.service.EventService;
 import com.ase.angelos_kb_backend.service.OrganisationService;
 import com.ase.angelos_kb_backend.service.StudyProgramService;
 import com.ase.angelos_kb_backend.util.JwtUtil;
@@ -37,16 +38,18 @@ public class MailController {
     private final JwtUtil jwtUtil;
     private final EunomiaService eunomiaService;
     private final AngelosService angelosService;
+    private final EventService eventService;
 
     @Value("${app.max-message-length}")
     private int maxMessageLength;
 
-    public MailController(OrganisationService organisationService, StudyProgramService studyProgramService, JwtUtil jwtUtil, EunomiaService eunomiaService, AngelosService angelosService) {
+    public MailController(OrganisationService organisationService, StudyProgramService studyProgramService, JwtUtil jwtUtil, EunomiaService eunomiaService, AngelosService angelosService, EventService eventService) {
         this.jwtUtil = jwtUtil;
         this.organisationService = organisationService;
         this.studyProgramService = studyProgramService;
         this.eunomiaService = eunomiaService;
         this.angelosService = angelosService;
+        this.eventService = eventService;
     }
 
 
@@ -138,15 +141,27 @@ public class MailController {
             @RequestBody MailResponseRequestDTO request) {
 
         if (eunomiaService.verifyAPIKey(apiKey)) {
+            eventService.logEventAsync("mail_classified_nonsensitive", null, request.getOrg_id());
+
             if (request.getMessage() != null && request.getMessage().length() > maxMessageLength) {
+                // Log mail_response_failed event
+                eventService.logEventAsync("mail_response_failed", "message length validation", request.getOrg_id());
                 throw new ResponseStatusException(
                     HttpStatus.BAD_REQUEST,
                     "Message length exceeds the allowed limit of " + maxMessageLength + " characters."
                 );
             }
-            // Forward to Angelos
-            AngelosChatResponse ragResponse = angelosService.sendAskRequest(request);
-            return ResponseEntity.ok(ragResponse);
+            // Try forward to Angelos
+            try {
+                // Forward to Angelos
+                AngelosChatResponse ragResponse = angelosService.sendAskRequest(request);
+                return ResponseEntity.ok(ragResponse);
+            } catch (Exception e) {
+                // Log mail_response_failed event
+                String metadata = "{\"error\": \"" + e.getMessage().replace("\"", "'") + "\"}";
+                eventService.logEventAsync("mail_response_failed", metadata, request.getOrg_id());
+                throw e;
+            }
         } else {
             return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
         }

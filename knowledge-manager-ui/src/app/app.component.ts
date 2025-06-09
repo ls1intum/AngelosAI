@@ -35,7 +35,15 @@ export class AppComponent implements OnInit {
   }
 
   get showTabs(): boolean {
-    return this.router.url !== '/login' && this.router.url !== '/register' && this.router.url !== '/session-expired' && !this.router.url.startsWith('/confirm');
+    const routesWithTabs = [
+      '/websites',
+      '/documents',
+      '/sample-questions',
+      '/admin',
+      '/dashboard'
+    ];
+  
+    return routesWithTabs.some(route => this.router.url.startsWith(route));
   }
 
   get showWarnIcon(): boolean {

@@ -34,6 +34,7 @@ public class OrganisationService {
     public OrganisationDTO addOrganisation(String name) {
         Organisation organisation = new Organisation();
         organisation.setName(name);
+        organisation.setResponseActive(true);
 
         Organisation savedOrganisation = organisationRepository.save(organisation);
         return convertToDto(savedOrganisation);

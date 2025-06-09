@@ -27,6 +27,7 @@ import com.ase.angelos_kb_backend.dto.DocumentRequestDTO;
 import com.ase.angelos_kb_backend.dto.DocumentUploadRequestDTO;
 import com.ase.angelos_kb_backend.model.DocumentContent;
 import com.ase.angelos_kb_backend.service.DocumentService;
+import com.ase.angelos_kb_backend.service.EventService;
 import com.ase.angelos_kb_backend.service.FileStorageService;
 import com.ase.angelos_kb_backend.util.JwtUtil;
 
@@ -44,11 +45,13 @@ public class DocumentController {
     private final DocumentService documentService;
     private final FileStorageService fileStorageService;
     private final JwtUtil jwtUtil;
+    private final EventService eventService;
 
-    public DocumentController(DocumentService documentService, FileStorageService fileStorageService, JwtUtil jwtUtil) {
+    public DocumentController(DocumentService documentService, FileStorageService fileStorageService, JwtUtil jwtUtil, EventService eventService) {
         this.documentService = documentService;
         this.fileStorageService = fileStorageService;
         this.jwtUtil = jwtUtil;
+        this.eventService = eventService;
     }
 
     /**
@@ -96,9 +99,13 @@ public class DocumentController {
                     .body(null);
         }
 
-        DocumentDataDTO updatedDocument = documentService.editDocument(orgId, docId, documentRequestDTO, file);
-
-        return ResponseEntity.ok(updatedDocument);
+        try {
+            DocumentDataDTO updatedDocument = documentService.editDocument(orgId, docId, documentRequestDTO, file);
+            return ResponseEntity.ok(updatedDocument);
+        } catch (Exception e) {
+            eventService.logEventAsync("km_failed", "EditDocument: " + e.getMessage(), orgId);
+            throw e;
+        }
     }
 
     
@@ -134,10 +141,13 @@ public class DocumentController {
 
         Long orgId = jwtUtil.extractOrgId(token.replace("Bearer ", ""));
 
-        // Add document (file and metadata)
-        DocumentDataDTO responseDTO = documentService.addDocument(orgId, documentRequestDTO, file);
-
-        return ResponseEntity.ok(responseDTO);
+        try {
+            DocumentDataDTO responseDTO = documentService.addDocument(orgId, documentRequestDTO, file);
+            return ResponseEntity.ok(responseDTO);
+        } catch (Exception e) {
+            eventService.logEventAsync("km_failed", "AddDocument: " + e.getMessage(), orgId);
+            throw e;
+        }
     }
 
     @GetMapping("/{docId}/download")
@@ -174,6 +184,12 @@ public class DocumentController {
         Long orgId = jwtUtil.extractOrgId(token.replace("Bearer ", ""));
         documentService.deleteDocument(orgId, docId);
 
-        return ResponseEntity.noContent().build();
+        try {
+            documentService.deleteDocument(orgId, docId);
+            return ResponseEntity.noContent().build();
+        } catch (Exception e) {
+            eventService.logEventAsync("km_failed", "DeleteDocument: " + e.getMessage(), orgId);
+            throw e;
+        }
     }
 }

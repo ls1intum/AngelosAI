@@ -16,10 +16,14 @@ export class ChatbotService {
   constructor(private http: HttpClient, private authService: AuthService) { }
 
   sendBotRequest(token: string | null, chatHistory: ChatMessage[], study_program: string): Observable<any> {
-    const headers = new HttpHeaders().set('ChatAuth', `Bearer ${token}`);
+    let headers = new HttpHeaders().set('x-api-key', environment.angelosAppApiKey);
     
+    if (token && environment.loginRequired) {
+      headers = headers.set('ChatAuth', `Bearer ${token}`);
+    }
+
     return this.http.post(
-      `${this.url}/send?filterByOrg=${this.filterByOrg}`,
+      `${this.url}/chat/send?filterByOrg=${this.filterByOrg}`,
       {
         messages: chatHistory,
         study_program: study_program,
@@ -31,7 +35,7 @@ export class ChatbotService {
 
   getBotResponse(chatHistory: ChatMessage[], study_program: string): Observable<any> {
     const token = this.authService.getToken();
-    if (token) {
+    if (token || ! environment.loginRequired) {
       return this.sendBotRequest(token, chatHistory, study_program);
     } else {
       return throwError(() => new Error('TokenMissing'));
