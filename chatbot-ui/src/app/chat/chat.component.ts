@@ -3,7 +3,7 @@ import { Component, ElementRef, ViewChild, OnInit, ViewChildren, QueryList, Afte
 import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ChatbotService } from '../services/chatbot.service';
 import { NgSelectModule } from '@ng-select/ng-select';
-import { ActivatedRoute, Router } from '@angular/router';
+import { ActivatedRoute, Router, RouterModule } from '@angular/router';
 import { ErrorSnackbarComponent } from '../utils/error-snackbar/error-snackbar.component';
 import { StudyProgramService } from '../services/study-program.service';
 import { StudyProgram } from '../data/study-program';
@@ -50,6 +50,7 @@ export const MESSAGES = {
   standalone: true,
   imports: [
     CommonModule,
+    RouterModule,
     FormsModule,
     NgSelectModule,
     ReactiveFormsModule,
@@ -333,10 +334,17 @@ export class ChatComponent implements OnInit, AfterViewChecked {
    * Privacy and imprint
    */
   onClickDatenschutz() {
-    this.router.navigate(['/privacy']);
+    this.router.navigate(['/datenschutz']);
+    /*} else {
+    this.router.navigate(['/datenschutz']);
+    }*/
   }
   
   onClickImpressum() {
-    this.router.navigate(['/imprint']);
+    if (this.language === "en") {
+      this.router.navigate(['/imprint']);
+    } else {
+      this.router.navigate(['/impressum']);
+    }
   }
 }

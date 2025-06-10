@@ -82,9 +82,8 @@
         </div>
         <div>
           <ng-container *ngIf="isLargeScreen">
-            <a href="#" (click)="onClickDatenschutz(); $event.preventDefault()">Datenschutz</a>
-            &nbsp;|&nbsp;
-            <a href="#" (click)="onClickImpressum(); $event.preventDefault()">Impressum</a>
+            <a [routerLink]="language === 'en' ? '/privacy' : '/datenschutz'">{{ language === 'en' ? 'Privacy' : 'Datenschutz' }}</a>&nbsp;|&nbsp;
+            <a [routerLink]="language === 'en' ? '/imprint' : '/impressum'">{{ language === 'en' ? 'Imprint' : 'Impressum' }}</a>
           </ng-container>
         </div>
       </div>
