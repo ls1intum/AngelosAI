@@ -141,6 +141,9 @@ $logo-size: 40px;
       display: flex;
       flex-direction: column; // Keeps warning below input field
       padding: 10px;
+      position: sticky;
+      bottom: 0;
+      z-index: 5;
       background-color: $tum-acordion-blue;
       border-top: 1px solid $border-color;
 
@@ -212,7 +215,6 @@ $logo-size: 40px;
         align-items: center;
         justify-content: space-between;
         white-space: nowrap;
-        overflow: hidden;
         text-overflow: ellipsis;
         max-width: 100%;
         margin-top: 4px;
