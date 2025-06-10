@@ -29,11 +29,14 @@ services:
       - development.env
     environment:
       SPRING_PROFILES_ACTIVE: dev
+    volumes:
+      - uploads_volume:/app/uploads
     networks:
       - angelos-network
 
 volumes:
   postgres_db_data:
+  uploads_volume:
 
 networks:
   angelos-network:

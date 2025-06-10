@@ -26,19 +26,22 @@ public class DocumentService {
     private final AngelosService angelosService;
     private final ParsingService parsingService;
     private final FileStorageService fileStorageService;
+    private final EventService eventService;
 
     public DocumentService(DocumentContentRepository documentContentRepository,
                            OrganisationService organisationService,
                            StudyProgramService studyProgramService,
                            AngelosService angelosService,
                            ParsingService parsingService,
-                           FileStorageService fileStorageService) {
+                           FileStorageService fileStorageService,
+                           EventService eventService) {
         this.documentContentRepository = documentContentRepository;
         this.organisationService = organisationService;
         this.studyProgramService = studyProgramService;
         this.angelosService = angelosService;
         this.parsingService = parsingService;
         this.fileStorageService = fileStorageService;
+        this.eventService = eventService;
     }
 
     /**
@@ -180,13 +183,19 @@ public class DocumentService {
             throw new UnauthorizedException("You are not authorized to delete this document.");
         }
 
+        boolean success = angelosService.sendDocumentDeleteRequest(docId.toString());
+        if (!success) {
+            throw new RuntimeException("Failed to delete the file from the RAG system.");
+        }
+        // Delete metadata from DB
+        documentContentRepository.delete(document);
+
         // Delete the file from the file system
         try {
             fileStorageService.deleteFile(document.getFilename());
         } catch (Exception ex) {
-            throw new RuntimeException("Failed to delete the file from the file system.", ex);
+            eventService.logEventAsync("km_failed", "Filesystem deletion failed for " + document.getFilename(), orgId);
         }
-        documentContentRepository.delete(document);
     }
 
     /**

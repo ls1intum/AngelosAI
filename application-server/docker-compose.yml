@@ -26,12 +26,15 @@ services:
       - .env
     environment:
       SPRING_PROFILES_ACTIVE: prod
+    volumes:
+      - uploads_volume:/app/uploads
     networks:
       - angelos-network
 
 volumes:
   postgres_db_data:
   postgres_backups:
+  uploads_volume:
 
 networks:
   angelos-network:

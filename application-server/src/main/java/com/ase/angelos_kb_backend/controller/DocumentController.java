@@ -21,6 +21,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestPart;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
+import org.springframework.web.server.ResponseStatusException;
 
 import com.ase.angelos_kb_backend.dto.DocumentDataDTO;
 import com.ase.angelos_kb_backend.dto.DocumentRequestDTO;
@@ -131,7 +132,7 @@ public class DocumentController {
     public ResponseEntity<DocumentDataDTO> addDocument(
             @RequestHeader("Authorization") String token,
             @Valid @RequestPart("documentRequestDTO") DocumentRequestDTO documentRequestDTO,
-            @RequestPart("file") MultipartFile file) {
+            @RequestPart("file") MultipartFile file) throws Exception {
 
         // Validate that the uploaded file is a PDF
         if (file == null || file.getContentType() == null || !file.getContentType().equals("application/pdf")) {
@@ -142,6 +143,11 @@ public class DocumentController {
         Long orgId = jwtUtil.extractOrgId(token.replace("Bearer ", ""));
 
         try {
+            byte[] header = file.getInputStream().readNBytes(4);
+            if (!new String(header).equals("%PDF")) {
+                throw new ResponseStatusException(HttpStatus.UNSUPPORTED_MEDIA_TYPE,
+                    "File is not a valid PDF");
+            }
             DocumentDataDTO responseDTO = documentService.addDocument(orgId, documentRequestDTO, file);
             return ResponseEntity.ok(responseDTO);
         } catch (Exception e) {
@@ -182,7 +188,6 @@ public class DocumentController {
             @PathVariable UUID docId) {
 
         Long orgId = jwtUtil.extractOrgId(token.replace("Bearer ", ""));
-        documentService.deleteDocument(orgId, docId);
 
         try {
             documentService.deleteDocument(orgId, docId);
