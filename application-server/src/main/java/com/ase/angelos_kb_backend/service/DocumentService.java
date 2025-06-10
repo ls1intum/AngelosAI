@@ -183,11 +183,12 @@ public class DocumentService {
             throw new UnauthorizedException("You are not authorized to delete this document.");
         }
 
+        // Delete document content from the RAG system
         boolean success = angelosService.sendDocumentDeleteRequest(docId.toString());
         if (!success) {
             throw new RuntimeException("Failed to delete the file from the RAG system.");
         }
-        // Delete metadata from DB
+        // Delete document metadata from the relational DB
         documentContentRepository.delete(document);
 
         // Delete the file from the file system
