@@ -38,7 +38,8 @@
       <label for="confirmPassword">Passwort bestätigen</label>
       <input type="password" id="confirmPassword" [(ngModel)]="confirmPassword" name="confirmPassword" required />
     </div>
-    <button [disabled]="loading" type="submit">Registrieren</button>
+    <button *ngIf="!loading" [disabled]="loading" type="submit">Registrieren</button>
+    <app-custom-dot-loader *ngIf="loading"></app-custom-dot-loader>
   </form>
 
   <!-- Success / Error messages -->

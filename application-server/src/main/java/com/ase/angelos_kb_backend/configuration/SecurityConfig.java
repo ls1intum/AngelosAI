@@ -49,6 +49,8 @@ public class SecurityConfig {
                     "/api/users/confirm",
                     "/api/users/refresh",
                     "/api/users/logout",
+                    "/api/users/reset-password",
+                    "/api/users/forgot-password",
                     "/api/organisations",
                     "/api/chat/login",
                     "/api/chat/study-programs/**",

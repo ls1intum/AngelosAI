@@ -124,3 +124,47 @@
     margin: 8px 0;
   }
 }
+
+/** Account deletion */
+.danger-section {
+  margin-top: 48px;
+  border-top: 1px solid #eee;
+  padding-top: 32px;
+}
+
+.account-delete-wrapper {
+  max-width: 500px;
+  margin: 0 auto;
+  background: #fff5f5;
+  border: 1px solid #ffc0c0;
+  border-radius: 8px;
+  padding: 24px 24px 32px 24px;
+  text-align: center;
+}
+
+.danger-title {
+  color: #e53e3e; /* Red */
+  margin-bottom: 8px;
+}
+
+.danger-desc {
+  color: #b22222;
+  font-size: 15px;
+  margin-bottom: 18px;
+}
+
+.delete-account-btn {
+  background: #e53e3e;
+  color: #fff;
+  border: none;
+  padding: 10px 24px;
+  border-radius: 5px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 8px;
+  transition: background 0.2s;
+}
+
+.delete-account-btn:hover {
+  background: #c53030;
+}

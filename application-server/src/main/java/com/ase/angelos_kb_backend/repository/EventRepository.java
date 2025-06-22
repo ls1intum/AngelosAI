@@ -10,4 +10,6 @@ import com.ase.angelos_kb_backend.model.EventLog;
 
 public interface EventRepository extends JpaRepository<EventLog, UUID> {
     List<EventLog> findByOrganisationOrgIDAndTimestampBetween(Long orgId, Instant from, Instant to);
+    
+    void deleteByTimestampBefore(Instant cutoff);
 }

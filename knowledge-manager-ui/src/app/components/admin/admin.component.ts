@@ -364,6 +364,28 @@ export class AdminComponent implements OnInit {
     });
   }
 
+  onDeleteAccount() {
+    const title = "Account unwiderruflich löschen";
+    const message = "Sind Sie sicher, dass Sie Ihren Account und alle zugehörigen Daten dauerhaft löschen möchten? Diese Aktion kann nicht rückgängig gemacht werden.";
+  
+    this.dialog.open(ConfirmDialogComponent, {
+      data: { title, message }
+    }).afterClosed().subscribe((confirmed: boolean) => {
+      if (confirmed) {
+        this.userService.deleteCurrentUser().subscribe({
+          next: () => {
+            this.handleSuccess('Account erfolgreich gelöscht. Sie werden abgemeldet.');
+            this.authService.logout();
+          },
+          error: (err) => {
+            this.handleError('Account konnte nicht gelöscht werden. Bitte versuchen Sie es erneut.');
+            console.error('Delete account error:', err);
+          }
+        });
+      }
+    });
+  }
+
   private updateUserInArray(updatedUser: User): void {
     const index = this.users.findIndex(user => user.id === updatedUser.id);
     if (index !== -1) {
