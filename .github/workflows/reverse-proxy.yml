@@ -62,7 +62,6 @@ jobs:
           source: "reverse-proxy/docker-compose.yml"
           target: "/home/${{ vars.VM_USERNAME }}/${{ github.repository }}"
 
-      # Copy Reverse Proxy nginx.conf to the VM
       - name: Copy Reverse Proxy nginx.conf to VM
         uses: appleboy/scp-action@v0.1.7
         with:
