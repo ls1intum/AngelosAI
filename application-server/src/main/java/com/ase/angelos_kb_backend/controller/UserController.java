@@ -1,5 +1,6 @@
 package com.ase.angelos_kb_backend.controller;
 
+import java.util.Collections;
 import java.util.List;
 import java.util.Map;
 
@@ -12,6 +13,7 @@ import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.web.bind.annotation.CookieValue;
+import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PatchMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -23,8 +25,10 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.ase.angelos_kb_backend.configuration.CustomUserDetails;
+import com.ase.angelos_kb_backend.dto.ForgotPasswordRequest;
 import com.ase.angelos_kb_backend.dto.LoginRequestDTO;
 import com.ase.angelos_kb_backend.dto.RegisterRequestDTO;
+import com.ase.angelos_kb_backend.dto.ResetPasswordRequest;
 import com.ase.angelos_kb_backend.dto.UserDTO;
 import com.ase.angelos_kb_backend.dto.UserDetailsDTO;
 import com.ase.angelos_kb_backend.exception.UnauthorizedException;
@@ -64,6 +68,13 @@ public class UserController {
         String email = jwtUtil.extractEmail(token.replace("Bearer ", ""));
         UserDetailsDTO user = userService.findMe(email);
         return ResponseEntity.ok(user);
+    }
+
+    @DeleteMapping("/me")
+    public ResponseEntity<?> deleteCurrentUser(@RequestHeader("Authorization") String token) {
+        String email = jwtUtil.extractEmail(token.replace("Bearer ", ""));
+        userService.deleteCurrentUser(email);
+        return ResponseEntity.ok(Collections.singletonMap("message", "Account deleted successfully."));
     }
 
     /**
@@ -169,6 +180,19 @@ public class UserController {
         } catch (Exception e) {
             return ResponseEntity.status(HttpStatus.UNAUTHORIZED).body(Map.of("error", "Invalid or expired refresh token"));
         }
+    }
+
+
+    @PostMapping("/forgot-password")
+    public ResponseEntity<?> forgotPassword(@RequestBody ForgotPasswordRequest request) {
+        userService.initiatePasswordReset(request.getEmail());
+        return ResponseEntity.ok(Collections.singletonMap("message", "If this email exists, you will receive a reset mail."));
+    }
+
+    @PostMapping("/reset-password")
+    public ResponseEntity<?> resetPassword(@RequestBody ResetPasswordRequest request) {
+        userService.resetPassword(request.getToken(), request.getPassword());
+        return ResponseEntity.ok(Collections.singletonMap("message", "Password reset successful."));
     }
 
     @PostMapping("/logout")

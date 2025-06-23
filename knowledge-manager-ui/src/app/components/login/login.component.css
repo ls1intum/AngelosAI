@@ -75,3 +75,20 @@ button:hover {
     text-decoration: underline; /* underline on hover */
     cursor: pointer;
   }
+
+  .forgot-password {
+    margin-top: 4px;
+    text-align: right;
+  }
+
+  .forgot-password-link {
+    color: var(--primary-color);
+    font-size: 12px;
+    text-decoration: none;
+    transition: text-decoration 0.2s;
+  }
+
+  .forgot-password-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+  }

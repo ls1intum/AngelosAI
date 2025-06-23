@@ -108,21 +108,36 @@ export class AuthenticationService {
       `${environment.backendUrl}/users/logout`,
       {},
       { withCredentials: true }
+    ).pipe(
+      finalize(() => {
+        this.accessToken = null;
+        this.reset();
+        this.studyProgramService.reset();
+        this.mailService.reset();
+        this.router.navigate(['/login']);
+      })
     ).subscribe({
       next: () => {
         console.log('Logged out successfully.');
       },
       error: (err) => {
         console.error('Logout failed:', err);
-      },
-      complete: () => {
-        this.accessToken = null;
-        this.reset();
-        this.studyProgramService.reset();
-        this.mailService.reset();
-        this.router.navigate(['/login']);
       }
     });
+  }
+
+  forgotPassword(email: string): Observable<any> {
+    return this.http.post<any>(
+      `${environment.backendUrl}/users/forgot-password`,
+      { email }
+    );
+  }
+
+  resetPassword(token: string, password: string): Observable<any> {
+    return this.http.post<any>(
+      `${environment.backendUrl}/users/reset-password`,
+      { token, password }
+    );
   }
 
   register(email: string, password: string, orgId: number): Observable<UserDTO> {

@@ -10,11 +10,12 @@ import { OrganisationDTO } from '../../data/dto/organisation.dto';
 import { AuthenticationService } from '../../services/authentication.service'; // Import the service and UserDTO
 import { UserDTO } from '../../data/dto/user.dto';
 import { finalize } from 'rxjs';
+import { CustomDotLoaderComponent } from '@app/layout/containers/custom-dot-loader/custom-dot-loader.component';
 
 @Component({
   selector: 'app-register',
   standalone: true,
-  imports: [CommonModule, FormsModule, RouterLink, MatIconModule],
+  imports: [CommonModule, FormsModule, RouterLink, MatIconModule, CustomDotLoaderComponent],
   templateUrl: './register.component.html',
   styleUrls: ['./register.component.css']
 })

@@ -1,6 +1,9 @@
 package com.ase.angelos_kb_backend.service;
 
+import java.time.Instant;
+import java.time.temporal.ChronoUnit;
 import java.util.List;
+import java.util.Optional;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
@@ -14,7 +17,9 @@ import com.ase.angelos_kb_backend.dto.UserDetailsDTO;
 import com.ase.angelos_kb_backend.exception.ResourceNotFoundException;
 import com.ase.angelos_kb_backend.exception.UnauthorizedException;
 import com.ase.angelos_kb_backend.model.Organisation;
+import com.ase.angelos_kb_backend.model.PasswordResetToken;
 import com.ase.angelos_kb_backend.model.User;
+import com.ase.angelos_kb_backend.repository.PasswordResetTokenRepository;
 import com.ase.angelos_kb_backend.repository.UserRepository;
 
 import jakarta.mail.MessagingException;
@@ -27,15 +32,18 @@ public class UserService {
     private final OrganisationService organisationService;
     private final PasswordEncoder passwordEncoder;
     private final EmailService emailService;
+    private final PasswordResetTokenRepository passwordResetTokenRepository;
+
 
     @Value("${cors.kb-ui}")
     private String kbOrigin;
 
-    public UserService(UserRepository userRepository, OrganisationService organisationService, PasswordEncoder passwordEncoder, EmailService emailService) {
+    public UserService(UserRepository userRepository, OrganisationService organisationService, PasswordEncoder passwordEncoder, EmailService emailService, PasswordResetTokenRepository passwordResetTokenRepository) {
         this.userRepository = userRepository;
         this.organisationService = organisationService;
         this.passwordEncoder = passwordEncoder;
         this.emailService = emailService;
+        this.passwordResetTokenRepository = passwordResetTokenRepository;
     }
 
     public List<UserDTO> getAllUsersByOrgId(Long orgId) {
@@ -67,6 +75,16 @@ public class UserService {
         userDetails.setOrganisationUrl(user.getOrganisation().getChatbotUrl());
         
         return userDetails;
+    }
+
+    @Transactional
+    public void deleteCurrentUser(String email) {
+        User user = userRepository.findByMail(email)
+            .orElseThrow(() -> new ResourceNotFoundException("User not found with email: " + email));
+
+        passwordResetTokenRepository.deleteAllByUser(user);
+
+        userRepository.delete(user);
     }
 
     @Transactional
@@ -158,14 +176,66 @@ public class UserService {
         return true;
     }
 
+    @Transactional
+    public void initiatePasswordReset(String email) {
+        Optional<User> userOpt = userRepository.findByMail(email);
+        if (userOpt.isEmpty()) return;
+
+        User user = userOpt.get();
+
+        // Count all tokens for this user (all are from today due to cleanup job)
+        int resetsToday = passwordResetTokenRepository.countByUser(user);
+        if (resetsToday >= 3) return; // Already reached daily limit, do nothing
+
+        // Generate token
+        String token = UUID.randomUUID().toString();
+        Instant expiresAt = Instant.now().plus(1, ChronoUnit.HOURS);
+
+        // Save token
+        PasswordResetToken resetToken = new PasswordResetToken();
+        resetToken.setUser(user);
+        resetToken.setToken(token);
+        resetToken.setExpiresAt(expiresAt);
+        resetToken.setUsed(false);
+        passwordResetTokenRepository.save(resetToken);
+
+        // Send mail
+        try {
+            sendPasswordResetEmail(user, token);
+        } catch (MessagingException e) {
+            throw new RuntimeException("Failed to send reset email. Password reset aborted.", e);
+        }
+    }
+
+    @Transactional
+    public void resetPassword(String token, String newPassword) {
+        PasswordResetToken resetToken = passwordResetTokenRepository
+            .findByTokenAndUsedIsFalseAndExpiresAtAfter(token, Instant.now())
+            .orElseThrow(() -> new IllegalArgumentException("Invalid or expired token"));
+
+        User user = resetToken.getUser();
+        user.setPassword(passwordEncoder.encode(newPassword));
+        userRepository.save(user);
+
+        resetToken.setUsed(true);
+        passwordResetTokenRepository.save(resetToken);
+    }
+
     private void sendConfirmationEmail(User user) throws MessagingException {
         String token = user.getConfirmationToken();
 
         String confirmationUrl = kbOrigin + "/knowledge-manager/confirm?token=" + token;
-        String subject = "Email Confirmation";
+        String subject = "Bestätigen Sie Ihre Email Adresse für StudiAssist AI";
     
         // Implement your email sending logic here
         emailService.sendEmail(user.getMail(), subject, confirmationUrl);
+    }
+
+    private void sendPasswordResetEmail(User user, String token) throws MessagingException {
+        String resetUrl = kbOrigin + "/reset-password?token=" + token;
+        String subject = "Passwort zurücksetzen – StudiAssist AI";
+
+        emailService.sendPasswordResetEmail(user.getMail(), subject, resetUrl);
     }
 
     private UserDTO convertToDto(User user) {

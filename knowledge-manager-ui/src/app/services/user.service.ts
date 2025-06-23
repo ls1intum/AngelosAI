@@ -79,6 +79,13 @@ export class UserService {
   }
 
   /**
+   * Delete current user
+   */
+  deleteCurrentUser(): Observable<any> {
+    return this.http.delete(`${environment.backendUrl}/users/me`);
+  }
+
+  /**
    * Transform a list of responses.
    */
   private transformResponse(response: UserDTO[], isAdmin: boolean, isSystemAdmin: boolean = false): User[] {

@@ -10,6 +10,8 @@ import { ConfirmMailComponent } from './components/confirm-mail/confirm-mail.com
 import { GuardComponent } from './components/guard/guard.component';
 import { RedirectGuard } from './guards/redirect.guard';
 import { DashboardComponent } from './components/dashboard/dashboard.component';
+import { ForgotPasswordComponent } from './components/forgot-password/forgot-password.component';
+import { ResetPasswordComponent } from './components/reset-password/reset-password.component';
 
 export const routes: Routes = [
   { path: 'login', 
@@ -32,6 +34,14 @@ export const routes: Routes = [
     path: 'admin',
     component: AdminComponent,
     canActivate: [AuthGuard]
+  },
+  {
+    path: 'forgot-password',
+    component: ForgotPasswordComponent,
+  },
+  {
+    path: 'reset-password',
+    component: ResetPasswordComponent,
   },
   {
     path: 'documents',
