@@ -140,9 +140,6 @@ public class UserService {
         if (userRepository.findByMail(email).isPresent() && userRepository.findByMail(email).get().isMailConfirmed()) {
             throw new ResourceNotFoundException("Email already in use");
         }
-        if (password.length() < 8) {
-            throw new IllegalArgumentException("Password must be at least 8 characters.");
-        }
         Organisation organisation = organisationService.getOrganisationById(orgId);
 
         // Create and save the new user
@@ -213,9 +210,6 @@ public class UserService {
 
     @Transactional
     public void resetPassword(String token, String newPassword) {
-        if (newPassword.length() < 8) {
-            throw new IllegalArgumentException("Password must be at least 8 characters.");
-        }
         PasswordResetToken resetToken = passwordResetTokenRepository
             .findByTokenAndUsedIsFalseAndExpiresAtAfter(token, Instant.now())
             .orElseThrow(() -> new IllegalArgumentException("Invalid or expired token"));
