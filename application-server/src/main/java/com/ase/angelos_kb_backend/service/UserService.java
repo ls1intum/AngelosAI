@@ -7,6 +7,7 @@ import java.util.Optional;
 import java.util.UUID;
 import java.util.stream.Collectors;
 
+import org.apache.coyote.BadRequestException;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -139,6 +140,9 @@ public class UserService {
         if (userRepository.findByMail(email).isPresent() && userRepository.findByMail(email).get().isMailConfirmed()) {
             throw new ResourceNotFoundException("Email already in use");
         }
+        if (password.length() < 8) {
+            throw new IllegalArgumentException("Password must be at least 8 characters.");
+        }
         Organisation organisation = organisationService.getOrganisationById(orgId);
 
         // Create and save the new user
@@ -209,6 +213,9 @@ public class UserService {
 
     @Transactional
     public void resetPassword(String token, String newPassword) {
+        if (newPassword.length() < 8) {
+            throw new IllegalArgumentException("Password must be at least 8 characters.");
+        }
         PasswordResetToken resetToken = passwordResetTokenRepository
             .findByTokenAndUsedIsFalseAndExpiresAtAfter(token, Instant.now())
             .orElseThrow(() -> new IllegalArgumentException("Invalid or expired token"));
@@ -232,7 +239,7 @@ public class UserService {
     }
 
     private void sendPasswordResetEmail(User user, String token) throws MessagingException {
-        String resetUrl = kbOrigin + "/reset-password?token=" + token;
+        String resetUrl = kbOrigin + "/knowledge-manager/reset-password?token=" + token;
         String subject = "Passwort zurücksetzen – StudiAssist AI";
 
         emailService.sendPasswordResetEmail(user.getMail(), subject, resetUrl);
