@@ -159,7 +159,7 @@ class PromptManager:
     - If information that is **highly** relevant to the question is accompanied by a link (in the general or specific context), include the links in your response like this: "For more detailed information, please visit the following link(s): <LINKS>"
 
     Ensure your response is accurate, student-friendly, and directly addresses the student's concern.
-    If you cannot answer the question using only the information provided, please respond with: “I'm sorry, but I cannot answer this question based on the provided information."
+    If you cannot answer the question using only the information provided, please respond with: “I’m sorry, but I cannot answer this question based on the available information. In this case, please contact the ASA team responsible for your degree program or the CST (Central Study Team) at TUM."
     """
 
         self.answer_prompt_template_with_history_de = """
@@ -217,7 +217,7 @@ class PromptManager:
     - Wenn Informationen, die für die Frage von **höchster** Relevanz sind, mit einem Link versehen sind (im allgemeinen oder studiengangspezifischen Kontext), fügen Sie die Links in Ihre Antwort ein, etwa so: „Für mehr Informationen besuchen Sie bitte den/die folgenden Link(s): <LINKS>“
 
     Stellen Sie sicher, dass Ihre Antwort genau, studierendenfreundlich und direkt auf die Frage des Studierenden eingeht.
-    Falls Sie die Frage nicht mit ausschließlich den bereitgestellten Informationen beantworten können, antworten Sie mit: „Es tut mir leid, aber ich kann diese Frage basierend auf den vorliegenden Informationen nicht beantworten.“
+    Falls Sie die Frage nicht mit ausschließlich den bereitgestellten Informationen beantworten können, antworten Sie mit: „Es tut mir leid, aber ich kann diese Frage basierend auf den vorliegenden Informationen nicht beantworten. Bitte wenden Sie sich in diesem Fall direkt an das für den Studiengang zuständige ASA-Team oder das CST (Central Study Team) der TUM.“
     """
 
         self.judge_prompt_template = """
