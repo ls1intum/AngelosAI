@@ -11,7 +11,7 @@ from app.utils.environment import config
 
 # Initialize resources  
 model = get_model()
-reranker = Reranker(model=model, api_key_en=config.COHERE_API_KEY_EN, api_key_multi=config.COHERE_API_KEY_MULTI)
+reranker = Reranker(model=model, api_key_en=config.COHERE_API_KEY, api_key_multi=config.COHERE_API_KEY)
 weaviate_manager = WeaviateManager(config.WEAVIATE_URL, embedding_model=model, reranker=reranker)
 prompt_manager = PromptManager()
 document_splitter = DocumentSplitter()
