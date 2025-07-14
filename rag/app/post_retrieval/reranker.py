@@ -31,8 +31,8 @@ class Reranker:
         # self.api_key = api_key
         self.api_key_en = api_key_en
         self.api_key_multi = api_key_multi
-        self.rerank_url_en = "https://rerankv3-en.swedencentral.models.ai.azure.com/v1/rerank"
-        self.rerank_url_multi = "https://rerankv3-multi.swedencentral.models.ai.azure.com/v1/rerank"
+        self.rerank_url_en = "https://rerank-35.swedencentral.models.ai.azure.com/v1/rerank"
+        self.rerank_url_multi = "https://rerank-35.swedencentral.models.ai.azure.com/v1/rerank"
         # self.rerank_model = "rerank-multilingual-v3.0"
         # self.rerank_modelEn = "rerank-english-v3.0"
 
@@ -79,6 +79,9 @@ class Reranker:
             List[str]: A list of the re-ranked document contents based on relevance.
         """
         try:
+            if len(context_list) == 0:
+                return context_list
+            
             # Determine the correct endpoint URL and API key based on language
             if language.lower() == "english":
                 rerank_url = self.rerank_url_en
