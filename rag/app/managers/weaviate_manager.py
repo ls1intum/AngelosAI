@@ -1,6 +1,6 @@
 import logging
 from enum import Enum
-from typing import List, Union, Tuple, Optional
+from typing import List, Union, Tuple, Optional, Dict
 
 import weaviate
 import weaviate.classes as wvc
@@ -239,28 +239,23 @@ class WeaviateManager:
         question_embedding = self.model.embed(question)
         return question_embedding
 
-    def get_relevant_context(self, question: str, question_embedding: str, study_program: str, language: str, org_id: Optional[int],
-                             test_mode: bool = False,
-                             limit=10, top_n=5, filter_by_org: bool = True) -> Union[str, Tuple[str, List[str]]]:
+
+    def get_relevant_context(self, question_embedding: List[float], study_program: str, org_id: Optional[int],
+                             limit=10, filter_by_org: bool = True) -> List[Dict]:
         """
-        Retrieve relevant documents based on the question embedding and study program.
-        Optionally returns both the concatenated context and the sorted context list for testing purposes.
+        Retrieves relevant context documents based on the given question embedding and study program.
 
         Args:
-            question (str): The student's question.
-            study_program (str): The study program of the student.
-            keywords (str, optional): Extracted keywords for boosting. Defaults to None.
-            test_mode (bool, optional): If True, returns both context and sorted_context. Defaults to False.
+            question_embedding (List[float]): The vector embedding representing the student's question.
+            study_program (str): The name of the study program to filter documents.
+            org_id (Optional[int]): The organization ID to filter documents (if applicable).
+            limit (int, optional): The maximum number of documents to retrieve. Defaults to 10.
+            filter_by_org (bool, optional): Whether to filter results by organization ID. Defaults to True.
 
         Returns:
-            Union[str, Tuple[str, List[str]]]:
-                - If test_mode is False: Returns the concatenated context string.
-                - If test_mode is True: Returns a tuple of (context, sorted_context list).
+            List[Dict]: A list of document dictionaries relevant to the query.
         """
         try:
-            # Define the number of documents to retrieve
-            min_relevance_score = 0.35
-            
             # Normalize the study program name
             study_program = WeaviateManager.normalize_study_program_name(study_program)
 
@@ -272,11 +267,6 @@ class WeaviateManager:
                 ])
             else:
                 filters = Filter.by_property(DocumentSchema.STUDY_PROGRAMS.value).contains_any([study_program])
-
-            # If getting general context, adjust the parameters
-            if study_program.lower() != "general":
-                limit = 10
-                min_relevance_score = 0.25
 
 
             # Perform the vector-based query with filters
@@ -295,51 +285,28 @@ class WeaviateManager:
                 }
                 for result in query_result.objects
             ]
-            content_content_list: List[str] = [doc['content'] for doc in context_list]
-
-            # Remove exact duplicates from context_list
-            content_content_list = WeaviateManager.remove_exact_duplicates(content_content_list)
-
-            # Rerank the unique contexts using Cohere
-            sorted_context = self.reranker.rerank_with_cohere(context_list=content_content_list, query=question,
-                                                              language=language,
-                                                              min_relevance_score=min_relevance_score, top_n=top_n)
-            # Integrate links
-            sorted_context_with_links = []
-            for sorted_content in sorted_context:
-                for doc in context_list:
-                    if doc['content'] == sorted_content:
-                        if doc['link']:
-                            sorted_context_with_links.append(f'Link: {doc["link"]}\nContent: {doc["content"]}')
-                        else:
-                            sorted_context_with_links.append(f'Link: -\nContent: {doc["content"]}')
-                        break
-
-            context = "\n-----\n".join(sorted_context_with_links)
-
-            # Return based on test_mode
-            if test_mode:
-                return context, sorted_context_with_links
-            else:
-                return context
+            
+            return context_list
 
         except Exception as e:
             logging.error(f"Error retrieving relevant context: {e}")
             # tb = traceback.format_exc()
             # logging.error("Traceback:\n%s", tb)
-            return "" if not test_mode else ("", [])
+            return []
 
-    def get_relevant_sample_questions(self, question: str, question_embedding: str, language: str, org_id: int) -> List[SampleQuestion]:
+
+    def get_relevant_sample_questions(self, question: str, question_embedding: List[float], language: str, org_id: int) -> List[SampleQuestion]:
         """
-        Retrieve relevant sample questions and answers based on the question embedding.
+        Retrieves relevant sample questions and their answers based on the provided question and its embedding.
 
         Args:
-            question (str): The student's question.
+            question (str): The original student question.
+            question_embedding (List[float]): The vector embedding of the question.
             language (str): The language of the question.
-            top_k (int): The number of top relevant sample questions to return.
+            org_id (int): The organization ID to filter sample questions.
 
         Returns:
-            List[SampleQuestion]: A list of SampleQuestion objects, sorted based on reranking results.
+            List[SampleQuestion]: A list of SampleQuestion objects, sorted by relevance.
         """
         try:
             limit = 5
@@ -364,19 +331,22 @@ class WeaviateManager:
                                                        study_programs=study_programs))
 
             # Rerank the sample questions using the reranker
-            context_list = [sq.question for sq in sample_questions]
-            sorted_questions = self.reranker.rerank_with_cohere(
+            context_list = [
+                (f"Question: {sq.question}\nAnswer: {sq.answer}" if language == "English"
+                else f"Frage: {sq.question}\nAntwort: {sq.answer}")
+                for sq in sample_questions
+            ]
+            
+            rerank_results = self.reranker.rerank_with_cohere(
                 context_list=context_list, query=question, language=language, top_n=top_n,
-                min_relevance_score=min_relevance_score
             )
 
-            # Map the sorted questions back to SampleQuestion objects
             sorted_sample_questions: List[SampleQuestion] = []
-            for sorted_question in sorted_questions:
-                for sq in sample_questions:
-                    if sq.question == sorted_question:
-                        sorted_sample_questions.append(sq)
-                        break
+            for result in rerank_results:
+                idx = result['index']
+                score = result['relevance_score']
+                if score >= min_relevance_score and idx < len(sample_questions):
+                    sorted_sample_questions.append(sample_questions[idx])
 
             return sorted_sample_questions
 
@@ -673,3 +643,15 @@ class WeaviateManager:
                 unique_context.append(context)
                 seen.add(context)
         return unique_context
+    
+    @staticmethod
+    def remove_exact_duplicates_from_dict(dicts: List[Dict], key: str = 'content') -> list:
+        """Remove dicts with duplicate values for given key, preserving order."""
+        seen = set()
+        deduped = []
+        for d in dicts:
+            val = d.get(key)
+            if val not in seen:
+                deduped.append(d)
+                seen.add(val)
+        return deduped

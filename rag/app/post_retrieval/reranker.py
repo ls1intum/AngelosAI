@@ -3,7 +3,7 @@ import logging
 import cohere
 from app.models.base_model import BaseModelClient
 from sklearn.metrics.pairwise import cosine_similarity
-from typing import List
+from typing import List, Dict
 import requests
 
 class DocumentWithEmbedding:
@@ -64,7 +64,7 @@ class Reranker:
 
         return ranked_context_list
 
-    def rerank_with_cohere(self, context_list: List[str], query: str, language: str, min_relevance_score: float, top_n: int = 5) -> List[str]:
+    def rerank_with_cohere(self, context_list: List[str], query: str, language: str, top_n: int = 5) -> List[Dict]:
         """
         Re-ranks the context list using the Cohere reranking model deployed on Azure.
 
@@ -72,15 +72,14 @@ class Reranker:
             context_list (List[str]): List of document texts to be re-ranked.
             query (str): The query string to rerank the documents against.
             language (str): The language of the documents ('english' or other).
-            min_relevance_score (float): The minimum relevance score to consider.
             top_n (int): The number of top results to return after re-ranking.
 
         Returns:
-            List[str]: A list of the re-ranked document contents based on relevance.
+            List[Dict]: A list of the re-ranked document contents based on relevance.
         """
         try:
-            if len(context_list) == 0:
-                return context_list
+            if not context_list:
+                return []
             
             # Determine the correct endpoint URL and API key based on language
             if language.lower() == "english":
@@ -103,30 +102,13 @@ class Reranker:
             }
 
             response = requests.post(rerank_url, headers=headers, json=payload)
-
             if response.status_code != 200:
                 logging.error(f"Error during Cohere re-ranking: {response.status_code} {response.text}")
-                return context_list[:top_n]
+                return [{'index': i, 'relevance_score': 1.0} for i in range(min(top_n, len(context_list)))]
 
-            response_json = response.json()
-
-            # Log the full response from the API for debugging
-            results = response_json.get('results', [])
-
-            # Log the ranked documents that are in the top_n
-            ranked_indices = []
-            for i, result in enumerate(results):
-                index = result['index']
-                relevance_score = result.get('relevance_score')
-                # Filter results based on min_relevance_score
-                if relevance_score >= min_relevance_score:
-                    ranked_indices.append(index)
-
-            # Get the ranked documents based on the indices
-            ranked_context_list = [context_list[result['index']] for result in results]
-
-            return ranked_context_list
+            results = response.json().get('results', [])
+            return results
 
         except Exception as e:
             logging.error(f"Error during Cohere re-ranking: {e}")
-            return context_list[:top_n]
+            return [{'index': i, 'relevance_score': 1.0} for i in range(min(top_n, len(context_list)))]
