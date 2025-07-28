@@ -17,17 +17,21 @@ async def ask(request: UserRequest):
 
     if not question or not classification:
         raise HTTPException(status_code=400, detail="No question or classification provided")
+    
+    answer = request_handler.handle_question(question, classification, language, org_id=org_id)
+    return {"answer": answer}
 
-    if config.TEST_MODE == "true":
-        answer, used_tokens, general_context, specific_context, sq_context = request_handler.handle_question_test_mode(question,
-                                                                                                           classification,
-                                                                                                           language,
-                                                                                                           org_id=org_id)
-        return {"answer": answer, "used_tokens": used_tokens, "general_context": general_context,
-                "specific_context": specific_context, "sq_context": sq_context}
-    else:
-        answer = request_handler.handle_question(question, classification, language, org_id=org_id)
-        return {"answer": answer}
+    # Uncomment to use test mode and calculate RAG metrics
+    # if config.TEST_MODE == "true":
+    #     answer, used_tokens, general_context, specific_context, sq_context = request_handler.handle_question_test_mode(question,
+    #                                                                                                        classification,
+    #                                                                                                        language,
+    #                                                                                                        org_id=org_id)
+    #     return {"answer": answer, "used_tokens": used_tokens, "general_context": general_context,
+    #             "specific_context": specific_context, "sq_context": sq_context}
+    # else:
+    #     answer = request_handler.handle_question(question, classification, language, org_id=org_id)
+    #     return {"answer": answer}
 
 
 @question_router.post("/chat", tags=["chatbot"], dependencies=[Depends(auth_handler.verify_api_key)])
