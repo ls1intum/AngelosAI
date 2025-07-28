@@ -281,7 +281,7 @@ class PromptManager:
     def create_messages(self, general_context: str, specific_context: str, sample_questions: str, question: str,
                         language: str, study_program):
         """Converts the template into a message format suitable for LLMs like OpenAI's GPT."""
-        study_program_text = self.format_study_program(study_program, language)
+        study_program_text = self.formatter.format_study_program(study_program, language)
         # Construct the system prompt
         if language.lower() == "english":
             user_content = self.answer_prompt_template.format(
@@ -314,7 +314,7 @@ class PromptManager:
     def create_messages_with_history(self, general_context: str, specific_context: str, question: str, history: str,
                                      sample_questions: str, language: str, study_program: str):
         """Converts the template into a message format suitable for LLMs like OpenAI's GPT."""
-        study_program_text = self.format_study_program(study_program, language)
+        study_program_text = self.formatter.format_study_program(study_program, language)
         # Construct the system prompt including history
         if language.lower() == "english":
             user_content = self.answer_prompt_template_with_history.format(
