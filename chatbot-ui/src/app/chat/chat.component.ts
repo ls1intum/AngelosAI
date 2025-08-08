@@ -26,6 +26,7 @@ export const MESSAGES = {
       If you'd like program-specific advice, please select your study program from the dropdown menu at the top, and I'll provide you with the most relevant information.
     `,
     errorMessage: `Sorry, but I am currently unable to answer your questions. Please try again at a later time.`,
+    limitErrorMessage: `You've reached the daily request limit for StudiAssist. Please try again tomorrow, or contact your academic advising office for urgent questions.`,
     placeholder: `Enter your message here...`,
     dropdownLabel: `Select Study Program`,
     warningMessage: `may make mistakes. Please verify important information.`,
@@ -39,6 +40,7 @@ export const MESSAGES = {
       Wenn Sie studiengangspezifische Ratschläge benötigen, wählen Sie bitte Ihr Studienprogramm aus dem Dropdown-Menü oben, und ich werde Ihnen die relevantesten Informationen bereitstellen.
     `,
     errorMessage: `Entschuldigung, aber ich kann Ihre Fragen derzeit nicht beantworten. Bitte versuchen Sie es später erneut.`,
+    limitErrorMessage: `Sie haben das tägliche Anfrage-Limit für StudiAssist erreicht. Bitte versuchen Sie es morgen erneut oder wenden Sie sich bei dringenden Fragen an Ihre Studienberatung.`,
     placeholder: `Geben Sie hier Ihre Nachricht ein...`,
     dropdownLabel: `Studiengang auswählen`,
     warningMessage: `kann Fehler machen. Bitte verifizieren Sie wichtige Informationen.`,
@@ -76,6 +78,7 @@ export class ChatComponent implements OnInit, AfterViewChecked {
   placeholderText: string = '';
   welcomeMessage: string = '';
   errorMessage: string = '';
+  rateLimitMessage: string = '';
   dropdownLabel: string = '';
   warningMessage: string = '';
 
@@ -133,6 +136,7 @@ export class ChatComponent implements OnInit, AfterViewChecked {
   setLanguageContent() {
     this.welcomeMessage = MESSAGES[this.language].welcomeMessage;
     this.errorMessage = MESSAGES[this.language].errorMessage;
+    this.rateLimitMessage = MESSAGES[this.language].limitErrorMessage;
     this.placeholderText = MESSAGES[this.language].placeholder;
     this.dropdownLabel = MESSAGES[this.language].dropdownLabel;
     this.warningMessage = MESSAGES[this.language].warningMessage;
@@ -204,18 +208,25 @@ export class ChatComponent implements OnInit, AfterViewChecked {
           this.disableSending = false;
         },
         error: (error: any) => {
-          // Remove the loading message
           this.messages.pop();
-          // Add an error message
-          this.messages.push({
-            message: this.errorMessage,
-            type: 'system'
-          });
-          this.needScrollToBottom = true;
-          this.disableSending = false;
-          if (error.message && error.message === 'TokenMissing') {
-            this.successSnackbar.dismiss();
-            this.errorSnackbar.showError('Ihre Session ist abgelaufen. Bitte melden Sie sich erneut an.', 5000);
+          if (error.status === 429) {
+            this.messages.push({
+              message: this.rateLimitMessage,
+              type: 'system'
+            });
+            this.needScrollToBottom = true;
+            this.disableSending = false;
+          } else {
+            this.messages.push({
+              message: this.errorMessage,
+              type: 'system'
+            });
+            this.needScrollToBottom = true;
+            this.disableSending = false;
+            if (error.message && error.message === 'TokenMissing') {
+              this.successSnackbar.dismiss();
+              this.errorSnackbar.showError('Ihre Session ist abgelaufen. Bitte melden Sie sich erneut an.', 5000);
+            }
           }
         }
       });

@@ -1,4 +1,6 @@
 import logging
+import time
+import requests
 from enum import Enum
 from typing import List, Union, Tuple, Optional, Dict
 
@@ -41,6 +43,25 @@ class QASchema(Enum):
     ANSWER = "answer"
     ORGANISATION_ID = "org_id"
 
+def wait_until_ready(base_url: str, port: int, timeout=180):
+    if base_url.startswith("http://") or base_url.startswith("https://"):
+        origin = base_url.rstrip("/")
+    else:
+        origin = f"http://{base_url}:{port}"
+    ready_url = f"{origin}/v1/.well-known/ready"
+
+    t0 = time.time()
+    while time.time() - t0 < timeout:
+        try:
+            r = requests.get(ready_url, timeout=2)
+            if r.status_code == 200:
+                logging.info("Weaviate is ready.")
+                return
+            logging.info("Weaviate not ready yet: %s %s", r.status_code, r.text[:200])
+        except requests.RequestException as e:
+            logging.info("Waiting for Weaviate: %s", e)
+        time.sleep(5)
+    raise RuntimeError(f"Weaviate not ready after {timeout}s (tried {ready_url})")
 
 class WeaviateManager:
     def __init__(self, url: str, embedding_model: BaseModelClient, reranker: Reranker):
@@ -49,6 +70,8 @@ class WeaviateManager:
         self.model = embedding_model
         self.schema_initialized = False
         self.reranker = reranker
+        
+        wait_until_ready(config.WEAVIATE_URL, config.WEAVIATE_PORT)
 
         if config.DELETE_BEFORE_INIT.lower() == "true":
             logging.warning("Deleting existing data before initialization...")

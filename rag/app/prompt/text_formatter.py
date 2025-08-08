@@ -4,6 +4,39 @@ from typing import List, Dict
 from app.data.user_requests import ChatMessage
 from app.managers.weaviate_manager import SampleQuestion
 
+FALLBACK_MESSAGES = {
+    3: {
+        "en": (
+            "Unfortunately, I cannot assist you with this inquiry. "
+            "Please contact the ASA (School Office Heilbronn) for program-specific questions: "
+            "[ASA (School Office Heilbronn)](https://www.cit.tum.de/en/cit/studies/degree-programs/master-information-engineering/consultation-contact/). "
+            "For general questions about studying at TUM, admissions and enrollment, please contact the CST: "
+            "[TUM Center for Study and Teaching (CST)](https://www.tum.de/en/studies/tum-center-for-study-and-teaching). "
+            "Thank you!"
+        ),
+        "de": (
+            "Leider kann ich Ihnen bei dieser Anfrage nicht weiterhelfen. "
+            "Bitte wenden Sie sich bei programmspezifischen Fragen an das ASA (School Office Heilbronn): "
+            "[ASA (School Office Heilbronn)](https://www.cit.tum.de/cit/studium/studiengaenge/bachelor-information-engineering/beratung-kontakt/). "
+            "Bei allgemeinen Fragen zum Studium an der TUM sowie zu Bewerbung, Zulassung und Immatrikulation wenden Sie sich bitte an das CST: "
+            "[TUM Center for Study and Teaching (CST)](https://www.tum.de/studium/tumcst). "
+            "Vielen Dank!"
+        ),
+    },
+    "default": {
+        "en": (
+            "I'm sorry, but I cannot answer this question based on the available information. "
+            "In this case, please contact the advising team responsible for your degree program or the CST "
+            "(Central Study Team) at TUM."
+        ),
+        "de": (
+            "Es tut mir leid, aber ich kann diese Frage basierend auf den vorliegenden Informationen nicht beantworten. "
+            "Bitte wenden Sie sich in diesem Fall direkt an das für den Studiengang zuständige Studienberatungs-Team "
+            "oder das CST (Central Study Team) der TUM."
+        ),
+    },
+}
+
 class TextFormatter:
     def format_context(self, context_dicts: List[Dict]):
         """
@@ -112,3 +145,19 @@ class TextFormatter:
         formatted_program = re.sub(r'-', ' ', study_program).title()
         query_with_program = f"{formatted_program}: {query}"
         return query_with_program
+    
+    def get_fallback_message(self, org_id: int, language: str) -> str:
+        lang = self.normalize_lang(language)
+        per_org = FALLBACK_MESSAGES.get(org_id)
+        if per_org and lang in per_org:
+            return per_org[lang]
+        return FALLBACK_MESSAGES["default"][lang]
+    
+    def normalize_lang(self, language: str) -> str:
+        """Return 'en' or 'de'."""
+        if not language:
+            return "en"
+        l = language.lower()
+        if l.startswith("de") or "german" in l or "deutsch" in l:
+            return "de"
+        return "en"

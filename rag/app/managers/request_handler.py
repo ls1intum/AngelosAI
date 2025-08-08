@@ -148,7 +148,8 @@ class RequestHandler:
             history=history_formatted,
             sample_questions=sample_questions_formatted,
             language=lang,
-            study_program=study_program
+            study_program=study_program,
+            org_id=org_id
         )
         
         # Generate and return the answer

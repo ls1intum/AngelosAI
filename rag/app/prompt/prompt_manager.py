@@ -50,7 +50,7 @@ class PromptManager:
     - Keep the response within 200 words.
     - Start the response with: "Dear <STUDENT NAME>,"
     - End with "Best regards, Academic Advising"
-    - If information that is **highly** relevant to the question is accompanied by a link (in the general or specific context), include the links in your answer like this: "For more detailed information, please visit the following link(s): For more detailed information, please visit the following link(s): <a href="LINK URL" target="_blank"><LINK TTLE></a>"
+    - If information that is **highly** relevant to the question is accompanied by a link (in the general or specific context), include the links in your answer like this: "For more detailed information, please visit the following link(s): <a href="LINK URL" target="_blank"><LINK TTLE></a>"
     """
 
         self.answer_prompt_template_de = """
@@ -154,10 +154,12 @@ class PromptManager:
     - Use a friendly and professional tone.
     - Keep the response within 200 words.
     - If a provided similar question from a student is thematically very similar to the question asked, rely heavily on the respective sample response from academic advising.
-    - If information that is **highly** relevant to the question is accompanied by a link (in the general or specific context), include the links in your response like this: "For more detailed information, please visit the following link(s): <LINKS>"
+    - If information that is **highly** relevant to the question is accompanied by a link (in the general or specific context), include the links in your response like this: "For more detailed information, please visit the following link(s): <LINKS>".
+    - Include links using Markdown like: [LINK TITLE](LINK URL)
 
     Ensure your response is accurate, student-friendly, and directly addresses the student's concern.
-    If you cannot answer the question using only the information provided, please respond with: “I’m sorry, but I cannot answer this question based on the available information. In this case, please contact the ASA team responsible for your degree program or the CST (Central Study Team) at TUM."
+    If you cannot answer the question using only the information provided, please respond with:
+    {fallback_message}
     """
 
         self.answer_prompt_template_with_history_de = """
@@ -213,9 +215,11 @@ class PromptManager:
     - Halten Sie die Antwort unter 200 Wörtern.
     - Wenn eine ähnliche Frage eines Studenten thematisch sehr ähnlich zur gestellten Frage ist, stützen Sie sich stark auf die jeweilige Beispielsantwort der Studienberatung.
     - Wenn Informationen, die für die Frage von **höchster** Relevanz sind, mit einem Link versehen sind (im allgemeinen oder studiengangspezifischen Kontext), fügen Sie die Links in Ihre Antwort ein, etwa so: „Für mehr Informationen besuchen Sie bitte den/die folgenden Link(s): <LINKS>“
+    - Fügen Sie Links im Markdown Format ein, z. B.: [LINK-TITEL](LINK-URL)
 
     Stellen Sie sicher, dass Ihre Antwort genau, studierendenfreundlich und direkt auf die Frage des Studierenden eingeht.
-    Falls Sie die Frage nicht mit ausschließlich den bereitgestellten Informationen beantworten können, antworten Sie mit: „Es tut mir leid, aber ich kann diese Frage basierend auf den vorliegenden Informationen nicht beantworten. Bitte wenden Sie sich in diesem Fall direkt an das für den Studiengang zuständige ASA-Team oder das CST (Central Study Team) der TUM.“
+    Falls Sie die Frage nicht mit ausschließlich den bereitgestellten Informationen beantworten können, antworten Sie mit:
+    {fallback_message}
     """
 
         self.judge_prompt_template = """
@@ -312,9 +316,11 @@ class PromptManager:
         ]
 
     def create_messages_with_history(self, general_context: str, specific_context: str, question: str, history: str,
-                                     sample_questions: str, language: str, study_program: str):
+                                     sample_questions: str, language: str, study_program: str, org_id: int):
         """Converts the template into a message format suitable for LLMs like OpenAI's GPT."""
         study_program_text = self.formatter.format_study_program(study_program, language)
+        fallback_message = self.formatter.get_fallback_message(org_id=org_id, language=language)
+        
         # Construct the system prompt including history
         if language.lower() == "english":
             user_content = self.answer_prompt_template_with_history.format(
@@ -323,7 +329,8 @@ class PromptManager:
                 question=question,
                 history=history or "No conversation history available.",
                 sample_questions=sample_questions,
-                study_program=study_program_text
+                study_program=study_program_text,
+                fallback_message=fallback_message
             )
             system_content = "You are an intelligent assistant that helps students of the Technical University of Munich (TUM) with questions related to their studies."
 
@@ -334,7 +341,8 @@ class PromptManager:
                 question=question,
                 history=history or "Kein Verlauf verfügbar.",
                 sample_questions=sample_questions,
-                study_program=study_program_text
+                study_program=study_program_text,
+                fallback_message=fallback_message
             )
             system_content = "Sie sind ein intelligenter Assistent, der den Studierenden der Technischen Universität München (TUM) bei Fragen rund um ihr Studium hilft"
         return [
