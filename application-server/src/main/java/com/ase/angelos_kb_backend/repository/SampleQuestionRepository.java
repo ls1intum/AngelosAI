@@ -4,6 +4,7 @@ import com.ase.angelos_kb_backend.model.SampleQuestion;
 import com.ase.angelos_kb_backend.model.StudyProgram;
 
 import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.data.jpa.repository.Modifying;
 import org.springframework.data.jpa.repository.Query;
 import org.springframework.data.repository.query.Param;
 
@@ -18,4 +19,8 @@ public interface SampleQuestionRepository extends JpaRepository<SampleQuestion, 
 
     @Query("SELECT s FROM SampleQuestion s WHERE :sp MEMBER OF s.studyPrograms")
     List<SampleQuestion> findByStudyProgramsContains(@Param("sp") StudyProgram sp);
+
+    @Modifying
+    @Query("DELETE FROM SampleQuestion sq WHERE sq.organisation.orgID = :orgId")
+    void deleteByOrganisationId(@Param("orgId") Long orgId);
 }

@@ -1,25 +1,5 @@
 package com.ase.angelos_kb_backend.controller;
 
-import java.io.IOException;
-import java.util.ArrayList;
-import java.util.Arrays;
-import java.util.Collections;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
-import java.util.stream.Collectors;
-
-import org.springframework.core.io.Resource;
-import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
-import org.springframework.core.io.support.ResourcePatternResolver;
-import org.springframework.http.HttpStatus;
-import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestHeader;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestParam;
-import org.springframework.web.bind.annotation.RestController;
-
 import com.ase.angelos_kb_backend.dto.SampleQuestionDTO;
 import com.ase.angelos_kb_backend.dto.StudyProgramDTO;
 import com.ase.angelos_kb_backend.dto.WebsiteRequestDTO;
@@ -31,8 +11,23 @@ import com.ase.angelos_kb_backend.service.StudyProgramService;
 import com.ase.angelos_kb_backend.service.WebsiteService;
 import com.ase.angelos_kb_backend.util.JwtUtil;
 import com.ase.angelos_kb_backend.util.SampleQuestionJson;
+import com.ase.angelos_kb_backend.util.SampleQuestionJsonMultiple;
 import com.ase.angelos_kb_backend.util.WebsiteJson;
 import com.fasterxml.jackson.databind.ObjectMapper;
+import org.springframework.core.io.Resource;
+import org.springframework.core.io.support.PathMatchingResourcePatternResolver;
+import org.springframework.core.io.support.ResourcePatternResolver;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.PostMapping;
+import org.springframework.web.bind.annotation.RequestHeader;
+import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.RequestParam;
+import org.springframework.web.bind.annotation.RestController;
+
+import java.io.IOException;
+import java.util.*;
+import java.util.stream.Collectors;
 
 @RestController
 @RequestMapping("/api/admin")
@@ -44,6 +39,7 @@ public class AdminController {
     private final StudyProgramService studyProgramService;
     private final JwtUtil jwtUtil;
 
+
     public AdminController(OrganisationService organisationService, SampleQuestionService sampleQuestionService, JwtUtil jwtUtil, 
             WebsiteService websiteService, StudyProgramService studyProgramService) {
         this.organisationService = organisationService;
@@ -53,22 +49,43 @@ public class AdminController {
         this.websiteService = websiteService;
     }
 
+    @PostMapping("/overwrite-sq")
+    public ResponseEntity<Void> overwriteSampleQuestions(
+        @RequestHeader("Authorization") String token,
+        @RequestParam Long orgId
+    ) {
+        try {
+            // Ensure system admin privilege
+            if (!jwtUtil.extractIsSystemAdmin(token.replace("Bearer ", ""))) {
+                return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
+            }
+
+            List<SampleQuestionDTO> sampleQuestionDTOs = loadSampleQuestionsFromJson(orgId);
+            System.out.println(sampleQuestionDTOs.size() + " sample question objects parsed.");
+            sampleQuestionService.deleteAllSampleQuestions(orgId);
+            sampleQuestionService.addSampleQuestions(orgId, sampleQuestionDTOs);
+            return ResponseEntity.ok().build();
+        } catch (Exception e) {
+            e.printStackTrace();
+            return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
+        }
+    }
+
     @PostMapping("/init-db")
     public ResponseEntity<Void> initDatabaseForOrg(
-            @RequestHeader("Authorization") String token,
-            @RequestParam Long orgId,
-            @RequestParam boolean isCITAdvising) {
-        
+        @RequestHeader("Authorization") String token,
+        @RequestParam Long orgId,
+        @RequestParam boolean isCITAdvising) {
         // Ensure system admin privilege
         if (!jwtUtil.extractIsSystemAdmin(token.replace("Bearer ", ""))) {
             return ResponseEntity.status(HttpStatus.FORBIDDEN).build();
         }
-
+        
         // Check if organisation exists
         Organisation organisation = organisationService.getOrganisationById(orgId);
         if (organisation == null) {
             return ResponseEntity.status(HttpStatus.BAD_REQUEST)
-                    .body(null);
+                .body(null);
         }
 
         try {
@@ -79,16 +96,19 @@ public class AdminController {
             }
             System.out.println(sampleQuestionDTOs.size() + " sample question objects parsed.");
             // Parse websites
-            List<WebsiteRequestDTO> websiteRequestDTOs = loadWebsitesFromResources(orgId, isCITAdvising);
+            List<WebsiteRequestDTO> websiteRequestDTOs = loadWebsitesFromResources(orgId,
+                                                                                   isCITAdvising);
             System.out.println(websiteRequestDTOs.size() + " websites objects parsed.");
 
             // Save to DB and push to RAG
             if (!websiteRequestDTOs.isEmpty()) {
-                websiteService.addWebsitesInBatch(orgId, websiteRequestDTOs);
+                websiteService.addWebsitesInBatch(orgId,
+                                                  websiteRequestDTOs);
             }
 
             if (!sampleQuestionDTOs.isEmpty()) {
-                sampleQuestionService.addSampleQuestions(orgId, sampleQuestionDTOs);
+                sampleQuestionService.addSampleQuestions(orgId,
+                                                         sampleQuestionDTOs);
             }
 
             return ResponseEntity.ok().build();
@@ -97,6 +117,40 @@ public class AdminController {
             e.printStackTrace();
             return ResponseEntity.status(HttpStatus.INTERNAL_SERVER_ERROR).build();
         }
+    }
+
+    private List<SampleQuestionDTO> loadSampleQuestionsFromJson(Long orgId) throws IOException {
+        List<SampleQuestionDTO> result = new ArrayList<>();
+        ResourcePatternResolver resolver = new PathMatchingResourcePatternResolver();
+        Resource resource = resolver.getResource("classpath:db-init/faq.json");
+    
+        ObjectMapper mapper = new ObjectMapper();
+        SampleQuestionJsonMultiple[] sqArray = mapper.readValue(resource.getInputStream(), SampleQuestionJsonMultiple[].class);
+    
+        int numberOfOrgPrograms = organisationService.getOrganisationById(orgId).getStudyPrograms().size();
+    
+        for (SampleQuestionJsonMultiple sqJson : sqArray) {
+            List<StudyProgramDTO> studyProgramDTOs = resolveStudyProgramsFlexible(orgId, numberOfOrgPrograms, sqJson.getStudyProgram());
+            if (studyProgramDTOs == null) {
+                continue;
+            }
+    
+            String question = sqJson.getQuestion();
+            question = (question != null && question.endsWith("\""))
+                ? question.substring(0, question.length() - 1)
+                : question;
+    
+            SampleQuestionDTO dto = new SampleQuestionDTO();
+            dto.setId(null);
+            dto.setTopic(sqJson.getTopic());
+            dto.setQuestion(question);
+            dto.setAnswer(sqJson.getAnswer());
+            dto.setStudyPrograms(studyProgramDTOs);
+    
+            result.add(dto);
+        }
+    
+        return result;
     }
 
     private List<SampleQuestionDTO> loadSampleQuestionsFromResources(Long orgId) throws IOException {
@@ -109,9 +163,9 @@ public class AdminController {
 
         for (Resource resource : resources) {
             SampleQuestionJson sqJson = new ObjectMapper().readValue(resource.getInputStream(), SampleQuestionJson.class);
-            
+
             // Process study program
-            List<StudyProgramDTO> studyProgramDTOs = resolveStudyPrograms(orgId, numberOfOrgPrograms, sqJson.getStudyProgram());
+            List<StudyProgramDTO> studyProgramDTOs = resolveStudyPrograms(orgId,numberOfOrgPrograms, sqJson.getStudyProgram());
             if (studyProgramDTOs == null) {
                 // Means study program not found or doesn't belong to org; skip
                 continue;
@@ -120,14 +174,14 @@ public class AdminController {
             // Handle wrongly formatted input JSONs (trailing quote)
             String question = sqJson.getQuestion();
             question = (question != null && question.endsWith("\"")) ? question.substring(0, question.length() - 1) : question;
-            
+
             SampleQuestionDTO dto = new SampleQuestionDTO();
             dto.setId(null); // ID will be assigned on save
             dto.setTopic(sqJson.getTopic());
             dto.setQuestion(question);
             dto.setAnswer(sqJson.getAnswer());
             dto.setStudyPrograms(studyProgramDTOs);
-            
+
             result.add(dto);
         }
 
@@ -144,10 +198,13 @@ public class AdminController {
         int numberOfOrgPrograms = organisationService.getOrganisationById(orgId).getStudyPrograms().size();
 
         for (Resource resource : resources) {
-            WebsiteJson wJson = objectMapper.readValue(resource.getInputStream(), WebsiteJson.class);
+            WebsiteJson wJson = objectMapper.readValue(resource.getInputStream(),
+                                                       WebsiteJson.class);
 
             // Process study program
-            List<StudyProgramDTO> studyProgramDTOs = resolveStudyPrograms(orgId, numberOfOrgPrograms, wJson.getStudyProgram());
+            List<StudyProgramDTO> studyProgramDTOs = resolveStudyPrograms(orgId,
+                                                                          numberOfOrgPrograms,
+                                                                          wJson.getStudyProgram());
             if (studyProgramDTOs == null) {
                 // Skip if study program is invalid or belongs to another org
                 continue;
@@ -159,15 +216,16 @@ public class AdminController {
 
             // Convert StudyProgramDTO list to IDs
             List<Long> spIds = studyProgramDTOs.stream()
-                    .map(StudyProgramDTO::getId)
-                    .collect(Collectors.toList());
+                .map(StudyProgramDTO::getId)
+                .toList();
 
             // Create a key from link and title
             // Using link+title as a combined key, or you might prefer a structured key object
             String key = wJson.getLink() + "###" + wJson.getTitle();
 
             // Add or merge study program IDs
-            websiteMap.computeIfAbsent(key, k -> new ArrayList<>()).addAll(spIds);
+            websiteMap.computeIfAbsent(key,
+                                       k -> new ArrayList<>()).addAll(spIds);
         }
 
         // Now convert the map to a list of WebsiteRequestDTO
@@ -214,8 +272,8 @@ public class AdminController {
 
         // Ensure correct organisation
         List<StudyProgram> filtered = sps.stream()
-                .filter(sp -> sp.getOrganisation() != null && sp.getOrganisation().getOrgID().equals(orgId))
-                .collect(Collectors.toList());
+            .filter(sp -> sp.getOrganisation() != null && sp.getOrganisation().getOrgID().equals(orgId))
+            .toList();
         if (filtered.isEmpty()) {
             return null;
         }
@@ -225,13 +283,13 @@ public class AdminController {
         }
 
         return filtered.stream()
-                .map(sp -> {
-                    StudyProgramDTO spDto = new StudyProgramDTO();
-                    spDto.setId(sp.getSpID());
-                    spDto.setName(sp.getName());
-                    return spDto;
-                })
-                .collect(Collectors.toList());
+            .map(sp -> {
+                StudyProgramDTO spDto = new StudyProgramDTO();
+                spDto.setId(sp.getSpID());
+                spDto.setName(sp.getName());
+                return spDto;
+            })
+            .collect(Collectors.toList());
     }
 
     private String convertSlugToName(String slug) {
@@ -239,7 +297,36 @@ public class AdminController {
         String[] parts = slug.split("-");
         // Capitalize first letter of each part and join by space
         return Arrays.stream(parts)
-                .map(part -> part.substring(0,1).toUpperCase() + part.substring(1))
-                .collect(Collectors.joining(" "));
+            .map(part -> part.substring(0,
+                                        1).toUpperCase() + part.substring(1))
+            .collect(Collectors.joining(" "));
+    }
+
+    private List<StudyProgramDTO> resolveStudyProgramsFlexible(
+        Long orgId, int numberOfOrgPrograms, List<String> programs) {
+
+        if (programs == null) return null;
+        // special-case: ["general"] or single "general"
+        if (programs.size() == 1 && "general".equalsIgnoreCase(programs.get(0))) {
+            return Collections.emptyList();
+        }
+
+        List<StudyProgramDTO> result = new ArrayList<>();
+        for (String prog : programs) {
+            if (prog == null || prog.isBlank()) continue;
+            String name = convertSlugToName(prog.trim().toLowerCase().replace(" ", "-"));
+            List<StudyProgram> sps = studyProgramService.getStudyProgramsByName(name);
+            if (sps == null || sps.isEmpty()) continue;
+
+            sps.stream()
+            .filter(sp -> sp.getOrganisation() != null && sp.getOrganisation().getOrgID().equals(orgId))
+            .forEach(sp -> {
+                StudyProgramDTO dto = new StudyProgramDTO();
+                dto.setId(sp.getSpID());
+                dto.setName(sp.getName());
+                result.add(dto);
+            });
+        }
+        return result;
     }
 }
