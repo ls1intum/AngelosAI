@@ -27,12 +27,12 @@ FALLBACK_MESSAGES = {
         "en": (
             "I'm sorry, but I cannot answer this question based on the available information. "
             "In this case, please contact the advising team responsible for your degree program or the CST "
-            "(Central Study Team) at TUM."
+            "(Center for Study and Teaching) at TUM."
         ),
         "de": (
             "Es tut mir leid, aber ich kann diese Frage basierend auf den vorliegenden Informationen nicht beantworten. "
             "Bitte wenden Sie sich in diesem Fall direkt an das für den Studiengang zuständige Studienberatungs-Team "
-            "oder das CST (Central Study Team) der TUM."
+            "oder das CST (Center for Study and Teaching) der TUM."
         ),
     },
 }
