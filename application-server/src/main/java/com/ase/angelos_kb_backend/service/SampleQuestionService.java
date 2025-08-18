@@ -196,6 +196,11 @@ public class SampleQuestionService {
         }
     }
 
+    @Transactional
+    public void deleteAllSampleQuestions(Long orgId) {
+        sampleQuestionRepository.deleteByOrganisationId(orgId);
+    }
+
     public SampleQuestionDTO convertToDto(SampleQuestion sampleQuestion) {
         SampleQuestionDTO dto = new SampleQuestionDTO();
         dto.setId(sampleQuestion.getSqID().toString());
