@@ -21,7 +21,7 @@ export const MESSAGES = {
     welcomeMessage: `
       Welcome to the TUM StudiAssist Chatbot!
       I'm here to help you with detailed and accurate information about studying at the TUM School of Computation, Information and Technology.
-      To provide you with the most relevant answers, please **select your study program** — or the one you're interested in — from the **dropdown menu** at the top. After that, feel free to ask your questions about about your studies!
+      To provide you with the most relevant answers, please **select your study program** — or the one you're interested in — from the **dropdown menu** at the top. After that, feel free to ask your questions about your studies!
     `,
     errorMessage: `Sorry, but I am currently unable to answer your questions. Please try again at a later time.`,
     limitErrorMessage: `You've reached the daily request limit for StudiAssist. Please try again tomorrow, or contact your academic advising office for urgent questions.`,
