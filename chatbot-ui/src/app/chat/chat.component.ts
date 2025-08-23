@@ -1,6 +1,6 @@
 import { CommonModule } from '@angular/common';
 import { Component, ElementRef, ViewChild, OnInit, ViewChildren, QueryList, AfterViewChecked, HostListener } from '@angular/core';
-import { FormControl, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ChatbotService } from '../services/chatbot.service';
 import { NgSelectModule } from '@ng-select/ng-select';
 import { ActivatedRoute, Router, RouterModule } from '@angular/router';
@@ -19,11 +19,9 @@ export interface ChatMessage {
 export const MESSAGES = {
   en: {
     welcomeMessage: `
-      Welcome to the TUM Academic Advisor Chatbot!
-      
-      I'm here to help you with detailed and accurate information about your studies at the TUM School of Computation, Information and Technology. Whether you have questions about your courses, exams, or study plans, feel free to ask!
-      
-      If you'd like program-specific advice, please select your study program from the dropdown menu at the top, and I'll provide you with the most relevant information.
+      Welcome to the TUM StudiAssist Chatbot!
+      I'm here to help you with detailed and accurate information about studying at the TUM School of Computation, Information and Technology.
+      To provide you with the most relevant answers, please **select your study program** — or the one you're interested in — from the **dropdown menu** at the top. After that, feel free to ask your questions about about your studies!
     `,
     errorMessage: `Sorry, but I am currently unable to answer your questions. Please try again at a later time.`,
     limitErrorMessage: `You've reached the daily request limit for StudiAssist. Please try again tomorrow, or contact your academic advising office for urgent questions.`,
@@ -33,11 +31,9 @@ export const MESSAGES = {
   },
   de: {
     welcomeMessage: `
-      Willkommen beim TUM Academic Advisor Chatbot!
-      
-      Ich bin hier, um Ihnen mit detaillierten und genauen Informationen zu Ihrem Studium an der TUM School of Computation, Information and Technology zu helfen. Egal ob Sie Fragen zu Kursen, Prüfungen oder Studienplänen haben, zögern Sie nicht zu fragen!
-      
-      Wenn Sie studiengangspezifische Ratschläge benötigen, wählen Sie bitte Ihr Studienprogramm aus dem Dropdown-Menü oben, und ich werde Ihnen die relevantesten Informationen bereitstellen.
+      Willkommen beim TUM StudiAssist Chatbot!
+      Ich helfe Ihnen gerne mit detaillierten und genauen Informationen rund um Ihr Studium an der TUM School of Computation, Information and Technology.  
+      Damit Sie die relevantesten Antworten erhalten, wählen Sie bitte oben im **Dropdown-Menü** Ihren **Studiengang** — oder den Studiengang, für den Sie sich interessieren — aus. Danach können Sie Ihre Fragen zum Studium stellen!
     `,
     errorMessage: `Entschuldigung, aber ich kann Ihre Fragen derzeit nicht beantworten. Bitte versuchen Sie es später erneut.`,
     limitErrorMessage: `Sie haben das tägliche Anfrage-Limit für StudiAssist erreicht. Bitte versuchen Sie es morgen erneut oder wenden Sie sich bei dringenden Fragen an Ihre Studienberatung.`,
@@ -123,7 +119,8 @@ export class ChatComponent implements OnInit, AfterViewChecked {
 
     this.updatePlaceholderText(window.innerWidth);
 
-    this.messages.push({ message: this.welcomeMessage, type: 'system' });
+    const formattedWelcomeMessage = this.formatResponseText(this.welcomeMessage);
+    this.messages.push({ message: formattedWelcomeMessage, type: 'system' });
   }
 
   ngAfterViewChecked() {
