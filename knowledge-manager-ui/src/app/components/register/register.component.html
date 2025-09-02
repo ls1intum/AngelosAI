@@ -1,56 +1,113 @@
-<div class="login-container">
-  <h3 class="login-page-header">Registrieren</h3>
-  <form (submit)="onRegister()">
-    <div class="form-group">
-      <label for="email">E-Mail</label>
-      <input type="email" id="email" [(ngModel)]="email" name="email" required />
-    </div>
+<div class="auth-bg-art">
+  <div class="auth-flex">
+    <div class="login-container" role="dialog" aria-labelledby="register-title">
+      <!-- Header -->
+      <div class="login-head">
+        <h1 id="register-title" class="login-title">Registrieren</h1>
+        <img
+          src="assets/studiassist.png"
+          alt="StudiAssist"
+          class="login-logo"
+          height="auto"
+        />
+        <h1 class="sr-only">Registrieren</h1>
+        <p class="login-subtitle"></p>
+      </div>
 
-    <!-- Custom dropdown for Organisations -->
-    <div class="form-group">
-      <label>Organisation</label>
-      <div class="dropdown">
-        <button type="button" (click)="toggleDropdown()">
-          <span>{{ selectedOrganisation?.name || 'Organisation auswählen' }}</span>
-          <mat-icon *ngIf="dropdownOpen">arrow_drop_up</mat-icon>
-          <mat-icon *ngIf="!dropdownOpen">arrow_drop_down</mat-icon>
-        </button>
-
-        <div *ngIf="dropdownOpen" class="dropdown-menu">
-          <ul>
-            <li (click)="clearSelection()" class="clear-option">
-              <span>Auswahl löschen</span>
-            </li>
-            <li *ngFor="let org of organisations" (click)="selectOrganisation(org)"
-              [class.selected]="org.id === selectedOrganisation?.id">
-              {{ org.name }}
-            </li>
-          </ul>
+      <!-- Form -->
+      <form (submit)="onRegister()" novalidate class="login-form">
+        <div class="form-group">
+          <label for="email">E-Mail</label>
+          <input
+            type="email"
+            id="email"
+            [(ngModel)]="email"
+            name="email"
+            required
+            inputmode="email"
+            autocomplete="username"
+            placeholder="name@uni.de"
+          />
         </div>
+
+        <!-- Organisation (custom dropdown) -->
+        <div class="form-group">
+          <label>Organisation</label>
+
+          <div class="dropdown">
+            <button type="button" class="dropdown-toggle" (click)="toggleDropdown()">
+              <span class="dropdown-value">
+                {{ selectedOrganisation?.name || 'Organisation auswählen' }}
+              </span>
+              <span class="dropdown-icons">
+                <mat-icon *ngIf="!dropdownOpen">arrow_drop_down</mat-icon>
+                <mat-icon *ngIf="dropdownOpen">arrow_drop_up</mat-icon>
+              </span>
+            </button>
+
+            <div *ngIf="dropdownOpen" class="dropdown-menu">
+              <ul>
+                <li class="clear-option" (click)="clearSelection()">
+                  Auswahl löschen
+                </li>
+                <li *ngFor="let org of organisations"
+                    (click)="selectOrganisation(org)"
+                    [class.selected]="org.id === selectedOrganisation?.id">
+                  {{ org.name }}
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Passwort</label>
+          <input
+            type="password"
+            id="password"
+            [(ngModel)]="password"
+            name="password"
+            required
+            autocomplete="new-password"
+            placeholder="••••••••"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="confirmPassword">Passwort bestätigen</label>
+          <input
+            type="password"
+            id="confirmPassword"
+            [(ngModel)]="confirmPassword"
+            name="confirmPassword"
+            required
+            autocomplete="new-password"
+            placeholder="••••••••"
+          />
+        </div>
+
+        <button *ngIf="!loading" [disabled]="loading" type="submit" class="fullwidth">
+          Registrieren
+        </button>
+        <div class="loader-wrap" *ngIf="loading">
+          <app-custom-dot-loader></app-custom-dot-loader>
+        </div>
+      </form>
+
+      <!-- Messages -->
+      <div *ngIf="successMessage" class="success-message">
+        {{ successMessage }}
+      </div>
+      <div *ngIf="errorMessage" class="error-message">
+        {{ errorMessage }}
+      </div>
+
+      <!-- CTA under the card -->
+      <div class="below-card-cta">
+        <a routerLink="/login" class="cta-link">
+          Bereits einen Account? <strong>Jetzt hier anmelden</strong>
+        </a>
       </div>
     </div>
-
-    <div class="form-group">
-      <label for="password">Passwort</label>
-      <input type="password" id="password" [(ngModel)]="password" name="password" required />
-    </div>
-    <div class="form-group">
-      <label for="confirmPassword">Passwort bestätigen</label>
-      <input type="password" id="confirmPassword" [(ngModel)]="confirmPassword" name="confirmPassword" required />
-    </div>
-    <button *ngIf="!loading" [disabled]="loading" type="submit">Registrieren</button>
-    <app-custom-dot-loader *ngIf="loading"></app-custom-dot-loader>
-  </form>
-
-  <!-- Success / Error messages -->
-  <div *ngIf="successMessage" class="success-message">
-    {{ successMessage }}
-  </div>
-  <div *ngIf="errorMessage" class="error-message">
-    {{ errorMessage }}
-  </div>
-
-  <div class="no-account">
-    Bereits einen Account? <a routerLink="/login" class="register-link">Jetzt hier anmelden</a>.
   </div>
 </div>

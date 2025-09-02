@@ -1,20 +1,68 @@
-<div class="login-container">
-  <h3 class="login-page-header">Anmelden</h3>
-  <form (submit)="onLogin()">
-    <div class="form-group">
-      <label for="email">E-Mail</label>
-      <input type="email" id="email" [(ngModel)]="email" name="email" required />
-    </div>
-    <div class="form-group">
-      <label for="password">Passwort</label>
-      <input type="password" id="password" [(ngModel)]="password" name="password" required />
-      <div class="forgot-password">
-        <a routerLink="/forgot-password" class="forgot-password-link">Passwort vergessen?</a>
+<div class="auth-bg-art">
+  <div class="auth-flex">
+    <div class="login-container" role="dialog" aria-labelledby="login-title">
+      <div class="login-head">
+        <!-- Visible title -->
+        <h1 id="login-title" class="login-title">Anmelden</h1>
+
+        <!-- Logo -->
+        <img
+          src="assets/studiassist.png"
+          alt="StudiAssist"
+          class="login-logo"
+        />
+
+        <!-- Subtitle -->
+        <p class="login-subtitle">
+          Melden Sie sich an, um den Knowledge Manager zu nutzen.
+        </p>
+      </div>
+
+      <!-- Email/Password -->
+      <form (submit)="onLogin()" novalidate class="login-form">
+        <div class="form-group">
+          <label for="email">E-Mail</label>
+          <input
+            type="email"
+            id="email"
+            [(ngModel)]="email"
+            name="email"
+            required
+            inputmode="email"
+            autocomplete="username"
+            placeholder="E-Mail-Adresse"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="password">Passwort</label>
+          <input
+            type="password"
+            id="password"
+            [(ngModel)]="password"
+            name="password"
+            required
+            autocomplete="current-password"
+            placeholder="Passwort"
+          />
+          <div class="forgot-password">
+            <a routerLink="/forgot-password" class="forgot-password-link">
+              Passwort vergessen?
+            </a>
+          </div>
+        </div>
+
+        <button type="submit" class="fullwidth">Login</button>
+      </form>
+
+      <div class="below-card-cta">
+        <a
+          routerLink="/register"
+          class="cta-link"
+        >
+          Noch keinen Account? <strong>Jetzt hier registrieren</strong>
+        </a>
       </div>
     </div>
-    <button type="submit">Login</button>
-  </form>
-  <div class="no-account">
-    Noch keinen Account? <a routerLink="/register" class="register-link">Jetzt hier registrieren</a>.
   </div>
 </div>

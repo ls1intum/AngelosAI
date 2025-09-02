@@ -14,6 +14,7 @@ import { EventService } from '../services/event.service';
 export interface ChatMessage {
   message: string;
   type: string;
+  timestamp?: Date;
 }
 
 export const MESSAGES = {
@@ -87,6 +88,7 @@ export class ChatComponent implements OnInit, AfterViewChecked {
 
   private readonly widthBreakpoint = 600;
   isLargeScreen: boolean = true;
+  feedbackMap = new Map<number, boolean>();
 
   constructor(
     private chatbotService: ChatbotService, 
@@ -120,7 +122,7 @@ export class ChatComponent implements OnInit, AfterViewChecked {
     this.updatePlaceholderText(window.innerWidth);
 
     const formattedWelcomeMessage = this.formatResponseText(this.welcomeMessage);
-    this.messages.push({ message: formattedWelcomeMessage, type: 'system' });
+    this.messages.push({ message: formattedWelcomeMessage, type: 'system', timestamp: new Date() });
   }
 
   ngAfterViewChecked() {
@@ -174,8 +176,7 @@ export class ChatComponent implements OnInit, AfterViewChecked {
     if (this.userMessage.trim()) {
       // Add the user's message to the messages array
       this.disableSending = true;
-      this.messages.push({ message: this.userMessage, type: 'user' });
-      this.userMessage = '';
+      this.messages.push({ message: this.userMessage, type: 'user', timestamp: new Date() });      this.userMessage = '';
       this.resetTextAreaHeight();
       this.needScrollToBottom = true;
 
@@ -200,24 +201,17 @@ export class ChatComponent implements OnInit, AfterViewChecked {
           this.messages.pop();
           // Add the bot's response
           const formattedResponse = this.formatResponseText(response.answer);
-          this.messages.push({ message: formattedResponse, type: 'system' });
-          this.needScrollToBottom = true;
+          this.messages.push({ message: formattedResponse, type: 'system', timestamp: new Date() });          this.needScrollToBottom = true;
           this.disableSending = false;
         },
         error: (error: any) => {
           this.messages.pop();
           if (error.status === 429) {
-            this.messages.push({
-              message: this.rateLimitMessage,
-              type: 'system'
-            });
+            this.messages.push({ message: this.rateLimitMessage, type: 'system', timestamp: new Date() });
             this.needScrollToBottom = true;
             this.disableSending = false;
           } else {
-            this.messages.push({
-              message: this.errorMessage,
-              type: 'system'
-            });
+            this.messages.push({ message: this.errorMessage, type: 'system', timestamp: new Date() });
             this.needScrollToBottom = true;
             this.disableSending = false;
             if (error.message && error.message === 'TokenMissing') {
@@ -231,7 +225,8 @@ export class ChatComponent implements OnInit, AfterViewChecked {
   }
 
   formatResponseText(text: string): string {
-    const withLineBreaks = text.replace(/(\d+\.\s*\*\*.*?\*\*)/g, '<br>$1');
+    const cleaned = text.replace(/^[“”"„]+|[“”"„]+$/g, '').trim();
+    const withLineBreaks = cleaned.replace(/(\d+\.\s*\*\*.*?\*\*)/g, '<br>$1');
     const boldFormatted = withLineBreaks.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
     const linkFormatted = boldFormatted.replace(/\[(.*?)\]\((.*?)\)/g, '<a href="$2" target="_blank" rel="noopener noreferrer" class="system-link">$1</a>');
     return linkFormatted;
@@ -333,9 +328,15 @@ export class ChatComponent implements OnInit, AfterViewChecked {
     this.errorSnackbar.dismiss();
     this.successSnackbar.showMessage("Vielen Dank für dein Feedback!", 3000);
 
+    this.feedbackMap.set(index, positive);
+
     this.eventService.logEvent(eventType, metadata).subscribe({
       error: err => console.warn('Feedback log failed', err)
     });
+  }
+
+  feedbackGiven(index: number, positive: boolean): boolean {
+    return this.feedbackMap.get(index) === positive;
   }
 
   /**

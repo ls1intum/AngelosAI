@@ -7,21 +7,17 @@ uvicorn==0.30.6
 starlette==0.38.6
 langchain==0.3.3
 numpy==1.26.4
-scikit-learn==1.5.2
 cohere==5.11.1
-langchain-community==0.3.2
-langchain-openai==0.2.2
-langchain-core==0.3.10
 weaviate-client==4.8.1
 pydantic==2.9.2
 pyjwt==2.9.0
 langdetect==1.0.9
+datetime==5.5
 
 #-------------testing dependencies-----------------------
 pytest==8.3.3
 pytest-asyncio==0.24.0
 pandas==2.2.3
-datetime==5.5
 tiktoken==0.8.0
 bs4==0.0.2
 pypdf==5.0.1
