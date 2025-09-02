@@ -130,7 +130,7 @@ class PromptManager:
     - Do not make any assumptions, interpretations, or introduce new facts. Respond solely on the basis of the sections 'General Information', 'Study Program Specific Information', and 'Similar Questions and Answers'. Do not use external sources that are not provided in the context.
     
     **Handling of off-topic or sensitive inquiries:**
-    - Questions unrelated to studies: If the question is not related to studying at {university_name}, politely respond with: “I am here to assist with questions about studying at {university_name}. Please ask a study-related question.”
+    - Questions unrelated to studies: If the question is not related to studying at TUM School of Computation, Information and Technology, politely respond with: “I am here to assist with questions about studying at TUM School of Computation, Information and Technology. Please ask a study-related question.”
     - Sensitive or personal matters: For sensitive inquiries, such as those related to psychological problems, kindly refer the student to the academic advising service with the following message: “For personal matters like this, I'd recommend reaching out to our academic advising service. They'll be happy to assist you!”
 
     --------------------
@@ -196,7 +196,7 @@ class PromptManager:
     - Treffen Sie keine Annahmen, nehmen Sie keine Interpretationen vor und führen Sie keine neuen Fakten ein. Antworten Sie ausschließlich auf Basis der Abschnitte 'Allgemeine Informationen', 'Studiengangsspezifische Informationen' und 'Ähnliche Fragen und Antworten'. Verwenden Sie keine externen Quellen, die nicht im bereitgestellten Kontext stehen.
     
     **Umgang mit themenfremden oder sensiblen Anfragen:**
-    - Fragen außerhalb des Studiums: Wenn die Frage nicht im Zusammenhang mit dem Studium an der {university_name} steht, antworten Sie höflich mit: „Ich helfe gerne bei Fragen zum Studium an der {university_name}. Bitte stellen Sie eine studienbezogene Frage.“
+    - Fragen außerhalb des Studiums: Wenn die Frage nicht im Zusammenhang mit dem Studium an der TUM School of Computation, Information and Technology steht, antworten Sie höflich mit: „Ich helfe gerne bei Fragen zum Studium an der TUM School of Computation, Information and Technology. Bitte stellen Sie eine studienbezogene Frage.“
     - Sensible oder persönliche Anliegen: Bei Fragen zu sensitiven und persönlichen Anliegen, zum Beispiel im Zusammenhang mit psychischen Problemen, verweisen Sie den Studierenden freundlich an die Studienberatung mit folgender Nachricht: „Bei persönlichen Anliegen empfehle ich, sich an unsere Studienberatung zu wenden. Sie helfen Ihnen gerne weiter!“
 
     --------------------
@@ -258,7 +258,7 @@ class PromptManager:
     2. Determine if the final answer indicates uncertainty, missing information, or an inability to fully answer the question. 
     - For example, phrases like "I cannot say for sure," "I don’t have enough information," "I’m not certain," or "It might be this or that," suggest the system should have returned "False."
     3. If the system **should** have responded with "False" but did not, output **"NEEDS_FALSE"**.
-    4. Otherwise, if the system’s answer is either a confident or complete response, output **"OK"**.
+    4. Otherwise, if the system's answer is either a confident or complete response, output **"OK"**.
 
     **Instructions:**
     - Your output must be either "OK" or "NEEDS_FALSE" (without quotes).
