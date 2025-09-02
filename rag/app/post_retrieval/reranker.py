@@ -2,7 +2,6 @@ import numpy as np
 import logging
 import cohere
 from app.models.base_model import BaseModelClient
-from sklearn.metrics.pairwise import cosine_similarity
 from typing import List, Dict
 import requests
 
@@ -35,34 +34,6 @@ class Reranker:
         self.rerank_url_multi = "https://rerank-35.swedencentral.models.ai.azure.com/v1/rerank"
         # self.rerank_model = "rerank-multilingual-v3.0"
         # self.rerank_modelEn = "rerank-english-v3.0"
-
-    def rerank_with_embeddings(self, context_list: List[DocumentWithEmbedding], keyword_string: str) -> List[str]:
-        """
-        Re-rank the context list based on cosine similarity between keyword embeddings and document embeddings.
-
-        Args:
-            context_list (List[DocumentWithEmbedding]): List of DocumentWithEmbedding objects to be re-ranked.
-            keyword_string (str): Keyword string or query to compare against the context.
-
-        Returns:
-            ranked_context_list (List[str]): Context (content) list re-ranked based on similarity.
-        """
-        # Generate embedding for the keyword string
-        keyword_embedding = self.model.embed(keyword_string)
-
-        # Calculate cosine similarity between the keyword embedding and each document embedding
-        cosine_similarities = [
-            cosine_similarity([keyword_embedding], [doc_embedding.embedding]).flatten()[0] 
-            for doc_embedding in context_list
-        ]
-
-        # Rank the documents based on cosine similarity (in descending order)
-        ranked_indices = np.argsort(-np.array(cosine_similarities))
-
-        # Extract the content from the ranked DocumentWithEmbedding objects
-        ranked_context_list = [context_list[i].content for i in ranked_indices]
-
-        return ranked_context_list
 
     def rerank_with_cohere(self, context_list: List[str], query: str, language: str, top_n: int = 5) -> List[Dict]:
         """

@@ -63,16 +63,22 @@ export class WebsitesComponent extends BaseComponent<Website> {
       header: 'Titel',
       value: (website: Website) => website.title,
       primary: true,
+      sort: true,
+      sortAccessor: (w: Website) => w.title?.toLowerCase() ?? ''
     },
     {
       key: 'link',
       header: 'Link',
       cellComponent: LinkCellComponent,
+      sort: true,
+      sortAccessor: (w: Website) => w.link?.toLowerCase() ?? ''
     },
     {
       key: 'lastUpdated',
       header: 'Zuletzt aktualisiert',
       cellComponent: RefreshCellComponent,
+      sort: true,
+      sortAccessor: (w: Website) => w.lastUpdated ? new Date(w.lastUpdated).getTime() : 0
     },
     {
       key: 'studyPrograms',

@@ -80,6 +80,8 @@ export class SampleQuestionsComponent extends BaseComponent<SampleQuestion> {
       header: 'Thema',
       value: (sq: SampleQuestion) => sq.topic,
       primary: true,
+      sort: true,
+      sortAccessor: (sq: SampleQuestion) => sq.topic?.toLowerCase() ?? ''
     },
     {
       key: 'question',

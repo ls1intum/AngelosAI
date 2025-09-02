@@ -1,12 +1,10 @@
 import { CommonModule, NgClass, NgComponentOutlet, NgFor, NgForOf, NgIf } from '@angular/common';
-import { AfterViewChecked, AfterViewInit, Component, Injector, Input, OnChanges, SimpleChanges, TemplateRef, Type, ViewChild } from '@angular/core';
+import { AfterViewInit, Component, Injector, Input, OnChanges, SimpleChanges, TemplateRef, Type, ViewChild } from '@angular/core';
 import { MatTableDataSource, MatTableModule } from '@angular/material/table'
 import { MatCardModule } from '@angular/material/card'
-import { ActionsCellComponent } from '../../cells/actions-cell/actions-cell.component';
-import { StudyProgramsCellComponent } from '../../cells/study-programs-cell/study-programs-cell.component';
-import { LinkCellComponent } from '../../cells/link-cell/link-cell.component';
 import { StudyProgram } from '../../../data/model/study-program.model';
 import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
+import { MatSort, MatSortModule } from '@angular/material/sort';
 
 @Component({
   selector: 'app-main-table',
@@ -20,7 +18,8 @@ import { MatPaginator, MatPaginatorModule } from '@angular/material/paginator';
     MatCardModule,
     NgComponentOutlet,
     NgClass,
-    MatPaginatorModule
+    MatPaginatorModule,
+    MatSortModule
   ],
   templateUrl: './main-table.component.html',
   styleUrl: './main-table.component.css'
@@ -35,6 +34,7 @@ export class MainTableComponent<T> implements AfterViewInit, OnChanges {
   @Input() availableStudyPrograms: StudyProgram[] = [];
 
   @ViewChild(MatPaginator) paginator!: MatPaginator;
+  @ViewChild(MatSort) sort!: MatSort;
 
   get displayedColumns(): string[] {
     return this.columns.map(column => column.key as string);
@@ -65,10 +65,27 @@ export class MainTableComponent<T> implements AfterViewInit, OnChanges {
     if (changes['dataSource'] && changes['dataSource'].currentValue) {
       this.matDataSource.data = changes['dataSource'].currentValue;
     }
+
+    this.matDataSource.sortingDataAccessor = (row: T, property: string) => {
+      const col = this.columns.find(c => c.key === property);
+      if (!col) return ''; // unknown column
+
+      const raw =
+        col.sortAccessor?.(row) ??
+        col.value?.(row) ??
+        (row as any)[property];
+
+      // normalize for consistent sorting
+      if (raw === null || raw === undefined) return '';
+      if (typeof raw === 'boolean') return raw ? 1 : 0;
+      if (typeof raw === 'string') return raw.toLowerCase().trim();
+      return raw as any;
+    };
   }
 
   ngAfterViewInit(): void {
     this.matDataSource.paginator = this.paginator;
+    this.matDataSource.sort = this.sort;
   }
 }
 
@@ -78,4 +95,7 @@ export interface TableColumn<T> {
   value?: (row: T) => string | number | boolean;
   cellComponent?: Type<any>;
   primary?: boolean;
+
+  sort?: boolean;
+  sortAccessor?: (row: T) => string | number | boolean | null | undefined;
 }
