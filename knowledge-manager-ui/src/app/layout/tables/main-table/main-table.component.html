@@ -1,10 +1,17 @@
 <mat-card class="table-container">
   <!-- Use [dataSource]="matDataSource" now -->
-  <table mat-table [dataSource]="matDataSource" class="mat-elevation-z1" [trackBy]="trackByFn">
+  <table mat-table [dataSource]="matDataSource" class="mat-elevation-z1" [trackBy]="trackByFn" matSort>
 
     <!-- Same dynamic columns as before -->
     <ng-container *ngFor="let column of columns" [matColumnDef]="column.key">
-      <th class="table-heading" mat-header-cell *matHeaderCellDef> {{ column.header }} </th>
+      <th
+        class="table-heading"
+        mat-header-cell
+        *matHeaderCellDef
+        [mat-sort-header]="column.key"
+        [disabled]="!column.sort">
+        {{ column.header }}
+      </th>
       <td mat-cell *matCellDef="let element">
         <ng-container *ngIf="column.cellComponent; else defaultCell">
           <ng-container
@@ -27,7 +34,7 @@
 
   <!-- Pagination control -->
   <mat-paginator
-    [pageSize]="25"
+    [pageSize]="20"
     showFirstLastButtons
   ></mat-paginator>
 </mat-card>

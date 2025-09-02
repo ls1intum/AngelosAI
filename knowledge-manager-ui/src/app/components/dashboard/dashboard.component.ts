@@ -160,9 +160,9 @@ export class DashboardComponent implements OnInit {
       case 'today':
         return [now.startOf('day').toJSDate(), now.endOf('day').toJSDate()];
       case 'week':
-        return [now.startOf('week').toJSDate(), now.endOf('day').toJSDate()];
+        return [now.minus({ days: 7 }).toJSDate(), now.endOf('day').toJSDate()];
       case 'month':
-        return [now.startOf('month').toJSDate(), now.endOf('day').toJSDate()];
+        return [now.minus({ days: 30 }).toJSDate(), now.endOf('day').toJSDate()];
       default:
         return [new Date(0), now.toJSDate()];
     }

@@ -61,11 +61,15 @@ export class DocumentsComponent extends BaseComponent<DocumentModel> {
       header: 'Titel',
       value: (document: DocumentModel) => document.title,
       primary: true,
+      sort: true,
+      sortAccessor: (d: DocumentModel) => d.title?.toLowerCase() ?? ''
     },
     {
       key: 'uploaded',
       header: 'Hinzugefügt am',
       value: (document: DocumentModel) => document.uploaded.toLocaleDateString(),
+      sort: true,
+      sortAccessor: (d: DocumentModel) => new Date(d.uploaded).getTime()
     },
     {
       key: 'studyPrograms',
