@@ -152,6 +152,8 @@ class RequestHandler:
             org_id=org_id
         )
         
+        logging.info(f"Messages to model: {messages_to_model}")
+        
         # Generate and return the answer
         return self.model.complete(messages_to_model)
     

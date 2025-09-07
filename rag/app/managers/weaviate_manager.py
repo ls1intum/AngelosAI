@@ -29,6 +29,7 @@ class DocumentSchema(Enum):
     CONTENT = "content"
     LINK = "link"
     ORGANISATION_ID = "org_id"
+    TITLE = "title"
 
 
 class QASchema(Enum):
@@ -125,6 +126,12 @@ class WeaviateManager:
                 description="The link of the document",
                 data_type=DataType.TEXT,
                 index_inverted=False
+            ),
+            Property(
+                name=DocumentSchema.TITLE.value,
+                description="Optional title for the source website/document",
+                data_type=DataType.TEXT,
+                index_inverted=False,
             ),
             Property(
                 name=DocumentSchema.ORGANISATION_ID.value,
@@ -256,7 +263,29 @@ class WeaviateManager:
         except weaviate.exceptions.UnexpectedStatusCodeError as e:
             logging.error(f"Unexpected status code while creating schema: {e}")
         except Exception as e:
-            logging.error(f"Error creating schema for {collection_name}: {e}")
+            logging.error(f"Error creating schema for {collection_name}: {e}")  
+            
+    # Migation to add title property to document schema
+    def _ensure_document_title_property(self) -> None:
+        """Add the 'title' property to an existing collection if it doesn't exist."""
+        try:
+            col = self.client.collections.get(DocumentSchema.COLLECTION_NAME.value)
+            cfg = col.config.get()
+            existing = {p.name for p in (cfg.properties or [])}
+            if DocumentSchema.TITLE.value not in existing:
+                logging.info("Adding new title property")
+                col.config.add_property(
+                    Property(
+                        name=DocumentSchema.TITLE.value,
+                        description="Optional title for the source website/document",
+                        data_type=DataType.TEXT,
+                        index_inverted=False,
+                    )
+                )
+                logging.info("Weaviate: added missing 'title' property to existing collection")
+        except Exception as e:
+            logging.error(f"Failed to ensure 'title' property exists: {e}")
+            raise
             
     def get_question_embedding(self, question: str) -> List[float]:
         question_embedding = self.model.embed(question)
@@ -304,7 +333,8 @@ class WeaviateManager:
             context_list = [
                 {
                     'content': result.properties[DocumentSchema.CONTENT.value],
-                    'link': result.properties.get(DocumentSchema.LINK.value, None)
+                    'link': result.properties.get(DocumentSchema.LINK.value, None),
+                    'title': result.properties.get(DocumentSchema.TITLE.value, None),
                 }
                 for result in query_result.objects
             ]
@@ -339,7 +369,7 @@ class WeaviateManager:
             query_result = self.qa_collection.query.near_vector(
                 near_vector=question_embedding,
                 limit=limit,
-                filters=Filter.by_property(DocumentSchema.ORGANISATION_ID.value).equal(org_id),
+                filters=Filter.by_property(QASchema.ORGANISATION_ID.value).equal(org_id),
                 return_metadata=wvc.query.MetadataQuery(certainty=True, score=True, distance=True)
             )
 
@@ -349,7 +379,7 @@ class WeaviateManager:
                 topic = result.properties.get(QASchema.TOPIC.value, "")
                 retrieved_question = result.properties.get(QASchema.QUESTION.value, "")
                 answer = result.properties.get(QASchema.ANSWER.value, "")
-                study_programs = result.properties.get(QASchema.STUDY_PROGRAMS, [])
+                study_programs = result.properties.get(QASchema.STUDY_PROGRAMS.value, [])
                 sample_questions.append(SampleQuestion(topic=topic, question=retrieved_question, answer=answer,
                                                        study_programs=study_programs))
 
@@ -435,6 +465,7 @@ class WeaviateManager:
                             DocumentSchema.KNOWLEDGE_BASE_ID.value: chunk.id,
                             DocumentSchema.CONTENT.value: chunk.content,
                             DocumentSchema.LINK.value: chunk.link,
+                            DocumentSchema.TITLE.value: chunk.title,
                             DocumentSchema.STUDY_PROGRAMS.value: chunk.study_programs,
                             DocumentSchema.ORGANISATION_ID.value: chunk.org_id
                         }
@@ -464,6 +495,7 @@ class WeaviateManager:
                     properties = result.properties
                     metadata = DatabaseDocumentMetadata(
                         link=properties[DocumentSchema.LINK.value],
+                        title=properties[DocumentSchema.TITLE.value],
                         study_programs=properties[DocumentSchema.STUDY_PROGRAMS.value],
                         org_id=properties[DocumentSchema.ORGANISATION_ID.value]
                     )
@@ -504,6 +536,7 @@ class WeaviateManager:
                 uuid = result.uuid
                 properties = result.properties
                 properties[DocumentSchema.LINK.value] = document.link  # Update the link
+                properties[DocumentSchema.TITLE.value] = document.title # Update the title
                 properties[DocumentSchema.STUDY_PROGRAMS.value] = document.study_programs  # Update the study programs
 
                 # Reinsert the object with the updated properties
@@ -645,7 +678,7 @@ class WeaviateManager:
     def delete_sample_questions(self, ids: List[str]):
         try:
             self.qa_collection.data.delete_many(
-                where=Filter.by_property(DocumentSchema.KNOWLEDGE_BASE_ID).contains_any(ids)
+                where=Filter.by_property(QASchema.KNOWLEDGE_BASE_ID.value).contains_any(ids)
             )
         except Exception as e:
             logging.error(f"Failed to batch delete sample questions: {e}")
