@@ -92,6 +92,7 @@ class WeaviateManager:
         # Check if the collection already exists
         if self.client.collections.exists(collection_name):
             logging.info(f"Existing schema found for {collection_name}")
+            self._ensure_document_title_property()
             return self.client.collections.get(collection_name)
 
         logging.info(f"Creating new schema for {collection_name}")
