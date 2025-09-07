@@ -20,10 +20,10 @@ class RequestHandler:
         self.text_formatter = formatter
         self.response_evaluator = response_evaluator
         
-    GEN_THRESH = 0.25
-    SPEC_THRESH = 0.35
-    MAX_GENERAL = 8
-    MAX_SPECIFIC = 8
+    GEN_THRESH = 0.35
+    SPEC_THRESH = 0.4
+    MAX_GENERAL = 6
+    MAX_SPECIFIC = 6
 
     def handle_question(self, question: str, classification: str, language: str, org_id: int):
         """Handles the question by fetching relevant documents and generating an answer."""
