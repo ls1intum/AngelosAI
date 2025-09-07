@@ -10,6 +10,7 @@ class DatabaseDocument(BaseModel):
     
 class DatabaseDocumentMetadata(BaseModel):
     link: Optional[str] = None
+    title: Optional[str] = None
     study_programs: List[str]
     org_id: int
     

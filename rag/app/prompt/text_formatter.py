@@ -50,8 +50,17 @@ class TextFormatter:
         """
         formatted = []
         for doc in context_dicts:
-            link_str = f'Link: {doc["link"]}' if doc.get("link") else 'Link: -'
-            formatted.append(f'{link_str}\nContent: {doc["content"]}')
+            title = doc.get("title")
+            link = doc.get("link")
+            content = doc.get("content", "")
+
+            lines = []
+            if title:
+                lines.append(f"Title: {title}")
+            lines.append(f"Link: {link}" if link else "Link: -")
+            lines.append(f"Content: {content}")
+
+            formatted.append("\n".join(lines))
         return "\n-----\n".join(formatted)
     
     def format_sample_questions(self, sample_questions: List[SampleQuestion], language: str) -> str:

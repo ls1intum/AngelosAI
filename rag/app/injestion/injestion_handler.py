@@ -24,6 +24,7 @@ class InjestionHandler:
                     id=website.id,
                     content=chunk,
                     link=website.link,
+                    title=website.title,
                     study_programs=self.prepare_study_programs(website.studyPrograms),
                     org_id=website.orgId
                 )
@@ -45,6 +46,7 @@ class InjestionHandler:
                         id=website.id,
                         content=chunk,
                         link=website.link,
+                        title=website.title,
                         study_programs=self.prepare_study_programs(website.studyPrograms),
                         org_id=website.orgId
                     )
@@ -60,6 +62,7 @@ class InjestionHandler:
                 DatabaseDocument(
                     id=document.id,
                     content=chunk,
+                    title=document.title,
                     study_programs=self.prepare_study_programs(document.studyPrograms),
                     org_id=document.orgId
                 )
@@ -81,6 +84,7 @@ class InjestionHandler:
                         DatabaseDocument(
                             id=id,
                             content=chunk,
+                            title=metadata.title,
                             study_programs=self.prepare_study_programs(metadata.study_programs),
                             org_id=metadata.org_id
                         )
@@ -94,6 +98,7 @@ class InjestionHandler:
                                 id=id,
                                 content=chunk,
                                 link=metadata.link,
+                                title=metadata.title,
                                 study_programs=self.prepare_study_programs(metadata.study_programs),
                                 org_id=metadata.org_id
                             )
@@ -106,6 +111,7 @@ class InjestionHandler:
                                 id=id,
                                 content=chunk,
                                 link=metadata.link,
+                                title=metadata.title,
                                 study_programs=self.prepare_study_programs(metadata.study_programs),
                                 org_id=metadata.org_id
                             )
