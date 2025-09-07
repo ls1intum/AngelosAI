@@ -6,6 +6,7 @@ class DatabaseDocument(BaseModel):
     link: Optional[str] = None
     study_programs: List[str]
     content: str
+    title: Optional[str] = None
     org_id: int
     
 class DatabaseDocumentMetadata(BaseModel):
