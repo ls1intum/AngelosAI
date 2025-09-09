@@ -38,7 +38,7 @@ jobs:
             organisation: 2,
             filterByOrg: true,
             chatbotUrl: 'https://chatbot.ase.cit.tum.de/chat',
-            loginRequired: true
+            loginRequired: false
           };" > chatbot-ui/src/environments/environment.prod.ts
 
       - name: Build & Push (Org 2)
