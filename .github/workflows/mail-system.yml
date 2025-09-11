@@ -7,6 +7,7 @@ on:
     paths:
       - 'mail-system/**'
       - '.github/workflows/mail-system.yml'
+  workflow_dispatch:  
 
 jobs:
   build:

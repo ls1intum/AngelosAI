@@ -7,6 +7,7 @@ on:
     paths:
       - 'knowledge-manager-ui/**'
       - '.github/workflows/knowledge-manager.yml'
+  workflow_dispatch:  
 
 jobs:
   build:
