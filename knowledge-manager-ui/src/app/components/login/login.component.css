@@ -72,7 +72,7 @@
 
 /* Buttons */
 button {
-  background-color: var(--studi-chat-secondary);
+  background-color: var(--tum-blue-light-dark);
   color: #fff;
   padding: 12px 16px;
   border: none;
@@ -110,7 +110,7 @@ button:active { transform: translateY(1px); }
 }
 
 .cta-link {
-  color: var(--studi-chat-secondary);
+  color: var(--tum-blue-light-dark);
   text-decoration: none;
   font-size: 0.95rem;
 }
