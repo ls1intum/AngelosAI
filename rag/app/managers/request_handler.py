@@ -20,8 +20,8 @@ class RequestHandler:
         self.text_formatter = formatter
         self.response_evaluator = response_evaluator
         
-    GEN_THRESH = 0.35
-    SPEC_THRESH = 0.4
+    GEN_THRESH = 0.3
+    SPEC_THRESH = 0.35
     MAX_GENERAL = 6
     MAX_SPECIFIC = 6
 
