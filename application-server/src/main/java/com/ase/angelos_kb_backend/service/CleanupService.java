@@ -5,8 +5,10 @@ import java.time.temporal.ChronoUnit;
 
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.ase.angelos_kb_backend.repository.EventRepository;
+
 
 @Service
 public class CleanupService {
@@ -17,6 +19,7 @@ public class CleanupService {
     }
 
     @Scheduled(cron = "0 15 2 * * ?")
+    @Transactional
     public void cleanOldEventLogs() {
         Instant cutoff = Instant.now().minus(365, ChronoUnit.DAYS);
         long countBefore = eventLogRepository.count();

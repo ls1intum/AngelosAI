@@ -104,6 +104,10 @@ $logo-size: 40px;
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
+
+      @media (max-width: 900px) {
+        padding: 8px
+      }
     }
 
     .message {
@@ -120,6 +124,11 @@ $logo-size: 40px;
         padding: 6px;
         font-size: 14px;
         margin: 4px 0;
+      }
+
+      @media (max-width: 900px) {
+        font-size: 14px;
+        padding: 8px;
       }
 
       &.system {
@@ -231,6 +240,12 @@ $logo-size: 40px;
           font-size: 10px;
           gap: 2px;
           margin-top: 2px;
+        }
+
+        @media (max-width: 900px) {
+          font-size: 11px;
+          gap: 2px;
+          margin-top: 3px;
         }
 
         a {
