@@ -8,6 +8,8 @@ import org.springframework.stereotype.Service;
 
 import com.ase.angelos_kb_backend.repository.EventRepository;
 
+import jakarta.transaction.Transactional;
+
 @Service
 public class CleanupService {
     private final EventRepository eventLogRepository;
@@ -17,6 +19,7 @@ public class CleanupService {
     }
 
     @Scheduled(cron = "0 15 2 * * ?")
+    @Transactional
     public void cleanOldEventLogs() {
         Instant cutoff = Instant.now().minus(365, ChronoUnit.DAYS);
         long countBefore = eventLogRepository.count();
