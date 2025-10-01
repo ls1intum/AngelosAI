@@ -5,10 +5,10 @@ import java.time.temporal.ChronoUnit;
 
 import org.springframework.scheduling.annotation.Scheduled;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 
 import com.ase.angelos_kb_backend.repository.EventRepository;
 
-import jakarta.transaction.Transactional;
 
 @Service
 public class CleanupService {
