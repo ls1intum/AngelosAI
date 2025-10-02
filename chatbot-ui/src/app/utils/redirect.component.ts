@@ -14,7 +14,7 @@ export class RedirectComponent implements OnInit {
     if (environment.loginRequired) {
       this.router.navigate(['/login']);
     } else {
-      this.router.navigate(['/en']);
+      this.router.navigate(['/de']);
     }
   }
 }
