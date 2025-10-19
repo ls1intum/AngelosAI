@@ -94,7 +94,10 @@ public class CITParser {
             System.out.println("Failed to connect to " + url + ": " + e.getMessage());
         }
 
-        return contentText.toString();
+        String out = contentText.toString().trim();
+        out = normalizeWhitespace(out);
+        out = normalizeEmails(out);
+        return out;
     }
 
     private ExtractedData getVisibleText(Element element, String pageHeading) {
@@ -225,6 +228,40 @@ public class CITParser {
         }
 
         return null;
+    }
+
+    private String normalizeWhitespace(String text) {
+        if (text == null || text.isEmpty()) return text;
+
+        text = text
+                .replaceAll("[\\u200B-\\u200D\\uFEFF]", "")
+                .replaceAll("\\p{Zs}+", " ");
+
+        text = text.replaceAll("[ \\t\\x0B\\f\\r]+", " ");
+        text = text.replaceAll("\\n{3,}", "\n\n");
+        return text;
+    }
+
+    private String normalizeEmails(String text) {
+        if (text == null || text.isEmpty()) return text;
+
+        // Replace obfuscated '@' variants (including "spam prevention")
+        text = text.replaceAll(
+                "(?i)([\\p{L}0-9._%+-])\\s*(?:\\(\\s*at\\s*\\)|\\[\\s*at\\s*\\]|\\bat\\b|\\(\\s*ät\\s*\\)|\\[\\s*ät\\s*\\]|ä\\s*t|spam\\s*prevention)\\s*([@]?)\\s*([\\p{L}0-9])",
+                "$1@$3"
+        );
+
+        // Replace obfuscated '.' or 'punkt' between domain parts
+        text = text.replaceAll(
+                "(?i)([\\p{L}0-9-])\\s*(?:\\(\\s*dot\\s*\\)|\\[\\s*dot\\s*\\]|\\bdot\\b|\\bpunkt\\b)\\s*([\\p{L}0-9-])",
+                "$1.$2"
+        );
+
+        // Remove unnecessary spaces around @ or .
+        text = text.replaceAll("(\\S)\\s*@\\s*(\\S)", "$1@$2");
+        text = text.replaceAll("([\\p{L}0-9-])\\s*\\.\\s*([\\p{L}0-9-])", "$1.$2");
+
+        return text;
     }
 
     // Helper Classes

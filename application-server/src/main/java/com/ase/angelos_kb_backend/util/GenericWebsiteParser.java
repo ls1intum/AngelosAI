@@ -23,27 +23,22 @@ public class GenericWebsiteParser {
 
     // Truncation of website content specific to TUM websites
     public String truncateString(String s) {
-        // Define the substrings to search for
-        String[] substrings = {"TYPO3SEARCH_end", "studium spam prevention @tum.de"};
+        // Keep this about structural markers only
+        String[] substrings = {"TYPO3SEARCH_end"};
     
-        // Initialize a list to hold the last indices of each substring
         List<Integer> lastIndices = new ArrayList<>();
-    
-        // Iterate over each substring and find its last occurrence
         for (String substr : substrings) {
             int index = s.lastIndexOf(substr);
             if (index != -1) {
                 lastIndices.add(index);
             }
         }
-    
         if (!lastIndices.isEmpty()) {
-            // Truncate at the last occurrence of any specified substring
             int truncateIndex = Collections.max(lastIndices);
             s = s.substring(0, truncateIndex);
         }
     
-        // Remove lines starting with "window.flow"
+        // Strip lines starting with "window.flow"
         String[] lines = s.split("\\R");
         StringBuilder filteredLines = new StringBuilder();
         for (String line : lines) {
@@ -51,8 +46,6 @@ public class GenericWebsiteParser {
                 filteredLines.append(line).append("\n");
             }
         }
-    
-        // Return the filtered content (full content if no substrings were found)
         return filteredLines.toString();
     }
 
@@ -87,6 +80,11 @@ public class GenericWebsiteParser {
                 // Remove extra newlines
                 structuredText = structuredText.replaceAll("\\n\\n", "\n");
                 structuredText = structuredText.replaceAll("\\n{3,}", "\n\n");
+
+                // Normalize hidden whitespaces
+                structuredText = normalizeWhitespace(structuredText);
+                // Normalize mail addresses
+                structuredText = normalizeEmails(structuredText);
     
                 // Apply truncation if necessary, otherwise return the structured content
                 return truncateString(structuredText.trim());
@@ -153,5 +151,46 @@ public class GenericWebsiteParser {
             sb.append(s);
         }
         return sb.toString();
+    }
+
+    private String normalizeWhitespace(String text) {
+        if (text == null || text.isEmpty()) return text;
+    
+        // Convert common “hidden” or odd whitespaces to normal space:
+        // \p{Zs} = any space separator; include NO-BREAK SPACE, THIN SPACE, etc.
+        // Also strip zero-width spaces & non-joiners.
+        text = text
+            .replaceAll("[\\u200B-\\u200D\\uFEFF]", "")
+            .replaceAll("\\p{Zs}+", " ");
+    
+        // Normalize regular whitespace runs
+        text = text.replaceAll("[ \\t\\x0B\\f\\r]+", " ");
+    
+        // Preserve paragraph breaks (optional): collapse 3+ newlines to 2
+        text = text.replaceAll("\\n{3,}", "\n\n");
+    
+        return text;
+    }
+
+    private String normalizeEmails(String text) {
+        if (text == null || text.isEmpty()) return text;
+    
+        // Replace obfuscated '@' variants (including "spam prevention")
+        text = text.replaceAll(
+            "(?i)([\\p{L}0-9._%+-])\\s*(?:\\(\\s*at\\s*\\)|\\[\\s*at\\s*\\]|\\bat\\b|\\(\\s*ät\\s*\\)|\\[\\s*ät\\s*\\]|ä\\s*t|spam\\s*prevention)\\s*([@]?)\\s*([\\p{L}0-9])",
+            "$1@$3"
+        );
+    
+        // Replace obfuscated '.' or 'punkt' between domain parts
+        text = text.replaceAll(
+            "(?i)([\\p{L}0-9-])\\s*(?:\\(\\s*dot\\s*\\)|\\[\\s*dot\\s*\\]|\\bdot\\b|\\bpunkt\\b)\\s*([\\p{L}0-9-])",
+            "$1.$2"
+        );
+    
+        // Remove unnecessary spaces around @ or .
+        text = text.replaceAll("(\\S)\\s*@\\s*(\\S)", "$1@$2");
+        text = text.replaceAll("([\\p{L}0-9-])\\s*\\.\\s*([\\p{L}0-9-])", "$1.$2");
+    
+        return text;
     }
 }
