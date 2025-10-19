@@ -175,19 +175,32 @@ public class GenericWebsiteParser {
     private String normalizeEmails(String text) {
         if (text == null || text.isEmpty()) return text;
     
-        // Replace obfuscated '@' variants (including "spam prevention")
+        // 1) Rebuild obfuscated '@' variants (including "spam prevention").
+        //    - Capture the entire local part (1+ chars).
+        //    - Accept (at)/(ät)/[at]/[ät]/plain "at"/"ät"/"spam prevention".
+        //    - Optionally there may already be an '@' after the obfuscation.
+        //    - Use a lookahead to ensure a domain char follows, but do not consume it.
         text = text.replaceAll(
-            "(?i)([\\p{L}0-9._%+-])\\s*(?:\\(\\s*at\\s*\\)|\\[\\s*at\\s*\\]|\\bat\\b|\\(\\s*ät\\s*\\)|\\[\\s*ät\\s*\\]|ä\\s*t|spam\\s*prevention)\\s*([@]?)\\s*([\\p{L}0-9])",
-            "$1@$3"
+            "(?iu)" +
+            "([\\p{L}0-9._%+-]+)\\s*" +                                   // local-part (1+)
+            "(?:\\(\\s*(?:at|ät)\\s*\\)|\\[\\s*(?:at|ät)\\s*\\]|\\b(?:at|ät)\\b|spam\\s*prevention)\\s*" + // obfuscated '@'
+            "(?:@)?\\s*" +                                                // optional stray '@'
+            "(?=[\\p{L}0-9])",                                            // lookahead for the next domain char
+            "$1@"
         );
     
-        // Replace obfuscated '.' or 'punkt' between domain parts
+        // 2) Rebuild obfuscated dots between domain labels: (dot)/(punkt)/dot/punkt
+        //    - Capture the full left label (1+).
+        //    - Use a lookahead for the next label so we don't consume it.
         text = text.replaceAll(
-            "(?i)([\\p{L}0-9-])\\s*(?:\\(\\s*dot\\s*\\)|\\[\\s*dot\\s*\\]|\\bdot\\b|\\bpunkt\\b)\\s*([\\p{L}0-9-])",
-            "$1.$2"
+            "(?iu)" +
+            "([\\p{L}0-9-]+)\\s*" +                                       // left label (1+)
+            "(?:\\(\\s*dot\\s*\\)|\\[\\s*dot\\s*\\]|\\bdot\\b|\\bpunkt\\b)\\s*" + // obfuscated '.'
+            "(?=[\\p{L}0-9-])",                                           // lookahead for next label char
+            "$1."
         );
     
-        // Remove unnecessary spaces around @ or .
+        // 3) Clean up stray spaces around @ and .
         text = text.replaceAll("(\\S)\\s*@\\s*(\\S)", "$1@$2");
         text = text.replaceAll("([\\p{L}0-9-])\\s*\\.\\s*([\\p{L}0-9-])", "$1.$2");
     
