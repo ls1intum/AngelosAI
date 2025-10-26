@@ -16,12 +16,15 @@ import { EventLogDTO } from '@app/data/dto/event-log.dto';
 import { MainTableComponent, TableColumn } from '@app/layout/tables/main-table/main-table.component';
 import { Feedback } from '@app/data/model/feedback.model';
 import { MatIconModule } from '@angular/material/icon';
-import { AddButtonComponent } from '@app/layout/buttons/add-button/add-button.component';
 import { FeedbackComponent } from './feedback/feedback.component';
 import { FeedbackCellComponent } from '@app/layout/cells/feedback-cell/feedback-cell.component';
+import { MatButtonToggleModule } from '@angular/material/button-toggle';
+import { QaLogDTO } from '@app/data/dto/qa-log.dto';
+import { QACellComponent } from '@app/layout/cells/qacell/qacell.component';
 
 type TimeFrame = 'today' | 'week' | 'month' | 'total';
 
+type LogMode = 'feedback' | 'qa';
 
 @Component({
   selector: 'app-dashboard',
@@ -30,7 +33,7 @@ type TimeFrame = 'today' | 'week' | 'month' | 'total';
     CommonModule, FormsModule, ReactiveFormsModule,
     MatRadioModule, MatCardModule, MatTableModule, MatPaginatorModule,
     MainTableComponent,
-    NgChartsModule, MatIconModule
+    NgChartsModule, MatIconModule, MatButtonToggleModule
   ],
   providers: [
     { provide: MatPaginatorIntl, useClass: CustomPaginatorIntl }
@@ -44,7 +47,7 @@ export class DashboardComponent implements OnInit {
   frameCtrl = new FormControl<TimeFrame>('week');
   limits?: LimitDTO;
 
-  // cards
+  // Cards
   chatCount = 0;
   mailSensitive = 0;
   mailAuto = 0;
@@ -79,6 +82,32 @@ export class DashboardComponent implements OnInit {
     },
   ];
   feedbackRows: Feedback[] = [];
+
+  qaColumns: TableColumn<QaLogDTO>[] = [
+    {
+      key: 'createdAt',
+      header: 'Datum',
+      value: (f: QaLogDTO) => f.createdAt,
+      primary: true
+    },
+    {
+      key: 'question',
+      header: 'Frage',
+      cellComponent: QACellComponent
+    },
+    {
+      key: 'answer',
+      header: 'Antwort',
+      cellComponent: QACellComponent
+    },
+  ];
+
+  logMode: LogMode = 'feedback';
+
+  // Q&A table state
+  qaRows: QaLogDTO[] = [];
+  qaLoading = false;
+  qaLoadedOnce = false;
 
   private destroy$ = new Subject<void>();
 
@@ -277,5 +306,25 @@ export class DashboardComponent implements OnInit {
     }
   
     return buckets;
+  }
+
+  onLogModeChange(mode: LogMode) {
+    this.logMode = mode;
+    if (mode === 'qa' && !this.qaLoadedOnce) {
+      this.qaLoading = true;
+      this.dashboardService.getQaLogs().subscribe({
+        next: items => {
+          // format date once for display
+          this.qaRows = items.map(r => ({
+            ...r,
+            createdAt: DateTime.fromISO(r.createdAt)
+              .toLocaleString(DateTime.DATETIME_SHORT)
+          }));
+          this.qaLoadedOnce = true;
+        },
+        error: () => { this.qaRows = []; },
+        complete: () => { this.qaLoading = false; }
+      });
+    }
   }
 }

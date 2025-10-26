@@ -5,6 +5,7 @@ import { Observable } from "rxjs";
 import { EventLogDTO } from "@app/data/dto/event-log.dto";
 import { environment } from "environments/environment";
 import { LimitDTO } from "@app/data/dto/limit.dto";
+import { QaLogDTO } from "@app/data/dto/qa-log.dto";
 
 @Injectable({
   providedIn: 'root',
@@ -31,6 +32,13 @@ export class DashboardService {
      */
     getUsageLimits(): Observable<LimitDTO> {
         return this.http.get<LimitDTO>(`${environment.backendUrl}/event/limits`);
+    }
+
+    /**
+     * Fetch QA logs from the backend
+     */
+    getQaLogs(): Observable<QaLogDTO[]> {
+      return this.http.get<QaLogDTO[]>(`${environment.backendUrl}/event/qa-logs`);
     }
 }
   

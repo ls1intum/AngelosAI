@@ -27,7 +27,7 @@
   
       <div class="stats">
         <mat-card class="stat-box">
-            <div class="stat‐content">
+            <div class="stat-content">
               <mat-icon class="stat-icon">chat</mat-icon>
               <div>
                 <h3>{{ chatCount }}</h3>
@@ -37,14 +37,14 @@
           </mat-card>
           
           <mat-card class="stat-box">
-            <div class="stat‐content">
+            <div class="stat-content">
               <mat-icon class="stat-icon">mail</mat-icon>
               <div>
                 <h3>{{ mailSensitive }}</h3>
                 <p class="stat-label">Sensitive E-Mails</p>
               </div>
             </div>
-            <div class="stat‐content">
+            <div class="stat-content">
               <mat-icon class="stat-icon">alternate_email</mat-icon>
               <div>
                 <h3>{{ mailAuto }}</h3>
@@ -74,11 +74,37 @@
     <mat-card>{{ limits.mailLimit }} Mail-Antworten/Tag (Account)</mat-card>
     </div>
   
-    <!-- ---------- FEEDBACK LOG -------------------------- -->
-    <h3 class="section-header">Feedback Log</h3>
-    <app-main-table
+    <!-- ---------- FEEDBACK / Q&A LOG -------------------------- -->
+    <h3 class="section-header">Logs</h3>
+
+    <mat-button-toggle-group
+      class="log-toggle"
+      [value]="logMode"
+      (change)="onLogModeChange($event.value)">
+      <mat-button-toggle value="feedback">
+        Feedback Log
+      </mat-button-toggle>
+      <mat-button-toggle value="qa">
+        Fragen & Antworten
+      </mat-button-toggle>
+    </mat-button-toggle-group>
+
+    <!-- Feedback table -->
+    <app-main-table *ngIf="logMode==='feedback'"
       [dataSource]="feedbackRows"
       [columns]="feedbackColumns"
       [parentComponent]="this">
     </app-main-table>
+
+    <!-- Q&A table + loading -->
+    <div *ngIf="logMode==='qa'">
+      <p *ngIf="qaLoading" class="empty-msg">Daten werden geladen...</p>
+      <app-main-table *ngIf="!qaLoading"
+        [dataSource]="qaRows"
+        [columns]="qaColumns"
+        [parentComponent]="this">
+      </app-main-table>
+    </div>
+
+    <div class="spacer" style="height: 12px;"></div>
   </div>
