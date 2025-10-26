@@ -12,6 +12,7 @@ import com.ase.angelos_kb_backend.dto.angelos.AngelosChatResponse;
 import com.ase.angelos_kb_backend.service.AngelosService;
 import com.ase.angelos_kb_backend.service.EventService;
 import com.ase.angelos_kb_backend.service.OrganisationService;
+import com.ase.angelos_kb_backend.service.QaLogService;
 import com.ase.angelos_kb_backend.service.StudyProgramService;
 import com.ase.angelos_kb_backend.util.JwtUtil;
 
@@ -40,7 +41,7 @@ public class ChatController {
     private final StudyProgramService studyProgramService;
     private final OrganisationService organisationService;
     private final EventService eventService;
-
+    private final QaLogService qaLogService;
 
     @Value("${angelos.username}")
     private String angelosUsername;
@@ -51,12 +52,20 @@ public class ChatController {
     @Value("${app.max-message-length}")
     private int maxMessageLength;
 
-    public ChatController(JwtUtil jwtUtil, AngelosService angelosService, StudyProgramService studyProgramService, OrganisationService organisationService, EventService eventService) {
+    public ChatController(
+        JwtUtil jwtUtil, 
+        AngelosService angelosService, 
+        StudyProgramService studyProgramService, 
+        OrganisationService organisationService, 
+        EventService eventService,
+        QaLogService qaLogService
+    ) {
         this.jwtUtil = jwtUtil;
         this.angelosService = angelosService;
         this.studyProgramService = studyProgramService;
         this.organisationService = organisationService;
         this.eventService = eventService;
+        this.qaLogService = qaLogService;
     }
 
     /**
@@ -90,6 +99,14 @@ public class ChatController {
                 AngelosChatResponse response = angelosService.sendChatMessage(request, filterByOrg);
     
                 eventService.logEventAsync("chat_request_completed", null, orgId);
+
+                // Log question and answer (temporary)
+                qaLogService.logAsync(
+                    lastMessage.getMessage(),
+                    response.getAnswer(),
+                    request.getStudy_program(),
+                    orgId
+                );
 
                 return ResponseEntity.ok(response);
             } catch (Exception e) {

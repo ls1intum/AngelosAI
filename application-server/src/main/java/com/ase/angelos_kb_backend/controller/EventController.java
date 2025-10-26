@@ -15,11 +15,15 @@ import org.springframework.web.bind.annotation.RestController;
 import com.ase.angelos_kb_backend.dto.EventLogDTO;
 import com.ase.angelos_kb_backend.dto.EventRequestDTO;
 import com.ase.angelos_kb_backend.dto.LimitDTO;
+import com.ase.angelos_kb_backend.dto.QaLogDTO;
 import com.ase.angelos_kb_backend.dto.TimeframeRequestDTO;
+import com.ase.angelos_kb_backend.dto.UserDetailsDTO;
 import com.ase.angelos_kb_backend.model.EventLog;
 import com.ase.angelos_kb_backend.service.AngelosService;
 import com.ase.angelos_kb_backend.service.EunomiaService;
 import com.ase.angelos_kb_backend.service.EventService;
+import com.ase.angelos_kb_backend.service.QaLogService;
+import com.ase.angelos_kb_backend.service.UserService;
 import com.ase.angelos_kb_backend.util.JwtUtil;
 
 @RestController
@@ -30,6 +34,8 @@ public class EventController {
     private final EunomiaService eunomiaService;
     private final AngelosService angelosService;
     private final JwtUtil jwtUtil;
+    private final QaLogService qaLogService;
+    private final UserService userService;
 
     @Value("${angelos.username}")
     private String angelosUsername;
@@ -46,11 +52,13 @@ public class EventController {
     @Value("${app.mail.limit}")
     private int mailLimit;
 
-    public EventController(EventService eventService, EunomiaService eunomiaService, AngelosService angelosService, JwtUtil jwtUtil) {
+    public EventController(EventService eventService, EunomiaService eunomiaService, AngelosService angelosService, JwtUtil jwtUtil, QaLogService qaLogService, UserService userService) {
         this.eventService = eventService;
         this.eunomiaService = eunomiaService;
         this.angelosService = angelosService;
         this.jwtUtil = jwtUtil;
+        this.qaLogService = qaLogService;
+        this.userService = userService;
     }
 
     @PostMapping("/create")
@@ -80,5 +88,22 @@ public class EventController {
     public ResponseEntity<LimitDTO> getLimits() {
         LimitDTO dto = new LimitDTO(totalLimit, chatLimit, mailLimit);
         return ResponseEntity.ok(dto);
+    }
+
+    @GetMapping("/qa-logs")
+    public ResponseEntity<List<QaLogDTO>> getQaLogs(@RequestHeader("Authorization") String token) {
+        String email = jwtUtil.extractEmail(token.replace("Bearer ", ""));
+        UserDetailsDTO user = userService.findMe(email);
+
+        List<QaLogDTO> result;
+        if (Boolean.TRUE.equals(user.isSystemAdmin())) {
+            // System admin → all orgs
+            result = qaLogService.getAll();
+        } else {
+            // Regular user → restrict to their org
+            Long orgId = jwtUtil.extractOrgId(token.replace("Bearer ", ""));
+            result = qaLogService.getByOrg(orgId);
+        }
+        return ResponseEntity.ok(result);
     }
 }

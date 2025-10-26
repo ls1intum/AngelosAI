@@ -53,7 +53,7 @@
     background-color: white;
   }
   
-  .stat‐content {
+  .stat-content {
     display: flex;
     align-items: center;
     gap: 16px;
@@ -144,4 +144,15 @@
     font-weight: 700;
     color: var(--primary-color);
     margin: 24px 0 16px 0;
+  }
+
+  .log-toggle {
+    margin-bottom: 8px;
+  }
+
+  .empty-msg {
+    text-align: center;
+    margin: 24px 0;
+    color: #666;
+    font-style: italic;
   }
