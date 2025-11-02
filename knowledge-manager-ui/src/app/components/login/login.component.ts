@@ -50,15 +50,23 @@ export class LoginComponent {
       },
       error: (err) => {
         console.error('Login failed:', err);
-        this.snackBar.open(
-          'Login fehlgeschlagen. Bitte stellen Sie sicher, dass Ihre E-Mail-Adresse bestätigt ist, Ihr Passwort korrekt ist und Ihr Konto von einem Administrator freigegeben wurde.',
-          'Schließen', {
-          duration: 4000,
-          horizontalPosition: 'right',
-          verticalPosition: 'top',
-          panelClass: ['error-snack-bar'],
+        if (err?.status === 429) {
+          this.snackBar.open(
+            'Zu viele Login-Versuche. Bitte versuchen Sie es später erneut.',
+            'Schließen',
+            { duration: 4000, horizontalPosition: 'right', verticalPosition: 'top', panelClass: ['error-snack-bar'] }
+          );
+        } else {
+          this.snackBar.open(
+            'Login fehlgeschlagen. Bitte stellen Sie sicher, dass Ihre E-Mail-Adresse bestätigt ist, Ihr Passwort korrekt ist und Ihr Konto von einem Administrator freigegeben wurde.',
+            'Schließen', {
+              duration: 4000,
+              horizontalPosition: 'right',
+              verticalPosition: 'top',
+              panelClass: ['error-snack-bar'],
+            }
+          );
         }
-        );
       }
     });
   }
