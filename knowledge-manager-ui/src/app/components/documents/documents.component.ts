@@ -118,17 +118,40 @@ export class DocumentsComponent extends BaseComponent<DocumentModel> {
   override deleteData(id: string): Observable<void> {
     return this.documentService.deleteDocument(id);
   }
+  
 
   onView(rowData: DocumentModel) {
-    this.documentService.getDocumentById(rowData.id).subscribe({
-      next: (pdfBlob) => {
-        const url = URL.createObjectURL(pdfBlob);
-        window.open(url, '_blank');
+    // Open immediately (within the click handler) to satisfy popup blockers
+    const win = window.open('', '_blank');
+    if (win) {
+      win.document.write('<!doctype html><title>Dokument</title><body style="margin:0">Lädt…</body>');
+    }
   
-        setTimeout(() => URL.revokeObjectURL(url), 1000);
+    this.documentService.getDocumentById(rowData.id).subscribe({
+      next: (blob) => {
+        // ensure proper PDF mime type
+        const pdfBlob = blob?.type ? blob : new Blob([blob], { type: 'application/pdf' });
+        const url = URL.createObjectURL(pdfBlob);
+  
+        if (win) {
+          // Embed > fewer issues on Safari/Firefox than setting location directly
+          win.document.body.innerHTML =
+            `<iframe src="${url}" style="border:0;width:100%;height:100vh"></iframe>`;
+          // Revoke when the tab is closed
+          win.addEventListener('beforeunload', () => URL.revokeObjectURL(url));
+        } else {
+          // Fallback if popup blocked anyway
+          const a = document.createElement('a');
+          a.href = url;
+          a.target = '_blank';
+          a.rel = 'noopener';
+          a.click();
+          setTimeout(() => URL.revokeObjectURL(url), 60_000);
+        }
       },
-      error: (error) => {
-        this.handleError("Dokument konnte nicht geladen werden.")
+      error: () => {
+        win?.close();
+        this.handleError("Dokument konnte nicht geladen werden");
       }
     });
   }
