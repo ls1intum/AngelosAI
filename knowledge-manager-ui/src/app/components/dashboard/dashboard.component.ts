@@ -315,9 +315,9 @@ export class DashboardComponent implements OnInit {
       this.dashboardService.getQaLogs().subscribe({
         next: items => {
           // format date once for display
-          this.qaRows = items.map(r => ({
-            ...r,
-            createdAt: DateTime.fromISO(r.createdAt)
+          this.qaRows = items.map(row => ({
+            ...row,
+            createdAt: DateTime.fromISO(row.createdAt)
               .toLocaleString(DateTime.DATETIME_SHORT)
           }));
           this.qaLoadedOnce = true;
